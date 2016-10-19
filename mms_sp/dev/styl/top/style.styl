@@ -1,0 +1,555 @@
+.block_search
+	>fieldset
+		padding: 11px 9px
+		position: relative
+	.freeword
+		padding-right: 60px
+		input
+			width: 100%
+		a
+			position: absolute
+			top: 10px
+			right: 9px
+			display: block
+			width: 45px
+			height: 36px
+			background: #fca831
+			border-bottom: 3px solid #dc7e0f
+			border-radius: 5px
+			line-height: 30px
+			text-align: center
+			vertical-align: text-bottom
+			img
+				width: 16px
+	.location
+		a
+			display: block
+			padding: .5em
+			background: #fff
+			border: 1px solid #fca831
+			border-bottom: 3px solid #fca831
+			border-radius: 5px
+			color: #333
+			font-size: 1em
+			text-align: center
+			img
+				width: 20px
+				margin-right: .75em
+			strong
+				color: #fca831
+				font-size: 1.2em
+				vertical-align: middle
+
+.search_tab
+	padding: 0 8px
+	text-align: center
+	vertical-align: text-bottom
+	letter-spacing: -2px
+	h3
+		display: inline-block
+		width: 32%
+		margin: 0 0 2px
+		padding: 24px 0 6px
+		background-color: #fca831
+		background-repeat: no-repeat
+		background-position: center 5px
+		border: 1px solid #fca831
+		border-bottom: 1px solid f4f4f4
+		border-radius: 5px 5px 0 0
+		color: #fff
+		font-size: .87em
+		font-weight: normal
+		line-height: 1
+		text-align: center
+		letter-spacing: 0
+		cursor: pointer
+		strong
+			display: block
+			font-size: 1.5em
+			font-weight: bold
+		&.selected
+			padding-top: 30px
+			background-color: #fff
+			background-position: center 11px
+			border: 1px solid #c6c6c6
+			border-bottom: 1px solid #fff
+			color: #fca831
+			position: relative
+			bottom: -2px
+	h3.search_area
+		background-image: url('../../img/top/top_search03_icon01_off.png')
+		background-size: 17px 15px
+		&.selected
+			background-image: url('../../img/top/top_search03_icon01_on.png')
+	h3.search_course
+		background-image: url('../../img/top/top_search04_icon01_off.png')
+		background-size: 14px 16px
+		&.selected
+			background-image: url('../../img/top/top_search04_icon01_on.png')
+	h3.search_feature
+		background-image: url('../../img/top/top_search05_icon01_off.png')
+		background-size: 19px 15px
+		&.selected
+			background-image: url('../../img/top/top_search05_icon01_on.png')
+
+.block_search > section
+	display: none
+	height: 0
+	opacity: 0
+	overflow: hidden
+	border-radius: 0 0 10px 10px
+	transition: .2s
+	&.selected
+		display: block
+		height: auto
+		opacity: 1
+		overflow: visible
+
+section.search_area
+	padding: 0 8px
+	input.hidden
+		display: none
+	input + label
+		display: block
+		position: relative
+		padding: 10px
+		background: #fff
+		border-left: 1px solid #c6c6c6
+		border-right: 1px solid #c6c6c6
+		border-bottom: 1px solid #c6c6c6
+		font-size: 1.15em
+		&:after
+			content: ""
+			position: absolute
+			top: 50%
+			right: 10px
+			margin: -10px 0 0
+			display: block
+			width: 18px
+			height: 18px
+			background: url('../../img/top/top_search03_arrow02.png') 0 0 no-repeat
+			background-size: contain
+			transition: all .5s
+	input:checked + label
+		background: #b49868
+		color: #fff
+		&:after
+			background: url('../../img/top/top_search03_arrow01.png') 0 0 no-repeat
+			background-size: contain
+			transform: rotate(720deg)
+	input + label + ul
+		border-left: 1px solid #c6c6c6
+		border-right: 1px solid #c6c6c6
+	input + label + ul>li
+		max-height: 0
+		padding: 0 .75em
+		opacity: 0
+		overflow: hidden
+		transition: all .4s
+		a
+			float: right
+			display: inline-block
+			margin: 0 0 0 10px
+			padding: .33em .75em
+			background: #fff
+			border: 1px solid #b49868
+			border-bottom: 3px solid #b49868
+			border-radius: 4px
+			color: #b49868
+			font-size: .87em
+			font-weight: bold
+			line-height: 1
+		a:before
+			content: ""
+			display: inline-block
+			width: 8px
+			height: 12px
+			margin: 0 .5em 0 0
+			vertical-align: middle
+		a:first-of-type:before
+			background: url('../../img/top/top_search03_icon03.png') 0 0 no-repeat
+			background-size: contain
+		a:last-of-type:before
+			background: url('../../img/top/top_search03_icon02.png') 0 0 no-repeat
+			background-size: contain
+	input:checked + label + ul
+		border-bottom: 1px solid #c6c6c6
+		>li
+			max-height: 46px
+			padding: .5em .75em
+			background: #f4f4f4
+			border-top: 1px solid #fff
+			border-bottom: 1px solid #fff
+			line-height: 2
+			opacity: 1
+
+	input:last-of-type + label
+		border-radius: 0 0 5px 5px
+	input:last-of-type:checked + label
+		border-radius: 0
+	input:last-of-type:checked + label + ul
+		border-radius: 0 0 5px 5px
+		overflow: hidden
+
+section.search_course
+	padding: 0 8px
+	input.hidden
+		display: none
+	input + label
+		display: inline-block
+		position: relative
+		box-sizing: border-box
+		width: 50%
+		padding: 10px
+		background-color: #fff
+		border-left: 1px solid #c6c6c6
+		border-right: 1px solid #c6c6c6
+		border-bottom: 1px solid #c6c6c6
+		font-size: .87em
+		font-weight: bold
+		&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3)
+			width: 100%
+		&:before
+			content: ""
+			display: inline-block
+			width: 18px
+			height: 20px
+			margin-right: .5em
+			background-repeat: no-repeat
+			background-position: 0 0
+			background-size: contain
+			vertical-align: middle
+		&:after
+			content: ""
+			position: absolute
+			top: 50%
+			right: 10px
+			margin: -7px 0 0
+			display: block
+			width: 13px
+			height: 13px
+			background: url('../../img/top/top_search04_arrow02.png') 0 0 no-repeat
+			background-size: contain
+			transition: all .5s
+	input:checked + label
+		background: #b49868
+		color: #fff
+		&:after
+			background: url('../../img/top/top_search04_arrow03.png') 0 0 no-repeat
+			background-size: contain
+			transform: rotate(720deg)
+	#course01 + label:after,#course02 + label:after,#course03 + label:after
+		width: 18px
+		height: 18px
+		margin: -10px 0 0
+		background: url('../../img/top/top_search03_arrow02.png') 0 0 no-repeat
+		background-size: contain
+	#course01,#course02,#course03
+		&:checked + label:after
+			background: url('../../img/top/top_search03_arrow01.png') 0 0 no-repeat
+			background-size: contain
+	input + label + ul, input + label + ul + ul
+		border-left: 1px solid #c6c6c6
+		border-right: 1px solid #c6c6c6
+		>li
+			max-height: 0
+			>a
+				display: block
+				max-height: 0
+				padding: 0 .75em
+				color: #333
+				line-height: 1.75
+				opacity: 0
+				overflow: hidden
+				transition: all .4s
+	#course01,#course02,#course03
+		&:checked + label + ul
+			border-bottom: 1px solid #c6c6c6
+			>li
+				max-height: 46px
+				>a
+					max-height: 46px
+					padding: .5em .75em
+					background: #f4f4f4
+					border-top: 1px solid #fff
+					border-bottom: 1px solid #fff
+					line-height: 2
+					opacity: 1
+	#course04,#course06,#course08,#course10,#course12,#course14,#course16,#course18,#course20
+		&:checked + label + input + label + ul
+			border-bottom: 1px solid #c6c6c6
+			>li
+				max-height: 46px
+				>a
+					max-height: 46px
+					padding: .5em .75em
+					background: #f4f4f4
+					border-top: 1px solid #fff
+					border-bottom: 1px solid #fff
+					line-height: 2
+					opacity: 1
+	#course05,#course07,#course09,#course11,#course13,#course15,#course17,#course19,#course21
+		&:checked + label + ul + ul
+			border-bottom: 1px solid #c6c6c6
+			>li
+				max-height: 46px
+				>a
+					max-height: 46px
+					padding: .5em .75em
+					background: #f4f4f4
+					border-top: 1px solid #fff
+					border-bottom: 1px solid #fff
+					line-height: 2
+					opacity: 1
+	array = 01 02 03 04 05 06 07 08 09
+	for num in array
+		label.course0{num}:before
+			background-image: url('../../img/common/subjecticon_0'+ num +'_off.png')
+		input:checked + label.course0{num}:before
+			background-image: url('../../img/common/subjecticon_0'+ num +'_on.png')
+	array = 10 11 12 13 14 15 16 17 18 19 20 21
+	for num in array
+		label.course{num}:before
+			background-image: url('../../img/common/subjecticon_'+ num +'_off.png')
+		input:checked + label.course{num}:before
+			background-image: url('../../img/common/subjecticon_'+ num +'_on.png')
+
+	label.course20
+		border-radius: 0 0 0 5px
+	label.course21
+		border-radius: 0 0 5px 0
+	input#course20:checked + label.course20
+		border-radius: 0
+	input#course20:checked + label + input + label + ul
+		border-radius: 0 0 5px 5px
+		overflow: hidden
+	input#course21:checked + label.course21
+		border-radius: 0
+	input#course21:checked + label + ul + ul
+		border-radius: 0 0 5px 5px
+		overflow: hidden
+
+.search_feature
+	padding: 0 8px
+	a
+		display: inline-block
+		position: relative
+		box-sizing: border-box
+		width: 50%
+		height: 55px
+		padding: 19px 10px 0 45px
+		background-color: #fff
+		background-repeat: no-repeat
+		border-left: 1px solid #c6c6c6
+		border-right: 1px solid #c6c6c6
+		border-bottom: 1px solid #c6c6c6
+		color: #333
+		font-size: 1em
+		font-weight: bold
+		line-height: 1.2
+		text-align: center
+	a:nth-of-type(9),a:nth-of-type(10)
+		padding-top: 13px
+	a.feature01
+		background-image: url('../../img/top/top_search05_img_01.png')
+		background-position: 10px 10px
+		background-size: 27px 32px
+	a.feature02
+		background-image: url('../../img/top/top_search05_img_02.png')
+		background-position: 13px 11px
+		background-size: 22px 30px
+	a.feature03
+		background-image: url('../../img/top/top_search05_img_03.png')
+		background-position: 13px 14px
+		background-size: 22px 23px
+	a.feature04
+		background-image: url('../../img/top/top_search05_img_04.png')
+		background-position: 12px 16px
+		background-size: 25px 18px
+	a.feature05
+		background-image: url('../../img/top/top_search05_img_05.png')
+		background-position: 9px 9px
+		background-size: 31px 36px
+	a.feature06
+		background-image: url('../../img/top/top_search05_img_06.png')
+		background-position: 8px 10px
+		background-size: 34px 31px
+	a.feature07
+		background-image: url('../../img/top/top_search05_img_07.png')
+		background-position: 12px 12px
+		background-size: 27px 30px
+	a.feature08
+		background-image: url('../../img/top/top_search05_img_08.png')
+		background-position: 10px 8px
+		background-size: 27px 36px
+	a.feature09
+		background-image: url('../../img/top/top_search05_img_09.png')
+		background-position: 12px 16px
+		background-size: 19px 18px
+	a.feature10
+		background-image: url('../../img/top/top_search05_img_10.png')
+		background-position: 11px 13px
+		background-size: 23px 23px
+	a.feature11
+		background-image: url('../../img/top/top_search05_img_11.png')
+		background-position: 12px 12px
+		background-size: 22px 30px
+		border-radius: 0 0 0 5px
+	a.feature12
+		background-image: url('../../img/top/top_search05_img_12.png')
+		background-position: 10px 14px
+		background-size: 27px 21px
+		border-radius: 0 0 5px 0
+
+.contentsbanner
+	display: block
+	width: 100%
+	margin: 20px 0
+	text-align: center
+	a
+		display: inline-block
+		width: 140px
+		height: 90px
+		margin: 0 5px
+		border-radius: 5px
+		vertical-align: text-bottom
+		span
+			display: block
+			margin: 32px 10px 10px
+			padding: 4px 0
+			color: #fff
+			text-align: center
+			border-radius: 5px
+			position: relative
+			&:before
+				content: ""
+				display: block
+				width: 140px
+				position: absolute
+				left: -10px	
+			small
+				display: block
+				font-size: .87em
+			strong
+				display: block
+				font-size: 1.2em
+				font-weight: bold
+	.newopen
+		background: #e17f97
+		border-bottom: 4px solid #ce3057
+		span
+			background: #ce3057
+			&:before
+				height: 40px
+				top: -40px
+				background: url('../../img/top/top_new_img.png') center bottom no-repeat
+				background-size: contain
+	.recruit
+		background: #63ab33
+		border-bottom: 4px solid #3e7917
+		span
+			background: #3e7917
+			&:before
+				height: 42px
+				top: -42px
+				background: url('../../img/top/top_recruit_img.png') center bottom no-repeat
+				background-size: contain
+
+.block_interview
+	margin: 0 8px
+	background: #fff
+	border-radius: 5px 5px
+	overflow: hidden
+	position: relative
+	&:before
+		content: ""
+		display: block
+		width: 100%
+		height: 10px
+		background: #fca831
+		position: absolute
+		top: 0
+		left: 0
+	h3
+		width: 267px
+		height: 51px
+		margin: 20px auto
+		background: url('../../img/top/top_visit_title_img.png') 0 0 no-repeat
+		background-size: contain
+		color: #fca831
+		font-size: 1.33em
+		font-weight: bold
+		text-indent: 3em
+		line-height: 51px
+	ul
+		li
+			margin-bottom: 10px
+			padding: 0 10px
+			img
+				width: 80px
+				height: 70px
+				position: absolute
+				top: 0
+				left: 0
+			a
+				display: block
+				padding: 0 10px 10px 90px
+				border-bottom: 1px solid #c6c6c6
+				color: #333
+				overflow: hidden
+				position: relative
+				h4
+					font-size: 1em
+					font-weight: bold
+				strong
+					display: block
+					font-size: .87em
+					font-weight: normal
+				p
+					margin: .5em 0 0
+					font-size: .5em
+					line-height: 1.2
+				&:after
+					content: ""
+					display: block
+					width: 7px
+					height: 11px
+					background: url('../../img/top/top_visit_arrow.png') 0 0 no-repeat
+					background-size: contain
+					position: absolute
+					top: 50%
+					right: 0
+					margin: -6px 0 0
+			&:last-of-type a
+				padding-bottom: 0
+				border-bottom: 0
+
+.ui-widget-overlay
+	padding: 10px
+	background: #000
+	opacity: .5
+
+.ui-dialog .ui-dialog-titlebar
+	display: none
+.ui-dialog .ui-dialog-buttonpane
+	border-width: 0
+.ui-dialog .ui-dialog-content
+	padding: 1em
+	font-family: "メイリオ", sans-serif;
+	font-size: 1.1em
+.ui-dialog .ui-dialog-buttonpane
+	margin: 0 0 .75em
+	padding: 0
+	.ui-dialog-buttonset
+		float: none
+		text-align: center
+		button
+			width: 8em
+			height: 2.2em
+			margin: 0 .2em
+			background: #fca831
+			border: none
+			color: #fff
+			font-size: 1.1em
+			font-weight: bold
+

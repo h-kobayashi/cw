@@ -1,0 +1,252 @@
+.opinion_header {
+  text-align: center;
+}
+.opinion_header h2 {
+  height: 51px;
+  margin: 10px auto;
+  background: url("../../img/page/form_title_back.png") center center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  text-align: center;
+  color: #fca831;
+  font-size: 1.33em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 51px;
+}
+.opinion_header p {
+  display: inline-block;
+  width: 300px;
+  display: 0 auto;
+  font-size: 1em;
+  line-height: 1.5;
+}
+.opinion_header p strong {
+  color: #fca831;
+  font-weight: bold;
+}
+.opinion_form {
+  margin: 20px 10px 0;
+  background: #fff;
+  border: 1px solid #fca831;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+.opinion_form h3 {
+  padding: 0.5em 0;
+  background: #fca831;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+.opinion_form .opinion_status {
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.opinion_form .opinion_status li {
+  float: left;
+  display: table;
+  width: 30%;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+  font-size: 1em;
+}
+.opinion_form .opinion_status li span {
+  display: table-cell;
+  height: 3em;
+  background: #fff;
+  border: 1px solid #fca831;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #fca831;
+  font-weight: bold;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+.opinion_form .opinion_status li:not(:last-of-type) {
+  margin-right: 5%;
+}
+.opinion_form .opinion_status li:not(:last-of-type):after {
+  content: "";
+  display: inline-block;
+  width: 16.6%;
+  height: 3em;
+  background: url("../../img/page/form_arrow01.png") center center no-repeat;
+  -webkit-background-size: 5px 8px;
+  -moz-background-size: 5px 8px;
+  background-size: 5px 8px;
+  position: absolute;
+  right: -16.6%;
+}
+.opinion_form .opinion_status li span.current {
+  background: #fca831;
+  color: #fff;
+}
+.opinion_form fieldset {
+  margin: 0 10px;
+  padding: 20px 0;
+  border-top: 1px solid #fca831;
+}
+.opinion_form fieldset strong {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+}
+.opinion_form fieldset .must,
+.opinion_form fieldset .any {
+  display: inline-block;
+  margin-left: 1em;
+  padding: 0 0.5em;
+  font-size: 0.5em;
+  letter-spacing: 0.2em;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  position: relative;
+  top: -2px;
+}
+.opinion_form fieldset .must {
+  border: 1px solid #e44370;
+  color: #e44370;
+}
+.opinion_form fieldset .any {
+  border: 1px solid #5f9dc1;
+  color: #5f9dc1;
+}
+.opinion_form fieldset input,
+.opinion_form fieldset textarea {
+  width: 100%;
+  margin-top: 0.5em;
+}
+.opinion_form fieldset textarea {
+  height: 7em;
+}
+.opinion_form fieldset p {
+  font-size: 0.87em;
+  margin-top: 0.5em;
+}
+.opinion_form .errorlist {
+  margin: 10px;
+  padding: 10px 5px 10px 10px;
+  background: #fde0e8;
+  border: 1px solid #e44370;
+  font-size: 0.87em;
+}
+.opinion_form .errorlist ul li {
+  color: #e44370;
+}
+.opinion_form fieldset p.error {
+  padding: 0.5em 0.25em;
+  background: #fde0e8;
+  color: #e44370;
+  font-size: 0.87em;
+  font-weight: bold;
+}
+.opinion_form fieldset .checktext {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 1em;
+  padding-left: 0.5em;
+  font-weight: normal;
+  line-height: 1.2;
+}
+.btnarea {
+  margin: 0 10px 20px;
+  padding: 10px;
+  background: #feefd9;
+  border-left: 1px solid #fca831;
+  border-right: 1px solid #fca831;
+  border-bottom: 1px solid #fca831;
+  overflow: hidden;
+}
+.btnarea a {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.65em 0 0.5em;
+  background: #5f9dc1;
+  border-bottom: 3px solid #196692;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.btnarea .checkbtn {
+  width: 100%;
+}
+.btnarea .correctbtn {
+  float: left;
+  width: 48%;
+  background: #fff;
+  border: 1px solid #5f9dc1;
+  border-bottom: 3px solid #196692;
+  color: #5f9dc1;
+}
+.btnarea .sendbtn {
+  float: right;
+  width: 48%;
+}
+.thankstext {
+  margin: 2em 0;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.75;
+  text-align: center;
+}
+.thankstext a {
+  display: block;
+  margin: 1.5em auto;
+  color: #1d638b;
+}
+.block_recommend {
+  margin: 10px;
+}
+.block_recommend p {
+  margin-bottom: 1em;
+}
+.block_recommend p a {
+  color: #1d638b;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.block_recommend p a.recommendbtn {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0.5em auto;
+  padding: 0.5em 10px;
+  background: #b49868;
+  border-bottom: 3px solid #735625;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+.block_recommend p a.recommendbtn:after {
+  content: "";
+  float: right;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../../img/page/review_arrow.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: relative;
+  top: 4px;
+}

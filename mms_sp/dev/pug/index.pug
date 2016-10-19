@@ -1,0 +1,275 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="device_width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 病院検索・クリニック検索サイト【メディカルライフ】
+		link(rel="stylesheet", media="all", href="css/common/normalize.css")
+		link(rel="stylesheet", media="all", href="css/common/jquery-ui.min.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/common/header.css")
+		link(rel="stylesheet", media="all", href="css/common/footer.css")
+		link(rel="stylesheet", media="all", href="css/top/style.css")
+	body.top
+		.wrapper
+			include _header.pug
+
+			main.main
+				section.block_search
+					fieldset.freeword
+						input(type="text", placeholder="フリーワードで検索する")
+						a(href="#"): img(src="img/top/top_search01_icon.png")
+					fieldset.location
+						a(href="javascript:void(0)")
+							img(src="img/top/top_search02_icon.png")
+							strong 現在地
+							| から探す
+
+					.search_tab
+						h3.search_area.selected
+							strong エリア
+							| から探す
+						h3.search_course
+							strong 診療科目
+							| から探す
+						h3.search_feature
+							strong 特徴
+							| から探す
+
+					section.search_area.selected
+						input(type="radio", name="searchArea", id="area01", checked).hidden
+						label(for="area01").area01 北海道・東北
+						ul.area01
+							li 北海道
+								a(href="list.html") 路線から
+								a(href="list.html") 地域から
+							li 岩手県
+								a(href="list.html") 路線から
+								a(href="list.html") 地域から
+							li 青森県
+								a(href="list.html") 路線から
+								a(href="list.html") 地域から
+							li 宮城県
+								a(href="list.html") 路線から
+								a(href="list.html") 地域から
+							li 秋田県
+								a(href="list.html") 路線から
+								a(href="list.html") 地域から
+							li 山形県
+								a(href="list.html") 路線から
+								a(href="list.html") 地域から
+							li 福島県
+								a(href="list.html") 路線から
+								a(href="list.html") 地域から
+						input(type="radio", name="searchArea",id="area02").hidden
+						label(for="area02").area02 北陸・中部
+						ul.area02
+							li 
+								a(href="list.html") 路線から
+								a(href="list.html") 地域から
+						input(type="radio", name="searchArea",id="area03").hidden
+						label(for="area03").area03 関東
+						ul.area03
+							li 
+								a(href="list.html") 路線から
+								a(href="list.html") 地域から
+						input(type="radio", name="searchArea",id="area04").hidden
+						label(for="area04").area04 近畿
+						ul.area04
+							li 
+								a(href="list.html") 路線から
+								a(href="list.html") 地域から
+						input(type="radio", name="searchArea",id="area05").hidden
+						label(for="area05").area05 中国・四国
+						ul.area05
+							li 
+								a(href="list.html") 路線から
+								a(href="list.html") 地域から
+						input(type="radio", name="searchArea",id="area06").hidden
+						label(for="area06").area06 九州・沖縄
+						ul.area06
+							li 
+								a(href="list.html") 路線から
+								a(href="list.html") 地域から
+
+					section.search_course
+						input(type="radio", name="searchCourse",id="course01").hidden
+						label(for="course01").course01 内科
+						ul.course01
+							li: a(href="list.html") 
+						input(type="radio", name="searchCourse",id="course02").hidden
+						label(for="course02").course02 外科
+						ul.course02
+							li: a(href="list.html") 
+						input(type="radio", name="searchCourse",id="course03").hidden
+						label(for="course03").course03 アレルギー疾患
+						ul.course03
+							li: a(href="list.html") 
+						input(type="radio", name="searchCourse",id="course04").hidden
+						label(for="course04").course04 循環器疾患
+						input(type="radio", name="searchCourse",id="course05").hidden
+						label(for="course05").course05 呼吸器疾患
+						ul.course04
+							li: a(href="list.html") 
+						ul.course05
+							li: a(href="list.html") 
+						input(type="radio", name="searchCourse",id="course06", checked).hidden
+						label(for="course06").course06 小児疾患
+						input(type="radio", name="searchCourse",id="course07").hidden
+						label(for="course07").course07 糖尿病疾患系
+						ul.course06
+							li: a(href="list.html") 小児科
+							li: a(href="list.html") 小児外科
+							li: a(href="list.html") 新生児
+						ul.course07
+							li: a(href="list.html") 
+						input(type="radio", name="searchCourse",id="course08").hidden
+						label(for="course08").course08 耳鼻のど疾患
+						input(type="radio", name="searchCourse",id="course09").hidden
+						label(for="course09").course09 消化器疾患
+						ul.course08
+							li: a(href="list.html") 
+						ul.course09
+							li: a(href="list.html") 
+						input(type="radio", name="searchCourse",id="course10").hidden
+						label(for="course10").course10 腎臓疾患
+						input(type="radio", name="searchCourse",id="course11").hidden
+						label(for="course11").course11 皮ふ疾患
+						ul.course10
+							li: a(href="list.html") 
+						ul.course11
+							li: a(href="list.html") 
+						input(type="radio", name="searchCourse",id="course12").hidden
+						label(for="course12").course12 女性疾患
+						input(type="radio", name="searchCourse",id="course13").hidden
+						label(for="course13").course13 脳の疾患
+						ul.course12
+							li: a(href="list.html") 
+						ul.course13
+							li: a(href="list.html") 
+						input(type="radio", name="searchCourse",id="course14").hidden
+						label(for="course14").course14 こころの疾患
+						input(type="radio", name="searchCourse",id="course15").hidden
+						label(for="course15").course15 整形外科
+						ul.course14
+							li: a(href="list.html") 
+						ul.course15
+							li: a(href="list.html") 
+						input(type="radio", name="searchCourse",id="course16").hidden
+						label(for="course16").course16 泌尿器疾患
+						input(type="radio", name="searchCourse",id="course17").hidden
+						label(for="course17").course17 目の疾患
+						ul.course16
+							li: a(href="list.html") 
+						ul.course17
+							li: a(href="list.html") 
+						input(type="radio", name="searchCourse",id="course18").hidden
+						label(for="course18").course18 男性疾患
+						input(type="radio", name="searchCourse",id="course19").hidden
+						label(for="course19").course19 美容系
+						ul.course18
+							li: a(href="list.html") 
+						ul.course19
+							li: a(href="list.html") 
+						input(type="radio", name="searchCourse",id="course20").hidden
+						label(for="course20").course20 歯の疾患
+						input(type="radio", name="searchCourse",id="course21").hidden
+						label(for="course21").course21 その他
+						ul.course20
+							li: a(href="list.html") 
+						ul.course21
+							li: a(href="list.html") 
+
+					section.search_feature
+						a(href="list.html").feature01 専門医がいる
+						a(href="list.html").feature02 女医がいる
+						a(href="list.html").feature03 漢方処方
+						a(href="list.html").feature04 在宅診療あり
+						a(href="list.html").feature05 予約／順番
+						a(href="list.html").feature06 駐車場あり
+						a(href="list.html").feature07 休日診療
+						a(href="list.html").feature08 バリアフリー
+						a(href="list.html").feature09 早朝診療あり<br>8:00～
+						a(href="list.html").feature10 夜間診療あり<br>19:00～
+						a(href="list.html").feature11 外国語対応
+						a(href="list.html").feature12 カード可
+
+				.contentsbanner
+					a(href="").newopen
+						span
+							strong 新規開業
+							small 病院・医院
+					a(href="").recruit
+						span
+							small 医師・看護師
+							strong 求人情報
+
+				section.block_interview
+					h3 新着クリニック訪問記
+					ul
+						li: a(href="detail.html#interview")
+							img(src="img/top/top_review_img.jpg", alt="")
+							h4 メディカルライフ病院
+							strong 神奈川県横浜市港北区
+							p テキストテキストテキストテキストテキストテキストテキストテキス…
+						li: a(href="detail.html#interview")
+							img(src="img/top/top_review_img.jpg", alt="")
+							h4 メディカルライフ病院
+							strong 神奈川県横浜市港北区
+							p テキストテキストテキストテキストテキストテキストテキストテキス…
+						li: a(href="detail.html#interview")
+							img(src="img/top/top_review_img.jpg", alt="")
+							h4 メディカルライフ病院
+							strong 神奈川県横浜市港北区
+							p テキストテキストテキストテキストテキストテキストテキストテキス…
+						li: a(href="detail.html#interview")
+							img(src="img/top/top_review_img.jpg", alt="")
+							h4 メディカルライフ病院
+							strong 神奈川県横浜市港北区
+							p テキストテキストテキストテキストテキストテキストテキストテキス…
+						li: a(href="detail.html#interview")
+							img(src="img/top/top_review_img.jpg", alt="")
+							h4 メディカルライフ病院
+							strong 神奈川県横浜市港北区
+							p テキストテキストテキストテキストテキストテキストテキストテキス…
+						li: a(href="detail.html#interview")
+							img(src="img/top/top_review_img.jpg", alt="")
+							h4 メディカルライフ病院
+							strong 神奈川県横浜市港北区
+							p テキストテキストテキストテキストテキストテキストテキストテキス…
+						li: a(href="detail.html#interview")
+							img(src="img/top/top_review_img.jpg", alt="")
+							h4 メディカルライフ病院
+							strong 神奈川県横浜市港北区
+							p テキストテキストテキストテキストテキストテキストテキストテキス…
+						li: a(href="detail.html#interview")
+							img(src="img/top/top_review_img.jpg", alt="")
+							h4 メディカルライフ病院
+							strong 神奈川県横浜市港北区
+							p テキストテキストテキストテキストテキストテキストテキストテキス…
+						li: a(href="detail.html#interview")
+							img(src="img/top/top_review_img.jpg", alt="")
+							h4 メディカルライフ病院
+							strong 神奈川県横浜市港北区
+							p テキストテキストテキストテキストテキストテキストテキストテキス…
+						li: a(href="detail.html#interview")
+							img(src="img/top/top_review_img.jpg", alt="")
+							h4 メディカルライフ病院
+							strong 神奈川県横浜市港北区
+							p テキストテキストテキストテキストテキストテキストテキストテキス…
+
+			include _footer.pug
+
+	.dialog
+		p "https://m-life.jp"が現在の<br>位置情報を利用します。<br>よろしいですか？
+
+	script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+	script(type="text/javascript", src="js/jquery-ui.min.js")
+	script(type="text/javascript", src="js/common.js")
+	script(type="text/javascript", src="js/top.js")
+
+
+
+
+
+

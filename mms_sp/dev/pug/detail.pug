@@ -1,0 +1,256 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="device_width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 病院検索・クリニック検索サイト【メディカルライフ】
+		link(rel="stylesheet", media="all", href="css/common/normalize.css")
+		link(rel="stylesheet", media="all", href="css/common/jquery-ui.min.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/common/header.css")
+		link(rel="stylesheet", media="all", href="css/common/footer.css")
+		link(rel="stylesheet", media="all", href="css/detail/style.css")
+	body.detail
+		.wrapper
+			include _header.pug
+
+			main.main
+				section.datail_info#info
+					h2.detail_title
+						small 医療法人依仁会
+						strong MMSみんなの内科
+					nav.detail_nav
+						ul
+							li.dinfo: a(href="javascript:void(0)").selected 基本情報
+							li.dinterview: a(href="javascript:void(0)") 訪問記
+							li.drecruit: a(href="javascript:void(0)") 求人情報
+							li.dreview: a(href="javascript:void(0)").nolink 口コミ
+							li.daccess: a(href="javascript:void(0)") 地図
+					.detail_header
+						img(src="img/detail/detail_sample01.jpg", alt="")
+						h3 内科／小児科／アレルギー科
+					.detail_attributes
+						ul
+							li.true 専門医
+							li.true 在宅
+							li.false 駐車場
+							li.false 女医
+							li.true 漢方
+							li.false 早朝
+							li.false 夜間
+							li.true 休日診療
+							li.false 予約・順番
+							li.true ﾊﾞﾘｱﾌﾘｰ
+							li.true 外国語対応
+							li.false カード可
+					table.detail_data
+						tr
+							th 住所
+							td 神奈川県横浜市港北区新横浜3－8－11
+						tr
+							th TEL
+							td: a(href="tel:0452234242") 045-223-4242
+						tr
+							th 休診
+							td 土午後・日・祝
+						tr
+							th アクセス
+							td JR横浜市営地下鉄「新横浜駅」より徒歩5分
+						tr
+							th 専門医
+							td 日本透析医学会専門医<br>日本神経学会専門医
+					a(href="", target="_blank").officiallink 公式ホームページ
+					p.prtext 医院のPR文が入ります。医院のPR文が入ります。医院のPR文が入ります。医院のPR文が入ります。医院のPR文が入ります。医院のPR文が入ります。医院のPR文が入ります。
+					.detail_schedule
+						strong 診療時間
+						table
+							thead
+								tr
+									th 
+									th 月
+									th 火
+									th 水
+									th 木
+									th 金
+									th 土
+									th 日
+									th 祝
+							tbody
+								tr
+									th 9:30 - 11:30
+									td ○
+									td ○
+									td ○
+									td ○
+									td -
+									td ○
+									td ○
+									td ○
+								tr
+									th 15:30 - 17:30
+									td ○
+									td ○
+									td ○
+									td ○
+									td -
+									td ○
+									td ○
+									td -
+						p ※土曜日の午後は9:00～13:00まで
+						p: small ご注意：診療時間は予告なく変更される場合がございます。必ず公式サイトかお電話で直接ご確認下さい。
+					a(href="formedical.html").formedicalbtn
+						strong ＜医療機関の方へ＞
+						| 情報修正や求人情報のご案内
+
+				section.detail_access#access
+					h3 アクセスマップ
+					iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5830.306435687394!2d141.33652492587595!3d43.05924499096706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0ad619823f2eb1%3A0x8cee966aef80e6d0!2z5YyX5rW36YGT5pyt5bmM5biC5Lit5aSu5Yy6!5e0!3m2!1sja!2sjp!4v1476350798130", width="265", height="150", allowfullscreen)
+					nav
+						a(href="").mapappli 地図アプリで開く
+						a(href="").rootsearch 行き方を調べる
+
+				section.detail_interview#interview
+					h3 クリニック訪問記
+					.images
+						div
+							img(src="img/detail/detail_sample02.jpg", width="240", alt="")
+							p 最新の機器があります。
+						div
+							img(src="img/detail/detail_sample02.jpg", width="240", alt="")
+							p 最新の機器があります。
+						div
+							img(src="img/detail/detail_sample02.jpg", width="240", alt="")
+							p 最新の機器があります。
+					.doctor
+						h4
+							small 医師紹介
+							img(src="img/detail/detail_sample03.jpg", width="100", alt="院長近影")
+							strong 院長　小島　広成
+						ul
+							li 千葉大学医学部卒業（平成3年）
+							li 千葉大学第一内科（消化器内科）
+							li 千葉大学医学部付属病院、船橋中央病院、大成病院、沼津市立病院など勤務
+							li 千葉大学大学院医学研究科卒業（平成11年）
+							li カナダ・マニトバ大学医学部内科肝疾患研究部
+							li 国立病院機構千葉東病院（消化器科医長）
+							li まる内科クリニック医長就任（平成25年4月）
+							li 平成27年9月　医療法人クリニック　理事長兼院
+					.clinic
+						h4 MMSみんなのクリニックについて
+						p メッセージ内容が入ります。メッセージ内容が入ります。メッセージ内容が入ります。メッセージ内容が入ります。メッセージ内容が入ります。メッセージ内容が入ります。メッセージ内容が入ります。メッセージ内容が入ります。メッセージ内容が入ります。メッセージ内容が入ります。メッセージ内容が入ります。メッセージ内容が入ります。メッセージ内容が入ります。メッセージ内容が入ります。
+					.comment
+						h4 訪問員コメント
+						p 訪問員のコメントが入ります。訪問員のコメントが入ります。訪問員のコメントが入ります。訪問員のコメントが入ります。訪問員のコメントが入ります。訪問員のコメントが入ります。訪問員のコメントが入ります。訪問員のコメントが入ります。訪問員のコメントが入ります。訪問員のコメントが入ります。訪問員のコメントが入ります。訪問員のコメントが入ります。訪問員のコメントが入ります。
+
+				section.detail_review#review
+					h3 このクリニックの<br>評判・口コミ
+					div.totalscore
+						| 総合評価
+						span.score40
+						| 4.0
+					section.review-item
+						h5 よしぞうさん
+							small 2016/6/21
+						div.itemscore
+							dl: dt 病院に行った理由：
+								dd 頭痛が長引いていたから
+							div.scorelist
+								p 評価：
+									span.score40
+								ul
+									li 医師の説明：
+										span.score40
+									li 医療スタッフの対応：
+										span.score40
+									li 受付スタッフの対応：
+										span.score40
+									li 待合室・トイレの環境：
+										span.score40
+									li 待ち時間：
+										span.score40
+						p 市内の病院ではなかなか治らず、評判がいいここで診てもらいました。患者の話をよく聞いてくださり、診療に時間もかけてくださいます。他方面からの可能性を新味になって考えてくださり、とても気持ちが楽になりました。<br>患者とインフォームドコンセントが出来る数少ない先生だと感じております。診療時のあいさつと、終了時のお大事にという言葉を、患者一人一人に必ずかけてらっしゃいます。<br>大変先生に感謝しています。
+					section.review-item
+						h5 よしぞうさん
+							small 2016/6/21
+						div.itemscore
+							dl: dt 病院に行った理由：
+								dd 頭痛が長引いていたから
+							div.scorelist
+								p 評価：
+									span.score40
+								ul
+									li 医師の説明：
+										span.score40
+									li 医療スタッフの対応：
+										span.score40
+									li 受付スタッフの対応：
+										span.score40
+									li 待合室・トイレの環境：
+										span.score40
+									li 待ち時間：
+										span.score40
+						p 市内の病院ではなかなか治らず、評判がいいここで診てもらいました。患者の話をよく聞いてくださり、診療に時間もかけてくださいます。他方面からの可能性を新味になって考えてくださり、とても気持ちが楽になりました。<br>患者とインフォームドコンセントが出来る数少ない先生だと感じております。診療時のあいさつと、終了時のお大事にという言葉を、患者一人一人に必ずかけてらっしゃいます。<br>大変先生に感謝しています。
+
+				section.detail_comment
+					h3 クリニックからひとこと
+					ul
+						li
+							span 2016/6/21
+							p 待合室の椅子が固いとご意見を頂きました。<br>クッションを備えましたので、またお越しの際はお試しください。
+
+				section.detail_recruit#recruit
+					h3
+						strong MMS みんなの内科
+							small は
+						| スタッフを募集しています
+					ul
+						li
+							h5 看護師
+								small 1名　【入職準備金制度あり】
+							dl
+								dt 雇用形態
+								dd 正社員
+								dt 勤務形態
+								dd 週5日、1日5時間
+							a(href="") 求人詳細を見る
+						li
+							h5 医療事務
+								small 1名
+							dl
+								dt 雇用形態
+								dd パート
+								dt 勤務形態
+								dd 週2日～3日
+							a(href="") 求人詳細を見る
+					.company_data
+						h4 MMSみんなの内科病院情報
+						dl
+							dt 勤務先
+							dd MMSみんなの内科
+							dt 住所
+							dd 神奈川県横浜市港北区新横浜3-8-11
+							dt 最寄駅
+							dd JR横浜市営地下鉄「新横浜駅」より徒歩4分
+							dt 業種
+							dd クリニック
+							dt 診療科目
+							dd 内科・小児科
+
+			include _footer.pug
+
+
+	script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+	script(type="text/javascript", src="js/jquery-ui.min.js")
+	script(type="text/javascript", src="js/common.js")
+	script(type="text/javascript", src="js/detail.js")
+	// image slider
+	script(type="text/javascript", src="js/slick.min.js")
+	link(rel="stylesheet", media="all", href="css/detail/slick.css")
+	link(rel="stylesheet", media="all", href="css/detail/slick-theme.css")
+
+
+
+
+
+
+

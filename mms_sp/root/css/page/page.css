@@ -1,0 +1,149 @@
+.block_page,
+.block_regulation,
+.block_personal,
+.block_link,
+.block_company {
+  margin: 20px 10px 40px;
+  padding: 0 0 10px;
+  background: #fff;
+  text-align: center;
+}
+.block_page:before,
+.block_regulation:before,
+.block_personal:before,
+.block_link:before,
+.block_company:before {
+  content: "";
+  display: block;
+  height: 31px;
+  background: url("../../img/page/other_titile_parts.png") center center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: relative;
+  top: -15px;
+}
+.block_page h2,
+.block_regulation h2,
+.block_personal h2,
+.block_link h2,
+.block_company h2 {
+  display: inline-block;
+  margin-bottom: 0.87em;
+  padding: 0 0.1em;
+  font-size: 1.33em;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 3px solid #fca831;
+}
+.block_page p,
+.block_regulation p,
+.block_personal p,
+.block_link p,
+.block_company p {
+  margin: 0 1em 1em;
+  text-align: left;
+}
+.block_page p.update,
+.block_regulation p.update,
+.block_personal p.update,
+.block_link p.update,
+.block_company p.update {
+  margin: 2em 1em 1em;
+}
+.block_page section,
+.block_regulation section,
+.block_personal section,
+.block_link section,
+.block_company section {
+  padding: 0 1em;
+  text-align: left;
+}
+.block_page section h3,
+.block_regulation section h3,
+.block_personal section h3,
+.block_link section h3,
+.block_company section h3 {
+  margin: 2em 0 1em 0;
+  color: #fca831;
+  font-size: 1em;
+  font-weight: bold;
+}
+.block_page section >ol >li,
+.block_regulation section >ol >li,
+.block_personal section >ol >li,
+.block_link section >ol >li,
+.block_company section >ol >li {
+  list-style: decimal;
+  list-style-position: inside;
+}
+.block_page section >ol >li >ol,
+.block_regulation section >ol >li >ol,
+.block_personal section >ol >li >ol,
+.block_link section >ol >li >ol,
+.block_company section >ol >li >ol {
+  margin: 0.5em;
+}
+.block_page section >ol >li >ol >li,
+.block_regulation section >ol >li >ol >li,
+.block_personal section >ol >li >ol >li,
+.block_link section >ol >li >ol >li,
+.block_company section >ol >li >ol >li {
+  counter-increment: cnt;
+}
+.block_page section >ol >li >ol >li:before,
+.block_regulation section >ol >li >ol >li:before,
+.block_personal section >ol >li >ol >li:before,
+.block_link section >ol >li >ol >li:before,
+.block_company section >ol >li >ol >li:before {
+  content: "(" counter(cnt) ")";
+  display: marker;
+}
+.block_regulation section p {
+  margin: 0 1em 1em;
+}
+.block_regulation section >ol >li {
+  margin-bottom: 1em;
+}
+.block_personal section p {
+  margin: 0 0 1em;
+}
+.block_personal section >ol {
+  margin: 0 0 1em;
+}
+.block_personal section >ol >li {
+  list-style-position: outside;
+  margin-left: 1.5em;
+  margin-bottom: 0;
+}
+.block_personal section .address {
+  margin: 0 0 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+}
+.block_personal section a {
+  color: #1d638b;
+  text-decoration: underline;
+}
+.block_link section p {
+  margin: 0 0 1em;
+}
+.block_company dl {
+  margin: 0 1em;
+  text-align: left;
+}
+.block_company dl dt {
+  margin: 0 0 0.5em;
+  font-weight: bold;
+}
+.block_company dl dd {
+  margin: 0 0 1.5em;
+}
+.block_company dl dd h3 {
+  color: #fca831;
+  font-size: 1em;
+  font-weight: bold;
+}
+.block_company dl dd p {
+  margin: 0 0 1em;
+}

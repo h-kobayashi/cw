@@ -1,0 +1,83 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="device_width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 病院検索・クリニック検索サイト【メディカルライフ】
+		link(rel="stylesheet", media="all", href="css/common/normalize.css")
+		link(rel="stylesheet", media="all", href="css/common/jquery-ui.min.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/common/header.css")
+		link(rel="stylesheet", media="all", href="css/common/footer.css")
+		link(rel="stylesheet", media="all", href="css/page/review.css")
+	body.review
+		.wrapper
+			include _header.pug
+
+			main.main
+				form
+					.review_header
+						h2 オススメの口コミ投稿
+						p
+							strong 「医療法人依仁会 MMSみんなのクリニック」
+							| をオススメしませんか？<br>お気軽にあなたのご感想をお寄せください。
+					section.review_form
+						h3 オススメの口コミ 投稿フォーム
+						ol.review_status
+							li: span 入力する
+							li: span.current 入力内容を<br>確認する
+							li: span 投稿完了
+						fieldset
+							strong 医療機関名
+							.checktext
+								strong 医療法人依仁会 MMSみんなのクリニック
+						fieldset
+							strong ニックネーム
+								small.must 必須
+							.checktext ヤマダ
+						fieldset
+							strong メールアドレス
+								small.must 必須
+							.checktext info@m-life.jp
+						fieldset
+							strong 病院・医院への評価
+								small.must 必須
+							dl.formcheck-score
+								dt 医師の説明
+								dd: span.score40
+								dt 医療スタッフの対応
+								dd: span.score50
+								dt 受付スタッフの対応
+								dd: span.score50
+								dt 待合室・トイレの環境
+								dd: span.score50
+								dt 待ち時間
+								dd: span.score50
+						fieldset
+							strong 病院に言った理由
+								small.must 必須
+							.checktext 頭痛が続いたから
+						fieldset
+							strong オススメの理由
+								small.must 必須
+							.checktext テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+					.btnarea
+						a(href="review.html").correctbtn 修正する
+						a(href="review_end.html").sendbtn 送信する
+
+			include _footer.pug
+
+
+	script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+	script(type="text/javascript", src="js/jquery-ui.min.js")
+	script(type="text/javascript", src="js/common.js")
+	script(type="text/javascript", src="js/review.js")
+	script(type="text/javascript", src="js/jquery.raty.js")
+
+
+
+
+
+
+

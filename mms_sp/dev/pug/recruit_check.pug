@@ -1,0 +1,150 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="device_width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 病院検索・クリニック検索サイト【メディカルライフ】
+		link(rel="stylesheet", media="all", href="css/common/normalize.css")
+		link(rel="stylesheet", media="all", href="css/common/jquery-ui.min.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/common/header.css")
+		link(rel="stylesheet", media="all", href="css/common/footer.css")
+		link(rel="stylesheet", media="all", href="css/page/recruit.css")
+	body.recruit
+		.wrapper
+			include _header.pug
+
+			main.main
+				section.recruit_data
+					h2.recruit_title
+						small 医療法人依仁会
+						strong MMSみんなの内科
+
+				form
+					section.entry_form
+						h3 応募フォーム
+						ol.entry_status
+							li: span 入力する
+							li: span.current 入力内容を<br>確認する
+							li: span 応募完了
+						h4 職種：看護師
+						fieldset
+							strong お名前（漢字）
+								small.must 必須
+							.checktext 山田太郎
+						fieldset
+							strong 取得資格
+								small.any 任意
+							.checktext 純看護師資格
+							.checktext 純看護師資格
+							.checktext 純看護師資格
+						fieldset
+							strong 生年月日
+								small.must 必須
+							.checktext 2016年12月31日
+						fieldset
+							strong 電話番号
+								small.must 必須
+							.checktext 090-1234-5678
+							p.red 連絡のつきやすい電話番号をご入力ください。
+						fieldset
+							strong メールアドレス
+								small.must 必須
+							.checktext info@m-life.jp
+						fieldset
+							strong ご住所
+								small.any 任意
+							.checktext 〒222-0033 神奈川県横浜市港北区新横浜3-8-11 KDX381ビル3階
+						fieldset
+							strong その他お問い合わせ
+								small.any 任意
+							.checktext 小さい子供がいるため、夜勤なしで働かせていただけるところを探しています。
+						fieldset
+							strong 個人情報の取扱いについて
+								small.must 必須
+							.checktext 以下の個人情報取り扱いについて同意する
+							.policy
+								p 株式会社MMS（以下「当社」といいます）が提供するウェブサイト、電子メール、その他の電子情報媒体を通じて行う情報や機能を
+								ol
+									li 個人情報の利用目的について
+										p お客様等の個人情報は、次の目的に利用させていただきます。
+										ol
+											li 各種案内メールの配送
+											li 新サービス開発及びサービス向上のための資料
+											li サイト運営のために必要なサポート連絡
+											li 所属するグループ内への必要な範囲の情報提供
+											li 業務委託先等への必要な範囲の情報提供
+					.btnarea
+						a(href="recruit.html").correctbtn 修正する
+						a(href="recruit_end.html").sendbtn 送信する
+
+				section.recruit_data
+					table
+						tr
+							th 募集職種
+							td 看護師
+						tr
+							th 雇用形態
+							td 正社員
+						tr
+							th 給与
+							td 月収240,000＋賞与
+						tr
+							th 給与例
+							td 【正看護師：経験10年、世帯主】<br>月給：308,000円<br>（基本給＋夜勤手当4回＋諸手当）
+						tr
+							th 勤務形態
+							td 日勤：週5日
+						tr
+							th 休日/休暇
+							td 日曜・祝日・年末年始
+						tr
+							th 諸手当
+							td 夜勤手当：12,000/回<br>住宅手当：6,000円
+						tr
+							th 昇給/賞与
+							td 年2回/４ヶ月
+						tr
+							th 福利厚生
+							td 社会保険・雇用保険・労災保険<br>産休・育休の実績あり<br>定年制度：60歳、継続雇用で65歳
+						tr
+							th 募集人数
+							td 2名
+						tr
+							th 募集条件
+							td 看護師免許/ブランク可
+						tr
+							th 病院からのメッセージ
+							td アットホームなスタッフが集まったクリニックです。患者様の気持ちを一番に考える事の出来る方を 募集しています。ブランクがある方も歓迎です。昔の感が戻るまでしっかりとサポート隊背をとって勤務にあたっていただきます。
+				.company_data
+					h4 MMSみんなの内科病院情報
+					table
+						tr
+							th 求人お問合せ<br>電話番号
+							td: a(href="tel:0452234242") 045-223-4242
+						tr
+							th 勤務先
+							td MMSみんなの内科
+						tr
+							th 勤務先住所
+							td 神奈川県横浜市港北区新横浜3-8-11
+						tr
+							th アクセス
+							td JR横浜市営地下鉄「新横浜駅」より徒歩4分
+						tr
+							th 診療科目
+							td 内科・小児科
+
+			include _footer.pug
+
+
+	script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+	script(type="text/javascript", src="js/jquery-ui.min.js")
+	script(type="text/javascript", src="js/common.js")
+
+
+
+
+
+
+

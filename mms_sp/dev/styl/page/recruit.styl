@@ -1,0 +1,328 @@
+
+.recruit_data
+	.recruit_title
+		margin: 10px 10px 5px
+		padding: 0 0 0 40px
+		background: url("../../img/page/recruit_name_icon_01.png") 0 0 no-repeat
+		background-size: 35px 35px
+		font-size: 1em
+		font-weight: bold
+		small
+			display: block
+			color: #333
+			font-size: .5em
+		strong
+			display: block
+			color: #81b161
+			font-size: 1.2em
+	.entrybtn
+		display: block
+		margin: 10px 20px
+		padding: .25em
+		background: #e44370
+		border-bottom: 2px solid #af264c
+		border-radius: 3px
+		color: #fff
+		font-size: 1.2em
+		font-weight: bold
+		letter-spacing: .1em
+		text-align: center
+	>h3
+		margin: 0 10px
+		padding: .5em .75em
+		background: #81b161
+		border-radius: 4px 4px 0 0
+		color: #fff
+		font-size: 1.2em
+		font-weight: bold
+		line-height: 1.2
+		text-align: left
+
+	table
+		margin: 0 10px
+		tr
+			th,td
+				padding: 10px
+			th
+				width: 5.5em
+				background: #f0fee7
+				font-size: .75em
+				font-weight: bold
+				text-align: center
+				vertical-align: middle
+			td
+				background: #fff
+				font-size: 1em
+				font-weight: normal
+				line-height: 1.5
+				text-align: left
+				vertical-align: top
+				a
+					color: #1d638b
+					font-size: 1.2em
+					font-weight: bold
+		tr:not(:last-of-type)
+			th,td
+				border-bottom: 1px solid #81b161
+
+.recruit .company_data
+	margin: 15px 10px 10px
+	padding: 10px
+	background: #fff
+	border: 5px solid #c6e9af
+	h4
+		padding: 0 10px 10px
+		border-bottom: 2px solid #c6e9af
+		color: #81b161
+		font-size: 1.2em
+		text-align: center
+		&:before
+			content: ""
+			display: block
+			height: 27px
+			background: url("../../img/page/recruit_title01_icon.png") center center no-repeat
+			background-size: 27px 22px
+	table
+		position: relative
+		margin-top: .5em
+		font-size: .87em
+		line-height: 1.2
+		text-align: left
+		tr:not(:last-of-type)
+			border-bottom: 1px dotted #81b161
+		th
+			position: relative
+			width: 7em
+			color: #81b161
+			margin-top: 2px
+			font-weight: bold
+			font-size: .87em
+			line-height: 1.2
+			text-align: center
+			vertical-align: middle
+			&:after
+				content: ""
+				position: absolute
+				top: 50%
+				right: -.5em
+				margin-top: -4px
+				display: inline-block
+				width: 5px
+				height: 7px
+				background: url("../../img/detail/detail_arrow_recruit.png") 0 0 no-repeat
+				background-size: contain
+		td
+			padding: .75em 0 .75em 1em
+			a
+				color: #1d638b
+				font-size: 1.2em
+				font-weight: bold
+
+.entry_form
+	margin: 0 10px
+	background: #fff
+	border: 1px solid #81b161
+	h3
+		padding: .25em
+		background: #81b161
+		color: #fff
+		font-size: 1.2em
+		font-weight: bold
+		&:before
+			content: ""
+			display: inline-block
+			width: 21px
+			height: 21px
+			margin-right: .5em
+			background: url("../../img/page/recruit_title02_icon.png") 0 0 no-repeat
+			background-size: contain
+			vertical-align: middle
+	.entry_status
+		padding: 10px
+		background: #e0fdcc
+		text-align: center
+		overflow: hidden
+		li
+			float: left
+			display: table
+			width: 30%
+			border-radius: 4px
+			position: relative
+			font-size: 1em
+			span
+				display: table-cell
+				height: 3em
+				background: #fff
+				border-radius: 4px
+				color: #81b161
+				font-weight: bold
+				line-height: 1.2
+				vertical-align: middle
+			&:not(:last-of-type)
+				margin-right: 5%
+				&:after
+					content: ""
+					display: inline-block
+					width: 16.6%
+					height: 3em
+					background: url("../../img/page/recruit_arrow02.png") center center no-repeat
+					background-size: 5px 8px
+					position: absolute
+					right: -16.6%
+			span.current
+				background: #81b161
+				color: #fff
+	h4
+		margin: 20px 10px 0
+		padding: .5em
+		background: #e0fdcc
+		font-size: 1em
+		font-weight: bold
+		text-align: left
+
+	fieldset
+		margin: 0 10px
+		padding: 20px 0
+		border-bottom: 1px solid #81b161
+		&:last-of-type
+			border-bottom: none
+		strong
+			display: block
+			font-size: 1em
+			font-weight: bold
+		.must, .any
+			display: inline-block
+			margin-left: 1em
+			padding: 0 .5em
+			font-size: .5em
+			letter-spacing: .2em
+			border-radius: 2px
+			position: relative
+			top: -2px
+		.must
+			border: 1px solid #e44370
+			color: #e44370
+		.any
+			border: 1px solid #5f9dc1
+			color: #5f9dc1
+		input,textarea
+			width: 100%
+			margin-top: .5em
+		textarea
+			height: 7em
+		select
+			margin-top: .5em
+			vertical-align: text-bottom
+			&.year
+				margin-right: .25em
+			&.month,&.day
+				margin: .5em .25em 0
+		p
+			font-size: .87em
+			margin-top: .5em
+		p.red
+			color: #e44370
+		dl
+			position: relative
+			dt
+				position: absolute
+				margin-top: 1em
+				font-size: 1em
+				font-weight: bold
+			dd
+				padding-left: 4.5em
+		dl:first-of-type input,dl select
+			width: 8em
+		input[type=checkbox]
+			display: inline-block
+			width: auto
+			margin-right: .5em
+			vertical-align: sub
+		label
+			color: #e44370
+			font-size: .87em
+			font-weight: bold
+		.policy
+			margin: .5em 0 0
+			border: 1px solid #ddd
+			padding: .5em
+			height: 4em
+			overflow: auto
+			font-size: 1em
+			line-height: 1.5
+			p
+				margin: 0 0 .5em
+				font-size: 1em
+			ol>li
+				margin: 0 0 .5em 1.5em
+				list-style: decimal
+
+	//error
+	.errorlist
+		margin: 10px
+		padding: 10px 5px 10px 10px
+		background: #fde0e8
+		border: 1px solid #e44370
+		font-size: .87em
+		ul
+			li
+				color: #e44370
+	fieldset
+		p.error
+			padding: .5em .25em
+			background: #fde0e8
+			color: #e44370
+			font-size: .87em
+			font-weight: bold
+
+	//check
+	fieldset
+		.checktext
+			box-sizing: border-box
+			margin-top: 1em
+			padding-left: .5em
+			font-weight: normal
+			line-height: 1.2
+
+.btnarea
+	margin: 0 10px 20px
+	padding: 10px
+	background: #e0fdcc
+	border-left: 1px solid #81b161
+	border-right: 1px solid #81b161
+	border-bottom: 1px solid #81b161
+	overflow: hidden
+	a
+		display: block
+		box-sizing: border-box
+		padding: .65em 0 .5em
+		background: #e44370
+		border-bottom: 3px solid #af264c
+		border-radius: 3px
+		color: #fff
+		font-size: 1.2em
+		font-weight: bold
+		letter-spacing: .1em
+		text-align: center
+	.checkbtn
+		width: 100%
+	.correctbtn
+		float: left
+		width: 48%
+		background: #9bc182
+		border-color: #76a755
+	.sendbtn
+		float: right
+		width: 48%
+
+// end
+.thankstext
+	margin: 2em 0
+	font-size: 1em
+	font-weight: bold
+	line-height: 1.75
+	text-align: center
+	a
+		display: block
+		margin: 1.5em auto
+		color: #1d638b

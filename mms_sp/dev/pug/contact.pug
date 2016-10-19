@@ -1,0 +1,57 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="device_width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 病院検索・クリニック検索サイト【メディカルライフ】
+		link(rel="stylesheet", media="all", href="css/common/normalize.css")
+		link(rel="stylesheet", media="all", href="css/common/jquery-ui.min.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/common/header.css")
+		link(rel="stylesheet", media="all", href="css/common/footer.css")
+		link(rel="stylesheet", media="all", href="css/page/contact.css")
+	body.contact
+		.wrapper
+			include _header.pug
+
+			main.main
+				form
+					.contact_header
+						h2 お問合せ
+						p 以下のフォームよりお問い合わせを承っております。<br>お気軽にお問い合わせください。
+						ol.contact_status
+							li: span.current 入力する
+							li: span 入力内容を<br>確認する
+							li: span 問合せ完了
+					section.contact_form
+						h3 メディカルライフお問合せフォーム
+						fieldset
+							strong お名前
+								small.must 必須
+							input(type="text", placeholder="例）山田太郎")
+						fieldset
+							strong メールアドレス
+								small.must 必須
+							input(type="text", placeholder="例）info@m-life.jp")
+							p 確認のため、もう一度入力してください。
+							input(type="text", placeholder="例）info@m-life.jp")
+						fieldset
+							strong お問合せ内容
+								small.must 必須
+							textarea(placeholder="お気軽にお問い合わせください。")
+					.btnarea
+						a(href="contact_check.html").checkbtn 入力内容を確認する
+
+			include _footer.pug
+
+
+	script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+	script(type="text/javascript", src="js/jquery-ui.min.js")
+	script(type="text/javascript", src="js/common.js")
+
+
+
+
+
+
+

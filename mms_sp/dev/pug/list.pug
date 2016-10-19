@@ -1,0 +1,574 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="device_width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 病院検索・クリニック検索サイト【メディカルライフ】
+		link(rel="stylesheet", media="all", href="css/common/normalize.css")
+		link(rel="stylesheet", media="all", href="css/common/jquery-ui.min.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/common/header.css")
+		link(rel="stylesheet", media="all", href="css/common/footer.css")
+		link(rel="stylesheet", media="all", href="css/list/style.css")
+	body.list
+		.wrapper
+			include _header.pug
+
+			main.main
+				section.list_header
+					h2
+						strong 北海道
+						| の病院・医院の検索結果一覧
+					iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5830.306435687394!2d141.33652492587595!3d43.05924499096706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0ad619823f2eb1%3A0x8cee966aef80e6d0!2z5YyX5rW36YGT5pyt5bmM5biC5Lit5aSu5Yy6!5e0!3m2!1sja!2sjp!4v1476350798130", width="265", height="150", allowfullscreen)
+					fieldset.freeword
+						input(type="text", placeholder="フリーワードで検索する")
+						a(href="#"): img(src="img/top/top_search01_icon.png")
+
+				section.drilldown
+					h3 さらに絞り込む
+					fieldset.ddtype
+						input(type="radio", id="ddtype01", name="ddtype", checked)
+						label(for="ddtype01") 地域
+							small に変更
+						input(type="radio", id="ddtype02", name="ddtype")
+						label(for="ddtype02") 路線
+							small に変更
+					.dd_area
+						span.ddarea01 北海道
+						span.ddarea02 札幌市中央区
+						a(href="javascirpt:void(0)").ddarea03 地域を選択
+					.dd_course
+						strong 診療科目：
+						span.ddcourse アレルギー科
+					.dd_feature
+						strong 特長：
+						span.ddfeature 専門医がいる
+						a(href="") 特長を追加できます
+
+				.list_pager
+					p 1~10件/全3651件中
+					nav
+						a(href="").prev
+						a(href="").next.active
+						a(href="").selected 1
+						a(href="") 2
+						a(href="") 3
+						a(href="") 4
+						a(href="") 5
+
+				section.block_list
+					.list_item
+						h3: a(href="detail.html")
+							small 医療法人依仁会
+							strong MMSみんなの内科
+						.item_attributes
+							ul
+								li.true 専門医
+								li.true 在宅
+								li.true 駐車場
+								li.false 女医
+								li.true 漢方
+								li.true 早朝
+								li.true 夜間
+								li.true 休日診療
+							ul
+								li.true 予約・順番
+								li.false ﾊﾞﾘｱﾌﾘｰ
+								li.true 外国語対応
+								li.false カード可
+						.item_data
+							ul
+								li: dl
+									dt 診療科目
+									dd
+										a(href="") 内科
+										| 、
+										a(href="") 小児科
+										| 、
+										a(href="") アレルギー科
+								li: dl
+									dt 住所
+									dd 北海道旭川市三条通9丁目1704-7
+								li: dl
+									dt 休診日
+									dd 木、日、祝
+							a(href="detail.html#interview").interviewbtn 取材記事あり
+							a(href="detail.html#recruit").recruitbtn スタッフ募集中!
+							p
+								small [評判]
+								| 先生がよく話を聞いてくれました
+								a(href="") ...もっと読む
+						.item_address
+							a(href="tel:0452234242").telbtn 045-223-4242
+							a(href="").mapbtn 地図アプリで開く
+
+					.list_item
+						h3: a(href="detail.html")
+							small 医療法人依仁会
+							strong MMSみんなの内科
+						.item_attributes
+							ul
+								li.true 専門医
+								li.true 在宅
+								li.true 駐車場
+								li.false 女医
+								li.true 漢方
+								li.true 早朝
+								li.true 夜間
+								li.true 休日診療
+							ul
+								li.true 予約・順番
+								li.false ﾊﾞﾘｱﾌﾘｰ
+								li.true 外国語対応
+								li.false カード可
+						.item_data
+							ul
+								li: dl
+									dt 診療科目
+									dd
+										a(href="") 内科
+										| 、
+										a(href="") 小児科
+										| 、
+										a(href="") アレルギー科
+								li: dl
+									dt 住所
+									dd 北海道旭川市三条通9丁目1704-7
+								li: dl
+									dt 休診日
+									dd 木、日、祝
+							a(href="detail.html#interview").interviewbtn 取材記事あり
+							a(href="detail.html#recruit").recruitbtn スタッフ募集中!
+							p
+								small [評判]
+								| 先生がよく話を聞いてくれました
+								a(href="") ...もっと読む
+						.item_address
+							a(href="tel:0452234242").telbtn 045-223-4242
+							a(href="").mapbtn 地図アプリで開く
+
+					.list_item
+						h3: a(href="detail.html")
+							small 医療法人依仁会
+							strong MMSみんなの内科
+						.item_attributes
+							ul
+								li.true 専門医
+								li.true 在宅
+								li.true 駐車場
+								li.false 女医
+								li.true 漢方
+								li.true 早朝
+								li.true 夜間
+								li.true 休日診療
+							ul
+								li.true 予約・順番
+								li.false ﾊﾞﾘｱﾌﾘｰ
+								li.true 外国語対応
+								li.false カード可
+						.item_data
+							ul
+								li: dl
+									dt 診療科目
+									dd
+										a(href="") 内科
+										| 、
+										a(href="") 小児科
+										| 、
+										a(href="") アレルギー科
+								li: dl
+									dt 住所
+									dd 北海道旭川市三条通9丁目1704-7
+								li: dl
+									dt 休診日
+									dd 木、日、祝
+							a(href="detail.html#interview").interviewbtn 取材記事あり
+							a(href="detail.html#recruit").recruitbtn スタッフ募集中!
+							p
+								small [評判]
+								| 先生がよく話を聞いてくれました
+								a(href="") ...もっと読む
+						.item_address
+							a(href="tel:0452234242").telbtn 045-223-4242
+							a(href="").mapbtn 地図アプリで開く
+					.list_item
+						h3: a(href="detail.html")
+							small 医療法人依仁会
+							strong MMSみんなの内科
+						.item_attributes
+							ul
+								li.true 専門医
+								li.true 在宅
+								li.true 駐車場
+								li.false 女医
+								li.true 漢方
+								li.true 早朝
+								li.true 夜間
+								li.true 休日診療
+							ul
+								li.true 予約・順番
+								li.false ﾊﾞﾘｱﾌﾘｰ
+								li.true 外国語対応
+								li.false カード可
+						.item_data
+							ul
+								li: dl
+									dt 診療科目
+									dd
+										a(href="") 内科
+										| 、
+										a(href="") 小児科
+										| 、
+										a(href="") アレルギー科
+								li: dl
+									dt 住所
+									dd 北海道旭川市三条通9丁目1704-7
+								li: dl
+									dt 休診日
+									dd 木、日、祝
+							a(href="detail.html#interview").interviewbtn 取材記事あり
+							a(href="detail.html#recruit").recruitbtn スタッフ募集中!
+							p
+								small [評判]
+								| 先生がよく話を聞いてくれました
+								a(href="") ...もっと読む
+						.item_address
+							a(href="tel:0452234242").telbtn 045-223-4242
+							a(href="").mapbtn 地図アプリで開く
+					.list_item
+						h3: a(href="detail.html")
+							small 医療法人依仁会
+							strong MMSみんなの内科
+						.item_attributes
+							ul
+								li.true 専門医
+								li.true 在宅
+								li.true 駐車場
+								li.false 女医
+								li.true 漢方
+								li.true 早朝
+								li.true 夜間
+								li.true 休日診療
+							ul
+								li.true 予約・順番
+								li.false ﾊﾞﾘｱﾌﾘｰ
+								li.true 外国語対応
+								li.false カード可
+						.item_data
+							ul
+								li: dl
+									dt 診療科目
+									dd
+										a(href="") 内科
+										| 、
+										a(href="") 小児科
+										| 、
+										a(href="") アレルギー科
+								li: dl
+									dt 住所
+									dd 北海道旭川市三条通9丁目1704-7
+								li: dl
+									dt 休診日
+									dd 木、日、祝
+							a(href="detail.html#interview").interviewbtn 取材記事あり
+							a(href="detail.html#recruit").recruitbtn スタッフ募集中!
+							p
+								small [評判]
+								| 先生がよく話を聞いてくれました
+								a(href="") ...もっと読む
+						.item_address
+							a(href="tel:0452234242").telbtn 045-223-4242
+							a(href="").mapbtn 地図アプリで開く
+					.list_item
+						h3: a(href="detail.html")
+							small 医療法人依仁会
+							strong MMSみんなの内科
+						.item_attributes
+							ul
+								li.true 専門医
+								li.true 在宅
+								li.true 駐車場
+								li.false 女医
+								li.true 漢方
+								li.true 早朝
+								li.true 夜間
+								li.true 休日診療
+							ul
+								li.true 予約・順番
+								li.false ﾊﾞﾘｱﾌﾘｰ
+								li.true 外国語対応
+								li.false カード可
+						.item_data
+							ul
+								li: dl
+									dt 診療科目
+									dd
+										a(href="") 内科
+										| 、
+										a(href="") 小児科
+										| 、
+										a(href="") アレルギー科
+								li: dl
+									dt 住所
+									dd 北海道旭川市三条通9丁目1704-7
+								li: dl
+									dt 休診日
+									dd 木、日、祝
+							a(href="detail.html#interview").interviewbtn 取材記事あり
+							a(href="detail.html#recruit").recruitbtn スタッフ募集中!
+							p
+								small [評判]
+								| 先生がよく話を聞いてくれました
+								a(href="") ...もっと読む
+						.item_address
+							a(href="tel:0452234242").telbtn 045-223-4242
+							a(href="").mapbtn 地図アプリで開く
+					.list_item
+						h3: a(href="detail.html")
+							small 医療法人依仁会
+							strong MMSみんなの内科
+						.item_attributes
+							ul
+								li.true 専門医
+								li.true 在宅
+								li.true 駐車場
+								li.false 女医
+								li.true 漢方
+								li.true 早朝
+								li.true 夜間
+								li.true 休日診療
+							ul
+								li.true 予約・順番
+								li.false ﾊﾞﾘｱﾌﾘｰ
+								li.true 外国語対応
+								li.false カード可
+						.item_data
+							ul
+								li: dl
+									dt 診療科目
+									dd
+										a(href="") 内科
+										| 、
+										a(href="") 小児科
+										| 、
+										a(href="") アレルギー科
+								li: dl
+									dt 住所
+									dd 北海道旭川市三条通9丁目1704-7
+								li: dl
+									dt 休診日
+									dd 木、日、祝
+							a(href="detail.html#interview").interviewbtn 取材記事あり
+							a(href="detail.html#recruit").recruitbtn スタッフ募集中!
+							p
+								small [評判]
+								| 先生がよく話を聞いてくれました
+								a(href="") ...もっと読む
+						.item_address
+							a(href="tel:0452234242").telbtn 045-223-4242
+							a(href="").mapbtn 地図アプリで開く
+					.list_item
+						h3: a(href="detail.html")
+							small 医療法人依仁会
+							strong MMSみんなの内科
+						.item_attributes
+							ul
+								li.true 専門医
+								li.true 在宅
+								li.true 駐車場
+								li.false 女医
+								li.true 漢方
+								li.true 早朝
+								li.true 夜間
+								li.true 休日診療
+							ul
+								li.true 予約・順番
+								li.false ﾊﾞﾘｱﾌﾘｰ
+								li.true 外国語対応
+								li.false カード可
+						.item_data
+							ul
+								li: dl
+									dt 診療科目
+									dd
+										a(href="") 内科
+										| 、
+										a(href="") 小児科
+										| 、
+										a(href="") アレルギー科
+								li: dl
+									dt 住所
+									dd 北海道旭川市三条通9丁目1704-7
+								li: dl
+									dt 休診日
+									dd 木、日、祝
+							a(href="detail.html#interview").interviewbtn 取材記事あり
+							a(href="detail.html#recruit").recruitbtn スタッフ募集中!
+							p
+								small [評判]
+								| 先生がよく話を聞いてくれました
+								a(href="") ...もっと読む
+						.item_address
+							a(href="tel:0452234242").telbtn 045-223-4242
+							a(href="").mapbtn 地図アプリで開く
+					.list_item
+						h3: a(href="detail.html")
+							small 医療法人依仁会
+							strong MMSみんなの内科
+						.item_attributes
+							ul
+								li.true 専門医
+								li.true 在宅
+								li.true 駐車場
+								li.false 女医
+								li.true 漢方
+								li.true 早朝
+								li.true 夜間
+								li.true 休日診療
+							ul
+								li.true 予約・順番
+								li.false ﾊﾞﾘｱﾌﾘｰ
+								li.true 外国語対応
+								li.false カード可
+						.item_data
+							ul
+								li: dl
+									dt 診療科目
+									dd
+										a(href="") 内科
+										| 、
+										a(href="") 小児科
+										| 、
+										a(href="") アレルギー科
+								li: dl
+									dt 住所
+									dd 北海道旭川市三条通9丁目1704-7
+								li: dl
+									dt 休診日
+									dd 木、日、祝
+							a(href="detail.html#interview").interviewbtn 取材記事あり
+							a(href="detail.html#recruit").recruitbtn スタッフ募集中!
+							p
+								small [評判]
+								| 先生がよく話を聞いてくれました
+								a(href="") ...もっと読む
+						.item_address
+							a(href="tel:0452234242").telbtn 045-223-4242
+							a(href="").mapbtn 地図アプリで開く
+					.list_item
+						h3: a(href="detail.html")
+							small 医療法人依仁会
+							strong MMSみんなの内科
+						.item_attributes
+							ul
+								li.true 専門医
+								li.true 在宅
+								li.true 駐車場
+								li.false 女医
+								li.true 漢方
+								li.true 早朝
+								li.true 夜間
+								li.true 休日診療
+							ul
+								li.true 予約・順番
+								li.false ﾊﾞﾘｱﾌﾘｰ
+								li.true 外国語対応
+								li.false カード可
+						.item_data
+							ul
+								li: dl
+									dt 診療科目
+									dd
+										a(href="") 内科
+										| 、
+										a(href="") 小児科
+										| 、
+										a(href="") アレルギー科
+								li: dl
+									dt 住所
+									dd 北海道旭川市三条通9丁目1704-7
+								li: dl
+									dt 休診日
+									dd 木、日、祝
+							a(href="detail.html#interview").interviewbtn 取材記事あり
+							a(href="detail.html#recruit").recruitbtn スタッフ募集中!
+							p
+								small [評判]
+								| 先生がよく話を聞いてくれました
+								a(href="") ...もっと読む
+						.item_address
+							a(href="tel:0452234242").telbtn 045-223-4242
+							a(href="").mapbtn 地図アプリで開く							
+
+				.list_pager
+					p 1~10件/全3651件中
+					nav
+						a(href="").prev
+						a(href="").next.active
+						a(href="").selected 1
+						a(href="") 2
+						a(href="") 3
+						a(href="") 4
+						a(href="") 5
+
+			include _footer.pug
+
+	.dialog_area01
+		p 地域「
+			strong 北海道
+			| 」を外しますか？
+	.dialog_area02
+		p 地域「
+			strong 札幌市中央区
+			| 」を外しますか？
+	.dialog_course
+		p 診療科目「
+			strong アレルギー科
+			| 」を外しますか？
+	.dialog_feature
+		p 特長「
+			strong 専門医がいる
+			| 」を外しますか？
+	.dialog_area03
+		h4 市区町村を選択
+		ul
+			li: a(href="") 札幌市中央区 (426)
+			li: a(href="") 釧路市 (426)
+			li: a(href="") 札幌市北区 (426)
+			li: a(href="") 帯広市 (426)
+			li: a(href="") 札幌市東区 (426)
+			li: a(href="") 北見市 (426)
+			li: a(href="") 札幌市白石区 (426)
+			li: a(href="") 夕張市 (426)
+			li: a(href="") 札幌市豊平区 (426)
+			li: a(href="") 岩見沢市 (426)
+			li: a(href="") 札幌市南区 (426)
+			li: a(href="") 網走市 (426)
+			li: a(href="") 札幌市西区 (426)
+			li: a(href="") 留萌市 (426)
+			li: a(href="") 札幌市厚別区 (426)
+			li: a(href="") 苫小牧市 (426)
+			li: a(href="") 札幌市手稲区 (426)
+			li: a(href="") 稚内市 (426)
+			li: a(href="") 札幌市清田区 (426)
+			li: a(href="") 美唄市 (426)
+			li: a(href="") 函館市 (426)
+			li: a(href="") 芦別市 (426)
+			li: a(href="") 小樽市 (426)
+			li: a(href="") 赤平市 (426)
+			li: a(href="") 旭川市 (426)
+			li: a(href="") 紋別市 (426)
+			li: a(href="") 室蘭市 (426)
+			li: a(href="") &nbsp;
+		span.dialogclose
+
+	script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+	script(type="text/javascript", src="js/jquery-ui.min.js")
+	script(type="text/javascript", src="js/common.js")
+	script(type="text/javascript", src="js/list.js")
+
+
+
+
+
+

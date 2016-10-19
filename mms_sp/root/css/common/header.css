@@ -1,0 +1,145 @@
+@import 'common/common.css';
+@import 'common/header.css';
+@import 'common/footer.css';
+.header {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+  z-index: 3;
+}
+.header h1 {
+  display: inline-block;
+  padding: 7px 10px 10px;
+  font-size: 0.5em;
+  font-weight: normal;
+  line-height: 1.75;
+}
+.header h1 a img {
+  display: block;
+  width: 172px;
+}
+.header .menubtn {
+  float: right;
+  display: inline-block;
+  width: 20px;
+  padding: 15px 22px 0 0;
+  font-size: 0.4em;
+  font-weight: bold;
+  letter-spacing: -0.1em;
+  text-align: center;
+  cursor: pointer;
+}
+.header .menubtn:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 21px;
+  margin: 0 4px;
+  background: url("../../img/common/header_icon_menu.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.header .menubtn:after {
+  content: "MENU";
+}
+.header .menubtn.opened:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 21px;
+  margin: 0 4px;
+  background: url("../../img/common/header_icon_close.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.header .menubtn.opened:after {
+  content: "CLOSE";
+}
+.block_menu {
+  display: none;
+  width: 100%;
+  background: #fca834;
+  position: absolute;
+}
+.block_menu >fieldset {
+  padding: 11px 9px;
+  position: relative;
+}
+.block_menu .freeword {
+  padding-right: 60px;
+}
+.block_menu .freeword input {
+  width: 100%;
+}
+.block_menu .freeword a {
+  position: absolute;
+  top: 10px;
+  right: 9px;
+  display: block;
+  width: 45px;
+  height: 36px;
+  background: #dd7e10;
+  border-bottom: 3px solid #945506;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: text-bottom;
+}
+.block_menu .freeword a img {
+  width: 16px;
+}
+.block_menu .menulist li {
+  display: inline-block;
+  width: 100%;
+}
+.block_menu .menulist li a {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.8em 1em 0.6em;
+  border-top: 1px solid #fff;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1;
+  position: relative;
+}
+.block_menu .menulist li a:after {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 9px;
+  background: url("../../img/common/menu_icon_arrow.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  margin: -5px 0 0;
+}
+.block_menu .menuclose {
+  display: block;
+  padding: 0.5em;
+  background: #dd7e10;
+  color: #fff;
+  font-size: 1.1em;
+  text-align: center;
+}
+.block_menu .menuclose:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 0.5em 0 0;
+  background: url("../../img/common/menu_icon_close.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}

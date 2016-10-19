@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="device_width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>病院検索・クリニック検索サイト【メディカルライフ】</title>
+    <link rel="stylesheet" media="all" href="css/common/normalize.css">
+    <link rel="stylesheet" media="all" href="css/common/jquery-ui.min.css">
+    <link rel="stylesheet" media="all" href="css/common/common.css">
+    <link rel="stylesheet" media="all" href="css/common/header.css">
+    <link rel="stylesheet" media="all" href="css/common/footer.css">
+    <link rel="stylesheet" media="all" href="css/page/review.css">
+  </head>
+
+  <body class="review">
+    <div class="wrapper">
+      <header class="header">
+        <h1>病院・医院・クリニック検索<br><a href="/" target="_top"><img src="img/common/header_logo.png" alt="病院検索・クリニック検索サイト [Medical Life]"></a></h1><span class="menubtn"></span>
+        <div class="block_menu">
+          <fieldset class="freeword"><input type="text" placeholder="フリーワードで検索する">
+            <a href="#"><img src="img/top/top_search01_icon.png"></a>
+          </fieldset>
+          <ul class="menulist">
+            <li><a href="index.html">HOME</a><a href="list.html">現在地から探す</a><a href="list.html">エリアから探す</a><a href="list.html">特長から探す</a><a href="list.html">新規開業病院・医院</a><a href="list.html">医師・看護師求人情報</a><a href="link.html">このサイトについて</a><a href="regulation.html">ご利用規約</a>
+              <a
+                href="personal.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a></li>
+          </ul><span class="menuclose">CLOSE</span></div>
+      </header>
+      <main class="main">
+        <form>
+          <div class="review_header">
+            <h2>オススメの口コミ投稿</h2>
+            <p><strong>「医療法人依仁会 MMSみんなのクリニック」</strong>をオススメしませんか？<br>お気軽にあなたのご感想をお寄せください。</p>
+          </div>
+          <section class="review_form">
+            <h3>オススメの口コミ 投稿フォーム</h3>
+            <ol class="review_status">
+              <li><span class="current">入力する</span></li>
+              <li><span>入力内容を<br>確認する</span></li>
+              <li><span>投稿完了</span></li>
+            </ol>
+            <fieldset><strong>医療機関名</strong>
+              <div class="checktext"><strong>医療法人依仁会 MMSみんなのクリニック</strong></div>
+            </fieldset>
+            <fieldset><strong>ニックネーム<small class="must">必須</small></strong><input type="text" placeholder="例）ヤマダ"></fieldset>
+            <fieldset><strong>メールアドレス<small class="must">必須</small></strong><input type="text" placeholder="例）info@m-life.jp"></fieldset>
+            <fieldset><strong>病院・医院への評価<small class="must">必須</small></strong>
+              <p>適切なところで★マークをタップしてください。</p><input type="hidden" id="review_star1"><input type="hidden" id="review_star2"><input type="hidden" id="review_star3"><input type="hidden" id="review_star4"><input type="hidden" id="review_star5">
+              <dl><dt>医師の説明</dt>
+                <dd><span class="starrating" id="review1"></span></dd><dt>医療スタッフの対応</dt>
+                <dd><span class="starrating" id="review2"></span></dd><dt>受付スタッフの対応</dt>
+                <dd><span class="starrating" id="review3"></span></dd><dt>待合室・トイレの環境</dt>
+                <dd><span class="starrating" id="review4"></span></dd><dt>待ち時間</dt>
+                <dd><span class="starrating" id="review5"></span></dd>
+              </dl>
+            </fieldset>
+            <fieldset><strong>病院に言った理由<small class="must">必須</small></strong><input type="text" placeholder="例） 頭痛が続いたから"></fieldset>
+            <fieldset><strong>オススメの理由<small class="must">必須</small></strong><textarea placeholder="この病院のオススメポイントを入力してください。"></textarea></fieldset>
+          </section>
+          <div class="btnarea"><a class="checkbtn" href="review_check.html">入力内容を確認する</a></div>
+        </form>
+      </main>
+      <footer class="footer">
+        <a class="pagetop" href="" onClik="backToTop(); return false"><img src="img/common/footer_pagetop.png" alt="ページトップへ"></a>
+        <nav class="footernav"><a href="link.html">このサイトについて</a><a href="regulation.html">ご利用規約</a><a href="personal.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a></nav>
+        <p>Copyright © MEDICAL LIFE All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/review.js"></script>
+  <script type="text/javascript" src="js/jquery.raty.js"></script>
+
+</html>

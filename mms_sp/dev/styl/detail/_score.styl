@@ -1,0 +1,119 @@
+.totalscore-star
+	display: inline-block
+	width: 100px
+	height: 14px
+	margin: 0 10px
+	background: url("../../img/detail/star_red_01b.png") 0 0 repeat-x
+	background-size: 20px 15px
+	position: relative
+	top: 1px
+	&:before
+		content: ""
+		display: block
+		width: 100px
+		height: 14px
+		background: url("../../img/detail/star_red_02b.png") 0 0 repeat-x
+		background-size: 20px 15px
+		position: absolute
+		top: 0
+		left: 0
+
+.itemscore-star
+	display: inline-block
+	width: 75px
+	height: 12px
+	margin: 0
+	background: url("../../img/detail/star_red_01b.png") 0 0 repeat-x
+	background-size: 15px 12px
+	position: relative
+	&:before
+		content: ""
+		display: block
+		width: 75px
+		height: 12px
+		background: url("../../img/detail/star_red_02b.png") 0 0 repeat-x
+		background-size: 15px 12px
+		position: absolute
+		top: 0
+		left: 0
+
+.scorelist-star
+	display: inline-block
+	width: 80px
+	height: 10px
+	margin: 0
+	background: url("../../img/detail/star_orange_01b.png") 0 0 repeat-x
+	background-size: 16px 10px 
+	position: relative
+	&:before
+		content: ""
+		display: block
+		width: 80px
+		height: 10px
+		background: url("../../img/detail/star_orange_02b.png") 0 0 repeat-x
+		background-size: 16px 10px
+		position: absolute
+		top: 0
+		left: 0
+
+.formcheck-star
+	display: inline-block
+	width: 160px
+	height: 20px
+	margin: 0
+	background: url("../assets/star_orange_01b.png") 0 0 repeat-x
+	position: relative
+	&:before
+		content: ""
+		display: block
+		width: 160px
+		height: 20px
+		background: url("../assets/star_orange_02b.png") 0 0 repeat-x
+		position: absolute
+		top: 0
+		left: 0
+
+.score0:before
+	width: 0% !important
+.score5:before
+	width: 12% !important
+.score10:before
+	width: 20% !important
+.score15:before
+	width: 32% !important
+.score20:before
+	width: 40% !important
+.score25:before
+	width: 52% !important
+.score30:before
+	width: 60% !important
+.score35:before
+	width: 72% !important
+.score40:before
+	width: 80% !important
+.score45:before
+	width: 92% !important
+.score50:before
+	width: 100% !important
+
+.totalscore
+	>span
+		@extend .totalscore-star
+		&:before
+			@extend .totalscore-star:before
+.review-item
+	.itemscore
+		.scorelist
+			>p>span
+				@extend .itemscore-star
+				&:before
+					@extend .itemscore-star:before
+			>ul>li>span
+				@extend .scorelist-star
+				&:before
+					@extend .scorelist-star:before
+.formcheck-score
+	>dd>span
+		@extend .formcheck-star
+		&:before
+			@extend .formcheck-star:before

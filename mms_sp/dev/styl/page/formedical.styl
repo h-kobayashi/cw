@@ -1,0 +1,224 @@
+
+.formedical_header
+	text-align: center
+	h2
+		box-sizing: border-box
+		height: 71px
+		margin: 10px auto
+		padding-top: 10px
+		background: url("../../img/page/form_title_back2.png") center center no-repeat
+		background-size: contain
+		text-align: center
+		color: #fca831
+		font-size: 1.33em
+		font-weight: bold
+		letter-spacing: .1em
+		small
+			display: block
+			font-size: .87em
+			letter-spacing: 0
+	p
+		display: inline-block
+		width: 300px
+		display: 0 auto
+		font-size: 1em
+		line-height: 1.5
+		strong
+			color: #fca831
+			font-weight: bold
+	ul
+		width: 300px
+		margin: 10px auto 0
+		li
+			box-sizing: border-box
+			width: 300px
+			height: 75px
+			margin: 0 0 10px
+			padding: 5px 10px 10px 90px
+			border-radius: 3px
+			text-align: left
+			&:nth-of-type(1)
+				background: #fff url("../../img/page/forMedical_img01.png") 5px 5px no-repeat
+				background-size: 76px 65px
+			&:nth-of-type(2)
+				background: #fff url("../../img/page/forMedical_img02.png") 5px 5px no-repeat
+				background-size: 78px 65px
+			&:nth-of-type(3)
+				background: #fff url("../../img/page/forMedical_img03.png") 5px 6px no-repeat
+				background-size: 86px 63px
+			strong
+				display: block
+				margin-bottom: .25em
+				color: #fca831
+			p
+				width: 200px
+				font-size: .87em
+
+
+.formedical_form
+	margin: 20px 10px 0
+	background: #fff
+	border: 1px solid #fca831
+	border-radius: 4px 4px 0 0
+	h3
+		padding: .5em 0
+		background: #fca831
+		border-radius: 4px 4px 0 0
+		color: #fff
+		font-size: 1.2em
+		font-weight: bold
+		text-align: center
+
+	.formedical_status
+		padding: 10px
+		text-align: center
+		overflow: hidden
+		li
+			float: left
+			display: table
+			width: 30%
+			border-radius: 4px
+			position: relative
+			font-size: 1em
+			span
+				display: table-cell
+				height: 3em
+				background: #fff
+				border: 1px solid #fca831
+				border-radius: 4px
+				color: #fca831
+				font-weight: bold
+				line-height: 1.2
+				vertical-align: middle
+			&:not(:last-of-type)
+				margin-right: 5%
+				&:after
+					content: ""
+					display: inline-block
+					width: 16.6%
+					height: 3em
+					background: url("../../img/page/form_arrow01.png") center center no-repeat
+					background-size: 5px 8px
+					position: absolute
+					right: -16.6%
+			span.current
+				background: #fca831
+				color: #fff
+	fieldset
+		margin: 0 10px
+		padding: 20px 0
+		border-top: 1px solid #fca831
+		strong
+			display: block
+			font-size: 1em
+			font-weight: bold
+		.must, .any
+			display: inline-block
+			margin-left: 1em
+			padding: 0 .5em
+			font-size: .5em
+			letter-spacing: .2em
+			border-radius: 2px
+			position: relative
+			top: -2px
+		.must
+			border: 1px solid #e44370
+			color: #e44370
+		.any
+			border: 1px solid #5f9dc1
+			color: #5f9dc1
+		input,textarea
+			width: 100%
+			margin-top: .5em
+		textarea
+			height: 7em
+		p
+			font-size: .87em
+			margin-top: .5em
+		label
+			display: inline-block
+			input[type=text]
+				width: 6em
+				margin: .5em .5em 0
+				vertical-align: baseline
+			input[type=checkbox]
+				width: 1em
+				margin: .5em .5em 0
+			p
+				display: inline-block
+				width: 230px
+				font-size: 1em
+
+	//error
+	.errorlist
+		margin: 10px
+		padding: 10px 5px 10px 10px
+		background: #fde0e8
+		border: 1px solid #e44370
+		font-size: .87em
+		ul
+			li
+				color: #e44370
+	fieldset
+		p.error
+			padding: .5em .25em
+			background: #fde0e8
+			color: #e44370
+			font-size: .87em
+			font-weight: bold
+
+	//check
+	fieldset
+		.checktext
+			box-sizing: border-box
+			margin-top: 1em
+			padding-left: .5em
+			font-weight: normal
+			line-height: 1.2
+
+.btnarea
+	margin: 0 10px 20px
+	padding: 10px
+	background: #feefd9
+	border-left: 1px solid #fca831
+	border-right: 1px solid #fca831
+	border-bottom: 1px solid #fca831
+	overflow: hidden
+	a
+		display: block
+		box-sizing: border-box
+		padding: .65em 0 .5em
+		background: #5f9dc1
+		border-bottom: 3px solid #196692
+		border-radius: 3px
+		color: #fff
+		font-size: 1.2em
+		font-weight: bold
+		letter-spacing: .1em
+		text-align: center
+	.checkbtn
+		width: 100%
+	.correctbtn
+		float: left
+		width: 48%
+		background: #fff
+		border: 1px solid #5f9dc1
+		border-bottom: 3px solid #196692
+		color: #5f9dc1
+	.sendbtn
+		float: right
+		width: 48%
+
+// end
+.thankstext
+	margin: 2em 0
+	font-size: 1em
+	font-weight: bold
+	line-height: 1.75
+	text-align: center
+	a
+		display: block
+		margin: 1.5em auto
+		color: #1d638b
+
+@import "_score"

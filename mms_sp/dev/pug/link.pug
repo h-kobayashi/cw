@@ -1,0 +1,37 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="device_width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 病院検索・クリニック検索サイト【メディカルライフ】
+		link(rel="stylesheet", media="all", href="css/common/normalize.css")
+		link(rel="stylesheet", media="all", href="css/common/jquery-ui.min.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/common/header.css")
+		link(rel="stylesheet", media="all", href="css/common/footer.css")
+		link(rel="stylesheet", media="all", href="css/page/page.css")
+	body.link
+		.wrapper
+			include _header.pug
+
+			main.main.block_link
+				h2 このサイトについて
+				p メディカルライフは、利用者の方にニーズに合った医療機関を選ぶ参考にしていただくため、日々医療機関の情報を充実させていっております。<br>また、医療機関の方には公式ウェブサイトに次ぐ存在として位置づけていただけるよう、独自取材、無料求人掲載など様々なサービスを提供いたします。<br>当サイトの医療機関基礎情報は、厚生労働局の各地方厚生局から毎月発表されている情報を基に更新しています。<br>※歯科については要望のあった歯科医院のみ掲載<br><br>新規の掲載依頼があった場合は、厚生局の指定または医師免許を確認した後掲載いたします。
+
+				section
+					h3 お知らせ
+					p 2016年8月にサイトリニューアルをしました。<br>リニューアル以前の口コミに関する会員登録制度は廃止いたしました。
+
+			include _footer.pug
+
+
+	script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+	script(type="text/javascript", src="js/jquery-ui.min.js")
+	script(type="text/javascript", src="js/common.js")
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="device_width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 病院検索・クリニック検索サイト【メディカルライフ】
+		link(rel="stylesheet", media="all", href="css/common/normalize.css")
+		link(rel="stylesheet", media="all", href="css/common/jquery-ui.min.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/common/header.css")
+		link(rel="stylesheet", media="all", href="css/common/footer.css")
+		link(rel="stylesheet", media="all", href="css/page/opinion.css")
+	body.opinion
+		.wrapper
+			include _header.pug
+
+			main.main
+				form
+					.opinion_header
+						h2 ご意見箱
+						p
+							strong 「医療法人依仁会 MMSみんなのクリニック」
+							| はご意見ご要望を受け付けています。<br>以下のフォームよりお送りください。
+					section.opinion_form
+						h3 ご意見ご要望フォーム
+						ol.opinion_status
+							li: span.current 入力する
+							li: span 入力内容を<br>確認する
+							li: span 送信完了
+						fieldset
+							strong 医療機関名
+							.checktext
+								strong 医療法人依仁会 MMSみんなのクリニック
+						fieldset
+							strong ニックネーム
+								small.must 必須
+							input(type="text", placeholder="例）ヤマダ")
+						fieldset
+							strong メールアドレス
+								small.must 必須
+							input(type="text", placeholder="例）info@m-life.jp")
+						fieldset
+							strong ご意見・ご要望
+								small.must 必須
+							textarea(placeholder="ご意見・ご要望をお聞かせください。")
+					.btnarea
+						a(href="opinion_check.html").checkbtn 入力内容を確認する
+
+				section.block_recommend
+					p ※この病院・医院に関するオススメの口コミを入れていただける方は、
+						a(href="review.html").recommendbtn この病院をオススメする
+						| にご記入ください。
+					p ※こちらのフォームは、改善するべき点として患者さんのご意見を受け止めたいと希望した病院・医院が設置しております。直接病院・医院にご意見が届き、サイト上には掲載されませんが、「クリニックからひとこと」欄に改善内容が掲載される場合があります。
+					p ※こちらは「○○クリニック」様へのご意見ご要望フォームとなっております。それ以外の
+						a(href="contact.html") お問合せ
+						| は通常のお問合せよりご連絡ください。
+
+			include _footer.pug
+
+
+	script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+	script(type="text/javascript", src="js/jquery-ui.min.js")
+	script(type="text/javascript", src="js/common.js")
+
+
+
+
+
+
+

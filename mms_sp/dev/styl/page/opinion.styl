@@ -1,0 +1,211 @@
+
+.opinion_header
+	text-align: center
+	h2
+		height: 51px
+		margin: 10px auto
+		background: url("../../img/page/form_title_back.png") center center no-repeat
+		background-size: contain
+		text-align: center
+		color: #fca831
+		font-size: 1.33em
+		font-weight: bold
+		letter-spacing: .1em
+		line-height: 51px
+	p
+		display: inline-block
+		width: 300px
+		display: 0 auto
+		font-size: 1em
+		line-height: 1.5
+		strong
+			color: #fca831
+			font-weight: bold
+
+.opinion_form
+	margin: 20px 10px 0
+	background: #fff
+	border: 1px solid #fca831
+	border-radius: 4px 4px 0 0
+	h3
+		padding: .5em 0
+		background: #fca831
+		border-radius: 4px 4px 0 0
+		color: #fff
+		font-size: 1.2em
+		font-weight: bold
+		text-align: center
+
+	.opinion_status
+		padding: 10px
+		text-align: center
+		overflow: hidden
+		li
+			float: left
+			display: table
+			width: 30%
+			border-radius: 4px
+			position: relative
+			font-size: 1em
+			span
+				display: table-cell
+				height: 3em
+				background: #fff
+				border: 1px solid #fca831
+				border-radius: 4px
+				color: #fca831
+				font-weight: bold
+				line-height: 1.2
+				vertical-align: middle
+			&:not(:last-of-type)
+				margin-right: 5%
+				&:after
+					content: ""
+					display: inline-block
+					width: 16.6%
+					height: 3em
+					background: url("../../img/page/form_arrow01.png") center center no-repeat
+					background-size: 5px 8px
+					position: absolute
+					right: -16.6%
+			span.current
+				background: #fca831
+				color: #fff
+	fieldset
+		margin: 0 10px
+		padding: 20px 0
+		border-top: 1px solid #fca831
+		strong
+			display: block
+			font-size: 1em
+			font-weight: bold
+		.must, .any
+			display: inline-block
+			margin-left: 1em
+			padding: 0 .5em
+			font-size: .5em
+			letter-spacing: .2em
+			border-radius: 2px
+			position: relative
+			top: -2px
+		.must
+			border: 1px solid #e44370
+			color: #e44370
+		.any
+			border: 1px solid #5f9dc1
+			color: #5f9dc1
+		input,textarea
+			width: 100%
+			margin-top: .5em
+		textarea
+			height: 7em
+		p
+			font-size: .87em
+			margin-top: .5em
+
+
+	//error
+	.errorlist
+		margin: 10px
+		padding: 10px 5px 10px 10px
+		background: #fde0e8
+		border: 1px solid #e44370
+		font-size: .87em
+		ul
+			li
+				color: #e44370
+	fieldset
+		p.error
+			padding: .5em .25em
+			background: #fde0e8
+			color: #e44370
+			font-size: .87em
+			font-weight: bold
+
+	//check
+	fieldset
+		.checktext
+			box-sizing: border-box
+			margin-top: 1em
+			padding-left: .5em
+			font-weight: normal
+			line-height: 1.2
+
+.btnarea
+	margin: 0 10px 20px
+	padding: 10px
+	background: #feefd9
+	border-left: 1px solid #fca831
+	border-right: 1px solid #fca831
+	border-bottom: 1px solid #fca831
+	overflow: hidden
+	a
+		display: block
+		box-sizing: border-box
+		padding: .65em 0 .5em
+		background: #5f9dc1
+		border-bottom: 3px solid #196692
+		border-radius: 3px
+		color: #fff
+		font-size: 1.2em
+		font-weight: bold
+		letter-spacing: .1em
+		text-align: center
+	.checkbtn
+		width: 100%
+	.correctbtn
+		float: left
+		width: 48%
+		background: #fff
+		border: 1px solid #5f9dc1
+		border-bottom: 3px solid #196692
+		color: #5f9dc1
+	.sendbtn
+		float: right
+		width: 48%
+
+// end
+.thankstext
+	margin: 2em 0
+	font-size: 1em
+	font-weight: bold
+	line-height: 1.75
+	text-align: center
+	a
+		display: block
+		margin: 1.5em auto
+		color: #1d638b
+
+.block_recommend
+	margin: 10px
+	p
+		margin-bottom: 1em
+		a
+			color: #1d638b
+			font-weight: bold
+			text-decoration: underline
+		a.recommendbtn
+			display: block
+			box-sizing: border-box
+			width: 90%
+			margin: .5em auto
+			padding: .5em 10px
+			background: #b49868
+			border-bottom: 3px solid #735625
+			border-radius: 3px
+			color: #fff
+			font-size: 1.15em
+			font-weight: bold
+			text-align: center
+			text-decoration: none
+			&:after
+				content: ""
+				float: right
+				display: block
+				width: 16px
+				height: 16px
+				background: url("../../img/page/review_arrow.png") 0 0 no-repeat
+				background-size: contain
+				position: relative
+				top: 4px
+

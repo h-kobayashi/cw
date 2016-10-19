@@ -1,0 +1,46 @@
+@import 'common/common.css';
+@import 'common/header.css';
+@import 'common/footer.css';
+.footer {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background: #fca831;
+  position: relative;
+  z-index: 2;
+}
+.footer .pagetop {
+  display: block;
+  width: 47px;
+  margin: 0 auto;
+  position: relative;
+  top: -30px;
+}
+.footer .pagetop img {
+  width: 47px;
+}
+.footer .footernav {
+  text-align: center;
+  position: relative;
+  top: -20px;
+}
+.footer .footernav a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 137px;
+  margin: 3px;
+  padding: 0.5em;
+  background: #e8941d;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.87em;
+}
+.footer p {
+  padding: 0 0 10px;
+  color: #fff;
+  font-size: 0.87em;
+  text-align: center;
+}

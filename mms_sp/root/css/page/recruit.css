@@ -1,0 +1,399 @@
+.recruit_data .recruit_title {
+  margin: 10px 10px 5px;
+  padding: 0 0 0 40px;
+  background: url("../../img/page/recruit_name_icon_01.png") 0 0 no-repeat;
+  -webkit-background-size: 35px 35px;
+  -moz-background-size: 35px 35px;
+  background-size: 35px 35px;
+  font-size: 1em;
+  font-weight: bold;
+}
+.recruit_data .recruit_title small {
+  display: block;
+  color: #333;
+  font-size: 0.5em;
+}
+.recruit_data .recruit_title strong {
+  display: block;
+  color: #81b161;
+  font-size: 1.2em;
+}
+.recruit_data .entrybtn {
+  display: block;
+  margin: 10px 20px;
+  padding: 0.25em;
+  background: #e44370;
+  border-bottom: 2px solid #af264c;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.recruit_data >h3 {
+  margin: 0 10px;
+  padding: 0.5em 0.75em;
+  background: #81b161;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+.recruit_data table {
+  margin: 0 10px;
+}
+.recruit_data table tr th,
+.recruit_data table tr td {
+  padding: 10px;
+}
+.recruit_data table tr th {
+  width: 5.5em;
+  background: #f0fee7;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+.recruit_data table tr td {
+  background: #fff;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: left;
+  vertical-align: top;
+}
+.recruit_data table tr td a {
+  color: #1d638b;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.recruit_data table tr:not(:last-of-type) th,
+.recruit_data table tr:not(:last-of-type) td {
+  border-bottom: 1px solid #81b161;
+}
+.recruit .company_data {
+  margin: 15px 10px 10px;
+  padding: 10px;
+  background: #fff;
+  border: 5px solid #c6e9af;
+}
+.recruit .company_data h4 {
+  padding: 0 10px 10px;
+  border-bottom: 2px solid #c6e9af;
+  color: #81b161;
+  font-size: 1.2em;
+  text-align: center;
+}
+.recruit .company_data h4:before {
+  content: "";
+  display: block;
+  height: 27px;
+  background: url("../../img/page/recruit_title01_icon.png") center center no-repeat;
+  -webkit-background-size: 27px 22px;
+  -moz-background-size: 27px 22px;
+  background-size: 27px 22px;
+}
+.recruit .company_data table {
+  position: relative;
+  margin-top: 0.5em;
+  font-size: 0.87em;
+  line-height: 1.2;
+  text-align: left;
+}
+.recruit .company_data table tr:not(:last-of-type) {
+  border-bottom: 1px dotted #81b161;
+}
+.recruit .company_data table th {
+  position: relative;
+  width: 7em;
+  color: #81b161;
+  margin-top: 2px;
+  font-weight: bold;
+  font-size: 0.87em;
+  line-height: 1.2;
+  text-align: center;
+  vertical-align: middle;
+}
+.recruit .company_data table th:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -0.5em;
+  margin-top: -4px;
+  display: inline-block;
+  width: 5px;
+  height: 7px;
+  background: url("../../img/detail/detail_arrow_recruit.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.recruit .company_data table td {
+  padding: 0.75em 0 0.75em 1em;
+}
+.recruit .company_data table td a {
+  color: #1d638b;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.entry_form {
+  margin: 0 10px;
+  background: #fff;
+  border: 1px solid #81b161;
+}
+.entry_form h3 {
+  padding: 0.25em;
+  background: #81b161;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.entry_form h3:before {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin-right: 0.5em;
+  background: url("../../img/page/recruit_title02_icon.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  vertical-align: middle;
+}
+.entry_form .entry_status {
+  padding: 10px;
+  background: #e0fdcc;
+  text-align: center;
+  overflow: hidden;
+}
+.entry_form .entry_status li {
+  float: left;
+  display: table;
+  width: 30%;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+  font-size: 1em;
+}
+.entry_form .entry_status li span {
+  display: table-cell;
+  height: 3em;
+  background: #fff;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #81b161;
+  font-weight: bold;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+.entry_form .entry_status li:not(:last-of-type) {
+  margin-right: 5%;
+}
+.entry_form .entry_status li:not(:last-of-type):after {
+  content: "";
+  display: inline-block;
+  width: 16.6%;
+  height: 3em;
+  background: url("../../img/page/recruit_arrow02.png") center center no-repeat;
+  -webkit-background-size: 5px 8px;
+  -moz-background-size: 5px 8px;
+  background-size: 5px 8px;
+  position: absolute;
+  right: -16.6%;
+}
+.entry_form .entry_status li span.current {
+  background: #81b161;
+  color: #fff;
+}
+.entry_form h4 {
+  margin: 20px 10px 0;
+  padding: 0.5em;
+  background: #e0fdcc;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: left;
+}
+.entry_form fieldset {
+  margin: 0 10px;
+  padding: 20px 0;
+  border-bottom: 1px solid #81b161;
+}
+.entry_form fieldset:last-of-type {
+  border-bottom: none;
+}
+.entry_form fieldset strong {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+}
+.entry_form fieldset .must,
+.entry_form fieldset .any {
+  display: inline-block;
+  margin-left: 1em;
+  padding: 0 0.5em;
+  font-size: 0.5em;
+  letter-spacing: 0.2em;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  position: relative;
+  top: -2px;
+}
+.entry_form fieldset .must {
+  border: 1px solid #e44370;
+  color: #e44370;
+}
+.entry_form fieldset .any {
+  border: 1px solid #5f9dc1;
+  color: #5f9dc1;
+}
+.entry_form fieldset input,
+.entry_form fieldset textarea {
+  width: 100%;
+  margin-top: 0.5em;
+}
+.entry_form fieldset textarea {
+  height: 7em;
+}
+.entry_form fieldset select {
+  margin-top: 0.5em;
+  vertical-align: text-bottom;
+}
+.entry_form fieldset select.year {
+  margin-right: 0.25em;
+}
+.entry_form fieldset select.month,
+.entry_form fieldset select.day {
+  margin: 0.5em 0.25em 0;
+}
+.entry_form fieldset p {
+  font-size: 0.87em;
+  margin-top: 0.5em;
+}
+.entry_form fieldset p.red {
+  color: #e44370;
+}
+.entry_form fieldset dl {
+  position: relative;
+}
+.entry_form fieldset dl dt {
+  position: absolute;
+  margin-top: 1em;
+  font-size: 1em;
+  font-weight: bold;
+}
+.entry_form fieldset dl dd {
+  padding-left: 4.5em;
+}
+.entry_form fieldset dl:first-of-type input,
+.entry_form fieldset dl select {
+  width: 8em;
+}
+.entry_form fieldset input[type=checkbox] {
+  display: inline-block;
+  width: auto;
+  margin-right: 0.5em;
+  vertical-align: sub;
+}
+.entry_form fieldset label {
+  color: #e44370;
+  font-size: 0.87em;
+  font-weight: bold;
+}
+.entry_form fieldset .policy {
+  margin: 0.5em 0 0;
+  border: 1px solid #ddd;
+  padding: 0.5em;
+  height: 4em;
+  overflow: auto;
+  font-size: 1em;
+  line-height: 1.5;
+}
+.entry_form fieldset .policy p {
+  margin: 0 0 0.5em;
+  font-size: 1em;
+}
+.entry_form fieldset .policy ol>li {
+  margin: 0 0 0.5em 1.5em;
+  list-style: decimal;
+}
+.entry_form .errorlist {
+  margin: 10px;
+  padding: 10px 5px 10px 10px;
+  background: #fde0e8;
+  border: 1px solid #e44370;
+  font-size: 0.87em;
+}
+.entry_form .errorlist ul li {
+  color: #e44370;
+}
+.entry_form fieldset p.error {
+  padding: 0.5em 0.25em;
+  background: #fde0e8;
+  color: #e44370;
+  font-size: 0.87em;
+  font-weight: bold;
+}
+.entry_form fieldset .checktext {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 1em;
+  padding-left: 0.5em;
+  font-weight: normal;
+  line-height: 1.2;
+}
+.btnarea {
+  margin: 0 10px 20px;
+  padding: 10px;
+  background: #e0fdcc;
+  border-left: 1px solid #81b161;
+  border-right: 1px solid #81b161;
+  border-bottom: 1px solid #81b161;
+  overflow: hidden;
+}
+.btnarea a {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.65em 0 0.5em;
+  background: #e44370;
+  border-bottom: 3px solid #af264c;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.btnarea .checkbtn {
+  width: 100%;
+}
+.btnarea .correctbtn {
+  float: left;
+  width: 48%;
+  background: #9bc182;
+  border-color: #76a755;
+}
+.btnarea .sendbtn {
+  float: right;
+  width: 48%;
+}
+.thankstext {
+  margin: 2em 0;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.75;
+  text-align: center;
+}
+.thankstext a {
+  display: block;
+  margin: 1.5em auto;
+  color: #1d638b;
+}

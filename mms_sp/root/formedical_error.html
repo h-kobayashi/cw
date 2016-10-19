@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="device_width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>病院検索・クリニック検索サイト【メディカルライフ】</title>
+    <link rel="stylesheet" media="all" href="css/common/normalize.css">
+    <link rel="stylesheet" media="all" href="css/common/jquery-ui.min.css">
+    <link rel="stylesheet" media="all" href="css/common/common.css">
+    <link rel="stylesheet" media="all" href="css/common/header.css">
+    <link rel="stylesheet" media="all" href="css/common/footer.css">
+    <link rel="stylesheet" media="all" href="css/page/formedical.css">
+  </head>
+
+  <body class="formedical">
+    <div class="wrapper">
+      <header class="header">
+        <h1>病院・医院・クリニック検索<br><a href="/" target="_top"><img src="img/common/header_logo.png" alt="病院検索・クリニック検索サイト [Medical Life]"></a></h1><span class="menubtn"></span>
+        <div class="block_menu">
+          <fieldset class="freeword"><input type="text" placeholder="フリーワードで検索する">
+            <a href="#"><img src="img/top/top_search01_icon.png"></a>
+          </fieldset>
+          <ul class="menulist">
+            <li><a href="index.html">HOME</a><a href="list.html">現在地から探す</a><a href="list.html">エリアから探す</a><a href="list.html">特長から探す</a><a href="list.html">新規開業病院・医院</a><a href="list.html">医師・看護師求人情報</a><a href="link.html">このサイトについて</a><a href="regulation.html">ご利用規約</a>
+              <a
+                href="personal.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a></li>
+          </ul><span class="menuclose">CLOSE</span></div>
+      </header>
+      <main class="main">
+        <form>
+          <div class="formedical_header">
+            <h2>医療機関の方へ<small>～メディカルライフでできること～</small></h2>
+            <p>すべて<strong>無料</strong>でご利用いただけます。<br>以下のフォームよりご依頼ください。</p>
+            <ul>
+              <li><strong>謝った情報の修正</strong>
+                <p>掲載情報に誤りがある場合、<br>ご連絡ください。</p>
+              </li>
+              <li><strong>取材の依頼</strong>
+                <p>訪問取材させていただきより充実した記事を掲載します。</p>
+              </li>
+              <li><strong>求人の無料掲載</strong>
+                <p>求人募集要項を掲載できます。<br>成果報酬も一切いただきません。</p>
+              </li>
+            </ul>
+          </div>
+          <section class="formedical_form">
+            <h3>無料サービスご依頼フォーム</h3>
+            <ol class="formedical_status">
+              <li><span class="current">入力する</span></li>
+              <li><span>入力内容を<br>確認する</span></li>
+              <li><span>送信完了</span></li>
+            </ol>
+            <div class="errorlist">
+              <ul>
+                <li>※お名前（姓）を入力してください。</li>
+                <li>※ご担当者お名前カナを入力してください。</li>
+                <li>※メールアドレスが一致しません。</li>
+                <li>※ご依頼の種類を選択してください。</li>
+              </ul>
+            </div>
+            <fieldset><strong>医療機関名</strong>
+              <div class="checktext"><strong>医療法人依仁会 MMSみんなのクリニック</strong></div>
+            </fieldset>
+            <fieldset><strong>ご担当者お名前<small class="must">必須</small></strong><label>姓<input type="text" placeholder="例）山田"></label><label>名<input type="text" placeholder="例）太郎"></label>
+              <p class="error">※お名前を入力してください。エラー文表示例</p>
+            </fieldset>
+            <fieldset><strong>ご担当者お名前カナ<small class="must">必須</small></strong><label>セイ<input type="text" placeholder="例）ヤマダ"></label><label>メイ<input type="text" placeholder="例）タロウ"></label></fieldset>
+            <fieldset><strong>メールアドレス<small class="must">必須</small></strong><input type="text" placeholder="例）info@m-life.jp">
+              <p>確認のため、もう一度入力してください。</p><input type="text" placeholder="例）info@m-life.jp"></fieldset>
+            <fieldset><strong>ご依頼の種類<small class="must">必須</small></strong><label><input type="checkbox"><p>謝った情報の修正依頼</p></label><label><input type="checkbox"><p>取材依頼</p></label><label><input type="checkbox"><p>求人掲載</p></label></fieldset>
+            <fieldset><strong>ご依頼の内容<small class="must">必須</small></strong><textarea placeholder="※取材希望の方は、ご希望の日時もご記入ください。"></textarea></fieldset>
+          </section>
+          <div class="btnarea"><a class="checkbtn" href="formedical_check.html">入力内容を確認する</a></div>
+        </form>
+      </main>
+      <footer class="footer">
+        <a class="pagetop" href="" onClik="backToTop(); return false"><img src="img/common/footer_pagetop.png" alt="ページトップへ"></a>
+        <nav class="footernav"><a href="link.html">このサイトについて</a><a href="regulation.html">ご利用規約</a><a href="personal.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a></nav>
+        <p>Copyright © MEDICAL LIFE All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+
+</html>

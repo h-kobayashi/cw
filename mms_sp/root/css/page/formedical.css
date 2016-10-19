@@ -1,0 +1,337 @@
+.formedical_header {
+  text-align: center;
+}
+.formedical_header h2 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 71px;
+  margin: 10px auto;
+  padding-top: 10px;
+  background: url("../../img/page/form_title_back2.png") center center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  text-align: center;
+  color: #fca831;
+  font-size: 1.33em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.formedical_header h2 small {
+  display: block;
+  font-size: 0.87em;
+  letter-spacing: 0;
+}
+.formedical_header p {
+  display: inline-block;
+  width: 300px;
+  display: 0 auto;
+  font-size: 1em;
+  line-height: 1.5;
+}
+.formedical_header p strong {
+  color: #fca831;
+  font-weight: bold;
+}
+.formedical_header ul {
+  width: 300px;
+  margin: 10px auto 0;
+}
+.formedical_header ul li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 300px;
+  height: 75px;
+  margin: 0 0 10px;
+  padding: 5px 10px 10px 90px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-align: left;
+}
+.formedical_header ul li:nth-of-type(1) {
+  background: #fff url("../../img/page/forMedical_img01.png") 5px 5px no-repeat;
+  -webkit-background-size: 76px 65px;
+  -moz-background-size: 76px 65px;
+  background-size: 76px 65px;
+}
+.formedical_header ul li:nth-of-type(2) {
+  background: #fff url("../../img/page/forMedical_img02.png") 5px 5px no-repeat;
+  -webkit-background-size: 78px 65px;
+  -moz-background-size: 78px 65px;
+  background-size: 78px 65px;
+}
+.formedical_header ul li:nth-of-type(3) {
+  background: #fff url("../../img/page/forMedical_img03.png") 5px 6px no-repeat;
+  -webkit-background-size: 86px 63px;
+  -moz-background-size: 86px 63px;
+  background-size: 86px 63px;
+}
+.formedical_header ul li strong {
+  display: block;
+  margin-bottom: 0.25em;
+  color: #fca831;
+}
+.formedical_header ul li p {
+  width: 200px;
+  font-size: 0.87em;
+}
+.formedical_form {
+  margin: 20px 10px 0;
+  background: #fff;
+  border: 1px solid #fca831;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+.formedical_form h3 {
+  padding: 0.5em 0;
+  background: #fca831;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+.formedical_form .formedical_status {
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.formedical_form .formedical_status li {
+  float: left;
+  display: table;
+  width: 30%;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+  font-size: 1em;
+}
+.formedical_form .formedical_status li span {
+  display: table-cell;
+  height: 3em;
+  background: #fff;
+  border: 1px solid #fca831;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #fca831;
+  font-weight: bold;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+.formedical_form .formedical_status li:not(:last-of-type) {
+  margin-right: 5%;
+}
+.formedical_form .formedical_status li:not(:last-of-type):after {
+  content: "";
+  display: inline-block;
+  width: 16.6%;
+  height: 3em;
+  background: url("../../img/page/form_arrow01.png") center center no-repeat;
+  -webkit-background-size: 5px 8px;
+  -moz-background-size: 5px 8px;
+  background-size: 5px 8px;
+  position: absolute;
+  right: -16.6%;
+}
+.formedical_form .formedical_status li span.current {
+  background: #fca831;
+  color: #fff;
+}
+.formedical_form fieldset {
+  margin: 0 10px;
+  padding: 20px 0;
+  border-top: 1px solid #fca831;
+}
+.formedical_form fieldset strong {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+}
+.formedical_form fieldset .must,
+.formedical_form fieldset .any {
+  display: inline-block;
+  margin-left: 1em;
+  padding: 0 0.5em;
+  font-size: 0.5em;
+  letter-spacing: 0.2em;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  position: relative;
+  top: -2px;
+}
+.formedical_form fieldset .must {
+  border: 1px solid #e44370;
+  color: #e44370;
+}
+.formedical_form fieldset .any {
+  border: 1px solid #5f9dc1;
+  color: #5f9dc1;
+}
+.formedical_form fieldset input,
+.formedical_form fieldset textarea {
+  width: 100%;
+  margin-top: 0.5em;
+}
+.formedical_form fieldset textarea {
+  height: 7em;
+}
+.formedical_form fieldset p {
+  font-size: 0.87em;
+  margin-top: 0.5em;
+}
+.formedical_form fieldset label {
+  display: inline-block;
+}
+.formedical_form fieldset label input[type=text] {
+  width: 6em;
+  margin: 0.5em 0.5em 0;
+  vertical-align: baseline;
+}
+.formedical_form fieldset label input[type=checkbox] {
+  width: 1em;
+  margin: 0.5em 0.5em 0;
+}
+.formedical_form fieldset label p {
+  display: inline-block;
+  width: 230px;
+  font-size: 1em;
+}
+.formedical_form .errorlist {
+  margin: 10px;
+  padding: 10px 5px 10px 10px;
+  background: #fde0e8;
+  border: 1px solid #e44370;
+  font-size: 0.87em;
+}
+.formedical_form .errorlist ul li {
+  color: #e44370;
+}
+.formedical_form fieldset p.error {
+  padding: 0.5em 0.25em;
+  background: #fde0e8;
+  color: #e44370;
+  font-size: 0.87em;
+  font-weight: bold;
+}
+.formedical_form fieldset .checktext {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 1em;
+  padding-left: 0.5em;
+  font-weight: normal;
+  line-height: 1.2;
+}
+.btnarea {
+  margin: 0 10px 20px;
+  padding: 10px;
+  background: #feefd9;
+  border-left: 1px solid #fca831;
+  border-right: 1px solid #fca831;
+  border-bottom: 1px solid #fca831;
+  overflow: hidden;
+}
+.btnarea a {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.65em 0 0.5em;
+  background: #5f9dc1;
+  border-bottom: 3px solid #196692;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.btnarea .checkbtn {
+  width: 100%;
+}
+.btnarea .correctbtn {
+  float: left;
+  width: 48%;
+  background: #fff;
+  border: 1px solid #5f9dc1;
+  border-bottom: 3px solid #196692;
+  color: #5f9dc1;
+}
+.btnarea .sendbtn {
+  float: right;
+  width: 48%;
+}
+.thankstext {
+  margin: 2em 0;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.75;
+  text-align: center;
+}
+.thankstext a {
+  display: block;
+  margin: 1.5em auto;
+  color: #1d638b;
+}
+.formcheck-star,
+.formcheck-score >dd>span {
+  display: inline-block;
+  width: 120px;
+  height: 15px;
+  margin: 0;
+  background: url("../../img/page/star_orange_01b.png") 0 0 repeat-x;
+  -webkit-background-size: 24px 15px;
+  -moz-background-size: 24px 15px;
+  background-size: 24px 15px;
+  position: relative;
+}
+.formcheck-star:before,
+.formcheck-score >dd>span:before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 15px;
+  background: url("../../img/page/star_orange_02b.png") 0 0 repeat-x;
+  -webkit-background-size: 24px 15px;
+  -moz-background-size: 24px 15px;
+  background-size: 24px 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.score0:before {
+  width: 0% !important;
+}
+.score5:before {
+  width: 12% !important;
+}
+.score10:before {
+  width: 20% !important;
+}
+.score15:before {
+  width: 32% !important;
+}
+.score20:before {
+  width: 40% !important;
+}
+.score25:before {
+  width: 52% !important;
+}
+.score30:before {
+  width: 60% !important;
+}
+.score35:before {
+  width: 72% !important;
+}
+.score40:before {
+  width: 80% !important;
+}
+.score45:before {
+  width: 92% !important;
+}
+.score50:before {
+  width: 100% !important;
+}

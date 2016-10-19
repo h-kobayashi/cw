@@ -1,0 +1,97 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="device_width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 病院検索・クリニック検索サイト【メディカルライフ】
+		link(rel="stylesheet", media="all", href="css/common/normalize.css")
+		link(rel="stylesheet", media="all", href="css/common/jquery-ui.min.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/common/header.css")
+		link(rel="stylesheet", media="all", href="css/common/footer.css")
+		link(rel="stylesheet", media="all", href="css/page/formedical.css")
+	body.formedical
+		.wrapper
+			include _header.pug
+
+			main.main
+				form
+					.formedical_header
+						h2 医療機関の方へ
+							small ～メディカルライフでできること～
+						p すべて
+							strong 無料
+							| でご利用いただけます。<br>以下のフォームよりご依頼ください。
+						ul
+							li
+								strong 謝った情報の修正
+								p 掲載情報に誤りがある場合、<br>ご連絡ください。
+							li
+								strong 取材の依頼
+								p 訪問取材させていただきより充実した記事を掲載します。
+							li
+								strong 求人の無料掲載
+								p 求人募集要項を掲載できます。<br>成果報酬も一切いただきません。
+					section.formedical_form
+						h3 無料サービスご依頼フォーム
+						ol.formedical_status
+							li: span.current 入力する
+							li: span 入力内容を<br>確認する
+							li: span 送信完了
+						fieldset
+							strong 医療機関名
+							.checktext
+								strong 医療法人依仁会 MMSみんなのクリニック
+						fieldset
+							strong ご担当者お名前
+								small.must 必須
+							label 姓
+								input(type="text", placeholder="例）山田")
+							label 名
+								input(type="text", placeholder="例）太郎")
+						fieldset
+							strong ご担当者お名前カナ
+								small.must 必須
+							label セイ
+								input(type="text", placeholder="例）ヤマダ")
+							label メイ
+								input(type="text", placeholder="例）タロウ")
+						fieldset
+							strong メールアドレス
+								small.must 必須
+							input(type="text", placeholder="例）info@m-life.jp")
+							p 確認のため、もう一度入力してください。
+							input(type="text", placeholder="例）info@m-life.jp")
+						fieldset
+							strong ご依頼の種類
+								small.must 必須
+							label
+								input(type="checkbox")
+								p 謝った情報の修正依頼
+							label
+								input(type="checkbox")
+								p 取材依頼
+							label
+								input(type="checkbox")
+								p 求人掲載
+						fieldset
+							strong ご依頼の内容
+								small.must 必須
+							textarea(placeholder="※取材希望の方は、ご希望の日時もご記入ください。")
+
+					.btnarea
+						a(href="formedical_check.html").checkbtn 入力内容を確認する
+
+			include _footer.pug
+
+
+	script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+	script(type="text/javascript", src="js/jquery-ui.min.js")
+	script(type="text/javascript", src="js/common.js")
+
+
+
+
+
+
+

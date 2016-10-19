@@ -1,0 +1,104 @@
+
+.block_page
+	margin: 20px 10px 40px
+	padding: 0 0 10px
+	background: #fff
+	text-align: center
+	&:before
+		content: ""
+		display: block
+		height: 31px
+		background: url("../../img/page/other_titile_parts.png") center center no-repeat
+		background-size: contain
+		position: relative
+		top: -15px
+	h2
+		display: inline-block
+		margin-bottom: .87em
+		padding: 0 .1em
+		font-size: 1.33em
+		font-weight: bold
+		text-align: center
+		border-bottom: 3px solid #fca831
+	p
+		margin: 0 1em 1em
+		text-align: left
+		&.update
+			margin: 2em 1em 1em
+	section
+		padding: 0 1em
+		text-align: left
+		h3
+			margin: 2em 0 1em 0
+			color: #fca831
+			font-size: 1em
+			font-weight: bold
+		>ol
+			>li
+				list-style: decimal
+				list-style-position: inside
+				>ol
+					margin: .5em
+					>li
+						counter-increment: cnt
+					>li:before
+							content: "(" counter(cnt) ")"
+							display: marker
+
+// regulation
+.block_regulation
+	@extend .block_page
+	section
+		p
+			margin: 0 1em 1em
+		>ol
+			>li
+				margin-bottom: 1em
+
+// personal
+.block_personal
+	@extend .block_page
+	section
+		p
+			margin: 0 0 1em
+		>ol
+			margin: 0 0 1em
+			>li
+				list-style-position: outside
+				margin-left: 1.5em
+				margin-bottom: 0
+		.address
+			margin: 0 0 1em
+			padding: 1em
+			border: 1px solid #ddd
+		a
+			color: #1d638b
+			text-decoration: underline
+
+// link
+.block_link
+	@extend .block_page
+	section
+		p
+			margin: 0 0 1em
+
+// company
+.block_company
+	@extend .block_page
+	dl
+		margin: 0 1em
+		text-align: left
+		dt
+			margin: 0 0 .5em
+			font-weight: bold
+		dd
+			margin: 0 0 1.5em
+			h3
+				color: #fca831
+				font-size: 1em
+				font-weight: bold
+			p
+				margin: 0 0 1em
+
+
+

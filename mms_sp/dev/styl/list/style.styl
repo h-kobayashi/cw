@@ -1,0 +1,385 @@
+.list_header
+	h2
+		padding: 10px 10px 20px
+		background: white
+		font-size: 1.2em
+		font-weight: normal
+		strong
+			font-size: 1.2em
+			font-weight: bold
+	>iframe
+		display: block
+		width: 265px
+		height: 150px
+		margin: 0 auto
+		border: none
+		position: relative
+		top: -10px
+	>fieldset
+		padding: 0 9px
+		position: relative
+	.freeword
+		padding-right: 60px
+		input
+			width: 100%
+		a
+			position: absolute
+			top: -1px
+			right: 9px
+			display: block
+			width: 45px
+			height: 36px
+			background: #fca831
+			border-bottom: 3px solid #dc7e0f
+			border-radius: 5px
+			line-height: 30px
+			text-align: center
+			vertical-align: text-bottom
+			img
+				width: 16px
+
+.drilldown
+	margin: 12px 8px
+	padding: 10px
+	background: #fff
+	position: relative
+	text-align: right
+	h3
+		font-size: 1em
+		position: absolute
+		top: 18px
+		left: 10px
+		&:before
+			content: ""
+			display: inline-block
+			width: 14px
+			height: 14px
+			margin: 0 .25em 0 0
+			background: url("../../img/list/list_icon_02.png") 0 0 no-repeat
+			background-size:contain
+	fieldset.ddtype
+		input
+			display: none
+		label
+			display: inline-block
+			box-sizing: border-box
+			width: 70px
+			padding: .75em 0
+			margin: 0 1px
+			background: #e6e5e5
+			color: #333
+			font-size: 1em
+			font-weight: bold
+			line-height: 1
+			text-align: center
+			transition: .2s
+			small
+				font-size: .87em
+				font-weight: normal
+			&:first-of-type
+				border-radius: 4px 0 0 4px
+			&:last-of-type
+				border-radius: 0 4px 4px 0
+		input:checked + label
+			background: #fca831
+			color: #fff
+			small
+				display: none
+	>div
+		margin: .5em 0 0
+		padding: .75em .5em
+		border: 1px solid #cdcdcc
+		border-radius: 3px
+		font-size: .87em
+		text-align: left
+		span
+			display: inline-block
+			line-height: 1
+			&:before
+				content: ""
+				display: inline-block
+				width: 1em
+				height: 1em
+				margin: 0 .25em 0 0
+				background: url("../../img/list/list_icon_03.png") 0 0 no-repeat
+				background-size: contain
+				border: 1px solid #b8b9b9
+				vertical-align: bottom
+		a
+			color: #1d638b
+	>div.dd_area
+		span:after
+			content: ""
+			display: inline-block
+			width: 5px
+			height: 8px
+			margin: 0 .75em
+			background: url("../../img/list/list_arrow_01.png") 0 0 no-repeat
+			background-size: contain
+	>div.dd_feature
+		span
+			margin: 0 1em 0 0
+
+.list_pager
+	padding: 0 8px 4px
+	p
+		font-size: .87em
+		font-weight: bold
+	nav
+		margin: 10px 0
+		text-align: center
+		a
+			display: inline-block
+			width: 30px
+			height: 30px
+			margin: 0 2px
+			background: #fff
+			color: #333
+			line-height: 30px
+			&.selected
+				color: #fca831
+				font-weight: bold
+		a.prev,a.next
+			width: 13px
+			height: 30px
+			background: transparent
+		a.prev
+			float: left
+			background: url("../../img/list/list_arrow_02_off.png") 0 4px no-repeat
+			background-size: contain
+			&.active
+				background-image: url("../../img/list/list_arrow_02.png")
+		a.next
+			float: right
+			background: url("../../img/list/list_arrow_03_off.png") 0 4px no-repeat
+			background-size: contain
+			&.active
+				background-image: url("../../img/list/list_arrow_03.png")
+
+.block_list
+	padding: 0 8px
+	.list_item
+		margin: 0 0 10px
+		padding: 10px
+		background: #fff
+		h3
+			padding: 0 0 5px 40px
+			background: url("../../img/list/list_icon_04.png") 0 0 no-repeat
+			background-size: 35px 35px
+			font-size: 1em
+			font-weight: bold
+			small
+				display: block
+				color: #333
+				font-size: .5em
+			strong
+				display: block
+				color: #fca831
+				font-size: 1.2em
+		.item_attributes
+			padding: .25em 0
+			border-top: 1px solid #fca831
+			border-bottom: 1px solid #fca831
+			ul
+				letter-spacing: -.1em
+				text-align: center
+				li
+					display: inline
+					font-size: .75em
+					letter-spacing: 0
+					&:not(:last-of-type):after
+						content: ""
+						display: inline-block
+						width: 1px
+						height: 1.1em
+						background: #b1b0b0
+						margin: 0 0 0 .33em
+						vertical-align: middle
+					&.true
+						color: #fca831
+					&.false
+						color: #bbbaba
+		.item_data
+			margin: 15px 0 0
+			ul
+				li
+					margin: 0 0 .5em
+					dl
+						position: relative
+						padding: 0 0 0 5em
+						font-size: 1em
+						dt
+							display: inline-block
+							width: 5em
+							background: #f4f4f4
+							border-radius: 3px
+							color: #333
+							font-size: .87em
+							font-weight: bold
+							line-height: 1.5
+							text-align: center
+							position: absolute
+							top: .1em
+							left: 0
+						dd
+							display: inline-block
+							line-height: 1.2
+							a
+								color: #1d638b
+								font-weight: bold
+			.interviewbtn,.recruitbtn
+				display: block
+				width: 48%
+				margin: 0 0 .5em
+				font-size: .87em
+				font-weight: bold
+				text-align: center
+				&:before
+					content: ""
+					display: inline-block
+					width: 11px
+					height: 11px
+					margin-right: .5em
+					vertical-align: middle
+			.interviewbtn
+				float: left
+				border: 1px solid #fca831
+				color: #fca831
+				position: relative
+				top: -1px
+				&:before
+					background: url("../../img/list/list_icon_08.png") 0 0 no-repeat
+					background-size: contain
+			.recruitbtn
+				float: right
+				border: 1px solid #81b161
+				color: #81b161
+				&:before
+					background: url("../../img/list/list_icon_07.png") 0 0 no-repeat
+					background-size: contain
+			p
+				clear: both
+				padding: .5em
+				background: #fff6e8
+				font-size: .87em
+				overflow: hidden
+				small
+					display: inline-block
+					color: #fca831
+					font-size: .87em
+					font-weight: bold
+					&:after
+						content: ""
+						display: inline-block
+						width: 13px
+						height: 10px
+						margin: 0 .25em 0 .5em
+						background: url("../../img/list/list_icon_09.png") 0 0 no-repeat
+						background-size: contain
+						vertical-align: middle
+				a
+					display: inline-block
+					float: right
+					color: #1d638b
+					font-weight: bold
+
+		.item_address
+			margin: 10px 0 0
+			text-align: center
+			overflow: hidden
+			a
+				display: inline-block
+				width: 49%
+				padding: .75em 0 .5em
+				color: #fff
+				font-size: .9em
+				font-weight: bold
+				text-align: center
+			.telbtn
+				float: left
+				background: #5f9dc1
+				border-bottom: 3px solid #1d638b
+				border-radius: 3px
+				&:before
+					content: ""
+					display: inline-block
+					width: 12px
+					height: 12px
+					margin-right: .25em
+					background: url("../../img/list/list_icon_06.png") 0 0 no-repeat
+					background-size: contain
+			.mapbtn
+				float: right
+				background: #b49868
+				border-bottom: 3px solid #937645
+				border-radius: 3px
+				&:after
+					content: ""
+					display: inline-block
+					width: 12px
+					height: 12px
+					margin-left: .25em
+					background: url("../../img/list/list_icon_05.png") 0 0 no-repeat
+					background-size: contain
+
+
+// ダイアログ
+.dialog_area01,.dialog_area02,.dialog_course,.dialog_feature
+	display: none
+
+	&.ui-dialog-content
+		font-size: 1em
+		font-weight: bold
+		text-align: center
+		p
+			margin: 2em 0
+		strong
+			color: #fca831
+	& + .ui-dialog-buttonpane
+		margin-bottom: 30px
+		.ui-dialog-buttonset
+			button
+				width: 8em
+				height: 2.2em
+				margin: 0 .2em
+				background: transparent
+				border: 1px solid #fca831
+				border-radius: 2px
+				color: #fca831
+				font-size: 1.1em
+				font-weight: bold
+.dialog_area03
+	display: none
+.ui-dialog .ui-dialog-content.dialog_area03
+	margin: 0 0 10px
+	padding: 0
+	h4
+		margin: 2em 0 1em
+		font-size: 1em
+		font-weight: bold
+		text-align: center
+	ul
+		overflow: hidden
+		border-top: 1px solid #c6c6c6
+		li
+			float: left
+			width: 50%
+			a
+				display: block
+				box-sizing: border-box
+				padding: .75em 0 .75em 1em
+				border-bottom: 1px solid #c6c6c6
+				color: #333
+				font-size: .87em
+				line-height: 1.2
+		li:nth-of-type(odd) a
+			border-right: 1px solid #c6c6c6
+	.dialogclose
+		position: absolute
+		top: 10px
+		right: 10px
+		display: block
+		width: 13px
+		height: 13px
+		background: url("../../img/list/list_close01.png") 0 0 no-repeat
+		background-size: contain

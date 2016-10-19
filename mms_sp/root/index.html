@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="device_width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>病院検索・クリニック検索サイト【メディカルライフ】</title>
+    <link rel="stylesheet" media="all" href="css/common/normalize.css">
+    <link rel="stylesheet" media="all" href="css/common/jquery-ui.min.css">
+    <link rel="stylesheet" media="all" href="css/common/common.css">
+    <link rel="stylesheet" media="all" href="css/common/header.css">
+    <link rel="stylesheet" media="all" href="css/common/footer.css">
+    <link rel="stylesheet" media="all" href="css/top/style.css">
+  </head>
+
+  <body class="top">
+    <div class="wrapper">
+      <header class="header">
+        <h1>病院・医院・クリニック検索<br><a href="/" target="_top"><img src="img/common/header_logo.png" alt="病院検索・クリニック検索サイト [Medical Life]"></a></h1><span class="menubtn"></span>
+        <div class="block_menu">
+          <fieldset class="freeword"><input type="text" placeholder="フリーワードで検索する">
+            <a href="#"><img src="img/top/top_search01_icon.png"></a>
+          </fieldset>
+          <ul class="menulist">
+            <li><a href="index.html">HOME</a><a href="list.html">現在地から探す</a><a href="list.html">エリアから探す</a><a href="list.html">特長から探す</a><a href="list.html">新規開業病院・医院</a><a href="list.html">医師・看護師求人情報</a><a href="link.html">このサイトについて</a><a href="regulation.html">ご利用規約</a>
+              <a
+                href="personal.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a></li>
+          </ul><span class="menuclose">CLOSE</span></div>
+      </header>
+      <main class="main">
+        <section class="block_search">
+          <fieldset class="freeword"><input type="text" placeholder="フリーワードで検索する">
+            <a href="#"><img src="img/top/top_search01_icon.png"></a>
+          </fieldset>
+          <fieldset class="location">
+            <a href="javascript:void(0)"><img src="img/top/top_search02_icon.png"><strong>現在地</strong>から探す</a>
+          </fieldset>
+          <div class="search_tab">
+            <h3 class="search_area selected"><strong>エリア</strong>から探す</h3>
+            <h3 class="search_course"><strong>診療科目</strong>から探す</h3>
+            <h3 class="search_feature"><strong>特徴</strong>から探す</h3></div>
+          <section class="search_area selected"><input class="hidden" type="radio" name="searchArea" id="area01" checked><label class="area01" for="area01">北海道・東北</label>
+            <ul class="area01">
+              <li>北海道<a href="list.html">路線から</a><a href="list.html">地域から</a></li>
+              <li>岩手県<a href="list.html">路線から</a><a href="list.html">地域から</a></li>
+              <li>青森県<a href="list.html">路線から</a><a href="list.html">地域から</a></li>
+              <li>宮城県<a href="list.html">路線から</a><a href="list.html">地域から</a></li>
+              <li>秋田県<a href="list.html">路線から</a><a href="list.html">地域から</a></li>
+              <li>山形県<a href="list.html">路線から</a><a href="list.html">地域から</a></li>
+              <li>福島県<a href="list.html">路線から</a><a href="list.html">地域から</a></li>
+            </ul><input class="hidden" type="radio" name="searchArea" id="area02"><label class="area02" for="area02">北陸・中部</label>
+            <ul class="area02">
+              <li> <a href="list.html">路線から</a><a href="list.html">地域から</a></li>
+            </ul><input class="hidden" type="radio" name="searchArea" id="area03"><label class="area03" for="area03">関東</label>
+            <ul class="area03">
+              <li> <a href="list.html">路線から</a><a href="list.html">地域から</a></li>
+            </ul><input class="hidden" type="radio" name="searchArea" id="area04"><label class="area04" for="area04">近畿</label>
+            <ul class="area04">
+              <li> <a href="list.html">路線から</a><a href="list.html">地域から</a></li>
+            </ul><input class="hidden" type="radio" name="searchArea" id="area05"><label class="area05" for="area05">中国・四国</label>
+            <ul class="area05">
+              <li> <a href="list.html">路線から</a><a href="list.html">地域から</a></li>
+            </ul><input class="hidden" type="radio" name="searchArea" id="area06"><label class="area06" for="area06">九州・沖縄</label>
+            <ul class="area06">
+              <li> <a href="list.html">路線から</a><a href="list.html">地域から</a></li>
+            </ul>
+          </section>
+          <section class="search_course"><input class="hidden" type="radio" name="searchCourse" id="course01"><label class="course01" for="course01">内科</label>
+            <ul class="course01">
+              <li>
+                <a href="list.html"> </a>
+              </li>
+            </ul><input class="hidden" type="radio" name="searchCourse" id="course02"><label class="course02" for="course02">外科</label>
+            <ul class="course02">
+              <li>
+                <a href="list.html"> </a>
+              </li>
+            </ul><input class="hidden" type="radio" name="searchCourse" id="course03"><label class="course03" for="course03">アレルギー疾患</label>
+            <ul class="course03">
+              <li>
+                <a href="list.html"> </a>
+              </li>
+            </ul><input class="hidden" type="radio" name="searchCourse" id="course04"><label class="course04" for="course04">循環器疾患</label><input class="hidden" type="radio" name="searchCourse" id="course05"><label class="course05" for="course05">呼吸器疾患</label>
+            <ul
+              class="course04">
+              <li>
+                <a href="list.html"> </a>
+              </li>
+              </ul>
+              <ul class="course05">
+                <li>
+                  <a href="list.html"> </a>
+                </li>
+              </ul><input class="hidden" type="radio" name="searchCourse" id="course06" checked><label class="course06" for="course06">小児疾患</label><input class="hidden" type="radio" name="searchCourse" id="course07"><label class="course07" for="course07">糖尿病疾患系</label>
+              <ul
+                class="course06">
+                <li><a href="list.html">小児科</a></li>
+                <li><a href="list.html">小児外科</a></li>
+                <li><a href="list.html">新生児</a></li>
+                </ul>
+                <ul class="course07">
+                  <li>
+                    <a href="list.html"> </a>
+                  </li>
+                </ul><input class="hidden" type="radio" name="searchCourse" id="course08"><label class="course08" for="course08">耳鼻のど疾患</label><input class="hidden" type="radio" name="searchCourse" id="course09"><label class="course09" for="course09">消化器疾患</label>
+                <ul
+                  class="course08">
+                  <li>
+                    <a href="list.html"> </a>
+                  </li>
+                  </ul>
+                  <ul class="course09">
+                    <li>
+                      <a href="list.html"> </a>
+                    </li>
+                  </ul><input class="hidden" type="radio" name="searchCourse" id="course10"><label class="course10" for="course10">腎臓疾患</label><input class="hidden" type="radio" name="searchCourse" id="course11"><label class="course11" for="course11">皮ふ疾患</label>
+                  <ul
+                    class="course10">
+                    <li>
+                      <a href="list.html"> </a>
+                    </li>
+                    </ul>
+                    <ul class="course11">
+                      <li>
+                        <a href="list.html"> </a>
+                      </li>
+                    </ul><input class="hidden" type="radio" name="searchCourse" id="course12"><label class="course12" for="course12">女性疾患</label><input class="hidden" type="radio" name="searchCourse" id="course13"><label class="course13" for="course13">脳の疾患</label>
+                    <ul
+                      class="course12">
+                      <li>
+                        <a href="list.html"> </a>
+                      </li>
+                      </ul>
+                      <ul class="course13">
+                        <li>
+                          <a href="list.html"> </a>
+                        </li>
+                      </ul><input class="hidden" type="radio" name="searchCourse" id="course14"><label class="course14" for="course14">こころの疾患</label><input class="hidden" type="radio" name="searchCourse" id="course15"><label class="course15" for="course15">整形外科</label>
+                      <ul
+                        class="course14">
+                        <li>
+                          <a href="list.html"> </a>
+                        </li>
+                        </ul>
+                        <ul class="course15">
+                          <li>
+                            <a href="list.html"> </a>
+                          </li>
+                        </ul><input class="hidden" type="radio" name="searchCourse" id="course16"><label class="course16" for="course16">泌尿器疾患</label><input class="hidden" type="radio" name="searchCourse" id="course17"><label class="course17" for="course17">目の疾患</label>
+                        <ul
+                          class="course16">
+                          <li>
+                            <a href="list.html"> </a>
+                          </li>
+                          </ul>
+                          <ul class="course17">
+                            <li>
+                              <a href="list.html"> </a>
+                            </li>
+                          </ul><input class="hidden" type="radio" name="searchCourse" id="course18"><label class="course18" for="course18">男性疾患</label><input class="hidden" type="radio" name="searchCourse" id="course19"><label class="course19" for="course19">美容系</label>
+                          <ul
+                            class="course18">
+                            <li>
+                              <a href="list.html"> </a>
+                            </li>
+                            </ul>
+                            <ul class="course19">
+                              <li>
+                                <a href="list.html"> </a>
+                              </li>
+                            </ul><input class="hidden" type="radio" name="searchCourse" id="course20"><label class="course20" for="course20">歯の疾患</label><input class="hidden" type="radio" name="searchCourse" id="course21"><label class="course21" for="course21">その他</label>
+                            <ul
+                              class="course20">
+                              <li>
+                                <a href="list.html"> </a>
+                              </li>
+                              </ul>
+                              <ul class="course21">
+                                <li>
+                                  <a href="list.html"> </a>
+                                </li>
+                              </ul>
+          </section>
+          <section class="search_feature"><a class="feature01" href="list.html">専門医がいる</a><a class="feature02" href="list.html">女医がいる</a><a class="feature03" href="list.html">漢方処方</a><a class="feature04" href="list.html">在宅診療あり</a><a class="feature05" href="list.html">予約／順番</a><a class="feature06"
+              href="list.html">駐車場あり</a><a class="feature07" href="list.html">休日診療</a><a class="feature08" href="list.html">バリアフリー</a><a class="feature09" href="list.html">早朝診療あり<br>8:00～</a><a class="feature10" href="list.html">夜間診療あり<br>19:00～</a><a class="feature11"
+              href="list.html">外国語対応</a><a class="feature12" href="list.html">カード可</a></section>
+        </section>
+        <div class="contentsbanner"><a class="newopen" href=""><span><strong>新規開業</strong><small>病院・医院</small></span></a><a class="recruit" href=""><span><small>医師・看護師</small><strong>求人情報</strong></span></a></div>
+        <section class="block_interview">
+          <h3>新着クリニック訪問記</h3>
+          <ul>
+            <li>
+              <a href="detail.html#interview"><img src="img/top/top_review_img.jpg" alt="">
+                <h4>メディカルライフ病院</h4><strong>神奈川県横浜市港北区</strong>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキス…</p>
+              </a>
+            </li>
+            <li>
+              <a href="detail.html#interview"><img src="img/top/top_review_img.jpg" alt="">
+                <h4>メディカルライフ病院</h4><strong>神奈川県横浜市港北区</strong>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキス…</p>
+              </a>
+            </li>
+            <li>
+              <a href="detail.html#interview"><img src="img/top/top_review_img.jpg" alt="">
+                <h4>メディカルライフ病院</h4><strong>神奈川県横浜市港北区</strong>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキス…</p>
+              </a>
+            </li>
+            <li>
+              <a href="detail.html#interview"><img src="img/top/top_review_img.jpg" alt="">
+                <h4>メディカルライフ病院</h4><strong>神奈川県横浜市港北区</strong>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキス…</p>
+              </a>
+            </li>
+            <li>
+              <a href="detail.html#interview"><img src="img/top/top_review_img.jpg" alt="">
+                <h4>メディカルライフ病院</h4><strong>神奈川県横浜市港北区</strong>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキス…</p>
+              </a>
+            </li>
+            <li>
+              <a href="detail.html#interview"><img src="img/top/top_review_img.jpg" alt="">
+                <h4>メディカルライフ病院</h4><strong>神奈川県横浜市港北区</strong>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキス…</p>
+              </a>
+            </li>
+            <li>
+              <a href="detail.html#interview"><img src="img/top/top_review_img.jpg" alt="">
+                <h4>メディカルライフ病院</h4><strong>神奈川県横浜市港北区</strong>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキス…</p>
+              </a>
+            </li>
+            <li>
+              <a href="detail.html#interview"><img src="img/top/top_review_img.jpg" alt="">
+                <h4>メディカルライフ病院</h4><strong>神奈川県横浜市港北区</strong>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキス…</p>
+              </a>
+            </li>
+            <li>
+              <a href="detail.html#interview"><img src="img/top/top_review_img.jpg" alt="">
+                <h4>メディカルライフ病院</h4><strong>神奈川県横浜市港北区</strong>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキス…</p>
+              </a>
+            </li>
+            <li>
+              <a href="detail.html#interview"><img src="img/top/top_review_img.jpg" alt="">
+                <h4>メディカルライフ病院</h4><strong>神奈川県横浜市港北区</strong>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキス…</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">
+        <a class="pagetop" href="" onClik="backToTop(); return false"><img src="img/common/footer_pagetop.png" alt="ページトップへ"></a>
+        <nav class="footernav"><a href="link.html">このサイトについて</a><a href="regulation.html">ご利用規約</a><a href="personal.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a></nav>
+        <p>Copyright © MEDICAL LIFE All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+  <div class="dialog">
+    <p>"https://m-life.jp"が現在の<br>位置情報を利用します。<br>よろしいですか？</p>
+  </div>
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/top.js"></script>
+
+</html>

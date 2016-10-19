@@ -1,0 +1,631 @@
+
+
+.detail_title
+	margin: 10px 10px 5px
+	padding: 0 0 0 40px
+	background: url("../../img/detail/detail_name_icon_01.png") 0 0 no-repeat
+	background-size: 35px 35px
+	font-size: 1em
+	font-weight: bold
+	small
+		display: block
+		color: #333
+		font-size: .5em
+	strong
+		display: block
+		color: #fca831
+		font-size: 1.2em
+
+.detail_nav
+	border-top: 3px solid #fca831
+	&.fixed
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 9999
+		width: 100%
+		box-shadow: rgba(0,0,0,.2) 0 0 1px 2px
+	ul
+		background: #fff
+		display: flex
+		li
+			flex-grow: 1
+			display: block
+			width: 20%
+			text-align: center
+			position: relative
+			a,span
+				display: block
+				padding: 40px 0 6px
+				color: #333
+				font-size: .75em
+				font-weight: bold
+			a.selected,.span.selected
+				color: #fff
+			&.dinfo a,&.dinfo span
+				background:  url(../../img/detail/detail_navi_icon_01_off.png) center 6px no-repeat
+				background-size: 26px 26px
+				&.selected
+					background: #fca831 url(../../img/detail/detail_navi_icon_01_on.png) center 6px no-repeat
+					background-size: 26px 26px
+				&.nolink
+					background: url(../../img/detail/detail_navi_icon_01_no.png) center 6px no-repeat
+					background-size: 26px 26px
+					color: #dcdada
+			&.dinterview a,&.dinterview span
+				background: url(../../img/detail/detail_navi_icon_02_off.png) center 6px no-repeat
+				background-size: 26px 26px
+				&.selected
+					background: #fca831 url(../../img/detail/detail_navi_icon_02_on.png) center 6px no-repeat
+					background-size: 26px 26px
+				&.nolink
+					background: url(../../img/detail/detail_navi_icon_02_no.png) center 6px no-repeat
+					background-size: 26px 26px
+					color: #dcdada
+			&.drecruit a,&.drecruit span
+				background: url(../../img/detail/detail_navi_icon_03_off.png) center 6px no-repeat
+				background-size: 26px 26px
+				&.selected
+					background: #fca831 url(../../img/detail/detail_navi_icon_03_on.png) center 6px no-repeat
+					background-size: 26px 26px
+				&.nolink
+					background: url(../../img/detail/detail_navi_icon_03_no.png) center 6px no-repeat
+					background-size: 26px 26px
+					color: #dcdada
+			&.dreview a,&.dreview span
+				background: url(../../img/detail/detail_navi_icon_04_off.png) center 6px no-repeat
+				background-size: 26px 26px
+				&.selected
+					background: #fca831 url(../../img/detail/detail_navi_icon_04_on.png) center 6px no-repeat
+					background-size: 26px 26px
+				&.nolink
+					background: url(../../img/detail/detail_navi_icon_04_no.png) center 6px no-repeat
+					background-size: 26px 26px
+					color: #dcdada
+			&.daccess a,&.daccess span
+				background: url(../../img/detail/detail_navi_icon_05_off.png) center 6px no-repeat
+				background-size: 26px 26px
+				&.selected
+					background: #fca831 url(../../img/detail/detail_navi_icon_05_on.png) center 6px no-repeat
+					background-size: 26px 26px
+				&.nolink
+					background: url(../../img/detail/detail_navi_icon_05_no.png) center 6px no-repeat
+					background-size: 26px 26px
+					color: #dcdada
+			&:not(:last-of-type):after
+				content: ""
+				display: block
+				width: 1px
+				height: 50px
+				background: #dfdede
+				position: absolute
+				top: 6px
+				right: -1px
+
+.datail_info
+	.detail_header
+		padding: 10px 10px 5px
+		text-align: center
+		img
+			width: 100%
+		h3
+			margin: .5em auto 0
+			font-size: 1em
+
+	.detail_attributes
+		ul
+			letter-spacing: -.1em
+			text-align: center
+			li
+				display: inline-block
+				width: 76px
+				margin: 0 0 3px
+				padding: .3em 0 .25em
+				border: 1px solid #bbbaba
+				border-radius: 3px
+				font-size: .87em
+				font-weight: bold
+				line-height: 1
+				letter-spacing: 0
+				&.true
+					background: #fff
+					border-color: #fca831
+					color: #fca831
+				&.false
+					background: transparent
+					border-color: #bbbaba
+					color: #bbbaba
+
+	table.detail_data
+		margin: 10px
+		tr
+			th,td
+				padding: 10px
+			th
+				width: 4em
+				background: #f6efe4
+				font-size: .75em
+				font-weight: bold
+				text-align: center
+				vertical-align: middle
+			td
+				background: #fff
+				font-size: 1em
+				font-weight: normal
+				line-height: 1.5
+				text-align: left
+				vertical-align: top
+				a
+					color: #1d638b
+					font-size: 1.2em
+					font-weight: bold
+		tr:not(:last-of-type)
+			th,td
+				border-bottom: 1px solid #e5cca1
+	a.officiallink
+		display: block
+		margin: 10px
+		padding: .5em 0 .4em
+		background: #fca831
+		border-radius: 4px
+		color: #fff
+		font-size: 1em
+		font-weight: bold
+		text-align: center
+		&:after
+			content: ""
+			display: inline-block
+			width: 12px
+			height: 12px
+			margin-left: .5em
+			background: url("../../img/detail/detail_icon_01.png") 0 0 no-repeat
+			background-size: contain
+	p.prtext
+		margin: 0 10px
+	.detail_schedule
+		margin: 10px
+		strong
+			display: block
+			padding: .2em 0 .1em
+			background: #b49868
+			color: #fff
+			font-size: .87em
+			font-weight: bold
+			text-align: center
+		table
+			width: 100%
+			background: #fff
+			th,td
+				padding: .25em 0
+				border: 1px solid #b49868
+				text-align: center
+			tbody
+				th
+					font-weight: normal
+		p
+			margin: 10px 0 0
+			line-height: 1.2
+			small
+				font-size: .87em
+	.formedicalbtn
+		display: block
+		margin: 20px 10px 10px
+		padding: 2px 0 2px 30px
+		background: #5f9dc1 url("../../img/detail/detail_icon_02.png") 10px bottom no-repeat
+		background-size: 46px 46px
+		border-radius: 3px
+		color: #fff
+		font-size: 1em
+		font-weight: bold
+		text-align: center
+		strong
+			display: block
+			font-size: 1.2em
+
+.detail_access
+	margin: 20px 0 0
+	text-align: center
+	h3
+		color: #b49868
+		font-size: 1.2em
+		font-weight: bold
+		text-align: center
+		&:before
+			content: ""
+			display: inline-block
+			width: 11px
+			height: 15px
+			margin-right: .5em
+			background: url("../../img/detail/detail_icon_03.png") 0 0 no-repeat
+			background-size: contain
+	iframe
+		display: block
+		width: 265px
+		margin: 10px auto
+		border: none
+	nav
+		a
+			display: inline-block
+			width: 140px
+			margin: 0 .25em
+			padding: .75em 0
+			background: #b49868
+			border-bottom: 2px solid #8c6c34
+			border-radius: 3px
+			color: #fff
+			font-size: .87em
+			font-weight: bold
+			text-align: center
+			&:after
+				content: ""
+				display: inline-block
+				width: 12px
+				height: 12px
+				margin-left: .5em
+		a.mapappli:after
+			background: url("../../img/detail/detail_icon_01.png") 0 0 no-repeat
+			background-size: contain
+		a.rootsearch:after
+			background: url("../../img/detail/detail_icon_04.png") 0 0 no-repeat
+			background-size: contain
+
+.detail_interview
+	margin: 20px 10px
+	background: #fff
+	border-radius: 5px 5px
+	overflow: hidden
+	position: relative
+	&:before
+		content: ""
+		display: block
+		width: 100%
+		height: 10px
+		background: #fca831
+		position: absolute
+		top: 0
+		left: 0
+	h3
+		width: 267px
+		height: 51px
+		margin: 20px auto
+		background: url('../../img/detail/detail_titile_bg_01.png') 0 0 no-repeat
+		background-size: contain
+		color: #fca831
+		font-size: 1.33em
+		font-weight: bold
+		text-indent: 3em
+		line-height: 51px
+	.images
+		width: 240px
+		margin: 0 auto
+		.slick-prev,.slick-next
+			width: 14px
+			height: 25px
+			margin-top: -20px
+		.slick-prev
+			left: -17px
+		.slick-prev:before
+			content: ""
+			display: block
+			width: 14px
+			height: 25px
+			background: url("../../img/detail/detail_arrow_l.png") 0 0 no-repeat
+			background-size: contain
+		.slick-next
+			right: -17px
+		.slick-next:before
+			content: ""
+			display: block
+			width: 14px
+			height: 25px
+			background: url("../../img/detail/detail_arrow_r.png") 0 0 no-repeat
+			background-size: contain
+		p
+			margin: 10px 0
+			font-size: 1em
+			text-align: center
+	.doctor
+		margin: 0 10px 20px
+		border-top: 2px solid #fca831
+		h4
+			margin: 10px 5px
+			overflow: hidden
+			position: relative
+			font-size: 1em
+			text-align: left
+			small
+				float: left
+				display: inline-block
+				color: #fca831
+				font-size: 1em
+				font-weight: bold
+				&:before
+					content: ""
+					display: inline-block
+					width: 15px
+					height: 19px
+					margin-right: .5em
+					background: url("../../img/detail/detail_icon_05.png") 0 0 no-repeat
+					background-size: contain
+					vertical-align: middle
+			img
+				float: right
+				display: inline-block
+			strong
+				position: absolute
+				top: 2em
+				left: 1em
+				display: inline-block
+				padding-right: 100px
+				font-size: 1.15em
+	.clinic
+		margin: 0 10px 20px
+		border-top: 2px solid #fca831
+		h4
+			margin: 10px 5px
+			overflow: hidden
+			position: relative
+			color: #fca831
+			font-size: 1em
+			font-weight: bold
+			text-align: left
+			&:before
+				content: ""
+				display: inline-block
+				width: 15px
+				height: 19px
+				margin-right: .5em
+				background: url("../../img/detail/detail_icon_06.png") 0 0 no-repeat
+				background-size: contain
+				vertical-align: middle
+	.comment
+		margin: 0 10px 20px
+		border-top: 2px solid #fca831
+		h4
+			margin: 10px 5px
+			overflow: hidden
+			position: relative
+			color: #fca831
+			font-size: 1em
+			font-weight: bold
+			text-align: left
+			&:before
+				content: ""
+				display: inline-block
+				width: 15px
+				height: 19px
+				margin-right: .5em
+				background: url("../../img/detail/detail_icon_07.png") 0 0 no-repeat
+				background-size: contain
+				vertical-align: middle
+
+@import "_score"
+
+.detail_review
+	display: block
+	margin: 0 10px
+	background: #fff
+	position: relative
+	>h3
+		margin: 0
+		padding: .4em 0 .2em
+		background: #fca831 url("../../img/detail/detail_titile_img_02.png") 10px center no-repeat
+		background-size: 40px 41px
+		border-radius: 3px 3px 0 0
+		color: #fff
+		font-size: 1.2em
+		font-weight: bold
+		line-height: 1.2
+		text-align: center
+	>.totalscore
+		margin: 10px
+		padding: 10px
+		border: 2px solid #e44365
+		border-radius: 3px
+		color: #e44365
+		font-size: 1em
+		font-weight: bold
+		text-align: center
+	// 個別レビューブロック
+	.review-item
+		clear: both
+		display: block
+		margin: 0 10px
+		padding: 0 0 10px
+		background: url("../../img/detail/detail_line.png") center bottom no-repeat
+		background-size: contain
+		overflow: hidden
+		&:last-of-type
+			padding: 10px 0 0
+			background: none
+		>h5
+			margin: 10px 0 .5em
+			padding: 0 .25em .25em
+			border-bottom: 1px solid #fca831			
+			color: #fca831
+			font-size: 1em
+			font-weight: bold
+			position: relative
+			&:before
+				content: ""
+				display: inline-block
+				width: 14px
+				height: 15px
+				margin-right: .5em
+				background: url("../../img/detail/detail_icon_08.png") 0 0 no-repeat
+				background-size: 14px 15px
+				vertical-align: middle
+			>small
+				display: inline-block
+				color: #333
+				position: absolute
+				top: 3px
+				right: 10px
+		.itemscore
+			>dl
+				display: block
+				margin: 0 0 .5em
+				padding: 0
+				font-size: .87em
+				dt
+					display: inline
+					font-weight: bold
+				dd
+					display: inline
+			.scorelist
+				background: #f4f4f4
+				font-weight: bold
+				>p
+					margin: 0 10px
+					padding: .5em 0 .25em
+					border-bottom: 1px solid #e44365
+					color: #e44365
+					font-size: 1.15em
+					text-align: center
+				>ul
+					padding: 10px 0
+					>li
+						margin-right: 25px
+						font-size: .87em
+						text-align: right
+		>p
+			margin: 10px 0
+			font-size: .87em
+
+.detail_comment
+	display: block
+	margin: 20px 10px
+	background: #fff
+	position: relative
+	>h3
+		margin: 0
+		padding: 1em 0 .8em 1.5em
+		background: #fca831 url("../../img/detail/detail_titile_img_03.png") 10px center no-repeat
+		background-size: 40px 41px
+		border-radius: 3px 3px 0 0
+		color: #fff
+		font-size: 1.2em
+		font-weight: bold
+		line-height: 1.2
+		text-align: center
+	>ul
+		padding: 10px
+		li
+			font-size: .87em
+			span
+				display: block
+				margin: 0 0 .5em
+				font-weight: bold
+		li:not(:last-of-type)
+			margin: 0 0 10px
+
+.detail_recruit
+	margin: 0 10px
+	h3
+		position: relative
+		padding: .5em 0 .5em 82px
+		background: #81b161
+		border-radius: 4px 4px 0 0
+		color: #fff
+		font-size: 1em
+		line-height: 1.2
+		text-align: center
+		&:before
+			content: "求人情報"
+			position: absolute
+			left: 0
+			bottom: 0
+			display: inline-block
+			box-sizing: border-box
+			width: 82px
+			height: 61px
+			padding-top: 47px
+			background: url("../../img/detail/detail_titile_img_04.png") 0 0 no-repeat
+			background-size: 82px 61px
+			font-size: .75em
+		strong
+			display: block
+			font-size: 1.25em
+			small
+				font-size: .75em
+	ul
+		li
+			margin-bottom: 5px
+			padding: 10px
+			background: #fff
+			h5
+				margin: 0 0 10px
+				padding: 0 .25em
+				border-bottom: 1px solid #fca831
+				color: #fca831
+				font-size: 1em
+				font-weight: bold
+				small
+					display: inline-block
+					margin-left: 1em
+					color: #333
+					font-size: 1em
+					font-weight: normal
+			dl
+				margin-bottom: 10px
+				font-size: .87em
+				dt
+					padding: 0 .5em
+					background: #b49868
+					border-radius: 2px
+					color: #fff
+					font-weight: bold
+					position: absolute
+				dd
+					margin-bottom: .5em
+					padding: 0 0 0 6em
+			a
+				display: block
+				padding: .5em 0 .4em
+				background: #60983a
+				border-bottom: 2px solid #457823
+				border-radius: 4px
+				color: #fff
+				font-size: 1em
+				font-weight: bold
+				letter-spacing: .1em
+				text-align: center
+	.company_data
+		margin: 15px 10px 10px
+		padding: 10px
+		background: #fff
+		border: 2px solid #c6e9af
+		box-shadow: #fff 0 0 0 10px
+		h4
+			padding: 5px 10px 10px
+			border-bottom: 1px solid #c6e9af
+			font-size: 1.2em
+			text-align: center
+		dl
+			padding: 10px 0
+			position: relative
+			font-size: .87em
+			line-height: 1.2
+			text-align: left
+			dt
+				position: absolute
+				width: 5em
+				color: #a8c895
+				margin-top: 2px
+				font-weight: bold
+				font-size: .87em
+				text-align: center
+				&:after
+					content: ""
+					position: absolute
+					top: 1px
+					right: -1em
+					display: inline-block
+					width: 5px
+					height: 7px
+					background: url("../../img/detail/detail_arrow_recruit.png") 0 0 no-repeat
+					background-size: contain
+			dd
+				margin: 0 0 .5em
+				padding: 0 0 0 6em
+
