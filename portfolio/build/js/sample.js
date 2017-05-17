@@ -1,0 +1,1 @@
+"use strict";function greeter(e){return"Hello, "+e}var user="Tarou Yamada";document.body.innerHTML=greeter(user);

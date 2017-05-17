@@ -1,0 +1,7 @@
+// Typescript config
+{
+	"compileOptions" : {
+		"target" : "ES6",
+		"rootDir" : "src/ts"
+	}
+}
