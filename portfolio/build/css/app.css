@@ -1,18 +1,113 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+html,
 body {
-  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
-.header-title {
-  margin: 10px;
-  font-size: 3em;
+.header {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
 }
-.menu .menu-list {
+.header h1 {
+  font-size: 2em;
+  text-align: left;
+}
+nav {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  padding: 100px;
+  background: url("../img/rocky.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+nav .menu-list {
   display: inline-block;
   width: 100px;
   margin: 10px;
 a
   text-deoration: underline;
+}
+.main {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.article__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 2px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+.article {
+  display: block;
+  width: auto;
+  min-width: 300px;
+  max-width: 600px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 2px;
+}
+.article a {
+  display: block;
+  background: #fff;
+  border: 1px solid #333;
+  border-radius: 7px;
+  overflow: hidden;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+}
+.article img {
+  display: block;
+  min-width: 100%;
+  max-height: 240px;
+  opacity: 1;
+}
+.article h2 {
+  padding: 20px;
+  font-size: 1.5em;
+}
+.article p {
+  padding: 0 20px 20px;
+  font-size: 1em;
+  line-height: 1.5;
+}
+.article a:hover {
+  background: #f2f9ff;
+  border: 1px solid #333;
+  -webkit-box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
+          box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
+  top: -1px;
+}
+.article a:hover img {
+  opacity: 0.8;
+}
+.article a:active {
+  border: 1px solid #333;
+  -webkit-box-shadow: rgba(0,0,0,0.2) 0 1px 2px inset;
+          box-shadow: rgba(0,0,0,0.2) 0 1px 2px inset;
+  top: 1px;
 }

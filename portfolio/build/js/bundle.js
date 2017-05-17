@@ -44,7 +44,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-	
+	"use strict";function greeter(t){return"Hello, "+t}var user="Tarou Yamada",button=document.createElement("button");button.textContent=greeter(user);
 
 /***/ })
 /******/ ]);

@@ -10,9 +10,9 @@ gulp.task('watch', function () {
 		gulp.start(['ts']);
 	});
 	
-	watch(config.ts, function () {
-		gulp.start(['webpack']);
-	});
+//	watch(config.ts, function () {
+//		gulp.start(['webpack']);
+//	});
 	
 	// pug
 	watch(config.pug, function () {

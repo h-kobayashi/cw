@@ -2,4 +2,4 @@
 
 var gulp = require('gulp');
 
-gulp.task('build', ['webpack', 'pug', 'stylus']);
+gulp.task('build', ['ts', 'pug', 'stylus']);

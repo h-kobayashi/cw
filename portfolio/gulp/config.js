@@ -17,15 +17,15 @@ module.exports = {
 	},
 
   // webpackの設定
-  webpack: {
-    entry: dest + '/js/sample.js',
-    output: {
-      filename: 'bundle.js'
-    },
-    resolve: {
-      extensions: ['', '.js']
-    }
-  },
+//  webpack: {
+//    entry: dest + '/js/sample.js',
+//    output: {
+//      filename: 'bundle.js'
+//    },
+//    resolve: {
+//      extensions: ['', '.js']
+//    }
+//  },
 	
 	// pugの設定
 	pug: {
