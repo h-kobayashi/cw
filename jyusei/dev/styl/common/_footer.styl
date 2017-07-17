@@ -1,0 +1,161 @@
+
+@import "_color"
+
+.footer
+	display: block
+	width: auto
+	max-width: 1200px
+	margin: 100px 0 0 280px
+	padding: 40px 0 0
+	background: #0096e5
+	position: relative
+	z-index: 2
+	
+	.contact_menu
+		display: none
+
+.footer__social
+	position: absolute
+	top: 40px
+	right: 60px
+	a
+		display: inline-block
+		margin-left: .5rem
+	
+.footer__title
+	margin: 0 54px
+	color: $deepblue
+	font-size: 2.15rem
+	p
+		margin: 20px 0
+		color: $white
+		font-size: .8rem
+
+.footer__text
+	margin: 0 54px
+	padding: 25px 0
+	border-top: 1px solid $lightblue2
+	border-bottom: 1px solid $lightblue2
+	color: $lightblue2
+	font-size: .8rem
+	line-height: 2.2
+
+.footer__nav
+	margin: 30px 54px 0
+	a
+		display: inline-block
+		margin: 0 3em 1em 0
+		color: $white
+		font-size: .9rem
+	a:hover
+		text-decoration: underline
+
+.copyright
+	display: block
+	margin: 20px 0 0
+	background: $blue
+	color: $white
+	font-size: .8rem
+	line-height: 64px
+	text-align: center
+	position: relative
+
+.pagetop
+	display: block
+	width: 65px
+	height: 64px
+	background: $deepblue
+	position: absolute
+	top: 0
+	right: 0
+	img
+		width: 100%
+	&:hover
+		background: $deepblue_o
+
+// tablet
+
+@media screen and (max-width: 959px)
+
+	.footer
+		margin: 50px 0 0
+		padding: 15px 0 90px
+		position: relative
+
+	.footer__title p,.footer__nav,.footer__text
+		display: none
+
+	.footer__social
+		top: 10px
+		left: 10px
+		right: auto
+		a
+			margin-right: .5rem
+	
+	.footer__title
+		margin: 0
+		text-align: center
+	
+	.copyright
+		position: static
+		margin: 0
+		background: transparent
+		font-size: .87rem
+		line-height: 1
+
+	.pagetop
+		width: 50px
+		height: 50px
+		top: 0
+		bottom: auto
+
+	.footer .contact_menu
+		margin: 0
+		padding: 15px 10px 10px
+		background: rgba(0,0,0,.5)
+		text-align: center
+		position: fixed
+		left: 0
+		right: 0
+		bottom: 0
+		display: flex
+		a
+			flex: 1
+			display: inline-block
+			width: auto
+			height: auto
+			border-radius: 5px
+			text-align: center
+			line-height: 1.4
+			vertical-align: text-top
+		.btn_mail
+			margin: 0 6px
+			padding: 10px
+			background: $red
+			border-bottom: 4px solid $deepred
+			color: $white
+			font-size: 1rem
+			&:hover
+				background: $red
+			&:before
+				display: none
+			small
+				display: block
+				color: $black
+				font-size: .87rem
+		.btn_tel
+			margin: 0 6px
+			padding: 10px
+			background: $green
+			border-bottom: 4px solid $deepgreen
+			color: $white
+			font-size: 1rem
+			cursor: pointer
+			&:before
+				display: none
+			small
+				display: block
+				color: $black
+				font-size: .87rem
+				br
+					display: none
