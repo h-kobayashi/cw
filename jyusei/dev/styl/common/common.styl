@@ -22,25 +22,95 @@ img
 	vertical-align: text-bottom
 
 a
-	color: $blue
-	text-decoration: none
-a:hover
-	color: $blue_o
+	color: $black
 	text-decoration: none
 
 h1,h2,h3,h4,h5,h6,b,strong,dt,th
 	font-weight: normal
 
+fieldset
+	display: block
+	margin: 0
+	padding: 0
+	font-weight: normal
+	border: none
+
+select
+	outline: none
+	text-indent: .01px
+	text-overflow: ''
+	background: none transparent
+	vertical-align: middle
+	font-size: inherit
+	color: inherit
+	-webkit-appearance: button
+	-moz-appearance: button
+	appearance: button
+	option
+		background: white
+		color: $black
+select::-ms-expand
+	display: none
+select::-moz-focusring
+	color: transparent
+	text-shadow: 0 0 0 #828c9a
 
 .wrapper
-	width: 100%;
+	width: 100%
 	margin: 0
 	padding: 0
 
 .main
-	width: 1100px;
-	margin: 0 auto;
+	width: 1100px
+	margin: 0 auto
+	padding: 40px 0 100px
+	overflow: hidden
 
+.contents-area
+	float: left
+	width: 850px
+	> section
+		> h2
+			&:before
+				content: ""
+				display: inline-block
+				width: 11px
+				height: 11px
+				background: url(../../img/top/main_title_icon01.png) 0 0 no-repeat
+				background-size: contain
+				position: relative
+				top: -3px
+				margin-right: .5rem
+				font-size: 1.5rem
+	> section:not(:first-of-type)
+		margin-top: 70px
+				
+.side-area
+	float: right
+	
+.banner-items
+	li
+		margin: 0 0 20px
+		a:hover
+			opacity: .7
+
+.btn-area
+	.btn-more
+		background: $orange
+		color: white
+		&:hover
+			background: $orange_o
+	.btn-submit
+		background: $green
+		color: white
+		&:hover
+			background: $green_o
+
+.ellipsis
+	white-space: nowrap
+	overflow: hidden
+.ellipsis.multiline
+	white-space: normal		
 
 @import '_header'
 @import '_footer'

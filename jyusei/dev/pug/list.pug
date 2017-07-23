@@ -1,0 +1,166 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 東京都新宿区の検索結果｜柔道整復師の求人『柔整ワーカー』
+		link(rel="stylesheet", media="all", href="css/common/jquery-ui.min.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/list.css")
+	body.list
+		.wrapper
+
+			include _header.pug
+
+			main.main
+				.contents-area
+					section.search-items
+						nav.searchitems__header
+							dl
+								dt 業態
+								dd 整形外科
+									a(href="") 業態を変更
+							dl
+								dt 職種
+								dd 柔道整復師
+									a(href="") 職種を変更
+							dl
+								dt エリア
+								dd 新宿, 目黒, 恵比寿
+									a(href="") エリアを変更
+							p
+								b 1234
+								| 件の
+								b 柔道整復師求人
+								| が見つかりました。
+							div
+								a(href="javascript:void(0)").disabled &lt;&lt;
+								a(href="javascript:void(0)").disabled &lt;
+								a(href="javascript:void(0)").selected 1
+								a(href="./list.html") 2
+								a(href="./list.html") 3
+								a(href="./list.html") 4
+								a(href="./list.html") &gt;
+								a(href="./list.html") &gt;&gt;
+						ul
+							- for (var i = 0; i < 3; i++) {
+								li.searchitem
+									h3.searchitem-title
+										strong エムアイ整形外科クリニック
+										| の柔道整復師求人
+									nav.searchitem-attribute
+										strong 整形外科
+										ul
+											li PT
+											li 柔整師
+											li あん摩
+									.searchitem-status
+										figure
+											img(src="img/top/pickupitem_image_sample.jpg")
+										dl
+											dt 業態
+											dd 整形外科クリニック
+												ul
+													li 正
+													li パ
+											dt 職種
+											dd 理学療法士（PT)　柔道整復師　あん摩マッサージ指圧師
+											dt 給与
+											dd 正社員
+												strong 月給
+													b 25.0
+													| 万円　～　
+													b 30.0
+													| 万円
+												| <br>
+												| パート・アルバイト
+												strong 時給
+													b 900
+													| 円　～　
+													b 1200
+													| 円
+											dt アクセス
+											dd 東京都西新宿0-0-0　西新宿ビル5階<br>新宿駅：徒歩9分、都庁前駅：徒歩3分、初台駅：徒歩6分
+									p.searchitem-comment
+										strong ★★★未経験者大歓迎！充実の無料研修制度！経験者優遇！
+										span.ellipsis.multiline 求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ
+									ul.searchitem-characters
+										li 正社員
+										li オープニング
+										li 社会保険完備
+										li 完全週休2日
+									.btn-area
+										a(href="./detail.html").btn-more 詳細を見る
+										a(href="./contact.html").btn-submit 応募する
+									a(href="").btn-keep キープ
+							- }
+
+						
+					section.search-business
+						h2 業態で探す
+						ul
+							each val in ["指定しない", "病院", "整形外科クリニック", "その他クリニック", "接骨院・整骨院", "鍼灸院", "鍼灸整骨院", "整体院", "マッサージ・リラクゼーション", "スポーツ・フィットネスクラブ", "デイサービス）（通所介護）", "デイケア（通所リハビリ）", "訪問リハビリ", "訪問マッサージ", "訪問介護", "介護老人福祉施設", "介護老人保健施設"]
+								li: a(href="")= val
+						
+					section.search-job
+						h2 職種で探す
+						ul
+							each val in ["指定しない", "柔道整復師", "あん摩マッサージ指圧師", "看護師・准看護師", "理学療法士（PT）", "作業療法士（OT）", "言語聴覚士（SP）", "鍼灸師", "整体師", "カイロプラクター", "スポーツトレーナー", "リラクゼーション系資格"]
+								li: a(href="")= val
+						
+					section.search-area
+						h2 エリアで探す
+						h3 北海道・東北
+						ul
+							each val in ["北海道", "青森県", "秋田県", "山形県", "岩手県", "宮城県", "福島県"]
+								li: a(href="")= val
+						h3 北陸・中部
+						ul
+							each val in ["新潟県", "富山県", "石川県", "福井県", "山梨県", "長野県", "岐阜県", "静岡県", "愛知県"]
+								li: a(href="")= val
+						h3 関東
+						ul
+							each val in ["茨城県", "栃木県", "群馬県", "埼玉県", "東京都", "神奈川県"]
+								li: a(href="")= val
+						h3 近畿
+						ul
+							each val in ["三重県", "滋賀県", "京都府", "大阪府", "兵庫県", "奈良県", "和歌山県"]
+								li: a(href="")= val
+						h3 中国・四国
+						ul
+							each val in ["鳥取県", "島根県", "岡山県", "広島県", "山口県", "徳島県", "香川県", "愛媛県", "高知県"]
+								li: a(href="")= val
+						h3 九州・沖縄
+						ul
+							each val in ["福岡県", "佐賀県", "長崎県", "熊本県", "大分県", "鹿児島県", "宮崎県", "沖縄県"]
+								li: a(href="")= val
+						
+					section.search-character
+						h2 特徴で探す
+						h3 特徴
+						ul
+							each val in ["駅近", "車・バイク通勤OK", "地域密着", "オープニング"]
+								li: a(href="")= val
+						h3 待遇・福利厚生
+						ul
+							each val in ["ボーナス・賞与あり", "社会保険完備", "住宅手当あり", "交通費支給"]
+								li: a(href="")= val
+						
+			
+				aside.side-area
+					ul.banner-items
+						li: a(href=""): img(src="img/top/side_bnr_01.jpg", alt="")
+						li: a(href=""): img(src="img/top/side_bnr_02.jpg", alt="")
+						li: a(href=""): img(src="img/top/side_bnr_03.jpg", alt="")
+						li: a(href=""): img(src="img/top/side_bnr_04.jpg", alt="")
+						li: a(href=""): img(src="img/top/side_bnr_05.jpg", alt="")
+						li: a(href=""): img(src="img/top/side_bnr_06.jpg", alt="")
+
+
+			include _footer.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		script(type="text/javascript", src="js/common.js")
+

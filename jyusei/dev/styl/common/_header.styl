@@ -15,10 +15,40 @@
 .header-nav
 	float: right
 	text-align: right
+	margin: 10px 0 0
+	a
+		display: inline-block
+		padding: .25rem 1rem
+		color: $black
+		text-decoration: none
+		&:hover
+			color: $pink
+	.keeping-items:before,
+	.recently-items:before
+		content: ""
+		display: inline-block
+		width: 16px
+		height: 16px
+		background-size: contain
+		position: relative
+		top: 1px
+		margin-right: .25rem
+	.keeping-items:before
+		background: url(../../img/top/header_icon_keep.png) 0 0 no-repeat
+	.recently-items:before
+		background: url(../../img/top/header_icon_history.png) 0 0 no-repeat
+	.for-recruiter
+		margin: 0 1rem
+		background: $pink
+		border-radius: 1rem
+		color: white
+		&:hover
+			color: white
 
 .breadclumbs
 	clear: both
-	font-size: .87em
+	margin: 1rem 0
+	font-size: .75rem
 
 	
 // global nav
@@ -36,3 +66,30 @@
 	li
 		display: block
 		flex: 1
+		a
+			display: block
+			height: 60px
+			padding: 10px 0
+			text-align: center
+			color: $black
+			font-size: 1.1rem
+			text-decoration: none
+		a:hover
+			color: $pink
+		a:before
+			content: ""
+			display: inline-block
+			width: 24px
+			height: 24px
+			margin-right: .25rem
+			background-size: contain
+			position: relative
+			top: 7px
+		.recruit-list:before
+			background: url(../../img/top/navi_icon_01.png) center no-repeat;
+		.about-jyusei:before
+			background: url(../../img/top/navi_icon_02.png) center no-repeat;
+		.faq:before
+			background: url(../../img/top/navi_icon_03.png) center no-repeat;
+		.contact:before
+			background: url(../../img/top/navi_icon_04.png) center no-repeat;

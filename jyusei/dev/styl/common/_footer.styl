@@ -1,161 +1,131 @@
 
 @import "_color"
 
-.footer
-	display: block
-	width: auto
-	max-width: 1200px
-	margin: 100px 0 0 280px
-	padding: 40px 0 0
-	background: #0096e5
-	position: relative
-	z-index: 2
-	
-	.contact_menu
-		display: none
-
-.footer__social
-	position: absolute
-	top: 40px
-	right: 60px
-	a
-		display: inline-block
-		margin-left: .5rem
-	
-.footer__title
-	margin: 0 54px
-	color: $deepblue
-	font-size: 2.15rem
-	p
-		margin: 20px 0
-		color: $white
-		font-size: .8rem
-
-.footer__text
-	margin: 0 54px
-	padding: 25px 0
-	border-top: 1px solid $lightblue2
-	border-bottom: 1px solid $lightblue2
-	color: $lightblue2
-	font-size: .8rem
-	line-height: 2.2
-
-.footer__nav
-	margin: 30px 54px 0
-	a
-		display: inline-block
-		margin: 0 3em 1em 0
-		color: $white
-		font-size: .9rem
-	a:hover
-		text-decoration: underline
-
-.copyright
-	display: block
-	margin: 20px 0 0
-	background: $blue
-	color: $white
-	font-size: .8rem
-	line-height: 64px
-	text-align: center
-	position: relative
+.footer__wrapper
+	width: 100%
+	background: $lightgray
 
 .pagetop
-	display: block
-	width: 65px
-	height: 64px
-	background: $deepblue
-	position: absolute
-	top: 0
-	right: 0
-	img
-		width: 100%
-	&:hover
-		background: $deepblue_o
-
-// tablet
-
-@media screen and (max-width: 959px)
-
-	.footer
-		margin: 50px 0 0
-		padding: 15px 0 90px
-		position: relative
-
-	.footer__title p,.footer__nav,.footer__text
-		display: none
-
-	.footer__social
-		top: 10px
-		left: 10px
-		right: auto
-		a
-			margin-right: .5rem
-	
-	.footer__title
-		margin: 0
+	width: 100%
+	a
+		display: block
+		height: 60px
+		padding: 20px 0
+		background: white
+		border-top: 1px solid $pink
+		border-bottom: 1px solid $pink
 		text-align: center
-	
-	.copyright
-		position: static
-		margin: 0
-		background: transparent
-		font-size: .87rem
-		line-height: 1
-
-	.pagetop
-		width: 50px
-		height: 50px
-		top: 0
-		bottom: auto
-
-	.footer .contact_menu
-		margin: 0
-		padding: 15px 10px 10px
-		background: rgba(0,0,0,.5)
-		text-align: center
-		position: fixed
-		left: 0
-		right: 0
-		bottom: 0
-		display: flex
-		a
-			flex: 1
+		color: $pink
+		font-size: .75rem
+		text-decoration: none
+		&:before
+			content: ""
 			display: inline-block
-			width: auto
-			height: auto
-			border-radius: 5px
+			width: 15px
+			height: 9px
+			background: url(../../img/top/footer_pagetop_icon.png) 0 0 no-repeat
+			background-size: contain
+			margin-right: .5rem
+		&:hover
+			text-decoration: underline
+
+.footer
+	width: 1100px
+	margin: 0 auto
+	padding: 40px 0
+	position: relative
+	> p
+		margin: 20px 0
+	.contact__block
+		width: 375px
+		position: absolute
+		top: 40px
+		right: 0
+		h3
+			padding: .5rem 0 .25rem
+			background: $pink
+			color: white
+			font-size: .75rem
+			line-height: 1
 			text-align: center
-			line-height: 1.4
-			vertical-align: text-top
-		.btn_mail
-			margin: 0 6px
-			padding: 10px
-			background: $red
-			border-bottom: 4px solid $deepred
-			color: $white
-			font-size: 1rem
-			&:hover
-				background: $red
-			&:before
-				display: none
-			small
+		p
+			overflow: hidden
+			> a
+				float: left
+				color: $pink
+				font-size: 2.5rem
+				cursor: default
+				&:before
+					content: ""
+					display: inline-block
+					width: 25px
+					height: 25px
+					background: url(../../img/top/footer_icon_04.png) 0 0 no-repeat
+					background-size: contain
+					position: relative
+					margin-right: .5rem
+			> small
+				float: right
 				display: block
-				color: $black
-				font-size: .87rem
-		.btn_tel
-			margin: 0 6px
-			padding: 10px
+				padding: .5rem 0
+				text-align: center
+		.btn-contact
+			display: block
+			margin: 0 3px 0 0
+			padding: 1rem
 			background: $green
-			border-bottom: 4px solid $deepgreen
-			color: $white
-			font-size: 1rem
-			cursor: pointer
+			border-radius: 4px
+			box-shadow: 3px 3px 0 rgba(23,157,133,1)
+			color: white
+			font-size: 1.5rem
+			text-align: center
 			&:before
-				display: none
-			small
-				display: block
-				color: $black
-				font-size: .87rem
-				br
-					display: none
+				content: ""
+				display: inline-block
+				width: 24px
+				height: 18px
+				background: url(../../img/top/footer_icon_05.png) 0 0 no-repeat
+				background-size: contain
+				position: relative
+				top: 1px
+				margin-right: .5rem
+			&:hover
+				background: $green_o
+		.sns
+			position: absolute
+			top: 0
+			left: -170px
+			li
+				display: inline-block
+				margin: 0 5px
+
+	.footer-nav
+		h4
+			margin: 1.5rem 0 0
+			color: $pink
+		ul
+			li
+				display: inline-block
+				margin: 1rem 2.5rem 0 0
+				a
+					color: $black
+				a:before
+					content: ""
+					display: inline-block
+					width: 6px
+					height: 9px
+					background: url(../../img/top/icon_list02.png) 0 0 no-repeat
+					background-size: contain
+					margin-right: .5rem
+				a:hover
+					text-decoration: underline
+					
+
+.copyright
+	width: 100%
+	padding: 20px 0
+	background: $pink
+	color: white
+	font-size: .75em
+	text-align: center
+		

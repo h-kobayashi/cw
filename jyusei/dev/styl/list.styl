@@ -1,0 +1,40 @@
+
+@import "common/_color"
+@import "common/_item"
+
+
+// search items
+
+.search-items
+	.searchitem
+		@extend .large-item
+	.searchitem-title
+		@extend .largeitem-title
+	.searchitem-attribute
+		@extend .largeitem-attribute
+	.searchitem-status
+		@extend .largeitem-status
+	.searchitem-comment
+		@extend .largeitem-comment
+	.searchitem-characters
+		@extend .largeitem-characters
+
+.searchitems__header
+	dl
+		display: flex
+		flex-wrap: nowrap
+	dt
+		width: 10rem
+		padding: 2rem 0
+		background: $pink
+		border-radius: 8px 0 0 8px
+		color: white
+		font-size: 1.5rem
+		text-align: center
+	dd
+		flex: 1
+		padding: 2rem
+		background: $lightgray
+		border-radius: 0 8px 8px 0
+		
+
