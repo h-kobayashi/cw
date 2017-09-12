@@ -1,5 +1,6 @@
 
 @import "_normalize"
+@import "_font"
 @import "_color"
 
 *
@@ -7,7 +8,8 @@
 
 html,body
 	background: #fff
-	font-family: Rounded M+ 1c, "メイリオ", sans-serif;
+	font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', arial, helvetica, sans-serif
+	@extend .r
 	font-size: 14px
 	color: #373737
 
@@ -69,8 +71,10 @@ select::-moz-focusring
 .contents-area
 	float: left
 	width: 850px
-	> section
-		> h2
+	section
+		h2
+			@extend .b
+			font-size: 1.5rem
 			&:before
 				content: ""
 				display: inline-block
@@ -82,7 +86,7 @@ select::-moz-focusring
 				top: -3px
 				margin-right: .5rem
 				font-size: 1.5rem
-	> section:not(:first-of-type)
+	section:not(:first-of-type)
 		margin-top: 70px
 				
 .side-area
@@ -98,11 +102,13 @@ select::-moz-focusring
 	.btn-more
 		background: $orange
 		color: white
+		@extend .b
 		&:hover
 			background: $orange_o
 	.btn-submit
 		background: $green
 		color: white
+		@extend .b
 		&:hover
 			background: $green_o
 

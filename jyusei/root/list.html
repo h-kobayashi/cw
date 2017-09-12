@@ -47,22 +47,22 @@
         <div class="contents-area">
           <section class="search-items">
             <nav class="searchitems__header">
-              <dl>
+              <dl class="searchitem-business">
                 <dt>業態</dt>
                 <dd>整形外科
-                  <a href="">業態を変更</a>
+                  <a href="javascript:void(0)">業態を変更</a>
                 </dd>
               </dl>
-              <dl>
+              <dl class="searchitem-job">
                 <dt>職種</dt>
                 <dd>柔道整復師
-                  <a href="">職種を変更</a>
+                  <a href="javascript:void(0)">職種を変更</a>
                 </dd>
               </dl>
-              <dl>
+              <dl class="searchitem-area">
                 <dt>エリア</dt>
                 <dd>新宿, 目黒, 恵比寿
-                  <a href="">エリアを変更</a>
+                  <a href="javascript:void(0)">エリアを変更</a>
                 </dd>
               </dl>
               <p>
@@ -611,6 +611,8 @@
               </li>
             </ul>
           </div>
+          <a class="keep-items" href="">キープした
+            <br>求人を見る</a>
           <nav class="footer-nav">
             <ul>
               <li>
@@ -674,5 +676,615 @@
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jquery.ellipsis.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
+    <div class="wrapper-shadow">
+      <div class="searchmodal searchmodal-area">
+        <img class="btn-close" src="img/top/icon_close.png">
+        <h4>エリアを選択する</h4>
+        <!-- タブ-->
+        <nav>
+          <ul>
+            <li class="selected">
+              <strong>都道府県</strong>で探す</li>
+            <li>
+              <strong>住所</strong>で探す</li>
+            <li>
+              <strong>路線・駅</strong>で探す</li>
+          </ul>
+        </nav>
+        <form>
+          <!-- 都道府県-->
+          <section class="searchmodal-area-state">
+            <fieldset>
+              <h5>北海道・東北</h5>
+              <ul>
+                <li>
+                  <input type="checkbox" id="area1_0">
+                  <label for="area1_0">北海道</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area1_1">
+                  <label for="area1_1">青森県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area1_2">
+                  <label for="area1_2">秋田県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area1_3">
+                  <label for="area1_3">山形県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area1_4">
+                  <label for="area1_4">岩手県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area1_5">
+                  <label for="area1_5">宮城県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area1_6">
+                  <label for="area1_6">福島県</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>北陸・中部</h5>
+              <ul>
+                <li>
+                  <input type="checkbox" id="area2_0">
+                  <label for="area2_0">新潟県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area2_1">
+                  <label for="area2_1">富山県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area2_2">
+                  <label for="area2_2">石川県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area2_3">
+                  <label for="area2_3">福井県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area2_4">
+                  <label for="area2_4">山梨県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area2_5">
+                  <label for="area2_5">長野県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area2_6">
+                  <label for="area2_6">岐阜県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area2_7">
+                  <label for="area2_7">静岡県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area2_8">
+                  <label for="area2_8">愛知県</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>関東</h5>
+              <ul>
+                <li>
+                  <input type="checkbox" id="area3_0">
+                  <label for="area3_0">茨城県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area3_1">
+                  <label for="area3_1">栃木県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area3_2">
+                  <label for="area3_2">群馬県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area3_3">
+                  <label for="area3_3">埼玉県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area3_4">
+                  <label for="area3_4">東京都</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area3_5">
+                  <label for="area3_5">神奈川県</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>近畿</h5>
+              <ul>
+                <li>
+                  <input type="checkbox" id="area4_0">
+                  <label for="area4_0">三重県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area4_1">
+                  <label for="area4_1">滋賀県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area4_2">
+                  <label for="area4_2">京都府</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area4_3">
+                  <label for="area4_3">大阪府</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area4_4">
+                  <label for="area4_4">兵庫県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area4_5">
+                  <label for="area4_5">奈良県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area4_6">
+                  <label for="area4_6">和歌山県</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>中国・四国</h5>
+              <ul>
+                <li>
+                  <input type="checkbox" id="area5_0">
+                  <label for="area5_0">鳥取県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area5_1">
+                  <label for="area5_1">島根県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area5_2">
+                  <label for="area5_2">岡山県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area5_3">
+                  <label for="area5_3">広島県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area5_4">
+                  <label for="area5_4">山口県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area5_5">
+                  <label for="area5_5">徳島県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area5_6">
+                  <label for="area5_6">香川県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area5_7">
+                  <label for="area5_7">愛媛県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area5_8">
+                  <label for="area5_8">高知県</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>九州・沖縄</h5>
+              <ul>
+                <li>
+                  <input type="checkbox" id="area6_0">
+                  <label for="area6_0">福岡県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area6_1">
+                  <label for="area6_1">佐賀県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area6_2">
+                  <label for="area6_2">長崎県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area6_3">
+                  <label for="area6_3">熊本県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area6_4">
+                  <label for="area6_4">大分県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area6_5">
+                  <label for="area6_5">鹿児島県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area6_6">
+                  <label for="area6_6">宮崎県</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="area6_7">
+                  <label for="area6_7">沖縄県</label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="btn-area">
+              <button class="btn-submit">この条件で検索する</button>
+            </div>
+          </section>
+          <!-- 住所-->
+          <section class="searchmodal-area-address">
+            <fieldset>
+              <h5>北海道・東北</h5>
+              <ul>
+                <li>
+                  <a href="">北海道</a>
+                </li>
+                <li>
+                  <a href="">青森県</a>
+                </li>
+                <li>
+                  <a href="">秋田県</a>
+                </li>
+                <li>
+                  <a href="">山形県</a>
+                </li>
+                <li>
+                  <a href="">岩手県</a>
+                </li>
+                <li>
+                  <a href="">宮城県</a>
+                </li>
+                <li>
+                  <a href="">福島県</a>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>北陸・中部</h5>
+              <ul>
+                <li>
+                  <a href="">新潟県</a>
+                </li>
+                <li>
+                  <a href="">富山県</a>
+                </li>
+                <li>
+                  <a href="">石川県</a>
+                </li>
+                <li>
+                  <a href="">福井県</a>
+                </li>
+                <li>
+                  <a href="">山梨県</a>
+                </li>
+                <li>
+                  <a href="">長野県</a>
+                </li>
+                <li>
+                  <a href="">岐阜県</a>
+                </li>
+                <li>
+                  <a href="">静岡県</a>
+                </li>
+                <li>
+                  <a href="">愛知県</a>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>関東</h5>
+              <ul>
+                <li>
+                  <a href="">茨城県</a>
+                </li>
+                <li>
+                  <a href="">栃木県</a>
+                </li>
+                <li>
+                  <a href="">群馬県</a>
+                </li>
+                <li>
+                  <a href="">埼玉県</a>
+                </li>
+                <li>
+                  <a href="">東京都</a>
+                </li>
+                <li>
+                  <a href="">神奈川県</a>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>近畿</h5>
+              <ul>
+                <li>
+                  <a href="">三重県</a>
+                </li>
+                <li>
+                  <a href="">滋賀県</a>
+                </li>
+                <li>
+                  <a href="">京都府</a>
+                </li>
+                <li>
+                  <a href="">大阪府</a>
+                </li>
+                <li>
+                  <a href="">兵庫県</a>
+                </li>
+                <li>
+                  <a href="">奈良県</a>
+                </li>
+                <li>
+                  <a href="">和歌山県</a>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>中国・四国</h5>
+              <ul>
+                <li>
+                  <a href="">鳥取県</a>
+                </li>
+                <li>
+                  <a href="">島根県</a>
+                </li>
+                <li>
+                  <a href="">岡山県</a>
+                </li>
+                <li>
+                  <a href="">広島県</a>
+                </li>
+                <li>
+                  <a href="">山口県</a>
+                </li>
+                <li>
+                  <a href="">徳島県</a>
+                </li>
+                <li>
+                  <a href="">香川県</a>
+                </li>
+                <li>
+                  <a href="">愛媛県</a>
+                </li>
+                <li>
+                  <a href="">高知県</a>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>九州・沖縄</h5>
+              <ul>
+                <li>
+                  <a href="">福岡県</a>
+                </li>
+                <li>
+                  <a href="">佐賀県</a>
+                </li>
+                <li>
+                  <a href="">長崎県</a>
+                </li>
+                <li>
+                  <a href="">熊本県</a>
+                </li>
+                <li>
+                  <a href="">大分県</a>
+                </li>
+                <li>
+                  <a href="">鹿児島県</a>
+                </li>
+                <li>
+                  <a href="">宮崎県</a>
+                </li>
+                <li>
+                  <a href="">沖縄県</a>
+                </li>
+              </ul>
+            </fieldset>
+          </section>
+          <!-- 路線・駅-->
+          <section class="searchmodal-area-route">
+            <fieldset>
+              <strong>秋田県</strong>の路線を選ぶ
+              <a class="btn-common" href="">都道府県を変更</a>
+            </fieldset>
+            <fieldset>
+              <h5>JR東日本</h5>
+              <ul>
+                <li>
+                  <input type="checkbox" id="route1_0">
+                  <label for="route1_0">JR奥羽本線（新庄～青森）</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="route1_1">
+                  <label for="route1_1">JR五能線</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="route1_2">
+                  <label for="route1_2">JR北上線</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="route1_3">
+                  <label for="route1_3">JR田沢湖線</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="route1_4">
+                  <label for="route1_4">十和田八幡平四季彩ライン</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="route1_5">
+                  <label for="route1_5">JR羽越本線</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="route1_6">
+                  <label for="route1_6">JR男鹿線</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>秋田内陸縦貫鉄道</h5>
+              <ul>
+                <li>
+                  <input type="checkbox" id="route2_0">
+                  <label for="route2_0">秋田内陸線</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>由利高原鉄道</h5>
+              <ul>
+                <li>
+                  <input type="checkbox" id="route3_0">
+                  <label for="route3_0">鳥海山ろく線</label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="btn-area">
+              <button class="btn-submit">この路線の駅を選択する</button>
+            </div>
+          </section>
+        </form>
+      </div>
+      <div class="searchmodal searchmodal-business">
+        <img class="btn-close" src="img/top/icon_close.png">
+        <h4>業態を選択する</h4>
+        <form>
+          <section>
+            <fieldset>
+              <ul>
+                <li>
+                  <input type="checkbox" id="business_0">
+                  <label for="business_0">病院</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="business_1">
+                  <label for="business_1">整形外科クリニック</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="business_2">
+                  <label for="business_2">その他クリニック</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="business_3">
+                  <label for="business_3">接骨院・整骨院</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="business_4">
+                  <label for="business_4">鍼灸院</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="business_5">
+                  <label for="business_5">鍼灸整骨院</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="business_6">
+                  <label for="business_6">整体院</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="business_7">
+                  <label for="business_7">マッサージ・リラクゼーション</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="business_8">
+                  <label for="business_8">スポーツ・フィットネスクラブ</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="business_9">
+                  <label for="business_9">デイサービス）（通所介護）</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="business_10">
+                  <label for="business_10">デイケア（通所リハビリ）</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="business_11">
+                  <label for="business_11">訪問リハビリ</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="business_12">
+                  <label for="business_12">訪問マッサージ</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="business_13">
+                  <label for="business_13">訪問介護</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="business_14">
+                  <label for="business_14">介護老人福祉施設</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="business_15">
+                  <label for="business_15">介護老人保健施設</label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="btn-area">
+              <button class="btn-submit">この条件で検索する</button>
+            </div>
+          </section>
+        </form>
+      </div>
+      <div class="searchmodal searchmodal-job">
+        <img class="btn-close" src="img/top/icon_close.png">
+        <h4>職種を選択する</h4>
+        <form>
+          <section>
+            <fieldset>
+              <ul>
+                <li>
+                  <input type="checkbox" id="job_0">
+                  <label for="job_0">柔道整復師</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="job_1">
+                  <label for="job_1">あん摩マッサージ指圧師</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="job_2">
+                  <label for="job_2">看護師・准看護師</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="job_3">
+                  <label for="job_3">理学療法士（PT）</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="job_4">
+                  <label for="job_4">作業療法士（OT）</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="job_5">
+                  <label for="job_5">言語聴覚士（SP）</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="job_6">
+                  <label for="job_6">鍼灸師</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="job_7">
+                  <label for="job_7">整体師</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="job_8">
+                  <label for="job_8">カイロプラクター</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="job_9">
+                  <label for="job_9">スポーツトレーナー</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="job_10">
+                  <label for="job_10">リラクゼーション系資格</label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="btn-area">
+              <button class="btn-submit">この条件で検索する</button>
+            </div>
+          </section>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/modal.js"></script>
   </body>
 </html>

@@ -16,18 +16,18 @@ html
 				.contents-area
 					section.search-items
 						nav.searchitems__header
-							dl
+							dl.searchitem-business
 								dt 業態
 								dd 整形外科
-									a(href="") 業態を変更
-							dl
+									a(href="javascript:void(0)") 業態を変更
+							dl.searchitem-job
 								dt 職種
 								dd 柔道整復師
-									a(href="") 職種を変更
-							dl
+									a(href="javascript:void(0)") 職種を変更
+							dl.searchitem-area
 								dt エリア
 								dd 新宿, 目黒, 恵比寿
-									a(href="") エリアを変更
+									a(href="javascript:void(0)") エリアを変更
 							p
 								b 1234
 								| 件の
@@ -164,3 +164,4 @@ html
 		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
 		script(type="text/javascript", src="js/common.js")
 
+		include _search.pug

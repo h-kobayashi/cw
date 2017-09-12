@@ -1,3 +1,205 @@
+@font-face {
+  font-family: Rounded-Mplus-1c-regular;
+  src: url("../../font/mplus-1c-regular.eot");
+  src: url("../../font/mplus-1c-regular.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-regular_web.woff2") format("woff2");
+}
+@font-face {
+  font-family: Rounded-Mplus-1c-medium;
+  src: url("../../font/mplus-1c-medium.eot");
+  src: url("../../font/mplus-1c-medium.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-medium_web.woff2") format("woff2");
+}
+@font-face {
+  font-family: Rounded-Mplus-1c-bold;
+  src: url("../../font/mplus-1c-bold.eot");
+  src: url("../../font/mplus-1c-bold.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-bold_web.woff2") format("woff2");
+}
+.r {
+  font-family: Rounded-Mplus-1c-regular;
+}
+.m,
+.largeitem-title,
+.largeitem-status dl dt,
+.largeitem-characters li,
+.search-business h3,
+.search-job h3,
+.search-area h3,
+.search-character h3,
+.search-business a,
+.search-job a,
+.search-area a,
+.search-character a,
+.search-items .searchitem-title,
+.search-items .searchitem-status dl dt,
+.search-items .searchitem-characters li,
+.searchitems__header dd,
+.searchitems__header p {
+  font-family: Rounded-Mplus-1c-medium;
+}
+.b,
+.large-item .btn-keep,
+.largeitem-title strong,
+.largeitem-attribute,
+.largeitem-status dl dd strong,
+.largeitem-comment strong,
+.smallitem h3,
+.smallitem p strong,
+.smallitem-status >div >ul li,
+.smallitem-status >div >dl dd b,
+.search-items .searchitem .btn-keep,
+.search-items .searchitem-title strong,
+.search-items .searchitem-attribute,
+.search-items .searchitem-status dl dd strong,
+.search-items .searchitem-comment strong,
+.searchitems__header dt,
+.searchitems__header p b,
+.searchitems__header div a {
+  font-family: Rounded-Mplus-1c-bold;
+}
+@media all and (-ms-high-contrast: none) {
+  .r,
+  .m,
+  .b,
+  .large-item .btn-keep,
+  .largeitem-title,
+  .largeitem-title strong,
+  .largeitem-attribute,
+  .largeitem-status dl dt,
+  .largeitem-status dl dd strong,
+  .largeitem-comment strong,
+  .largeitem-characters li,
+  .smallitem h3,
+  .smallitem p strong,
+  .smallitem-status >div >ul li,
+  .smallitem-status >div >dl dd b,
+  .search-business h3,
+  .search-job h3,
+  .search-area h3,
+  .search-character h3,
+  .search-business a,
+  .search-job a,
+  .search-area a,
+  .search-character a,
+  .search-items .searchitem .btn-keep,
+  .search-items .searchitem-title,
+  .search-items .searchitem-title strong,
+  .search-items .searchitem-attribute,
+  .search-items .searchitem-status dl dt,
+  .search-items .searchitem-status dl dd strong,
+  .search-items .searchitem-comment strong,
+  .search-items .searchitem-characters li,
+  .searchitems__header dt,
+  .searchitems__header dd,
+  .searchitems__header p,
+  .searchitems__header p b,
+  .searchitems__header div a {
+    -webkit-transform: rotate(0.001deg);
+    -moz-transform: rotate(0.001deg);
+    -o-transform: rotate(0.001deg);
+    -ms-transform: rotate(0.001deg);
+    transform: rotate(0.001deg);
+  }
+}
+@font-face {
+  font-family: Rounded-Mplus-1c-regular;
+  src: url("../../font/mplus-1c-regular.eot");
+  src: url("../../font/mplus-1c-regular.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-regular_web.woff2") format("woff2");
+}
+@font-face {
+  font-family: Rounded-Mplus-1c-medium;
+  src: url("../../font/mplus-1c-medium.eot");
+  src: url("../../font/mplus-1c-medium.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-medium_web.woff2") format("woff2");
+}
+@font-face {
+  font-family: Rounded-Mplus-1c-bold;
+  src: url("../../font/mplus-1c-bold.eot");
+  src: url("../../font/mplus-1c-bold.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-bold_web.woff2") format("woff2");
+}
+.r {
+  font-family: Rounded-Mplus-1c-regular;
+}
+.m,
+.largeitem-title,
+.largeitem-status dl dt,
+.largeitem-characters li,
+.search-business h3,
+.search-job h3,
+.search-area h3,
+.search-character h3,
+.search-business a,
+.search-job a,
+.search-area a,
+.search-character a,
+.search-items .searchitem-title,
+.search-items .searchitem-status dl dt,
+.search-items .searchitem-characters li,
+.searchitems__header dd,
+.searchitems__header p {
+  font-family: Rounded-Mplus-1c-medium;
+}
+.b,
+.large-item .btn-keep,
+.largeitem-title strong,
+.largeitem-attribute,
+.largeitem-status dl dd strong,
+.largeitem-comment strong,
+.smallitem h3,
+.smallitem p strong,
+.smallitem-status >div >ul li,
+.smallitem-status >div >dl dd b,
+.search-items .searchitem .btn-keep,
+.search-items .searchitem-title strong,
+.search-items .searchitem-attribute,
+.search-items .searchitem-status dl dd strong,
+.search-items .searchitem-comment strong,
+.searchitems__header dt,
+.searchitems__header p b,
+.searchitems__header div a {
+  font-family: Rounded-Mplus-1c-bold;
+}
+@media all and (-ms-high-contrast: none) {
+  .r,
+  .m,
+  .b,
+  .large-item .btn-keep,
+  .largeitem-title,
+  .largeitem-title strong,
+  .largeitem-attribute,
+  .largeitem-status dl dt,
+  .largeitem-status dl dd strong,
+  .largeitem-comment strong,
+  .largeitem-characters li,
+  .smallitem h3,
+  .smallitem p strong,
+  .smallitem-status >div >ul li,
+  .smallitem-status >div >dl dd b,
+  .search-business h3,
+  .search-job h3,
+  .search-area h3,
+  .search-character h3,
+  .search-business a,
+  .search-job a,
+  .search-area a,
+  .search-character a,
+  .search-items .searchitem .btn-keep,
+  .search-items .searchitem-title,
+  .search-items .searchitem-title strong,
+  .search-items .searchitem-attribute,
+  .search-items .searchitem-status dl dt,
+  .search-items .searchitem-status dl dd strong,
+  .search-items .searchitem-comment strong,
+  .search-items .searchitem-characters li,
+  .searchitems__header dt,
+  .searchitems__header dd,
+  .searchitems__header p,
+  .searchitems__header p b,
+  .searchitems__header div a {
+    -webkit-transform: rotate(0.001deg);
+    -moz-transform: rotate(0.001deg);
+    -o-transform: rotate(0.001deg);
+    -ms-transform: rotate(0.001deg);
+    transform: rotate(0.001deg);
+  }
+}
 .large-item,
 .search-items .searchitem {
   display: block;
@@ -60,7 +262,7 @@
 .largeitem-title,
 .search-items .searchitem-title {
   padding-left: 10px;
-  background: url("../img/top/icon_list01.png") 0 0.25em no-repeat;
+  background: url("../img/top/icon_list01.png") 0 5px no-repeat;
   font-size: 1.17rem;
   line-height: 1;
 }
@@ -93,7 +295,7 @@
 .search-items .searchitem-attribute ul li {
   display: inline-block;
   width: 6em;
-  padding: 2px 0 0;
+  padding: 2px 0;
   background: #ffeff1;
   color: #ee8593;
   text-align: center;
@@ -177,8 +379,12 @@
 .largeitem-comment span,
 .search-items .searchitem-comment span {
   display: block;
-  height: 3rem;
+  height: auto;
   line-height: 1.5;
+}
+.largeitem-comment span.ellipsis,
+.search-items .searchitem-comment span.ellipsis {
+  height: 3em;
 }
 .largeitem-characters,
 .search-items .searchitem-characters {
@@ -188,13 +394,13 @@
 .search-items .searchitem-characters li {
   display: inline-block;
   width: 8em;
-  padding: 2px 0 0;
+  padding: 2px 0;
   background: #f2f2f2;
   color: #ee8593;
   font-size: 0.75rem;
   text-align: center;
 }
-.small-items >ul {
+.small-items ul {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -228,14 +434,14 @@
   background: #fffde6;
 }
 .smallitem h3 {
-  padding: 0 5px 5px;
+  padding: 0 0.75rem 5px;
   border-bottom: 1px solid #e4e4e4;
 }
 .smallitem h3 small {
   display: block;
   width: 7em;
   margin: 0 0 5px;
-  padding: 2px 0 0;
+  padding: 2px 0;
   background: #ee8593;
   border-radius: 2px;
   color: #fff;
@@ -246,7 +452,7 @@
   font-size: 1.5rem;
 }
 .smallitem p {
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 0.5rem 0.75rem;
 }
 .smallitem p strong {
   color: #f19032;
@@ -258,6 +464,7 @@
   display: -ms-flexbox;
   display: box;
   display: flex;
+  padding: 0 0.75rem;
 }
 .smallitem-status figure {
   width: 130px;
@@ -272,10 +479,13 @@
   -ms-flex: 1;
   flex: 1;
 }
+.smallitem-status >div >ul {
+  margin: 0;
+}
 .smallitem-status >div >ul li {
   display: inline-block;
   width: 7em;
-  padding: 2px 0 0;
+  padding: 2px 0;
   background: #ffeff1;
   color: #ee8593;
   font-size: 0.75rem;
@@ -420,14 +630,15 @@
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  margin-bottom: 10px;
 }
 .searchitems__header dt {
   width: 10rem;
-  padding: 2rem 0;
+  padding: 1rem 0;
   background: #ee8593;
-  border-radius: 8px 0 0 8px;
+  border-radius: 11px 0 0 8px;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.17rem;
   text-align: center;
 }
 .searchitems__header dd {
@@ -438,7 +649,270 @@
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 2rem;
+  padding: 1.1rem 2rem;
   background: #f9f9f9;
   border-radius: 0 8px 8px 0;
+  position: relative;
+}
+.searchitems__header dd a {
+  position: absolute;
+  top: 12px;
+  right: 30px;
+  display: inline-block;
+  width: 10rem;
+  padding: 3px;
+  background: #fff;
+  border: 1px solid #ee8593;
+  border-radius: 4px;
+  color: #ee8593;
+  text-align: center;
+}
+.searchitems__header dd a:hover {
+  background: #ffeff1;
+}
+.searchitems__header p {
+  margin: 20px 0;
+}
+.searchitems__header p b {
+  color: #f19032;
+  font-size: 1.2rem;
+}
+.searchitems__header div {
+  text-align: center;
+}
+.searchitems__header div a {
+  display: inline-block;
+  padding: 0.25rem 0.8rem;
+  background: #f0f0f0;
+  color: #373737;
+}
+.searchitems__header div .disabled {
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  color: #c1c0c0;
+  cursor: default;
+}
+.searchitems__header div .selected {
+  background: #ffeff1;
+  border: 1px solid #ee8593;
+  color: #ee8593;
+  cursor: default;
+}
+.wrapper-shadow {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.searchmodal {
+  display: none;
+  position: relative;
+  width: 1100px;
+  margin: 0;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+}
+.searchmodal h4 {
+  color: #ee8593;
+  font-size: 1.2rem;
+  text-indent: 0.5rem;
+}
+.searchmodal .btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.searchmodal .btn-close:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+}
+.searchmodal .btn-area {
+  padding: 30px 0 0;
+  text-align: center;
+}
+.searchmodal .btn-area .btn-submit {
+  width: 280px;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+.searchmodal-area nav {
+  margin: 20px 0 10px;
+}
+.searchmodal-area nav ul {
+  margin: 0;
+  padding: 0;
+}
+.searchmodal-area nav li {
+  display: inline-block;
+  width: 210px;
+  padding: 3px 0 0;
+  background: #f9f9f9;
+  border-radius: 1.5rem;
+  text-align: center;
+  font-size: 0.87rem;
+  position: relative;
+  cursor: pointer;
+}
+.searchmodal-area nav li:hover {
+  background: #f2f2f2;
+}
+.searchmodal-area nav li strong {
+  font-size: 1.5rem;
+}
+.searchmodal-area nav li.selected {
+  background: #ee8593;
+  color: #fff;
+  cursor: default;
+}
+.searchmodal-area nav li.selected:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid #ee8593;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  margin-left: -4px;
+}
+.searchmodal-area nav li.selected:hover {
+  background: #ee8593;
+}
+.searchmodal-area fieldset {
+  padding: 20px 10px 0;
+  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+}
+.searchmodal-area h5 {
+  display: block;
+  width: 10rem;
+  font-size: 1.2rem;
+  position: absolute;
+}
+.searchmodal-area ul {
+  display: block;
+  padding-left: 10rem;
+  font-size: 1.2rem;
+}
+.searchmodal-area ul li {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.searchmodal-area ul li a {
+  display: inline-block;
+  margin: 0 1.4rem;
+  color: #373737;
+  text-decoration: underline;
+}
+.searchmodal-area ul li a:hover {
+  text-decoration: none;
+}
+.searchmodal-area input[type=checkbox] {
+  display: none;
+}
+.searchmodal-area label {
+  margin-right: 1rem;
+}
+.searchmodal-area label:before {
+  content: "";
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  position: relative;
+  top: 3px;
+  margin-right: 0.5rem;
+  vertical-align: text-top;
+  line-height: 1.2;
+  color: #ee8593;
+}
+.searchmodal-area input:checked + label:before {
+  content: "✓";
+  background: #ffeff1;
+}
+.searchmodal-area .searchmodal-area-route ul {
+  padding-left: 12rem;
+}
+.searchmodal-area .searchmodal-area-route li {
+  width: 32%;
+}
+.searchmodal-business fieldset,
+.searchmodal-job fieldset {
+  margin: 20px 0 0;
+  padding: 40px 10px 20px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+}
+.searchmodal-business ul,
+.searchmodal-job ul {
+  display: block;
+  padding-left: 40px;
+  font-size: 1.2rem;
+}
+.searchmodal-business ul li,
+.searchmodal-job ul li {
+  display: inline-block;
+  width: 32%;
+  margin-bottom: 30px;
+}
+.searchmodal-business input[type=checkbox],
+.searchmodal-job input[type=checkbox] {
+  display: none;
+}
+.searchmodal-business label,
+.searchmodal-job label {
+  margin-right: 1rem;
+}
+.searchmodal-business label:before,
+.searchmodal-job label:before {
+  content: "";
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  position: relative;
+  top: 3px;
+  margin-right: 0.5rem;
+  vertical-align: text-top;
+  line-height: 1.2;
+  color: #ee8593;
+}
+.searchmodal-business input:checked + label:before,
+.searchmodal-job input:checked + label:before {
+  content: "✓";
+  background: #ffeff1;
 }

@@ -1,3 +1,213 @@
+@font-face {
+  font-family: Rounded-Mplus-1c-regular;
+  src: url("../../font/mplus-1c-regular.eot");
+  src: url("../../font/mplus-1c-regular.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-regular_web.woff2") format("woff2");
+}
+@font-face {
+  font-family: Rounded-Mplus-1c-medium;
+  src: url("../../font/mplus-1c-medium.eot");
+  src: url("../../font/mplus-1c-medium.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-medium_web.woff2") format("woff2");
+}
+@font-face {
+  font-family: Rounded-Mplus-1c-bold;
+  src: url("../../font/mplus-1c-bold.eot");
+  src: url("../../font/mplus-1c-bold.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-bold_web.woff2") format("woff2");
+}
+.r {
+  font-family: Rounded-Mplus-1c-regular;
+}
+.m,
+.largeitem-title,
+.largeitem-status dl dt,
+.largeitem-characters li,
+.search-business h3,
+.search-job h3,
+.search-area h3,
+.search-character h3,
+.search-business a,
+.search-job a,
+.search-area a,
+.search-character a,
+.branding,
+.pickup-items .pickupitem-title,
+.pickup-items .pickupitem-status dl dt,
+.pickup-items .pickupitem-characters li {
+  font-family: Rounded-Mplus-1c-medium;
+}
+.b,
+.large-item .btn-keep,
+.largeitem-title strong,
+.largeitem-attribute,
+.largeitem-status dl dd strong,
+.largeitem-comment strong,
+.smallitem h3,
+.smallitem p strong,
+.smallitem-status >div >ul li,
+.smallitem-status >div >dl dd b,
+.front-search fieldset label,
+.pickup-items .pickupitem .btn-keep,
+.pickup-items .pickupitem-title strong,
+.pickup-items .pickupitem-attribute,
+.pickup-items .pickupitem-status dl dd strong,
+.pickup-items .pickupitem-comment strong,
+.new-items .newitem h3,
+.new-items .newitem p strong,
+.new-items .newitem-status >div >ul li,
+.new-items .newitem-status >div >dl dd b,
+.about-area strong {
+  font-family: Rounded-Mplus-1c-bold;
+}
+@media all and (-ms-high-contrast: none) {
+  .r,
+  .m,
+  .b,
+  .large-item .btn-keep,
+  .largeitem-title,
+  .largeitem-title strong,
+  .largeitem-attribute,
+  .largeitem-status dl dt,
+  .largeitem-status dl dd strong,
+  .largeitem-comment strong,
+  .largeitem-characters li,
+  .smallitem h3,
+  .smallitem p strong,
+  .smallitem-status >div >ul li,
+  .smallitem-status >div >dl dd b,
+  .search-business h3,
+  .search-job h3,
+  .search-area h3,
+  .search-character h3,
+  .search-business a,
+  .search-job a,
+  .search-area a,
+  .search-character a,
+  .branding,
+  .front-search fieldset label,
+  .pickup-items .pickupitem .btn-keep,
+  .pickup-items .pickupitem-title,
+  .pickup-items .pickupitem-title strong,
+  .pickup-items .pickupitem-attribute,
+  .pickup-items .pickupitem-status dl dt,
+  .pickup-items .pickupitem-status dl dd strong,
+  .pickup-items .pickupitem-comment strong,
+  .pickup-items .pickupitem-characters li,
+  .new-items .newitem h3,
+  .new-items .newitem p strong,
+  .new-items .newitem-status >div >ul li,
+  .new-items .newitem-status >div >dl dd b,
+  .about-area strong {
+    -webkit-transform: rotate(0.001deg);
+    -moz-transform: rotate(0.001deg);
+    -o-transform: rotate(0.001deg);
+    -ms-transform: rotate(0.001deg);
+    transform: rotate(0.001deg);
+  }
+}
+@font-face {
+  font-family: Rounded-Mplus-1c-regular;
+  src: url("../../font/mplus-1c-regular.eot");
+  src: url("../../font/mplus-1c-regular.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-regular_web.woff2") format("woff2");
+}
+@font-face {
+  font-family: Rounded-Mplus-1c-medium;
+  src: url("../../font/mplus-1c-medium.eot");
+  src: url("../../font/mplus-1c-medium.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-medium_web.woff2") format("woff2");
+}
+@font-face {
+  font-family: Rounded-Mplus-1c-bold;
+  src: url("../../font/mplus-1c-bold.eot");
+  src: url("../../font/mplus-1c-bold.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-bold_web.woff2") format("woff2");
+}
+.r {
+  font-family: Rounded-Mplus-1c-regular;
+}
+.m,
+.largeitem-title,
+.largeitem-status dl dt,
+.largeitem-characters li,
+.search-business h3,
+.search-job h3,
+.search-area h3,
+.search-character h3,
+.search-business a,
+.search-job a,
+.search-area a,
+.search-character a,
+.branding,
+.pickup-items .pickupitem-title,
+.pickup-items .pickupitem-status dl dt,
+.pickup-items .pickupitem-characters li {
+  font-family: Rounded-Mplus-1c-medium;
+}
+.b,
+.large-item .btn-keep,
+.largeitem-title strong,
+.largeitem-attribute,
+.largeitem-status dl dd strong,
+.largeitem-comment strong,
+.smallitem h3,
+.smallitem p strong,
+.smallitem-status >div >ul li,
+.smallitem-status >div >dl dd b,
+.front-search fieldset label,
+.pickup-items .pickupitem .btn-keep,
+.pickup-items .pickupitem-title strong,
+.pickup-items .pickupitem-attribute,
+.pickup-items .pickupitem-status dl dd strong,
+.pickup-items .pickupitem-comment strong,
+.new-items .newitem h3,
+.new-items .newitem p strong,
+.new-items .newitem-status >div >ul li,
+.new-items .newitem-status >div >dl dd b,
+.about-area strong {
+  font-family: Rounded-Mplus-1c-bold;
+}
+@media all and (-ms-high-contrast: none) {
+  .r,
+  .m,
+  .b,
+  .large-item .btn-keep,
+  .largeitem-title,
+  .largeitem-title strong,
+  .largeitem-attribute,
+  .largeitem-status dl dt,
+  .largeitem-status dl dd strong,
+  .largeitem-comment strong,
+  .largeitem-characters li,
+  .smallitem h3,
+  .smallitem p strong,
+  .smallitem-status >div >ul li,
+  .smallitem-status >div >dl dd b,
+  .search-business h3,
+  .search-job h3,
+  .search-area h3,
+  .search-character h3,
+  .search-business a,
+  .search-job a,
+  .search-area a,
+  .search-character a,
+  .branding,
+  .front-search fieldset label,
+  .pickup-items .pickupitem .btn-keep,
+  .pickup-items .pickupitem-title,
+  .pickup-items .pickupitem-title strong,
+  .pickup-items .pickupitem-attribute,
+  .pickup-items .pickupitem-status dl dt,
+  .pickup-items .pickupitem-status dl dd strong,
+  .pickup-items .pickupitem-comment strong,
+  .pickup-items .pickupitem-characters li,
+  .new-items .newitem h3,
+  .new-items .newitem p strong,
+  .new-items .newitem-status >div >ul li,
+  .new-items .newitem-status >div >dl dd b,
+  .about-area strong {
+    -webkit-transform: rotate(0.001deg);
+    -moz-transform: rotate(0.001deg);
+    -o-transform: rotate(0.001deg);
+    -ms-transform: rotate(0.001deg);
+    transform: rotate(0.001deg);
+  }
+}
 .large-item,
 .pickup-items .pickupitem {
   display: block;
@@ -60,7 +270,7 @@
 .largeitem-title,
 .pickup-items .pickupitem-title {
   padding-left: 10px;
-  background: url("../img/top/icon_list01.png") 0 0.25em no-repeat;
+  background: url("../img/top/icon_list01.png") 0 5px no-repeat;
   font-size: 1.17rem;
   line-height: 1;
 }
@@ -93,7 +303,7 @@
 .pickup-items .pickupitem-attribute ul li {
   display: inline-block;
   width: 6em;
-  padding: 2px 0 0;
+  padding: 2px 0;
   background: #ffeff1;
   color: #ee8593;
   text-align: center;
@@ -177,8 +387,12 @@
 .largeitem-comment span,
 .pickup-items .pickupitem-comment span {
   display: block;
-  height: 3rem;
+  height: auto;
   line-height: 1.5;
+}
+.largeitem-comment span.ellipsis,
+.pickup-items .pickupitem-comment span.ellipsis {
+  height: 3em;
 }
 .largeitem-characters,
 .pickup-items .pickupitem-characters {
@@ -188,13 +402,14 @@
 .pickup-items .pickupitem-characters li {
   display: inline-block;
   width: 8em;
-  padding: 2px 0 0;
+  padding: 2px 0;
   background: #f2f2f2;
   color: #ee8593;
   font-size: 0.75rem;
   text-align: center;
 }
-.small-items >ul {
+.small-items ul,
+.new-items ul {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -232,7 +447,7 @@
 }
 .smallitem h3,
 .new-items .newitem h3 {
-  padding: 0 5px 5px;
+  padding: 0 0.75rem 5px;
   border-bottom: 1px solid #e4e4e4;
 }
 .smallitem h3 small,
@@ -240,7 +455,7 @@
   display: block;
   width: 7em;
   margin: 0 0 5px;
-  padding: 2px 0 0;
+  padding: 2px 0;
   background: #ee8593;
   border-radius: 2px;
   color: #fff;
@@ -253,7 +468,7 @@
 }
 .smallitem p,
 .new-items .newitem p {
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 0.5rem 0.75rem;
 }
 .smallitem p strong,
 .new-items .newitem p strong {
@@ -267,6 +482,7 @@
   display: -ms-flexbox;
   display: box;
   display: flex;
+  padding: 0 0.75rem;
 }
 .smallitem-status figure,
 .new-items .newitem-status figure {
@@ -283,11 +499,15 @@
   -ms-flex: 1;
   flex: 1;
 }
+.smallitem-status >div >ul,
+.new-items .newitem-status >div >ul {
+  margin: 0;
+}
 .smallitem-status >div >ul li,
 .new-items .newitem-status >div >ul li {
   display: inline-block;
   width: 7em;
-  padding: 2px 0 0;
+  padding: 2px 0;
   background: #ffeff1;
   color: #ee8593;
   font-size: 0.75rem;
@@ -533,7 +753,6 @@
   text-align: center;
   line-height: 70px;
 }
-@exntend .small-items;
 .information ul {
   margin-top: 10px;
 }

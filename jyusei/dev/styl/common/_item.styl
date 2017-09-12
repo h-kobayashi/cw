@@ -1,4 +1,4 @@
-
+@import "_font"
 @import "_color"
 
 .large-item
@@ -30,6 +30,7 @@
 			font-size: 1.3rem
 		.btn-submit
 			font-size: 1.5rem
+			
 	.btn-keep
 		position: absolute
 		top: -13px
@@ -41,21 +42,27 @@
 		background: $orange url(../img/top/icon_keep.png) center 10px no-repeat
 		border-radius: 32px
 		color: white
+		@extend .b
 		font-size: .75rem
 		line-height: 1
 		text-align: center
 		&:hover
 			background-color: $orange_o
+			
 .largeitem-title
 	padding-left: 10px
-	background: url(../img/top/icon_list01.png) 0 .25em no-repeat
+	background: url(../img/top/icon_list01.png) 0 5px no-repeat
+	@extend .m
 	font-size: 1.17rem
 	line-height: 1
 	strong
+		@extend .b
 		font-size: 1.4rem
+		
 .largeitem-attribute
 	margin: 10px 0 0
 	overflow: hidden
+	@extend .b
 	font-size: .75rem
 	strong
 		float: left
@@ -71,10 +78,11 @@
 		li
 			display: inline-block
 			width: 6em
-			padding: 2px 0 0
+			padding: 2px 0
 			background: $lightpink
 			color: $pink
 			text-align: center
+			
 .largeitem-status
 	margin: 15px 0 0
 	display: flex
@@ -91,6 +99,7 @@
 			width: 6rem
 			padding: 0 0 0 .75rem
 			background: url(../img/top/icon_list01.png) 0 6px no-repeat
+			@extend .m
 		dd
 			position: relative
 			padding: 0 0 .87rem 6rem
@@ -112,38 +121,46 @@
 			strong
 				display: inline-block
 				margin-left: 1rem
+				@extend .b
 				b
 					color: $orange
 					font-size: 1.5rem
+					
 .largeitem-comment
 	strong
 		display: block
 		margin: 10px 0
 		color: $orange
+		@extend .b
 		font-size: 1.2rem
 	span
 		display: block
-		height: 3rem
+		height: auto
 		line-height: 1.5
+	span.ellipsis
+		height: 3em
+
 .largeitem-characters
 	margin: 10px 0 0
 	li
 		display: inline-block
 		width: 8em
-		padding: 2px 0 0
+		padding: 2px 0
 		background: $lightgray2
 		color: $pink
+		@extend .m
 		font-size: .75rem
 		text-align: center
 
 
 // small items
 .small-items
-	>ul
+	ul
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
 		margin-top: 20px
+		
 .smallitem
 	width: 414px
 	>a
@@ -154,13 +171,14 @@
 	>a:hover
 		background: $yellow
 	h3
-		padding: 0 5px 5px
+		padding: 0 .75rem 5px
 		border-bottom: 1px solid $gray
+		@extend .b
 		small
 			display: block
 			width: 7em
 			margin: 0 0 5px
-			padding: 2px 0 0
+			padding: 2px 0
 			background: $pink
 			border-radius: 2px
 			color: white
@@ -169,24 +187,28 @@
 		strong
 			font-size: 1.5rem
 	p
-		margin: .5rem 0
+		margin: .5rem 0 .5rem .75rem
 		strong
 			color: $orange
+			@extend .b
 
 .smallitem-status
 	display: flex
+	padding: 0 .75rem
 	figure
 		width: 130px
 		margin-right: 1rem
 	>div
 		flex: 1
 		>ul
+			margin: 0
 			li
 				display: inline-block
 				width: 7em
-				padding: 2px 0 0
+				padding: 2px 0
 				background: $lightpink
 				color: $pink
+				@extend .b
 				font-size: .75rem
 				text-align: center
 				vertical-align: top
@@ -197,6 +219,7 @@
 			dd
 				b
 					color: $orange
+					@extend .b
 		
 // search
 .search-business,.search-job,.search-area,.search-character
@@ -205,6 +228,7 @@
 	h3
 		margin: .5rem 0
 		color: $pink
+		@extend .m
 		font-size: 1rem
 		&:before
 			content: "▼"
@@ -220,6 +244,7 @@
 		padding: 2px 0 0
 		background: $lightpink
 		color: $black
+		@extend .m
 		line-height: 2
 		text-align: center
 		&:hover

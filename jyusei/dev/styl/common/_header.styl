@@ -1,4 +1,4 @@
-
+@import "_font"
 @import "_color"
 
 .header__wrapper
@@ -20,6 +20,7 @@
 		display: inline-block
 		padding: .25rem 1rem
 		color: $black
+		@extend .m
 		text-decoration: none
 		&:hover
 			color: $pink
@@ -42,7 +43,9 @@
 		background: $pink
 		border-radius: 1rem
 		color: white
+		@extend .b
 		&:hover
+			background: $darkpink
 			color: white
 
 .breadclumbs
@@ -72,6 +75,7 @@
 			padding: 10px 0
 			text-align: center
 			color: $black
+			@extend .b
 			font-size: 1.1rem
 			text-decoration: none
 		a:hover

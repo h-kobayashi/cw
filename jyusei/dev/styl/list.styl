@@ -1,4 +1,5 @@
 
+@import "common/_font"
 @import "common/_color"
 @import "common/_item"
 
@@ -23,18 +24,62 @@
 	dl
 		display: flex
 		flex-wrap: nowrap
+		margin-bottom: 10px 
 	dt
 		width: 10rem
-		padding: 2rem 0
+		padding: 1rem 0
 		background: $pink
-		border-radius: 8px 0 0 8px
+		border-radius: 11px 0 0 8px
+		@extend .b
 		color: white
-		font-size: 1.5rem
+		
+		font-size: 1.17rem
 		text-align: center
 	dd
 		flex: 1
-		padding: 2rem
+		padding: 1.1rem 2rem
 		background: $lightgray
 		border-radius: 0 8px 8px 0
-		
+		position: relative
+		@extend .m
+		a
+			position: absolute
+			top: 12px
+			right: 30px
+			display: inline-block
+			width: 10rem
+			padding: 3px
+			background: white
+			border: 1px solid $pink
+			border-radius: 4px
+			color: $pink
+			text-align: center
+			&:hover
+				background: $lightpink
+	p
+		margin: 20px 0
+		@extend .m
+		b
+			color: $orange
+			@extend .b
+			font-size: 1.2rem
+	div
+		text-align: center
+		a
+			display: inline-block
+			padding: .25rem .8rem
+			background: $lightgray3
+			color: $black
+			@extend .b
+		.disabled
+			background: white
+			border: 1px solid $gray2
+			color: $gray3
+			cursor: default
+		.selected
+			background: $lightpink
+			border: 1px solid $pink
+			color: $pink
+			cursor: default
 
+@import "common/_modal"

@@ -32,6 +32,6 @@ gulp.task "stylus", ->
 
 
 gulp.task "watch", ->
-	gulp.watch ["dev/js/**/*.coffee","dev/pug/**/*.pug","dev/styl/**/*.styl"], ["coffee","pug","stylus"]
+	gulp.watch ["dev/coffee/**/*.coffee","dev/pug/**/*.pug","dev/styl/**/*.styl"], ["coffee","pug","stylus"]
 
 gulp.task "default", ["watch"]
