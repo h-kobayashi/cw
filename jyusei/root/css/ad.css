@@ -14,8 +14,7 @@
   src: url("../../font/mplus-1c-bold.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-bold_web.woff2") format("woff2");
 }
 .r,
-.policy-check h3,
-.form-header p small {
+.policy-check h3 {
   font-family: Rounded-Mplus-1c-regular;
 }
 .m,
@@ -34,7 +33,7 @@
 .form-table th,
 .form-table td.must,
 .form-table td.any,
-.form-header p {
+.form-body >form >h3 {
   font-family: Rounded-Mplus-1c-medium;
 }
 .b,
@@ -48,7 +47,7 @@
 .smallitem-status >div >ul li,
 .smallitem-status >div >dl dd b,
 .contents-area section.form-end >h3,
-.inquiries .contents-area h2 {
+.ad .contents-area h2 {
   font-family: Rounded-Mplus-1c-bold;
 }
 @media all and (-ms-high-contrast: none) {
@@ -81,9 +80,8 @@
   .form-table td.any,
   .policy-check h3,
   .contents-area section.form-end >h3,
-  .inquiries .contents-area h2,
-  .form-header p,
-  .form-header p small {
+  .ad .contents-area h2,
+  .form-body >form >h3 {
     -webkit-transform: rotate(0.001deg);
     -moz-transform: rotate(0.001deg);
     -o-transform: rotate(0.001deg);
@@ -107,8 +105,7 @@
   src: url("../../font/mplus-1c-bold.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-bold_web.woff2") format("woff2");
 }
 .r,
-.policy-check h3,
-.form-header p small {
+.policy-check h3 {
   font-family: Rounded-Mplus-1c-regular;
 }
 .m,
@@ -127,7 +124,7 @@
 .form-table th,
 .form-table td.must,
 .form-table td.any,
-.form-header p {
+.form-body >form >h3 {
   font-family: Rounded-Mplus-1c-medium;
 }
 .b,
@@ -141,7 +138,7 @@
 .smallitem-status >div >ul li,
 .smallitem-status >div >dl dd b,
 .contents-area section.form-end >h3,
-.inquiries .contents-area h2 {
+.ad .contents-area h2 {
   font-family: Rounded-Mplus-1c-bold;
 }
 @media all and (-ms-high-contrast: none) {
@@ -174,9 +171,8 @@
   .form-table td.any,
   .policy-check h3,
   .contents-area section.form-end >h3,
-  .inquiries .contents-area h2,
-  .form-header p,
-  .form-header p small {
+  .ad .contents-area h2,
+  .form-body >form >h3 {
     -webkit-transform: rotate(0.001deg);
     -moz-transform: rotate(0.001deg);
     -o-transform: rotate(0.001deg);
@@ -852,24 +848,50 @@
   border-color: #9f5255;
   color: #9f5255;
 }
-.inquiries .contents-area h2:before {
-  content: url("../img/inquiries/inquiries_icon01.png");
+.ad .contents-area h2:before {
+  content: url("../img/ad/ad_icon01.png");
   display: inline-block;
   margin: 0 0.5em 0 0;
+  vertical-align: middle;
 }
-.form-header p {
-  margin: 1em 0 0;
-  font-size: 1.2em;
-  text-align: center;
+.form-body >form >h3 {
+  color: #ee8593;
 }
-.form-header p small {
-  display: block;
-  margin: 1em 0 0;
+.form-body >form >h3:before {
+  content: url("../img/ad/form_icon02.png");
+  display: inline-block;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
 }
-.form-table th,
-.form-table td {
-  font-size: 1.2em;
+.postcode input[type=text] {
+  width: 13em;
+  display: inline-block;
 }
-.form-table input[type=radio] + label:before {
-  top: 2px;
+.name input[type=text] {
+  width: 18.6em;
+  display: inline-block;
+}
+.name input[type=text]:last-of-type {
+  margin-left: 1em;
+}
+.select {
+  display: inline-block;
+  width: 10em;
+  margin: 0 1em 1em 0;
+  border: 1px solid #82dbd9;
+  border-radius: 5px;
+  position: relative;
+}
+.select:after {
+  content: "▼";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -0.75em;
+}
+.select select {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
 }

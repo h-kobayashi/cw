@@ -3,90 +3,169 @@ html
 	head
 		meta(charset="utf-8")
 		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
-		title お問い合わせ｜柔道整復師の求人『柔整ワーカー』
+		title エムアイ整形外科クリニックの柔道整復師求人に応募する｜柔道整復師の求人『柔整ワーカー』
 		link(rel="stylesheet", media="all", href="css/common/jquery-ui.min.css")
 		link(rel="stylesheet", media="all", href="css/common/common.css")
-		link(rel="stylesheet", media="all", href="css/inquiries.css")
-	body.inquiries
+		link(rel="stylesheet", media="all", href="css/entry.css")
+	body.entry
 		.wrapper
 
 			include _header.pug
 
 			main.main
 				.contents-area
-					h2 お問合せ
-					section.form-header
-						p 柔整ワーカーへのご質問等お問合せはこちらから承ります。<br>お手数をお掛けいたしますが、以下の項目を入力してください。
-							small ※掲載しております情報へのご質問等は各掲載ページのご連絡先へ直接お問合せ下さい。
+					h2 エムアイ整形外科クリニックの柔道整復師求人に応募する
+					
+					section.item-data
+						h3.itemdata-title
+							strong エムアイ整形外科クリニック
+							| の柔道整復師求人
+						nav.itemdata-attribute
+							strong 整形外科
+							ul
+								li PT
+								li 柔整師
+								li あん摩
+						.itemdata-status
+							figure
+								img(src="img/top/pickupitem_image_sample.jpg")
+							dl
+								dt 業態
+								dd 整形外科クリニック
+									ul
+										li 正
+										li パ
+								dt 職種
+								dd 理学療法士（PT)　柔道整復師　あん摩マッサージ指圧師
+								dt 給与
+								dd 正社員
+									strong 月給
+										b 25.0
+										| 万円　～　
+										b 30.0
+										| 万円
+									| <br>
+									| パート・アルバイト
+									strong 時給
+										b 900
+										| 円　～　
+										b 1200
+										| 円
+								dt アクセス
+								dd 東京都西新宿0-0-0　西新宿ビル5階<br>新宿駅：徒歩9分、都庁前駅：徒歩3分、初台駅：徒歩6分					
 					ul.form-step
-						li.on 情報の入力
-						li 入力内容の確認
+						li 情報の入力
+						li.on 入力内容の確認
 						li 完了
 					section.form-body
-						form(method="post", action="inquiries_check.html")
-							p 必須項目は必ずご入力ください。
-							ul.error-list
-								li お問合せ内容を選択してください。
-								li 氏名フリガナを入力してください。
+						form(method="post", action="entry_end.html")
+							h3 基本情報
 							table.form-table
-								tr
-									th お問合せ内容
-									td.must 必須
-									td
-										ul
-											- var list = ["柔整ワーカーへの質問・ご意見", "求人掲載に関する問い合わせ", "各求人情報に関する問い合わせ", "応募に関する問い合わせ", "エラーはバグに関する問い合わせ", "その他のお問合せ"]
-											- var matter = "matter_"
-											each item, index in list
-												li
-													input(type="radio", name="matter", id=matter + index)
-													label(for=matter + index)= item
-								tr
-									th 企業名
-									td.any 任意
-									td
-										fieldset
-											input(type="text", value="*入力してください").err
-											small 例：株式会社アーベインスタイル
 								tr
 									th 氏名
 									td.must 必須
 									td 
-										fieldset
-											input(type="text")
-											small 例：山田太郎
+										p 山田　　太郎
 								tr
-									th 氏名フリガナ
+									th よみがな
+									td.any 任意
+									td
+										p やまだ　　たろう
+								tr
+									th 生年月日
 									td.must 必須
-									td 
-										fieldset
-											input(type="text")
-											small 例：ヤマダタロウ
+									td
+										p 2000年　1月　1日
+								tr
+									th 性別
+									td.must 必須
+									td
+										p 男性
+								tr
+									th 郵便番号
+									td.must 必須
+									td
+										p 1600014
+								tr
+									th(rowspan="2") 住所
+									td.must 必須
+									td
+										p 東京都　新宿区
+								tr
+									td.any 任意
+									td
+										p 西新宿3-1-5　新宿嘉泉ビル8F
 								tr
 									th メールアドレス
 									td.must 必須
 									td 
-										fieldset
-											input(type="text")
-											small 例：info@urbane-s.com
+										p example@jusei-kyujin.com
+										small ※こちらのメールアドレス宛に求人掲載に関する連絡を行います。
 								tr
-									th お問合せ内容
+									th 電話番号
+									td.must 必須
+									td
+										p 09012345678
+								tr
+									th 就業状況
+									td.must 必須
+									td
+										p 就業中
+								tr
+									th 入力情報
+									td.any 任意
+									td
+										p 入力した基本情報を他の求人でも再利用する
+												
+							h3 応募内容
+							table.form-table
+								tr
+									th 希望職種
 									td.must 必須
 									td 
-										fieldset
-											textarea(rows="5", placeholder="お気軽にお問い合わせください。")
+										p 理学療法士（PT）
+								tr
+									th 希望雇用形態
+									td.must 必須
+									td
+										p 正社員
+								tr
+									th 実務経験
+									td.must 必須
+									td
+										p 1年未満
+								tr
+									th 免許・資格
+									td.must 必須
+									td
+										ul
+											li 柔道整復師
+											li 自動運転免許
+										p 1年以内に介護福祉士資格を取得予定。
+								tr
+									th 自己PR
+									td.any 任意
+									td
+										p テキストテキストテキストテキストテキスト
+								tr
+									th 面接・連絡希望日
+									td.any 任意
+									td
+										p 平日の18時以降に連絡をお願いします。
 							
 							.policy-check
 								h3 利用規約と個人情報の取り扱いについて
 									small 必須
 								fieldset
 									input(type="checkbox", id="policy-check")
-									label(for="policy-check") 以下の利用規約と個人情報の取り扱いについて同意する
+									fieldset 以下の利用規約と個人情報の取り扱いについて同意する
 								article
 									div
 										p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
 							
 							.btn-area
-								button(onClick="submit()").btn-submit 入力内容を確認する
+								button(onClick="location.href='entry.html'").btn-cancel 修正する
+								button(onClick="submit()").btn-submit 送信する
 			
 				aside.side-area
 					ul.banner-items

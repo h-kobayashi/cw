@@ -15,78 +15,55 @@ html
 			main.main
 				.contents-area
 					h2 お問合せ
-					section.form-header
-						p 柔整ワーカーへのご質問等お問合せはこちらから承ります。<br>お手数をお掛けいたしますが、以下の項目を入力してください。
-							small ※掲載しております情報へのご質問等は各掲載ページのご連絡先へ直接お問合せ下さい。
 					ul.form-step
-						li.on 情報の入力
-						li 入力内容の確認
+						li 情報の入力
+						li.on 入力内容の確認
 						li 完了
 					section.form-body
-						form(method="post", action="inquiries_check.html")
-							p 必須項目は必ずご入力ください。
-							ul.error-list
-								li お問合せ内容を選択してください。
-								li 氏名フリガナを入力してください。
+						form(method="post", action="inquiries_end.html")
 							table.form-table
 								tr
 									th お問合せ内容
 									td.must 必須
 									td
-										ul
-											- var list = ["柔整ワーカーへの質問・ご意見", "求人掲載に関する問い合わせ", "各求人情報に関する問い合わせ", "応募に関する問い合わせ", "エラーはバグに関する問い合わせ", "その他のお問合せ"]
-											- var matter = "matter_"
-											each item, index in list
-												li
-													input(type="radio", name="matter", id=matter + index)
-													label(for=matter + index)= item
+										p 柔整ワーカーへの質問・ご意見
 								tr
 									th 企業名
 									td.any 任意
 									td
-										fieldset
-											input(type="text", value="*入力してください").err
-											small 例：株式会社アーベインスタイル
+										p 株式会社アーベインスタイル
 								tr
 									th 氏名
 									td.must 必須
 									td 
-										fieldset
-											input(type="text")
-											small 例：山田太郎
+										p 山田太郎
 								tr
 									th 氏名フリガナ
 									td.must 必須
-									td 
-										fieldset
-											input(type="text")
-											small 例：ヤマダタロウ
+									td
+										p ヤマダタロウ
 								tr
 									th メールアドレス
 									td.must 必須
-									td 
-										fieldset
-											input(type="text")
-											small 例：info@urbane-s.com
+									td
+										p info@urbane-s.com
 								tr
 									th お問合せ内容
 									td.must 必須
-									td 
-										fieldset
-											textarea(rows="5", placeholder="お気軽にお問い合わせください。")
+									td
+										p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ
 							
 							.policy-check
 								h3 利用規約と個人情報の取り扱いについて
 									small 必須
-								fieldset
-									input(type="checkbox", id="policy-check")
-									label(for="policy-check") 以下の利用規約と個人情報の取り扱いについて同意する
+								fieldset 以下の利用規約と個人情報の取り扱いについて同意する
 								article
 									div
 										p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
 							
 							.btn-area
-								button(onClick="submit()").btn-submit 入力内容を確認する
+								button(onClick="location.href='inquiries.html'").btn-cancel 修正する
+								button(onClick="submit()").btn-submit 送信する
 			
 				aside.side-area
 					ul.banner-items

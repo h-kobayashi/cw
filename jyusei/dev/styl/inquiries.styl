@@ -6,6 +6,8 @@
 
 .inquiries
 	.contents-area
+		h2
+			@extend .b
 		h2:before
 			content: url(../img/inquiries/inquiries_icon01.png)
 			display: inline-block
@@ -14,54 +16,21 @@
 // form header
 .form-header
 	p
+		@extend .m
 		margin: 1em 0 0
 		font-size: 1.2em
 		text-align: center
 		small
+			@extend .r
 			display: block
 			margin: 1em 0 0
 
-// policy check
-.policy-check
-	margin: 40px 0 0
-	h3
-		line-height: 1.5
-		small
-			display: inline-block
-			padding: 0 .5em
-			background: $lightpink
-			color: $pink
-	fieldset
-		display: block
-		padding: 1em
+// form-table
+.form-table
+	th,td
 		font-size: 1.2em
-		text-align: center
-		input[type=checkbox]
-			display: none
-		label
-			margin-right: 1rem
-		label:before
-			content: ""
-			display: inline-block
-			width: 1.2rem
-			height: 1.2rem
-			background: white
-			border: 1px solid $lightgreen
-			position: relative
-			top: 3px
-			margin-right: .5rem
-			vertical-align: text-top
-			line-height: 1.2
-			color: $pink
-		input:checked + label:before
-			content: "✓"
-			background: $lightpink
-	article
-		padding: 10px 15px 10px 25px
-		border: 2px solid $gray
-		>div
-			height: 145px
-			overflow: auto
-			font-size: 1em
-			line-height: 1.75
+	input[type=radio] + label:before
+		top: 2px
+			
+
 		

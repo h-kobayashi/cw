@@ -1,0 +1,89 @@
+
+@import "common/_font"
+@import "common/_color"
+@import "common/_item"
+@import "common/_form"
+
+// itemdata
+.item-data
+	@extend .large-item
+	margin: 40px 0 0
+	padding: 30px
+	border-top: 2px solid $gray
+.itemdata-title
+	@extend .largeitem-title
+.itemdata-attribute
+	@extend .largeitem-attribute
+.itemdata-status
+	@extend .largeitem-status
+	
+.entry
+	.contents-area
+		h2
+			@extend .b
+		h2:before
+			content: url(../img/entry/entry_icon01.png)
+			display: inline-block
+			margin: 0 .5em 0 0
+			vertical-align: middle
+
+// form title
+.form-body
+	>form
+		>h3
+			@extend .m
+			color: $pink
+		>h3:nth-of-type(1):before
+			content: url(../img/entry/entry_icon02.png)
+			display: inline-block
+			margin: 0 .5em 0 0
+			vertical-align: middle
+		>h3:nth-of-type(2)
+			margin-top: 40px
+		>h3:nth-of-type(2):before
+			content: url(../img/entry/form_icon02.png)
+			display: inline-block
+			margin: 0 .5em 0 0
+			vertical-align: middle
+		small + textarea
+			margin-top: 1.5em
+		ul + p
+			margin-top: 1.5em
+
+// input size
+.postcode input[type=text]
+	width: 13em
+	display: inline-block
+.name input[type=text]
+	width: 18.6em
+	display: inline-block
+	&:last-of-type
+		margin-left: 1em
+.select
+	display: inline-block
+	width: 10em
+	margin: 0 1em 0 0
+	border: 1px solid $lightgreen
+	border-radius: 5px
+	position: relative
+	&:after
+		content: "▼"
+		display: inline-block;
+		position: absolute
+		top: 50%
+		right: 10px
+		margin-top: -.75em
+	select
+		width: 100%
+		padding: .5em
+		border: none
+.list
+	li
+		display: inline-block
+		width: 48%
+		padding-bottom: .5em
+	input[type=text]
+		display: inline-block
+		width: 32em
+		margin-left: 1em
+		

@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <title>お問い合わせ｜柔道整復師の求人『柔整ワーカー』</title>
+    <title>求人掲載のお申込み｜柔道整復師の求人『柔整ワーカー』</title>
     <link rel="stylesheet" media="all" href="css/common/jquery-ui.min.css">
     <link rel="stylesheet" media="all" href="css/common/common.css">
-    <link rel="stylesheet" media="all" href="css/inquiries.css">
+    <link rel="stylesheet" media="all" href="css/ad.css">
   </head>
-  <body class="inquiries">
+  <body class="ad">
     <div class="wrapper">
       <header class="header__wrapper">
         <div class="header">
@@ -45,85 +45,155 @@
       </nav>
       <main class="main">
         <div class="contents-area">
-          <h2>お問合せ</h2>
-          <section class="form-header">
-            <p>柔整ワーカーへのご質問等お問合せはこちらから承ります。
-              <br>お手数をお掛けいたしますが、以下の項目を入力してください。
-              <small>※掲載しております情報へのご質問等は各掲載ページのご連絡先へ直接お問合せ下さい。</small>
-            </p>
-          </section>
+          <h2>求人掲載のお申込み</h2>
           <ul class="form-step">
             <li class="on">情報の入力</li>
             <li>入力内容の確認</li>
             <li>完了</li>
           </ul>
           <section class="form-body">
-            <form method="post" action="inquiries_check.html">
-              <p>必須項目は必ずご入力ください。</p>
-              <ul class="error-list">
-                <li>お問合せ内容を選択してください。</li>
-                <li>氏名フリガナを入力してください。</li>
-              </ul>
+            <form method="post" action="ad_check.html">
+              <h3>お申込み内容</h3>
               <table class="form-table">
                 <tr>
-                  <th>お問合せ内容</th>
+                  <th>法人・企業名</th>
                   <td class="must">必須</td>
                   <td>
-                    <ul>
-                      <li>
-                        <input type="radio" name="matter" id="matter_0">
-                        <label for="matter_0">柔整ワーカーへの質問・ご意見</label>
-                      </li>
-                      <li>
-                        <input type="radio" name="matter" id="matter_1">
-                        <label for="matter_1">求人掲載に関する問い合わせ</label>
-                      </li>
-                      <li>
-                        <input type="radio" name="matter" id="matter_2">
-                        <label for="matter_2">各求人情報に関する問い合わせ</label>
-                      </li>
-                      <li>
-                        <input type="radio" name="matter" id="matter_3">
-                        <label for="matter_3">応募に関する問い合わせ</label>
-                      </li>
-                      <li>
-                        <input type="radio" name="matter" id="matter_4">
-                        <label for="matter_4">エラーはバグに関する問い合わせ</label>
-                      </li>
-                      <li>
-                        <input type="radio" name="matter" id="matter_5">
-                        <label for="matter_5">その他のお問合せ</label>
-                      </li>
-                    </ul>
+                    <fieldset>
+                      <input type="text" placeholder="例：株式会社エムアイクリニック">
+                    </fieldset>
                   </td>
                 </tr>
                 <tr>
-                  <th>企業名</th>
+                  <th>法人・企業名（カナ）</th>
                   <td class="any">任意</td>
                   <td>
                     <fieldset>
-                      <input class="err" type="text" value="*入力してください">
-                      <small>例：株式会社アーベインスタイル</small>
+                      <input type="text" placeholder="例：カブシキガイシャエムアイクリニック">
                     </fieldset>
                   </td>
                 </tr>
                 <tr>
-                  <th>氏名</th>
+                  <th>郵便番号</th>
                   <td class="must">必須</td>
                   <td>
-                    <fieldset>
-                      <input type="text">
-                      <small>例：山田太郎</small>
+                    <fieldset class="postcode">
+                      <input type="text" placeholder="例：1600014">
+                      <button class="btn-green">郵便番号から住所を検索</button>
                     </fieldset>
                   </td>
                 </tr>
                 <tr>
-                  <th>氏名フリガナ</th>
+                  <th rowspan="2">住所</th>
                   <td class="must">必須</td>
                   <td>
+                    <fieldset class="select">
+                      <select>
+                        <option>都道府県</option>
+                        <optgroup label="北海道・東北">
+                          <option>北海道</option>
+                          <option>青森県</option>
+                          <option>秋田県</option>
+                          <option>山形県</option>
+                          <option>岩手県</option>
+                          <option>宮城県</option>
+                          <option>福島県</option>
+                        </optgroup>
+                        <optgroup label="北陸・中部">
+                          <option>新潟県</option>
+                          <option>富山県</option>
+                          <option>石川県</option>
+                          <option>福井県</option>
+                          <option>山梨県</option>
+                          <option>長野県</option>
+                          <option>岐阜県</option>
+                          <option>静岡県</option>
+                          <option>愛知県</option>
+                        </optgroup>
+                        <optgroup label="関東">
+                          <option>茨城県</option>
+                          <option>栃木県</option>
+                          <option>群馬県</option>
+                          <option>埼玉県</option>
+                          <option>東京都</option>
+                          <option>神奈川県</option>
+                        </optgroup>
+                        <optgroup label="近畿">
+                          <option>三重県</option>
+                          <option>滋賀県</option>
+                          <option>京都府</option>
+                          <option>大阪府</option>
+                          <option>兵庫県</option>
+                          <option>奈良県</option>
+                          <option>和歌山県</option>
+                        </optgroup>
+                        <optgroup label="中国・四国">
+                          <option>鳥取県</option>
+                          <option>島根県</option>
+                          <option>岡山県</option>
+                          <option>広島県</option>
+                          <option>山口県</option>
+                          <option>徳島県</option>
+                          <option>香川県</option>
+                          <option>愛媛県</option>
+                          <option>高知県</option>
+                        </optgroup>
+                        <optgroup label="九州・沖縄">
+                          <option>福岡県</option>
+                          <option>佐賀県</option>
+                          <option>長崎県</option>
+                          <option>熊本県</option>
+                          <option>大分県</option>
+                          <option>鹿児島県</option>
+                          <option>宮崎県</option>
+                          <option>沖縄県</option>
+                        </optgroup>
+                      </select>
+                    </fieldset>
+                    <fieldset class="select">
+                      <select>
+                        <option>市区町村</option>
+                      </select>
+                    </fieldset>
                     <fieldset>
-                      <input type="text">
-                      <small>例：ヤマダタロウ</small>
+                      <input type="text" placeholder="町名・番地">
+                    </fieldset>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="any">任意</td>
+                  <td>
+                    <fieldset>
+                      <input type="text" placeholder="建物名">
+                    </fieldset>
+                  </td>
+                </tr>
+                <tr>
+                  <th>担当者氏名</th>
+                  <td class="must">必須</td>
+                  <td>
+                    <fieldset class="name">
+                      <input type="text" placeholder="例：山田">
+                      <input type="text" placeholder="例：太郎">
+                    </fieldset>
+                  </td>
+                </tr>
+                <tr>
+                  <th>担当者氏名（カナ）</th>
+                  <td class="any">任意</td>
+                  <td>
+                    <fieldset class="name">
+                      <input type="text" placeholder="例：やまだ">
+                      <input type="text" placeholder="例：たろう">
+                    </fieldset>
+                  </td>
+                </tr>
+                <tr>
+                  <th>担当者所属部署</th>
+                  <td class="any">任意</td>
+                  <td>
+                    <fieldset>
+                      <input type="text" placeholder="例：人事部">
                     </fieldset>
                   </td>
                 </tr>
@@ -132,17 +202,17 @@
                   <td class="must">必須</td>
                   <td>
                     <fieldset>
-                      <input type="text">
-                      <small>例：info@urbane-s.com</small>
+                      <input type="text" placeholder="例：example@jusei-kyujin.com">
+                      <small>※こちらのメールアドレス宛に求人掲載に関する連絡を行います。</small>
                     </fieldset>
                   </td>
                 </tr>
                 <tr>
-                  <th>お問合せ内容</th>
+                  <th>電話番号</th>
                   <td class="must">必須</td>
                   <td>
                     <fieldset>
-                      <textarea rows="5" placeholder="お気軽にお問い合わせください。"></textarea>
+                      <input type="text" placeholder="例：09012345678">
                     </fieldset>
                   </td>
                 </tr>

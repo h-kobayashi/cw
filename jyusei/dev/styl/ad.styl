@@ -1,0 +1,57 @@
+
+@import "common/_font"
+@import "common/_color"
+@import "common/_item"
+@import "common/_form"
+
+.ad
+	.contents-area
+		h2
+			@extend .b
+		h2:before
+			content: url(../img/ad/ad_icon01.png)
+			display: inline-block
+			margin: 0 .5em 0 0
+			vertical-align: middle
+
+// form title
+.form-body
+	>form
+		>h3
+			@extend .m
+			color: $pink
+		>h3:before
+			content: url(../img/ad/form_icon02.png)
+			display: inline-block
+			margin: 0 .5em 0 0
+			vertical-align: middle
+
+// input size
+.postcode input[type=text]
+	width: 13em
+	display: inline-block
+.name input[type=text]
+	width: 18.6em
+	display: inline-block
+	&:last-of-type
+		margin-left: 1em
+.select
+	display: inline-block
+	width: 10em
+	margin: 0 1em 1em 0
+	border: 1px solid $lightgreen
+	border-radius: 5px
+	position: relative
+	&:after
+		content: "▼"
+		display: inline-block;
+		position: absolute
+		top: 50%
+		right: 10px
+		margin-top: -.75em
+	select
+		width: 100%
+		padding: .5em
+		border: none
+		
+		

@@ -1,0 +1,276 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title エムアイ整形外科クリニックの柔道整復師求人に応募する｜柔道整復師の求人『柔整ワーカー』
+		link(rel="stylesheet", media="all", href="css/common/jquery-ui.min.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/entry.css")
+	body.entry
+		.wrapper
+
+			include _header.pug
+
+			main.main
+				.contents-area
+					h2 エムアイ整形外科クリニックの柔道整復師求人に応募する
+					
+					section.item-data
+						h3.itemdata-title
+							strong エムアイ整形外科クリニック
+							| の柔道整復師求人
+						nav.itemdata-attribute
+							strong 整形外科
+							ul
+								li PT
+								li 柔整師
+								li あん摩
+						.itemdata-status
+							figure
+								img(src="img/top/pickupitem_image_sample.jpg")
+							dl
+								dt 業態
+								dd 整形外科クリニック
+									ul
+										li 正
+										li パ
+								dt 職種
+								dd 理学療法士（PT)　柔道整復師　あん摩マッサージ指圧師
+								dt 給与
+								dd 正社員
+									strong 月給
+										b 25.0
+										| 万円　～　
+										b 30.0
+										| 万円
+									| <br>
+									| パート・アルバイト
+									strong 時給
+										b 900
+										| 円　～　
+										b 1200
+										| 円
+								dt アクセス
+								dd 東京都西新宿0-0-0　西新宿ビル5階<br>新宿駅：徒歩9分、都庁前駅：徒歩3分、初台駅：徒歩6分					
+					ul.form-step
+						li.on 情報の入力
+						li 入力内容の確認
+						li 完了
+					section.form-body
+						form(method="post", action="entry_check.html")
+							h3 基本情報
+							table.form-table
+								tr
+									th 氏名
+									td.must 必須
+									td 
+										fieldset.name
+											input(type="text", placeholder="例：山田")
+											input(type="text", placeholder="例：太郎")
+								tr
+									th よみがな
+									td.any 任意
+									td 
+										fieldset.name
+											input(type="text", placeholder="例：やまだ")
+											input(type="text", placeholder="例：たろう")
+								tr
+									th 生年月日
+									td.must 必須
+									td
+										fieldset.select
+											select
+												option 年
+												- for (var i = 0; i < 50; i++)
+													option #{1952+i} 年
+										fieldset.select
+											select
+												option 月
+												- for (var i = 0; i < 12; i++)
+													option #{1+i} 月
+										fieldset.select
+											select
+												option 日
+												- for (var i = 0; i < 31; i++)
+													option #{1+i} 日
+								tr
+									th 性別
+									td.must 必須
+									td
+										fieldset
+											input(type="radio", name="sex", id="male", checked)
+											label(for="male") 男性
+											input(type="radio", name="sex", id="female")
+											label(for="female") 女性
+								tr
+									th 郵便番号
+									td.must 必須
+									td
+										fieldset.postcode
+											input(type="text", placeholder="例：1600014")
+											button.btn-green 郵便番号から住所を検索
+								tr
+									th(rowspan="2") 住所
+									td.must 必須
+									td
+										fieldset.select
+											select
+												option 都道府県
+												optgroup(label="北海道・東北")
+													each val in ["北海道", "青森県", "秋田県", "山形県", "岩手県", "宮城県", "福島県"]
+														option= val
+												optgroup(label="北陸・中部")
+													each val in ["新潟県", "富山県", "石川県", "福井県", "山梨県", "長野県", "岐阜県", "静岡県", "愛知県"]
+														option= val
+												optgroup(label="関東")
+													each val in ["茨城県", "栃木県", "群馬県", "埼玉県", "東京都", "神奈川県"]
+														option= val
+												optgroup(label="近畿")
+													each val in ["三重県", "滋賀県", "京都府", "大阪府", "兵庫県", "奈良県", "和歌山県"]
+														option= val
+												optgroup(label="中国・四国")
+													each val in ["鳥取県", "島根県", "岡山県", "広島県", "山口県", "徳島県", "香川県", "愛媛県", "高知県"]
+														option= val
+												optgroup(label="九州・沖縄")
+													each val in ["福岡県", "佐賀県", "長崎県", "熊本県", "大分県", "鹿児島県", "宮崎県", "沖縄県"]
+														option= val
+										fieldset.select
+											select
+												option 市区町村
+								tr
+									td.any 任意
+									td
+										fieldset
+											input(type="text", placeholder="町名・番地")
+										fieldset
+											input(type="text", placeholder="建物名")
+								tr
+									th メールアドレス
+									td.must 必須
+									td 
+										fieldset
+											input(type="text", placeholder="例：example@jusei-kyujin.com")
+											small ※こちらのメールアドレス宛に求人掲載に関する連絡を行います。
+								tr
+									th 電話番号
+									td.must 必須
+									td 
+										fieldset
+											input(type="text", placeholder="例：09012345678")
+								tr
+									th 就業状況
+									td.must 必須
+									td
+										fieldset
+											input(type="radio", name="status", id="status0", checked)
+											label(for="status0") 就業中
+											input(type="radio", name="status", id="status1")
+											label(for="status1") 離職中
+											input(type="radio", name="status", id="status2")
+											label(for="status2") 在学中
+								tr
+									th 入力情報
+									td.any 任意
+									td
+										fieldset
+											input(type="checkbox", id="cookie")
+											label(for="cookie") 入力した基本情報を他の求人でも再利用する
+											a(href="")
+												small ※cookie(クッキー)について
+												
+							h3 応募内容
+							table.form-table
+								tr
+									th 希望職種
+									td.must 必須
+									td 
+										fieldset.list
+											ul
+												- var list = ["柔道整復師", "あん摩マッサージ指圧師", "看護師・准看護師", "理学療法士（PT）", "作業療法士（OT）", "言語聴覚士（SP）", "鍼灸師", "整体師", "カイロプラクター", "スポーツトレーナー", "リラクゼーション系資格"]
+												- var job = "job_"
+												each item, index in list
+													li
+														input(type="checkbox", id=job + index)
+														label(for=job + index)= item
+											input(type="checkbox", id="job_other")
+											label(for="job_other") その他
+												input(type="text")
+								tr
+									th 希望雇用形態
+									td.must 必須
+									td
+										fieldset
+											input(type="checkbox", name="employment", id="employment0")
+											label(for="employment0") 正社員
+											input(type="checkbox", name="employment", id="employment0")
+											label(for="employment0") パート・アルバイト
+								tr
+									th 実務経験
+									td.must 必須
+									td
+										fieldset.select
+											select
+												option 実務経験
+												option 実務経験なし
+												option 1年未満
+												option 1～2年程度
+												option 2～3年程度
+												option 3年以上
+										small ※手技療法業界での実務経験年数を選択してください。（他の業界での就労年数は含みません。）
+								tr
+									th 免許・資格
+									td.must 必須
+									td
+										fieldset
+											ul
+												- var list = ["柔道整復師", "あん摩マッサージ指圧師", "鍼灸師", "自動運転免許", "免許・資格なし"]
+												- var license = "license_"
+												each item, index in list
+													li
+														input(type="checkbox", id=license + index)
+														label(for=license + index)= item
+											small ※保有している免許・資格が複数ある場合は全ての項目にチェックを入れてください。
+											textarea(rows="3", placeholder="上記の他に、保有している免許・資格があれば、こちらに入力してください。　例：1年以内に介護福祉士資格を取得予定。")
+								tr
+									th 自己PR
+									td.any 任意
+									td
+										fieldset
+											textarea(rows="3", placeholder="上記の他に、これまでの職歴や経験・実績に関するアピールがあれば、こちらに入力してください。　")
+								tr
+									th 面接・連絡希望日
+									td.any 任意
+									td
+										fieldset
+											textarea(rows="3", placeholder="面接日程や日中の連絡時間帯に関してご希望があれば、こちらに入力してください。　例：平日の18時以降に連絡をお願いします。")
+							
+							.policy-check
+								h3 利用規約と個人情報の取り扱いについて
+									small 必須
+								fieldset
+									input(type="checkbox", id="policy-check")
+									label(for="policy-check") 以下の利用規約と個人情報の取り扱いについて同意する
+								article
+									div
+										p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+							
+							.btn-area
+								button(onClick="submit()").btn-submit 入力内容を確認する
+			
+				aside.side-area
+					ul.banner-items
+						li: a(href=""): img(src="img/top/side_bnr_01.jpg", alt="")
+						li: a(href=""): img(src="img/top/side_bnr_02.jpg", alt="")
+						li: a(href=""): img(src="img/top/side_bnr_03.jpg", alt="")
+						li: a(href=""): img(src="img/top/side_bnr_04.jpg", alt="")
+						li: a(href=""): img(src="img/top/side_bnr_05.jpg", alt="")
+						li: a(href=""): img(src="img/top/side_bnr_06.jpg", alt="")
+
+
+			include _footer.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		script(type="text/javascript", src="js/common.js")

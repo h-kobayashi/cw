@@ -160,6 +160,7 @@ body {
 .contents-area section h2,
 .btn-area .btn-more,
 .btn-area .btn-submit,
+.btn-area .btn-cancel,
 .header-nav .for-recruiter,
 .globalnav li a,
 .footer .keep-items {
@@ -174,6 +175,7 @@ body {
   .contents-area section h2,
   .btn-area .btn-more,
   .btn-area .btn-submit,
+  .btn-area .btn-cancel,
   .header-nav a,
   .header-nav .for-recruiter,
   .globalnav li a,
@@ -344,6 +346,13 @@ select::-moz-focusring {
 }
 .btn-area .btn-submit:hover {
   background: #20b399;
+}
+.btn-area .btn-cancel {
+  background: #b4b4b4;
+  color: #fff;
+}
+.btn-area .btn-cancel:hover {
+  background: #949494;
 }
 .ellipsis {
   white-space: nowrap;
