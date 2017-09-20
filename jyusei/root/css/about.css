@@ -13,7 +13,10 @@
   src: url("../../font/mplus-1c-bold.eot");
   src: url("../../font/mplus-1c-bold.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-bold_web.woff2") format("woff2");
 }
-.r {
+.r,
+.branding h2,
+.content02 .content02_02 li,
+.faqitem p {
   font-family: Rounded-Mplus-1c-regular;
 }
 .m,
@@ -28,7 +31,18 @@
 .search-job a,
 .search-area a,
 .search-character a,
-.branding,
+.check-rec p,
+.content__wrapper >section >h2,
+.content01 ul li,
+.content01 p,
+.content02 div h3,
+.content02 div p,
+.content02 .content02_02 li strong,
+.responsive:before,
+.responsive p,
+.faqitems >h2,
+.faqitem h3,
+.content04 >h3,
 .pickup-items .pickupitem-title,
 .pickup-items .pickupitem-status dl dt,
 .pickup-items .pickupitem-characters li {
@@ -44,6 +58,13 @@
 .smallitem p strong,
 .smallitem-status >div >ul li,
 .smallitem-status >div >dl dd b,
+.check-rec p a,
+.faqitem h3:before,
+.faqitem p:before,
+.content04 .recitem h3,
+.content04 .recitem p strong,
+.content04 .recitem-status >div >ul li,
+.content04 .recitem-status >div >dl dd b,
 .front-search fieldset label,
 .pickup-items .pickupitem .btn-keep,
 .pickup-items .pickupitem-title strong,
@@ -62,7 +83,8 @@
   src: url("../../font/JuliusSansOne-Regular.eot");
   src: url("../../font/JuliusSansOne-Regular.eot?") format("embedded-opentype"), url("../../font/JuliusSansOne-Regular.woff2") format("woff2");
 }
-.j {
+.j,
+.content02 div:after {
   font-family: JuliusSansOne-Regular;
 }
 @font-face {
@@ -99,7 +121,29 @@
   .search-job a,
   .search-area a,
   .search-character a,
-  .branding,
+  .branding h2,
+  .check-rec p,
+  .check-rec p a,
+  .content__wrapper >section >h2,
+  .content01 ul li,
+  .content01 p,
+  .content02 div:after,
+  .content02 div h3,
+  .content02 div p,
+  .content02 .content02_02 li,
+  .content02 .content02_02 li strong,
+  .responsive:before,
+  .responsive p,
+  .faqitems >h2,
+  .faqitem h3,
+  .faqitem h3:before,
+  .faqitem p,
+  .faqitem p:before,
+  .content04 >h3,
+  .content04 .recitem h3,
+  .content04 .recitem p strong,
+  .content04 .recitem-status >div >ul li,
+  .content04 .recitem-status >div >dl dd b,
   .front-search fieldset label,
   .pickup-items .pickupitem .btn-keep,
   .pickup-items .pickupitem-title,
@@ -136,7 +180,10 @@
   src: url("../../font/mplus-1c-bold.eot");
   src: url("../../font/mplus-1c-bold.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-bold_web.woff2") format("woff2");
 }
-.r {
+.r,
+.branding h2,
+.content02 .content02_02 li,
+.faqitem p {
   font-family: Rounded-Mplus-1c-regular;
 }
 .m,
@@ -151,7 +198,18 @@
 .search-job a,
 .search-area a,
 .search-character a,
-.branding,
+.check-rec p,
+.content__wrapper >section >h2,
+.content01 ul li,
+.content01 p,
+.content02 div h3,
+.content02 div p,
+.content02 .content02_02 li strong,
+.responsive:before,
+.responsive p,
+.faqitems >h2,
+.faqitem h3,
+.content04 >h3,
 .pickup-items .pickupitem-title,
 .pickup-items .pickupitem-status dl dt,
 .pickup-items .pickupitem-characters li {
@@ -167,6 +225,13 @@
 .smallitem p strong,
 .smallitem-status >div >ul li,
 .smallitem-status >div >dl dd b,
+.check-rec p a,
+.faqitem h3:before,
+.faqitem p:before,
+.content04 .recitem h3,
+.content04 .recitem p strong,
+.content04 .recitem-status >div >ul li,
+.content04 .recitem-status >div >dl dd b,
 .front-search fieldset label,
 .pickup-items .pickupitem .btn-keep,
 .pickup-items .pickupitem-title strong,
@@ -185,7 +250,8 @@
   src: url("../../font/JuliusSansOne-Regular.eot");
   src: url("../../font/JuliusSansOne-Regular.eot?") format("embedded-opentype"), url("../../font/JuliusSansOne-Regular.woff2") format("woff2");
 }
-.j {
+.j,
+.content02 div:after {
   font-family: JuliusSansOne-Regular;
 }
 @font-face {
@@ -222,7 +288,29 @@
   .search-job a,
   .search-area a,
   .search-character a,
-  .branding,
+  .branding h2,
+  .check-rec p,
+  .check-rec p a,
+  .content__wrapper >section >h2,
+  .content01 ul li,
+  .content01 p,
+  .content02 div:after,
+  .content02 div h3,
+  .content02 div p,
+  .content02 .content02_02 li,
+  .content02 .content02_02 li strong,
+  .responsive:before,
+  .responsive p,
+  .faqitems >h2,
+  .faqitem h3,
+  .faqitem h3:before,
+  .faqitem p,
+  .faqitem p:before,
+  .content04 >h3,
+  .content04 .recitem h3,
+  .content04 .recitem p strong,
+  .content04 .recitem-status >div >ul li,
+  .content04 .recitem-status >div >dl dd b,
   .front-search fieldset label,
   .pickup-items .pickupitem .btn-keep,
   .pickup-items .pickupitem-title,
@@ -445,6 +533,7 @@
   text-align: center;
 }
 .small-items ul,
+.content04 ul,
 .new-items ul {
   display: -webkit-box;
   display: -moz-box;
@@ -467,10 +556,12 @@
   margin-top: 20px;
 }
 .smallitem,
+.content04 .recitem,
 .new-items .newitem {
   width: 414px;
 }
 .smallitem >a,
+.content04 .recitem >a,
 .new-items .newitem >a {
   display: block;
   margin: 0 0 20px;
@@ -478,15 +569,18 @@
   border: 2px solid #e4e4e4;
 }
 .smallitem >a:hover,
+.content04 .recitem >a:hover,
 .new-items .newitem >a:hover {
   background: #fffde6;
 }
 .smallitem h3,
+.content04 .recitem h3,
 .new-items .newitem h3 {
   padding: 0 0.75rem 5px;
   border-bottom: 1px solid #e4e4e4;
 }
 .smallitem h3 small,
+.content04 .recitem h3 small,
 .new-items .newitem h3 small {
   display: block;
   width: 7em;
@@ -499,18 +593,22 @@
   text-align: center;
 }
 .smallitem h3 strong,
+.content04 .recitem h3 strong,
 .new-items .newitem h3 strong {
   font-size: 1.5rem;
 }
 .smallitem p,
+.content04 .recitem p,
 .new-items .newitem p {
   margin: 0.5rem 0 0.5rem 0.75rem;
 }
 .smallitem p strong,
+.content04 .recitem p strong,
 .new-items .newitem p strong {
   color: #f19032;
 }
 .smallitem-status,
+.content04 .recitem-status,
 .new-items .newitem-status {
   display: -webkit-box;
   display: -moz-box;
@@ -521,11 +619,13 @@
   padding: 0 0.75rem;
 }
 .smallitem-status figure,
+.content04 .recitem-status figure,
 .new-items .newitem-status figure {
   width: 130px;
   margin-right: 1rem;
 }
 .smallitem-status >div,
+.content04 .recitem-status >div,
 .new-items .newitem-status >div {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -536,10 +636,12 @@
   flex: 1;
 }
 .smallitem-status >div >ul,
+.content04 .recitem-status >div >ul,
 .new-items .newitem-status >div >ul {
   margin: 0;
 }
 .smallitem-status >div >ul li,
+.content04 .recitem-status >div >ul li,
 .new-items .newitem-status >div >ul li {
   display: inline-block;
   width: 7em;
@@ -551,11 +653,13 @@
   vertical-align: top;
 }
 .smallitem-status >div >dl dt,
+.content04 .recitem-status >div >dl dt,
 .new-items .newitem-status >div >dl dt {
   margin-top: 0.25rem;
   font-size: 0.75rem;
 }
 .smallitem-status >div >dl dd b,
+.content04 .recitem-status >div >dl dd b,
 .new-items .newitem-status >div >dl dd b {
   color: #f19032;
 }
@@ -679,24 +783,411 @@
 }
 .branding__wrapper {
   min-width: 1100px;
-  height: 563px;
-  background: url("../img/top/top_mainimg.jpg") center top no-repeat;
+  max-width: 1700px;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../img/about/about_img01.jpg") center top no-repeat;
 }
 .branding {
   width: 1100px;
-  height: 430px;
+  height: 500px;
   margin: 0 auto;
-  padding: 160px 0 0;
+  padding: 90px 0 0;
+}
+.branding h2 {
+  color: #fff;
   font-size: 2.4rem;
-  font-weight: bold;
   line-height: 1.5;
 }
-.branding strong {
+.branding h2 >strong {
+  display: inline-block;
+  margin: 0 0.2em 0.75rem 0;
+  padding: 0 2rem;
+  background: #fdff60;
+  font-size: 3rem;
+  color: #f75d75;
+}
+.branding h2 >strong >span {
+  display: inline-block;
+  position: relative;
+  left: -0.2em;
+  color: #373737;
+  font-size: 2.4rem;
+}
+.branding h2 >b {
+  font-size: 3rem;
+  color: #fdff60;
+}
+.branding h2 >span {
+  display: inline-block;
+  position: relative;
+  left: -0.2em;
+  bottom: -0.2em;
+}
+.check-rec__wrapper {
+  min-width: 1100px;
+  max-width: 1700px;
+  height: 375px;
+  margin: 0 auto;
+  padding: 100px 0 0;
+  background: url("../img/about/about_img06.png") center top no-repeat;
+}
+.check-rec {
+  width: 1100px;
+  margin: 0 auto;
+}
+.check-rec p {
+  width: 800px;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.check-rec p a {
+  display: block;
+  width: 450px;
+  margin: 1em auto;
+  padding: 0.75em;
+  background: #40dcc0;
+  border-radius: 4px;
+  -webkit-box-shadow: 3px 3px 0 #179d85;
+  box-shadow: 3px 3px 0 #179d85;
+  color: #fff;
+  text-align: center;
+}
+.check-rec p a:hover {
+  background: #20b399;
+}
+.content__wrapper {
+  min-width: 1100px;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+.content__wrapper >section {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.content__wrapper >section >h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.content01 h2 {
+  width: 710px;
+  margin: 0 auto;
+  border-bottom: 5px solid #f75d75;
+}
+.content01 ul {
+  margin: 60px 0 0;
+  text-align: cetner;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.content01 ul li {
+  display: block;
+  width: 240px;
+  height: 240px;
+  padding: 20px 0 0;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.content01 ul li:nth-of-type(1) {
+  background: url("../img/about/about_img02.png") center no-repeat;
+}
+.content01 ul li:nth-of-type(1):before {
+  content: '01';
+  display: block;
+  margin: 0 0 0.25rem;
+  font-size: 1.2rem;
+}
+.content01 ul li:nth-of-type(2) {
+  background: url("../img/about/about_img03.png") center no-repeat;
+}
+.content01 ul li:nth-of-type(2):before {
+  content: '02';
+  display: block;
+  margin: 0 0 0.25rem;
+  font-size: 1.2rem;
+}
+.content01 ul li:nth-of-type(3) {
+  background: url("../img/about/about_img04.png") center no-repeat;
+}
+.content01 ul li:nth-of-type(3):before {
+  content: '03';
+  display: block;
+  margin: 0 0 0.25rem;
+  font-size: 1.2rem;
+}
+.content01 ul li:nth-of-type(4) {
+  background: url("../img/about/about_img05.png") center no-repeat;
+}
+.content01 ul li:nth-of-type(4):before {
+  content: '04';
+  display: block;
+  margin: 0 0 0.25rem;
+  font-size: 1.2rem;
+}
+.content01 p {
+  margin: 60px 0 0;
+  padding: 30px 60px;
+  background: #f9f9f9;
+  font-size: 1.17rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  line-height: 2;
+}
+.content01 p strong {
   color: #ee8593;
-  font-size: 2.8rem;
+}
+.content02 div {
+  border: 5px solid #ffeff1;
+  border-radius: 5px;
+  position: relative;
+}
+.content02 div:after {
+  position: absolute;
+  top: -6rem;
+  font-size: 6rem;
+  color: #ee8593;
+}
+.content02 div h3 {
+  color: #1fad37;
+  font-size: 1.5rem;
+}
+.content02 div h3:after {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  margin-left: -25px;
+}
+.content02 div p {
+  margin: 30px 0 0;
+  line-height: 1.75;
+}
+.content02 .content02_01 {
+  margin: 90px 0 0;
+  padding: 60px 50px 60px 390px;
+}
+.content02 .content02_01:before {
+  content: url("../img/about/about_img07_2.png");
+  position: absolute;
+  top: -50px;
+  left: 10px;
+}
+.content02 .content02_01:after {
+  content: "01";
+  right: 0;
+}
+.content02 .content02_01 h3:after {
+  content: url("../img/about/about_img07_1.png");
+}
+.content02 .content02_02 {
+  margin: 130px 0 0;
+  padding: 60px 50px;
+  text-align: center;
+}
+.content02 .content02_02:before {
+  content: url("../img/about/about_img08_2.png");
+  position: absolute;
+  top: -170px;
+  right: 10px;
+}
+.content02 .content02_02:after {
+  content: "02";
+  left: 0;
+}
+.content02 .content02_02 h3:after {
+  content: url("../img/about/about_img08_1.png");
+}
+.content02 .content02_02 p {
+  margin: 60px 0 20px;
+}
+.content02 .content02_02 li {
+  display: inline-block;
+  width: 470px;
+  height: 80px;
+  margin: 15px 6px 0;
+  padding: 20px;
+  background: #ee8593;
+  border-radius: 5px;
+  color: #fff;
+}
+.content02 .content02_02 li strong {
+  display: block;
+  color: #fdff60;
+  font-size: 1.2rem;
+}
+.content02 .content02_02 li:last-of-type {
+  background: #f9f9f9;
+  color: #373737;
+}
+.content02 .content02_03 {
+  margin: 130px 0 0;
+  padding: 60px 50px 60px 300px;
+}
+.content02 .content02_03:before {
+  content: url("../img/about/about_img09_2.png");
+  position: absolute;
+  top: -90px;
+  left: 30px;
+}
+.content02 .content02_03:after {
+  content: "03";
+  right: 0;
+}
+.content02 .content02_03 h3:after {
+  content: url("../img/about/about_img09_1.png");
+}
+.responsive__wrapper {
+  min-width: 1100px;
+  max-width: 1700px;
+  height: 646px;
+  margin: 0 auto;
+  background: #dff7f7 url("../img/about/about_img10_2.png") center top no-repeat;
+}
+.responsive {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 80px 0 0;
+  position: relative;
+}
+.responsive:before {
+  content: "スマホ対応";
+  display: block;
+  width: 60px;
+  height: 50px;
+  padding: 10px 0 0;
+  background: #fdff60;
+  border: 20px solid #fdff60;
+  border-radius: 50px;
+  font-size: 1.25rem;
+  text-align: center;
+  position: absolute;
+  top: 230px;
+  right: 100px;
+}
+.responsive:after {
+  content: url("../img/about/about_img10_1.png");
+  position: relative;
+  top: 60px;
+  left: 140px;
+}
+.responsive p {
+  width: 864px;
+  height: 120px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  background: #fff;
+  color: #ee8593;
+  font-size: 2rem;
+  line-height: 1.3;
+  text-align: center;
+  position: relative;
+}
+.responsive p:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #fff;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -12px;
+}
+.content03 ol {
+  width: 1097px;
+  height: 333px;
+  margin: 75px 0 0;
+  background: url("../img/about/about_img11.png") center top no-repeat;
+}
+.content03 li {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.faq__wrapper {
+  min-width: 1100px;
+  max-width: 1700px;
+  margin: 0 auto;
+  background: #f2f2f2;
+}
+.faqitems {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.faqitems >h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.faqitem {
+  margin: 30px 0 0;
+  padding: 40px 39px 40px 60px;
+  background: #fff;
+}
+.faqitem:first-of-type {
+  margin: 75px 0 0;
+}
+.faqitem h3 {
+  color: #2da5a3;
+  font-size: 1.1rem;
+  position: relative;
+}
+.faqitem h3:before {
+  content: "Q.";
+  display: inline-block;
+  font-size: 1.2rem;
+  position: absolute;
+  top: -4px;
+  left: -24px;
+}
+.faqitem p {
+  margin: 30px 0 0;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  position: relative;
+}
+.faqitem p:before {
+  content: "A.";
+  display: inline-block;
+  color: #ee8593;
+  font-size: 1.2rem;
+  position: absolute;
+  top: -4px;
+  left: -24px;
+}
+.content04 >h3 {
+  margin: 60px 0 0;
+  color: #ee8593;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+.content04 .recitem {
+  width: 540px;
 }
 .front-search {
-  background: #f9f9f9;
+  background: #fff;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -715,7 +1206,7 @@
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  padding: 30px 0;
+  padding: 50px 0 0;
 }
 .front-search fieldset {
   width: 280px;

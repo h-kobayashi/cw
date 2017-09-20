@@ -166,10 +166,28 @@ body {
 .footer .keep-items {
   font-family: Rounded-Mplus-1c-bold;
 }
+@font-face {
+  font-family: JuliusSansOne-Regular;
+  src: url("../../font/JuliusSansOne-Regular.eot");
+  src: url("../../font/JuliusSansOne-Regular.eot?") format("embedded-opentype"), url("../../font/JuliusSansOne-Regular.woff2") format("woff2");
+}
+.j {
+  font-family: JuliusSansOne-Regular;
+}
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url("../../font/OpenSans-Bold.eot");
+  src: url("../../font/OpenSans-Bold.eot?") format("embedded-opentype"), url("../../font/OpenSans-Bold.woff2") format("woff2");
+}
+.o {
+  font-family: OpenSans-Bold;
+}
 @media all and (-ms-high-contrast: none) {
   .r,
   .m,
   .b,
+  .j,
+  .o,
   html,
   body,
   .contents-area section h2,
@@ -391,10 +409,28 @@ select::-moz-focusring {
 .footer .keep-items {
   font-family: Rounded-Mplus-1c-bold;
 }
+@font-face {
+  font-family: JuliusSansOne-Regular;
+  src: url("../../font/JuliusSansOne-Regular.eot");
+  src: url("../../font/JuliusSansOne-Regular.eot?") format("embedded-opentype"), url("../../font/JuliusSansOne-Regular.woff2") format("woff2");
+}
+.j {
+  font-family: JuliusSansOne-Regular;
+}
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url("../../font/OpenSans-Bold.eot");
+  src: url("../../font/OpenSans-Bold.eot?") format("embedded-opentype"), url("../../font/OpenSans-Bold.woff2") format("woff2");
+}
+.o {
+  font-family: OpenSans-Bold;
+}
 @media all and (-ms-high-contrast: none) {
   .r,
   .m,
   .b,
+  .j,
+  .o,
   .header-nav a,
   .header-nav .for-recruiter,
   .globalnav li a,
@@ -735,10 +771,28 @@ select::-moz-focusring {
 .b {
   font-family: Rounded-Mplus-1c-bold;
 }
+@font-face {
+  font-family: JuliusSansOne-Regular;
+  src: url("../../font/JuliusSansOne-Regular.eot");
+  src: url("../../font/JuliusSansOne-Regular.eot?") format("embedded-opentype"), url("../../font/JuliusSansOne-Regular.woff2") format("woff2");
+}
+.j {
+  font-family: JuliusSansOne-Regular;
+}
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url("../../font/OpenSans-Bold.eot");
+  src: url("../../font/OpenSans-Bold.eot?") format("embedded-opentype"), url("../../font/OpenSans-Bold.woff2") format("woff2");
+}
+.o {
+  font-family: OpenSans-Bold;
+}
 @media all and (-ms-high-contrast: none) {
   .r,
   .m,
-  .b {
+  .b,
+  .j,
+  .o {
     -webkit-transform: rotate(0.001deg);
     -moz-transform: rotate(0.001deg);
     -o-transform: rotate(0.001deg);

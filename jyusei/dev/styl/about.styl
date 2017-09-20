@@ -1,0 +1,491 @@
+
+@import "common/_font"
+@import "common/_color"
+@import "common/_item"
+
+// branding
+
+.branding__wrapper
+	min-width: 1100px
+	max-width: 1700px
+	height: 500px
+	margin: 0 auto
+	background: url(../img/about/about_img01.jpg) center top no-repeat
+
+.branding
+	width: 1100px
+	height: 500px
+	margin: 0 auto
+	padding: 90px 0 0
+	h2
+		@extend .r
+		color: white
+		font-size: 2.4rem
+		line-height: 1.5
+		>strong
+			display: inline-block
+			margin: 0 .2em .75rem 0
+			padding: 0 2rem
+			background: $yellow2
+			font-size: 3rem
+			color: $pink2
+			>span
+				display: inline-block
+				position: relative
+				left: -.2em
+				color: $black
+				font-size: 2.4rem
+		>b
+			font-size: 3rem
+			color: $yellow2
+		>span
+			display: inline-block
+			position: relative
+			left: -.2em
+			bottom: -.2em
+
+// check-rec
+.check-rec__wrapper
+	min-width: 1100px
+	max-width: 1700px
+	height: 375px
+	margin: 0 auto
+	padding: 100px 0 0
+	background: url(../img/about/about_img06.png) center top no-repeat
+.check-rec
+	width: 1100px
+	margin: 0 auto
+	p
+		width: 800px
+		@extend .m
+		font-size: 1.75rem
+		line-height: 1.5
+		text-align: center
+		a
+			display: block
+			width: 450px
+			margin: 1em auto
+			padding: .75em
+			background: $green
+			border-radius: 4px
+			box-shadow: 3px 3px 0 rgba(23,157,133,1)
+			@extend .b
+			color: white
+			text-align: center
+			&:hover
+				background: $green_o
+
+.content__wrapper
+	min-width: 1100px
+	max-width: 1700px
+	margin: 0 auto
+	>section
+		width: 1100px
+		margin: 0 auto
+		padding: 100px 0
+		>h2
+			@extend .m
+			font-size: 2.4rem
+			text-align: center
+			letter-spacing: .2em
+			
+// content01
+.content01
+	h2
+		width: 710px
+		margin: 0 auto
+		border-bottom: 5px solid $pink2
+	ul
+		margin: 60px 0 0
+		text-align: cetner
+		display: flex
+		flex-wrap: nowrap
+		justify-content: space-between
+		li
+			display: block
+			width: 240px
+			height: 240px
+			padding: 20px 0 0
+			@extend .m
+			text-align: center
+			color: white
+			font-size: 1.5rem
+		for $i in 1..4
+			li:nth-of-type({$i})
+				background: url('../img/about/about_img0' + ($i + 1) + '.png') center no-repeat
+				&:before
+					content: '0' + $i
+					display: block
+					margin: 0 0 .25rem
+					font-size: 1.2rem
+	p
+		margin: 60px 0 0
+		padding: 30px 60px
+		background: $lightgray
+		@extend .m
+		font-size: 1.17rem
+		text-align: center
+		letter-spacing: .2rem
+		line-height: 2
+		strong
+			color: $pink
+
+// content02
+.content02
+	div
+		border: 5px solid $lightpink
+		border-radius: 5px
+		position: relative
+		&:after
+			position: absolute
+			top: -6rem
+			@extend .j
+			font-size: 6rem
+			color: $pink
+		h3
+			@extend .m
+			color: $green3
+			font-size: 1.5rem
+			&:after
+				position: absolute
+				top: -25px
+				left: 50%
+				margin-left: -25px
+		p
+			margin: 30px 0 0
+			@extend .m
+			line-height: 1.75
+	.content02_01
+		margin: 90px 0 0
+		padding: 60px 50px 60px 390px
+		&:before
+			content: url(../img/about/about_img07_2.png)
+			position: absolute
+			top: -50px
+			left: 10px
+		&:after
+			content: "01"
+			right: 0
+		h3:after
+			content: url(../img/about/about_img07_1.png)
+	.content02_02
+		margin: 130px 0 0
+		padding: 60px 50px
+		text-align: center
+		&:before
+			content: url(../img/about/about_img08_2.png)
+			position: absolute
+			top: -170px
+			right: 10px
+		&:after
+			content: "02"
+			left: 0
+		h3:after
+			content: url(../img/about/about_img08_1.png)
+		p
+			margin: 60px 0 20px
+		li
+			display: inline-block
+			width: 470px
+			height: 80px
+			margin: 15px 6px 0
+			padding: 20px
+			background: $pink
+			border-radius: 5px
+			@extend .r
+			color: white
+			strong
+				display: block
+				@extend .m
+				color: $yellow2
+				font-size: 1.2rem
+		li:last-of-type
+			background: $lightgray
+			color: $black
+	.content02_03
+		margin: 130px 0 0
+		padding: 60px 50px 60px 300px
+		&:before
+			content: url(../img/about/about_img09_2.png)
+			position: absolute
+			top: -90px
+			left: 30px
+		&:after
+			content: "03"
+			right: 0
+		h3:after
+			content: url(../img/about/about_img09_1.png)
+
+// responsive
+.responsive__wrapper
+	min-width: 1100px
+	max-width: 1700px
+	height: 646px
+	margin: 0 auto
+	background: #dff7f7 url(../img/about/about_img10_2.png) center top no-repeat
+.responsive
+	width: 1100px
+	margin: 0 auto
+	padding: 80px 0 0
+	position: relative
+	&:before
+		content: "スマホ対応"
+		display: block
+		width: 60px
+		height: 50px
+		padding: 10px 0 0
+		background: $yellow2
+		border: 20px solid $yellow2
+		border-radius: 50px
+		@extend .m
+		font-size: 1.25rem
+		text-align: center
+		position: absolute
+		top: 230px
+		right: 100px
+	&:after
+		content: url(../img/about/about_img10_1.png)
+		position: relative
+		top: 60px
+		left: 140px
+	p
+		width: 864px
+		height: 120px
+		margin: 0 auto
+		padding: 20px 0 0
+		background: white
+		@extend .m
+		color: $pink
+		font-size: 2rem
+		line-height: 1.3
+		text-align: center
+		position: relative
+		&:after
+			content: ""
+			display: block
+			width: 0
+			height: 0
+			border-top: 20px solid white
+			border-left: 12px solid transparent
+			border-right: 12px solid transparent
+			position: absolute
+			bottom: -20px
+			left: 50%
+			margin-left: -12px
+
+// content03
+.content03
+	ol
+		width: 1097px
+		height: 333px
+		margin: 75px 0 0
+		background: url(../img/about/about_img11.png) center top no-repeat
+	li
+		opacity: 0
+
+// faq
+.faq__wrapper
+	min-width: 1100px
+	max-width: 1700px
+	margin: 0 auto
+	background: $lightgray2
+.faqitems
+	width: 1100px
+	margin: 0 auto
+	padding: 100px 0
+	>h2
+		@extend .m
+		font-size: 2.4rem
+		text-align: center
+		letter-spacing: .2em
+.faqitem
+	margin: 30px 0 0
+	padding: 40px 39px 40px 60px
+	background: white
+	&:first-of-type
+		margin: 75px 0 0
+	h3
+		@extend .m
+		color: $green4
+		font-size: 1.1rem
+		position: relative
+		&:before
+			content: "Q."
+			display: inline-block
+			@extend .b
+			font-size: 1.2rem
+			position: absolute
+			top: -4px
+			left: -24px
+	p
+		@extend .r
+		margin: 30px 0 0
+		font-size: 1.1rem
+		line-height: 1.75
+		position: relative
+		&:before
+			content: "A."
+			display: inline-block
+			@extend .b
+			color: $pink
+			font-size: 1.2rem
+			position: absolute
+			top: -4px
+			left: -24px
+
+// content04
+.content04
+	@extend .small-items
+	>h3
+		margin: 60px 0 0
+		@extend .m
+		color: $pink
+		font-size: 1.5rem
+		text-decoration: underline
+	.recitem
+		@extend .smallitem
+		width: 540px
+	.recitem-status
+		@extend .smallitem-status
+
+.front-search
+	background: white
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 50px 0 0
+	fieldset
+		width: 280px
+		margin: 0 5px
+		label
+			display: block
+			margin: 0 0 5px
+			padding: .25em 1em .1em
+			background: $pink
+			border-radius: 1em
+			color: white
+			@extend .b
+			font-size: 1.17em
+			small
+				display: inline
+				font-size: .87em
+				position: relative
+				top: -.1em
+				left: -.4em
+			&:before
+				content: ""
+				display: inline-block
+				width: 15px
+				height: 13px
+				background: url(../img/top/top_serch_icon01.png) 0 0 no-repeat
+				background-size: contain
+				position: relative
+				top: 1px
+				margin-right: .25em
+		.select
+			border: 2px solid $gray
+			border-radius: 2px
+			position: relative
+			&:after
+				content: ""
+				display: inline-block;
+				width: 10px
+				height: 6px
+				background: url(../img/top/top_serch_icon02.png) 0 0 no-repeat
+				background-size: contain
+				position: absolute
+				top: 50%
+				right: 10px
+				margin-top: -3px
+			select
+				width: 100%
+				padding: .5em
+				border: none
+			
+	.btn-area
+		width: 220px
+		margin: 0 5px
+		.btn-submit
+			display: block
+			width: 100%
+			height: 72px
+			border: none
+			border-radius: 2px
+			font-size: 1.2em
+			font-weight: bold
+			text-align: center
+			line-height: 70px
+			
+
+// pickup items
+.pickup-items
+	.pickupitem
+		@extend .large-item
+	.pickupitem-title
+		@extend .largeitem-title
+	.pickupitem-attribute
+		@extend .largeitem-attribute
+	.pickupitem-status
+		@extend .largeitem-status
+	.pickupitem-comment
+		@extend .largeitem-comment
+	.pickupitem-characters
+		@extend .largeitem-characters
+		
+// new items
+.new-items
+	@extend .small-items
+	.newitem
+		@extend .smallitem
+	.newitem-status
+		@extend .smallitem-status
+
+// information
+.information
+	ul
+		margin-top: 10px
+	li
+		display: flex
+		flex-wrap: nowrap
+		small
+			width: 100px
+			padding: 1rem 0
+			border-bottom: 1px solid $pink
+			font-size: .87rem
+			text-align: center
+		a
+			flex: 1
+			display: block
+			padding: 1rem 1.5rem
+			border-bottom: 1px solid $gray
+			color: $black
+			line-height: 1.25
+		a:hover
+			text-decoration: underline
+
+// about
+.about-area
+	display: block
+	padding: 40px
+	background: url(../img/top/top_bg01.jpg) 0 0 no-repeat
+	background-size: cover
+	line-height: 2
+	strong
+		display: block
+		@extend .b
+		font-size: 1.5rem
+	p
+		margin: 30px 0
+	li
+		display: inline-block
+		white-space: nowrap
+	a
+		display: inline
+		color: $blue
+		text-decoration: underline
+
+
+
+
+
+

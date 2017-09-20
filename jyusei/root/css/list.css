@@ -55,10 +55,28 @@
 .searchitems__header div a {
   font-family: Rounded-Mplus-1c-bold;
 }
+@font-face {
+  font-family: JuliusSansOne-Regular;
+  src: url("../../font/JuliusSansOne-Regular.eot");
+  src: url("../../font/JuliusSansOne-Regular.eot?") format("embedded-opentype"), url("../../font/JuliusSansOne-Regular.woff2") format("woff2");
+}
+.j {
+  font-family: JuliusSansOne-Regular;
+}
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url("../../font/OpenSans-Bold.eot");
+  src: url("../../font/OpenSans-Bold.eot?") format("embedded-opentype"), url("../../font/OpenSans-Bold.woff2") format("woff2");
+}
+.o {
+  font-family: OpenSans-Bold;
+}
 @media all and (-ms-high-contrast: none) {
   .r,
   .m,
   .b,
+  .j,
+  .o,
   .large-item .btn-keep,
   .largeitem-title,
   .largeitem-title strong,
@@ -156,10 +174,28 @@
 .searchitems__header div a {
   font-family: Rounded-Mplus-1c-bold;
 }
+@font-face {
+  font-family: JuliusSansOne-Regular;
+  src: url("../../font/JuliusSansOne-Regular.eot");
+  src: url("../../font/JuliusSansOne-Regular.eot?") format("embedded-opentype"), url("../../font/JuliusSansOne-Regular.woff2") format("woff2");
+}
+.j {
+  font-family: JuliusSansOne-Regular;
+}
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url("../../font/OpenSans-Bold.eot");
+  src: url("../../font/OpenSans-Bold.eot?") format("embedded-opentype"), url("../../font/OpenSans-Bold.woff2") format("woff2");
+}
+.o {
+  font-family: OpenSans-Bold;
+}
 @media all and (-ms-high-contrast: none) {
   .r,
   .m,
   .b,
+  .j,
+  .o,
   .large-item .btn-keep,
   .largeitem-title,
   .largeitem-title strong,
