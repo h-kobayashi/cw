@@ -83,19 +83,19 @@
               <dl class="searchitem-business">
                 <dt>業態</dt>
                 <dd>整形外科
-                  <a href="javascript:void(0)">変更</a>
+                  <a class="searchmodal-business" href="javascript:void(0)">変更</a>
                 </dd>
               </dl>
               <dl class="searchitem-job">
                 <dt>職種</dt>
                 <dd>柔道整復師
-                  <a href="javascript:void(0)">変更</a>
+                  <a class="searchmodal-job" href="javascript:void(0)">変更</a>
                 </dd>
               </dl>
               <dl class="searchitem-area">
                 <dt>エリア</dt>
                 <dd>新宿, 目黒, 恵比寿
-                  <a href="javascript:void(0)">変更</a>
+                  <a class="searchmodal-area" href="javascript:void(0)">変更</a>
                 </dd>
               </dl>
             </nav>
@@ -479,7 +479,7 @@
     <script type="text/javascript" src="js/jquery.ellipsis.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <div class="search__wrapper">
-      <div class="searchmodal searchmodal-business none">
+      <div class="searchmodal" id="searchmodal-business">
         <h4>業態を選択する
           <a class="close-btn" href="javascript:vlid(0)">CLOSE</a>
         </h4>
@@ -554,12 +554,19 @@
               </ul>
             </fieldset>
             <div class="btn-area">
+              <dl>
+                <dt>検索条件：</dt>
+                <dd>テキスト、テキスト</dd>
+              </dl>
               <button class="btn-submit">この条件で検索する</button>
             </div>
+            <footer>
+              <a class="close-btn" href="javascript:vlid(0)">CLOSE</a>
+            </footer>
           </section>
         </form>
       </div>
-      <div class="searchmodal searchmodal-job none">
+      <div class="searchmodal" id="searchmodal-job">
         <h4>職種を選択する
           <a class="close-btn" href="javascript:vlid(0)">CLOSE</a>
         </h4>
@@ -614,27 +621,34 @@
               </ul>
             </fieldset>
             <div class="btn-area">
+              <dl>
+                <dt>検索条件：</dt>
+                <dd>テキスト、テキスト</dd>
+              </dl>
               <button class="btn-submit">この条件で検索する</button>
             </div>
+            <footer>
+              <a class="close-btn" href="javascript:vlid(0)">CLOSE</a>
+            </footer>
           </section>
         </form>
       </div>
-      <div class="searchmodal searchmodal-area">
+      <div class="searchmodal" id="searchmodal-area">
         <h4>エリアを選択する
           <a class="close-btn" href="javascript:vlid(0)">CLOSE</a>
         </h4>
-        <!-- タブ-->
-        <nav>
-          <ul>
-            <li>
-              <strong>都道府県</strong>で探す</li>
-            <li>
-              <strong>路線・駅</strong>で探す</li>
-          </ul>
-        </nav>
         <form>
           <!-- 都道府県-->
-          <section class="searchmodal-area-address">
+          <section id="searchmodal-area-state">
+            <!-- タブ-->
+            <nav>
+              <ul>
+                <li class="searchmodal-area-address">
+                  <strong>住所</strong>で探す</li>
+                <li class="searchmodal-area-route">
+                  <strong>路線・駅</strong>で探す</li>
+              </ul>
+            </nav>
             <h4>
               <b>都道府県</b>で探す</h4>
             <fieldset>
@@ -851,15 +865,219 @@
                 </li>
               </ul>
             </fieldset>
+            <div class="btn-area">
+              <dl>
+                <dt>検索条件：</dt>
+                <dd>テキスト、テキスト</dd>
+              </dl>
+              <button class="btn-submit">この条件で検索する</button>
+            </div>
+            <footer>
+              <a class="close-btn" href="javascript:vlid(0)">CLOSE</a>
+            </footer>
+          </section>
+          <!-- 住所-->
+          <section id="searchmodal-area-address">
+            <!-- タブ-->
+            <nav>
+              <ul>
+                <li class="searchmodal-area-state">
+                  <strong>都道府県</strong>で探す</li>
+                <li class="searchmodal-area-route">
+                  <strong>路線・駅</strong>で探す</li>
+              </ul>
+            </nav>
+            <h4>
+              <b>住所</b>で探す</h4>
+            <fieldset>
+              <h5>北海道・東北</h5>
+              <ul>
+                <li>
+                  <a href="">北海道</a>
+                </li>
+                <li>
+                  <a href="">青森県</a>
+                </li>
+                <li>
+                  <a href="">秋田県</a>
+                </li>
+                <li>
+                  <a href="">山形県</a>
+                </li>
+                <li>
+                  <a href="">岩手県</a>
+                </li>
+                <li>
+                  <a href="">宮城県</a>
+                </li>
+                <li>
+                  <a href="">福島県</a>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>北陸・中部</h5>
+              <ul>
+                <li>
+                  <a href="">新潟県</a>
+                </li>
+                <li>
+                  <a href="">富山県</a>
+                </li>
+                <li>
+                  <a href="">石川県</a>
+                </li>
+                <li>
+                  <a href="">福井県</a>
+                </li>
+                <li>
+                  <a href="">山梨県</a>
+                </li>
+                <li>
+                  <a href="">長野県</a>
+                </li>
+                <li>
+                  <a href="">岐阜県</a>
+                </li>
+                <li>
+                  <a href="">静岡県</a>
+                </li>
+                <li>
+                  <a href="">愛知県</a>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>関東</h5>
+              <ul>
+                <li>
+                  <a href="">茨城県</a>
+                </li>
+                <li>
+                  <a href="">栃木県</a>
+                </li>
+                <li>
+                  <a href="">群馬県</a>
+                </li>
+                <li>
+                  <a href="">埼玉県</a>
+                </li>
+                <li>
+                  <a href="">東京都</a>
+                </li>
+                <li>
+                  <a href="">神奈川県</a>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>近畿</h5>
+              <ul>
+                <li>
+                  <a href="">三重県</a>
+                </li>
+                <li>
+                  <a href="">滋賀県</a>
+                </li>
+                <li>
+                  <a href="">京都府</a>
+                </li>
+                <li>
+                  <a href="">大阪府</a>
+                </li>
+                <li>
+                  <a href="">兵庫県</a>
+                </li>
+                <li>
+                  <a href="">奈良県</a>
+                </li>
+                <li>
+                  <a href="">和歌山県</a>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>中国・四国</h5>
+              <ul>
+                <li>
+                  <a href="">鳥取県</a>
+                </li>
+                <li>
+                  <a href="">島根県</a>
+                </li>
+                <li>
+                  <a href="">岡山県</a>
+                </li>
+                <li>
+                  <a href="">広島県</a>
+                </li>
+                <li>
+                  <a href="">山口県</a>
+                </li>
+                <li>
+                  <a href="">徳島県</a>
+                </li>
+                <li>
+                  <a href="">香川県</a>
+                </li>
+                <li>
+                  <a href="">愛媛県</a>
+                </li>
+                <li>
+                  <a href="">高知県</a>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h5>九州・沖縄</h5>
+              <ul>
+                <li>
+                  <a href="">福岡県</a>
+                </li>
+                <li>
+                  <a href="">佐賀県</a>
+                </li>
+                <li>
+                  <a href="">長崎県</a>
+                </li>
+                <li>
+                  <a href="">熊本県</a>
+                </li>
+                <li>
+                  <a href="">大分県</a>
+                </li>
+                <li>
+                  <a href="">鹿児島県</a>
+                </li>
+                <li>
+                  <a href="">宮崎県</a>
+                </li>
+                <li>
+                  <a href="">沖縄県</a>
+                </li>
+              </ul>
+            </fieldset>
+            <footer>
+              <a class="close-btn" href="javascript:vlid(0)">CLOSE</a>
+            </footer>
           </section>
           <!-- 路線・駅-->
-          <section class="searchmodal-area-route">
+          <section id="searchmodal-area-route">
+            <!-- タブ-->
+            <nav>
+              <ul>
+                <li class="searchmodal-area-state">
+                  <strong>都道府県</strong>で探す</li>
+                <li class="searchmodal-area-address">
+                  <strong>住所</strong>で探す</li>
+              </ul>
+            </nav>
             <h4>
               <b>路線・駅</b>で探す</h4>
-            <fieldset>
+            <p>
               <strong>秋田県</strong>の路線を選ぶ
               <a class="btn-common" href="">都道府県を変更</a>
-            </fieldset>
+            </p>
             <fieldset>
               <h5>JR東日本</h5>
               <ul>
@@ -912,8 +1130,15 @@
               </ul>
             </fieldset>
             <div class="btn-area">
-              <button class="btn-submit">この路線の駅を選択する</button>
+              <dl>
+                <dt>検索条件：</dt>
+                <dd>テキスト、テキスト</dd>
+              </dl>
+              <button class="btn-submit">この条件で検索する</button>
             </div>
+            <footer>
+              <a class="close-btn" href="javascript:vlid(0)">CLOSE</a>
+            </footer>
           </section>
         </form>
       </div>

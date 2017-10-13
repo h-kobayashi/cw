@@ -19,12 +19,23 @@ jQuery(document).ready ($) ->
 		$('.searchmodal form section:first-of-type').show()
 		$('body,html').animate { scrollTop: 0 }, 100
 
-	$('.searchmodal-area > nav li').on 'click', ->
-		index = $('.searchmodal-area > nav li').index(this)
+	$('.searchmodal-area form section nav li').on 'click', ->
+		areatype = $(this).attr('class')
 		$('.searchmodal-area form section').hide()
-		$('.searchmodal-area form section').eq(index).show()
+		$('.searchmodal-area form section#' + areatype).show()
 		
-	$('.searchmodal fieldset:first-of-type h5').addClass('opened')
-	$('.searchmodal fieldset h5').on 'click', ->
+	$('.searchmodal section fieldset:first-of-type h5').addClass('opened')
+	$('.searchmodal section fieldset h5').on 'click', ->
 		$('.searchmodal fieldset h5').removeClass('opened')
 		$(this).addClass('opened')
+	
+	$('.searchitems__header a').on 'click', ->
+		changetype = $(this).attr('class')
+		$('.main').hide()
+		$('.searchmodal').hide()
+		$('.search__wrapper').show()
+		$('.searchmodal#' + changetype).fadeIn()
+		$('.searchmodal form section:first-of-type').show()
+		$('body,html').animate { scrollTop: 0 }, 100
+
+		

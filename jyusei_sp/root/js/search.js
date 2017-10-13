@@ -21,16 +21,28 @@
         scrollTop: 0
       }, 100);
     });
-    $('.searchmodal-area > nav li').on('click', function() {
-      var index;
-      index = $('.searchmodal-area > nav li').index(this);
+    $('.searchmodal-area form section nav li').on('click', function() {
+      var areatype;
+      areatype = $(this).attr('class');
       $('.searchmodal-area form section').hide();
-      return $('.searchmodal-area form section').eq(index).show();
+      return $('.searchmodal-area form section#' + areatype).show();
     });
-    $('.searchmodal fieldset:first-of-type h5').addClass('opened');
-    return $('.searchmodal fieldset h5').on('click', function() {
+    $('.searchmodal section fieldset:first-of-type h5').addClass('opened');
+    $('.searchmodal section fieldset h5').on('click', function() {
       $('.searchmodal fieldset h5').removeClass('opened');
       return $(this).addClass('opened');
+    });
+    return $('.searchitems__header a').on('click', function() {
+      var changetype;
+      changetype = $(this).attr('class');
+      $('.main').hide();
+      $('.searchmodal').hide();
+      $('.search__wrapper').show();
+      $('.searchmodal#' + changetype).fadeIn();
+      $('.searchmodal form section:first-of-type').show();
+      return $('body,html').animate({
+        scrollTop: 0
+      }, 100);
     });
   });
 
