@@ -1,0 +1,261 @@
+
+@import "common/_font"
+@import "common/_color"
+@import "common/_item"
+
+// search-items
+.searchitems__header
+	margin: 0 10px
+	border: 2px solid $pink
+	border-radius: 5px
+	>dl
+		display: flex
+		flex-wrap: nowrap
+		@extend .m
+		font-size: .85rem
+		&:not(:first-of-type)
+			border-top: 1px solid $pink
+		dt
+			width: 4rem
+			padding: 15px 10px
+			background: $lightpink
+			color: $pink
+			text-align: center
+		dd
+			flex: 1
+			padding: 15px 10px
+			color: $black
+			a
+				display: inline-block
+				float: right
+				padding: 0 10px
+				color: $pink
+				position: relative
+				&:after
+					content: ""
+					display: block
+					width: 6px
+					height: 9px
+					background: url(../img/sp_list/list_icon01.png) center no-repeat
+					background-size: contain
+					position: absolute
+					top: 50%
+					right: 0
+					margin-top: -5px
+
+.searchitems__counts
+	margin: 10px
+	@extend .m
+	font-size: 1rem
+	b
+		@extend .b
+		color: $orange
+.searchitems__pager
+	display: flex
+	flex-wrap: nowrap
+	justify-content: space-around
+	padding: 0 10px 10px
+	a
+		display: block
+		width: 140px
+		height: 40px
+		padding: 8px 0
+		border: 2px solid $pink
+		border-radius: 4px
+		@extend .b
+		color: $pink
+		text-align: center
+		position: relative
+		&.disabled
+			border: 2px solid $gray4
+			color: $gray4
+		&:after
+			content: ""
+			display: block
+			width: 6px
+			height: 9px
+			position: absolute
+			top: 50%
+			margin-top: -5px
+		&:first-of-type:after
+			background: url(../img/sp_list/list_icon04.png) center no-repeat
+			background-size: contain
+			left: 5px
+		&:first-of-type.disabled:after
+			background: url(../img/sp_list/list_icon05.png) center no-repeat
+			background-size: contain
+			left: 5px
+		&:last-of-type:after
+			background: url(../img/sp_list/list_icon02.png) center no-repeat
+			background-size: contain
+			right: 5px
+		&:last-of-type.disabled:after
+			background: url(../img/sp_list/list_icon03.png) center no-repeat
+			background-size: contain
+			right: 5px
+		
+			
+// searchitem
+.search-items
+	.searchitem
+		@extend .large-item
+	.searchitem-title
+		@extend .largeitem-title
+	.searchitem-attribute
+		@extend .largeitem-attribute
+	.searchitem-status
+		@extend .largeitem-status
+	.searchitem-comment
+		@extend .largeitem-comment
+	.searchitem-characters
+		@extend .largeitem-characters
+
+
+// search wrapper
+.search__wrapper
+	display: none
+	width: 100%
+	background: white
+	position: absolute
+	top: 54px
+	left: 0
+	z-index: 999
+
+.searchmodal
+	width: 100%
+	>h4
+		padding: 15px
+		@extend .b
+		color: $pink
+		font-size: 1.07rem
+		position: relative
+		.close-btn
+			display: inline-block
+			width: 56px
+			height: 56px
+			margin: 0
+			padding: 11px 0 0
+			text-align: center
+			color: $pink
+			font-size: .67rem
+			position: absolute
+			top: 0
+			right: 0
+		.close-btn:before
+			content: ""
+			display: block
+			margin: 0 auto
+			width: 16px
+			height: 20px
+			background: url(../img/sp_menu/menu_close.png) 0 0 no-repeat
+			background-size: contain
+
+// searchmodal area
+.searchmodal-area
+	>nav>ul
+		display: flex
+		flex-wrap: nowrap
+		justify-content: space-around
+		margin: 10px
+		li
+			display: block
+			width: 40%
+			padding: 10px
+			border: 2px solid $gray
+			border-bottom: 4px solid $gray
+			border-radius: 4px
+			@extend .b
+			font-size: .71rem
+			text-align: center
+			strong
+				font-size: 1.07rem
+	form h4
+		margin: 10px 15px 20px
+		padding: 10px
+		background: $pink
+		border-radius: 4px
+		@extend .b
+		color: white
+		font-size: .71rem
+		text-align: center
+		position: relative
+		b
+			font-size: 1.07rem
+		&:after
+			content: ""
+			display: block
+			width: 0
+			height: 0
+			border-top: 10px solid $pink
+			border-left: 10px solid transparent
+			border-right: 10px solid transparent
+			position: absolute
+			left: 50%
+			bottom: -10px
+			margin-left: -5px
+	fieldset
+		h5
+			padding: 20px 15px
+			border-top: 1px solid $gray
+			@extend .b
+			color: $pink
+			font-size: 1.07rem
+			position: relative
+			&:after
+				content: ""
+				display: block
+				width: 15px
+				height: 9px
+				background: url(../img/sp_list/list_serch_arrow02.png) center no-repeat
+				background-size: contain
+				position: absolute
+				top: 50%
+				right: 10px
+				margin-top: -5px
+				transition: .5s
+			&.opened:after
+				transform: rotate(540deg)
+				transition: .5s
+		ul
+			li
+				display: block
+			li:not(:last-of-type)
+				border-bottom: 1px solid $gray
+		input[type=checkbox]
+			display: none
+		input[type=checkbox] + label
+			display: block
+			padding: 10px 0
+			@extend .b
+			color: $black
+			font-size: 1rem
+		input[type=checkbox] + label:before
+			content: ""
+			display: inline-block
+			width: 1.25rem
+			height: 1.25rem
+			background: white
+			border: 2px solid $lightpink3
+			border-radius: 2px
+			position: relative
+			margin-right: 1rem
+			vertical-align: text-top
+			text-align: center
+			color: $pink
+		input[type=checkbox]:checked + label:before
+			content: "✓"
+			background: $lightpink
+ fieldset h5:not(.opened) + ul
+		height 0
+		padding: 0 15px
+		opacity: 0
+		overflow: hidden
+		transition: .5s
+	fieldset h5.opened + ul
+		height: auto
+		padding: 0 15px
+		opacity: 1
+		overflow: default
+		transition .5s
+
+

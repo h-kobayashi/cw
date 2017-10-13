@@ -1,0 +1,121 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 東京都新宿区の検索結果｜柔道整復師の求人『柔整ワーカー』
+		link(rel="stylesheet", media="all", href="css/common/jquery-ui.min.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/list.css")
+	body.list
+		.wrapper
+
+			include _header.pug
+
+			main.main
+				.contents-area
+					section.search-items
+						nav.searchitems__header
+							dl.searchitem-business
+								dt 業態
+								dd 整形外科
+									a(href="javascript:void(0)") 変更
+							dl.searchitem-job
+								dt 職種
+								dd 柔道整復師
+									a(href="javascript:void(0)") 変更
+							dl.searchitem-area
+								dt エリア
+								dd 新宿, 目黒, 恵比寿
+									a(href="javascript:void(0)") 変更
+						p.searchitems__counts
+							b 1234
+							| 件の
+							b 柔道整復師求人
+							| が見つかりました。
+						div.searchitems__pager
+							a(href="javascript:void(0)").disabled 前の10件
+							a(href="javascript:void(0)") 次の10件
+						ul
+							- for (var i = 0; i < 5; i++) {
+								li.searchitem
+									h3.searchitem-title
+										small 整形外科
+										strong エムアイ整形外科クリニック
+										| の柔道整復師求人
+										ul
+											li 正
+											li パ
+										nav.searchitem-attribute
+											ul
+												li PT
+												li 柔整師
+												li あん摩
+									p.searchitem-comment
+										strong ★★★未経験者大歓迎！充実の無料研修制度！経験者優遇！
+										span
+											img(src="img/sp_top/sp_item_sample.jpg")
+											| 求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ求人メッセージ
+									.searchitem-status
+										dl
+											dt 業態
+											dd 整形外科クリニック
+											dt 職種
+											dd 理学療法士（PT)　柔道整復師　あん摩マッサージ指圧師
+											dt 給与
+											dd
+												small 正社員
+												strong 月給
+													b 25.0
+													| 万円 ～　
+													b 30.0
+													| 万円
+												| <br>
+												small パート・アルバイト
+												strong 時給
+													b 900
+													| 円 ～　
+													b 1200
+													| 円
+											dt アクセス
+											dd 東京都西新宿0-0-0　西新宿ビル5階<br>新宿駅：徒歩9分、都庁前駅：徒歩3分、初台駅：徒歩6分
+									ul.searchitem-characters
+										li 正社員
+										li オープニング
+										li 社会保険完備
+										li 完全週休2日
+									.btn-area
+										a(href="./detail.html").btn-more 詳細を見る
+										a(href="./entry.html").btn-submit 応募する
+									a(href="").btn-keep キープ
+							- }
+
+						div.searchitems__pager
+							a(href="javascript:void(0)").disabled 前の10件
+							a(href="javascript:void(0)") 次の10件
+						
+					section.searchbtn-area
+						a(href="javascript:void(0)").search-business <strong>業態</strong>で探す
+						a(href="javascript:void(0)").search-job <strong>職種</strong>で探す
+						a(href="javascript:void(0)").search-area <strong>エリア</strong>で探す
+						a(href="javascript:void(0)").search-charactor <strong>特徴</strong>で探す
+			
+				aside.banner-area
+					ul.banner-items
+						li: a(href=""): img(src="img/sp_top/top_bnr_03.png", alt="")
+						li: a(href=""): img(src="img/sp_top/top_bnr_04.png", alt="")
+						li: a(href=""): img(src="img/sp_top/top_bnr_05.png", alt="")
+						li: a(href=""): img(src="img/sp_top/top_bnr_06.png", alt="")
+						li: a(href=""): img(src="img/sp_top/side_bnr_07.jpg", alt="")
+						li: a(href=""): img(src="img/sp_top/side_bnr_08.jpg", alt="")
+						li: a(href=""): img(src="img/sp_top/side_bnr_09.jpg", alt="")
+
+
+			include _footer.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		script(type="text/javascript", src="js/common.js")
+
+		include _search.pug

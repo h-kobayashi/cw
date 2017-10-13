@@ -1,0 +1,71 @@
+
+@import "common/_font"
+@import "common/_color"
+@import "common/_item"
+
+
+// step flow
+.contents-area
+	.step-flow
+		h2:before
+			width: 21px
+			height: 29px
+			background: url(../img/step/step_icon01.png) 0 0 no-repeat;
+			top: 5px
+			margin-right: .75rem
+
+// step list
+.step-list
+	li
+		position: relative
+	li:not(:first-of-type):before
+		content: url(../img/step/step_icon02.png)
+		position: absolute
+		top: -22px
+		left: 50%
+		margin-left: -25px
+	
+	li
+		margin: 23px 0 0
+		padding: 0 25px 20px 0
+		h3
+			height: 55px
+			padding: 22px 0 0 84px
+			background-position: 0 0
+			background-repeat: no-repeat
+			font-weight: bold
+			font-size: 1.2rem
+			position: relative
+		h3:after
+			content: ""
+			display: block
+			width: 56px
+			height: 55px
+			position: absolute
+			top: 0
+			right: 0
+			
+	for $i in 1..5
+		li:nth-of-type({$i})
+			background: url('../img/step/step_parts0' + $i + '_02.png') right bottom no-repeat
+			h3
+				background-image: url('../img/step/step_parts0' + $i + '_01.png')
+			h3:after
+				background: url('../img/step/step_parts0' + $i + '_03.png') right center no-repeat
+			p
+				margin: 0 0 0 25px
+				padding: 20px 25px
+				@extend .r
+				line-height: 1.5
+	li:nth-of-type(1) p
+		background: $step1bg
+	li:nth-of-type(2) p
+		background: $step2bg
+	li:nth-of-type(3) p
+		background: $step3bg
+	li:nth-of-type(4) p
+		background: $step4bg
+	li:nth-of-type(5) p
+		background: $step5bg
+
+

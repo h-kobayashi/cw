@@ -1,0 +1,53 @@
+
+@import "_color"
+
+.footer__wrapper
+	width: 100%
+
+.pagetop
+	width: 100%
+	a
+		display: block
+		padding: 12px 0
+		background: white
+		border-top: 1px solid $pink
+		border-bottom: 1px solid $pink
+		@extend .b
+		text-align: center
+		color: $pink
+		font-size: .75rem
+		text-decoration: none
+		&:before
+			content: ""
+			display: inline-block
+			width: 12px
+			height: 7px
+			background: url(../../img/sp_top/footer_pagetop_icon.png) 0 0 no-repeat
+			background-size: contain
+			margin-right: .5rem
+		&:hover
+			background: $lightpink
+
+.footer
+	margin: 0 auto
+	padding: 20px 0
+	position: relative
+	.footer-title
+		text-align: center
+		img
+			width: 93px
+			height: 15px
+	.address
+		margin: 10px auto
+		@extend .m
+		font-size: .75rem
+		line-height: 2
+		text-align: center
+	.sns
+		text-align: center
+		li
+			display: inline-block
+			margin: 0 5px
+		li a img
+			width: 23px
+			height: 23px

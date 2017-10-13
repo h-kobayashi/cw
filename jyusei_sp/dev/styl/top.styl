@@ -1,0 +1,150 @@
+
+@import "common/_font"
+@import "common/_color"
+@import "common/_item"
+
+// branding
+.branding
+	h2
+		width: 100%
+		height: 84px
+		background: url(../img/sp_top/top_mainimg_bg.jpg) right top no-repeat
+		background-size: contain
+		img
+			height: 66px
+			margin: 9px
+	p
+		padding: .25em 0
+		background: $pink2
+		@extend .b
+		color: white
+		font-size: 1.1rem
+		text-align: center
+		strong
+			color: $yellow2
+
+.front-search
+	margin: 10px
+	padding: 10px 0 0
+	border: 3px solid $lightpink_o
+	border-radius: 5px
+	fieldset
+		margin: 10px 15px
+		position: relative
+		label
+			display: block
+			@extend .m
+			color: $pink
+			font-size: 1.07rem
+			line-height: 1
+			text-align: center
+			position: absolute
+			span
+				display: block
+			small
+				display: block
+				margin-top: .2rem
+				color: $black
+				font-size: .64rem
+				position: relative
+		.select
+			display: block
+			margin-left: 2.5rem
+			padding-top: .25rem
+			border: 1px solid $pink
+			border-radius: 5px
+			position: relative
+			&:after
+				content: ""
+				display: inline-block;
+				width: 9px
+				height: 6px
+				background: url(../img/sp_top/top_serch_arrow.png) 0 0 no-repeat
+				background-size: contain
+				position: absolute
+				top: 50%
+				right: 10px
+				margin-top: -3px
+			select
+				width: 100%
+				padding: .5em
+				border: none
+		&:not(:last-of-type) label
+			top: 8px
+			
+	.btn-area
+		padding: 20px 15px
+		background: $lightpink_o
+		.btn-submit
+			display: block
+			width: 100%
+			height: 42px
+			border: none
+			border-bottom: 3px solid $darkgreen
+			border-radius: 5px
+			font-size: 1.2em
+			font-weight: bold
+			text-align: center
+			line-height: 39px
+			
+// pickup items
+.pickup-items
+	.pickupitem
+		@extend .large-item
+	.pickupitem-title
+		@extend .largeitem-title
+	.pickupitem-attribute
+		@extend .largeitem-attribute
+	.pickupitem-status
+		@extend .largeitem-status
+	.pickupitem-comment
+		@extend .largeitem-comment
+	.pickupitem-characters
+		@extend .largeitem-characters
+
+// new items
+.new-items
+	@extend .small-items
+	.newitem
+		@extend .smallitem
+	.newitem-attribute
+		@extend .smallitem-attribute
+	.newitem-status
+		@extend .smallitem-status
+
+// information
+.information
+	padding: 10px
+	ul
+		margin: 10px 0 0
+		border-top: 1px solid $gray
+	li
+		small
+			display: block
+			margin: 0 0 .5rem
+			font-size: .64rem
+		a
+			display: block
+			padding: 1rem 1rem 1rem .5rem
+			border-bottom: 1px solid $gray
+			color: $black
+			font-size: .85rem
+			line-height: 1.25
+			position: relative
+			&:after
+				content: ""
+				display: block
+				width: 6px
+				height: 10px
+				background: url(../img/sp_top/top_info_icon.png) center no-repeat
+				background-size: contain
+				position: absolute
+				top: 50%
+				right: 5px
+				margin-top: -5px
+				
+
+			
+
+
+

@@ -1,0 +1,143 @@
+
+@import "_normalize"
+@import "_font"
+@import "_color"
+
+*
+	box-sizing: border-box
+
+html,body
+	background: #fff
+	font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', arial, helvetica, sans-serif
+	@extend .r
+	font-size: 14px
+	color: #373737
+
+html,body,h1,h2,h3,h4,h5,h6,table,p,dl,dt,dd,ul,ol,li,hr,header,main,footer,section,article,figure,strong,b
+	margin: 0
+	padding: 0
+	font-weight: normal
+ul,ol,li
+	list-style: none
+
+img
+	vertical-align: text-bottom
+
+a
+	color: $black
+	text-decoration: none
+
+h1,h2,h3,h4,h5,h6,b,strong,dt,th
+	font-weight: normal
+
+fieldset
+	display: block
+	margin: 0
+	padding: 0
+	font-weight: normal
+	border: none
+
+select
+	outline: none
+	text-indent: .01px
+	text-overflow: ''
+	background: none transparent
+	vertical-align: middle
+	font-size: inherit
+	color: inherit
+	-webkit-appearance: button
+	-moz-appearance: button
+	appearance: button
+	option
+		background: white
+		color: $black
+select::-ms-expand
+	display: none
+select::-moz-focusring
+	color: transparent
+	text-shadow: 0 0 0 #828c9a
+
+.wrapper
+	width: 100%
+	margin: 0
+	padding: 0
+
+.main
+	width: 100%
+	margin: 0 auto
+	padding: 20px 0
+	overflow: hidden
+
+.contents-area
+	width: 100%
+	section
+		h2
+			margin: 0 10px
+			@extend .b
+			color: $pink
+			font-size: 1.28rem
+			&:before
+				content: ""
+				display: inline-block
+				width: 9px
+				height: 9px
+				background: url(../../img/sp_top/main_title_icon01.png) 0 0 no-repeat
+				background-size: contain
+				position: relative
+				top: -2px
+				margin-right: .5rem
+				font-size: 1.28rem
+				
+.banner-area
+	width: 300px
+	margin: 20px auto 0
+.banner-items
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	li
+		width: 145px
+		margin: 0 0 10px
+		img
+			width: 145px
+	li:first-of-type
+		width: 300px
+		img
+			width: 300px
+
+.btn-area
+	.btn-more
+		background: $orange
+		border-bottom: 3px solid $darkorange2
+		color: white
+		@extend .b
+		&:hover
+			background: $orange_o
+	.btn-submit
+		background: $green
+		border-bottom: 3px solid $darkgreen
+		color: white
+		@extend .b
+		&:hover
+			background: $green_o
+	.btn-cancel
+		background: $gray4
+		color: white
+		@extend .b
+		&:hover
+			background: $gray4_o
+
+.ellipsis
+	white-space: nowrap
+	overflow: hidden
+.ellipsis.multiline
+	white-space: normal
+
+	
+.none
+	display: none !important
+
+@import '_header'
+@import '_footer'
+@import '_font'
+

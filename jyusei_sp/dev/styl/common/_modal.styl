@@ -1,0 +1,174 @@
+
+@import "_color"
+
+.wrapper-shadow
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	margin: 0
+	width: 100%
+	height: 100%
+	background: rgba(0,0,0,.5)
+	display: flex
+	justify-content: center
+	align-items: center
+
+// search area
+.searchmodal
+	display: none
+	position: relative
+	width: 1100px
+	margin: 0
+	padding: 30px
+	background: white
+	border-radius: 8px
+	h4
+		color: $pink
+		font-size: 1.2rem
+		text-indent: .5rem
+	.btn-close
+		position: absolute
+		top: 20px
+		right: 20px
+		cursor: pointer
+		&:hover
+			opacity: .7
+	.btn-area
+		padding: 30px 0 0
+		text-align: center
+		.btn-submit
+			width: 280px
+			padding: 1.5rem
+			border: none
+			border-radius: 4px
+			font-size: 1.5rem
+
+.searchmodal-area
+	nav
+		margin: 20px 0 10px
+		ul
+			margin: 0
+			padding: 0
+		li
+			display: inline-block
+			width: 210px
+			padding: 3px 0 0
+			background: $lightgray
+			border-radius: 1.5rem
+			text-align: center
+			font-size: .87rem
+			position: relative
+			cursor: pointer
+			&:hover
+				background: $lightgray2
+			strong
+				font-size: 1.5rem
+		li.selected
+			background: $pink
+			color: white
+			cursor: default
+			&:after
+				content: ""
+				display: block
+				width: 0
+				height: 0
+				border-top: 8px solid $pink
+				border-left: 5px solid transparent
+				border-right: 5px solid transparent
+				position: absolute
+				left: 50%
+				bottom: -8px
+				margin-left: -4px
+			&:hover
+				background: $pink
+			
+	fieldset
+		padding: 20px 10px 0
+		border-bottom: 1px solid $gray2
+		position: relative
+	h5
+		display: block
+		width: 10rem
+		font-size: 1.2rem
+		position: absolute
+	ul
+		display: block
+		padding-left: 10rem
+		font-size: 1.2rem
+		li
+			display: inline-block
+			margin-bottom: 20px
+		li a
+			display: inline-block
+			margin: 0 1.4rem
+			color: $black
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	input[type=checkbox]
+		display: none
+	label
+		margin-right: 1rem
+	label:before
+		content: ""
+		display: inline-block
+		width: 1.2rem
+		height: 1.2rem
+		background: white
+		border: 1px solid $gray2
+		position: relative
+		top: 3px
+		margin-right: .5rem
+		vertical-align: text-top
+		line-height: 1.2
+		color: $pink
+	input:checked + label:before
+		content: "✓"
+		background: $lightpink
+	
+	.searchmodal-area-route
+		ul
+			padding-left: 12rem
+		li
+			width: 32%
+			
+// search business
+// search job
+.searchmodal-business,.searchmodal-job
+	fieldset
+		margin: 20px 0 0
+		padding: 40px 10px 20px
+		border-top: 1px solid $gray2
+		border-bottom: 1px solid $gray2
+		position: relative
+	ul
+		display: block
+		padding-left: 40px
+		font-size: 1.2rem
+		li
+			display: inline-block
+			width: 32%
+			margin-bottom: 30px
+	input[type=checkbox]
+		display: none
+	label
+		margin-right: 1rem
+	label:before
+		content: ""
+		display: inline-block
+		width: 1.2rem
+		height: 1.2rem
+		background: white
+		border: 1px solid $gray2
+		position: relative
+		top: 3px
+		margin-right: .5rem
+		vertical-align: text-top
+		line-height: 1.2
+		color: $pink
+	input:checked + label:before
+		content: "✓"
+		background: $lightpink
