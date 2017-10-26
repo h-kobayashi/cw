@@ -1,0 +1,43 @@
+
+@import "common/_font"
+@import "common/_color"
+@import "common/_item"
+@import "common/_form"
+
+.inquiries
+	.contents-area
+		h2
+			padding: 0 12px
+			@extend .b
+			font-size: 1.14rem;
+		h2:before
+			content: ""
+			display: inline-block
+			width: 17px
+			height: 13px
+			background: url(../img/sp_inquiries/inquiries_icon01.png) center no-repeat
+			background-size: contain
+			margin: 0 .25em 0 0
+
+// form header
+.form-header
+	p
+		margin: 12px 12px 0
+		@extend .m
+		font-size: .857rem
+		text-align: left
+		small
+			@extend .r
+			display: block
+			margin: 1em 0 0
+			font-size: .785rem
+
+// form-table
+.form-table
+	th,td
+		font-size: 1.2em
+	input[type=radio] + label:before
+		top: 2px
+			
+
+		

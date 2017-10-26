@@ -3,81 +3,79 @@
 
 // step
 .form-step
-	margin: 30px 0
+	width: 294px
+	height: 48px
+	margin: 20px auto
+	background: url(../img/sp_inquiries/form_step_bg1.png) center no-repeat
+	background-size: contain
+	display: flex
+	flex-wrap: nowrap
+	justify-content: space-around
+	align-items: center
 	li
+		flex: 1
 		@extend .m
 		list-style: none
 		display: inline-block
-		height: 45px
-		margin-right: -11px
-		background-repeat: no-repeat
-		background-position: 0 0
-		background-size: contain
 		text-align: center
 		color: white
-		font-size: 1.2em
-		line-height: 45px
-	li:nth-of-type(1)
-		width: 291px
-		background-image: url(../img/inquiries/form_step1_off.png)
-	li:nth-of-type(1).on
-		background-image: url(../img/inquiries/form_step1_on.png)
-	li:nth-of-type(2)
-		width: 292px
-		background-image: url(../img/inquiries/form_step2_off.png)
-	li:nth-of-type(2).on
-		background-image: url(../img/inquiries/form_step2_on.png)
-	li:nth-of-type(3)
-		width: 281px
-		background-image: url(../img/inquiries/form_step3_off.png)
-	li:nth-of-type(3).on
-		background-image: url(../img/inquiries/form_step3_on.png)
+		font-size: .857rem
+	&.step1
+		background-image: url(../img/sp_inquiries/form_step_bg1.png)
+	&.step2
+		background-image: url(../img/sp_inquiries/form_step_bg2.png)
+	&.step3
+		background-image: url(../img/sp_inquiries/form_step_bg3.png)
 
 // form body
 .contents-area section.form-body
-	margin-top: 0
-	>p
-		font-size: 1em
+	margin: 0 12px
+	font-size: .857rem
 
 .error-list
 	margin: 20px 0 0
 	li
 		list-style: none
 		color: $red
-		font-size: 1.2em
 		text-align: center
 		&:before
 			content: "*"
 
-// form table
-.form-table
-	width: 100%
+// form item
+.form-items
+	margin: 20px 12px 0
+	padding: 0 10px 10px;
+	border: 1px solid $gray2
+.form-item
+	display: block
 	margin: 20px 0 0
-	border: 2px solid $gray
-	th,td
-		padding: 20px
-		border: 1px solid $gray
+	h3
+		padding: .5rem .75rem
+		background: $lightblue
+		@extend .m
 		font-size: 1rem
-		vertical-align: middle
-		small
-			display: block
-			margin: .5em 0 0
-			font-size: .75em
-		li:not(:last-of-type)
-			margin-bottom: .5em
-	th
-		@extend .m
-		width: 13em
-	td.must,td.any
-		@extend .m
-		width: 6em
-		text-align: center
-		font-size: 1em
-	td.must
-		background: $lightpink
-		color: $pink
-	td.any
-		background: $lightgray2
+		>small
+			display: inline-block
+			margin: 0 .25rem
+			padding: 0 .25rem
+			border-radius: 3px
+			font-size: .71rem
+			line-height: 1rem
+			color: white
+			position: relative
+			top: -2px
+	&.must h3>small
+		background: $red2
+	&.any h3>small
+		background: $gray4
+
+	h3 + fieldset
+		margin: 10px 0 0
+	ul li
+		margin: 10px 0 0
+		padding: .5rem .75rem
+		background: $lightblue2
+			
 	input[type=radio],input[type=checkbox]
 		display: none
 		& + label
@@ -85,8 +83,8 @@
 	input[type=radio] + label:before
 		content: ""
 		display: inline-block
-		width: 1.2rem
-		height: 1.2rem
+		width: 1rem
+		height: 1rem
 		background: white
 		border: 2px solid $lightgreen
 		border-radius: .7rem
@@ -95,7 +93,7 @@
 		margin-right: .5rem
 		vertical-align: text-top
 		color: $lightgreen
-		line-height: 1.1
+		line-height: 1.2
 		text-align: center
 	input[type=radio]:checked + label:before
 		content: "●"
@@ -103,15 +101,15 @@
 	input[type=checkbox] + label:before
 		content: ""
 		display: inline-block
-		width: 1.2rem
-		height: 1.2rem
+		width: 1rem
+		height: 1rem
 		background: white
-		border: 2px solid $lightgreen
+		border: 1px solid $lightgreen
 		position: relative
 		top: 1px
 		margin-right: .5rem
 		color: white
-		font-size: 1.4rem
+		font-size: 1.2rem
 		vertical-align: text-top
 		line-height: 1
 	input[type=checkbox]:checked + label:before
@@ -123,12 +121,14 @@
 		width: 100%
 		padding: .5em .75em
 		border: 1px solid $lightgreen
-		border-radius: 5px
+	&.must
+		input[type=radio]+label:before,input[type=checkbox]+label:before,input[type=text],textarea
+			background: $lightpink
 	.btn-green
 		display: inline-block
 		padding: .5em .75em
 		background: $green2
-		border: 1px solid $green2
+		border: 2px solid $green2
 		border-radius: 5px
 		color: white
 		&:hover
@@ -142,73 +142,81 @@
 
 // policy check
 .policy-check
-	margin: 40px 0 0
+	margin: 20px 12px 0
+	padding: 10px
+	border: 1px solid $gray2
 	h3
-		@extend .r
-		color: $pink
-		line-height: 1.5
-		&:before
-			content: url(../img/ad/form_icon01.png)
-			display: inline-block
-			margin: 0 .5em 0 0
-			vertical-align: middle
-		small
-			display: inline-block
-			padding: 0 .5em
-			background: $lightpink
-			color: $pink
+		padding: .5rem .75rem
+		background: $lightblue
+		@extend .m
+		font-size: 1rem
 	fieldset
 		display: block
 		padding: 1em
-		font-size: 1.1em
-		text-align: center
+		font-size: 1em
+		text-align: left
 		input[type=checkbox]
 			display: none
 		label
+			display: block
 			margin-right: 1rem
+			>small
+				display: inline-block
+				margin: 0 .25rem
+				padding: 0 .25rem
+				background: $red2
+				border-radius: 3px
+				font-size: .71rem
+				line-height: 1rem
+				color: white
+				position: relative
+				top: -2px
 		label:before
 			content: ""
+			float: left
 			display: inline-block
-			width: 1.2rem
-			height: 1.2rem
-			background: white
-			border: 2px solid $lightgreen
+			width: 2rem
+			height: 2rem
+			background: $lightpink
+			border: 1px solid $lightgreen
 			position: relative
 			top: 1px
 			margin-right: .5rem
 			color: white
-			font-size: 1.4rem
+			font-size: 1.5rem 
+			text-align: center
 			vertical-align: text-top
-			line-height: 1
+			line-height: 2rem
+			position: relative
+			top: 2px
 		input:checked + label:before
 			content: "✓"
 			background: $lightgreen
 	article
-		padding: 10px 15px 10px 25px
-		border: 2px solid $gray
+		padding: 10px
+		border: 1px solid $lightblue
 		>div
-			height: 145px
+			height: 105px
 			overflow: auto
-			font-size: 1em
+			font-size: .64rem
 			line-height: 1.75
 
 .btn-area
-	padding: 30px 0 0
+	padding: 20px 0
 	text-align: center
 	.btn-submit
-		width: 280px
 		margin: 0 .5em
-		padding: 1.5rem
+		padding: 1rem 3rem
 		border: none
-		border-radius: 4px
-		font-size: 1.5rem
+		border-bottom: 3px solid $darkgreen
+		border-radius: 6px
+		font-size: 1.21rem
 	.btn-cancel
-		width: 280px
 		margin: 0 .5em
-		padding: 1.5rem
+		padding: 1rem 3rem
 		border: none
 		border-radius: 4px
-		font-size: 1.5rem
+		font-size: 1.21rem
 
 // form end
 .contents-area section.form-end

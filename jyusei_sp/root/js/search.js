@@ -21,18 +21,18 @@
         scrollTop: 0
       }, 100);
     });
-    $('.searchmodal-area form section nav li').on('click', function() {
+    $('#searchmodal-area form section nav li').on('click', function() {
       var areatype;
       areatype = $(this).attr('class');
-      $('.searchmodal-area form section').hide();
-      return $('.searchmodal-area form section#' + areatype).show();
+      $('#searchmodal-area form section').hide();
+      return $('#searchmodal-area form section#' + areatype).show();
     });
     $('.searchmodal section fieldset:first-of-type h5').addClass('opened');
     $('.searchmodal section fieldset h5').on('click', function() {
       $('.searchmodal fieldset h5').removeClass('opened');
       return $(this).addClass('opened');
     });
-    return $('.searchitems__header a').on('click', function() {
+    return $('.searchitems__header dd').on('click', function() {
       var changetype;
       changetype = $(this).attr('class');
       $('.main').hide();

@@ -1,0 +1,175 @@
+
+@import "common/_font"
+@import "common/_color"
+@import "common/_item"
+@import "common/_search"
+
+
+// item data
+.item-data
+	@extend .large-item
+	border-top: none
+	margin: 0 10px
+	.btn-keep
+		position: static
+.itemdata-title
+	@extend .largeitem-title
+	background: white
+	>ul
+		display: inline-block
+		position: static
+.itemdata-attribute
+	@extend .largeitem-attribute
+	display: inline-block
+.itemdata-status,.recruit-data,.about-entry,.office-data,.company-data
+	@extend .largeitem-status
+	h3
+		margin: 0 0 10px
+		@extend .m
+		color: $pink
+		font-size: 1.07rem
+		&:before
+			content: ""
+			display: inline-block
+			width: 18px
+			height: 18px
+			margin-right: .5em
+			vertical-align: middle
+	dl
+		display: flex
+		flex-wrap: wrap
+	dl dt
+		display: block
+		padding: 10px 0
+		background: none
+		border-bottom: 1px solid $gray
+		vertical-align: middle
+		position: static
+	dl dd
+		display: block
+		padding: 10px 0
+		flex: 1
+		min-width: calc( 100% - 70px )
+.recruit-data h3:before
+	background: url(../img/sp_detail/detail_icon_01.png) center no-repeat
+	background-size: contain
+.about-entry h3:before
+	width: 19px
+	height: 14px
+	background: url(../img/sp_detail/detail_icon_02.png) center no-repeat
+	background-size: contain
+.office-data,.company-data
+	margin: 20px 15px 0
+.office-data h3:before
+	width: 17px
+	height: 16px
+	background: url(../img/sp_detail/detail_icon_04.png) center no-repeat
+	background-size: contain
+.company-data h3:before
+	width: 17px
+	height: 17px
+	background: url(../img/sp_detail/detail_icon_05.png) center no-repeat
+	background-size: contain
+	
+.itemdata-comment
+	@extend .largeitem-comment
+	>img
+		display: block
+		width: 290px
+		height: 218px
+		margin: 0 auto
+	span
+		padding: 0
+		font-size: .78rem
+		line-height: 1.75
+.itemdata-characters
+	@extend .largeitem-characters
+	margin: 15px 5px 15px
+
+.item-message
+	margin: 20px 10px 0
+	h3
+		margin: 0 0 10px
+		@extend .m
+		color: $pink
+		font-size: 1.07rem
+		&:before
+			content: ""
+			display: inline-block
+			width: 17px
+			height: 17px
+			margin-right: .5em
+			background: url(../img/sp_detail/detail_icon_03.png) center no-repeat
+			background-size: contain
+			vertical-align: middle
+	div
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		p
+			width: 100%
+			@extend .r
+			font-size: .85rem
+			line-height: 1.75
+		figure
+			width: 45%
+			margin: 15px 0 0
+			text-align: center
+			img
+				display: block
+				width: 138px
+				margin: 0 auto
+			figcaption
+				display: block
+				width: 138px
+				margin: 5px auto 0
+				text-align: left
+				@extend .r
+				font-size: .74rem
+
+.contents-area .btn-area
+	position: fixed
+	left: 0
+	bottom: 0
+	z-index: 99
+	width: 100%
+	background: rgba(0,0,0,.5)
+	padding: 10px
+	text-align: center
+	a
+		display: inline-block
+		width: 60%
+		height: 50px
+		margin: 0 15px
+		border-radius: 8px
+		font-size: 1.07rem
+		line-height: 50px
+		vertical-align: text-bottom
+	.btn-keep
+		display: inline-block
+		width: 50px
+		height: 50px
+		padding: 30px 0 0
+		background: $orange
+		border-radius: 25px
+		color: white
+		@extend .m
+		font-size: .5rem
+		line-height: 1
+		text-align: center
+		position: relative
+		&:hover
+			background-color: $orange_o
+		&:before
+			content: ""
+			width: 17px
+			height: 17px
+			background: url(../img/sp_top/icon_keep.png) center no-repeat
+			background-size: contain
+			position: absolute
+			top: 8px
+			left: 50%
+			margin-left: -9px
+
+.footer__wrapper
+	margin-bottom: 60px

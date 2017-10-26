@@ -16,7 +16,9 @@
 .r,
 .topics-area .topic_tokushu strong,
 .topics-area .topic_tokushu small,
-.searchmodal .btn-area {
+.searchmodal .btn-area,
+.item-message div p,
+.item-message div figure figcaption {
   font-family: Rounded-Mplus-1c-regular;
 }
 .m,
@@ -35,12 +37,21 @@
 .search-character a,
 .topics-area .topic_contact p,
 .searchbtn-area a,
-.searchitems__header >dl,
-.searchitems__counts,
-.search-items .searchitem .btn-keep,
-.search-items .searchitem-attribute,
-.search-items .searchitem-status dl dt,
-.search-items .searchitem-characters li {
+.item-data .btn-keep,
+.itemdata-attribute,
+.itemdata-status dl dt,
+.recruit-data dl dt,
+.about-entry dl dt,
+.office-data dl dt,
+.company-data dl dt,
+.itemdata-status h3,
+.recruit-data h3,
+.about-entry h3,
+.office-data h3,
+.company-data h3,
+.itemdata-characters li,
+.item-message h3,
+.contents-area .btn-area .btn-keep {
   font-family: Rounded-Mplus-1c-medium;
 }
 .b,
@@ -59,11 +70,13 @@
 #searchmodal-area-route >p,
 #searchmodal-area-route >p a,
 .searchmodal .btn-area .btn-submit,
-.searchitems__counts b,
-.searchitems__pager a,
-.search-items .searchitem-title,
-.search-items .searchitem-status dl dd strong,
-.search-items .searchitem-comment strong {
+.itemdata-title,
+.itemdata-status dl dd strong,
+.recruit-data dl dd strong,
+.about-entry dl dd strong,
+.office-data dl dd strong,
+.company-data dl dd strong,
+.itemdata-comment strong {
   font-family: Rounded-Mplus-1c-bold;
 }
 @font-face {
@@ -121,17 +134,30 @@
   #searchmodal-area-route >p a,
   .searchmodal .btn-area,
   .searchmodal .btn-area .btn-submit,
-  .searchitems__header >dl,
-  .searchitems__counts,
-  .searchitems__counts b,
-  .searchitems__pager a,
-  .search-items .searchitem .btn-keep,
-  .search-items .searchitem-title,
-  .search-items .searchitem-attribute,
-  .search-items .searchitem-status dl dt,
-  .search-items .searchitem-status dl dd strong,
-  .search-items .searchitem-comment strong,
-  .search-items .searchitem-characters li {
+  .item-data .btn-keep,
+  .itemdata-title,
+  .itemdata-attribute,
+  .itemdata-status dl dt,
+  .recruit-data dl dt,
+  .about-entry dl dt,
+  .office-data dl dt,
+  .company-data dl dt,
+  .itemdata-status dl dd strong,
+  .recruit-data dl dd strong,
+  .about-entry dl dd strong,
+  .office-data dl dd strong,
+  .company-data dl dd strong,
+  .itemdata-status h3,
+  .recruit-data h3,
+  .about-entry h3,
+  .office-data h3,
+  .company-data h3,
+  .itemdata-comment strong,
+  .itemdata-characters li,
+  .item-message h3,
+  .item-message div p,
+  .item-message div figure figcaption,
+  .contents-area .btn-area .btn-keep {
     -webkit-transform: rotate(0.001deg);
     -moz-transform: rotate(0.001deg);
     -o-transform: rotate(0.001deg);
@@ -157,7 +183,9 @@
 .r,
 .topics-area .topic_tokushu strong,
 .topics-area .topic_tokushu small,
-.searchmodal .btn-area {
+.searchmodal .btn-area,
+.item-message div p,
+.item-message div figure figcaption {
   font-family: Rounded-Mplus-1c-regular;
 }
 .m,
@@ -176,12 +204,21 @@
 .search-character a,
 .topics-area .topic_contact p,
 .searchbtn-area a,
-.searchitems__header >dl,
-.searchitems__counts,
-.search-items .searchitem .btn-keep,
-.search-items .searchitem-attribute,
-.search-items .searchitem-status dl dt,
-.search-items .searchitem-characters li {
+.item-data .btn-keep,
+.itemdata-attribute,
+.itemdata-status dl dt,
+.recruit-data dl dt,
+.about-entry dl dt,
+.office-data dl dt,
+.company-data dl dt,
+.itemdata-status h3,
+.recruit-data h3,
+.about-entry h3,
+.office-data h3,
+.company-data h3,
+.itemdata-characters li,
+.item-message h3,
+.contents-area .btn-area .btn-keep {
   font-family: Rounded-Mplus-1c-medium;
 }
 .b,
@@ -200,11 +237,13 @@
 #searchmodal-area-route >p,
 #searchmodal-area-route >p a,
 .searchmodal .btn-area .btn-submit,
-.searchitems__counts b,
-.searchitems__pager a,
-.search-items .searchitem-title,
-.search-items .searchitem-status dl dd strong,
-.search-items .searchitem-comment strong {
+.itemdata-title,
+.itemdata-status dl dd strong,
+.recruit-data dl dd strong,
+.about-entry dl dd strong,
+.office-data dl dd strong,
+.company-data dl dd strong,
+.itemdata-comment strong {
   font-family: Rounded-Mplus-1c-bold;
 }
 @font-face {
@@ -262,17 +301,30 @@
   #searchmodal-area-route >p a,
   .searchmodal .btn-area,
   .searchmodal .btn-area .btn-submit,
-  .searchitems__header >dl,
-  .searchitems__counts,
-  .searchitems__counts b,
-  .searchitems__pager a,
-  .search-items .searchitem .btn-keep,
-  .search-items .searchitem-title,
-  .search-items .searchitem-attribute,
-  .search-items .searchitem-status dl dt,
-  .search-items .searchitem-status dl dd strong,
-  .search-items .searchitem-comment strong,
-  .search-items .searchitem-characters li {
+  .item-data .btn-keep,
+  .itemdata-title,
+  .itemdata-attribute,
+  .itemdata-status dl dt,
+  .recruit-data dl dt,
+  .about-entry dl dt,
+  .office-data dl dt,
+  .company-data dl dt,
+  .itemdata-status dl dd strong,
+  .recruit-data dl dd strong,
+  .about-entry dl dd strong,
+  .office-data dl dd strong,
+  .company-data dl dd strong,
+  .itemdata-status h3,
+  .recruit-data h3,
+  .about-entry h3,
+  .office-data h3,
+  .company-data h3,
+  .itemdata-comment strong,
+  .itemdata-characters li,
+  .item-message h3,
+  .item-message div p,
+  .item-message div figure figcaption,
+  .contents-area .btn-area .btn-keep {
     -webkit-transform: rotate(0.001deg);
     -moz-transform: rotate(0.001deg);
     -o-transform: rotate(0.001deg);
@@ -281,18 +333,18 @@
   }
 }
 .large-item,
-.search-items .searchitem {
+.item-data {
   display: block;
   margin: 15px 10px 10px;
   border-top: 4px solid #ee8593;
   position: relative;
 }
 .large-item:not(:first-of-type),
-.search-items .searchitem:not(:first-of-type) {
+.item-data:not(:first-of-type) {
   margin-top: 25px;
 }
 .large-item .btn-area,
-.search-items .searchitem .btn-area {
+.item-data .btn-area {
   display: block;
   width: 100%;
   padding: 10px;
@@ -301,7 +353,7 @@
   text-align: center;
 }
 .large-item .btn-area a,
-.search-items .searchitem .btn-area a {
+.item-data .btn-area a {
   display: inline-block;
   width: 40%;
   height: 40px;
@@ -312,7 +364,7 @@
   vertical-align: text-bottom;
 }
 .large-item .btn-keep,
-.search-items .searchitem .btn-keep {
+.item-data .btn-keep {
   position: absolute;
   top: -25px;
   right: 0px;
@@ -329,11 +381,11 @@
   text-align: center;
 }
 .large-item .btn-keep:hover,
-.search-items .searchitem .btn-keep:hover {
+.item-data .btn-keep:hover {
   background-color: #d87a1e;
 }
 .large-item .btn-keep:before,
-.search-items .searchitem .btn-keep:before {
+.item-data .btn-keep:before {
   content: "";
   width: 17px;
   height: 17px;
@@ -347,7 +399,7 @@
   margin-left: -9px;
 }
 .largeitem-title,
-.search-items .searchitem-title {
+.itemdata-title {
   padding: 15px 5px;
   background: #f9f9f9;
   font-size: 0.64rem;
@@ -355,32 +407,32 @@
   position: relative;
 }
 .largeitem-title small,
-.search-items .searchitem-title small {
+.itemdata-title small {
   display: block;
   margin: 0 0 10px;
   color: #ee8593;
   font-size: 0.71rem;
 }
 .largeitem-title small:before,
-.search-items .searchitem-title small:before {
+.itemdata-title small:before {
   content: "[";
 }
 .largeitem-title small:after,
-.search-items .searchitem-title small:after {
+.itemdata-title small:after {
   content: "]";
 }
 .largeitem-title strong,
-.search-items .searchitem-title strong {
+.itemdata-title strong {
   font-size: 1.07rem;
 }
 .largeitem-title >ul,
-.search-items .searchitem-title >ul {
+.itemdata-title >ul {
   position: absolute;
   right: 10px;
   bottom: 10px;
 }
 .largeitem-title >ul li,
-.search-items .searchitem-title >ul li {
+.itemdata-title >ul li {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
@@ -393,40 +445,40 @@
   line-height: 1;
 }
 .largeitem-attribute,
-.search-items .searchitem-attribute {
+.itemdata-attribute {
   margin: 15px 0 0;
   font-size: 0.64rem;
 }
 .largeitem-attribute >ul,
-.search-items .searchitem-attribute >ul {
+.itemdata-attribute >ul {
   display: inline-block;
   padding: 0.5em;
   background: #ffeff1;
 }
 .largeitem-attribute >ul >li,
-.search-items .searchitem-attribute >ul >li {
+.itemdata-attribute >ul >li {
   display: inline;
   padding: 2px 0;
   color: #ee8593;
   text-align: center;
 }
 .largeitem-attribute >ul >li:not(:first-of-type):before,
-.search-items .searchitem-attribute >ul >li:not(:first-of-type):before {
+.itemdata-attribute >ul >li:not(:first-of-type):before {
   content: "/";
 }
 .largeitem-comment,
-.search-items .searchitem-comment {
+.itemdata-comment {
   margin: 0 5px;
 }
 .largeitem-comment strong,
-.search-items .searchitem-comment strong {
+.itemdata-comment strong {
   display: block;
   margin: 15px 0 5px;
   color: #f19032;
   font-size: 1rem;
 }
 .largeitem-comment span,
-.search-items .searchitem-comment span {
+.itemdata-comment span {
   display: block;
   height: auto;
   min-height: 75px;
@@ -436,29 +488,41 @@
   position: relative;
 }
 .largeitem-comment span img,
-.search-items .searchitem-comment span img {
+.itemdata-comment span img {
   width: 93px;
   position: absolute;
   top: 1px;
   left: 0;
 }
 .largeitem-comment span.ellipsis,
-.search-items .searchitem-comment span.ellipsis {
+.itemdata-comment span.ellipsis {
   height: 3em;
 }
 .largeitem-status,
-.search-items .searchitem-status {
+.itemdata-status,
+.recruit-data,
+.about-entry,
+.office-data,
+.company-data {
   margin: 10px 5px;
 }
 .largeitem-status dl,
-.search-items .searchitem-status dl {
+.itemdata-status dl,
+.recruit-data dl,
+.about-entry dl,
+.office-data dl,
+.company-data dl {
   margin: 0;
   position: relative;
   border-top: 1px solid #e4e4e4;
   font-size: 0.78rem;
 }
 .largeitem-status dl dt,
-.search-items .searchitem-status dl dt {
+.itemdata-status dl dt,
+.recruit-data dl dt,
+.about-entry dl dt,
+.office-data dl dt,
+.company-data dl dt {
   position: absolute;
   width: 65px;
   padding: 10px 0 10px 0.75rem;
@@ -469,28 +533,44 @@
   color: #ee8593;
 }
 .largeitem-status dl dd,
-.search-items .searchitem-status dl dd {
+.itemdata-status dl dd,
+.recruit-data dl dd,
+.about-entry dl dd,
+.office-data dl dd,
+.company-data dl dd {
   position: relative;
   padding: 10px 0 10px 65px;
   border-bottom: 1px solid #e4e4e4;
 }
 .largeitem-status dl dd small,
-.search-items .searchitem-status dl dd small {
+.itemdata-status dl dd small,
+.recruit-data dl dd small,
+.about-entry dl dd small,
+.office-data dl dd small,
+.company-data dl dd small {
   display: inline-block;
   font-size: 0.64rem;
 }
 .largeitem-status dl dd strong,
-.search-items .searchitem-status dl dd strong {
+.itemdata-status dl dd strong,
+.recruit-data dl dd strong,
+.about-entry dl dd strong,
+.office-data dl dd strong,
+.company-data dl dd strong {
   display: inline-block;
   margin-left: 0.5rem;
 }
 .largeitem-status dl dd strong b,
-.search-items .searchitem-status dl dd strong b {
+.itemdata-status dl dd strong b,
+.recruit-data dl dd strong b,
+.about-entry dl dd strong b,
+.office-data dl dd strong b,
+.company-data dl dd strong b {
   color: #f19032;
   font-size: 1rem;
 }
 .largeitem-characters,
-.search-items .searchitem-characters {
+.itemdata-characters {
   margin: 10px 5px;
   display: -webkit-box;
   display: -moz-box;
@@ -512,7 +592,7 @@
   justify-content: space-between;
 }
 .largeitem-characters li,
-.search-items .searchitem-characters li {
+.itemdata-characters li {
   display: inline-block;
   width: 24%;
   padding: 2px 0;
@@ -934,7 +1014,9 @@
 .r,
 .topics-area .topic_tokushu strong,
 .topics-area .topic_tokushu small,
-.searchmodal .btn-area {
+.searchmodal .btn-area,
+.item-message div p,
+.item-message div figure figcaption {
   font-family: Rounded-Mplus-1c-regular;
 }
 .m,
@@ -953,12 +1035,21 @@
 .search-character a,
 .topics-area .topic_contact p,
 .searchbtn-area a,
-.searchitems__header >dl,
-.searchitems__counts,
-.search-items .searchitem .btn-keep,
-.search-items .searchitem-attribute,
-.search-items .searchitem-status dl dt,
-.search-items .searchitem-characters li {
+.item-data .btn-keep,
+.itemdata-attribute,
+.itemdata-status dl dt,
+.recruit-data dl dt,
+.about-entry dl dt,
+.office-data dl dt,
+.company-data dl dt,
+.itemdata-status h3,
+.recruit-data h3,
+.about-entry h3,
+.office-data h3,
+.company-data h3,
+.itemdata-characters li,
+.item-message h3,
+.contents-area .btn-area .btn-keep {
   font-family: Rounded-Mplus-1c-medium;
 }
 .b,
@@ -977,11 +1068,13 @@
 #searchmodal-area-route >p,
 #searchmodal-area-route >p a,
 .searchmodal .btn-area .btn-submit,
-.searchitems__counts b,
-.searchitems__pager a,
-.search-items .searchitem-title,
-.search-items .searchitem-status dl dd strong,
-.search-items .searchitem-comment strong {
+.itemdata-title,
+.itemdata-status dl dd strong,
+.recruit-data dl dd strong,
+.about-entry dl dd strong,
+.office-data dl dd strong,
+.company-data dl dd strong,
+.itemdata-comment strong {
   font-family: Rounded-Mplus-1c-bold;
 }
 @font-face {
@@ -1039,17 +1132,30 @@
   #searchmodal-area-route >p a,
   .searchmodal .btn-area,
   .searchmodal .btn-area .btn-submit,
-  .searchitems__header >dl,
-  .searchitems__counts,
-  .searchitems__counts b,
-  .searchitems__pager a,
-  .search-items .searchitem .btn-keep,
-  .search-items .searchitem-title,
-  .search-items .searchitem-attribute,
-  .search-items .searchitem-status dl dt,
-  .search-items .searchitem-status dl dd strong,
-  .search-items .searchitem-comment strong,
-  .search-items .searchitem-characters li {
+  .item-data .btn-keep,
+  .itemdata-title,
+  .itemdata-attribute,
+  .itemdata-status dl dt,
+  .recruit-data dl dt,
+  .about-entry dl dt,
+  .office-data dl dt,
+  .company-data dl dt,
+  .itemdata-status dl dd strong,
+  .recruit-data dl dd strong,
+  .about-entry dl dd strong,
+  .office-data dl dd strong,
+  .company-data dl dd strong,
+  .itemdata-status h3,
+  .recruit-data h3,
+  .about-entry h3,
+  .office-data h3,
+  .company-data h3,
+  .itemdata-comment strong,
+  .itemdata-characters li,
+  .item-message h3,
+  .item-message div p,
+  .item-message div figure figcaption,
+  .contents-area .btn-area .btn-keep {
     -webkit-transform: rotate(0.001deg);
     -moz-transform: rotate(0.001deg);
     -o-transform: rotate(0.001deg);
@@ -1075,7 +1181,9 @@
 .r,
 .topics-area .topic_tokushu strong,
 .topics-area .topic_tokushu small,
-.searchmodal .btn-area {
+.searchmodal .btn-area,
+.item-message div p,
+.item-message div figure figcaption {
   font-family: Rounded-Mplus-1c-regular;
 }
 .m,
@@ -1094,12 +1202,21 @@
 .search-character a,
 .topics-area .topic_contact p,
 .searchbtn-area a,
-.searchitems__header >dl,
-.searchitems__counts,
-.search-items .searchitem .btn-keep,
-.search-items .searchitem-attribute,
-.search-items .searchitem-status dl dt,
-.search-items .searchitem-characters li {
+.item-data .btn-keep,
+.itemdata-attribute,
+.itemdata-status dl dt,
+.recruit-data dl dt,
+.about-entry dl dt,
+.office-data dl dt,
+.company-data dl dt,
+.itemdata-status h3,
+.recruit-data h3,
+.about-entry h3,
+.office-data h3,
+.company-data h3,
+.itemdata-characters li,
+.item-message h3,
+.contents-area .btn-area .btn-keep {
   font-family: Rounded-Mplus-1c-medium;
 }
 .b,
@@ -1118,11 +1235,13 @@
 #searchmodal-area-route >p,
 #searchmodal-area-route >p a,
 .searchmodal .btn-area .btn-submit,
-.searchitems__counts b,
-.searchitems__pager a,
-.search-items .searchitem-title,
-.search-items .searchitem-status dl dd strong,
-.search-items .searchitem-comment strong {
+.itemdata-title,
+.itemdata-status dl dd strong,
+.recruit-data dl dd strong,
+.about-entry dl dd strong,
+.office-data dl dd strong,
+.company-data dl dd strong,
+.itemdata-comment strong {
   font-family: Rounded-Mplus-1c-bold;
 }
 @font-face {
@@ -1180,17 +1299,30 @@
   #searchmodal-area-route >p a,
   .searchmodal .btn-area,
   .searchmodal .btn-area .btn-submit,
-  .searchitems__header >dl,
-  .searchitems__counts,
-  .searchitems__counts b,
-  .searchitems__pager a,
-  .search-items .searchitem .btn-keep,
-  .search-items .searchitem-title,
-  .search-items .searchitem-attribute,
-  .search-items .searchitem-status dl dt,
-  .search-items .searchitem-status dl dd strong,
-  .search-items .searchitem-comment strong,
-  .search-items .searchitem-characters li {
+  .item-data .btn-keep,
+  .itemdata-title,
+  .itemdata-attribute,
+  .itemdata-status dl dt,
+  .recruit-data dl dt,
+  .about-entry dl dt,
+  .office-data dl dt,
+  .company-data dl dt,
+  .itemdata-status dl dd strong,
+  .recruit-data dl dd strong,
+  .about-entry dl dd strong,
+  .office-data dl dd strong,
+  .company-data dl dd strong,
+  .itemdata-status h3,
+  .recruit-data h3,
+  .about-entry h3,
+  .office-data h3,
+  .company-data h3,
+  .itemdata-comment strong,
+  .itemdata-characters li,
+  .item-message h3,
+  .item-message div p,
+  .item-message div figure figcaption,
+  .contents-area .btn-area .btn-keep {
     -webkit-transform: rotate(0.001deg);
     -moz-transform: rotate(0.001deg);
     -o-transform: rotate(0.001deg);
@@ -1199,18 +1331,18 @@
   }
 }
 .large-item,
-.search-items .searchitem {
+.item-data {
   display: block;
   margin: 15px 10px 10px;
   border-top: 4px solid #ee8593;
   position: relative;
 }
 .large-item:not(:first-of-type),
-.search-items .searchitem:not(:first-of-type) {
+.item-data:not(:first-of-type) {
   margin-top: 25px;
 }
 .large-item .btn-area,
-.search-items .searchitem .btn-area {
+.item-data .btn-area {
   display: block;
   width: 100%;
   padding: 10px;
@@ -1219,7 +1351,7 @@
   text-align: center;
 }
 .large-item .btn-area a,
-.search-items .searchitem .btn-area a {
+.item-data .btn-area a {
   display: inline-block;
   width: 40%;
   height: 40px;
@@ -1230,7 +1362,7 @@
   vertical-align: text-bottom;
 }
 .large-item .btn-keep,
-.search-items .searchitem .btn-keep {
+.item-data .btn-keep {
   position: absolute;
   top: -25px;
   right: 0px;
@@ -1247,11 +1379,11 @@
   text-align: center;
 }
 .large-item .btn-keep:hover,
-.search-items .searchitem .btn-keep:hover {
+.item-data .btn-keep:hover {
   background-color: #d87a1e;
 }
 .large-item .btn-keep:before,
-.search-items .searchitem .btn-keep:before {
+.item-data .btn-keep:before {
   content: "";
   width: 17px;
   height: 17px;
@@ -1265,7 +1397,7 @@
   margin-left: -9px;
 }
 .largeitem-title,
-.search-items .searchitem-title {
+.itemdata-title {
   padding: 15px 5px;
   background: #f9f9f9;
   font-size: 0.64rem;
@@ -1273,32 +1405,32 @@
   position: relative;
 }
 .largeitem-title small,
-.search-items .searchitem-title small {
+.itemdata-title small {
   display: block;
   margin: 0 0 10px;
   color: #ee8593;
   font-size: 0.71rem;
 }
 .largeitem-title small:before,
-.search-items .searchitem-title small:before {
+.itemdata-title small:before {
   content: "[";
 }
 .largeitem-title small:after,
-.search-items .searchitem-title small:after {
+.itemdata-title small:after {
   content: "]";
 }
 .largeitem-title strong,
-.search-items .searchitem-title strong {
+.itemdata-title strong {
   font-size: 1.07rem;
 }
 .largeitem-title >ul,
-.search-items .searchitem-title >ul {
+.itemdata-title >ul {
   position: absolute;
   right: 10px;
   bottom: 10px;
 }
 .largeitem-title >ul li,
-.search-items .searchitem-title >ul li {
+.itemdata-title >ul li {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
@@ -1311,40 +1443,40 @@
   line-height: 1;
 }
 .largeitem-attribute,
-.search-items .searchitem-attribute {
+.itemdata-attribute {
   margin: 15px 0 0;
   font-size: 0.64rem;
 }
 .largeitem-attribute >ul,
-.search-items .searchitem-attribute >ul {
+.itemdata-attribute >ul {
   display: inline-block;
   padding: 0.5em;
   background: #ffeff1;
 }
 .largeitem-attribute >ul >li,
-.search-items .searchitem-attribute >ul >li {
+.itemdata-attribute >ul >li {
   display: inline;
   padding: 2px 0;
   color: #ee8593;
   text-align: center;
 }
 .largeitem-attribute >ul >li:not(:first-of-type):before,
-.search-items .searchitem-attribute >ul >li:not(:first-of-type):before {
+.itemdata-attribute >ul >li:not(:first-of-type):before {
   content: "/";
 }
 .largeitem-comment,
-.search-items .searchitem-comment {
+.itemdata-comment {
   margin: 0 5px;
 }
 .largeitem-comment strong,
-.search-items .searchitem-comment strong {
+.itemdata-comment strong {
   display: block;
   margin: 15px 0 5px;
   color: #f19032;
   font-size: 1rem;
 }
 .largeitem-comment span,
-.search-items .searchitem-comment span {
+.itemdata-comment span {
   display: block;
   height: auto;
   min-height: 75px;
@@ -1354,29 +1486,41 @@
   position: relative;
 }
 .largeitem-comment span img,
-.search-items .searchitem-comment span img {
+.itemdata-comment span img {
   width: 93px;
   position: absolute;
   top: 1px;
   left: 0;
 }
 .largeitem-comment span.ellipsis,
-.search-items .searchitem-comment span.ellipsis {
+.itemdata-comment span.ellipsis {
   height: 3em;
 }
 .largeitem-status,
-.search-items .searchitem-status {
+.itemdata-status,
+.recruit-data,
+.about-entry,
+.office-data,
+.company-data {
   margin: 10px 5px;
 }
 .largeitem-status dl,
-.search-items .searchitem-status dl {
+.itemdata-status dl,
+.recruit-data dl,
+.about-entry dl,
+.office-data dl,
+.company-data dl {
   margin: 0;
   position: relative;
   border-top: 1px solid #e4e4e4;
   font-size: 0.78rem;
 }
 .largeitem-status dl dt,
-.search-items .searchitem-status dl dt {
+.itemdata-status dl dt,
+.recruit-data dl dt,
+.about-entry dl dt,
+.office-data dl dt,
+.company-data dl dt {
   position: absolute;
   width: 65px;
   padding: 10px 0 10px 0.75rem;
@@ -1387,28 +1531,44 @@
   color: #ee8593;
 }
 .largeitem-status dl dd,
-.search-items .searchitem-status dl dd {
+.itemdata-status dl dd,
+.recruit-data dl dd,
+.about-entry dl dd,
+.office-data dl dd,
+.company-data dl dd {
   position: relative;
   padding: 10px 0 10px 65px;
   border-bottom: 1px solid #e4e4e4;
 }
 .largeitem-status dl dd small,
-.search-items .searchitem-status dl dd small {
+.itemdata-status dl dd small,
+.recruit-data dl dd small,
+.about-entry dl dd small,
+.office-data dl dd small,
+.company-data dl dd small {
   display: inline-block;
   font-size: 0.64rem;
 }
 .largeitem-status dl dd strong,
-.search-items .searchitem-status dl dd strong {
+.itemdata-status dl dd strong,
+.recruit-data dl dd strong,
+.about-entry dl dd strong,
+.office-data dl dd strong,
+.company-data dl dd strong {
   display: inline-block;
   margin-left: 0.5rem;
 }
 .largeitem-status dl dd strong b,
-.search-items .searchitem-status dl dd strong b {
+.itemdata-status dl dd strong b,
+.recruit-data dl dd strong b,
+.about-entry dl dd strong b,
+.office-data dl dd strong b,
+.company-data dl dd strong b {
   color: #f19032;
   font-size: 1rem;
 }
 .largeitem-characters,
-.search-items .searchitem-characters {
+.itemdata-characters {
   margin: 10px 5px;
   display: -webkit-box;
   display: -moz-box;
@@ -1430,7 +1590,7 @@
   justify-content: space-between;
 }
 .largeitem-characters li,
-.search-items .searchitem-characters li {
+.itemdata-characters li {
   display: inline-block;
   width: 24%;
   padding: 2px 0;
@@ -2112,37 +2272,81 @@ section fieldset:last-of-type {
   font-size: 1.28rem;
   text-align: center;
 }
-.searchitems__header {
+.item-data {
+  border-top: none;
   margin: 0 10px;
-  border: 2px solid #ee8593;
-  border-radius: 5px;
 }
-.searchitems__header >dl {
+.item-data .btn-keep {
+  position: static;
+}
+.itemdata-title {
+  background: #fff;
+}
+.itemdata-title >ul {
+  display: inline-block;
+  position: static;
+}
+.itemdata-attribute {
+  display: inline-block;
+}
+.itemdata-status h3,
+.recruit-data h3,
+.about-entry h3,
+.office-data h3,
+.company-data h3 {
+  margin: 0 0 10px;
+  color: #ee8593;
+  font-size: 1.07rem;
+}
+.itemdata-status h3:before,
+.recruit-data h3:before,
+.about-entry h3:before,
+.office-data h3:before,
+.company-data h3:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+.itemdata-status dl,
+.recruit-data dl,
+.about-entry dl,
+.office-data dl,
+.company-data dl {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: box;
   display: flex;
-  -webkit-box-lines: single;
-  -moz-box-lines: single;
-  -o-box-lines: single;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  font-size: 0.85rem;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-.searchitems__header >dl:not(:first-of-type) {
-  border-top: 1px solid #ee8593;
+.itemdata-status dl dt,
+.recruit-data dl dt,
+.about-entry dl dt,
+.office-data dl dt,
+.company-data dl dt {
+  display: block;
+  padding: 10px 0;
+  background: none;
+  border-bottom: 1px solid #e4e4e4;
+  vertical-align: middle;
+  position: static;
 }
-.searchitems__header >dl dt {
-  width: 4rem;
-  padding: 15px 10px;
-  background: #ffeff1;
-  color: #ee8593;
-  text-align: center;
-}
-.searchitems__header >dl dd {
+.itemdata-status dl dd,
+.recruit-data dl dd,
+.about-entry dl dd,
+.office-data dl dd,
+.company-data dl dd {
+  display: block;
+  padding: 10px 0;
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -o-box-flex: 1;
@@ -2150,108 +2354,167 @@ section fieldset:last-of-type {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 15px 10px;
-  color: #373737;
+  min-width: calc(100% - 70px);
 }
-.searchitems__header >dl dd small {
-  display: inline-block;
-  float: right;
-  padding: 0 10px;
-  color: #ee8593;
-  font-size: 1em;
-  position: relative;
-}
-.searchitems__header >dl dd small:after {
-  content: "";
-  display: block;
-  width: 6px;
-  height: 9px;
-  background: url("../img/sp_list/list_icon01.png") center no-repeat;
+.recruit-data h3:before {
+  background: url("../img/sp_detail/detail_icon_01.png") center no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  margin-top: -5px;
 }
-.searchitems__counts {
-  margin: 10px;
-  font-size: 1rem;
+.about-entry h3:before {
+  width: 19px;
+  height: 14px;
+  background: url("../img/sp_detail/detail_icon_02.png") center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
 }
-.searchitems__counts b {
-  color: #f19032;
+.office-data,
+.company-data {
+  margin: 20px 15px 0;
 }
-.searchitems__pager {
+.office-data h3:before {
+  width: 17px;
+  height: 16px;
+  background: url("../img/sp_detail/detail_icon_04.png") center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.company-data h3:before {
+  width: 17px;
+  height: 17px;
+  background: url("../img/sp_detail/detail_icon_05.png") center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.itemdata-comment >img {
+  display: block;
+  width: 290px;
+  height: 218px;
+  margin: 0 auto;
+}
+.itemdata-comment span {
+  padding: 0;
+  font-size: 0.78rem;
+  line-height: 1.75;
+}
+.itemdata-characters {
+  margin: 15px 5px 15px;
+}
+.item-message {
+  margin: 20px 10px 0;
+}
+.item-message h3 {
+  margin: 0 0 10px;
+  color: #ee8593;
+  font-size: 1.07rem;
+}
+.item-message h3:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 0.5em;
+  background: url("../img/sp_detail/detail_icon_03.png") center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  vertical-align: middle;
+}
+.item-message div {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: box;
   display: flex;
-  -webkit-box-lines: single;
-  -moz-box-lines: single;
-  -o-box-lines: single;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: distribute;
   -moz-box-pack: distribute;
   -o-box-pack: distribute;
   -ms-flex-pack: distribute;
   -webkit-justify-content: space-around;
   justify-content: space-around;
-  padding: 0 10px 10px;
 }
-.searchitems__pager a {
+.item-message div p {
+  width: 100%;
+  font-size: 0.85rem;
+  line-height: 1.75;
+}
+.item-message div figure {
+  width: 45%;
+  margin: 15px 0 0;
+  text-align: center;
+}
+.item-message div figure img {
   display: block;
-  width: 140px;
-  height: 40px;
-  padding: 8px 0;
-  border: 2px solid #ee8593;
-  border-radius: 4px;
-  color: #ee8593;
+  width: 138px;
+  margin: 0 auto;
+}
+.item-message div figure figcaption {
+  display: block;
+  width: 138px;
+  margin: 5px auto 0;
+  text-align: left;
+  font-size: 0.74rem;
+}
+.contents-area .btn-area {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+  text-align: center;
+}
+.contents-area .btn-area a {
+  display: inline-block;
+  width: 60%;
+  height: 50px;
+  margin: 0 15px;
+  border-radius: 8px;
+  font-size: 1.07rem;
+  line-height: 50px;
+  vertical-align: text-bottom;
+}
+.contents-area .btn-area .btn-keep {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 30px 0 0;
+  background: #f19032;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 0.5rem;
+  line-height: 1;
   text-align: center;
   position: relative;
 }
-.searchitems__pager a.disabled {
-  border: 2px solid #b4b4b4;
-  color: #b4b4b4;
+.contents-area .btn-area .btn-keep:hover {
+  background-color: #d87a1e;
 }
-.searchitems__pager a:after {
+.contents-area .btn-area .btn-keep:before {
   content: "";
-  display: block;
-  width: 6px;
-  height: 9px;
+  width: 17px;
+  height: 17px;
+  background: url("../img/sp_top/icon_keep.png") center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
   position: absolute;
-  top: 50%;
-  margin-top: -5px;
+  top: 8px;
+  left: 50%;
+  margin-left: -9px;
 }
-.searchitems__pager a:first-of-type:after {
-  background: url("../img/sp_list/list_icon04.png") center no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
-  left: 5px;
-}
-.searchitems__pager a:first-of-type.disabled:after {
-  background: url("../img/sp_list/list_icon05.png") center no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
-  left: 5px;
-}
-.searchitems__pager a:last-of-type:after {
-  background: url("../img/sp_list/list_icon02.png") center no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
-  right: 5px;
-}
-.searchitems__pager a:last-of-type.disabled:after {
-  background: url("../img/sp_list/list_icon03.png") center no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
-  right: 5px;
+.footer__wrapper {
+  margin-bottom: 60px;
 }
