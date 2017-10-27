@@ -139,6 +139,8 @@
 		color: $red
 	fieldset:not(.select) + fieldset
 		margin-top: 1em
+	p
+		padding: .5rem .75rem
 
 // policy check
 .policy-check
@@ -192,6 +194,19 @@
 		input:checked + label:before
 			content: "✓"
 			background: $lightgreen
+	p
+		padding: .5rem .75rem
+		>small
+			display: inline-block
+			margin: 0 .25rem
+			padding: 0 .25rem
+			background: $red2
+			border-radius: 3px
+			font-size: .71rem
+			line-height: 1rem
+			color: white
+			position: relative
+			top: -2px
 	article
 		padding: 10px
 		border: 1px solid $lightblue
@@ -206,16 +221,17 @@
 	text-align: center
 	.btn-submit
 		margin: 0 .5em
-		padding: 1rem 3rem
+		padding: 1rem 2rem
 		border: none
 		border-bottom: 3px solid $darkgreen
 		border-radius: 6px
 		font-size: 1.21rem
 	.btn-cancel
 		margin: 0 .5em
-		padding: 1rem 3rem
+		padding: 1rem 2rem
 		border: none
-		border-radius: 4px
+		border-bottom: 3px solid $black3
+		border-radius: 6px
 		font-size: 1.21rem
 
 // form end
@@ -224,20 +240,21 @@
 	text-align: center
 	>h3
 		@extend .b
-		margin: 40px auto
+		margin: 30px auto
 		font-size: 1.5em
 		letter-spacing: .25em
 	>p
-		font-size: 1.2em
+		margin: 0 1rem
+		font-size: 1rem
 	>a
-		display: block
-		width: 240px
-		margin: 60px auto
-		padding: .75rem
+		display: inline-block
+		margin: 40px auto
+		padding: .75rem 2rem
 		border: 1px solid $pink
 		border-radius: 4px
+		@extend .m
 		color: $pink
-		font-size: 1.2rem
+		font-size: 1rem
 		&:hover
 			border-color: $darkpink
 			color: $darkpink

@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title お問合せ｜柔道整復師の求人『柔整ワーカー』
+		link(rel="stylesheet", media="all", href="css/common/jquery-ui.min.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/inquiries.css")
+	body.inquiries
+		.wrapper
+
+			include _header.pug
+
+			main.main
+				.contents-area
+					h2 お問合せ
+					ul.form-step.step3
+						li 情報の入力
+						li 入力内容の<br>確認
+						li 完了
+					section.form-end
+						h3 -送信完了-
+						p お問合せありがとうございました。<br>担当者よりご連絡させていただきますので<br>しばらくお待ちください。
+						a(href="index.html") 柔整ワーカートップへ
+
+			include _footer.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		script(type="text/javascript", src="js/common.js")
+

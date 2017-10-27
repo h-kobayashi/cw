@@ -38,6 +38,7 @@
 .form-step li,
 .form-item h3,
 .policy-check h3,
+.contents-area section.form-end >a,
 .form-header p {
   font-family: Rounded-Mplus-1c-medium;
 }
@@ -101,6 +102,7 @@
   .form-item h3,
   .policy-check h3,
   .contents-area section.form-end >h3,
+  .contents-area section.form-end >a,
   .inquiries .contents-area h2,
   .form-header p,
   .form-header p small {
@@ -151,6 +153,7 @@
 .form-step li,
 .form-item h3,
 .policy-check h3,
+.contents-area section.form-end >a,
 .form-header p {
   font-family: Rounded-Mplus-1c-medium;
 }
@@ -214,6 +217,7 @@
   .form-item h3,
   .policy-check h3,
   .contents-area section.form-end >h3,
+  .contents-area section.form-end >a,
   .inquiries .contents-area h2,
   .form-header p,
   .form-header p small {
@@ -1020,6 +1024,9 @@
 .form-item fieldset:not(.select) + fieldset {
   margin-top: 1em;
 }
+.form-item p {
+  padding: 0.5rem 0.75rem;
+}
 .policy-check {
   margin: 20px 12px 0;
   padding: 10px;
@@ -1078,6 +1085,21 @@
   content: "✓";
   background: #82dbd9;
 }
+.policy-check p {
+  padding: 0.5rem 0.75rem;
+}
+.policy-check p >small {
+  display: inline-block;
+  margin: 0 0.25rem;
+  padding: 0 0.25rem;
+  background: #ee183a;
+  border-radius: 3px;
+  font-size: 0.71rem;
+  line-height: 1rem;
+  color: #fff;
+  position: relative;
+  top: -2px;
+}
 .policy-check article {
   padding: 10px;
   border: 1px solid #eff4f7;
@@ -1094,7 +1116,7 @@
 }
 .btn-area .btn-submit {
   margin: 0 0.5em;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   border: none;
   border-bottom: 3px solid #179d85;
   border-radius: 6px;
@@ -1102,9 +1124,10 @@
 }
 .btn-area .btn-cancel {
   margin: 0 0.5em;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   border: none;
-  border-radius: 4px;
+  border-bottom: 3px solid #5d5d5d;
+  border-radius: 6px;
   font-size: 1.21rem;
 }
 .contents-area section.form-end {
@@ -1112,22 +1135,22 @@
   text-align: center;
 }
 .contents-area section.form-end >h3 {
-  margin: 40px auto;
+  margin: 30px auto;
   font-size: 1.5em;
   letter-spacing: 0.25em;
 }
 .contents-area section.form-end >p {
-  font-size: 1.2em;
+  margin: 0 1rem;
+  font-size: 1rem;
 }
 .contents-area section.form-end >a {
-  display: block;
-  width: 240px;
-  margin: 60px auto;
-  padding: 0.75rem;
+  display: inline-block;
+  margin: 40px auto;
+  padding: 0.75rem 2rem;
   border: 1px solid #ee8593;
   border-radius: 4px;
   color: #ee8593;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .contents-area section.form-end >a:hover {
   border-color: #9f5255;
@@ -1157,11 +1180,4 @@
   display: block;
   margin: 1em 0 0;
   font-size: 0.785rem;
-}
-.form-table th,
-.form-table td {
-  font-size: 1.2em;
-}
-.form-table input[type=radio] + label:before {
-  top: 2px;
 }
