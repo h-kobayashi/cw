@@ -3,37 +3,23 @@
 @import "common/_color"
 @import "common/_item"
 @import "common/_form"
-
-// itemdata
-.item-data
-	@extend .smallitem
-	margin: 20px 12px 0
-	padding: 10px
-	border: 1px solid $gray
-.itemdata-attribute
-	@extend .smallitem-attribute
-.itemdata-status
-	@extend .smallitem-status
-
 	
-.entry
+.ad
 	.contents-area
 		h2
 			margin: 0 12px
 			@extend .b
-			font-size: .71rem
-			strong
-				font-size: 1.25rem
+			font-size: 1rem
 		h2:before
 			content: ""
 			display: inline-block
-			width: 12px
-			height: 18px
+			width: 17px
+			height: 15px
 			margin: 0 .5em 0 0
-			background: url(../img/sp_entry/entry_icon01.png) center no-repeat
+			background: url(../img/sp_ad/ad_icon01.png) center no-repeat
 			background-size: contain
 			position: relative
-			top: 3px
+			top: 1px
 
 // form title
 .form-body
@@ -41,19 +27,7 @@
 		>h3
 			@extend .m
 			color: $pink
-		>h3:nth-of-type(1):before
-			content: ""
-			display: inline-block
-			width: 14px
-			height: 19px
-			background: url(../img/sp_entry/entry_icon02.png) center no-repeat
-			background-size: contain
-			margin: 0 .5em 0 0
-			position: relative
-			top: 3px
-		>h3:nth-of-type(2)
-			margin-top: 40px
-		>h3:nth-of-type(2):before
+		>h3:before
 			content: ""
 			display: inline-block
 			width: 17px
@@ -67,11 +41,7 @@
 			margin-top: 1.5em
 		ul + p
 			margin-top: 1.5em
-		a
-			display: block
-			text-decoration: underline
-		a.right
-			text-align: right
+
 
 // input size
 .form-item
@@ -124,18 +94,3 @@
 		margin-top: .5em
 		input[type=text]
 			background: white
-	.list
-		>label
-			display: block
-			margin: 10px 0 0
-			padding: 1rem .75rem .5rem 3em
-			background: $lightblue2
-			position: relative
-			>input[type=text]
-				width: 100%
-				margin: .5em 0 0
-				background: white
-		>input[type=checkbox] + label:before
-			position: absolute
-			top: .75em
-			left: .75em

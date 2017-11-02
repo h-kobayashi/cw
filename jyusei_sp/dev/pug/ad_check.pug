@@ -1,0 +1,80 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 求人掲載のお申込み｜柔道整復師の求人『柔整ワーカー』
+		link(rel="stylesheet", media="all", href="css/common/jquery-ui.min.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/ad.css")
+	body.ad
+		.wrapper
+
+			include _header.pug
+
+			main.main
+				.contents-area
+					h2 求人掲載のお申込み
+					
+					ul.form-step.step2
+						li 情報の入力
+						li 入力内容の<br>確認
+						li 完了
+						
+					section.form-body
+						form(method="post", action="ad_end.html")
+							h3 お申込み内容
+							.form-items
+								.form-item.must
+									h3 法人・企業名
+										small 必須
+									p 株式会社エムアイクリニック
+								.form-item.any
+									h3 法人・企業名（カナ）
+										small 任意
+									p カブシキガイシャエムアイクリニック
+								.form-item.must
+									h3 郵便番号
+										small 必須
+									p 1600014
+								.form-item.must
+									h3 住所
+										small 必須
+									p 東京都新宿区西新宿 3-1-5 新宿嘉泉ビル 8F
+								.form-item.must
+									h3 担当者氏名
+										small 必須
+									p 山田　太郎
+								.form-item.any
+									h3 担当者氏名（カナ）
+										small 任意
+									p やまだ　たろう
+								.form-item.must
+									h3 メールアドレス
+										small 必須
+									p example@jusei-kyujin.com
+									small こちらのメールアドレス宛に求人掲載に関する連絡を<br>行います。
+								.form-item.must
+									h3 電話番号
+										small 必須
+									p 09012345678
+							
+							.policy-check
+								h3 利用規約と個人情報の取り扱いについて
+								p 以下の利用規約と個人情報の取り扱いについて同意する
+									small 必須
+								article
+									div
+										p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+							
+							.btn-area
+								button(onClick="location.href='ad.html'").btn-cancel 修正する
+								button(onClick="submit()").btn-submit 送信する
+								
+			include _footer.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		script(type="text/javascript", src="js/common.js")
+

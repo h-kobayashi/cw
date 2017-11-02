@@ -33,4 +33,8 @@
     });
   });
 
+  $('.faqitem i').on('click touch', this, function() {
+    return $(this).prev('p').toggleClass('opened');
+  });
+
 }).call(this);

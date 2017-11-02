@@ -38,7 +38,6 @@
 .form-item h3,
 .policy-check h3,
 .contents-area section.form-end >a,
-.itemdata-attribute,
 .form-body >form >h3 {
   font-family: Rounded-Mplus-1c-medium;
 }
@@ -50,10 +49,7 @@
 .smallitem p strong,
 .smallitem-status >div >dl dd,
 .contents-area section.form-end >h3,
-.item-data h3,
-.item-data p strong,
-.itemdata-status >div >dl dd,
-.entry .contents-area h2 {
+.ad .contents-area h2 {
   font-family: Rounded-Mplus-1c-bold;
 }
 @font-face {
@@ -106,11 +102,7 @@
   .policy-check h3,
   .contents-area section.form-end >h3,
   .contents-area section.form-end >a,
-  .item-data h3,
-  .item-data p strong,
-  .itemdata-attribute,
-  .itemdata-status >div >dl dd,
-  .entry .contents-area h2,
+  .ad .contents-area h2,
   .form-body >form >h3 {
     -webkit-transform: rotate(0.001deg);
     -moz-transform: rotate(0.001deg);
@@ -159,7 +151,6 @@
 .form-item h3,
 .policy-check h3,
 .contents-area section.form-end >a,
-.itemdata-attribute,
 .form-body >form >h3 {
   font-family: Rounded-Mplus-1c-medium;
 }
@@ -171,10 +162,7 @@
 .smallitem p strong,
 .smallitem-status >div >dl dd,
 .contents-area section.form-end >h3,
-.item-data h3,
-.item-data p strong,
-.itemdata-status >div >dl dd,
-.entry .contents-area h2 {
+.ad .contents-area h2 {
   font-family: Rounded-Mplus-1c-bold;
 }
 @font-face {
@@ -227,11 +215,7 @@
   .policy-check h3,
   .contents-area section.form-end >h3,
   .contents-area section.form-end >a,
-  .item-data h3,
-  .item-data p strong,
-  .itemdata-attribute,
-  .itemdata-status >div >dl dd,
-  .entry .contents-area h2,
+  .ad .contents-area h2,
   .form-body >form >h3 {
     -webkit-transform: rotate(0.001deg);
     -moz-transform: rotate(0.001deg);
@@ -456,43 +440,35 @@
 .small-items ul {
   margin-top: 10px;
 }
-.smallitem >a,
-.item-data >a {
+.smallitem >a {
   display: block;
   margin: 0 0 10px;
   padding: 10px 15px;
   border: 1px solid #e4e4e4;
 }
-.smallitem >a:hover,
-.item-data >a:hover {
+.smallitem >a:hover {
   background: #fffde6;
 }
-.smallitem h3,
-.item-data h3 {
+.smallitem h3 {
   font-size: 0.64rem;
   position: relative;
 }
-.smallitem h3 small,
-.item-data h3 small {
+.smallitem h3 small {
   display: block;
   margin: 2px 0;
   color: #ee8593;
   font-size: 0.71rem;
 }
-.smallitem h3 small:before,
-.item-data h3 small:before {
+.smallitem h3 small:before {
   content: "[";
 }
-.smallitem h3 small:after,
-.item-data h3 small:after {
+.smallitem h3 small:after {
   content: "]";
 }
-.smallitem h3 strong,
-.item-data h3 strong {
+.smallitem h3 strong {
   font-size: 1.07rem;
 }
-.smallitem p strong,
-.item-data p strong {
+.smallitem p strong {
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -500,33 +476,28 @@
   text-overflow: ellipsis;
   color: #f19032;
 }
-.smallitem-attribute,
-.itemdata-attribute {
+.smallitem-attribute {
   position: absolute;
   top: 0;
   right: 0;
   font-size: 0.64rem;
 }
-.smallitem-attribute >ul,
-.itemdata-attribute >ul {
+.smallitem-attribute >ul {
   display: inline-block;
   margin: 0;
   padding: 0.25em 0.5em;
   background: #ffeff1;
 }
-.smallitem-attribute >ul >li,
-.itemdata-attribute >ul >li {
+.smallitem-attribute >ul >li {
   display: inline;
   padding: 2px 0;
   color: #ee8593;
   text-align: center;
 }
-.smallitem-attribute >ul >li:not(:first-of-type):before,
-.itemdata-attribute >ul >li:not(:first-of-type):before {
+.smallitem-attribute >ul >li:not(:first-of-type):before {
   content: "/";
 }
-.smallitem-status,
-.itemdata-status {
+.smallitem-status {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -535,19 +506,16 @@
   display: flex;
   margin: 10px 0 0;
 }
-.smallitem-status figure,
-.itemdata-status figure {
+.smallitem-status figure {
   width: 90px;
   height: 68px;
   margin-right: 1rem;
 }
-.smallitem-status figure img,
-.itemdata-status figure img {
+.smallitem-status figure img {
   width: 90px;
   height: 68px;
 }
-.smallitem-status >div,
-.itemdata-status >div {
+.smallitem-status >div {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -o-box-flex: 1;
@@ -556,24 +524,19 @@
   -ms-flex: 1;
   flex: 1;
 }
-.smallitem-status >div >dl,
-.itemdata-status >div >dl {
+.smallitem-status >div >dl {
   line-height: 1.3;
 }
-.smallitem-status >div >dl dt,
-.itemdata-status >div >dl dt {
+.smallitem-status >div >dl dt {
   font-size: 0.64rem;
 }
-.smallitem-status >div >dl dd,
-.itemdata-status >div >dl dd {
+.smallitem-status >div >dl dd {
   font-size: 0.85rem;
 }
-.smallitem-status >div >dl dd b,
-.itemdata-status >div >dl dd b {
+.smallitem-status >div >dl dd b {
   color: #f19032;
 }
-.smallitem-status >div >p,
-.itemdata-status >div >p {
+.smallitem-status >div >p {
   font-size: 0.64rem;
 }
 .search-business h2,
@@ -1195,51 +1158,27 @@
   border-color: #9f5255;
   color: #9f5255;
 }
-.item-data {
-  margin: 20px 12px 0;
-  padding: 10px;
-  border: 1px solid #e4e4e4;
-}
-.entry .contents-area h2 {
+.ad .contents-area h2 {
   margin: 0 12px;
-  font-size: 0.71rem;
+  font-size: 1rem;
 }
-.entry .contents-area h2 strong {
-  font-size: 1.25rem;
-}
-.entry .contents-area h2:before {
+.ad .contents-area h2:before {
   content: "";
   display: inline-block;
-  width: 12px;
-  height: 18px;
+  width: 17px;
+  height: 15px;
   margin: 0 0.5em 0 0;
-  background: url("../img/sp_entry/entry_icon01.png") center no-repeat;
+  background: url("../img/sp_ad/ad_icon01.png") center no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
   position: relative;
-  top: 3px;
+  top: 1px;
 }
 .form-body >form >h3 {
   color: #ee8593;
 }
-.form-body >form >h3:nth-of-type(1):before {
-  content: "";
-  display: inline-block;
-  width: 14px;
-  height: 19px;
-  background: url("../img/sp_entry/entry_icon02.png") center no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
-  margin: 0 0.5em 0 0;
-  position: relative;
-  top: 3px;
-}
-.form-body >form >h3:nth-of-type(2) {
-  margin-top: 40px;
-}
-.form-body >form >h3:nth-of-type(2):before {
+.form-body >form >h3:before {
   content: "";
   display: inline-block;
   width: 17px;
@@ -1257,13 +1196,6 @@
 }
 .form-body >form ul + p {
   margin-top: 1.5em;
-}
-.form-body >form a {
-  display: block;
-  text-decoration: underline;
-}
-.form-body >form a.right {
-  text-align: right;
 }
 .form-item .btn-green {
   width: 45%;
@@ -1329,21 +1261,4 @@
 }
 .form-item fieldset + fieldset.address_any input[type=text] {
   background: #fff;
-}
-.form-item .list >label {
-  display: block;
-  margin: 10px 0 0;
-  padding: 1rem 0.75rem 0.5rem 3em;
-  background: #fbfcfe;
-  position: relative;
-}
-.form-item .list >label >input[type=text] {
-  width: 100%;
-  margin: 0.5em 0 0;
-  background: #fff;
-}
-.form-item .list >input[type=checkbox] + label:before {
-  position: absolute;
-  top: 0.75em;
-  left: 0.75em;
 }

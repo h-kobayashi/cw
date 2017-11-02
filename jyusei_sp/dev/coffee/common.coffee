@@ -23,4 +23,8 @@ jQuery(document).ready ($) ->
     $('html,body').animate { scrollTop: targetY }, time, 'swing'
     window.history.pushState null, null, @hash
     false
+	
+	#about - faq
+	$('.faqitem i').on 'click touch',this, ->
+		$(this).prev('p').toggleClass('opened')
 

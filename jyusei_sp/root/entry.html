@@ -113,8 +113,8 @@
               </div>
             </div>
           </section>
-          <ul class="form-step">
-            <li class="on">情報の入力</li>
+          <ul class="form-step step1">
+            <li>情報の入力</li>
             <li>入力内容の
               <br>確認</li>
             <li>完了</li>
@@ -366,7 +366,8 @@
                   </h3>
                   <fieldset>
                     <input type="text" placeholder="例：example@jusei-kyujin.com">
-                    <small>※こちらのメールアドレス宛に求人掲載に関する連絡を行います。</small>
+                    <small>こちらのメールアドレス宛に求人掲載に関する連絡を
+                      <br>行います。</small>
                   </fieldset>
                 </div>
                 <div class="form-item must">
@@ -405,7 +406,7 @@
                   <fieldset>
                     <input type="checkbox" id="cookie">
                     <label for="cookie">入力した基本情報を他の求人でも再利用する</label>
-                    <a href="">
+                    <a class="right" href="">
                       <small>※cookie(クッキー)について</small>
                     </a>
                   </fieldset>
@@ -475,10 +476,16 @@
                     <small>必須</small>
                   </h3>
                   <fieldset>
-                    <input type="checkbox" name="employment" id="employment0">
-                    <label for="employment0">正社員</label>
-                    <input type="checkbox" name="employment" id="employment0">
-                    <label for="employment0">パート・アルバイト</label>
+                    <ul>
+                      <li>
+                        <input type="checkbox" name="employment" id="employment0">
+                        <label for="employment0">正社員</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="employment" id="employment0">
+                        <label for="employment0">パート・アルバイト</label>
+                      </li>
+                    </ul>
                   </fieldset>
                 </div>
                 <div class="form-item must">
@@ -495,7 +502,8 @@
                       <option>3年以上</option>
                     </select>
                   </fieldset>
-                  <small>※手技療法業界での実務経験年数を選択してください。（他の業界での就労年数は含みません。）</small>
+                  <small>手技療法業界での実務経験年数を選択してください。
+                    <br>（他の業界での就労年数は含みません。）</small>
                 </div>
                 <div class="form-item must">
                   <h3>免許・資格
@@ -524,34 +532,34 @@
                         <label for="license_4">免許・資格なし</label>
                       </li>
                     </ul>
-                    <small>※保有している免許・資格が複数ある場合は全ての項目にチェックを入れてください。</small>
-                    <textarea rows="3" placeholder="上記の他に、保有している免許・資格があれば、こちらに入力してください。　例：1年以内に介護福祉士資格を取得予定。"></textarea>
+                    <small>保有している免許・資格が複数ある場合は全ての項目にチェックを入れてください。</small>
+                    <textarea rows="6" placeholder="上記の他に、保有している免許・資格があれば、こちらに入力してください。　例：1年以内に介護福祉士資格を取得予定。"></textarea>
                   </fieldset>
                 </div>
-                <div class="form-item must">
+                <div class="form-item any">
                   <h3>自己PR
                     <small>任意</small>
                   </h3>
                   <fieldset>
-                    <textarea rows="3" placeholder="上記の他に、これまでの職歴や経験・実績に関するアピールがあれば、こちらに入力してください。　"></textarea>
+                    <textarea rows="6" placeholder="上記の他に、これまでの職歴や経験・実績に関するアピールがあれば、こちらに入力してください。　"></textarea>
                   </fieldset>
                 </div>
-                <div class="form-item must">
+                <div class="form-item any">
                   <h3>面接・連絡希望日
                     <small>任意</small>
                   </h3>
                   <fieldset>
-                    <textarea rows="3" placeholder="面接日程や日中の連絡時間帯に関してご希望があれば、こちらに入力してください。　例：平日の18時以降に連絡をお願いします。"></textarea>
+                    <textarea rows="6" placeholder="面接日程や日中の連絡時間帯に関してご希望があれば、こちらに入力してください。　例：平日の18時以降に連絡をお願いします。"></textarea>
                   </fieldset>
                 </div>
               </div>
               <div class="policy-check">
-                <h3>利用規約と個人情報の取り扱いについて
-                  <small>必須</small>
-                </h3>
+                <h3>利用規約と個人情報の取り扱いについて</h3>
                 <fieldset>
                   <input type="checkbox" id="policy-check">
-                  <label for="policy-check">以下の利用規約と個人情報の取り扱いについて同意する</label>
+                  <label for="policy-check">以下の利用規約と個人情報の取り扱いについて同意する
+                    <small>必須</small>
+                  </label>
                 </fieldset>
                 <article>
                   <div>
