@@ -1,0 +1,738 @@
+.branding {
+  width: 100%;
+  margin: 0 auto;
+  background: #58b244 url("../img/top/pc/top_mainimg.jpg") center top no-repeat;
+}
+.branding p {
+  height: 430px;
+  text-indent: 9999px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.branding .front-search {
+  width: 1100px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0 14px;
+}
+.branding .front-search:before {
+  content: url("../img/top/pc/top_search_icon.png");
+  display: inline-block;
+  position: relative;
+  top: -20px;
+}
+.branding .front-search .search-item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 27px 24px;
+  position: relative;
+}
+.branding .front-search .search-item:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 6px;
+  background: url("../img/top/pc/top_search_icon02.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 36px;
+  margin-top: -3px;
+}
+.branding .front-search .search-item select {
+  width: 280px;
+  height: 41px;
+  padding: 0 1em;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.branding .front-search .search-item:not(:first-of-type):before {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url("../img/top/pc/top_search_icon03.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: -13px;
+  margin-top: -10px;
+}
+.branding .front-search .btn-area {
+  display: inline-block;
+  vertical-align: top;
+}
+.branding .front-search .btn-area .btn-submit {
+  width: 135px;
+  height: 40px;
+  margin: 27px 0;
+  background: #fe4280;
+  border: 0px solid transparent;
+  border-bottom: 3px solid #dd205e;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 40px;
+}
+.contents-area .job-search {
+  margin: 0 auto;
+}
+.contents-area .job-search ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 10px 0 0;
+}
+.contents-area .job-search li {
+  display: block;
+  width: 16.66%;
+  margin: 20px 0;
+  text-align: center;
+  position: relative;
+}
+.contents-area .job-search li a {
+  display: inline-block;
+  min-width: 90px;
+  padding: 120px 0 0;
+  border-bottom: 1px dashed #fd9f3a;
+  text-align: center;
+}
+.contents-area .job-search li a:before {
+  content: "";
+  display: block;
+  width: 113px;
+  height: 113px;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -56px;
+}
+.contents-area .job-search li:nth-of-type(1) a:before {
+  background-image: url("../img/top/pc/top_search01_01.png");
+}
+.contents-area .job-search li:nth-of-type(1) a:hover:.contents-area .job-search li:nth-of-type(1) a:before {
+  background-image: url("../img/top/pc/top_search01_01_on.png");
+}
+.contents-area .job-search li:nth-of-type(2) a:before {
+  background-image: url("../img/top/pc/top_search01_02.png");
+}
+.contents-area .job-search li:nth-of-type(2) a:hover:.contents-area .job-search li:nth-of-type(2) a:before {
+  background-image: url("../img/top/pc/top_search01_02_on.png");
+}
+.contents-area .job-search li:nth-of-type(3) a:before {
+  background-image: url("../img/top/pc/top_search01_03.png");
+}
+.contents-area .job-search li:nth-of-type(3) a:hover:.contents-area .job-search li:nth-of-type(3) a:before {
+  background-image: url("../img/top/pc/top_search01_03_on.png");
+}
+.contents-area .job-search li:nth-of-type(4) a:before {
+  background-image: url("../img/top/pc/top_search01_04.png");
+}
+.contents-area .job-search li:nth-of-type(4) a:hover:.contents-area .job-search li:nth-of-type(4) a:before {
+  background-image: url("../img/top/pc/top_search01_04_on.png");
+}
+.contents-area .job-search li:nth-of-type(5) a:before {
+  background-image: url("../img/top/pc/top_search01_05.png");
+}
+.contents-area .job-search li:nth-of-type(5) a:hover:.contents-area .job-search li:nth-of-type(5) a:before {
+  background-image: url("../img/top/pc/top_search01_05_on.png");
+}
+.contents-area .job-search li:nth-of-type(6) a:before {
+  background-image: url("../img/top/pc/top_search01_06.png");
+}
+.contents-area .job-search li:nth-of-type(6) a:hover:.contents-area .job-search li:nth-of-type(6) a:before {
+  background-image: url("../img/top/pc/top_search01_06_on.png");
+}
+.contents-area .job-search li:nth-of-type(7) a:before {
+  background-image: url("../img/top/pc/top_search01_07.png");
+}
+.contents-area .job-search li:nth-of-type(7) a:hover:.contents-area .job-search li:nth-of-type(7) a:before {
+  background-image: url("../img/top/pc/top_search01_07_on.png");
+}
+.contents-area .job-search li:nth-of-type(8) a:before {
+  background-image: url("../img/top/pc/top_search01_08.png");
+}
+.contents-area .job-search li:nth-of-type(8) a:hover:.contents-area .job-search li:nth-of-type(8) a:before {
+  background-image: url("../img/top/pc/top_search01_08_on.png");
+}
+.contents-area .job-search li:nth-of-type(9) a:before {
+  background-image: url("../img/top/pc/top_search01_09.png");
+}
+.contents-area .job-search li:nth-of-type(9) a:hover:.contents-area .job-search li:nth-of-type(9) a:before {
+  background-image: url("../img/top/pc/top_search01_09_on.png");
+}
+.contents-area .job-search li:nth-of-type(10) a:before {
+  background-image: url("../img/top/pc/top_search01_10.png");
+}
+.contents-area .job-search li:nth-of-type(10) a:hover:before {
+  background-image: url("../img/top/pc/top_search01_10_on.png");
+}
+.contents-area .job-search li:nth-of-type(11) a:before {
+  background-image: url("../img/top/pc/top_search01_11.png");
+}
+.contents-area .job-search li:nth-of-type(11) a:hover:before {
+  background-image: url("../img/top/pc/top_search01_11_on.png");
+}
+.contents-area .job-search li:nth-of-type(12) a:before {
+  background-image: url("../img/top/pc/top_search01_12.png");
+}
+.contents-area .job-search li:nth-of-type(12) a:hover:before {
+  background-image: url("../img/top/pc/top_search01_12_on.png");
+}
+.contents-area .salary-search {
+  margin: 0 auto;
+  padding: 10px;
+  background: #58b244;
+  border-radius: 10px;
+}
+.contents-area .salary-search .search-item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 27px 24px;
+  position: relative;
+}
+.contents-area .salary-search .search-item:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 6px;
+  background: url("../img/top/pc/top_search_icon02.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 36px;
+  margin-top: -3px;
+}
+.contents-area .salary-search .search-item select {
+  width: 280px;
+  height: 41px;
+  padding: 0 1em;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contents-area .salary-search .search-item:not(:first-of-type):before {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url("../img/top/pc/top_search_icon03.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: -13px;
+  margin-top: -10px;
+}
+.contents-area .salary-search .btn-area {
+  display: inline-block;
+  vertical-align: top;
+}
+.contents-area .salary-search .btn-area .btn-submit {
+  width: 135px;
+  height: 40px;
+  margin: 27px 0;
+  background: #fe4280;
+  border: 0px solid transparent;
+  border-bottom: 3px solid #dd205e;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 40px;
+}
+.contents-area .keep-items >ul,
+.contents-area .pickup-items >ul,
+.contents-area .new-items >ul {
+  margin: 40px 0 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.contents-area .keep-items >ul>li,
+.contents-area .pickup-items >ul>li,
+.contents-area .new-items >ul>li {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  -webkit-box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
+  box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
+  position: relative;
+}
+.contents-area .keep-items >ul>li.part:not(.newitem_s),
+.contents-area .pickup-items >ul>li.part:not(.newitem_s),
+.contents-area .new-items >ul>li.part:not(.newitem_s) {
+  border-top: 5px solid #fd9f3a;
+}
+.contents-area .keep-items >ul>li.part:not(.newitem_s) h3,
+.contents-area .pickup-items >ul>li.part:not(.newitem_s) h3,
+.contents-area .new-items >ul>li.part:not(.newitem_s) h3 {
+  background: url("../img/top/pc/job_icon02.png") 0 0 no-repeat;
+  color: #fd9f3a;
+}
+.contents-area .keep-items >ul>li.part:not(.newitem_s) .item-status table td strong,
+.contents-area .pickup-items >ul>li.part:not(.newitem_s) .item-status table td strong,
+.contents-area .new-items >ul>li.part:not(.newitem_s) .item-status table td strong {
+  color: #fd9f3a;
+}
+.contents-area .keep-items >ul>li.part:not(.newitem_s) .btn-area .btn-more,
+.contents-area .pickup-items >ul>li.part:not(.newitem_s) .btn-area .btn-more,
+.contents-area .new-items >ul>li.part:not(.newitem_s) .btn-area .btn-more {
+  background: #fd9f3a;
+}
+.contents-area .keep-items >ul>li.full:not(.newitem_s),
+.contents-area .pickup-items >ul>li.full:not(.newitem_s),
+.contents-area .new-items >ul>li.full:not(.newitem_s) {
+  border-top: 5px solid #42cbfe;
+}
+.contents-area .keep-items >ul>li.full:not(.newitem_s) h3,
+.contents-area .pickup-items >ul>li.full:not(.newitem_s) h3,
+.contents-area .new-items >ul>li.full:not(.newitem_s) h3 {
+  background: url("../img/top/pc/job_icon02_02.png") 0 0 no-repeat;
+  color: #42cbfe;
+}
+.contents-area .keep-items >ul>li.full:not(.newitem_s) .item-status table td strong,
+.contents-area .pickup-items >ul>li.full:not(.newitem_s) .item-status table td strong,
+.contents-area .new-items >ul>li.full:not(.newitem_s) .item-status table td strong {
+  color: #42cbfe;
+}
+.contents-area .keep-items >ul>li.full:not(.newitem_s) .btn-area .btn-more,
+.contents-area .pickup-items >ul>li.full:not(.newitem_s) .btn-area .btn-more,
+.contents-area .new-items >ul>li.full:not(.newitem_s) .btn-area .btn-more {
+  background: #42cbfe;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s),
+.contents-area .pickup-items >ul>li:not(.newitem_s),
+.contents-area .new-items >ul>li:not(.newitem_s) {
+  width: 100%;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .celebration,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .celebration,
+.contents-area .new-items >ul>li:not(.newitem_s) .celebration {
+  height: 50px;
+  padding: 5px 20px 0 45px;
+  background: #fe4280 url("../img/top/pc/job_icon01.png") 15px 12px no-repeat;
+  border-radius: 0 0 4px 4px;
+  color: #f5fd0f;
+  font-size: 1em;
+  text-align: center;
+  line-height: 45px;
+  position: absolute;
+  top: -5px;
+  right: 14px;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .celebration strong,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .celebration strong,
+.contents-area .new-items >ul>li:not(.newitem_s) .celebration strong {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-header small,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-header small,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-header small {
+  position: absolute;
+  top: -2.5em;
+  left: 0;
+  font-size: 0.75em;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-header p,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-header p,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-header p {
+  padding: 20px 0;
+  line-height: 2;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-header p strong,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-header p strong,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-header p strong {
+  display: inline-block;
+  margin-right: 0.5em;
+  padding: 0.25em 1em 0.25em 1.5em;
+  background: #f6f6f6;
+  vertical-align: middle;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) h3,
+.contents-area .pickup-items >ul>li:not(.newitem_s) h3,
+.contents-area .new-items >ul>li:not(.newitem_s) h3 {
+  margin: 0 30px;
+  padding-left: 60px;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-status,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-status {
+  margin: 10px 30px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-status figure,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status figure,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-status figure {
+  width: 300px;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-status table {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 210px;
+  border-collapse: collapse;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table th,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table th,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-status table th,
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table td,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table td,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-status table td {
+  padding: 0 1.5em;
+  border: 1px solid #e3e3e3;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table th,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table th,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-status table th {
+  text-align: center;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table td,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table td,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-status table td {
+  text-align: left;
+  font-weight: bold;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table td a,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table td a,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-status table td a {
+  text-decoration: underline;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table td small,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table td small,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-status table td small {
+  display: inline-block;
+  margin-left: 1em;
+  font-weight: normal;
+  font-size: 0.87em;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table td strong,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table td strong,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-status table td strong {
+  display: inline-block;
+  margin-right: 0.25em;
+  font-size: 1.2em;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-characters,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-characters,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-characters {
+  margin: 0 20px 0 30px;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-characters ul,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-characters ul,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-characters ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-characters ul li,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-characters ul li,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-characters ul li {
+  width: 110px;
+  height: 20px;
+  margin: 0 3px 3px 0;
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+  color: #58b244;
+  font-size: 0.75em;
+  text-align: center;
+  line-height: 20px;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-comment,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-comment,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-comment {
+  margin: 10px 30px;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-footer,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-footer,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-footer {
+  width: 100%;
+  position: absolute;
+  bottom: -1.5em;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-footer small,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-footer small,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-footer small {
+  font-size: 0.5em;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-footer small:first-of-type,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-footer small:first-of-type,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-footer small:first-of-type {
+  float: left;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .item-footer small:last-of-type,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .item-footer small:last-of-type,
+.contents-area .new-items >ul>li:not(.newitem_s) .item-footer small:last-of-type {
+  float: right;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .btn-area,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .btn-area,
+.contents-area .new-items >ul>li:not(.newitem_s) .btn-area {
+  padding: 20px;
+  background: #f3f3f3;
+  border-top: 1px solid #e3e3e3;
+  text-align: center;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .btn-area a,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .btn-area a,
+.contents-area .new-items >ul>li:not(.newitem_s) .btn-area a {
+  display: inline-block;
+  height: 60px;
+  margin: 0 10px;
+  border-radius: 2px;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 60px;
+  position: relative;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .btn-area .btn-keep,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .btn-area .btn-keep,
+.contents-area .new-items >ul>li:not(.newitem_s) .btn-area .btn-keep {
+  width: 246px;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  color: #58b244;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .btn-area .btn-keep:after,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .btn-area .btn-keep:after,
+.contents-area .new-items >ul>li:not(.newitem_s) .btn-area .btn-keep:after {
+  content: url("../img/top/pc/job_icon03.png");
+  width: 69px;
+  height: 45px;
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+}
+.contents-area .keep-items >ul>li:not(.newitem_s) .btn-area .btn-more,
+.contents-area .pickup-items >ul>li:not(.newitem_s) .btn-area .btn-more,
+.contents-area .new-items >ul>li:not(.newitem_s) .btn-area .btn-more {
+  width: 383px;
+  color: #fff;
+}
+.contents-area .keep-items >ul>li.newitem_s,
+.contents-area .pickup-items >ul>li.newitem_s,
+.contents-area .new-items >ul>li.newitem_s {
+  width: 412px;
+  margin: 40px 0 0;
+  font-size: 0.75em;
+}
+.contents-area .keep-items >ul>li.newitem_s .celebration,
+.contents-area .pickup-items >ul>li.newitem_s .celebration,
+.contents-area .new-items >ul>li.newitem_s .celebration {
+  height: 40px;
+  padding: 2px 10px 0 35px;
+  background: #fe4280 url("../img/top/pc/job_icon01_s.png") 11px 7px no-repeat;
+  border-radius: 0 0 4px 4px;
+  color: #f5fd0f;
+  font-size: 1em;
+  text-align: center;
+  line-height: 35px;
+  position: absolute;
+  top: -1px;
+  right: 14px;
+}
+.contents-area .keep-items >ul>li.newitem_s .celebration strong,
+.contents-area .pickup-items >ul>li.newitem_s .celebration strong,
+.contents-area .new-items >ul>li.newitem_s .celebration strong {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.contents-area .keep-items >ul>li.newitem_s .item-header,
+.contents-area .pickup-items >ul>li.newitem_s .item-header,
+.contents-area .new-items >ul>li.newitem_s .item-header {
+  margin: 15px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.contents-area .keep-items >ul>li.newitem_s .item-header p,
+.contents-area .pickup-items >ul>li.newitem_s .item-header p,
+.contents-area .new-items >ul>li.newitem_s .item-header p {
+  padding: 0;
+}
+.contents-area .keep-items >ul>li.newitem_s .item-header p strong,
+.contents-area .pickup-items >ul>li.newitem_s .item-header p strong,
+.contents-area .new-items >ul>li.newitem_s .item-header p strong {
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.5em 150px 0.5em 40px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.contents-area .keep-items >ul>li.newitem_s h3,
+.contents-area .pickup-items >ul>li.newitem_s h3,
+.contents-area .new-items >ul>li.newitem_s h3 {
+  margin: 0 15px;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+.contents-area .keep-items >ul>li.newitem_s .item-status,
+.contents-area .pickup-items >ul>li.newitem_s .item-status,
+.contents-area .new-items >ul>li.newitem_s .item-status {
+  margin: 10px 30px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.contents-area .keep-items >ul>li.newitem_s .item-status figure,
+.contents-area .pickup-items >ul>li.newitem_s .item-status figure,
+.contents-area .new-items >ul>li.newitem_s .item-status figure {
+  width: 160px;
+}
+.contents-area .keep-items >ul>li.newitem_s .item-status figure img,
+.contents-area .pickup-items >ul>li.newitem_s .item-status figure img,
+.contents-area .new-items >ul>li.newitem_s .item-status figure img {
+  width: 156px;
+}
+.contents-area .keep-items >ul>li.newitem_s .item-status table,
+.contents-area .pickup-items >ul>li.newitem_s .item-status table,
+.contents-area .new-items >ul>li.newitem_s .item-status table {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 120px;
+}
+.contents-area .keep-items >ul>li.newitem_s .item-status table th,
+.contents-area .pickup-items >ul>li.newitem_s .item-status table th,
+.contents-area .new-items >ul>li.newitem_s .item-status table th,
+.contents-area .keep-items >ul>li.newitem_s .item-status table td,
+.contents-area .pickup-items >ul>li.newitem_s .item-status table td,
+.contents-area .new-items >ul>li.newitem_s .item-status table td {
+  padding: 0 0.5em;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.contents-area .keep-items >ul>li.newitem_s .item-status table th strong,
+.contents-area .pickup-items >ul>li.newitem_s .item-status table th strong,
+.contents-area .new-items >ul>li.newitem_s .item-status table th strong,
+.contents-area .keep-items >ul>li.newitem_s .item-status table td strong,
+.contents-area .pickup-items >ul>li.newitem_s .item-status table td strong,
+.contents-area .new-items >ul>li.newitem_s .item-status table td strong {
+  display: inline-block;
+  color: #fd9f3a;
+}
+.contents-area .keep-items >ul>li.newitem_s.part .item-header p strong,
+.contents-area .pickup-items >ul>li.newitem_s.part .item-header p strong,
+.contents-area .new-items >ul>li.newitem_s.part .item-header p strong {
+  background: url("../img/top/pc/job_icon02_01_s.png") 0 0 no-repeat;
+}
+.contents-area .keep-items >ul>li.newitem_s.part h3,
+.contents-area .pickup-items >ul>li.newitem_s.part h3,
+.contents-area .new-items >ul>li.newitem_s.part h3 {
+  color: #fd9f3a;
+}
+.contents-area .keep-items >ul>li.newitem_s.part .item-status table td strong,
+.contents-area .pickup-items >ul>li.newitem_s.part .item-status table td strong,
+.contents-area .new-items >ul>li.newitem_s.part .item-status table td strong {
+  color: #fd9f3a;
+}
+.contents-area .keep-items >ul>li.newitem_s.full .item-header p strong,
+.contents-area .pickup-items >ul>li.newitem_s.full .item-header p strong,
+.contents-area .new-items >ul>li.newitem_s.full .item-header p strong {
+  background: url("../img/top/pc/job_icon02_02_s.png") 0 0 no-repeat;
+}
+.contents-area .keep-items >ul>li.newitem_s.full h3,
+.contents-area .pickup-items >ul>li.newitem_s.full h3,
+.contents-area .new-items >ul>li.newitem_s.full h3 {
+  color: #42cbfe;
+}
+.contents-area .keep-items >ul>li.newitem_s.full .item-status table td strong,
+.contents-area .pickup-items >ul>li.newitem_s.full .item-status table td strong,
+.contents-area .new-items >ul>li.newitem_s.full .item-status table td strong {
+  color: #42cbfe;
+}
+.contents-area .kawagoe-items ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.contents-area .kawagoe-items ul li {
+  margin-top: 30px;
+}
+.contents-area .kawagoe-items ul li a:hover {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}

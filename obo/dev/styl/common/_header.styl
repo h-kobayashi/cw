@@ -1,0 +1,158 @@
+@import "_color"
+
+.header__wrapper
+	width: 100%
+	border-top: 3px solid $green
+	border-bottom: 1px solid $gray
+
+.header
+	width: 1100px
+	height: 100px
+	margin: 0 auto
+	position: relative
+	
+.header-title
+	display: inline-block
+	padding: 20px 0
+
+.header-nav
+	float: right
+	text-align: right
+	margin: 10px 0 0
+	a
+		display: inline-block
+		padding: .25rem 1rem
+		color: $black
+		font-size: .75em
+		font-weight: bold
+		line-height: 2
+		text-decoration: none
+		&:hover
+			color: $green
+	.keeping-items:before,
+	.recently-items:before
+		content: ""
+		display: inline-block
+		width: 20px
+		height: 20px
+		background-size: contain
+		vertical-align: text-bottom
+		position: relative
+		top: 1px
+		margin-right: .5rem
+	.keeping-items:before
+		background: url(../../img/top/pc/header_icon_keep.png) center no-repeat
+	.recently-items:before
+		background: url(../../img/top/pc/header_icon_history.png) center no-repeat
+	.for-recruiter
+		margin: 0 1rem
+		background: $white
+		border: 1px solid $gray
+		border-radius: 1rem
+		font-size: 1em
+		line-height: 1.5
+		&:hover
+			background: $green
+			border-color: $green
+			color: $white
+
+// type select
+.type-select
+	position: absolute
+	right: 0
+	bottom: -1px
+	li
+		display: inline-block
+		vertical-align: text-bottom
+		span,a
+			display: block
+			width: 172px
+			border-radius: 10px 10px 0 0
+			font-weight: bold
+			text-align: center
+		span
+			height: 48px
+			line-height: 48px
+		a
+			height: 41px
+			line-height: 41px
+	.type-all
+		a,span
+			background: $white
+			border: 1px solid $gray
+			border-bottom: 1px solid $white
+	.type-part
+		a,span
+			background: $orange
+			border: 1px solid $orange
+			color: $white
+	.type-full
+		a,span
+			background: $blue
+			border: 1px solid $blue
+			color: $white
+			
+	
+// global nav
+.globalnav__wrapper
+	width: 100%
+	border-bottom: 1px solid $gray
+.top-all .globalnav__wrapper
+	border-top: 3px solid $white
+.top-part .globalnav__wrapper
+	border-top: 3px solid $orange
+.top-full .globalnav__wrapper
+	border-top: 3px solid $blue
+	
+.globalnav
+	width: 1100px
+	margin: 0 auto
+	display: flex
+	flex-wrap: nowrap
+	
+	li
+		display: block
+		flex: 1
+		a
+			display: block
+			height: 60px
+			padding: 10px 0
+			text-align: center
+			color: $black
+			font-size: 1.1rem
+			font-weight: bold
+			text-decoration: none
+		a:hover
+			color: $orange
+		a:before
+			content: ""
+			display: inline-block
+			width: 24px
+			height: 24px
+			margin-right: .225rem
+			position: relative
+			top: 7px
+		.gnavi_search:before
+			background: url(../../img/top/pc/navi_icon_01.png) center no-repeat;
+		.gnavi_about:before
+			background: url(../../img/top/pc/navi_icon_02.png) center no-repeat;
+		.gnavi_flow:before
+			background: url(../../img/top/pc/navi_icon_03.png) center no-repeat;
+		.gnavi_contact:before
+			background: url(../../img/top/pc/navi_icon_04.png) center no-repeat;
+
+.breadclumbs
+	clear: both
+	margin: 20px 0
+	font-size: .75rem
+	a
+		display: inline-block
+		margin-right: 3em
+		position: relative
+		&:hover
+			text-decoration: underline
+		&:after
+			content: ">"
+			position: absolute
+			right: -2em
+
