@@ -130,55 +130,55 @@
 .contents-area .job-search li:nth-of-type(1) a:before {
   background-image: url("../img/top/pc/top_search01_01.png");
 }
-.contents-area .job-search li:nth-of-type(1) a:hover:.contents-area .job-search li:nth-of-type(1) a:before {
+.contents-area .job-search li:nth-of-type(1) a:hover:before {
   background-image: url("../img/top/pc/top_search01_01_on.png");
 }
 .contents-area .job-search li:nth-of-type(2) a:before {
   background-image: url("../img/top/pc/top_search01_02.png");
 }
-.contents-area .job-search li:nth-of-type(2) a:hover:.contents-area .job-search li:nth-of-type(2) a:before {
+.contents-area .job-search li:nth-of-type(2) a:hover:before {
   background-image: url("../img/top/pc/top_search01_02_on.png");
 }
 .contents-area .job-search li:nth-of-type(3) a:before {
   background-image: url("../img/top/pc/top_search01_03.png");
 }
-.contents-area .job-search li:nth-of-type(3) a:hover:.contents-area .job-search li:nth-of-type(3) a:before {
+.contents-area .job-search li:nth-of-type(3) a:hover:before {
   background-image: url("../img/top/pc/top_search01_03_on.png");
 }
 .contents-area .job-search li:nth-of-type(4) a:before {
   background-image: url("../img/top/pc/top_search01_04.png");
 }
-.contents-area .job-search li:nth-of-type(4) a:hover:.contents-area .job-search li:nth-of-type(4) a:before {
+.contents-area .job-search li:nth-of-type(4) a:hover:before {
   background-image: url("../img/top/pc/top_search01_04_on.png");
 }
 .contents-area .job-search li:nth-of-type(5) a:before {
   background-image: url("../img/top/pc/top_search01_05.png");
 }
-.contents-area .job-search li:nth-of-type(5) a:hover:.contents-area .job-search li:nth-of-type(5) a:before {
+.contents-area .job-search li:nth-of-type(5) a:hover:before {
   background-image: url("../img/top/pc/top_search01_05_on.png");
 }
 .contents-area .job-search li:nth-of-type(6) a:before {
   background-image: url("../img/top/pc/top_search01_06.png");
 }
-.contents-area .job-search li:nth-of-type(6) a:hover:.contents-area .job-search li:nth-of-type(6) a:before {
+.contents-area .job-search li:nth-of-type(6) a:hover:before {
   background-image: url("../img/top/pc/top_search01_06_on.png");
 }
 .contents-area .job-search li:nth-of-type(7) a:before {
   background-image: url("../img/top/pc/top_search01_07.png");
 }
-.contents-area .job-search li:nth-of-type(7) a:hover:.contents-area .job-search li:nth-of-type(7) a:before {
+.contents-area .job-search li:nth-of-type(7) a:hover:before {
   background-image: url("../img/top/pc/top_search01_07_on.png");
 }
 .contents-area .job-search li:nth-of-type(8) a:before {
   background-image: url("../img/top/pc/top_search01_08.png");
 }
-.contents-area .job-search li:nth-of-type(8) a:hover:.contents-area .job-search li:nth-of-type(8) a:before {
+.contents-area .job-search li:nth-of-type(8) a:hover:before {
   background-image: url("../img/top/pc/top_search01_08_on.png");
 }
 .contents-area .job-search li:nth-of-type(9) a:before {
   background-image: url("../img/top/pc/top_search01_09.png");
 }
-.contents-area .job-search li:nth-of-type(9) a:hover:.contents-area .job-search li:nth-of-type(9) a:before {
+.contents-area .job-search li:nth-of-type(9) a:hover:before {
   background-image: url("../img/top/pc/top_search01_09_on.png");
 }
 .contents-area .job-search li:nth-of-type(10) a:before {
@@ -199,19 +199,18 @@
 .contents-area .job-search li:nth-of-type(12) a:hover:before {
   background-image: url("../img/top/pc/top_search01_12_on.png");
 }
-.contents-area .salary-search {
-  margin: 0 auto;
+.salary-search form {
+  margin: 30px 0 0;
   padding: 10px;
-  background: #58b244;
-  border-radius: 10px;
+  border-radius: 4px;
 }
-.contents-area .salary-search .search-item {
+.salary-search form .search-item {
   display: inline-block;
   vertical-align: top;
   padding: 27px 24px;
   position: relative;
 }
-.contents-area .salary-search .search-item:after {
+.salary-search form .search-item:after {
   content: "";
   display: block;
   width: 10px;
@@ -225,7 +224,7 @@
   right: 36px;
   margin-top: -3px;
 }
-.contents-area .salary-search .search-item select {
+.salary-search form .search-item select {
   width: 280px;
   height: 41px;
   padding: 0 1em;
@@ -233,7 +232,7 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.contents-area .salary-search .search-item:not(:first-of-type):before {
+.salary-search form .search-item:not(:first-of-type):before {
   content: "";
   display: block;
   width: 21px;
@@ -247,11 +246,11 @@
   left: -13px;
   margin-top: -10px;
 }
-.contents-area .salary-search .btn-area {
+.salary-search form .btn-area {
   display: inline-block;
   vertical-align: top;
 }
-.contents-area .salary-search .btn-area .btn-submit {
+.salary-search form .btn-area .btn-submit {
   width: 135px;
   height: 40px;
   margin: 27px 0;
@@ -264,9 +263,9 @@
   font-size: 1.25em;
   line-height: 40px;
 }
-.contents-area .keep-items >ul,
-.contents-area .pickup-items >ul,
-.contents-area .new-items >ul {
+.keep-items >ul,
+.pickup-items >ul,
+.new-items >ul {
   margin: 40px 0 0;
   display: -webkit-box;
   display: -moz-box;
@@ -287,65 +286,65 @@
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-.contents-area .keep-items >ul>li,
-.contents-area .pickup-items >ul>li,
-.contents-area .new-items >ul>li {
+.keep-items >ul>li,
+.pickup-items >ul>li,
+.new-items >ul>li {
   background: #fff;
   border: 1px solid #e3e3e3;
   -webkit-box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
   box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
   position: relative;
 }
-.contents-area .keep-items >ul>li.part:not(.newitem_s),
-.contents-area .pickup-items >ul>li.part:not(.newitem_s),
-.contents-area .new-items >ul>li.part:not(.newitem_s) {
+.keep-items >ul>li.part:not(.newitem_s),
+.pickup-items >ul>li.part:not(.newitem_s),
+.new-items >ul>li.part:not(.newitem_s) {
   border-top: 5px solid #fd9f3a;
 }
-.contents-area .keep-items >ul>li.part:not(.newitem_s) h3,
-.contents-area .pickup-items >ul>li.part:not(.newitem_s) h3,
-.contents-area .new-items >ul>li.part:not(.newitem_s) h3 {
+.keep-items >ul>li.part:not(.newitem_s) h3,
+.pickup-items >ul>li.part:not(.newitem_s) h3,
+.new-items >ul>li.part:not(.newitem_s) h3 {
   background: url("../img/top/pc/job_icon02.png") 0 0 no-repeat;
   color: #fd9f3a;
 }
-.contents-area .keep-items >ul>li.part:not(.newitem_s) .item-status table td strong,
-.contents-area .pickup-items >ul>li.part:not(.newitem_s) .item-status table td strong,
-.contents-area .new-items >ul>li.part:not(.newitem_s) .item-status table td strong {
+.keep-items >ul>li.part:not(.newitem_s) .item-status table td strong,
+.pickup-items >ul>li.part:not(.newitem_s) .item-status table td strong,
+.new-items >ul>li.part:not(.newitem_s) .item-status table td strong {
   color: #fd9f3a;
 }
-.contents-area .keep-items >ul>li.part:not(.newitem_s) .btn-area .btn-more,
-.contents-area .pickup-items >ul>li.part:not(.newitem_s) .btn-area .btn-more,
-.contents-area .new-items >ul>li.part:not(.newitem_s) .btn-area .btn-more {
+.keep-items >ul>li.part:not(.newitem_s) .btn-area .btn-more,
+.pickup-items >ul>li.part:not(.newitem_s) .btn-area .btn-more,
+.new-items >ul>li.part:not(.newitem_s) .btn-area .btn-more {
   background: #fd9f3a;
 }
-.contents-area .keep-items >ul>li.full:not(.newitem_s),
-.contents-area .pickup-items >ul>li.full:not(.newitem_s),
-.contents-area .new-items >ul>li.full:not(.newitem_s) {
+.keep-items >ul>li.full:not(.newitem_s),
+.pickup-items >ul>li.full:not(.newitem_s),
+.new-items >ul>li.full:not(.newitem_s) {
   border-top: 5px solid #42cbfe;
 }
-.contents-area .keep-items >ul>li.full:not(.newitem_s) h3,
-.contents-area .pickup-items >ul>li.full:not(.newitem_s) h3,
-.contents-area .new-items >ul>li.full:not(.newitem_s) h3 {
+.keep-items >ul>li.full:not(.newitem_s) h3,
+.pickup-items >ul>li.full:not(.newitem_s) h3,
+.new-items >ul>li.full:not(.newitem_s) h3 {
   background: url("../img/top/pc/job_icon02_02.png") 0 0 no-repeat;
   color: #42cbfe;
 }
-.contents-area .keep-items >ul>li.full:not(.newitem_s) .item-status table td strong,
-.contents-area .pickup-items >ul>li.full:not(.newitem_s) .item-status table td strong,
-.contents-area .new-items >ul>li.full:not(.newitem_s) .item-status table td strong {
+.keep-items >ul>li.full:not(.newitem_s) .item-status table td strong,
+.pickup-items >ul>li.full:not(.newitem_s) .item-status table td strong,
+.new-items >ul>li.full:not(.newitem_s) .item-status table td strong {
   color: #42cbfe;
 }
-.contents-area .keep-items >ul>li.full:not(.newitem_s) .btn-area .btn-more,
-.contents-area .pickup-items >ul>li.full:not(.newitem_s) .btn-area .btn-more,
-.contents-area .new-items >ul>li.full:not(.newitem_s) .btn-area .btn-more {
+.keep-items >ul>li.full:not(.newitem_s) .btn-area .btn-more,
+.pickup-items >ul>li.full:not(.newitem_s) .btn-area .btn-more,
+.new-items >ul>li.full:not(.newitem_s) .btn-area .btn-more {
   background: #42cbfe;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s),
-.contents-area .pickup-items >ul>li:not(.newitem_s),
-.contents-area .new-items >ul>li:not(.newitem_s) {
+.keep-items >ul>li:not(.newitem_s),
+.pickup-items >ul>li:not(.newitem_s),
+.new-items >ul>li:not(.newitem_s) {
   width: 100%;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .celebration,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .celebration,
-.contents-area .new-items >ul>li:not(.newitem_s) .celebration {
+.keep-items >ul>li:not(.newitem_s) .celebration,
+.pickup-items >ul>li:not(.newitem_s) .celebration,
+.new-items >ul>li:not(.newitem_s) .celebration {
   height: 50px;
   padding: 5px 20px 0 45px;
   background: #fe4280 url("../img/top/pc/job_icon01.png") 15px 12px no-repeat;
@@ -358,46 +357,52 @@
   top: -5px;
   right: 14px;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .celebration strong,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .celebration strong,
-.contents-area .new-items >ul>li:not(.newitem_s) .celebration strong {
+.keep-items >ul>li:not(.newitem_s) .celebration strong,
+.pickup-items >ul>li:not(.newitem_s) .celebration strong,
+.new-items >ul>li:not(.newitem_s) .celebration strong {
   font-size: 1.2em;
   font-weight: bold;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-header small,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-header small,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-header small {
+.keep-items >ul>li:not(.newitem_s) .item-header small,
+.pickup-items >ul>li:not(.newitem_s) .item-header small,
+.new-items >ul>li:not(.newitem_s) .item-header small {
   position: absolute;
   top: -2.5em;
   left: 0;
   font-size: 0.75em;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-header p,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-header p,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-header p {
+.keep-items >ul>li:not(.newitem_s) .item-header p,
+.pickup-items >ul>li:not(.newitem_s) .item-header p,
+.new-items >ul>li:not(.newitem_s) .item-header p {
   padding: 20px 0;
   line-height: 2;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-header p strong,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-header p strong,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-header p strong {
+.keep-items >ul>li:not(.newitem_s) .item-header p a,
+.pickup-items >ul>li:not(.newitem_s) .item-header p a,
+.new-items >ul>li:not(.newitem_s) .item-header p a {
   display: inline-block;
   margin-right: 0.5em;
   padding: 0.25em 1em 0.25em 1.5em;
   background: #f6f6f6;
   vertical-align: middle;
+  text-decoration: underline;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) h3,
-.contents-area .pickup-items >ul>li:not(.newitem_s) h3,
-.contents-area .new-items >ul>li:not(.newitem_s) h3 {
+.keep-items >ul>li:not(.newitem_s) .item-header p a:hover,
+.pickup-items >ul>li:not(.newitem_s) .item-header p a:hover,
+.new-items >ul>li:not(.newitem_s) .item-header p a:hover {
+  background: #e3e3e3;
+}
+.keep-items >ul>li:not(.newitem_s) h3,
+.pickup-items >ul>li:not(.newitem_s) h3,
+.new-items >ul>li:not(.newitem_s) h3 {
   margin: 0 30px;
   padding-left: 60px;
   font-size: 1.2em;
   line-height: 1.5;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-status,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-status {
+.keep-items >ul>li:not(.newitem_s) .item-status,
+.pickup-items >ul>li:not(.newitem_s) .item-status,
+.new-items >ul>li:not(.newitem_s) .item-status {
   margin: 10px 30px;
   display: -webkit-box;
   display: -moz-box;
@@ -406,14 +411,14 @@
   display: box;
   display: flex;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-status figure,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status figure,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-status figure {
+.keep-items >ul>li:not(.newitem_s) .item-status figure,
+.pickup-items >ul>li:not(.newitem_s) .item-status figure,
+.new-items >ul>li:not(.newitem_s) .item-status figure {
   width: 300px;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-status table {
+.keep-items >ul>li:not(.newitem_s) .item-status table,
+.pickup-items >ul>li:not(.newitem_s) .item-status table,
+.new-items >ul>li:not(.newitem_s) .item-status table {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -o-box-flex: 1;
@@ -424,54 +429,54 @@
   height: 210px;
   border-collapse: collapse;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table th,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table th,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-status table th,
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table td,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table td,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-status table td {
+.keep-items >ul>li:not(.newitem_s) .item-status table th,
+.pickup-items >ul>li:not(.newitem_s) .item-status table th,
+.new-items >ul>li:not(.newitem_s) .item-status table th,
+.keep-items >ul>li:not(.newitem_s) .item-status table td,
+.pickup-items >ul>li:not(.newitem_s) .item-status table td,
+.new-items >ul>li:not(.newitem_s) .item-status table td {
   padding: 0 1.5em;
   border: 1px solid #e3e3e3;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table th,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table th,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-status table th {
+.keep-items >ul>li:not(.newitem_s) .item-status table th,
+.pickup-items >ul>li:not(.newitem_s) .item-status table th,
+.new-items >ul>li:not(.newitem_s) .item-status table th {
   text-align: center;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table td,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table td,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-status table td {
+.keep-items >ul>li:not(.newitem_s) .item-status table td,
+.pickup-items >ul>li:not(.newitem_s) .item-status table td,
+.new-items >ul>li:not(.newitem_s) .item-status table td {
   text-align: left;
   font-weight: bold;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table td a,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table td a,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-status table td a {
+.keep-items >ul>li:not(.newitem_s) .item-status table td a,
+.pickup-items >ul>li:not(.newitem_s) .item-status table td a,
+.new-items >ul>li:not(.newitem_s) .item-status table td a {
   text-decoration: underline;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table td small,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table td small,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-status table td small {
+.keep-items >ul>li:not(.newitem_s) .item-status table td small,
+.pickup-items >ul>li:not(.newitem_s) .item-status table td small,
+.new-items >ul>li:not(.newitem_s) .item-status table td small {
   display: inline-block;
   margin-left: 1em;
   font-weight: normal;
   font-size: 0.87em;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-status table td strong,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-status table td strong,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-status table td strong {
+.keep-items >ul>li:not(.newitem_s) .item-status table td strong,
+.pickup-items >ul>li:not(.newitem_s) .item-status table td strong,
+.new-items >ul>li:not(.newitem_s) .item-status table td strong {
   display: inline-block;
   margin-right: 0.25em;
   font-size: 1.2em;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-characters,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-characters,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-characters {
+.keep-items >ul>li:not(.newitem_s) .item-characters,
+.pickup-items >ul>li:not(.newitem_s) .item-characters,
+.new-items >ul>li:not(.newitem_s) .item-characters {
   margin: 0 20px 0 30px;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-characters ul,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-characters ul,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-characters ul {
+.keep-items >ul>li:not(.newitem_s) .item-characters ul,
+.pickup-items >ul>li:not(.newitem_s) .item-characters ul,
+.new-items >ul>li:not(.newitem_s) .item-characters ul {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -485,9 +490,9 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-characters ul li,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-characters ul li,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-characters ul li {
+.keep-items >ul>li:not(.newitem_s) .item-characters ul li,
+.pickup-items >ul>li:not(.newitem_s) .item-characters ul li,
+.new-items >ul>li:not(.newitem_s) .item-characters ul li {
   width: 110px;
   height: 20px;
   margin: 0 3px 3px 0;
@@ -498,44 +503,44 @@
   text-align: center;
   line-height: 20px;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-comment,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-comment,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-comment {
+.keep-items >ul>li:not(.newitem_s) .item-comment,
+.pickup-items >ul>li:not(.newitem_s) .item-comment,
+.new-items >ul>li:not(.newitem_s) .item-comment {
   margin: 10px 30px;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-footer,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-footer,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-footer {
+.keep-items >ul>li:not(.newitem_s) .item-footer,
+.pickup-items >ul>li:not(.newitem_s) .item-footer,
+.new-items >ul>li:not(.newitem_s) .item-footer {
   width: 100%;
   position: absolute;
   bottom: -1.5em;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-footer small,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-footer small,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-footer small {
+.keep-items >ul>li:not(.newitem_s) .item-footer small,
+.pickup-items >ul>li:not(.newitem_s) .item-footer small,
+.new-items >ul>li:not(.newitem_s) .item-footer small {
   font-size: 0.5em;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-footer small:first-of-type,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-footer small:first-of-type,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-footer small:first-of-type {
+.keep-items >ul>li:not(.newitem_s) .item-footer small:first-of-type,
+.pickup-items >ul>li:not(.newitem_s) .item-footer small:first-of-type,
+.new-items >ul>li:not(.newitem_s) .item-footer small:first-of-type {
   float: left;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .item-footer small:last-of-type,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .item-footer small:last-of-type,
-.contents-area .new-items >ul>li:not(.newitem_s) .item-footer small:last-of-type {
+.keep-items >ul>li:not(.newitem_s) .item-footer small:last-of-type,
+.pickup-items >ul>li:not(.newitem_s) .item-footer small:last-of-type,
+.new-items >ul>li:not(.newitem_s) .item-footer small:last-of-type {
   float: right;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .btn-area,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .btn-area,
-.contents-area .new-items >ul>li:not(.newitem_s) .btn-area {
+.keep-items >ul>li:not(.newitem_s) .btn-area,
+.pickup-items >ul>li:not(.newitem_s) .btn-area,
+.new-items >ul>li:not(.newitem_s) .btn-area {
   padding: 20px;
   background: #f3f3f3;
   border-top: 1px solid #e3e3e3;
   text-align: center;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .btn-area a,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .btn-area a,
-.contents-area .new-items >ul>li:not(.newitem_s) .btn-area a {
+.keep-items >ul>li:not(.newitem_s) .btn-area a,
+.pickup-items >ul>li:not(.newitem_s) .btn-area a,
+.new-items >ul>li:not(.newitem_s) .btn-area a {
   display: inline-block;
   height: 60px;
   margin: 0 10px;
@@ -545,17 +550,17 @@
   line-height: 60px;
   position: relative;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .btn-area .btn-keep,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .btn-area .btn-keep,
-.contents-area .new-items >ul>li:not(.newitem_s) .btn-area .btn-keep {
+.keep-items >ul>li:not(.newitem_s) .btn-area .btn-keep,
+.pickup-items >ul>li:not(.newitem_s) .btn-area .btn-keep,
+.new-items >ul>li:not(.newitem_s) .btn-area .btn-keep {
   width: 246px;
   background: #fff;
   border: 1px solid #e3e3e3;
   color: #58b244;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .btn-area .btn-keep:after,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .btn-area .btn-keep:after,
-.contents-area .new-items >ul>li:not(.newitem_s) .btn-area .btn-keep:after {
+.keep-items >ul>li:not(.newitem_s) .btn-area .btn-keep:after,
+.pickup-items >ul>li:not(.newitem_s) .btn-area .btn-keep:after,
+.new-items >ul>li:not(.newitem_s) .btn-area .btn-keep:after {
   content: url("../img/top/pc/job_icon03.png");
   width: 69px;
   height: 45px;
@@ -563,22 +568,22 @@
   right: -5px;
   bottom: 0;
 }
-.contents-area .keep-items >ul>li:not(.newitem_s) .btn-area .btn-more,
-.contents-area .pickup-items >ul>li:not(.newitem_s) .btn-area .btn-more,
-.contents-area .new-items >ul>li:not(.newitem_s) .btn-area .btn-more {
+.keep-items >ul>li:not(.newitem_s) .btn-area .btn-more,
+.pickup-items >ul>li:not(.newitem_s) .btn-area .btn-more,
+.new-items >ul>li:not(.newitem_s) .btn-area .btn-more {
   width: 383px;
   color: #fff;
 }
-.contents-area .keep-items >ul>li.newitem_s,
-.contents-area .pickup-items >ul>li.newitem_s,
-.contents-area .new-items >ul>li.newitem_s {
+.keep-items >ul>li.newitem_s,
+.pickup-items >ul>li.newitem_s,
+.new-items >ul>li.newitem_s {
   width: 412px;
   margin: 40px 0 0;
   font-size: 0.75em;
 }
-.contents-area .keep-items >ul>li.newitem_s .celebration,
-.contents-area .pickup-items >ul>li.newitem_s .celebration,
-.contents-area .new-items >ul>li.newitem_s .celebration {
+.keep-items >ul>li.newitem_s .celebration,
+.pickup-items >ul>li.newitem_s .celebration,
+.new-items >ul>li.newitem_s .celebration {
   height: 40px;
   padding: 2px 10px 0 35px;
   background: #fe4280 url("../img/top/pc/job_icon01_s.png") 11px 7px no-repeat;
@@ -591,43 +596,43 @@
   top: -1px;
   right: 14px;
 }
-.contents-area .keep-items >ul>li.newitem_s .celebration strong,
-.contents-area .pickup-items >ul>li.newitem_s .celebration strong,
-.contents-area .new-items >ul>li.newitem_s .celebration strong {
+.keep-items >ul>li.newitem_s .celebration strong,
+.pickup-items >ul>li.newitem_s .celebration strong,
+.new-items >ul>li.newitem_s .celebration strong {
   font-size: 1.2em;
   font-weight: bold;
 }
-.contents-area .keep-items >ul>li.newitem_s .item-header,
-.contents-area .pickup-items >ul>li.newitem_s .item-header,
-.contents-area .new-items >ul>li.newitem_s .item-header {
+.keep-items >ul>li.newitem_s .item-header,
+.pickup-items >ul>li.newitem_s .item-header,
+.new-items >ul>li.newitem_s .item-header {
   margin: 15px;
   padding: 0 0 10px;
   border-bottom: 1px solid #e3e3e3;
 }
-.contents-area .keep-items >ul>li.newitem_s .item-header p,
-.contents-area .pickup-items >ul>li.newitem_s .item-header p,
-.contents-area .new-items >ul>li.newitem_s .item-header p {
+.keep-items >ul>li.newitem_s .item-header p,
+.pickup-items >ul>li.newitem_s .item-header p,
+.new-items >ul>li.newitem_s .item-header p {
   padding: 0;
 }
-.contents-area .keep-items >ul>li.newitem_s .item-header p strong,
-.contents-area .pickup-items >ul>li.newitem_s .item-header p strong,
-.contents-area .new-items >ul>li.newitem_s .item-header p strong {
+.keep-items >ul>li.newitem_s .item-header p strong,
+.pickup-items >ul>li.newitem_s .item-header p strong,
+.new-items >ul>li.newitem_s .item-header p strong {
   display: block;
   margin-bottom: 1em;
   padding: 0.5em 150px 0.5em 40px;
   font-weight: bold;
   text-decoration: underline;
 }
-.contents-area .keep-items >ul>li.newitem_s h3,
-.contents-area .pickup-items >ul>li.newitem_s h3,
-.contents-area .new-items >ul>li.newitem_s h3 {
+.keep-items >ul>li.newitem_s h3,
+.pickup-items >ul>li.newitem_s h3,
+.new-items >ul>li.newitem_s h3 {
   margin: 0 15px;
   font-size: 1.2em;
   line-height: 1.5;
 }
-.contents-area .keep-items >ul>li.newitem_s .item-status,
-.contents-area .pickup-items >ul>li.newitem_s .item-status,
-.contents-area .new-items >ul>li.newitem_s .item-status {
+.keep-items >ul>li.newitem_s .item-status,
+.pickup-items >ul>li.newitem_s .item-status,
+.new-items >ul>li.newitem_s .item-status {
   margin: 10px 30px;
   display: -webkit-box;
   display: -moz-box;
@@ -636,19 +641,19 @@
   display: box;
   display: flex;
 }
-.contents-area .keep-items >ul>li.newitem_s .item-status figure,
-.contents-area .pickup-items >ul>li.newitem_s .item-status figure,
-.contents-area .new-items >ul>li.newitem_s .item-status figure {
+.keep-items >ul>li.newitem_s .item-status figure,
+.pickup-items >ul>li.newitem_s .item-status figure,
+.new-items >ul>li.newitem_s .item-status figure {
   width: 160px;
 }
-.contents-area .keep-items >ul>li.newitem_s .item-status figure img,
-.contents-area .pickup-items >ul>li.newitem_s .item-status figure img,
-.contents-area .new-items >ul>li.newitem_s .item-status figure img {
+.keep-items >ul>li.newitem_s .item-status figure img,
+.pickup-items >ul>li.newitem_s .item-status figure img,
+.new-items >ul>li.newitem_s .item-status figure img {
   width: 156px;
 }
-.contents-area .keep-items >ul>li.newitem_s .item-status table,
-.contents-area .pickup-items >ul>li.newitem_s .item-status table,
-.contents-area .new-items >ul>li.newitem_s .item-status table {
+.keep-items >ul>li.newitem_s .item-status table,
+.pickup-items >ul>li.newitem_s .item-status table,
+.new-items >ul>li.newitem_s .item-status table {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -o-box-flex: 1;
@@ -658,57 +663,69 @@
   flex: 1;
   height: 120px;
 }
-.contents-area .keep-items >ul>li.newitem_s .item-status table th,
-.contents-area .pickup-items >ul>li.newitem_s .item-status table th,
-.contents-area .new-items >ul>li.newitem_s .item-status table th,
-.contents-area .keep-items >ul>li.newitem_s .item-status table td,
-.contents-area .pickup-items >ul>li.newitem_s .item-status table td,
-.contents-area .new-items >ul>li.newitem_s .item-status table td {
+.keep-items >ul>li.newitem_s .item-status table th,
+.pickup-items >ul>li.newitem_s .item-status table th,
+.new-items >ul>li.newitem_s .item-status table th,
+.keep-items >ul>li.newitem_s .item-status table td,
+.pickup-items >ul>li.newitem_s .item-status table td,
+.new-items >ul>li.newitem_s .item-status table td {
   padding: 0 0.5em;
   text-align: left;
   font-size: 1.2em;
   font-weight: bold;
 }
-.contents-area .keep-items >ul>li.newitem_s .item-status table th strong,
-.contents-area .pickup-items >ul>li.newitem_s .item-status table th strong,
-.contents-area .new-items >ul>li.newitem_s .item-status table th strong,
-.contents-area .keep-items >ul>li.newitem_s .item-status table td strong,
-.contents-area .pickup-items >ul>li.newitem_s .item-status table td strong,
-.contents-area .new-items >ul>li.newitem_s .item-status table td strong {
+.keep-items >ul>li.newitem_s .item-status table th strong,
+.pickup-items >ul>li.newitem_s .item-status table th strong,
+.new-items >ul>li.newitem_s .item-status table th strong,
+.keep-items >ul>li.newitem_s .item-status table td strong,
+.pickup-items >ul>li.newitem_s .item-status table td strong,
+.new-items >ul>li.newitem_s .item-status table td strong {
   display: inline-block;
   color: #fd9f3a;
 }
-.contents-area .keep-items >ul>li.newitem_s.part .item-header p strong,
-.contents-area .pickup-items >ul>li.newitem_s.part .item-header p strong,
-.contents-area .new-items >ul>li.newitem_s.part .item-header p strong {
+.keep-items >ul>li.newitem_s:hover,
+.pickup-items >ul>li.newitem_s:hover,
+.new-items >ul>li.newitem_s:hover {
+  background: #fffde6;
+}
+.keep-items >ul>li.newitem_s:hover .item-status figure img,
+.pickup-items >ul>li.newitem_s:hover .item-status figure img,
+.new-items >ul>li.newitem_s:hover .item-status figure img {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.keep-items >ul>li.newitem_s.part .item-header p strong,
+.pickup-items >ul>li.newitem_s.part .item-header p strong,
+.new-items >ul>li.newitem_s.part .item-header p strong {
   background: url("../img/top/pc/job_icon02_01_s.png") 0 0 no-repeat;
 }
-.contents-area .keep-items >ul>li.newitem_s.part h3,
-.contents-area .pickup-items >ul>li.newitem_s.part h3,
-.contents-area .new-items >ul>li.newitem_s.part h3 {
+.keep-items >ul>li.newitem_s.part h3,
+.pickup-items >ul>li.newitem_s.part h3,
+.new-items >ul>li.newitem_s.part h3 {
   color: #fd9f3a;
 }
-.contents-area .keep-items >ul>li.newitem_s.part .item-status table td strong,
-.contents-area .pickup-items >ul>li.newitem_s.part .item-status table td strong,
-.contents-area .new-items >ul>li.newitem_s.part .item-status table td strong {
+.keep-items >ul>li.newitem_s.part .item-status table td strong,
+.pickup-items >ul>li.newitem_s.part .item-status table td strong,
+.new-items >ul>li.newitem_s.part .item-status table td strong {
   color: #fd9f3a;
 }
-.contents-area .keep-items >ul>li.newitem_s.full .item-header p strong,
-.contents-area .pickup-items >ul>li.newitem_s.full .item-header p strong,
-.contents-area .new-items >ul>li.newitem_s.full .item-header p strong {
+.keep-items >ul>li.newitem_s.full .item-header p strong,
+.pickup-items >ul>li.newitem_s.full .item-header p strong,
+.new-items >ul>li.newitem_s.full .item-header p strong {
   background: url("../img/top/pc/job_icon02_02_s.png") 0 0 no-repeat;
 }
-.contents-area .keep-items >ul>li.newitem_s.full h3,
-.contents-area .pickup-items >ul>li.newitem_s.full h3,
-.contents-area .new-items >ul>li.newitem_s.full h3 {
+.keep-items >ul>li.newitem_s.full h3,
+.pickup-items >ul>li.newitem_s.full h3,
+.new-items >ul>li.newitem_s.full h3 {
   color: #42cbfe;
 }
-.contents-area .keep-items >ul>li.newitem_s.full .item-status table td strong,
-.contents-area .pickup-items >ul>li.newitem_s.full .item-status table td strong,
-.contents-area .new-items >ul>li.newitem_s.full .item-status table td strong {
+.keep-items >ul>li.newitem_s.full .item-status table td strong,
+.pickup-items >ul>li.newitem_s.full .item-status table td strong,
+.new-items >ul>li.newitem_s.full .item-status table td strong {
   color: #42cbfe;
 }
-.contents-area .kawagoe-items ul {
+.kawagoe-items ul {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -728,11 +745,208 @@
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-.contents-area .kawagoe-items ul li {
+.kawagoe-items ul li {
   margin-top: 30px;
 }
-.contents-area .kawagoe-items ul li a:hover {
+.kawagoe-items ul li a:hover {
   opacity: 0.5;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   filter: alpha(opacity=50);
+}
+.information ul {
+  margin: 20px 0 0;
+}
+.information ul li {
+  padding: 1em;
+  border-bottom: 1px solid #e3e3e3;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+.information ul li small {
+  display: block;
+  width: 100px;
+  font-size: 1em;
+}
+.information ul li a {
+  display: block;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.information ul li a:hover {
+  text-decoration: underline;
+}
+.tokushu-area a {
+  display: block;
+  height: 150px;
+  margin: 0 0 20px;
+  padding: 30px;
+}
+.tokushu-area a:hover {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+.tokushu-area a h3 {
+  font-size: 2em;
+  font-weight: normal;
+}
+.tokushu-area a p {
+  margin: 0.5em 0 0;
+}
+.tokushu-area .tokushu1 {
+  padding-left: 400px;
+  background: url("../img/top/pc/bnr_tokushu.jpg") 0 0 no-repeat;
+}
+.tokushu-area .tokushu1 h3 {
+  color: #58b244;
+}
+.tokushu-area .tokushu2 {
+  padding-right: 400px;
+  background: url("../img/top/pc/bnr_tokushu02.jpg") 0 0 no-repeat;
+}
+.tokushu-area .tokushu2 h3 {
+  color: #fd9f3a;
+}
+.banner-area a {
+  display: block;
+  margin: 0 0 20px;
+}
+.search-items {
+  padding: 0 55px;
+  background: url("../img/top/pc/top_serch03_bg01.png") center bottom no-repeat, url("../img/top/pc/top_serch03_bg02.png") top right no-repeat;
+  border: 1px solid #e3e3e3;
+}
+.search-items h2 {
+  margin: 65px 0 0;
+}
+.search-items ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 30px 0 65px;
+}
+.search-items ul li {
+  display: block;
+  width: 25%;
+  margin: 0 0 0.75em;
+}
+.search-items ul li a:hover {
+  text-decoration: underline;
+}
+.about-area {
+  padding: 30px;
+  background: #f3f3f3;
+}
+.about-area a {
+  display: inline-block;
+  border-bottom: 2px solid #58b244;
+  font-weight: bold;
+  line-height: 2;
+}
+.about-area p {
+  display: block;
+  margin: 1em 0 0;
+  font-size: 0.87em;
+  line-height: 1.75;
+}
+.pinpoint-search ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin: 30px 0 0;
+}
+.pinpoint-search ul li {
+  display: block;
+}
+.pinpoint-search ul li a {
+  display: block;
+  width: 253px;
+  height: 304px;
+  padding: 15px 30px 0;
+  background: #fd9f3a url("../img/top/pc/top_serch_pinpoint_icon.png") center 280px no-repeat;
+  border-bottom: 5px solid #dc7c16;
+  border-radius: 25px;
+  text-align: center;
+  color: #fff;
+}
+.pinpoint-search ul li a:hover {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+.pinpoint-search ul li a strong {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px dashed #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.pinpoint-search ul li a small {
+  display: block;
+  margin: 10px 0 0;
+  font-size: 1em;
+}
+.pinpoint-search ul li:nth-of-type(1) a:before {
+  content: "";
+  display: block;
+  height: 134px;
+  background: url("../img/top/pc/top_serch_pinpoint01.png") center no-repeat;
+}
+.pinpoint-search ul li:nth-of-type(2) a:before {
+  content: "";
+  display: block;
+  height: 134px;
+  background: url("../img/top/pc/top_serch_pinpoint02.png") center no-repeat;
+}
+.pinpoint-search ul li:nth-of-type(3) a:before {
+  content: "";
+  display: block;
+  height: 134px;
+  background: url("../img/top/pc/top_serch_pinpoint03.png") center no-repeat;
+}
+.top-full .salary-search form {
+  background: #42cbfe;
+}
+.top-all .salary-search form {
+  background: #58b244;
 }

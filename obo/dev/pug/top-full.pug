@@ -6,18 +6,17 @@ html
 		title 川越市のお仕事に特化した“お祝い金がもらえる”地元密着求人サイト「川越オーボ」
 		link(rel="stylesheet", media="all", href="css/common/common.css")
 		link(rel="stylesheet", media="all", href="css/top.css")
-	body.top-all
+	body.top-full
 		.wrapper
-			
-			// ヘッダー
+
 			header.header__wrapper
 				.header
 					include _header.pug
 					nav.type-select
 						ul
-							li.type-all: span すべての求人
+							li.type-all: a(href="top-all.html") すべての求人
 							li.type-part: a(href="top-part.html") パート・アルバイト
-							li.type-full: a(href="top-full.html") 正社員
+							li.type-full: span 正社員
 			
 			include _globalnav.pug
 			
@@ -43,20 +42,14 @@ html
 					span すべての求人
 				
 				.contents-area
-				
-					// 職種検索
-					section.job-search
-						h2 人気の職種から探す
-						ul
-							each val in ["飲食／フード","販売","サービス","オフィスワーク","営業","医療・介護・福祉","教育","美容・理容・サロン","建築・土木","工場・製造","軽作業・物流","その他"]
-								li: a(href="")= val
 					
 					// 給与検索
 					section.salary-search
+						h2 給料から探す
 						form
 							fieldset.search-item
 								select
-									each val in ["時給"]
+									each val in ["月給"]
 										option= val
 							fieldset.search-item
 								select
@@ -76,7 +69,7 @@ html
 					section.keep-items
 						h2 キープしている求人
 						ul
-							li.keepitem.part
+							li.keepitem.full
 								.celebration 祝い金<strong>3,000</strong>円
 								.item-header
 									small 株式会社US
@@ -95,7 +88,7 @@ html
 												small (販売スタッフ)
 										tr
 											th 給与
-											td 時給<strong>1200</strong>円
+											td 月給<strong>22万</strong>円
 										tr
 											th 出勤日数
 											td 週<strong>2</strong>日以上
@@ -131,7 +124,7 @@ html
 					section.pickup-items
 						h2 ピックアップ求人
 						ul
-							li.pickupitem.part
+							li.pickupitem.full
 								.celebration 祝い金<strong>3,000</strong>円
 								.item-header
 									small 株式会社US
@@ -149,7 +142,7 @@ html
 												| (販売スタッフ)
 										tr
 											th 給与
-											td 時給<strong>1200</strong>円
+											td 月給<strong>22万</strong>円
 										tr
 											th 出勤日数
 											td 週<strong>2</strong>日以上
@@ -242,7 +235,7 @@ html
 										tr
 											th 時間帯
 											td: a(href="") 朝・昼
-							li.newitem_s.part: a(href="")
+							li.newitem_s.full: a(href="")
 								.celebration 祝い金<strong>3,000</strong>円
 								.item-header
 									p
@@ -258,7 +251,7 @@ html
 											td: a(href="") 飲食フード
 										tr
 											th 給与
-											td 時給<strong>800</strong>円
+											td 月給<strong>22万</strong>円
 										tr
 											th 日数
 											td 週2日以上
@@ -332,4 +325,3 @@ html
 		script(type="text/javascript", src="js/jquery-ui.min.js")
 		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
 		script(type="text/javascript", src="js/common.js")
-

@@ -2,6 +2,11 @@ jQuery(document).ready ($) ->
 
   #pagetop
   topBtn = $('.pagetop')
+  $(window).scroll ->
+    if ($(this).scrollTop() > 400)
+      topBtn.addClass('fixed')
+    else
+      topBtn.removeClass('fixed')
   topBtn.click ->
     $('body,html').animate { scrollTop: 0 }, 500
     false

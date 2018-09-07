@@ -183,6 +183,11 @@ a {
   color: #373737;
   text-decoration: none;
 }
+a:hover img {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
 h1,
 h2,
 h3,
@@ -487,33 +492,30 @@ select::-moz-focusring {
   background: #f6f6f6;
 }
 .pagetop {
-  width: 100%;
-}
-.pagetop a {
   display: block;
-  height: 60px;
-  padding: 20px 0;
-  background: #fff;
-  border-top: 1px solid #fe4280;
-  border-bottom: 1px solid #fe4280;
-  text-align: center;
-  color: #fe4280;
-  font-size: 0.75rem;
-  text-decoration: none;
+  width: 120px;
+  height: 140px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
 }
-.pagetop a:before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 9px;
-  background: url("../../img/top/footer_pagetop_icon.png") 0 0 no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
-  margin-right: 0.5rem;
+.pagetop.fixed {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
-.pagetop a:hover {
-  background: $lightpink;
+.pagetop.fixed:hover img {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
 .footer {
   width: 1100px;
@@ -525,21 +527,17 @@ select::-moz-focusring {
   margin: 20px 0;
 }
 .footer .contact__block {
-  width: 375px;
+  width: 310px;
   position: absolute;
   top: 40px;
   right: 0;
 }
 .footer .contact__block .btn-contact {
   display: block;
-  margin: 0 3px 0 0;
-  padding: 1rem;
-  background: #58b244;
-  border-radius: 4px;
-  -webkit-box-shadow: 3px 3px 0 #179d85;
-  box-shadow: 3px 3px 0 #179d85;
+  padding: 1em;
+  background: #fe4280;
+  border-bottom: 4px solid #dd205e;
   color: #fff;
-  font-family: "HGP創英角ｺﾞｼｯｸUB";
   font-size: 1.5rem;
   text-align: center;
 }
@@ -548,13 +546,13 @@ select::-moz-focusring {
   display: inline-block;
   width: 24px;
   height: 18px;
-  background: url("../../img/top/footer_icon_05.png") 0 0 no-repeat;
+  background: url("../../img/top/pc/footer_icon_05.png") 0 0 no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
   position: relative;
   top: 1px;
-  margin-right: 0.5rem;
+  margin-right: 0.75em;
 }
 .footer .contact__block .btn-contact:hover {
   background: $green_o;
@@ -575,20 +573,21 @@ select::-moz-focusring {
   display: inline-block;
   width: 6px;
   height: 9px;
-  background: url("../../img/top/icon_list02.png") 0 0 no-repeat;
+  background: url("../../img/top/pc/footer_icon_list.png") 0 0 no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
   margin-right: 0.5rem;
 }
 .footer .footer-nav ul li a:hover {
-  text-decoration: underline;
+  color: #58b244;
 }
 .copyright {
   width: 100%;
-  padding: 20px 0;
-  background: #fe4280;
+  height: 40px;
+  background: #58b244;
   color: #fff;
   font-size: 0.75em;
   text-align: center;
+  line-height: 40px;
 }

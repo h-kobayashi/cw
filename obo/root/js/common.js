@@ -4,6 +4,13 @@
   jQuery(document).ready(function($) {
     var menu, offsetY, time, topBtn;
     topBtn = $('.pagetop');
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 400) {
+        return topBtn.addClass('fixed');
+      } else {
+        return topBtn.removeClass('fixed');
+      }
+    });
     topBtn.click(function() {
       $('body,html').animate({
         scrollTop: 0
