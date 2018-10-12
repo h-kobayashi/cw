@@ -1,0 +1,108 @@
+@import "_color"
+
+.header__wrapper
+	width: 100%
+	border-bottom: 3px solid $green
+
+.header
+	width: 100%
+	margin: 0 auto
+	position: relative
+	display: flex
+	
+.header-title
+	display: block
+	flex: 1
+	padding: 13px 0 8px 10px
+	font-size: .5em
+	img
+		display: block
+		width: 150px
+		margin-top: 2px
+
+.header-nav
+	display: flex
+	flex-wrap: nowrap
+	width: 114px
+	a
+		display: block
+		flex: 1
+		height: 57px
+		padding: 13px 0 7px
+		color: $green
+		font-size: .5em
+		text-align: center
+	.keeping-items:before,
+	.menu-items:before,
+	.menu-close:before
+		content: ""
+		display: block
+		width: 25px
+		height: 25px
+		margin: 0 auto
+	.keeping-items:before
+		background: url(../../img/top/sp/header_icon_keep.png) center no-repeat
+		background-size: contain
+	.menu-items:before
+		background: url(../../img/top/sp/header_icon_menu.png) center no-repeat
+		background-size: contain
+	.menu-close:before
+		background: url(../../img/top/sp/header_icon_close.png) center no-repeat
+		background-size: contain
+
+// global nav
+.sp_globalnav__wrapper
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 9999
+	background: white
+	box-shadow: rgba(0,0,0,.5) 0 3px 12px
+
+	.globalnav
+		margin: 0 auto
+
+		li
+			display: block
+			a
+				display: block
+				height: 55px
+				background: white
+				border-top: 1px solid $gray
+				text-align: left
+				text-decoration: none
+				line-height: 55px
+				position: relative
+			a:before
+				content: ""
+				display: inline-block
+				width: 37px
+				height: 53px
+				vertical-align: top
+			.gnav-search:before
+				background: url(../../img/top/pc/navi_icon_01.png) center no-repeat
+				background-size: 17px 17px
+			.gnav-about:before
+				background: url(../../img/top/pc/navi_icon_02.png) center no-repeat
+				background-size: 17px 20px
+			.gnav-flow:before
+				background: url(../../img/top/pc/navi_icon_03.png) center no-repeat
+				background-size: 24px 17px
+			.gnav-contact:before
+				background: url(../../img/top/pc/navi_icon_04.png) center no-repeat
+				background-size: 18px 14px
+			a:after
+				content: ""
+				display: inline-block
+				width: 10px
+				height: 7px
+				background: url(../../img/top/sp/top_search_icon2.png) center no-repeat
+				background-size: contain
+				position: absolute
+				top: 21px
+				right: 8px
+				transform: rotate(-90deg)
+
+

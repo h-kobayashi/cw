@@ -67,7 +67,7 @@ html
 					
 					// バナー
 					section.banner-area
-						a(href="")
+						a(href="javascript:void(0)", class="btn-kodawari")
 							img(src="img/top/pc/top_bnr_01.jpg", alt="川越市の求人情報をこだわり検索はこちら")
 						a(href="")
 							img(src="img/top/pc/top_bnr_02.jpg", alt="川越特化の「川越オーボ」お問い合わせフォームはこちら")
@@ -113,7 +113,7 @@ html
 											li= val
 								p.item-comment 川越駅付近にオープンしたコーヒーがメインの飲食店です。川越祭り期間中路上に出す出店スタッフを募集しています。メニューも少ないので、販売スタッフ初心者にもおすすめです。昼と夜のまかないがつきます。完売後にはスタッフみんなでお祭り参加も可能です...
 								.btn-area
-									a(href="").btn-keep キープする
+									a(href="javascript:void(0)").btn-keep キープする
 									a(href="./detail.html").btn-more お仕事情報を詳しく見る
 								.item-footer
 									small 求人掲載受付け：2018/3/31
@@ -166,7 +166,7 @@ html
 											li= val
 								p.item-comment 川越駅付近にオープンしたコーヒーがメインの飲食店です。川越祭り期間中路上に出す出店スタッフを募集しています。メニューも少ないので、販売スタッフ初心者にもおすすめです。昼と夜のまかないがつきます。完売後にはスタッフみんなでお祭り参加も可能です...
 								.btn-area
-									a(href="").btn-keep キープする
+									a(href="javascript:void(0)").btn-keep キープする
 									a(href="./detail.html").btn-more お仕事情報を詳しく見る
 								.item-footer
 									small 求人掲載受付け：2018/3/31
@@ -211,7 +211,7 @@ html
 											li= val
 								p.item-comment 川越駅付近にオープンしたコーヒーがメインの飲食店です。川越祭り期間中路上に出す出店スタッフを募集しています。メニューも少ないので、販売スタッフ初心者にもおすすめです。昼と夜のまかないがつきます。完売後にはスタッフみんなでお祭り参加も可能です...
 								.btn-area
-									a(href="").btn-keep キープする
+									a(href="javascript:void(0)").btn-keep キープする
 									a(href="./detail.html").btn-more お仕事情報を詳しく見る
 								.item-footer
 									small 求人掲載受付け：2018/3/31
@@ -324,6 +324,9 @@ html
 						li: a(href=""): img(src="img/top/pc/side_bnr_04.jpg", alt="")
 						li: a(href=""): img(src="img/top/pc/side_bnr_05.jpg", alt="")
 						li: a(href=""): img(src="img/top/pc/side_bnr_06.jpg", alt="")
+			
+			// ポップアップ
+			include _modal.pug
 
 			// フッター
 			include _footer.pug
@@ -332,4 +335,5 @@ html
 		script(type="text/javascript", src="js/jquery-ui.min.js")
 		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
 		script(type="text/javascript", src="js/common.js")
+		script(type="text/javascript", src="js/modal.js")
 

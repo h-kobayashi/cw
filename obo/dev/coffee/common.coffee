@@ -19,11 +19,13 @@ jQuery(document).ready ($) ->
     if !$(this).hasClass('currentPage')
       $(this).attr 'src', $(this).attr('src').replace('_on', '_off')
 
-  #menu
-  menu = $('.header__nav')
-  $('.header__nav_btn,.header__nav_close').on 'click',this, ->
-    $(this).toggleClass('opened')
-    menu.slideToggle()
+  #sp menu
+  menu = $('.sp_globalnav__wrapper')
+  menu.hide()
+  $('.header-nav .menu-items').on 'click touch',this, ->
+    menu.fadeIn()
+  $('.header-nav .menu-close').on 'click touch',this, ->
+    menu.fadeOut()
 
 	#smooth scroll
   offsetY = -20

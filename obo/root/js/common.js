@@ -24,10 +24,13 @@
         return $(this).attr('src', $(this).attr('src').replace('_on', '_off'));
       }
     });
-    menu = $('.header__nav');
-    $('.header__nav_btn,.header__nav_close').on('click', this, function() {
-      $(this).toggleClass('opened');
-      return menu.slideToggle();
+    menu = $('.sp_globalnav__wrapper');
+    menu.hide();
+    $('.header-nav .menu-items').on('click touch', this, function() {
+      return menu.fadeIn();
+    });
+    $('.header-nav .menu-close').on('click touch', this, function() {
+      return menu.fadeOut();
     });
     offsetY = -20;
     time = 500;

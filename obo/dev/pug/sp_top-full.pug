@@ -1,0 +1,290 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 川越市のお仕事に特化した“お祝い金がもらえる”地元密着求人サイト「川越オーボ」
+		link(rel="stylesheet", media="all", href="css/common/sp_common.css")
+		link(rel="stylesheet", media="all", href="css/sp_top.css")
+	body.top-full
+		.wrapper
+			
+			// ヘッダー
+			header.header__wrapper
+				.header
+					include _sp_header.pug
+			
+			// メニュー
+			include _sp_globalnav.pug
+			
+			// ブランディング
+			.branding
+				p: img(src="img/top/sp/top_mainimg.jpg", alt="川越市のお仕事に特化した地域密着求人情報サイト「川越オーボ」")
+				nav.type-select
+					ul
+						li.type-all: a(href="sp_top-all.html") すべての求人
+						li.type-part: a(href="sp_top-full.html") パート・アルバイト
+						li.type-full: span 正社員
+				form.front-search
+					h2 easyサーチ！川越市の求人情報を簡単検索♪
+					div
+						fieldset.search-item
+							select
+								each val in ["エリア","川越市中心","芳野・古谷","南古谷","高階・新河岸","福原","大東","霞ヶ関・的場","名細・山田","クレアモール・丸広","アトレ・PePe・駅ビル","蔵のまち","川越工業団地"]
+									option= val
+						fieldset.search-item
+							select
+								each val in ["職種","飲食／フード","販売","サービス","オフィスワーク","営業","医療・介護・福祉","教育","美容・理容・サロン","建築・土木","工場・製造","軽作業・物流","その他"]
+									option= val
+						.btn-area
+							button.btn-submit 検索
+
+			main.main
+				
+				.contents-area
+					
+					// 給与検索
+					section.salary-search
+						h2 <strong>給料</strong>から探す
+						form
+							fieldset.search-item
+								select
+									each val in ["時給"]
+										option= val
+							fieldset.search-item
+								select
+									each val in ["1,000円以上"]
+										option= val
+							.btn-area
+								button.btn-submit この条件で探す
+					
+					// バナー
+					section.banner-area
+						a(href="")
+							img(src="img/top/sp/top_bnr_01.jpg", alt="川越市の求人情報をこだわり検索はこちら")
+						.address
+							img(src="img/top/sp/top_bnr_02.jpg")
+							address
+								a(href="").btn-tel お電話での<br>お問い合わせ
+								a(href="").btn-mail メールでの<br>お問い合わせ
+					
+					// 地元企業
+					section.kawagoe-items
+						h2 地元企業の求人
+						ul
+							li: a(href=""): img(src="img/top/sp/top_companylogo_01.jpg", alt="ヤオコー", width="86")
+							li: a(href=""): img(src="img/top/sp/top_companylogo_02.jpg", alt="COEDO", width="43")
+							li: a(href=""): img(src="img/top/sp/top_companylogo_03.jpg", alt="ちふれ", width="48")
+							li: a(href=""): img(src="img/top/sp/top_companylogo_04.jpg", alt="Esprit Line", width="66")
+							li: a(href=""): img(src="img/top/sp/top_companylogo_05.jpg", alt="EAGLE BUS", width="70")
+							li: a(href=""): img(src="img/top/sp/top_companylogo_06.jpg", alt="maruhiro", width="66")
+				
+					// キープ求人
+					section.keep-items
+						h2 キープしてる求人
+						ul
+							li.keepitem.part
+								.celebration 祝い金<strong>3,000</strong>円
+								.item-header
+									a(href="") アトレ・PePe・駅ビルエリア
+									p 時の鐘近く。川越駅から徒歩10分圏内。お団子屋さんとなり。
+								h3 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタッフとして川越祭りに参加しませんか？
+								.item-status
+									figure
+										img(src="img/top/sp/job_img01.png")
+										p 川越駅付近にオープンしたコーヒーがメインの飲食店です。川越祭り期間中路上に出す出店スタッフを募集しています。メニューも少ないので、販売スタッフ初心者にもおすすめです。昼と夜のまかないがつきます。...
+									table
+										tr
+											th 職種
+											td
+												a(href="") 飲食フード
+												small (販売スタッフ)
+										tr
+											th 給与
+											td 時給<strong>1200</strong>円
+										tr
+											th 出勤日数
+											td 週<strong>2</strong>日以上
+										tr
+											th 勤務期間
+											td 単発
+										tr
+											th 勤務時間帯
+											td
+												a(href="") 朝・昼
+												small (9:00～17:30内)
+								.item-characters
+									ul
+										each val in ["高校生歓迎","主婦・ママ歓迎","Wワーク歓迎","シニア歓迎","フリーター歓迎","未経験歓迎","外国人歓迎","交通費支給","残業なし","賞与あり","大学生歓迎","マイカー通勤可"]
+											li= val
+								.btn-area
+									a(href="javascript:void(0)").btn-keep キープする
+									a(href="./detail.html").btn-more お仕事情報を詳しく見る
+								.item-footer
+									small 株式会社US<br>川越市本町3-3-3 エスポワール川越2F
+									small 求人掲載受付け：2018/3/31
+				
+					// ピックアップ求人
+					section.pickup-items
+						h2 ピックアップ求人
+						ul
+							li.pickupitem.full
+								.celebration 祝い金<strong>3,000</strong>円
+								.item-header
+									a(href="") アトレ・PePe・駅ビルエリア
+									p 時の鐘近く。川越駅から徒歩10分圏内。お団子屋さんとなり。
+								h3 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタッフとして川越祭りに参加しませんか？
+								.item-status
+									figure
+										img(src="img/top/sp/job_img01.png")
+										p 川越駅付近にオープンしたコーヒーがメインの飲食店です。川越祭り期間中路上に出す出店スタッフを募集しています。メニューも少ないので、販売スタッフ初心者にもおすすめです。昼と夜のまかないがつきます。...
+									table
+										tr
+											th 職種
+											td
+												a(href="") 飲食フード
+												small (販売スタッフ)
+										tr
+											th 給与
+											td 時給<strong>1200</strong>円
+										tr
+											th 出勤日数
+											td 週<strong>2</strong>日以上
+										tr
+											th 勤務期間
+											td 単発
+										tr
+											th 勤務時間帯
+											td
+												a(href="") 朝・昼
+												small (9:00～17:30内)
+								.item-characters
+									ul
+										each val in ["高校生歓迎","主婦・ママ歓迎","Wワーク歓迎","シニア歓迎","フリーター歓迎","未経験歓迎","外国人歓迎","交通費支給","残業なし","賞与あり","大学生歓迎","マイカー通勤可"]
+											li= val
+								.btn-area
+									a(href="javascript:void(0)").btn-keep キープする
+									a(href="./detail.html").btn-more お仕事情報を詳しく見る
+								.item-footer
+									small 株式会社US<br>川越市本町3-3-3 エスポワール川越2F
+									small 求人掲載受付け：2018/3/31
+																		
+					// 新着求人
+					section.new-items
+						h2 新着求人
+						ul
+							li(onclick="location.href=''").newitem.part
+								.celebration 祝い金<strong>3,000</strong>円
+								.item-header
+									a(href="") アトレ・PePe・駅ビルエリア
+									p 時の鐘近く。川越駅から徒歩10分圏内。お団子屋さんとなり。
+								h3 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタッフとして川越祭りに参加しませんか？
+								.item-status
+									figure
+										img(src="img/top/sp/job_img01.png")
+									table
+										tr
+											th 職種
+											td 飲食フード
+										tr
+											th 給与
+											td 時給<strong>1200</strong>円
+										tr
+											th 出勤日数
+											td 週2日以上
+										tr
+											th 勤務期間
+											td 単発
+										tr
+											th 勤務時間帯
+											td 朝・昼
+							li(onclick="location.href=''").newitem.full
+								.celebration 祝い金<strong>3,000</strong>円
+								.item-header
+									a(href="") アトレ・PePe・駅ビルエリア
+									p 時の鐘近く。川越駅から徒歩10分圏内。お団子屋さんとなり。
+								h3 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタッフとして川越祭りに参加しませんか？
+								.item-status
+									figure
+										img(src="img/top/sp/job_img01.png")
+									table
+										tr
+											th 職種
+											td 飲食フード
+										tr
+											th 給与
+											td 時給<strong>1200</strong>円
+										tr
+											th 出勤日数
+											td 週2日以上
+										tr
+											th 勤務期間
+											td 単発
+										tr
+											th 勤務時間帯
+											td 朝・昼
+					
+					// バナー
+					section.banner-area
+						a(href="")
+							img(src="img/top/pc/top_bnr_03.jpg", alt="会員登録不要！気になる求人はキープ機能で後からチェックできます")
+					
+					// インフォメーション
+					section.information
+						h2 information
+						ul
+							- for (var i = 0; i < 3; i++) {
+								li
+									small 2018.4.30
+									a(href="") テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+							- }
+					
+					// 特集バナー
+					section.tokushu-area
+						a(href="").tokushu1
+							h3 オフィスワーク特集
+							p テキストテキストテキストテキストキストテキストテキストテキストテテキテキストテキスト 
+						a(href="").tokushu2
+							h3 大学生歓迎のお仕事
+							p テキストテキストテキストテキストキストテキストテキストテキストテテキテキストテキスト 
+					
+					// バナー
+					section.banner-area
+						a(href="")
+							img(src="img/top/pc/bnr_oiwai.jpg", alt="川越オーボで仕事が決まるとお祝い金もらえます！詳しくはこちら")
+						img(src="img/top/pc/top_bnr_04.jpg", alt="川越OBOについて")
+			
+					// おすすめ情報
+					section.special-items
+						h2 おすすめ情報
+						ul
+							li: a(href=""): img(src="img/top/sp/top_bnr_05.jpg", alt="")
+							li: a(href=""): img(src="img/top/sp/top_bnr_06.jpg", alt="")
+							li: a(href=""): img(src="img/top/sp/top_bnr_07.jpg", alt="")
+							li: a(href=""): img(src="img/top/sp/top_bnr_08.jpg", alt="")
+					
+					// エリア検索・職種検索
+					section.search-items
+						h2 エリアから探す
+						ul
+							each val in ["川越市中心","芳野・古谷","南古谷","高階・新河岸","福原","大東","霞ヶ関・的場","名細・山田","クレアモール・丸広","アトレ・PePe・駅ビル","蔵のまち","川越工業団地"]
+								li: a(href="")=val
+						h2 職種から探す
+						ul
+							each val in ["飲食／フード","販売","サービス","オフィスワーク","営業","医療・介護・福祉","教育","美容・理容・サロン","建築・土木","工場・製造","軽作業・物流","その他"]
+								li: a(href="")= val
+			
+			// ポップアップ
+			.wrapper-shadow
+				.keepmodal
+					p キープしました
+
+			// フッター
+			include _sp_footer.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		script(type="text/javascript", src="js/common.js")
+		script(type="text/javascript", src="js/modal.js")
+

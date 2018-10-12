@@ -1,34 +1,42 @@
 jQuery(document).ready ($) ->
 	
-	$('.wrapper-shadow').hide()
-	$('.searchmodal').hide()
-	$('.searchmodal form section').hide()
-	$('.searchmodal form section:first-of-type').show()
+	# keep
+	$('.wrapper-shadow-keep').hide()
+	$('.keepmodal').hide()
+
+	$('.wrapper-shadow-keep').on 'click', (event)->
+		$('.wrapper-shadow-keep').fadeOut()
+		$('.keepmodal').fadeOut()
+
+	$('.btn-keep').on 'click', ->
+		$('.wrapper-shadow-keep').show()
+		$('.keepmodal').show()
 	
-	$('.btn-close').on 'click', ->
-		$('.searchmodal').fadeOut()
-		$('.wrapper-shadow').fadeOut()
-	$('.wrapper-shadow').on 'click', (event)->
-		if !$(event.target).closest('.searchmodal').length
-			$('.searchmodal').fadeOut()
-			$('.wrapper-shadow').fadeOut()
+	# kodawari
+	$('.wrapper-shadow-kodawari').hide()
+	$('.kodawarimodal').hide()
+
+	$('.wrapper-shadow-kodawari').on 'click', (event)->
+		if !$(event.target).closest('.kodawarimodal').length
+			$('.kodawarimodal').fadeOut()
+			$('.wrapper-shadow-kodawari').fadeOut()
+			$('body').removeClass('underwrapper')
+	$('.wrapper-shadow-kodawari .btn-close').on 'click', ->
+			$('.kodawarimodal').fadeOut()
+			$('.wrapper-shadow-kodawari').fadeOut()
+			$('body').removeClass('underwrapper')
+
+	$('.btn-kodawari').on 'click', ->
+		$('.wrapper-shadow-kodawari').show()
+		$('.kodawarimodal').show()
+		$('body').addClass('underwrapper')
+
+	$('.kodawari-part').hide()
+	$('.kodawari-full').hide()
 	
-	$('.searchmodal nav li').on 'click', ->
-		index = $('.searchmodal nav li').index(this)
-		$(this).parents('nav').find('li').removeClass('selected')
+	$('.kodawarimodal .type-select li span').on 'click', ->
+		index = $('.kodawarimodal .type-select li span').index(this)
+		$('.kodawarimodal section').hide()
+		$('.kodawarimodal section').eq(index).show()
+		$('.kodawarimodal .type-select li span').removeClass('selected')
 		$(this).addClass('selected')
-		$('form section').hide()
-		$('form section').eq(index).show()
-
-	$('.searchitem-business a').on 'click', ->
-		$('.wrapper-shadow').show()
-		$('.searchmodal-business').show()
-
-	$('.searchitem-job a').on 'click', ->
-		$('.wrapper-shadow').show()
-		$('.searchmodal-job').show()
-
-	$('.searchitem-area a').on 'click', ->
-		$('.wrapper-shadow').show()
-		$('.searchmodal-area').show()
-

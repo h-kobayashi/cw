@@ -1,0 +1,106 @@
+.wrapper-shadow-keep
+	.keepmodal
+		p キープしました
+.wrapper-shadow-kodawari
+	.kodawarimodal
+		h2 こだわり検索
+		a(href="javascript:void(0)").btn-close
+			img(src="img/kodawari/pc_kodawari_close.png")
+		nav.type-select
+			ul
+				li.type-all: span.selected すべての求人
+				li.type-part: span パート・アルバイト
+				li.type-full: span 正社員
+		section.kodawari-all
+			p 検索条件を指定してください
+			form
+				.kodawari-item
+					h3 エリア
+					fieldset: ul
+						- var list = ["川越市中心","芳野・古谷","南古谷","高階・新河岸","福原","大東","霞ヶ関・的場","名細・山田","クレアモール・丸広","アトレ・PePe・駅ビル","蔵のまち","川越工業団地"]
+						each item, i in list
+							li
+								input(type="checkbox", id="kodawari-item1-" + i)
+								label(for="kodawari-item1-" + i)=item
+				.kodawari-item
+					h3 職種
+					fieldset: ul
+						- var list = ["飲食／フード","販売","サービス","オフィスワーク","営業","医療・介護・福祉","教育","美容・理容・サロン","建築・土木","工場・製造","軽作業・物流","その他"]
+						each item, i in list
+							li
+								input(type="checkbox", id="kodawari-item2-" + i)
+								label(for="kodawari-item2-" + i)=item
+				.kodawari-item
+					h3 給与
+					fieldset
+						.search-item
+							select
+								each val in ["時給"]
+									option= val
+						.search-item
+							select
+								each val in ["1,000円以上"]
+									option= val
+				.kodawari-item
+					h3 特長
+					fieldset
+						h4 働く時間
+						ul
+							- var list = ["単発（1日のみ）", "短期", "長期（3ヶ月以上）", "季節限定"]
+							each item, i in list
+								li
+									input(type="checkbox", id="kodawari-item4.1-" + i)
+									label(for="kodawari-item4.1-" + i)=item
+						h4 働く時間帯
+						ul
+							- var list = ["朝", "昼", "夕方", "夜", "深夜・朝方"]
+							each item, i in list
+								li
+									input(type="checkbox", id="kodawari-item4.2-" + i)
+									label(for="kodawari-item4.2-" + i)=item
+						h4 週に働く日数
+						ul
+							- var list = ["週1日", "週3日以内", "週4日以上"]
+							each item, i in list
+								li
+									input(type="checkbox", id="kodawari-item4.3-" + i)
+									label(for="kodawari-item4.3-" + i)=item
+						h4 シフト
+						ul
+							- var list = ["シフト相談OK", "平日のみOK", "土日祝のみOK", "ママさん配慮シフト", "学生配慮シフト"]
+							each item, i in list
+								li
+									input(type="checkbox", id="kodawari-item4.4-" + i)
+									label(for="kodawari-item4.4-" + i)=item
+						h4 歓迎・OK
+						ul
+							- var list = ["扶養控除内OK", "学校行事シフト考慮", "Wワーク歓迎", "主婦・ママ歓迎", "大学生歓迎", "高校生歓迎", "シニア歓迎", "フリーター歓迎", "未経験・初心者歓迎", "外国人歓迎"]
+							each item, i in list
+								li
+									input(type="checkbox", id="kodawari-item4.5-" + i)
+									label(for="kodawari-item4.5-" + i)=item
+						h4 嬉しい待遇
+						ul
+							- var list = ["交通費支給", "資格取得支援制度", "まかない・食事付", "残業なし", "賞与あり", "社割あり", "長期休暇あり"]
+							each item, i in list
+								li
+									input(type="checkbox", id="kodawari-item4.6-" + i)
+									label(for="kodawari-item4.6-" + i)=item
+						h4 職場環境
+						ul
+							- var list = ["オープニングスタッフ", "駅チカ・駅ナカ", "車・バス通勤OK", "少人数職場", "制服あり", "座り仕事"]
+							each item, i in list
+								li
+									input(type="checkbox", id="kodawari-item4.7-" + i)
+									label(for="kodawari-item4.7-" + i)=item
+				.btn-area
+					button.btn-submit 検索する
+
+		section.kodawari-part
+			p 検索条件を指定してください
+
+		section.kodawari-full
+			p 検索条件を指定してください
+
+		a(href="javascript:void(0)").btn-close
+			img(src="img/kodawari/pc_kodawari_close2.png")

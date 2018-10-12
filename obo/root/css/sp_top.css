@@ -1,0 +1,1498 @@
+.wrapper-shadow,
+.wrapper-shadow-keep,
+.wrapper-shadow-kodawari {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 99;
+}
+body.underwrapper {
+  overflow: hidden;
+}
+.wrapper-shadow-keep {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.keepmodal {
+  display: none;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -150px;
+  background: #58b244;
+  border-radius: 2px;
+  -webkit-box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
+  box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
+  color: #fff;
+  font-size: 1.14em;
+  font-weight: bold;
+  line-height: 100px;
+  text-align: center;
+}
+.keepmodal p {
+  display: block;
+}
+.keepmodal p:after {
+  content: url("../img/top/pc/job_icon03.png");
+  position: absolute;
+  height: 45px;
+  right: -5px;
+  bottom: 10px;
+}
+.wrapper-shadow-kodawari {
+  overflow: auto;
+}
+.kodawarimodal {
+  display: none;
+  width: 984px;
+  height: auto;
+  position: relative;
+  margin: 45px auto;
+  padding: 60px 67px 0;
+  background: #fff;
+  border-radius: 10px;
+}
+.kodawarimodal h2 {
+  margin: 0 0 30px;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+.kodawarimodal h2:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url("../img/top/pc/title_icon.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: relative;
+  top: -1px;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+.kodawarimodal .btn-close:first-of-type {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.kodawarimodal .btn-close:last-of-type {
+  display: block;
+  padding: 33px;
+  text-align: center;
+}
+.kodawarimodal .type-select {
+  position: relative;
+  right: auto;
+  bottom: 0;
+  z-index: 2;
+}
+.kodawarimodal .type-select span {
+  height: 41px;
+  line-height: 41px;
+  cursor: pointer;
+}
+.kodawarimodal .type-select span.selected {
+  height: 48px;
+  line-height: 48px;
+  position: relative;
+  bottom: -1px;
+}
+.kodawarimodal section {
+  padding: 30px;
+  border: 1px solid #e3e3e3;
+  position: relative;
+  color: #535353;
+}
+.kodawarimodal section:before {
+  content: url("../img/kodawari/pc_kodawari_obokun.png");
+  position: absolute;
+  top: -50px;
+  right: 10px;
+}
+.kodawarimodal section.kodawari-all {
+  padding-top: 32px;
+}
+.kodawarimodal section.kodawari-part {
+  border-top: 3px solid #fd9f3a;
+}
+.kodawarimodal section.kodawari-full {
+  border-top: 3px solid #42cbfe;
+}
+.kodawarimodal section p:first-of-type {
+  padding: 0 10px 25px;
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 1.14em;
+}
+.kodawarimodal section .kodawari-item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 30px 13px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.kodawarimodal section .kodawari-item h3 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 102px;
+  background: #7ac768;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 1.14em;
+  font-weight: bold;
+}
+.kodawarimodal section .kodawari-item fieldset {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0 0 0 17px;
+}
+.kodawarimodal section .kodawari-item fieldset h4 {
+  margin: 1em 0;
+  color: #5c9a4e;
+  font-size: 1.14em;
+  font-weight: bold;
+  line-height: 1.75;
+}
+.kodawarimodal section .kodawari-item fieldset h4:first-of-type {
+  margin: 0 0 1em;
+}
+.kodawarimodal section .kodawari-item fieldset h4:before {
+  content: "▼";
+}
+.kodawarimodal section .kodawari-item fieldset ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: -14px;
+}
+.kodawarimodal section .kodawari-item fieldset ul li {
+  display: block;
+  width: 32%;
+  margin: 0 1.33% 14px 0;
+}
+.kodawarimodal section .kodawari-item fieldset ul li input[type=checkbox] {
+  display: none;
+}
+.kodawarimodal section .kodawari-item fieldset ul li label {
+  display: block;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  font-size: 1.14em;
+  line-height: 2.4;
+  text-align: center;
+  cursor: pointer;
+}
+.kodawarimodal section .kodawari-item fieldset ul li input:checked + label {
+  background: #effeeb;
+  border-color: #58b244;
+  color: #58b244;
+}
+.kodawarimodal section .kodawari-item fieldset .search-item {
+  display: inline-block;
+  position: relative;
+  margin-right: 0.2em;
+}
+.kodawarimodal section .kodawari-item fieldset .search-item:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 6px;
+  background: url("../img/top/pc/top_search_icon02.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  margin-top: -3px;
+}
+.kodawarimodal section .kodawari-item fieldset .search-item select {
+  width: auto;
+  height: 41px;
+  padding: 0 4em;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  font-size: 1.14em;
+  cursor: pointer;
+}
+.kodawarimodal .btn-area {
+  text-align: center;
+}
+.kodawarimodal .btn-area .btn-submit {
+  display: inline-block;
+  width: 460px;
+  height: 75px;
+  margin: 30px auto;
+  background: #fe4280;
+  border: 0px solid transparent;
+  border-bottom: 9px solid #dd205e;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 2.14em;
+  line-height: 65px;
+}
+.kodawarimodal .btn-area .btn-submit:hover {
+  background: #cb3566;
+  border-color: #b11a4b;
+}
+.branding {
+  width: 100%;
+  margin: 0 auto;
+}
+.branding p img {
+  width: 100%;
+}
+.branding .type-select {
+  margin: 0 10px;
+  padding-top: 5px;
+}
+.branding .type-select ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+.branding .type-select li {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+  padding: 0 1px;
+  vertical-align: text-bottom;
+}
+.branding .type-select li span,
+.branding .type-select li a {
+  display: block;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: text-bottom;
+}
+.branding .type-select li span {
+  height: 30px;
+  line-height: 30px;
+}
+.branding .type-select li a {
+  height: 27px;
+  line-height: 27px;
+  position: relative;
+  top: 3px;
+}
+.branding .type-select .type-all a,
+.branding .type-select .type-all span {
+  background: #58b244;
+}
+.branding .type-select .type-part a,
+.branding .type-select .type-part span {
+  background: #fd9f3a;
+}
+.branding .type-select .type-full a,
+.branding .type-select .type-full span {
+  background: #42cbfe;
+}
+.front-search {
+  width: 100%;
+  height: 185px;
+  margin: 0 auto;
+  padding: 10px 10px 0;
+}
+.front-search h2 {
+  width: 300px;
+  height: 60px;
+  margin: 0 auto;
+  background: #58b244;
+  text-indent: 9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.front-search >div {
+  border: 2px solid #fff;
+  position: relative;
+  top: -27px;
+  padding: 11px 0 0;
+}
+.front-search .search-item {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  padding: 1em;
+  position: relative;
+}
+.front-search .search-item:after {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 7px;
+  background: url("../img/top/sp/top_search_icon2.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  margin-top: -3px;
+}
+.front-search .search-item select {
+  width: 100%;
+  height: 36px;
+  padding: 0 1.75em 0 0.5em;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.front-search .search-item:not(:first-of-type):before {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url("../img/top/pc/top_search_icon03.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: -13px;
+  margin-top: -10px;
+}
+.front-search .btn-area {
+  display: block;
+  text-align: center;
+}
+.front-search .btn-area .btn-submit {
+  width: 80%;
+  height: 36px;
+  margin: 0 0 14px;
+  background: #fe4280;
+  border: 0px solid transparent;
+  border-bottom: 3px solid #dd205e;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  line-height: 36px;
+  letter-spacing: 0.25em;
+}
+.top-all .front-search {
+  background: #58b244;
+}
+.top-all .front-search h2 {
+  background: #58b244 url("../img/top/sp/top_search_icon01.png") center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.top-part .front-search {
+  background: #fd9f3a;
+}
+.top-part .front-search h2 {
+  background: #fd9f3a url("../img/top/sp/top_search_icon02.png") center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.top-full .front-search {
+  background: #42cbfe;
+}
+.top-full .front-search h2 {
+  background: #42cbfe url("../img/top/sp/top_search_icon03.png") center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.contents-area .job-search {
+  margin: 0 auto;
+  padding: 10px 10px 0;
+  background: #fd9f3a;
+}
+.contents-area .job-search h2 {
+  display: inline-block;
+  margin: 0 6px;
+  padding: 0 6px;
+  background: #fd9f3a;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.contents-area .job-search h2:before {
+  background-image: url("../img/top/sp/title_icon02.png");
+}
+.contents-area .job-search h2 strong {
+  color: #f5fd0f;
+  font-size: 1.2em;
+}
+.contents-area .job-search ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 10px 0 0;
+  padding: 15px 10px 10px;
+  border: 2px solid #fff;
+  position: relative;
+  top: -23px;
+}
+.contents-area .job-search li {
+  display: block;
+  width: 33.33%;
+  text-align: center;
+  position: relative;
+  border: 1px solid transparent;
+}
+.contents-area .job-search li a {
+  display: block;
+  height: 85px;
+  padding: 1.5em 0 0;
+  text-align: center;
+  color: #fff;
+  font-size: 0.75em;
+  line-height: 1.2;
+}
+.contents-area .job-search li a:before {
+  content: "";
+  display: block;
+  height: 30px;
+  margin-bottom: 1em;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.contents-area .job-search li:nth-of-type(1) a:before {
+  background-image: url("../img/top/sp/top_search01_01.png");
+}
+.contents-area .job-search li:nth-of-type(2) a:before {
+  background-image: url("../img/top/sp/top_search01_02.png");
+}
+.contents-area .job-search li:nth-of-type(3) a:before {
+  background-image: url("../img/top/sp/top_search01_03.png");
+}
+.contents-area .job-search li:nth-of-type(4) a:before {
+  background-image: url("../img/top/sp/top_search01_04.png");
+}
+.contents-area .job-search li:nth-of-type(5) a:before {
+  background-image: url("../img/top/sp/top_search01_05.png");
+}
+.contents-area .job-search li:nth-of-type(6) a:before {
+  background-image: url("../img/top/sp/top_search01_06.png");
+}
+.contents-area .job-search li:nth-of-type(7) a:before {
+  background-image: url("../img/top/sp/top_search01_07.png");
+}
+.contents-area .job-search li:nth-of-type(8) a:before {
+  background-image: url("../img/top/sp/top_search01_08.png");
+}
+.contents-area .job-search li:nth-of-type(9) a:before {
+  background-image: url("../img/top/sp/top_search01_09.png");
+}
+.contents-area .job-search li:nth-of-type(10) a:before {
+  background-image: url("../img/top/sp/top_search01_10.png");
+}
+.contents-area .job-search li:nth-of-type(11) a:before {
+  background-image: url("../img/top/sp/top_search01_11.png");
+}
+.contents-area .job-search li:nth-of-type(12) a:before {
+  background-image: url("../img/top/sp/top_search01_12.png");
+}
+.contents-area .job-search li:nth-of-type(3n-2) {
+  border-bottom: 1px solid #fff;
+}
+.contents-area .job-search li:nth-of-type(3n-1) {
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.contents-area .job-search li:nth-of-type(3n) {
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.contents-area .job-search li.lastlow {
+  border-bottom: 1px solid transparent;
+}
+.contents-area .salary-search {
+  margin: 0 auto;
+  padding: 10px 10px 0;
+  background: #42cbfe;
+}
+.contents-area .salary-search h2 {
+  display: inline-block;
+  margin: 0 6px;
+  padding: 0 6px;
+  background: #42cbfe;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.contents-area .salary-search h2:before {
+  background-image: url("../img/top/sp/title_icon03.png");
+}
+.contents-area .salary-search h2 strong {
+  color: #f5fd0f;
+  font-size: 1.2em;
+}
+.contents-area .salary-search form {
+  margin: 0;
+  padding: 15px 0 0;
+  background: #42cbfe;
+  border: 2px solid #fff;
+  position: relative;
+  top: -13px;
+}
+.contents-area .salary-search .search-item {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  padding: 0 1em 1em;
+  position: relative;
+}
+.contents-area .salary-search .search-item:after {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 7px;
+  background: url("../img/top/sp/top_search_icon2.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  margin-top: -9px;
+}
+.contents-area .salary-search .search-item select {
+  width: 100%;
+  height: 36px;
+  padding: 0 1.75em 0 0.5em;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contents-area .salary-search .search-item:not(:first-of-type):before {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url("../img/top/pc/top_search_icon03.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: -13px;
+  margin-top: -16px;
+}
+.contents-area .salary-search .btn-area {
+  display: block;
+  text-align: center;
+}
+.contents-area .salary-search .btn-area .btn-submit {
+  width: 80%;
+  height: 36px;
+  margin: 0 0 14px;
+  background: #fe4280;
+  border: 0px solid transparent;
+  border-bottom: 3px solid #dd205e;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  line-height: 36px;
+  letter-spacing: 0.25em;
+}
+.contents-area section:not(:first-of-type).salary-search {
+  margin-top: 0;
+}
+.contents-area .kawagoe-items ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 20px 10px;
+}
+.contents-area .kawagoe-items ul li {
+  display: block;
+  width: 33.3%;
+  border: 1px solid transparent;
+}
+.contents-area .kawagoe-items ul li a {
+  display: block;
+  height: 60px;
+  position: relative;
+}
+.contents-area .kawagoe-items ul li a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.contents-area .kawagoe-items ul li:nth-of-type(1) {
+  border-bottom: 1px solid #e3e3e3;
+}
+.contents-area .kawagoe-items ul li:nth-of-type(2) {
+  border-left: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+.contents-area .kawagoe-items ul li:nth-of-type(3) {
+  border-left: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+.contents-area .kawagoe-items ul li:nth-of-type(5) {
+  border-left: 1px solid #e3e3e3;
+}
+.contents-area .kawagoe-items ul li:nth-of-type(6) {
+  border-left: 1px solid #e3e3e3;
+}
+.contents-area .keep-items >ul,
+.contents-area .pickup-items >ul,
+.contents-area .new-items >ul {
+  margin: 10px 10px 60px;
+}
+.contents-area .keep-items >ul>li,
+.contents-area .pickup-items >ul>li,
+.contents-area .new-items >ul>li {
+  background: #fff;
+  position: relative;
+}
+.contents-area .keep-items >ul>li,
+.contents-area .pickup-items >ul>li,
+.contents-area .new-items >ul>li {
+  width: 100%;
+}
+.contents-area .keep-items >ul>li .celebration,
+.contents-area .pickup-items >ul>li .celebration,
+.contents-area .new-items >ul>li .celebration {
+  height: 30px;
+  padding: 3px 10px 0 30px;
+  background: #fe4280 url("../img/top/sp/job_icon01.png") 10px 7px no-repeat;
+  -webkit-background-size: 14px 17px;
+  -moz-background-size: 14px 17px;
+  background-size: 14px 17px;
+  border-radius: 0 0 4px 4px;
+  color: #f5fd0f;
+  font-size: 0.87em;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  top: -4px;
+  right: 0;
+}
+.contents-area .keep-items >ul>li .celebration strong,
+.contents-area .pickup-items >ul>li .celebration strong,
+.contents-area .new-items >ul>li .celebration strong {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.contents-area .keep-items >ul>li .item-header,
+.contents-area .pickup-items >ul>li .item-header,
+.contents-area .new-items >ul>li .item-header {
+  padding: 10px 0 0;
+  font-size: 0.75em;
+}
+.contents-area .keep-items >ul>li .item-header a,
+.contents-area .pickup-items >ul>li .item-header a,
+.contents-area .new-items >ul>li .item-header a {
+  display: inline-block;
+  margin-right: 0.5em;
+  padding: 0 1em;
+  background: #f6f6f6;
+  font-weight: bold;
+  vertical-align: middle;
+  text-decoration: underline;
+}
+.contents-area .keep-items >ul>li .item-header p,
+.contents-area .pickup-items >ul>li .item-header p,
+.contents-area .new-items >ul>li .item-header p {
+  padding: 1em;
+}
+.contents-area .keep-items >ul>li h3,
+.contents-area .pickup-items >ul>li h3,
+.contents-area .new-items >ul>li h3 {
+  margin: 0 10px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.contents-area .keep-items >ul>li h3:before,
+.contents-area .pickup-items >ul>li h3:before,
+.contents-area .new-items >ul>li h3:before {
+  content: "";
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 0 6px 0 0;
+  position: relative;
+  top: 5px;
+}
+.contents-area .keep-items >ul>li .item-status figure,
+.contents-area .pickup-items >ul>li .item-status figure,
+.contents-area .new-items >ul>li .item-status figure {
+  margin: 12px 6px;
+}
+.contents-area .keep-items >ul>li .item-status figure img,
+.contents-area .pickup-items >ul>li .item-status figure img,
+.contents-area .new-items >ul>li .item-status figure img {
+  display: inline-block;
+  width: 90px;
+  margin: 5px 5px 0 0;
+  vertical-align: top;
+}
+.contents-area .keep-items >ul>li .item-status figure p,
+.contents-area .pickup-items >ul>li .item-status figure p,
+.contents-area .new-items >ul>li .item-status figure p {
+  display: inline-block;
+  width: calc(100% - 100px);
+  font-size: 0.75em;
+  line-height: 1.75;
+}
+.contents-area .keep-items >ul>li .item-status table,
+.contents-area .pickup-items >ul>li .item-status table,
+.contents-area .new-items >ul>li .item-status table {
+  border-collapse: sepalate;
+}
+.contents-area .keep-items >ul>li .item-status table th,
+.contents-area .pickup-items >ul>li .item-status table th,
+.contents-area .new-items >ul>li .item-status table th,
+.contents-area .keep-items >ul>li .item-status table td,
+.contents-area .pickup-items >ul>li .item-status table td,
+.contents-area .new-items >ul>li .item-status table td {
+  padding: 0.5em 1em;
+  border: 6px solid #fff;
+  font-size: 0.87em;
+}
+.contents-area .keep-items >ul>li .item-status table th,
+.contents-area .pickup-items >ul>li .item-status table th,
+.contents-area .new-items >ul>li .item-status table th {
+  background: #f3f3f3;
+  text-align: center;
+}
+.contents-area .keep-items >ul>li .item-status table td,
+.contents-area .pickup-items >ul>li .item-status table td,
+.contents-area .new-items >ul>li .item-status table td {
+  text-align: left;
+  font-weight: bold;
+}
+.contents-area .keep-items >ul>li .item-status table td a,
+.contents-area .pickup-items >ul>li .item-status table td a,
+.contents-area .new-items >ul>li .item-status table td a {
+  text-decoration: underline;
+}
+.contents-area .keep-items >ul>li .item-status table td small,
+.contents-area .pickup-items >ul>li .item-status table td small,
+.contents-area .new-items >ul>li .item-status table td small {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 0.87em;
+}
+.contents-area .keep-items >ul>li .item-status table td strong,
+.contents-area .pickup-items >ul>li .item-status table td strong,
+.contents-area .new-items >ul>li .item-status table td strong {
+  display: inline-block;
+  margin-right: 0.25em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.contents-area .keep-items >ul>li .item-characters,
+.contents-area .pickup-items >ul>li .item-characters,
+.contents-area .new-items >ul>li .item-characters {
+  margin: 0 6px;
+}
+.contents-area .keep-items >ul>li .item-characters ul,
+.contents-area .pickup-items >ul>li .item-characters ul,
+.contents-area .new-items >ul>li .item-characters ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.contents-area .keep-items >ul>li .item-characters ul li,
+.contents-area .pickup-items >ul>li .item-characters ul li,
+.contents-area .new-items >ul>li .item-characters ul li {
+  width: 24%;
+  height: 18px;
+  margin: 0 3px 3px 0;
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+  color: #58b244;
+  font-size: 0.75em;
+  text-align: center;
+  line-height: 18px;
+}
+.contents-area .keep-items >ul>li .item-footer,
+.contents-area .pickup-items >ul>li .item-footer,
+.contents-area .new-items >ul>li .item-footer {
+  width: calc(100% - 12px);
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2em;
+}
+.contents-area .keep-items >ul>li .item-footer small,
+.contents-area .pickup-items >ul>li .item-footer small,
+.contents-area .new-items >ul>li .item-footer small {
+  font-size: 0.67em;
+  line-height: 1.2;
+}
+.contents-area .keep-items >ul>li .item-footer small:first-of-type,
+.contents-area .pickup-items >ul>li .item-footer small:first-of-type,
+.contents-area .new-items >ul>li .item-footer small:first-of-type {
+  float: left;
+}
+.contents-area .keep-items >ul>li .item-footer small:last-of-type,
+.contents-area .pickup-items >ul>li .item-footer small:last-of-type,
+.contents-area .new-items >ul>li .item-footer small:last-of-type {
+  float: right;
+}
+.contents-area .keep-items >ul>li .btn-area,
+.contents-area .pickup-items >ul>li .btn-area,
+.contents-area .new-items >ul>li .btn-area {
+  margin: 10px 6px;
+  padding: 15px 0;
+  background: #f3f3f3;
+  text-align: center;
+}
+.contents-area .keep-items >ul>li .btn-area a,
+.contents-area .pickup-items >ul>li .btn-area a,
+.contents-area .new-items >ul>li .btn-area a {
+  display: inline-block;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 40px;
+  position: relative;
+}
+.contents-area .keep-items >ul>li .btn-area .btn-keep,
+.contents-area .pickup-items >ul>li .btn-area .btn-keep,
+.contents-area .new-items >ul>li .btn-area .btn-keep {
+  width: 100px;
+  background: #fff;
+  border: 1px solid #58b244;
+  border-bottom: 2px solid #58b244;
+  color: #58b244;
+}
+.contents-area .keep-items >ul>li .btn-area .btn-keep:after,
+.contents-area .pickup-items >ul>li .btn-area .btn-keep:after,
+.contents-area .new-items >ul>li .btn-area .btn-keep:after {
+  content: "";
+  background: url("../img/top/pc/job_icon03.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  display: block;
+  width: 34px;
+  height: 22px;
+  position: absolute;
+  right: -2px;
+  bottom: -10px;
+}
+.contents-area .keep-items >ul>li .btn-area .btn-more,
+.contents-area .pickup-items >ul>li .btn-area .btn-more,
+.contents-area .new-items >ul>li .btn-area .btn-more {
+  width: 180px;
+  color: #fff;
+}
+.contents-area .keep-items >ul>li.part,
+.contents-area .pickup-items >ul>li.part,
+.contents-area .new-items >ul>li.part {
+  border-top: 4px solid #fd9f3a;
+}
+.contents-area .keep-items >ul>li.part h3,
+.contents-area .pickup-items >ul>li.part h3,
+.contents-area .new-items >ul>li.part h3 {
+  color: #fd9f3a;
+}
+.contents-area .keep-items >ul>li.part h3:before,
+.contents-area .pickup-items >ul>li.part h3:before,
+.contents-area .new-items >ul>li.part h3:before {
+  background: url("../img/top/sp/job_icon02.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.contents-area .keep-items >ul>li.part .item-status table td strong,
+.contents-area .pickup-items >ul>li.part .item-status table td strong,
+.contents-area .new-items >ul>li.part .item-status table td strong {
+  color: #fd9f3a;
+}
+.contents-area .keep-items >ul>li.part .btn-area,
+.contents-area .pickup-items >ul>li.part .btn-area,
+.contents-area .new-items >ul>li.part .btn-area {
+  border-bottom: 2px solid #fd9f3a;
+}
+.contents-area .keep-items >ul>li.part .btn-area .btn-more,
+.contents-area .pickup-items >ul>li.part .btn-area .btn-more,
+.contents-area .new-items >ul>li.part .btn-area .btn-more {
+  background: #fd9f3a;
+  border-bottom: 2px solid #dc7c16;
+  color: #fff;
+}
+.contents-area .keep-items >ul>li.full,
+.contents-area .pickup-items >ul>li.full,
+.contents-area .new-items >ul>li.full {
+  border-top: 4px solid #42cbfe;
+}
+.contents-area .keep-items >ul>li.full h3,
+.contents-area .pickup-items >ul>li.full h3,
+.contents-area .new-items >ul>li.full h3 {
+  color: #42cbfe;
+}
+.contents-area .keep-items >ul>li.full h3:before,
+.contents-area .pickup-items >ul>li.full h3:before,
+.contents-area .new-items >ul>li.full h3:before {
+  background: url("../img/top/sp/job_icon02_02.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.contents-area .keep-items >ul>li.full .item-status table td strong,
+.contents-area .pickup-items >ul>li.full .item-status table td strong,
+.contents-area .new-items >ul>li.full .item-status table td strong {
+  color: #42cbfe;
+}
+.contents-area .keep-items >ul>li.full .btn-area,
+.contents-area .pickup-items >ul>li.full .btn-area,
+.contents-area .new-items >ul>li.full .btn-area {
+  border-bottom: 2px solid #42cbfe;
+}
+.contents-area .keep-items >ul>li.full .btn-area .btn-more,
+.contents-area .pickup-items >ul>li.full .btn-area .btn-more,
+.contents-area .new-items >ul>li.full .btn-area .btn-more {
+  background: #42cbfe;
+  border-bottom: 2px solid #0497fe;
+  color: #fff;
+}
+.contents-area .keep-items >ul>li.newitem,
+.contents-area .pickup-items >ul>li.newitem,
+.contents-area .new-items >ul>li.newitem {
+  margin-bottom: 12px;
+  padding-bottom: 0.5em;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+.contents-area .keep-items >ul>li.newitem .celebration,
+.contents-area .pickup-items >ul>li.newitem .celebration,
+.contents-area .new-items >ul>li.newitem .celebration {
+  top: -1px;
+}
+.contents-area .keep-items >ul>li.newitem .item-header:before,
+.contents-area .pickup-items >ul>li.newitem .item-header:before,
+.contents-area .new-items >ul>li.newitem .item-header:before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  vertical-align: middle;
+}
+.contents-area .keep-items >ul>li.newitem .item-header a,
+.contents-area .pickup-items >ul>li.newitem .item-header a,
+.contents-area .new-items >ul>li.newitem .item-header a {
+  display: inline-block;
+  margin-right: 0;
+  padding: 0 0.25em;
+  background: transparent;
+  font-weight: bold;
+  vertical-align: middle;
+  text-decoration: underline;
+}
+.contents-area .keep-items >ul>li.newitem.part .item-header:before,
+.contents-area .pickup-items >ul>li.newitem.part .item-header:before,
+.contents-area .new-items >ul>li.newitem.part .item-header:before {
+  background: url("../img/top/sp/job_icon02.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.contents-area .keep-items >ul>li.newitem.full .item-header:before,
+.contents-area .pickup-items >ul>li.newitem.full .item-header:before,
+.contents-area .new-items >ul>li.newitem.full .item-header:before {
+  background: url("../img/top/sp/job_icon02_02.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.contents-area .keep-items >ul>li.newitem h3,
+.contents-area .pickup-items >ul>li.newitem h3,
+.contents-area .new-items >ul>li.newitem h3 {
+  border-top: 1px solid #e3e3e3;
+  padding: 0.5em 0;
+  width: calc(100% - 1em);
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.contents-area .keep-items >ul>li.newitem h3:before,
+.contents-area .pickup-items >ul>li.newitem h3:before,
+.contents-area .new-items >ul>li.newitem h3:before {
+  display: none;
+}
+.contents-area .keep-items >ul>li.newitem .item-status,
+.contents-area .pickup-items >ul>li.newitem .item-status,
+.contents-area .new-items >ul>li.newitem .item-status {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  margin: 0 6px;
+}
+.contents-area .keep-items >ul>li.newitem .item-status figure,
+.contents-area .pickup-items >ul>li.newitem .item-status figure,
+.contents-area .new-items >ul>li.newitem .item-status figure {
+  width: 115px;
+  margin: 0;
+}
+.contents-area .keep-items >ul>li.newitem .item-status figure img,
+.contents-area .pickup-items >ul>li.newitem .item-status figure img,
+.contents-area .new-items >ul>li.newitem .item-status figure img {
+  width: 115px;
+  margin: 0;
+}
+.contents-area .keep-items >ul>li.newitem .item-status table,
+.contents-area .pickup-items >ul>li.newitem .item-status table,
+.contents-area .new-items >ul>li.newitem .item-status table {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border-collapse: collapse;
+}
+.contents-area .keep-items >ul>li.newitem .item-status table th,
+.contents-area .pickup-items >ul>li.newitem .item-status table th,
+.contents-area .new-items >ul>li.newitem .item-status table th,
+.contents-area .keep-items >ul>li.newitem .item-status table td,
+.contents-area .pickup-items >ul>li.newitem .item-status table td,
+.contents-area .new-items >ul>li.newitem .item-status table td {
+  padding: 0 0 0 1em;
+  border: none;
+  font-size: 0.87em;
+  font-weight: bold;
+}
+.contents-area .keep-items >ul>li.newitem .item-status table th,
+.contents-area .pickup-items >ul>li.newitem .item-status table th,
+.contents-area .new-items >ul>li.newitem .item-status table th {
+  background: transparent;
+  text-align: left;
+}
+.contents-area .keep-items >ul>li.newitem .item-status table td,
+.contents-area .pickup-items >ul>li.newitem .item-status table td,
+.contents-area .new-items >ul>li.newitem .item-status table td {
+  text-align: left;
+}
+.contents-area .keep-items >ul>li.newitem .item-status table td strong,
+.contents-area .pickup-items >ul>li.newitem .item-status table td strong,
+.contents-area .new-items >ul>li.newitem .item-status table td strong {
+  font-size: 1em;
+}
+.contents-area .information ul {
+  margin: 20px 10px 0;
+}
+.contents-area .information ul li {
+  padding: 1em;
+  border-bottom: 1px solid #e3e3e3;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+.contents-area .information ul li small {
+  display: block;
+  width: 70px;
+  font-size: 0.75em;
+}
+.contents-area .information ul li a {
+  display: block;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 0.87em;
+}
+.contents-area .tokushu-area {
+  margin: 0 10px;
+}
+.contents-area .tokushu-area a {
+  display: block;
+  width: 300px;
+  height: 82px;
+  margin: 0 auto 15px;
+  padding: 10px;
+}
+.contents-area .tokushu-area a:hover {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+.contents-area .tokushu-area a h3 {
+  font-size: 1.1em;
+  font-weight: normal;
+  line-height: 1.2;
+}
+.contents-area .tokushu-area a p {
+  font-size: 0.67em;
+  line-height: 1.3;
+  margin: 0.5em 0 0;
+}
+.contents-area .tokushu-area .tokushu1 {
+  padding-left: 90px;
+  padding-right: 65px;
+  background: url("../img/top/sp/bnr_tokushu.jpg") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.contents-area .tokushu-area .tokushu1 h3 {
+  color: #58b244;
+}
+.contents-area .tokushu-area .tokushu2 {
+  padding-left: 65px;
+  padding-right: 90px;
+  background: url("../img/top/sp/bnr_tokushu02.jpg") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.contents-area .tokushu-area .tokushu2 h3 {
+  color: #fd9f3a;
+}
+.contents-area section:not(:first-of-type).banner-area {
+  margin: 0 10px;
+}
+.contents-area section:not(:first-of-type).banner-area >img {
+  width: 100%;
+  margin: 0;
+}
+.contents-area section:not(:first-of-type).banner-area a {
+  display: block;
+  margin: 15px 0;
+}
+.contents-area section:not(:first-of-type).banner-area a img {
+  width: 100%;
+}
+.contents-area section:not(:first-of-type).banner-area .address {
+  display: block;
+  margin: 15px 10px;
+  position: relative;
+}
+.contents-area section:not(:first-of-type).banner-area .address img {
+  width: 100%;
+}
+.contents-area section:not(:first-of-type).banner-area .address address {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  height: 98px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  -o-box-pack: distribute;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.contents-area section:not(:first-of-type).banner-area .address address a {
+  display: inline-block;
+  width: 139px;
+  height: 88px;
+  padding-top: 0.5em;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  border-radius: 4px;
+}
+.contents-area section:not(:first-of-type).banner-area .address address a:before {
+  content: "";
+  display: block;
+  height: 30px;
+  margin-bottom: 0.5em;
+}
+.contents-area section:not(:first-of-type).banner-area .address address .btn-tel {
+  background: #fff;
+  border: 2px solid #dd205e;
+  border-bottom: 8px solid #dd205e;
+  color: #dd205e;
+}
+.contents-area section:not(:first-of-type).banner-area .address address .btn-tel:before {
+  background: url("../img/top/sp/top_bnr_02_tel.png") center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.contents-area section:not(:first-of-type).banner-area .address address .btn-mail {
+  background: #fe4280;
+  border: 2px solid #fe4280;
+  border-bottom: 8px solid #fe4280;
+  color: #fff;
+}
+.contents-area section:not(:first-of-type).banner-area .address address .btn-mail:before {
+  background: url("../img/top/sp/top_bnr_02_mail.png") center no-repeat;
+  -webkit-background-size: 30px 23px;
+  -moz-background-size: 30px 23px;
+  background-size: 30px 23px;
+}
+.contents-area section:not(:first-of-type).special-items {
+  margin: 20px 10px 0;
+  padding: 12px;
+  background: #effeeb;
+}
+.contents-area section:not(:first-of-type).special-items li {
+  width: 100%;
+  margin: 10px 0 0;
+}
+.contents-area section:not(:first-of-type).special-items li a img {
+  width: 100%;
+}
+.contents-area .search-items {
+  margin: 0 10px;
+  padding: 20px 12px;
+  background: url("../img/top/sp/top_serch03_bg01.png") center bottom no-repeat, url("../img/top/sp/top_serch03_bg02.png") top right no-repeat;
+  border: 1px solid #e3e3e3;
+}
+.contents-area .search-items h2 {
+  margin: 0;
+}
+.contents-area .search-items ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin: 10px 0 30px;
+}
+.contents-area .search-items ul li {
+  display: block;
+  width: 48%;
+  margin: 0 0 0.75em;
+}
+.contents-area .search-items ul li a {
+  display: block;
+  padding: 0.5em;
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  font-size: 0.75em;
+  line-height: 1.75;
+  text-align: center;
+}
+.pinpoint-search {
+  margin: 0 auto;
+  padding: 10px;
+  background: #58b244;
+}
+.pinpoint-search li {
+  margin: 0 0 10px;
+}
+.pinpoint-search li a {
+  display: block;
+  height: 77px;
+  padding: 15px 10px 0 80px;
+  background: #fff;
+  border-radius: 8px;
+  position: relative;
+}
+.pinpoint-search li a:before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 77px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.pinpoint-search li a strong {
+  display: block;
+  color: #fd9f3a;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+.pinpoint-search li a strong b {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.pinpoint-search li a small {
+  display: block;
+  font-size: 0.75em;
+  text-align: center;
+}
+.pinpoint-search li:nth-of-type(1) a:before {
+  background: url("../img/top/sp/top_serch_pinpoint.png") center no-repeat;
+  -webkit-background-size: 62px 60px;
+  -moz-background-size: 62px 60px;
+  background-size: 62px 60px;
+}
+.pinpoint-search li:nth-of-type(2) a:before {
+  background: url("../img/top/sp/top_serch_pinpoint02.png") center no-repeat;
+  -webkit-background-size: 66px 57px;
+  -moz-background-size: 66px 57px;
+  background-size: 66px 57px;
+}
+.pinpoint-search li:nth-of-type(3) a:before {
+  background: url("../img/top/sp/top_serch_pinpoint03.png") center no-repeat;
+  -webkit-background-size: 61px 67px;
+  -moz-background-size: 61px 67px;
+  background-size: 61px 67px;
+}
+.top-part .contents-area .job-search {
+  margin: 0 auto;
+  background: #42cbfe;
+}
+.top-part .contents-area .job-search h2 {
+  background: #42cbfe;
+}
+.top-full .salary-search {
+  background: #58b244;
+}
+.top-full .salary-search h2,
+.top-full .salary-search form {
+  background: #58b244;
+}

@@ -1,0 +1,214 @@
+
+@import "_color"
+
+.wrapper-shadow
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	margin: 0
+	width: 100%
+	height: 100%
+	background: rgba(0,0,0,.5)
+	z-index: 99
+
+body.underwrapper
+	overflow: hidden
+
+// keep modal
+.wrapper-shadow-keep
+	@extend .wrapper-shadow
+	display: flex
+	justify-content: center
+	align-items: center
+.keepmodal
+	display: none
+	width: 300px
+	height: 100px
+	position: absolute
+	top: 50%
+	left: 50%
+	margin: -50px 0 0 -150px
+	background: $green
+	border-radius: 2px
+	box-shadow: rgba(0,0,0,.5) 0 1px 2px 
+	color: $white
+	font-size: 1.14em
+	font-weight: bold
+	line-height: 100px
+	text-align: center
+	p
+		display: block
+	p:after
+		content: url("../img/top/pc/job_icon03.png")
+		position: absolute
+		height: 45px
+		right: -5px
+		bottom: 10px
+
+// kodawari modal
+.wrapper-shadow-kodawari
+	@extend .wrapper-shadow
+	overflow: auto
+.kodawarimodal
+	display: none
+	width: 984px
+	height: auto
+	position: relative
+	margin: 45px auto
+	padding: 60px 67px 0
+	background: white
+	border-radius: 10px
+	h2
+		margin: 0 0 30px
+		font-weight: normal
+		font-size: 1.5rem
+		&:before
+			content: ""
+			display: inline-block
+			width: 15px
+			height: 15px
+			background: url(../img/top/pc/title_icon.png) 0 0 no-repeat
+			background-size: contain
+			position: relative
+			top: -1px
+			margin-right: .5rem
+			font-size: 1.5rem
+	.btn-close:first-of-type
+		display: block
+		position: absolute
+		top: 20px
+		right: 20px
+	.btn-close:last-of-type
+		display: block
+		padding: 33px
+		text-align: center
+	.type-select
+		position: relative
+		right: auto
+		bottom: 0
+		z-index: 2
+		span
+			height: 41px
+			line-height: 41px
+			cursor: pointer
+		span.selected
+			height: 48px
+			line-height: 48px
+			position: relative
+			bottom: -1px
+	section
+		padding: 30px
+		border: 1px solid $gray
+		position: relative
+		color: $black2
+		&:before
+			content: url(../img/kodawari/pc_kodawari_obokun.png)
+			position: absolute
+			top: -50px
+			right: 10px
+		&.kodawari-all
+			padding-top: 32px
+		&.kodawari-part
+			border-top: 3px solid $orange
+		&.kodawari-full
+			border-top: 3px solid $blue
+		p:first-of-type
+			padding: 0 10px 25px
+			border-bottom: 1px solid $gray
+			font-size: 1.14em
+		.kodawari-item
+			display: flex
+			flex-wrap: nowrap
+			padding: 30px 13px
+			border-bottom: 1px solid $gray
+			h3
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 102px
+				background: $green2
+				border-radius: 2px
+				color: $white
+				font-size: 1.14em
+				font-weight: bold
+			fieldset
+				flex: 1
+				padding: 0 0 0 17px
+				h4
+					margin: 1em 0
+					color: $green1
+					font-size: 1.14em
+					font-weight: bold
+					line-height: 1.75
+					&:first-of-type
+						margin: 0 0 1em
+					&:before
+						content: "▼"
+				ul
+					display: flex
+					flex-wrap: wrap
+					margin-bottom: -14px
+					li
+						display: block
+						width: 32%
+						margin: 0 1.33% 14px 0
+						input[type=checkbox]
+							display: none
+						label
+							display: block
+							border: 1px solid $gray
+							border-radius: 4px
+							font-size: 1.14em
+							line-height: 2.4
+							text-align: center
+							cursor: pointer
+						input:checked + label
+							background: $lightgreen
+							border-color: $green
+							color: $green
+				.search-item
+					display: inline-block
+					position: relative
+					margin-right: .2em
+					&:after
+						content: ""
+						display: block
+						width: 10px
+						height: 6px
+						background: url("../img/top/pc/top_search_icon02.png") 0 0 no-repeat
+						background-size: contain
+						position: absolute
+						top: 50%
+						right: 12px
+						margin-top: -3px
+					select
+						width: auto
+						height: 41px
+						padding: 0 4em
+						background: $white
+						border: 1px solid $gray
+						border-radius: 4px
+						font-size: 1.14em
+						cursor: pointer
+	.btn-area
+		text-align: center
+		.btn-submit
+			display: inline-block
+			width: 460px
+			height: 75px
+			margin: 30px auto
+			background: $pink
+			border: 0px solid transparent
+			border-bottom: 9px solid $pink2
+			border-radius: 10px
+			text-align: center
+			color: $white
+			font-size: 2.14em
+			line-height: 65px
+		.btn-submit:hover
+			background: $pink1
+			border-color: $pink3
+
