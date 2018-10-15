@@ -4,11 +4,145 @@
 
 .contents-area
 
-// listitems
-	.list-items
+// search conditions
+	.search-conditions
+		.type-select
+			position: relative
+			right: auto
+			bottom: 0
+			z-index: 2
+			span
+				height: 41px
+				line-height: 41px
+				cursor: pointer
+			span.selected
+				height: 48px
+				line-height: 48px
+				position: relative
+				bottom: -1px
+		section
+			margin-top: 0
+			padding: 30px 30px 0
+			border: 1px solid $gray
+			border-bottom: none
+			position: relative
+			color: $black2
+			$.search-all
+				padding-top: 34px
+			&.search-part
+				border-top: 5px solid $orange
+			&.search-full
+				border-top: 5px solid $blue
+			.search-item
+				display: flex
+				flex-wrap: nowrap
+				margin: 0 0 10px
+				label
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 154px
+					margin: 0 5px 0 0
+					padding: 1em
+					background: $green2
+					border-radius: 4px
+					color: $white
+					font-size: 1.14em
+					line-height: 1.5
+					white-space: nowrap
+				.condition
+					display: block
+					flex: 1
+					padding: 1em
+					background: $lightgray2
+					border-radius: 4px
+					font-size: 1.14em
+					line-height: 1.5
+					button
+						margin-left: 1em
+						padding: 0 1.5em
+						background: $white
+						border: 1px solid $green2
+						border-radius: 1em
+						color: $green2
+						font-size: .87rem
+						line-height: 1.5
+						vertical-align: middle
+						&:hover
+							background: $green2
+							color: $white
+		.btn-area
+			position: relative
+			padding: 10px 0 20px
+			text-align: center
+			border: 1px solid $gray
+			border-top: none
+			.btn-submit
+				display: inline-block
+				width: 290px
+				height: 60px
+				margin: 0 auto
+				background: $pink
+				border: 0px solid transparent
+				border-radius: 6px
+				text-align: center
+				color: $white
+				font-size: 1.14em
+				line-height: 60px
+			.btn-submit:hover
+				background: $pink1
+			.btn-clear
+				position: absolute
+				top: 10px
+				right: 30px
+				text-decoration: underline
+	// listitems
+	section.list-items
+		margin-top: 30px
+		>p:first-of-type
+			font-size: 1.14rem
+			strong
+				color: $green2
+				font-size: 1.71rem
+				small
+					margin: 0 -.5em
+					font-size: 1.14rem
+		>nav
+			.item-sort
+				display: block
+				padding: 2em 0 1em
+				border-bottom: 1px solid $gray
+				text-align: right
+				font-size: 1.14em
+				a
+					display: inline-block
+					padding: 0 1em 0 .5em
+				a.selected
+					color: $green2
+					cursor: default
+			.page-nav
+				display: block
+				padding: 20px 0 45px
+				text-align: center
+				a
+					display: inline-block
+					padding: .5em 1em
+					background: $lightgray2
+					&:hover
+						background: $lightgreen
+				a.disabled
+					background: $lightgray2
+					color: $gray3
+					cursor: default
+				a.selected
+					background: $green2
+					color: $white
+					cursor: default
+				
 		>a
 			display: block
 			margin: 90px 0
+			
 		>ul
 			margin: 40px 0 0
 			display: flex
@@ -27,7 +161,7 @@
 		>ul>li.part
 			border-top: 5px solid $orange
 			h3
-				background: url("../img/top/pc/job_icon02.png") 0 0 no-repeat
+				background: url("../img/list/pc/job_icon02.png") 0 0 no-repeat
 				color: $orange
 			.item-status table td strong
 				color: $orange
@@ -39,7 +173,7 @@
 		>ul>li.full
 			border-top: 5px solid $blue
 			h3
-				background: url("../img/top/pc/job_icon02_02.png") 0 0 no-repeat
+				background: url("../img/list/pc/job_icon02_02.png") 0 0 no-repeat
 				color: $blue
 			.item-status table td strong
 				color: $blue
@@ -60,7 +194,7 @@
 					color: $white
 					line-height: 30px
 					&:before
-						content: url(../img/list/pc_list_icon_pr.png)
+						content: url(../img/list/pc/pc_list_icon_pr.png)
 						display: inline-block
 						margin-right: 10px
 						position: relative

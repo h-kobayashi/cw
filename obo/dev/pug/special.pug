@@ -30,39 +30,8 @@ html
 				
 				.contents-area
 				
-					// 検索条件
-					section.search-conditions
-						nav.type-select
-							ul
-								li.type-all: span.selected すべての求人
-								li.type-part: span パート・アルバイト
-								li.type-full: span 正社員
-						section.search-all
-							.search-item
-								label エリア
-								.condition
-									span クレアモール
-									button 変更する
-							.search-item
-								label 職　種
-								.condition
-									span 飲食
-									button 変更する
-							.search-item
-								label 給　与
-								.condition
-									span 時給　1000円以上
-									button 変更する
-							.search-item
-								label 特　徴
-								.condition
-									span 主婦・ママ歓迎
-									button 変更する
-						section.search-part
-						section.search-full
-						.btn-area
-							a(href="javascript:void(0)").btn-clear 条件をすべてクリアする
-							button.btn-submit 選択した条件で検索する
+					// 特集バナー
+					img(src="img/list/pc/bnr_tokushu_06.png", alt="")
 					
 					// 検索結果一覧
 					section.list-items
@@ -454,7 +423,7 @@ html
 						ul
 							each val in ["蔵通り","丸広","川越祭り","巫女","短期","川越駅","短期","川越駅","蔵通り","丸広","川越祭り","巫女","短期","川越駅","短期","川越駅"]
 								li: a(href="")=val
-						a(href=""): img(src="img/list/pc/pc_list_bnr_01.png", alt="")
+						a(href=""): img(src="img/list/pc_list_bnr_01.png", alt="")
 					
 					// インフォメーション
 					section.information

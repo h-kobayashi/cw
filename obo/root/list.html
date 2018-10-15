@@ -61,8 +61,84 @@
           <span>飲食</span>
         </div>
         <div class="contents-area">
+          <!-- 検索条件-->
+          <section class="search-conditions">
+            <nav class="type-select">
+              <ul>
+                <li class="type-all">
+                  <span class="selected">すべての求人</span>
+                </li>
+                <li class="type-part">
+                  <span>パート・アルバイト</span>
+                </li>
+                <li class="type-full">
+                  <span>正社員</span>
+                </li>
+              </ul>
+            </nav>
+            <section class="search-all">
+              <div class="search-item">
+                <label>エリア</label>
+                <div class="condition">
+                  <span>クレアモール</span>
+                  <button>変更する</button>
+                </div>
+              </div>
+              <div class="search-item">
+                <label>職　種</label>
+                <div class="condition">
+                  <span>飲食</span>
+                  <button>変更する</button>
+                </div>
+              </div>
+              <div class="search-item">
+                <label>給　与</label>
+                <div class="condition">
+                  <span>時給　1000円以上</span>
+                  <button>変更する</button>
+                </div>
+              </div>
+              <div class="search-item">
+                <label>特　徴</label>
+                <div class="condition">
+                  <span>主婦・ママ歓迎</span>
+                  <button>変更する</button>
+                </div>
+              </div>
+            </section>
+            <section class="search-part"></section>
+            <section class="search-full"></section>
+            <div class="btn-area">
+              <a class="btn-clear" href="javascript:void(0)">条件をすべてクリアする</a>
+              <button class="btn-submit">選択した条件で検索する</button>
+            </div>
+          </section>
           <!-- 検索結果一覧-->
           <section class="list-items">
+            <p class="item-number">
+              <strong>123
+                <small>件</small>
+              </strong>のアルバイト・パート求人情報が見つかりました</p>
+            <nav>
+              <div class="item-sort">
+                <span>並べ替え ：</span>
+                <a class="selected" href="javascript:void(0)">おすすめ順</a>|
+                <a href="javascript:void(0)">新着順</a>|
+                <a href="javascript:void(0)">給与順</a>
+              </div>
+              <div class="page-nav">
+                <a class="disabled" href="javascript:void(0)">
+                  << 最初</a>
+                    <a class="disabled" href="javascript:void(0)">
+                      < 前</a>
+                        <a class="selected" href="javascript:void(0)">1</a>
+                        <a href="javascript:void(0)">2</a>
+                        <a href="javascript:void(0)">3</a>
+                        <a href="javascript:void(0)">4</a>
+                        <a href="javascript:void(0)">次へ ></a>
+                        <a href="javascript:void(0)">最後 >></a>
+              </div>
+            </nav>
             <ul>
               <li class="pritem part">
                 <div class="celebration">祝い金
@@ -716,7 +792,7 @@
               </li>
             </ul>
             <a href="">
-              <img src="img/list/pc_list_bnr_01.png" alt="">
+              <img src="img/list/pc/pc_list_bnr_01.png" alt="">
             </a>
           </section>
           <!-- インフォメーション-->
@@ -888,7 +964,7 @@
         <div class="kodawarimodal">
           <h2>こだわり検索</h2>
           <a class="btn-close" href="javascript:void(0)">
-            <img src="img/kodawari/pc_kodawari_close.png">
+            <img src="img/kodawari/pc/pc_kodawari_close.png">
           </a>
           <nav class="type-select">
             <ul>
@@ -1229,7 +1305,7 @@
             <p>検索条件を指定してください</p>
           </section>
           <a class="btn-close" href="javascript:void(0)">
-            <img src="img/kodawari/pc_kodawari_close2.png">
+            <img src="img/kodawari/pc/pc_kodawari_close2.png">
           </a>
         </div>
       </div>
@@ -1294,5 +1370,6 @@
     <script type="text/javascript" src="js/jquery.ellipsis.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/list.js"></script>
   </body>
 </html>

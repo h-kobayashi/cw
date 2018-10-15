@@ -87,7 +87,7 @@ body.underwrapper {
   display: inline-block;
   width: 15px;
   height: 15px;
-  background: url("../img/top/pc/title_icon.png") 0 0 no-repeat;
+  background: url("../img/kodawari/pc/pc_kodawari_titleicon.png") 0 0 no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
@@ -131,7 +131,7 @@ body.underwrapper {
   color: #535353;
 }
 .kodawarimodal section:before {
-  content: url("../img/kodawari/pc_kodawari_obokun.png");
+  content: url("../img/kodawari/pc/pc_kodawari_obokun.png");
   position: absolute;
   top: -50px;
   right: 10px;
@@ -856,7 +856,7 @@ body.underwrapper {
 .pickup-items >ul>li:not(.newitem_s) .btn-area,
 .new-items >ul>li:not(.newitem_s) .btn-area {
   padding: 20px;
-  background: #f3f3f3;
+  background: #f4f3f3;
   border-top: 1px solid #e3e3e3;
   text-align: center;
 }
@@ -1187,7 +1187,7 @@ body.underwrapper {
 }
 .about-area {
   padding: 30px;
-  background: #f3f3f3;
+  background: #f4f3f3;
 }
 .about-area a {
   display: inline-block;
