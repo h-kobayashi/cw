@@ -1,0 +1,89 @@
+.footer
+	width: 100%
+	margin: 0 auto
+	padding: 40px 0 20px
+	background: $black
+.footer-container
+	width: 100%
+	max-width: 1120px
+	margin: 0 auto
+	color: $lightgray
+	font-size: .87rem
+	line-height: 1.5
+	position: relative
+	.footernav
+		display: flex
+		flex-wrap: nowrap
+		justify-content: space-between
+		align-items: flex-end
+		li
+			display: block
+			float: right
+			margin-left: 2em
+			line-height: 2
+			a
+				color: $lightgray
+			a:hover
+				text-decoration: underline
+		li:nth-of-type(6)
+			clear: both
+	.companydata
+		position: relative
+		margin: 20px 0 0
+		.snslink
+			position: absolute
+			top: 0
+			right: 0
+			font-size: 1.75rem
+			letter-spacing: .1em
+			a
+				color: $lightgray
+		.location
+			span
+				display: block
+		.copyright
+			position: absolute
+			right: 0
+			bottom: 0
+		
+
+
+		
+		
+		
+// mobile
+@media screen and (max-width: 767px)
+	
+	.footer
+		padding: 5px
+	.footer-container
+		width: 100%
+		.footernav
+			display: block
+			h2
+				margin: 5px
+				img
+					width: 134px
+					height: 18px
+			ul
+				margin: 1em 0 0
+			li
+				float: none
+				display: inline-block
+				margin: 0 .75em 0 0
+				font-size: .87rem
+				line-height: 2
+		.companydata
+			position: static
+			margin: 10px 0 0
+			.snslink
+				right: 5px
+			.location
+				font-size: .75rem
+				span
+					display: inline-block
+					margin-right: .5em
+			.copyright
+				position: static
+				margin: 1em 0 0
+				font-size: .75rem

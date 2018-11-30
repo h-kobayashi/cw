@@ -1,0 +1,391 @@
+
+// アイキャッチ
+.flex-direction-nav
+	li
+		a
+			width: 17px
+			height: 17px
+			margin-top: -8px
+			opacity: .7
+		a.next
+			background: url(../img/top/next.png) no-repeat center/contain
+			right: 1%
+		a.prev
+			background: url(../img/top/prev.png) no-repeat center/contain
+			left: 1%
+
+.contents__block
+	section
+		padding: 0 0 30px
+		h2
+			padding: .25em 1em
+			font-size: 1rem
+
+	// 開業物件検索
+	.search
+		display: flex
+		flex-wrap: wrap
+		header
+			display: none
+		form
+			order: 2
+			width: 100%
+			display: block
+			>section
+				padding: 20px 0 0
+		:not(.pickup) h3
+			width: 8em
+			background: transparent
+			padding: 0 .5em
+			font-size: 1rem
+		.search-area
+			width: 100%
+			display: flex
+			ul
+				flex: 1
+				width: auto
+				height: auto
+				background: transparent
+				li
+					position: static
+					display: inline-block
+					input + label
+						display: inline-block
+						margin-right: 1em
+						color: $black
+						font-weight: normal
+						width: auto
+						height: auto
+						line-height: 1
+						&:hover
+							color: $red
+							cursor: pointer
+					input:checked + label
+						box-shadow: none
+						color: $red
+					input + label:before
+						content: "　"
+						display: inline-block
+						width: .8rem
+						height: .8rem
+						background: transparent
+						border: 1px solid $gray2
+						position: relative
+						top: 1px
+						transition: .2s
+						margin-right: .25rem
+						font-size: 1.14rem
+						line-height: .87
+						text-indent: -2.5px
+					input:checked + label:before
+						content: "■"
+						color: $red
+				li:nth-of-type(1),li:nth-of-type(2),li:nth-of-type(3),li:nth-of-type(4),li:nth-of-type(5),li:nth-of-type(6),li:nth-of-type(7),li:nth-of-type(8),li:nth-of-type(9)
+					input + label
+						background: transparent
+
+		.search-attribute
+			width: 100%
+			h3
+				position: absolute
+			fieldset
+				padding: 0 .5em 20px 8em
+			label
+				display: inline-block
+				margin-right: 1em
+			input + label:before
+				width: .8rem
+				height: .8rem
+				top: 1px
+				transition: .2s
+				margin-right: .25rem
+				font-size: 1.14rem
+				line-height: .87
+				text-indent: -2.5px
+			input:checked + label
+				color: $red
+			input[type=text]
+				font-size: .87rem
+			i.fa-search
+				top: 0
+				font-size: 1rem
+			button
+				margin: 0 auto 20px
+				font-size: 1rem
+				line-height: 24px
+
+		.pickup
+			width: 100%
+			margin: 0
+			padding: 0
+			h3
+				width: 100%
+				font-size: 1rem
+			.pickup-slides
+				display: flex
+				flex-wrap: nowrap
+				width: 100%
+				padding: 0
+				.slick-prev,.slick-next
+					height: auto
+					position: relative
+					top: 0
+				.slick-list
+					width: auto
+					height: auto
+					flex: 1
+				.slick-track
+					padding: 0
+				.slick-slide
+					margin: 0
+					figure
+						display: block
+						width: 100%
+						>img
+							float: left
+							width: 140px
+							height: 90px
+							margin: 0 5px 5px 0
+					figcaption
+						width: 100%
+						padding: 5px
+						.pickup-item-area
+							small
+								line-height: 1.5
+						a
+							font-size: .87rem
+							line-height: 1
+							margin-bottom: .5rem
+						p
+							margin-bottom: 0
+							font-size: .7rem
+							line-height: 1
+						ul
+							letter-spacing: -.2em
+							line-height: 1.2
+						li
+							margin: 0 0
+							line-height: 1.5
+							letter-spacing: 0
+						.pickup-item-charactor
+							clear: both
+							width: 100%
+
+	// 開業セミナー
+	.seminar
+		display: block
+		position: relative
+		padding: 0 0 80px
+		header
+			width: 100%
+			background: transparent
+			position: static
+			h2
+				height: auto
+				font-size: 1rem
+				text-align: left
+				small
+					display: none !important
+			p
+				padding: 5px
+				font-size: .87rem
+				line-height: 1.6
+				a
+					@extend .contents__block .btn-more
+					margin: 20px 0 0 -120px
+					background: $red
+					color: $white
+					line-height: 36px
+					position: absolute
+					bottom: 30px
+					left: 50%
+		article
+			display: block
+			width: auto
+			height: 90px
+			margin: 5px 5px 0
+			padding: 5px 5px 0 155px
+			background: $white url(../img/dummy.png) no-repeat left top/ 150px 90px
+			border: 1px solid $lightgray
+			h3
+				color: $red
+				font-size: 1rem
+				font-weight: bold
+			p
+				padding: .25em 0 0
+				font-size: .7rem
+				line-height: 1.2
+				max-height: 4em
+				overflow: hidden
+				text-overflow: ellipsis
+			small
+				margin: .25em 0 0
+				font-size: .87rem
+				font-family: Oswald
+
+
+	// contacts
+	address.contacts
+		width: 100%
+		padding: 5px 0
+		dl
+			flex: 1
+			width: auto
+			height: auto
+			margin: 0 5px
+			padding: 10px 0
+			dt
+				font-size: .87rem
+				font-weight: bold
+			strong>a
+				font-size: 1.5rem
+				line-height: 1
+			small
+				font-size: 1rem
+			i
+				display: block
+				width: 43px
+				height: 43px
+				margin: 0 auto 5px
+				border: 2px solid $gray2
+				font-size: 21px
+				line-height: 37px
+			dd>a
+				width: 120px
+				height: 30px
+				margin: 10px auto 0
+				font-size: 1rem
+				line-height: 29px
+
+	// 事業計画シミュレーション
+	.simulation
+		display: block
+		position: relative
+		padding: 0 0 30px
+		header
+			width: 100%
+			height: auto
+			margin: 0
+			padding: 0
+			background: transparent
+			position: static
+			h2
+				width: 100%
+				height: auto
+				background: $red
+				font-size: 1rem
+				text-align: left
+				small
+					display: none !important
+			p
+				padding: 5px
+				color: $black
+				font-size: .87rem
+				line-height: 1.6
+		>section
+			width: 100%
+			height: auto
+			margin: 10px auto 0
+			padding: 125px 5px 5px
+			background-color: transparent
+			background-image: url(../img/dummy.png)
+			background-repeat: no-repeat
+			background-position: center top
+			background-size: 160px 100px
+			h3
+				font-size: 1rem
+			p
+				margin: 1em 0 0
+				font-size: .87rem
+				line-height: 1.5
+			ul
+				margin: 1em 0 0
+				padding: 5px
+				background: $white
+				li
+					font-size: .87rem
+					&:before
+						content: "■"
+						color: $red
+			a
+				@extend .contents__block .btn-more
+				margin: 20px auto 0
+				background: $red
+				color: $white
+				line-height: 40px
+	
+	// aside
+	aside
+		display: flex
+		flex-wrap: wrap
+
+	// contents
+	.contents
+		order: 1
+		width: 100%
+		margin: 0
+		padding: 0
+		ul
+			display: block
+			li
+				display: block
+				width: 100%
+				margin-bottom: 4px
+				a
+					height: 135px
+					padding: 50px 0 0
+					font-size: 1rem
+					small
+						display: block
+						font-size: .7rem
+
+	// お知らせ
+	.news
+		order: 2
+		display: block
+		position: relative
+		padding: 0 0 80px
+		header
+			width: 100%
+			height: auto
+			padding: 0
+			background: transparent
+			position: static
+			h2
+				height: auto
+				background: $red
+				font-size: 1rem
+				text-align: left
+				small
+					display: none !important
+			a
+				@extend .contents__block .btn-more
+				margin: 20px 0 0 -120px
+				background: $red
+				color: $white
+				line-height: 39px
+				position: absolute
+				bottom: 30px
+				left: 50%
+		ul
+			width: 100%
+			margin: 0
+			padding: 5px
+			li
+				width: 100%
+		ul li a
+			display: block
+			width: auto
+			height: auto
+			margin: 0
+			padding: .5em 1em 1em
+			background: $white
+			border: 1px solid $lightgray
+			p
+				padding: 0
+				font-size: .87rem
+				line-height: 1.2
+			small
+				margin: .25em 0 0
+				font-size: .87rem
+				font-family: Oswald

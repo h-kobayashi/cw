@@ -1,0 +1,210 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 医院開業のトータルサポート「WithMedical」
+		link(rel="stylesheet", media="all", href="https://use.fontawesome.com/releases/v5.0.6/css/all.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/top.css")
+	body.top
+		.wrapper
+
+			include _header.pug
+			
+			.branding__container
+				.branding
+					ul.slides
+						li: a(href=""): img(src="img/top/branding_image_sample.png", alt="")
+						li: a(href=""): img(src="img/top/branding_image_sample.png", alt="")
+						li: a(href=""): img(src="img/top/branding_image_sample.png", alt="")
+						li: a(href=""): img(src="img/top/branding_image_sample.png", alt="")
+						li: a(href=""): img(src="img/top/branding_image_sample.png", alt="")
+			
+			main.contents__container
+				.contents__block
+
+					// 開業物件検索
+					section.search
+						header
+							h2
+								small Search
+								| 開業物件検索
+						form
+							section.search-area
+								h3 地域選択
+								ul
+									- var list = ['北海道','東北','関東','中部','近畿','中国','四国','九州','沖縄']
+									each item, index in list
+										li
+											input(type="checkbox", name="searchArea", id="searchArea" + index)
+											label(for="searchArea" + index)
+												| #{item}
+							section.search-attribute
+								h3 物件特徴
+								fieldset
+									- var list = ['戸建て','医療ビル','商業施設内','継承案件','新築','駅近']
+									each item, index in list
+										input(type="checkbox", name="searchCharactor", id="searchCharactor" + index)
+										label(for="searchCharactor" + index)
+											| #{item}
+								h3 診療科目
+								fieldset
+									- var list = ['内科','小児科','整形外科','精神科']
+									each item, index in list
+										input(type="checkbox", name="searchCourse", id="searchCourse" + index)
+										label(for="searchCourse" + index)
+											| #{item}
+								h3 フリーワード
+								fieldset
+									input(type="text", name="searchWord", placeholder="フリーワード")
+									i.fas.fa-search
+								button 検索
+						section.pickup
+							h3 ピックアップ物件
+							.pickup-slides
+								- for (var i=0; i<4; i++)
+									div
+										figure
+											img(src="img/dummy.png")
+											figcaption
+												.pickup-item-area: small.kantou 関東
+												a(href="") 恵比寿メディカルセンター
+												p 東京都渋谷区恵比寿南１－１<br>JR恵比寿駅から徒歩３分
+												ul.pickup-item-charactor
+													- var list = ['戸建','医療ビル','商業施設内','継承案件','新築','駅近']
+													each item, index in list
+														li= item
+												ul.pickup-item-course
+													- var list = ['内科','皮膚科','産婦人科']
+													each item, index in list
+														li= item
+
+					// お問い合わせ
+					address.contacts.sponly
+						dl.tel
+							dt
+								i.fas.fa-phone
+								| お電話でのお問い合わせ
+							dd
+								strong: a(href="tel:039876543") 03 - 987 - 6543
+								small 10:00-18:00
+						dl.mail
+							dt
+								i.far.fa-envelope
+								| メールでのお問い合わせ
+							dd
+								a(href="") お問い合わせ
+
+					// 開業セミナー
+					section.seminar
+						header
+							h2
+								small Seminer
+								| 開業セミナー
+							p この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+								a(href="")
+									i.fas.fa-chevron-circle-right
+									| 一覧を見る
+						article: a(href="")
+							h3 ダミータイトル
+							p この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+							small 2019.00.00
+						article: a(href="")
+							h3 ダミータイトル
+							p この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+							small 2019.00.00
+
+					// 事業計画シミュレーション
+					section.simulation
+						header
+							h2
+								small Simulation
+								| 事業計画シミュレーション
+							p この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+						section
+							h3 医院を開業する前に重要な「診療圏調査」と「事業計画策定」を無料でお手伝いを致します。
+							p 単純に人口が多い地域、人が集まる商業施設内、そこで開業すれば必ずしも多くの患者さんが来院されるとは限りません。
+							ul
+								li 競合科目の医療機関は何件あるのか・・・
+								li 適正な家賃や従業員の給与はどう考えたらいいのか・・・
+								li 従業員は何人ぐらいが適正なのか・・・
+							p 先生の開業予定地、診療科目をもとにシミュレーションさせて頂きます。
+							a(href="")
+								i.fas.fa-chevron-circle-right
+								| 詳しく見る
+
+					// お問い合わせ
+					address.contacts.sponly
+						dl.tel
+							dt
+								i.fas.fa-phone
+								| お電話でのお問い合わせ
+							dd
+								strong: a(href="tel:039876543") 03 - 987 - 6543
+								small 10:00-18:00
+						dl.mail
+							dt
+								i.far.fa-envelope
+								| メールでのお問い合わせ
+							dd
+								a(href="") お問い合わせ
+
+					aside
+						// お知らせ
+						section.news
+							header
+								h2
+									small News
+									| お知らせ
+								a(href="")
+									i.fas.fa-chevron-circle-right
+									| 一覧を見る
+							ul
+								- for (var i = 0; i<4; i++)
+									li: a(href="")
+										small 2019.00.00
+										p この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+
+						// コンテンツ一覧
+						section.contents
+							ul
+								li: a(href="")
+									small Flow
+									| 開業までの流れ
+								li: a(href="")
+									small Works
+									| 実績紹介
+								li: a(href="")
+									small Consultants
+									| コンサルタント紹介
+								li: a(href="")
+									small Column
+									| お役立ちコラム
+
+					// お問い合わせ
+					address.contacts
+						dl.tel
+							dt
+								i.fas.fa-phone
+								| お電話でのお問い合わせ
+							dd
+								strong: a(href="tel:039876543") 03 - 987 - 6543
+								small 10:00-18:00
+						dl.mail
+							dt
+								i.far.fa-envelope
+								| メールでのお問い合わせ
+							dd
+								a(href="") お問い合わせ
+
+			include _footer.pug
+			
+			include _fixheader.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery.flexslider-min.js")
+		script(type="text/javascript", src="js/slick.min.js")
+		script(type="text/javascript", src="js/common.js")
+		script(type="text/javascript", src="js/top.js")
+

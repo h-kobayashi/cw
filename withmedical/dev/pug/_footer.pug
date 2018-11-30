@@ -1,0 +1,15 @@
+footer.footer
+	.footer-container
+		nav.footernav
+			h2: a(href=""): img(src="img/title_logo2.png", alt="")
+			ul
+				- var list = ['コラム','実績紹介','開業までの流れ','コンサルタント紹介','NZDのサービス','プライバシーポリシー','運営会社','開業・経営コラム','お知らせ','事業計画シミュレーション','セミナー','物件検索']
+					each item, index in list
+						li: a(href="")= item
+		.companydata
+			nav.snslink
+				a(href=""): i.fab.fa-instagram
+				a(href=""): i.fab.fa-facebook-square
+				a(href=""): i.fab.fa-twitter-square
+			p.location <span>〒000-0003</span><span>東京都新宿区三丁目2番32号</span><span>東京タワービル</span><span>TEL.090.000.0000</span><br><span>不動産取引／国土交通大臣（1）第0000号</span><span>建設許可／東京都知事許可（般-27）第0000号</span>
+			p.copyright Copyright © WithMedical, All Rights Reserved.

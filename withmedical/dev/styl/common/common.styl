@@ -1,0 +1,173 @@
+
+@import "_normalize"
+@import "_font"
+@import "_color"
+
+*
+	box-sizing: border-box
+
+html,body
+	background: $black
+	font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', arial, helvetica, sans-serif
+	@extend .r
+	font-size: 14px
+	color: #373737
+
+html,body,h1,h2,h3,h4,h5,h6,table,p,dl,dt,dd,ul,ol,li,hr,header,main,footer,section,article,figure,strong,b
+	margin: 0
+	padding: 0
+	font-weight: normal
+ul,ol,li
+	list-style: none
+
+img
+	vertical-align: text-bottom
+
+a
+	color: $black
+	text-decoration: none
+
+h1,h2,h3,h4,h5,h6,b,strong,dt,th
+	font-weight: normal
+
+fieldset
+	display: block
+	margin: 0
+	padding: 0
+	font-weight: normal
+	border: none
+
+select
+	outline: none
+	text-indent: .01px
+	text-overflow: ''
+	background: none transparent
+	vertical-align: middle
+	font-size: inherit
+	color: inherit
+	-webkit-appearance: button
+	-moz-appearance: button
+	appearance: button
+	option
+		background: white
+		color: $black
+select::-ms-expand
+	display: none
+select::-moz-focusring
+	color: transparent
+	text-shadow: 0 0 0 #828c9a
+
+.wrapper
+	width: 100%
+	margin: 0
+
+.contents__container
+	width: 100%
+	background: $lightgray2
+
+.contents__block
+	width: 100%
+	max-width: 1400px
+	min-height: 600px
+	margin: 0 auto
+	padding: 20px 0
+
+.contents__header
+	height: 180px
+	margin-right: calc((100% - 1120px)/2)
+	padding-left: calc((100% - 1120px)/2)
+	background: $red
+	text-align: right
+	h2
+		padding-top: 60px
+		text-align: left
+		color: $white
+		font-size: 1.71rem
+		font-weight: bold
+		small
+			display: block
+			font-size: .87rem
+	
+.contents__item
+	width: 1120px
+	margin: 20px auto 50px
+	h3
+		padding: 12px 20px 10px
+		background: $red
+		color: $white
+		font-size: 1.71rem
+		font-weight: normal
+	p
+		margin: 10px 0 0
+		padding: 20px
+		background: $white
+		box-shadow: rgba(0,0,0,.2) 0 1px 3px
+		color: $gray2
+		font-size: 1rem
+		line-height: 2
+		word-wrap: break-word
+
+.ellipsis
+	white-space: nowrap
+	overflow: hidden
+.ellipsis.multiline
+	white-space: normal
+	
+.hidden
+	display: none !important
+
+@import '_header'
+@import '_footer'
+@import '_font'
+		
+
+
+		
+		
+		
+// mobile
+@media screen and (max-width: 767px)
+	
+	.wrapper
+		padding: 42px 0 0
+	.main
+		width: 100%	
+	.sponly
+		display: block 
+
+	.contents__block
+		padding: 0 0 30px
+		
+	.contents__header
+		height: auto
+		margin: 0
+		padding: 0 
+		background: $red
+		text-align: left
+		h2
+			padding: .25em 1em
+			font-size: 1rem
+			small
+				display: none
+
+	.contents__item
+		width: auto
+		margin: 0 5px 30px
+		h3
+			padding: .25em 1em
+			font-size: 1rem
+			font-weight: normal
+		p
+			margin: 5px 0 0
+			padding: 10px
+			font-size: .87rem
+		
+
+
+		
+		
+		
+@media screen and (min-width: 768px)
+
+	.sponly
+		display: none !important

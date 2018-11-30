@@ -1,0 +1,446 @@
+@font-face {
+  font-family: Rounded-Mplus-1c-regular;
+  src: url("../../font/mplus-1c-regular.eot");
+  src: url("../../font/mplus-1c-regular.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-regular_web.woff2") format("woff2");
+}
+@font-face {
+  font-family: Rounded-Mplus-1c-medium;
+  src: url("../../font/mplus-1c-medium.eot");
+  src: url("../../font/mplus-1c-medium.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-medium_web.woff2") format("woff2");
+}
+@font-face {
+  font-family: Rounded-Mplus-1c-bold;
+  src: url("../../font/mplus-1c-bold.eot");
+  src: url("../../font/mplus-1c-bold.eot?") format("embedded-opentype"), url("../../font/rounded-mplus-1c-bold_web.woff2") format("woff2");
+}
+.r {
+  font-family: Rounded-Mplus-1c-regular;
+}
+.m {
+  font-family: Rounded-Mplus-1c-medium;
+}
+.b {
+  font-family: Rounded-Mplus-1c-bold;
+}
+@font-face {
+  font-family: JuliusSansOne-Regular;
+  src: url("../../font/JuliusSansOne-Regular.eot");
+  src: url("../../font/JuliusSansOne-Regular.eot?") format("embedded-opentype"), url("../../font/JuliusSansOne-Regular.woff2") format("woff2");
+}
+.j {
+  font-family: JuliusSansOne-Regular;
+}
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url("../../font/OpenSans-Bold.eot");
+  src: url("../../font/OpenSans-Bold.eot?") format("embedded-opentype"), url("../../font/OpenSans-Bold.woff2") format("woff2");
+}
+.o {
+  font-family: OpenSans-Bold;
+}
+@media all and (-ms-high-contrast: none) {
+  .r,
+  .m,
+  .b,
+  .j,
+  .o {
+    -webkit-transform: rotate(0.001deg);
+    -moz-transform: rotate(0.001deg);
+    -o-transform: rotate(0.001deg);
+    -ms-transform: rotate(0.001deg);
+    transform: rotate(0.001deg);
+  }
+}
+.contents__block .flowchart {
+  max-width: 100%;
+  margin: 40px 0 0;
+}
+.contents__block .flowchart ol {
+  position: relative;
+  width: 940px;
+  height: 1400px;
+  margin: 0 auto;
+}
+.contents__block .flowchart ol li {
+  position: relative;
+  display: block;
+  width: 273px;
+  height: 241px;
+  padding: 106px 0 0;
+  background: url("../img/flow/flow_itembg.png") no-repeat 0 0/contain;
+  text-align: center;
+  color: #fff;
+  font-size: 1.71rem;
+  text-shadow: #bd3613 2px 0px, #bd3613 -2px 0px, #bd3613 0px -2px, #bd3613 0px 2px, #bd3613 2px 2px, #bd3613 -2px 2px, #bd3613 2px -2px, #bd3613 -2px -2px, #bd3613 1px 2px, #bd3613 -1px 2px, #bd3613 1px -2px, #bd3613 -1px -2px, #bd3613 2px 1px, #bd3613 -2px 1px, #bd3613 2px -1px, #bd3613 -2px -1px;
+}
+.contents__block .flowchart ol li:nth-of-type(1):before {
+  content: "";
+  display: block;
+  width: 273px;
+  height: 241px;
+  background: url("../img/flow/flow_item1.png") no-repeat center;
+  position: absolute;
+}
+.contents__block .flowchart ol li:nth-of-type(2):before {
+  content: "";
+  display: block;
+  width: 273px;
+  height: 241px;
+  background: url("../img/flow/flow_item2.png") no-repeat center;
+  position: absolute;
+}
+.contents__block .flowchart ol li:nth-of-type(3):before {
+  content: "";
+  display: block;
+  width: 273px;
+  height: 241px;
+  background: url("../img/flow/flow_item3.png") no-repeat center;
+  position: absolute;
+}
+.contents__block .flowchart ol li:nth-of-type(4):before {
+  content: "";
+  display: block;
+  width: 273px;
+  height: 241px;
+  background: url("../img/flow/flow_item4.png") no-repeat center;
+  position: absolute;
+}
+.contents__block .flowchart ol li:nth-of-type(5):before {
+  content: "";
+  display: block;
+  width: 273px;
+  height: 241px;
+  background: url("../img/flow/flow_item5.png") no-repeat center;
+  position: absolute;
+}
+.contents__block .flowchart ol li:nth-of-type(6):before {
+  content: "";
+  display: block;
+  width: 273px;
+  height: 241px;
+  background: url("../img/flow/flow_item6.png") no-repeat center;
+  position: absolute;
+}
+.contents__block .flowchart ol li:nth-of-type(7):before {
+  content: "";
+  display: block;
+  width: 273px;
+  height: 241px;
+  background: url("../img/flow/flow_item7.png") no-repeat center;
+  position: absolute;
+}
+.contents__block .flowchart ol li:nth-of-type(8):before {
+  content: "";
+  display: block;
+  width: 273px;
+  height: 241px;
+  background: url("../img/flow/flow_item8.png") no-repeat center;
+  position: absolute;
+}
+.contents__block .flowchart ol li:nth-of-type(9):before {
+  content: "";
+  display: block;
+  width: 273px;
+  height: 241px;
+  background: url("../img/flow/flow_item9.png") no-repeat center;
+  position: absolute;
+}
+.contents__block .flowchart ol li:first-of-type {
+  padding: 98px 0 0 9px;
+}
+.contents__block .flowchart ol li:last-of-type {
+  padding-top: 97px;
+  font-size: 3rem;
+}
+.contents__block .flowchart ol li:nth-of-type(2) {
+  top: -120px;
+  left: 210px;
+}
+.contents__block .flowchart ol li:nth-of-type(3) {
+  top: -240px;
+  left: 420px;
+}
+.contents__block .flowchart ol li:nth-of-type(4) {
+  top: -360px;
+  left: 630px;
+}
+.contents__block .flowchart ol li:nth-of-type(5) {
+  top: -480px;
+  left: 420px;
+}
+.contents__block .flowchart ol li:nth-of-type(6) {
+  top: -600px;
+  left: 210px;
+}
+.contents__block .flowchart ol li:nth-of-type(7) {
+  top: -720px;
+  left: 0;
+}
+.contents__block .flowchart ol li:nth-of-type(8) {
+  top: -840px;
+  left: 210px;
+}
+.contents__block .flowchart ol li:nth-of-type(9) {
+  top: -960px;
+  left: 420px;
+}
+.contents__block .flowchart ol li:nth-of-type(10) {
+  top: -1080px;
+  left: 630px;
+}
+.contents__block .contents__item p {
+  overflow: hidden;
+}
+.contents__block .contents__item p img {
+  float: left;
+  margin-right: 20px;
+}
+@media screen and (max-width: 767px) {
+  .contents__block .flowchart {
+    max-width: 100%;
+    margin: 20px 0 0;
+  }
+  .contents__block .flowchart ol {
+    position: relative;
+    width: 340px;
+    height: 790px;
+    margin: 0 auto;
+  }
+  .contents__block .flowchart ol li {
+    position: relative;
+    display: block;
+    width: 137px;
+    height: 121px;
+    padding: 53px 0 0;
+    background: url("../img/flow/flow_itembg.png") no-repeat 0 0/contain;
+    text-align: center;
+    color: #fff;
+    font-size: 0.87rem;
+    text-shadow: #bd3613 1px 0px, #bd3613 -1px 0px, #bd3613 0px -1px, #bd3613 0px 1px, #bd3613 1px 1px, #bd3613 -1px 1px, #bd3613 1px -1px, #bd3613 -1px -1px;
+  }
+  .contents__block .flowchart ol li:nth-of-type(1):before {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 97px;
+    background: url("../img/flow/flow_item1.png") no-repeat center/contain;
+    position: absolute;
+    top: 12px;
+    left: 13px;
+  }
+  .contents__block .flowchart ol li:nth-of-type(2):before {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 97px;
+    background: url("../img/flow/flow_item2.png") no-repeat center/contain;
+    position: absolute;
+    top: 12px;
+    left: 13px;
+  }
+  .contents__block .flowchart ol li:nth-of-type(3):before {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 97px;
+    background: url("../img/flow/flow_item3.png") no-repeat center/contain;
+    position: absolute;
+    top: 12px;
+    left: 13px;
+  }
+  .contents__block .flowchart ol li:nth-of-type(4):before {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 97px;
+    background: url("../img/flow/flow_item4.png") no-repeat center/contain;
+    position: absolute;
+    top: 12px;
+    left: 13px;
+  }
+  .contents__block .flowchart ol li:nth-of-type(5):before {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 97px;
+    background: url("../img/flow/flow_item5.png") no-repeat center/contain;
+    position: absolute;
+    top: 12px;
+    left: 13px;
+  }
+  .contents__block .flowchart ol li:nth-of-type(6):before {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 97px;
+    background: url("../img/flow/flow_item6.png") no-repeat center/contain;
+    position: absolute;
+    top: 12px;
+    left: 13px;
+  }
+  .contents__block .flowchart ol li:nth-of-type(7):before {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 97px;
+    background: url("../img/flow/flow_item7.png") no-repeat center/contain;
+    position: absolute;
+    top: 12px;
+    left: 13px;
+  }
+  .contents__block .flowchart ol li:nth-of-type(8):before {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 97px;
+    background: url("../img/flow/flow_item8.png") no-repeat center/contain;
+    position: absolute;
+    top: 12px;
+    left: 13px;
+  }
+  .contents__block .flowchart ol li:nth-of-type(9):before {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 97px;
+    background: url("../img/flow/flow_item9.png") no-repeat center/contain;
+    position: absolute;
+    top: 12px;
+    left: 13px;
+  }
+  .contents__block .flowchart ol li:first-of-type {
+    padding: 49px 0 0 4px;
+  }
+  .contents__block .flowchart ol li:last-of-type {
+    padding-top: 42px;
+    font-size: 1.71rem;
+  }
+  .contents__block .flowchart ol li:nth-of-type(2) {
+    top: -50px;
+    left: 100px;
+  }
+  .contents__block .flowchart ol li:nth-of-type(3) {
+    top: -100px;
+    left: 200px;
+  }
+  .contents__block .flowchart ol li:nth-of-type(4) {
+    top: -150px;
+    left: 100px;
+  }
+  .contents__block .flowchart ol li:nth-of-type(5) {
+    top: -200px;
+    left: 0;
+  }
+  .contents__block .flowchart ol li:nth-of-type(6) {
+    top: -250px;
+    left: 100px;
+  }
+  .contents__block .flowchart ol li:nth-of-type(7) {
+    top: -300px;
+    left: 200px;
+  }
+  .contents__block .flowchart ol li:nth-of-type(8) {
+    top: -350px;
+    left: 100px;
+  }
+  .contents__block .flowchart ol li:nth-of-type(9) {
+    top: -400px;
+    left: 0;
+  }
+  .contents__block .flowchart ol li:nth-of-type(10) {
+    top: -450px;
+    left: 100px;
+  }
+  .contents__block .flowchart ol li:not(:last-of-type):after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 10px;
+    background: #bd3613;
+    position: absolute;
+    bottom: 16px;
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+  }
+  .contents__block .flowchart ol li:nth-of-type(1):after {
+    right: 3px;
+    -webkit-transform: rotate(36deg);
+    -moz-transform: rotate(36deg);
+    -o-transform: rotate(36deg);
+    -ms-transform: rotate(36deg);
+    transform: rotate(36deg);
+  }
+  .contents__block .flowchart ol li:nth-of-type(2):after {
+    right: 3px;
+    -webkit-transform: rotate(36deg);
+    -moz-transform: rotate(36deg);
+    -o-transform: rotate(36deg);
+    -ms-transform: rotate(36deg);
+    transform: rotate(36deg);
+  }
+  .contents__block .flowchart ol li:nth-of-type(5):after {
+    right: 3px;
+    -webkit-transform: rotate(36deg);
+    -moz-transform: rotate(36deg);
+    -o-transform: rotate(36deg);
+    -ms-transform: rotate(36deg);
+    transform: rotate(36deg);
+  }
+  .contents__block .flowchart ol li:nth-of-type(6):after {
+    right: 3px;
+    -webkit-transform: rotate(36deg);
+    -moz-transform: rotate(36deg);
+    -o-transform: rotate(36deg);
+    -ms-transform: rotate(36deg);
+    transform: rotate(36deg);
+  }
+  .contents__block .flowchart ol li:nth-of-type(9):after {
+    right: 3px;
+    -webkit-transform: rotate(36deg);
+    -moz-transform: rotate(36deg);
+    -o-transform: rotate(36deg);
+    -ms-transform: rotate(36deg);
+    transform: rotate(36deg);
+  }
+  .contents__block .flowchart ol li:nth-of-type(3):after {
+    left: 3px;
+    -webkit-transform: rotate(-36deg);
+    -moz-transform: rotate(-36deg);
+    -o-transform: rotate(-36deg);
+    -ms-transform: rotate(-36deg);
+    transform: rotate(-36deg);
+  }
+  .contents__block .flowchart ol li:nth-of-type(4):after {
+    left: 3px;
+    -webkit-transform: rotate(-36deg);
+    -moz-transform: rotate(-36deg);
+    -o-transform: rotate(-36deg);
+    -ms-transform: rotate(-36deg);
+    transform: rotate(-36deg);
+  }
+  .contents__block .flowchart ol li:nth-of-type(7):after {
+    left: 3px;
+    -webkit-transform: rotate(-36deg);
+    -moz-transform: rotate(-36deg);
+    -o-transform: rotate(-36deg);
+    -ms-transform: rotate(-36deg);
+    transform: rotate(-36deg);
+  }
+  .contents__block .flowchart ol li:nth-of-type(8):after {
+    left: 3px;
+    -webkit-transform: rotate(-36deg);
+    -moz-transform: rotate(-36deg);
+    -o-transform: rotate(-36deg);
+    -ms-transform: rotate(-36deg);
+    transform: rotate(-36deg);
+  }
+  .contents__block .contents__item p {
+    overflow: hidden;
+  }
+  .contents__block .contents__item p img {
+    width: 140px;
+    float: left;
+    margin-right: 10px;
+  }
+}

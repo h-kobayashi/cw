@@ -1,0 +1,75 @@
+@import "common/_font"
+@import "common/_color"
+
+.contents__block
+
+	// flow chart
+	.flowchart
+		max-width: 100%
+		margin: 40px 0 0
+		ol
+			position: relative
+			width: 940px
+			height: 1400px
+			margin: 0 auto
+			li
+				position: relative
+				display: block
+				width: 273px
+				height: 241px
+				padding: 106px 0 0
+				background: url(../img/flow/flow_itembg.png) no-repeat 0 0/contain
+				text-align: center
+				color: $white
+				font-size: 1.71rem
+				text-shadow: $red 2px 0px,  $red -2px 0px, $red 0px -2px, $red 0px 2px, $red 2px 2px , $red -2px 2px, $red 2px -2px, $red -2px -2px, $red 1px 2px,  $red -1px 2px, $red 1px -2px, $red -1px -2px, $red 2px 1px,  $red -2px 1px, $red 2px -1px, $red -2px -1px
+				
+				for i in (1..9)
+					&:nth-of-type({i}):before
+						content: ""
+						display: block
+						width: 273px
+						height: 241px
+						background: url("../img/flow/flow_item" + i ".png") no-repeat center
+						position: absolute
+				
+				&:first-of-type
+					padding: 98px 0 0 9px
+				&:last-of-type
+					padding-top: 97px
+					font-size: 3rem
+				
+				Top = -120px
+				Left = 210px
+				
+				for i in (1..3)
+					&:nth-of-type({i + 1})
+						top: ( Top * i )
+						left: ( Left * i )
+				&:nth-of-type(5)
+					top: ( Top * 4 )
+					left: ( Left * 2 )
+				&:nth-of-type(6)
+					top: ( Top * 5 )
+					left: ( Left * 1 )
+				&:nth-of-type(7)
+					top: ( Top * 6 )
+					left: 0
+				for i in (7..9)
+					&:nth-of-type({i + 1})
+						top: ( Top * i )
+						left: ( Left * ( i - 6 ) )
+	
+	//
+	.contents__item
+		p
+			overflow: hidden
+			img
+				float: left
+				margin-right: 20px
+
+// mobile
+@media screen and (max-width: 767px)
+
+	@import "_sp-flow.styl"
+	

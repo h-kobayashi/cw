@@ -1,0 +1,701 @@
+@import "common/_font"
+@import "common/_color"
+
+// area color
+.hokkaidou
+	background: $area1
+.touhoku
+	background: $area2
+.kantou
+	background: $area3
+.tyuubu
+	background: $area4
+.kinki
+	background: $area5
+.tyuugoku
+	background: $area6
+.shikoku
+	background: $area7
+.kyuushuu
+	background: $area8
+.okinawa
+	background: $area9
+
+// branding
+.branding__container
+	width: 100%
+	margin: 0 auto
+	background: $white
+	clear: both
+	zoom: 1
+	position: relative
+
+.branding
+	width: 100%
+	max-width: 1400px
+	margin: 0 auto
+	background: url(../img/top/branding_bg.jpg) no-repeat center top
+	position: relative
+	zoom: 1
+	
+	.slides
+		width: 100%
+		max-width: 1120px
+		margin: 0 auto
+		zoom: 1
+		>li
+			display: none
+			position: relative
+		img
+			max-width: 100%
+			display: block
+
+.flex-pauseplay span
+	text-transform: capitalize
+
+.slides:after
+	content: "."
+	display: block
+	clear: both
+	visibility: hidden
+	line-height: 0
+	height: 0
+
+.flex-direction-nav
+	li
+		a
+			width: 34px
+			height: 34px
+			margin: 0
+			display: block
+			position: absolute
+			cursor: pointer
+			text-indent: -9999px
+			white-space: nowrap
+			overflow: hidden
+			top: 50%
+			margin-top: -17px
+			opacity: .7
+			transition: .3s
+			&:hover
+				opacity: 1
+		a.next
+			background: url(../img/top/next.png)
+			right: 2%
+			&:hover
+				right: 2.1%
+		a.prev
+			background: url(../img/top/prev.png)
+			left: 2%
+			&:hover
+				left: 2.1%
+
+.flex-control-nav,.flex-caption,.caption_title_line
+	display: none
+
+.contents__container
+	background: $white
+
+.contents__block
+	padding: 0
+	section
+		padding: 48px 0
+		header
+			h2
+				color: $white
+				font-size: 1.71rem
+				font-weight: bold
+				small
+					display: block
+					font-size: .87rem
+	.btn-more
+		display: block
+		width: 240px
+		height: 40px
+		border-radius: 20px
+		font-size: 1rem
+		text-align: center
+		line-height: 41px
+		i
+			font-size: 1.2em
+			margin-right: .5em
+			position: relative
+			top: 1px
+		&:hover
+			opacity: .5
+	
+// 開業物件検索
+.search
+	background: $gray
+	header
+		height: 180px
+		margin-right: calc((100% - 1120px)/2)
+		padding-left: calc((100% - 1120px)/2)
+		background: $red
+		text-align: right
+		h2
+			padding-top: 60px
+			text-align: left
+	form
+		width: 1120px
+		margin: 0 auto
+		display: flex
+		flex-wrap: nowrap
+		justify-content: space-between
+		>section
+			padding: 20px 0 0
+	h3
+		padding: .25em 1em
+		background: $white
+		color: $red
+		font-size: 1.14rem
+		font-weight: bold
+	.search-area
+		width: 618px
+		ul
+			width: 100%
+			height: 360px
+			background: url(../img/top/map.gif) no-repeat 45px 16px
+			position: relative
+			li
+				position: absolute
+				input[type=checkbox]
+					display: none
+				input + label
+					display: block
+					width: 120px
+					height: 30px
+					background: linear-gradient( rgba(0,0,0,.1), rgba(0,0,0,.1) )
+					border-radius: 15px
+					color: $white
+					font-size: 1rem
+					font-weight: bold
+					line-height: 30px
+					text-align: center
+					opacity: .8
+					transition: .2s
+				input + label:hover
+					opacity: 1
+					background: linear-gradient( rgba(0,0,0,.3), rgba(0,0,0,.3) )
+				input:checked + label
+					opacity: 1
+					background: linear-gradient( rgba(0,0,0,.1), rgba(0,0,0,.1) )
+					box-shadow: rgba(0,0,0,.5) 0 1px 1px inset
+					
+			li:nth-of-type(1)
+				top: 17px
+				right: 28px
+				input + label
+					background-color: $area1
+			li:nth-of-type(2)
+				top: 85px
+				right: 50px
+				input + label
+					background-color: $area2
+			li:nth-of-type(3)
+				top: 174px
+				right: 50px
+				input + label
+					background-color: $area3
+			li:nth-of-type(4)
+				top: 110px
+				left: 255px
+				input + label
+					background-color: $area4
+			li:nth-of-type(5)
+				left: 290px
+				bottom: 50px
+				input + label
+					background-color: $area5
+			li:nth-of-type(6)
+				top: 145px
+				left: 175px
+				input + label
+					background-color: $area6
+			li:nth-of-type(7)
+				left: 165px
+				bottom: 50px
+				input + label
+					background-color: $area7
+			li:nth-of-type(8)
+				left: 60px
+				bottom: 105px
+				input + label
+					background-color: $area8
+			li:nth-of-type(9)
+				top: 90px
+				left: 30px
+				input + label
+					background-color: $area9
+	.search-attribute
+		width: 462px
+		fieldset
+			padding: 10px 0 30px
+			position: relative
+		label
+			display: inline-block
+			margin-right: 1em
+			&:hover
+				color: $red
+				cursor: pointer
+		input[type=checkbox]
+			display: none
+		input + label:before
+			content: "　"
+			display: inline-block
+			width: .8rem
+			height: .8rem
+			background: transparent
+			border: 1px solid $gray2
+			position: relative
+			top: 1px
+			transition: .2s
+			margin-right: .25rem
+			font-size: 1.14rem
+			line-height: .87
+			text-indent: -2.5px
+		input:checked + label:before
+			content: "■"
+			color: $red
+		input[type=text]
+			width: 100%
+			padding: .5em 3em .5em 1.5em
+			border: 1px solid $lightgray
+			border-radius: 1.5em
+			font-size: 1.14rem
+		i.fa-search
+			position: absolute
+			top: 9px
+			right: 9px
+			display: block
+			padding: 10px
+			font-size: 1.5rem
+			cursor: pointer
+		button
+			@extend .contents__block .btn-more
+			margin: 20px auto 0
+			background: $red
+			border: none
+			color: $white
+			font-size: 1.29rem
+			font-weight: bold
+			line-height: 40px
+	.pickup
+		width: 1120px
+		margin: 0 auto
+		h3
+			padding: .25em 1em
+			background: $red
+			color: $white
+			font-size: 1.14rem
+			font-weight: bold
+		.pickup-slides
+			position: relative
+			padding: 10px 30px
+			.slick-prev,.slick-next
+				position: absolute
+				top: 10px
+				width: 30px
+				height: 200px
+				background: $gray3
+				color: $white
+				text-align: center
+				&:hover
+					opacity: .5
+				i
+					display: block
+					width: 1em
+					height: 1em
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					margin: auto
+			.slick-prev
+				left: 0
+			.slick-next
+				right: 0
+			.slick-track
+				padding: 10px 0
+				background: $white
+			.slick-slide
+				margin: 0 10px
+				background: $white
+				box-shadow: rgba(0,0,0,.2) 0 0 3px
+				figure
+					width: 510px
+					display: flex
+					flex-wrap: nowrap
+					>img
+						width: 280px
+						height: 180px
+				figcaption
+					width: 230px
+					padding: 5px 10px
+					.pickup-item-area
+						small
+							display: inline-block
+							margin: 0 0 .5em
+							padding: 0 1em
+							border-radius: 1em
+							color: $white
+							font-size: .71rem
+							line-height: 2
+					a
+						display: block
+						color: $red
+						font-size: 1.14rem
+						font-weight: bold
+						&:hover
+							text-decoration: underline
+					p
+						margin-bottom: 1em
+						font-size: .87rem
+						line-height: 1.2
+					li
+						display: inline-block
+						margin: 0 0
+						padding: 0 1em
+						border-radius: 1em
+						color: $white
+						font-size: .71rem
+						line-height: 2
+					.pickup-item-charactor li
+						background: $orange
+					.pickup-item-course li
+						background: $navy
+						
+					
+/* Slider */
+.slick-slider
+	position: relative
+	display: block
+	box-sizing: border-box
+
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+	-webkit-touch-callout: none
+	-khtml-user-select: none
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	-webkit-tap-highlight-color: transparent
+
+.slick-list
+	position: relative
+	display: block
+	overflow: hidden
+	margin: 0
+	padding: 0
+.slick-list:focus
+	outline: none
+.slick-list.dragging
+	cursor: pointer
+	cursor: hand
+.slick-slider .slick-track,.slick-slider .slick-list
+	-webkit-transform: translate3d(0, 0, 0)
+	-moz-transform: translate3d(0, 0, 0)
+	-ms-transform: translate3d(0, 0, 0)
+	-o-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+.slick-track
+	position: relative
+	top: 0
+	left: 0
+	display: block
+	margin-left: auto
+	margin-right: auto
+.slick-track:before,
+.slick-track:after
+	display: table
+	content: ''
+.slick-track:after
+	clear: both
+.slick-loading .slick-track
+	visibility: hidden
+.slick-slide
+	display: none
+	float: left
+	height: 100%
+	min-height: 1px
+[dir='rtl'] .slick-slide
+	float: right
+.slick-slide img
+	display: block
+.slick-slide.slick-loading img
+	display: none
+.slick-slide.dragging img
+	pointer-events: none
+.slick-initialized .slick-slide
+	display: block
+.slick-loading .slick-slide
+	visibility: hidden
+.slick-vertical .slick-slide
+	display: block
+	height: auto
+	border: 1px solid transparent
+.slick-arrow.slick-hidden 
+	display: none
+
+
+					
+					
+// 開業セミナー
+.seminar
+	width: 100%
+	max-width: 1400px
+	margin: 0 auto
+	background: $lightgray2
+	display: flex
+	flex-wrap: nowrap
+	justify-content: center
+	header
+		width: calc(1120px / 3 - 2px)
+		background: $white
+		h2
+			height: 180px
+			background: $red
+			text-align: center
+			small
+				padding-top: 60px
+		p
+			padding: 18px 36px 18px 21px
+			text-align: justify
+			color: $gray2
+			font-size: 1rem
+			font-family: Oswald
+			line-height: 1.6
+			a
+				@extend .contents__block .btn-more
+				margin: 20px auto 0
+				background: $red
+				color: $white
+				line-height: 36px
+	article
+		width: calc(1120px / 3 - 3px)
+		margin-left: 4px
+		padding: 200px 36px 18px 21px
+		background: $white url(../img/dummy.png) no-repeat center top/ 100% 180px
+		h3
+			color: $red
+			font-size: 1.14rem
+			font-weight: bold
+		p
+			padding: .5em 0 0
+			text-align: justify
+			color: $gray2
+			font-size: 1rem
+			font-family: Oswald
+			line-height: 1.6
+		small
+			display: block
+			margin: .5em 0 0
+			color: $gray2
+			font-size: 1.07rem
+			font-family: Oswald
+		a:hover
+			h3
+				text-decoration: underline
+			p
+				text-decoration: underline
+			small
+				text-decoration: underline
+
+// 事業計画シミュレーション
+.simulation
+	background: $white
+	header
+		height: 180px
+		margin-left: calc((100% - 1120px)/2)
+		padding-right: calc((100% - 1120px)/2)
+		background: $red url(../img/dummy.png) no-repeat left top/270px 180px
+		text-align: left
+		h2
+			padding: 40px 20px 0 290px
+		p
+			padding: 0 20px 0 290px
+			color: $white
+			font-size: 1.07rem
+	>section
+		width: 1120px
+		height: 400px
+		margin: 40px auto 0
+		padding: 40px 20px 20px 340px
+		background-color: $lightgray2
+		background-image: url(../img/dummy.png), url(../img/dummy.png)
+		background-repeat: no-repeat, no-repeat
+		background-position: left top, left bottom
+		background-size: 320px 200px, 320px 200px
+		h3
+			color: $red
+			font-size: 1.71rem
+			font-weight: bold
+		p
+			margin: 1em 0 0
+			font-size: 1.07rem
+			line-height: 1.5
+		ul
+			margin: 1em 0 0
+			padding: .75em 1em
+			background: $white
+			li
+				font-size: 1.07rem
+				&:before
+					content: "■"
+					color: $red
+		a
+			@extend .contents__block .btn-more
+			margin: 20px 0 0
+			background: $red
+			color: $white
+			line-height: 40px
+
+// お知らせ
+.news
+	width: 100%
+	max-width: 1400px
+	margin: 0 auto
+	background: $lightgray2
+	display: flex
+	flex-wrap: nowrap
+	justify-content: center
+	header
+		width: calc(1120px / 3)
+		padding: 60px 0
+		background: $red
+		text-align: center
+		h2
+			text-align: center
+		a
+			@extend .contents__block .btn-more
+			margin: 70px auto 0
+			background: $white
+			color: $red
+	ul
+		width: calc(1120px / 3 * 2)
+		padding-left: 5px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		position: relative
+		margin-top: -4px
+		li
+			width: calc(50% - 2px)
+			margin-top: 4px
+			a
+				display: block
+				padding: 18px 36px 36px 21px
+				background: $white
+				color: $gray2
+				font-size: 1rem
+				line-height: 1.6
+				small
+					display: block
+					font-size: 1em
+					font-family: Oswald
+				p
+					margin: .5em 0 0
+					text-align: justify
+			a:hover
+				text-decoration: underline
+
+// contents
+.contents
+	width: 1120px
+	margin: 0 auto
+	padding: 48px 0
+	ul
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		li
+			width: calc(1120px/2 - 2px)
+			margin-bottom: 4px
+			a
+				display: block
+				height: 270px
+				padding: 110px 0 0
+				background: $gray
+				text-align: center
+				color: $black
+				font-size: 1.71rem
+				font-weight: bold
+				small
+					display: block
+					font-size: .87rem
+			a:hover
+				opacity: .5
+			
+// contacts
+address.contacts
+	width: 100%
+	max-width: 1400px
+	margin: 0 auto
+	padding: 48px 0
+	background: $lightgray2
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	dl
+		width: 480px
+		height: 330px
+		margin: 0 5px
+		padding: 48px 0
+		background: $white
+		box-shadow: rgba(0,0,0,.2) 0 0 4px
+		color: $gray2
+		font-weight: bold
+		text-align: center
+		dt
+			font-size: 1.71rem
+			font-weight: bold
+		strong>a
+			display: block
+			color: $red
+			font-size: 3.43rem
+			font-family: Oswald
+			font-style: normal
+			font-weight: normal
+		small
+			display: block
+			font-size: 1.29rem
+			font-weight: bold
+			font-style: normal
+		i
+			display: block
+			width: 86px
+			height: 86px
+			margin: 0 auto 20px
+			border: 4px solid $gray2
+			border-radius: 43px
+			color: $gray2
+			font-size: 42px
+			line-height: 80px
+			text-align: center
+		dd>a
+			@extend .contents__block .btn-more
+			width: 200px
+			height: 48px
+			border-radius: 24px
+			margin: 20px auto 0
+			background: $red
+			color: $white
+			font-size: 1.29rem
+			font-weight: bold
+			line-height: 48px
+	dl.tel
+		i
+			transform: rotate(90deg)
+		
+
+
+		
+		
+		
+// mobile
+@media screen and (max-width: 767px)
+
+	@import "_sp-top"
