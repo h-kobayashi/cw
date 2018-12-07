@@ -1,0 +1,270 @@
+
+
+// search
+
+.contents__block
+	
+	>p
+		width: 100%
+		margin: 0
+		padding: 10px
+		
+	// search block
+	.search__block
+		width: 100%
+		margin: 20px 0
+		padding-bottom: 30px
+		h3
+			font-size: 1rem
+		fieldset
+			margin-top: 10px
+			position: relative
+			strong
+				width: 8em
+				padding: 1em .5em
+				color: $gray2
+				font-size: 1rem
+				line-height: 1.1
+				text-align: right
+				position: absolute
+			label
+				padding-left: 9em
+				select,input[type=text]
+					width: calc(100% - 10em)
+				select
+					color: $gray2
+					font-size: 1rem
+					line-height: 1.1
+					padding: .6em .5em .8em
+					background: $lightgray3
+					border: none transparent
+					box-shadow: rgba(100,100,100,.1) 1px 1px 1px inset
+		button
+			height: 30px
+			margin: 40px auto 0
+			background: $red
+			border: none transparent
+			border-radius: 20px
+			color: $white
+			font-size: 1rem
+			font-weight: bold
+			line-height: 30px
+
+
+	// search list
+	.search__list
+		width: 100%
+		margin: 20px auto
+	.search__item
+		margin: 10px 5px 0
+		padding: 5px
+		display: block
+		>img
+			width: 100%
+			height: auto
+		.search-item-desc
+			padding: 10px 0
+		h3 a
+			display: block
+			margin: .5em 0
+			font-size: 1.29rem
+			line-height: 1.2
+		dl
+			clear: both
+			margin: 6px 0 0
+			dt
+				display: none
+	
+	// search nav
+	.search__nav
+		width: 100%
+		margin: 30px auto 0
+		a
+			width: 26px
+			height: 26px
+			margin: 0 5px
+			border-radius: 13px
+			font-size: 1em
+			line-height: 26px
+		a.prev,a.next
+			text-indent: 9999px
+			overflow: hidden
+			white-space: nowrap
+			position: relative
+			width: 26px
+			padding: 0
+			border-radius: 13px
+			text-align: left
+			vertical-align: top
+			i.fas
+				display: block
+				position: absolute
+				top: 5px
+				left: 7px
+				text-indent: 0
+
+				
+				
+				
+				
+				
+// detail
+
+.contents__block
+
+	// search detail
+	.search__detail
+		width: 100%
+		margin: 10px auto
+		
+		.detail__header
+			padding: 10px
+		dl
+			margin: 6px 0 0
+			padding: 0 0 0 54px
+			position: relative
+			dt
+				position: absolute
+				left: 0
+				top: 0
+				&:after
+					content: ""
+					display: block
+					width: 0
+					height: 0
+					border-top: 10px solid transparent
+					border-left: 10px solid $black
+					border-right: 10px solid transparent
+					border-bottom: 10px solid transparent
+					position: absolute
+					top: 0
+					right: -20px
+			
+		.view
+			width: 100%
+			margin: 10px auto 0
+
+		.flex-direction-nav
+			li
+				a
+					width: 17px
+					height: 90%
+					&:before
+						width: 12px
+						height: 12px
+						left: 2px
+						margin-top: -6px
+				a.flex-next
+					&:before
+						background: $white url(../img/top/next.png) no-repeat center/6px 6px
+				a.flex-prev
+					&:before
+						background: $white url(../img/top/prev.png) no-repeat center/6px 6px
+			
+	.detail__contents
+		margin: 20px 0 0
+		padding: 5px 5px 20px
+		iframe
+			height: 140px
+		h4
+			margin: 10px 10px 0
+			font-size: 1.14rem
+			line-height: 1.5
+		p
+			margin: 10px 10px 0
+			font-size: .87rem
+			line-height: 1.5
+		figure
+			margin: 10px 10px 0
+			display: block
+			img
+				display: block
+				width: 90px
+				height: 120px
+				margin: 0 auto
+			figcaption
+				padding: 5px
+				p
+					font-size: .87rem
+					min-height: 0
+						
+	
+.contact__block
+	.contact__header
+		height: auto
+		padding: 10px 0
+		h2
+			font-size: 1.29rem
+	.contact__phone
+		width: auto
+		height: auto
+		margin: 5px
+		padding: 10px
+		text-align: center
+		i.fa-phone
+			position: static
+			width: auto
+			height: auto
+			line-height: 1.75
+			display: inline-block
+			font-size: 1.29rem
+			background: none transparent
+			color: $red
+		h3
+			display: inline-block
+			font-size: 1.14rem
+			line-height: 1.75
+		p
+			strong
+				font-size: 3rem
+				line-height: 1
+			small
+				font-size: 1.14rem
+	
+	.contact__mail
+		width: 100%
+		padding: 0 0 40px
+		h3
+			height: auto
+			margin: 20px 0
+			padding: 10px 0
+			font-size: 1rem
+			line-height: 1
+		fieldset
+			margin: 20px 5px 0
+			strong
+				font-size: 1rem
+			textarea
+				height: 6em
+		.address
+			flex-wrap: wrap
+			.city
+				flex: auto
+				width: 100%
+				margin: 1px 0 0
+						
+		article
+			margin: 20px 5px 0
+			h4
+				height: auto
+				padding: 10px 0
+				font-size: 1rem
+				line-height: 1.1
+			>div
+				height: 120px
+				margin: 5px 0 0
+				padding: 5px
+				font-size: .87rem
+			
+		.btn-area
+			padding: 20px 0
+			.btn-submit
+				width: 240px
+				height: 31px
+				font-size: 1rem
+				line-height: 30px
+						
+						
+						
+						
+						

@@ -1,0 +1,554 @@
+@import "common/_font"
+@import "common/_color"
+
+.contents__block
+	
+	>p
+		width: 1120px
+		margin: 40px auto
+		color: $gray2
+		font-size: 1rem
+		line-height: 1.75
+	
+	// search block
+	.search__block
+		width: 1120px
+		margin: 0 auto
+		padding-bottom: 30px
+		background: $gray
+		h3
+			margin: 0 0 10px
+			padding: .6em 0 .4em
+			background: $black
+			text-align: center
+			color: $white
+			font-size: 1.29rem
+		dl
+			display: flex
+			flex-wrap: nowrap
+			min-height: 180px
+			margin: 2px 10px 0
+			dt
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 370px
+				background: $red
+				color: $white
+				font-size: 1.71rem
+			dd
+				flex: 1
+				padding: 0 0 0 10px
+				strong
+					display: block
+					padding: .6em 1em .4em
+					background: $white
+					text-align: left
+					color: $red
+					font-size: 1rem
+					font-weight: bold
+				fieldset
+					padding: 10px 0
+					position: relative
+					label
+						display: inline-block
+						margin-right: 1em
+						&:hover
+							color: $red
+							cursor: pointer
+					input[type=checkbox]
+						display: none
+					input + label:before
+						content: "　"
+						display: inline-block
+						width: .8rem
+						height: .8rem
+						background: transparent
+						border: 1px solid $gray2
+						position: relative
+						top: 1px
+						transition: .2s
+						margin-right: .25rem
+						font-size: 1.14rem
+						line-height: .87
+						text-indent: -2.5px
+					input:checked + label:before
+						content: "■"
+						color: $red
+					input[type=text]
+						width: 100%
+						padding: .5em 3em .5em 1.5em
+						border: 1px solid $lightgray
+						border-radius: 1.5em
+						font-size: 1.14rem
+					i.fa-search
+						position: absolute
+						top: -3px
+						right: 3px
+						display: block
+						padding: 10px
+						font-size: 1.5rem
+						cursor: pointer
+		dl:last-of-type
+			min-height: 0
+			margin-top: 20px
+			dd
+				fieldset
+					padding: 0
+		button
+			display: block
+			width: 240px
+			height: 40px
+			margin: 60px auto 0
+			background: $red
+			border: none transparent
+			border-radius: 20px
+			color: $white
+			font-size: 1.29rem
+			font-weight: bold
+			line-height: 40px
+			i
+				font-size: 1.2em
+				margin-right: .5em
+				position: relative
+				top: 1px
+			&:hover
+				opacity: .5
+
+	// search list
+	.search__list
+		width: 1120px
+		margin: 50px auto
+	.search__item
+		margin: 10px 0 0
+		background: $white
+		box-shadow: rgba(0,0,0,.2) 0 1px 3px
+		display: flex
+		flex-wrap: nowrap
+		>img
+			width: 280px
+			height: 180px
+		.search-item-desc
+			flex: 1
+			padding: 10px
+		.search-item-area
+			display: block
+			small
+				display: inline-block
+				padding: .6em 2em .4em
+				border-radius: 1em
+				color: $white
+				font-size: .7rem
+				line-height: 1
+		h3 a
+			color: $red
+			font-size: 1.29rem
+			font-weight: normal
+			&:hover
+				text-decoration: underline
+		p
+			margin: 0 0 12px
+			font-size: .87rem
+			line-height: 1.2
+		dl
+			margin: 6px 0 0
+			dt
+				display: inline-block
+				height: 20px
+				padding: .6em 1em .4em
+				background: $black
+				color: $white
+				font-size: .7rem
+				line-height: 1
+			dd
+				display: inline-block
+				margin: 0 0 2px
+				padding: .6em 1em .4em
+				background: $black
+				border-radius: 1em
+				color: $white
+				font-size: .7rem
+				line-height: 1
+			dd.disabled
+				background: $gray
+		dl.search-item-charactor dd
+			background: $orange
+		dl.search-item-course dd
+			background: $lightgray
+			&.on
+				background: $navy
+	
+	// search nav
+	.search__nav
+		width: 1120px
+		margin: 50px auto 0
+		text-align: center
+		a
+			display: inline-block
+			width: 52px
+			height: 52px
+			margin: 0 7px
+			background: none transparent
+			border: 1px solid $blue
+			border-radius: 26px
+			text-align: center
+			color: $blue
+			font-family: Oswald
+			font-size: 1.5em
+			font-weight: bold
+			line-height: 50px
+			&:hover, &.selected
+				background: $blue
+				color: $white
+			i.fas
+				display: none
+		a.prev
+			width: 130px
+			padding-right: 30px
+			border-radius: 26px 4px 4px 26px
+			text-align: right
+		a.next
+			width: 130px
+			padding-left: 30px
+			border-radius: 4px 26px 26px 4px
+			text-align: left
+			
+// detail
+
+.contents__block
+				
+	// search detail
+	.search__detail
+		width: 1120px
+		margin: 50px auto
+		background: $white
+		border: 1px solid $gray
+		box-shadow: rgba(0,0,0,.2) 0 1px 4px
+		
+		.detail__header
+			padding: 10px
+		.detail-item-area
+			display: block
+			small
+				display: inline-block
+				padding: .6em 2em .4em
+				border-radius: 1em
+				color: $white
+				font-size: .7rem
+				line-height: 1
+		h3
+			color: $red
+			font-size: 1.29rem
+			font-weight: normal
+		p
+			margin: 0 0 12px
+			font-size: .87rem
+			line-height: 1.2
+		dl
+			margin: 6px 0 0
+			dt
+				display: inline-block
+				height: 20px
+				padding: .6em 1em .4em
+				background: $black
+				color: $white
+				font-size: .7rem
+				line-height: 1
+			dd
+				display: inline-block
+				margin: 0 0 2px
+				padding: .6em 1em .4em
+				background: $black
+				border-radius: 1em
+				color: $white
+				font-size: .7rem
+				line-height: 1
+			dd.disabled
+				background: $gray
+		dl.detail-item-charactor dd
+			background: $orange
+		dl.detail-item-course dd
+			background: $lightgray
+			&.on
+				background: $navy
+			
+		.view
+			width: 680px
+			margin: 20px auto 0
+			position: relative
+			zoom: 1
+
+			.slides
+				width: 100%
+				margin: 0 auto
+				zoom: 1
+				>li
+					display: none
+					position: relative
+				img
+					max-width: 100%
+					display: block
+
+		.flex-pauseplay span
+			text-transform: capitalize
+
+		.slides:after
+			content: "."
+			display: block
+			clear: both
+			visibility: hidden
+			line-height: 0
+			height: 0
+
+		.flex-direction-nav
+			li
+				a
+					width: 34px
+					height: 399px
+					margin: 0
+					display: block
+					position: absolute
+					cursor: pointer
+					text-indent: -9999px
+					white-space: nowrap
+					overflow: hidden
+					top: 0
+					opacity: .3
+					transition: .3s
+					&:before
+						content: ""
+						display: block
+						width: 24px
+						height: 24px
+						border-radius: 12px
+						position: absolute
+						top: 50%
+						left: 5px
+						margin-top: -12px
+					&:hover
+						opacity: .6
+				a.flex-next
+					background: $black
+					right: 0
+					&:before
+						background: $white url(../img/top/next.png) no-repeat center/12px 12px
+				a.flex-prev
+					background: $black
+					left: 0
+					&:before
+						background: $white url(../img/top/prev.png) no-repeat center/12px 12px
+
+		.flex-control-thumbs
+			overflow: hidden
+			li
+				float: left
+				width: calc(100%/11)
+				cursor:pointer
+				img
+					width: 100%
+					opacity: .5
+				&:hover img, .flex-active
+					opacity: 1
+			
+	.detail__contents
+		margin: 45px 0 0
+		padding: 5px 5px 40px
+		iframe
+			width: 100%
+			height: 280px
+		h4
+			margin: 40px 30px 0
+			color: $red
+			border-bottom: 1px solid $red
+			font-size: 1.29rem
+			line-height: 2
+		p
+			margin: 10px 30px 0
+			color: $gray2
+			font-size: 1rem
+			line-height: 1.75
+		figure
+			margin: 10px 30px 0
+			display: flex
+			flex-wrap: nowrap
+			img
+				width: 180px
+				height: 240px
+			figcaption
+				flex: 1
+				padding: 0 0 0 20px
+				small
+					display: inline-block
+					padding: 0 1em
+					background: $red
+					color: $white
+					font-size: .7rem
+					line-height: 1.75
+				strong
+					display: block
+					font-size: 1rem
+					font-weight: bold
+					padding: .5rem 0
+				p
+					min-height: 11em
+					margin: 0
+					padding: 1rem
+					background: $lightgray2
+					border-radius: 6px
+					color: $gray2
+					font-size: 1.2rem
+					line-height: 1.5
+	
+.contact__block
+	width: 100%
+	background: $white
+	.contact__header
+		width: 100%
+		height: 100px
+		padding: 36px 0
+		background: $red
+		text-align: center
+		h2
+			display: inline
+			color: $white
+			font-weight: bold
+			font-size: 1.71rem
+	.contact__phone
+		width: 970px
+		height: 260px
+		margin: 50px auto 60px
+		padding: 50px 50px 50px 310px
+		box-shadow: rgba(0,0,0,.2) 0 1px 4px
+		overflow: hidden
+		position: relative
+		i.fa-phone
+			position: absolute
+			top: 0
+			left: 0
+			display: block
+			width: 260px
+			height: 260px
+			background: $red
+			color: $white
+			text-align: center
+			line-height: 260px
+			font-size: 4rem
+			transform: rotate(90deg)
+		h3
+			color: $red
+			font-size: 1.71rem
+			font-weight: bold
+		p
+			strong
+				display: block
+				color: $black
+				font-family: Lato
+				font-size: 4rem
+				font-weight: bold
+				line-height: 1.7
+			small
+				color: $gray2
+				font-size: 1.71rem
+	
+	.contact__mail
+		width: 970px
+		margin: 0 auto
+		padding: 0 0 60px
+		h3
+			height: 60px
+			margin: 0 0 30px
+			background: $red
+			color: $white
+			font-size: 1.71rem
+			font-weight: bold
+			text-align: center
+			line-height: 60px
+		fieldset
+			margin: 20px 0 0
+			strong
+				display: block
+				color: $black
+				font-size: 1.29rem
+				font-weight: bold
+			&.must strong:after
+				content: "必須"
+				display: inline-block
+				margin-left: .5rem
+				padding: .6em .5em .4em
+				background: $red
+				color: $white
+				font-size: .7rem
+				line-height: 1
+				vertical-align: middle
+				position: relative
+				top: -1px
+			input[type=text]
+				width: 100%
+			textarea
+				width: 100%
+				height: 12em
+		.postcode,.address
+			display: flex
+			flex-wrap: nowrap
+		.postcode
+			input[type=text]
+				width: 200px
+			.btn-zip
+				width: 5em
+				background: $black
+				border: none transparent
+				color: $white
+		.address
+			margin: 1px 0 0
+			.pref
+				width: 200px
+			.city
+				flex: 1
+				margin: 0 0 0 1px
+		article
+			margin: 20px 0 0
+			h4
+				height: 40px
+				background: $red
+				color: $white
+				font-size: 1.14rem
+				font-weight: bold
+				text-align: center
+				line-height: 40px
+			>div
+				width: 100%
+				height: 240px
+				margin: 5px 0 0
+				padding: 15px
+				border: 1px solid $gray
+				box-shadow: rgba(0,0,0,.2) 1px 1px 2px inset
+				overflow: auto
+				font-size: 1.14rem
+				h5
+					margin: 0 0 .5em
+					font-weight: bold
+					font-size: 1em
+				dl
+					margin-bottom: 1.5em
+			.checklist
+				margin: 0
+			
+		.btn-area
+			padding: 50px 0
+			text-align: center
+			.btn-submit
+				width: 480px
+				height: 42px
+				background: $red
+				border: none transparent
+				border-radius: 21px
+				color: $white
+				font-size: 1.29rem
+				line-height: 42px
+			
+			
+// mobile
+@media screen and (max-width: 767px)
+
+	@import "_sp-search.styl"
+	

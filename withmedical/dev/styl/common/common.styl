@@ -30,32 +30,6 @@ a
 h1,h2,h3,h4,h5,h6,b,strong,dt,th
 	font-weight: normal
 
-fieldset
-	display: block
-	margin: 0
-	padding: 0
-	font-weight: normal
-	border: none
-
-select
-	outline: none
-	text-indent: .01px
-	text-overflow: ''
-	background: none transparent
-	vertical-align: middle
-	font-size: inherit
-	color: inherit
-	-webkit-appearance: button
-	-moz-appearance: button
-	appearance: button
-	option
-		background: white
-		color: $black
-select::-ms-expand
-	display: none
-select::-moz-focusring
-	color: transparent
-	text-shadow: 0 0 0 #828c9a
 
 .wrapper
 	width: 100%
@@ -118,7 +92,7 @@ select::-moz-focusring
 
 @import '_header'
 @import '_footer'
-@import '_font'
+@import '_form'
 		
 
 
@@ -162,6 +136,8 @@ select::-moz-focusring
 			padding: 10px
 			font-size: .87rem
 		
+	.pconly
+		display: none !important
 
 
 		

@@ -51,6 +51,33 @@
     transform: rotate(0.001deg);
   }
 }
+.hokkaidou {
+  background: #69c;
+}
+.touhoku {
+  background: #52bbd1;
+}
+.kantou {
+  background: #71d5cb;
+}
+.tyuubu {
+  background: #c0c743;
+}
+.kinki {
+  background: #efb838;
+}
+.tyuugoku {
+  background: #f58c3f;
+}
+.shikoku {
+  background: #f1a296;
+}
+.kyuushuu {
+  background: #e77a72;
+}
+.okinaw {
+  background: #e05147;
+}
 .contents__block .flowchart {
   max-width: 100%;
   margin: 40px 0 0;

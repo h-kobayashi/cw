@@ -1,236 +1,163 @@
+fieldset
+	display: block
+	margin: 0
+	padding: 0
+	font-weight: normal
+	border: none
 
-@import "_color"
+input[type=text]
+	color: $gray2
+	font-size: 1.29rem
+	line-height: 1.1
+	padding: 1em .5em
+	background: $lightgray3
+	border: none transparent
+	box-shadow: rgba(100,100,100,.1) 1px 1px 1px inset
 
-// step
-.form-step
-	margin: 30px 0
-	li
-		@extend .m
-		list-style: none
-		display: inline-block
-		height: 45px
-		margin-right: -11px
-		background-repeat: no-repeat
-		background-position: 0 0
-		background-size: contain
-		text-align: center
-		color: white
-		font-size: 1.2em
-		line-height: 45px
-	li:nth-of-type(1)
-		width: 291px
-		background-image: url(../img/inquiries/form_step1_off.png)
-	li:nth-of-type(1).on
-		background-image: url(../img/inquiries/form_step1_on.png)
-	li:nth-of-type(2)
-		width: 292px
-		background-image: url(../img/inquiries/form_step2_off.png)
-	li:nth-of-type(2).on
-		background-image: url(../img/inquiries/form_step2_on.png)
-	li:nth-of-type(3)
-		width: 281px
-		background-image: url(../img/inquiries/form_step3_off.png)
-	li:nth-of-type(3).on
-		background-image: url(../img/inquiries/form_step3_on.png)
+textarea
+	color: $gray2
+	font-size: 1.29rem
+	line-height: 1.1
+	padding: 1em .5em
+	border: 1px solid $gray
+	box-shadow: rgba(0,0,0,.2) 1px 1px 2px inset
+	
 
-// form body
-.contents-area section.form-body
-	margin-top: 0
-	>p
-		font-size: 1em
+:placeholder-shown
+	color: $lightgray
+::-webkit-input-placeholder
+	color: $lightgray
+:-moz-placeholder
+	color: $lightgray
+::-moz-placeholder
+	color: $lightgray
+:-ms-input-placeholder
+	color: $lightgray
 
-.error-list
-	margin: 20px 0 0
-	li
-		list-style: none
-		color: $red
-		font-size: 1.2em
-		text-align: center
-		&:before
-			content: "*"
-
-// form table
-.form-table
+.select, .select>select
+	color: $gray2
+	display: block
+	font-size: 1.29rem
+	line-height: 1.1
+.select>select
 	width: 100%
-	margin: 20px 0 0
-	border: 2px solid $gray
-	th,td
-		padding: 20px
-		border: 1px solid $gray
-		font-size: 1rem
-		vertical-align: middle
-		small
-			display: block
-			margin: .5em 0 0
-			font-size: .75em
-		li:not(:last-of-type)
-			margin-bottom: .5em
-	th
-		@extend .m
-		width: 13em
-	td.must,td.any
-		@extend .m
-		width: 6em
-		text-align: center
-		font-size: 1em
-	td.must
-		background: $lightpink
-		color: $pink
-	td.any
-		background: $lightgray2
-	input[type=radio],input[type=checkbox]
+	position: absolute
+	top: 0
+	left: 0
+	padding: 1em 0
+	height: 60px
+	opacity: 0
+	background: none transparent
+	border: 0 none
+	z-index: 2
+	cursor: pointer
+.select
+	position: relative
+	width: 200px
+	padding: 1em .5em
+	background: $lightgray3
+	cursor: pointer	
+	box-shadow: rgba(100,100,100,.1) 1px 1px 1px inset
+.select::after
+	content: "▼"
+	color: $lightgray
+	position: absolute
+	right: 0
+	top: 0
+	padding: 1em .5em
+	z-index: 1
+	cursor: pointer
+.label-desc
+	&.default
+		color: $lightgray
+		
+.radiolist
+	padding: .25em 0
+	font-size: 1.29rem
+	input[type=radio]
 		display: none
-		& + label
-			margin-right: 1rem
-	input[type=radio] + label:before
-		content: ""
-		display: inline-block
-		width: 1.2rem
-		height: 1.2rem
-		background: white
-		border: 2px solid $lightgreen
-		border-radius: .7rem
-		position: relative
-		top: 0
-		margin-right: .5rem
-		vertical-align: text-top
-		color: $lightgreen
-		line-height: 1.1
-		text-align: center
-	input[type=radio]:checked + label:before
+	label:before
 		content: "●"
-		background: none
-	input[type=checkbox] + label:before
-		content: ""
 		display: inline-block
-		width: 1.2rem
-		height: 1.2rem
-		background: white
-		border: 2px solid $lightgreen
-		position: relative
-		top: 1px
-		margin-right: .5rem
-		color: white
-		font-size: 1.4rem
-		vertical-align: text-top
-		line-height: 1
-	input[type=checkbox]:checked + label:before
-		background: $lightgreen
-		content: "✓"
-	input[type=text],textarea
-		box-sizing: border-box
-		display: block
-		width: 100%
-		padding: .5em .75em
-		border: 1px solid $lightgreen
-		border-radius: 5px
-	.btn-green
-		display: inline-block
-		padding: .5em .75em
-		background: $green2
-		border: 1px solid $green2
-		border-radius: 5px
-		color: white
-		&:hover
-			background: $green2_o
-			border-color: $green2_o
-	.err
-		background: $lightpink
-		color: $red
-	fieldset:not(.select) + fieldset
-		margin-top: 1em
-
-// policy check
-.policy-check
-	margin: 40px 0 0
-	h3
-		@extend .r
-		color: $pink
-		line-height: 1.5
-		&:before
-			content: url(../img/ad/form_icon01.png)
-			display: inline-block
-			margin: 0 .5em 0 0
-			vertical-align: middle
-		small
-			display: inline-block
-			padding: 0 .5em
-			background: $lightpink
-			color: $pink
-	fieldset
-		display: block
-		padding: 1em
-		font-size: 1.1em
+		width: 1.25em
+		height: 1.25em
+		margin-right: .15em
+		background: $lightgray3
+		border-radius: .7em
 		text-align: center
-		input[type=checkbox]
-			display: none
-		label
-			margin-right: 1rem
+		color: $lightgray3
+		line-height: 1.33
+		position: relative
+		top: -1px
+		box-shadow: rgba(100,100,100,.1) 1px 1px 1px inset
+	input:checked + label:before
+		color: $cian
+	span
+		display: inline-block
+		margin-right: 1em
+		
+.checklist
+	padding: .25em 0
+	font-size: 1.29rem
+	input[type=checkbox]
+		display: none
+	label
+		display: inline-block
+		margin-bottom: 5px
+	label:before
+		content: "✔"
+		display: inline-block
+		width: 1.25em
+		height: 1.25em
+		margin-right: .15em
+		background: $lightgray3
+		text-align: center
+		color: $lightgray3
+		line-height: 1.33
+		position: relative
+		top: -1px
+		box-shadow: rgba(100,100,100,.1) 1px 1px 1px inset
+	input:checked + label:before
+		color: $cian
+	span
+		display: inline-block
+		margin-right: 1em
+		
+			
+			
+// mobile
+@media screen and (max-width: 767px)
+
+	input[type=text]
+		font-size: 1rem
+		padding: 1em .5em
+
+	textarea
+		font-size: 1rem
+		padding: 1em .5em
+
+	.select, .select>select
+		font-size: 1rem
+	.select>select
+		height: 43px
+
+	.radiolist
+		font-size: 1rem
 		label:before
-			content: ""
-			display: inline-block
-			width: 1.2rem
-			height: 1.2rem
-			background: white
-			border: 2px solid $lightgreen
-			position: relative
-			top: 1px
-			margin-right: .5rem
-			color: white
-			font-size: 1.4rem
-			vertical-align: text-top
-			line-height: 1
-		input:checked + label:before
-			content: "✓"
-			background: $lightgreen
-	article
-		padding: 10px 15px 10px 25px
-		border: 2px solid $gray
-		>div
-			height: 145px
-			overflow: auto
-			font-size: 1em
-			line-height: 1.75
+			font-size: 1.29rem
+			line-height: 1.4
+		span
+			vertical-align: top
 
-.btn-area
-	padding: 30px 0 0
-	text-align: center
-	.btn-submit
-		width: 280px
-		margin: 0 .5em
-		padding: 1.5rem
-		border: none
-		border-radius: 4px
-		font-size: 1.5rem
-	.btn-cancel
-		width: 280px
-		margin: 0 .5em
-		padding: 1.5rem
-		border: none
-		border-radius: 4px
-		font-size: 1.5rem
+	.checklist
+		font-size: 1rem
+		label:before
+			font-size: 1.29rem
+		span
+			vertical-align: top
+			min-width: 4em
 
-// form end
-.contents-area section.form-end
-	margin-top: 0
-	text-align: center
-	>h3
-		@extend .b
-		margin: 40px auto
-		font-size: 1.5em
-		letter-spacing: .25em
-	>p
-		font-size: 1.2em
-	>a
-		display: block
-		width: 240px
-		margin: 60px auto
-		padding: .75rem
-		border: 1px solid $pink
-		border-radius: 4px
-		color: $pink
-		font-size: 1.2rem
-		&:hover
-			border-color: $darkpink
-			color: $darkpink
+
+
+		
 		

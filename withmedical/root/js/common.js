@@ -19,7 +19,7 @@
   });
 
   jQuery(document).ready(function($) {
-    return $(window).on('load', function() {
+    $(window).on('load', function() {
       var fith, hh, wh, ww;
       ww = $(window).width();
       if (ww > 767) {
@@ -34,6 +34,29 @@
           }
         });
       }
+    });
+    $(document).on('click touched', function(event) {
+      var ww;
+      ww = $(window).width();
+      if (ww < 768 && !$(event.target).closest('.globalnav').length) {
+        console.log('test');
+        return $('.globalnav input').prop('checked', false);
+      }
+    });
+    $('select').on('change', function() {
+      var label, labelFor, selection;
+      selection = $(this).find('option:selected').text();
+      labelFor = $(this).attr('id');
+      label = $('[for=\'' + labelFor + '\']');
+      label.find('.label-desc').html(selection);
+      if (selection === "都道府県") {
+        label.find('.label-desc').addClass('default');
+      } else {
+        label.find('.label-desc').removeClass('default');
+      }
+    });
+    return $('.btn-zip').on('click', function() {
+      return AjaxZip3.zip2addr('zip', '', 'pref', 'city');
     });
   });
 

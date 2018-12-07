@@ -1,0 +1,140 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 医院開業のトータルサポート「WithMedical」
+		link(rel="stylesheet", media="all", href="https://use.fontawesome.com/releases/v5.0.6/css/all.css")
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/search.css")
+	body.top
+		.wrapper
+
+			include _header.pug
+			
+			main.contents__container
+				.contents__block
+					header.contents__header
+						h2
+							small Search
+							| 医院開業物件紹介
+					
+					p メディカルｘｘｘでは、診療所・クリニックの開業に適した物件を厳選してご紹介しております。<br>医院開業では、その第一歩である立地選定を間違えないことが非常に大切です。<br>確かな経験と実績、そして診療圏調査結果に基づき、医院開業を成功へ導く第一歩を我々とともに歩みだしましょう。
+				
+					// 検索エリア
+					section.search__block
+						h3 物件検索
+							i.fas.fa-chevron-circle-down
+						.pconly
+							dl
+								dt STEP1
+								dd
+									strong 地域選択
+									fieldset
+										- var list = ['北海道','東北','関東','中部','近畿','中国','四国','九州','沖縄']
+										each item, index in list
+											input(type="checkbox", name="searchArea", id="searchArea" + index)
+											label(for="searchArea" + index)
+												| #{item}
+							dl
+								dt STEP2
+								dd
+									strong 物件特徴
+									fieldset
+										- var list = ['戸建て','医療ビル','商業施設内','継承案件','新築','駅近']
+										each item, index in list
+											input(type="checkbox", name="searchCharactor", id="searchCharactor" + index)
+											label(for="searchCharactor" + index)
+												| #{item}
+							dl
+								dt STEP3
+								dd
+									strong 診療科目
+									fieldset
+										- var list = ['内科','小児科','整形外科','精神科']
+										each item, index in list
+											input(type="checkbox", name="searchCourse", id="searchCourse" + index)
+											label(for="searchCourse" + index)
+												| #{item}
+							dl
+								dt フリーワード検索
+								dd
+									fieldset
+										input(type="text", name="searchWord", placeholder="地名・駅名などキーワードを入力してください")
+										i.fas.fa-search
+						.sponly
+							fieldset
+								strong 地域
+								label: select(name="searchAreaSP")
+									- var list = ['指定なし','北海道','東北','関東','中部','近畿','中国','四国','九州','沖縄']
+									each item in list
+										option(value= item)= item
+							fieldset
+								strong 特徴
+								label: select(name="searchCharactorSP")
+									- var list = ['指定なし','戸建て','医療ビル','商業施設内','継承案件','新築','駅近']
+									each item in list
+										option(value= item)= item
+							fieldset
+								strong 診療科目
+								label: select(name="searchCourseSP")
+									- var list = ['指定なし','内科','小児科','整形外科','精神科']
+									each item in list
+										option(value= item)= item
+							fieldset
+								strong フリーワード
+								label: input(type="text", name="searchWordSP", placeholder="地名・駅名などを入力してください")
+										
+						button 検索
+				
+					section.search__list
+
+						- for (var i = 0; i < 5; i++)
+							// item
+							.search__item
+								img(src="img/search/sample_photo.jpg")
+								.search-item-desc
+									.search-item-area: small.kantou 関東
+									h3: a(href="detail.html") 恵比寿メディカルセンター
+									p 東京都渋谷区恵比寿南１－１<br>JR恵比寿駅から徒歩３分
+									dl.search-item-charactor
+										dt 特徴
+										- var list = ['戸建','医療ビル','商業施設内','継承案件','新築','駅近']
+										each item, index in list
+											dd= item
+									dl.search-item-course
+										dt 科目
+										dd.on 内科
+										dd 小児科
+										dd 耳鼻咽喉科
+										dd 泌尿器科
+										dd 整形外科
+										dd.on 皮膚科
+										dd 眼科
+										dd.on 産婦人科
+										dd 心療内科
+										dd.on その他
+					
+						nav.search__nav
+							a(href="").prev
+								i.fas.fa-chevron-left
+								| Prev
+							a(href="").selected 1
+							a(href="") 2
+							a(href="") 3
+							a(href="") 4
+							a(href="") 5
+							a(href="").next
+								i.fas.fa-chevron-right
+								| Next							
+					
+			include _footer.pug
+			
+			include _fixheader.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery.flexslider-min.js")
+		script(type="text/javascript", src="js/ajaxzip3.js")
+		script(type="text/javascript", src="js/common.js")
+		script(type="text/javascript", src="js/search.js")
+

@@ -75,7 +75,7 @@
 .kyuushuu {
   background: #e77a72;
 }
-.okinawa {
+.okinaw {
   background: #e05147;
 }
 .branding__container {
@@ -145,18 +145,18 @@
   -ms-filter: none;
   filter: none;
 }
-.flex-direction-nav li a.next {
+.flex-direction-nav li a.flex-next {
   background: url("../img/top/next.png");
   right: 2%;
 }
-.flex-direction-nav li a.next:hover {
+.flex-direction-nav li a.flex-next:hover {
   right: 2.1%;
 }
-.flex-direction-nav li a.prev {
+.flex-direction-nav li a.flex-prev {
   background: url("../img/top/prev.png");
   left: 2%;
 }
-.flex-direction-nav li a.prev:hover {
+.flex-direction-nav li a.flex-prev:hover {
   left: 2.1%;
 }
 .flex-control-nav,
@@ -1213,7 +1213,7 @@ address.contacts dl.tel i {
     font-size: 0.87rem;
   }
   .contents__block .search .search-attribute i.fa-search {
-    top: 0;
+    top: -3px;
     font-size: 1rem;
   }
   .contents__block .search .search-attribute button {
@@ -1297,12 +1297,13 @@ address.contacts dl.tel i {
     line-height: 1;
   }
   .contents__block .search .pickup .pickup-slides .slick-slide figcaption ul {
-    letter-spacing: -0.2em;
+    letter-spacing: 0;
     line-height: 1.2;
   }
   .contents__block .search .pickup .pickup-slides .slick-slide figcaption li {
-    margin: 0 0;
-    line-height: 1.5;
+    margin: 0 0 2px;
+    padding: 0.5em 1em 0.3em;
+    line-height: 1.1;
     letter-spacing: 0;
   }
   .contents__block .search .pickup .pickup-slides .slick-slide figcaption .pickup-item-charactor {
@@ -1336,7 +1337,7 @@ address.contacts dl.tel i {
     margin: 20px 0 0 -120px;
     background: #bd3613;
     color: #fff;
-    line-height: 36px;
+    line-height: 40px;
     position: absolute;
     bottom: 30px;
     left: 50%;
@@ -1411,7 +1412,8 @@ address.contacts dl.tel i {
     height: 30px;
     margin: 10px auto 0;
     font-size: 1rem;
-    line-height: 29px;
+    font-style: normal;
+    line-height: 31px;
   }
   .contents__block .simulation {
     display: block;
@@ -1554,7 +1556,7 @@ address.contacts dl.tel i {
     margin: 20px 0 0 -120px;
     background: #bd3613;
     color: #fff;
-    line-height: 39px;
+    line-height: 40px;
     position: absolute;
     bottom: 30px;
     left: 50%;
