@@ -48,3 +48,17 @@ jQuery(document).ready ($) ->
 			$('.header').addClass('fixed')
 		else
 			$('.header').removeClass('fixed')
+			
+	#select
+	$(".form-select select").minimalect
+		placeholder: "選択してください"
+	
+	$('#entry__item03year').minimalect
+		placeholder: "年"
+	
+	$('#entry__item03month').minimalect
+		placeholder: "月"
+	
+	$('#entry__item03day').minimalect
+		placeholder: "日"
+	

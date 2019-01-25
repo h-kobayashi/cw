@@ -1,0 +1,434 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 川越市のお仕事に特化した“お祝い金がもらえる”地元密着求人サイト「川越オーボ」
+		link(rel="stylesheet", media="all", href="css/common/sp_common.css")
+		link(rel="stylesheet", media="all", href="css/sp_list.css")
+	body.list
+		.wrapper
+			
+			// ヘッダー
+			header.header__wrapper
+				.header
+					include _sp_header.pug
+			
+			// メニュー
+			include _sp_globalnav.pug
+			
+			main.main
+				
+				.contents-area
+				
+					// 特集バナー
+					img(src="img/list/sp/bnr_tokushu_06.png", alt="").special-header
+					
+					// 検索結果一覧
+					section.list-items
+						p.item-number
+							strong 123
+								small 件
+							| の求人情報が見つかりました
+						nav
+							.item-sort
+								a(href="javascript:void(0)").selected おすすめ順
+								a(href="javascript:void(0)") 新着順
+								a(href="javascript:void(0)") 給与順
+						ul
+							li.pritem.part
+								.celebration 祝い金<strong>3,000</strong>円
+								.item-header
+									a(href="") アトレ・PePe・駅ビルエリア
+									p 時の鐘近く。川越駅から徒歩10分圏内。お団子屋さんとなり。
+								h3 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタッフとして川越祭りに参加しませんか？
+								.item-status
+									figure
+										img(src="img/top/sp/job_img01.png", width="90")
+										span.jobtype
+											a(href="") 飲食フード
+											small （販売スタッフ）
+										span.jobpay 時給<b>1200</b>円
+									table
+										tr
+											th 出勤日数
+											td 週<strong>2</strong>日以上
+										tr
+											th 勤務期間
+											td 単発
+										tr
+											th 勤務時間帯
+											td
+												a(href="") 朝・昼
+												small (9:00～17:30内)
+								.item-characters
+									ul
+										each val in ["高校生歓迎","主婦・ママ歓迎","Wワーク歓迎","シニア歓迎","フリーター歓迎","未経験歓迎","外国人歓迎","交通費支給"]
+											li= val
+								.btn-area
+									a(href="javascript:void(0)").btn-keep キープする
+									a(href="./detail.html").btn-more お仕事情報を詳しく見る
+								.item-footer
+									small 株式会社US
+									small 求人掲載受付け：2018/3/31
+									
+							li.pritem.full
+								.celebration 祝い金<strong>3,000</strong>円
+								.item-header
+									a(href="") アトレ・PePe・駅ビルエリア
+									p 時の鐘近く。川越駅から徒歩10分圏内。お団子屋さんとなり。
+								h3 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタッフとして川越祭りに参加しませんか？
+								.item-status
+									figure
+										img(src="img/top/sp/job_img01.png", width="90")
+										span.jobtype
+											a(href="") 飲食フード
+											small （販売スタッフ）
+										span.jobpay 時給<b>1200</b>円
+									table
+										tr
+											th 出勤日数
+											td 週<strong>2</strong>日以上
+										tr
+											th 勤務期間
+											td 単発
+										tr
+											th 勤務時間帯
+											td
+												a(href="") 朝・昼
+												small (9:00～17:30内)
+								.item-characters
+									ul
+										each val in ["高校生歓迎","主婦・ママ歓迎","Wワーク歓迎","シニア歓迎","フリーター歓迎","未経験歓迎","外国人歓迎","交通費支給"]
+											li= val
+								.btn-area
+									a(href="javascript:void(0)").btn-keep キープする
+									a(href="./detail.html").btn-more お仕事情報を詳しく見る
+								.item-footer
+									small 株式会社US
+									small 求人掲載受付け：2018/3/31
+									
+							li.listitem.part
+								.celebration 祝い金<strong>3,000</strong>円
+								.item-header
+									a(href="") アトレ・PePe・駅ビルエリア
+									p 時の鐘近く。川越駅から徒歩10分圏内。お団子屋さんとなり。
+								h3 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタッフとして川越祭りに参加しませんか？
+								.item-status
+									figure
+										img(src="img/top/sp/job_img01.png", width="90")
+										span.jobtype
+											a(href="") 飲食フード
+											small （販売スタッフ）
+										span.jobpay 時給<b>1200</b>円
+									table
+										tr
+											th 出勤日数
+											td 週<strong>2</strong>日以上
+										tr
+											th 勤務期間
+											td 単発
+										tr
+											th 勤務時間帯
+											td
+												a(href="") 朝・昼
+												small (9:00～17:30内)
+								.item-characters
+									ul
+										each val in ["高校生歓迎","主婦・ママ歓迎","Wワーク歓迎","シニア歓迎","フリーター歓迎","未経験歓迎","外国人歓迎","交通費支給"]
+											li= val
+								.btn-area
+									a(href="javascript:void(0)").btn-keep キープする
+									a(href="./detail.html").btn-more お仕事情報を詳しく見る
+								.item-footer
+									small 株式会社US
+									small 求人掲載受付け：2018/3/31
+									
+							li.listitem.full
+								.celebration 祝い金<strong>3,000</strong>円
+								.item-header
+									a(href="") アトレ・PePe・駅ビルエリア
+									p 時の鐘近く。川越駅から徒歩10分圏内。お団子屋さんとなり。
+								h3 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタッフとして川越祭りに参加しませんか？
+								.item-status
+									figure
+										img(src="img/top/sp/job_img01.png", width="90")
+										span.jobtype
+											a(href="") 飲食フード
+											small （販売スタッフ）
+										span.jobpay 時給<b>1200</b>円
+									table
+										tr
+											th 出勤日数
+											td 週<strong>2</strong>日以上
+										tr
+											th 勤務期間
+											td 単発
+										tr
+											th 勤務時間帯
+											td
+												a(href="") 朝・昼
+												small (9:00～17:30内)
+								.item-characters
+									ul
+										each val in ["高校生歓迎","主婦・ママ歓迎","Wワーク歓迎","シニア歓迎","フリーター歓迎","未経験歓迎","外国人歓迎","交通費支給"]
+											li= val
+								.btn-area
+									a(href="javascript:void(0)").btn-keep キープする
+									a(href="./detail.html").btn-more お仕事情報を詳しく見る
+								.item-footer
+									small 株式会社US
+									small 求人掲載受付け：2018/3/31
+						
+						a(href="")
+							img(src="img/top/sp/top_bnr_03.jpg", width="300", alt="会員登録不要！気になる求人はキープ機能で後からチェックできます")
+					
+						ul
+									
+							li.listitem.part
+								.celebration 祝い金<strong>3,000</strong>円
+								.item-header
+									a(href="") アトレ・PePe・駅ビルエリア
+									p 時の鐘近く。川越駅から徒歩10分圏内。お団子屋さんとなり。
+								h3 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタッフとして川越祭りに参加しませんか？
+								.item-status
+									figure
+										img(src="img/top/sp/job_img01.png", width="90")
+										span.jobtype
+											a(href="") 飲食フード
+											small （販売スタッフ）
+										span.jobpay 時給<b>1200</b>円
+									table
+										tr
+											th 出勤日数
+											td 週<strong>2</strong>日以上
+										tr
+											th 勤務期間
+											td 単発
+										tr
+											th 勤務時間帯
+											td
+												a(href="") 朝・昼
+												small (9:00～17:30内)
+								.item-characters
+									ul
+										each val in ["高校生歓迎","主婦・ママ歓迎","Wワーク歓迎","シニア歓迎","フリーター歓迎","未経験歓迎","外国人歓迎","交通費支給"]
+											li= val
+								.btn-area
+									a(href="javascript:void(0)").btn-keep キープする
+									a(href="./detail.html").btn-more お仕事情報を詳しく見る
+								.item-footer
+									small 株式会社US
+									small 求人掲載受付け：2018/3/31
+									
+							li.listitem.full
+								.celebration 祝い金<strong>3,000</strong>円
+								.item-header
+									a(href="") アトレ・PePe・駅ビルエリア
+									p 時の鐘近く。川越駅から徒歩10分圏内。お団子屋さんとなり。
+								h3 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタッフとして川越祭りに参加しませんか？
+								.item-status
+									figure
+										img(src="img/top/sp/job_img01.png", width="90")
+										span.jobtype
+											a(href="") 飲食フード
+											small （販売スタッフ）
+										span.jobpay 時給<b>1200</b>円
+									table
+										tr
+											th 出勤日数
+											td 週<strong>2</strong>日以上
+										tr
+											th 勤務期間
+											td 単発
+										tr
+											th 勤務時間帯
+											td
+												a(href="") 朝・昼
+												small (9:00～17:30内)
+								.item-characters
+									ul
+										each val in ["高校生歓迎","主婦・ママ歓迎","Wワーク歓迎","シニア歓迎","フリーター歓迎","未経験歓迎","外国人歓迎","交通費支給"]
+											li= val
+								.btn-area
+									a(href="javascript:void(0)").btn-keep キープする
+									a(href="./detail.html").btn-more お仕事情報を詳しく見る
+								.item-footer
+									small 株式会社US
+									small 求人掲載受付け：2018/3/31
+									
+						a(href="")
+							img(src="img/top/sp/bnr_oiwai.jpg", width="300", alt="川越オーボで仕事が決まるとお祝い金もらえます！詳しくはこちら")
+					
+					// その他の求人
+					section.other-items
+						h2 その他の川越エリアの飲食求人
+						ul
+							li.otheritem_s.full: a(href="")
+								.celebration 祝い金<strong>3,000</strong>円
+								.item-header
+									a(href="") アトレ・PePe・駅ビルエリア
+									p 時の鐘近く。川越駅から徒歩10分圏内。お団子屋さんとなり。
+								h3 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタッフとして川越祭りに参加しませんか？
+								.item-status
+									figure
+										img(src="img/top/pc/job_img01.png")
+									table
+										tr
+											th 職種
+											td: a(href="") 飲食フード
+										tr
+											th 給与
+											td 月給<strong>22万</strong>円
+										tr
+											th 日数
+											td 週2日以上
+										tr
+											th 期間
+											td 単発
+										tr
+											th 時間帯
+											td: a(href="") 朝・昼
+							li.otheritems_s.part: a(href="")
+								.celebration 祝い金<strong>3,000</strong>円
+								.item-header
+									a(href="") アトレ・PePe・駅ビルエリア
+									p 時の鐘近く。川越駅から徒歩10分圏内。お団子屋さんとなり。
+								h3 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタッフとして川越祭りに参加しませんか？
+								.item-status
+									figure
+										img(src="img/top/pc/job_img01.png")
+									table
+										tr
+											th 職種
+											td: a(href="") 飲食フード
+										tr
+											th 給与
+											td 時給<strong>800</strong>円
+										tr
+											th 日数
+											td 週2日以上
+										tr
+											th 期間
+											td 単発
+										tr
+											th 時間帯
+											td: a(href="") 朝・昼
+							li.otheritems_s.full: a(href="")
+								.celebration 祝い金<strong>3,000</strong>円
+								.item-header
+									a(href="") アトレ・PePe・駅ビルエリア
+									p 時の鐘近く。川越駅から徒歩10分圏内。お団子屋さんとなり。
+								h3 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタッフとして川越祭りに参加しませんか？
+								.item-status
+									figure
+										img(src="img/top/pc/job_img01.png")
+									table
+										tr
+											th 職種
+											td: a(href="") 飲食フード
+										tr
+											th 給与
+											td 月給<strong>22万</strong>円
+										tr
+											th 日数
+											td 週2日以上
+										tr
+											th 期間
+											td 単発
+										tr
+											th 時間帯
+											td: a(href="") 朝・昼
+							li.otheritems_s.part: a(href="")
+								.celebration 祝い金<strong>3,000</strong>円
+								.item-header
+									a(href="") アトレ・PePe・駅ビルエリア
+									p 時の鐘近く。川越駅から徒歩10分圏内。お団子屋さんとなり。
+								h3 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタッフとして川越祭りに参加しませんか？
+								.item-status
+									figure
+										img(src="img/top/pc/job_img01.png")
+									table
+										tr
+											th 職種
+											td: a(href="") 飲食フード
+										tr
+											th 給与
+											td 時給<strong>800</strong>円
+										tr
+											th 日数
+											td 週2日以上
+										tr
+											th 期間
+											td 単発
+										tr
+											th 時間帯
+											td: a(href="") 朝・昼
+
+					// キーワード検索
+					section.keyword-items
+						h2 人気のキーワードから求人を探す
+						ul
+							each val in ["蔵通り","丸広","川越祭り","巫女","蔵通り","丸広","川越祭り","巫女"]
+								li: a(href="")=val
+						a(href=""): img(src="img/list/sp/sp_list_bnr_01.png", width="300", alt="")
+					
+					// インフォメーション
+					section.information
+						h2 information
+						ul
+							- for (var i = 0; i < 3; i++) {
+								li
+									small 2017/06/21
+									a(href="") テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+							- }
+					
+					// 特集バナー
+					section.tokushu-area
+						a(href="").tokushu1
+							h3 オフィスワーク特集
+							p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト 
+						a(href="").tokushu2
+							h3 大学生歓迎のお仕事
+							p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト 
+					
+					// バナー
+					section.banner-area
+						a(href="")
+							img(src="img/top/pc/bnr_oiwai.jpg", alt="川越オーボで仕事が決まるとお祝い金もらえます！詳しくはこちら")
+						img(src="img/top/pc/top_bnr_04.jpg", alt="川越OBOについて")
+			
+					// おすすめ情報
+					section.special-items
+						h2 おすすめ情報
+						ul
+							li: a(href=""): img(src="img/top/sp/top_bnr_05.jpg", alt="")
+							li: a(href=""): img(src="img/top/sp/top_bnr_06.jpg", alt="")
+							li: a(href=""): img(src="img/top/sp/top_bnr_07.jpg", alt="")
+							li: a(href=""): img(src="img/top/sp/top_bnr_08.jpg", alt="")
+
+					// エリア検索・職種検索
+					section.search-items
+						h2 エリアから探す
+						ul
+							each val in ["川越市中心","芳野・古谷","南古谷","高階・新河岸","福原","大東","霞ヶ関・的場","名細・山田","クレアモール・丸広","アトレ・PePe・駅ビル","蔵のまち","川越工業団地"]
+								li: a(href="")=val
+						h2 職種から探す
+						ul
+							each val in ["飲食／フード","販売","サービス","オフィスワーク","営業","医療・介護・福祉","教育","美容・理容・サロン","建築・土木","工場・製造","軽作業・物流","その他"]
+								li: a(href="")= val
+			
+			// ポップアップ
+			.wrapper-shadow-keep
+				.keepmodal
+					p キープしました
+
+			// フッター
+			include _sp_footer.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		script(type="text/javascript", src="js/common.js")
+		script(type="text/javascript", src="js/modal.js")
+		script(type="text/javascript", src="js/searchCondition.js")

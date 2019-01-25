@@ -212,3 +212,109 @@ body.underwrapper
 			background: $pink1
 			border-color: $pink3
 
+
+// policy modal
+.wrapper-shadow-policy
+	@extend .wrapper-shadow
+	overflow: auto
+.policymodal
+	display: none
+	width: 90%
+	max-width: 1100px
+	height: auto
+	position: relative
+	margin: 45px auto
+	padding: 60px 67px 0
+	background: white
+
+	.btn-close:first-of-type
+		display: block
+		position: absolute
+		top: 20px
+		right: 20px
+	.btn-close:last-of-type
+		display: block
+		padding: 33px
+		text-align: center
+		
+	h3
+		font-size: 1.5em
+		font-weight: normal
+	>p
+		margin: 2rem 0 0
+	.footertext
+		margin: 2rem 0 0
+		text-align: right
+	dl
+		margin: 2rem 0 0
+		font-size: 1rem
+		line-height: 1.75
+		dt
+			display: block
+		dd
+			display: block
+			ol
+				li
+					list-style: decimal
+					margin-left: 1.5em
+					ol
+						li
+							list-style: none
+							margin: 0
+						li:before
+							margin-right: .5em
+						li:nth-of-type(1):before
+							content: "①"
+						li:nth-of-type(2):before
+							content: "②"
+						li:nth-of-type(3):before
+							content: "③"
+						li:nth-of-type(4):before
+							content: "④"
+						li:nth-of-type(5):before
+							content: "⑤"
+						li:nth-of-type(6):before
+							content: "⑥"
+						li:nth-of-type(7):before
+							content: "⑦"
+						li:nth-of-type(8):before
+							content: "⑧"
+						li:nth-of-type(9):before
+							content: "⑨"
+		
+		
+@media screen and (max-width: 900px)
+	
+	.policymodal
+		width: auto
+		height: auto
+		position: relative
+		margin: 15px 10px
+		padding: 60px 15px 0
+		background: white
+
+		.btn-close:first-of-type
+			display: block
+			position: absolute
+			top: 15px
+			right: 15px
+		.btn-close:last-of-type
+			display: block
+			padding: 15px
+			text-align: center
+			
+		h3
+			font-size: .79rem
+		p
+			font-size: .79rem
+		dl
+			font-size: .79rem
+			line-height: 1.75
+			dt
+				display: block
+			dd
+				display: block
+				ol
+					li
+						margin-left: 0
+						list-style-position: inside

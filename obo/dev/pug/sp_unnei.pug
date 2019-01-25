@@ -1,0 +1,132 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 川越市のお仕事に特化した“お祝い金がもらえる”地元密着求人サイト「川越オーボ」
+		link(rel="stylesheet", media="all", href="css/common/sp_common.css")
+		link(rel="stylesheet", media="all", href="css/sp_unnei.css")
+	body.unnei
+		.wrapper
+			
+			// ヘッダー
+			header.header__wrapper
+				.header
+					include _sp_header.pug
+			
+			// メニュー
+			include _sp_globalnav.pug
+			
+			.branding
+				h1: img(src="img/unnei/sp_unei_mainimg_img.png", alt="川越市の求人情報サイト「川越オーボ」")
+			
+			main.main
+				
+				.contents-area
+				
+					// OBOメッセージ
+					section.message
+						h2 OBOmessage
+						p 日本全体が採用氷河期と言われる時代になり、お金をかけても希望の人材の確保が難しくなりました。<br>需要と供給のバランスが崩れることで当然のように採用コストがあがり、<br>街の商店や企業はより一層よい人材の獲得が困難になってきています。
+						p 人材や求人サイトを扱う当社が「川越地域のためにできること」を考えて、立ち上げたのが「OBOオーボ」です。<br>「川越の商店・企業」が気軽に使え、「川越で働きたい人」が集まる求人サイト。
+						p 全国展開の求人サイトのように、あなたの求人情報が埋もれてしまっては意味がありません。<br>
+							strong 川越市内の求人情報に特化しました。
+						p 無理をして高額な掲載費用を払っても効果が無かったら意味がありません。<br>
+							strong 限られた採用コストの中で十分な成果を出していただけるよう、商店・企業様目線の掲載プランをご用意しました。
+						p 川越オーボは「川越で働きたい人」「川越市で営む人」の為の求人サイトです。<br>川越オーボをご利用頂くことで、川越市の地域活性化に繋げていきます。
+						h3 川越地域の皆さんと一緒に<br>川越オーボは育っていきます。
+					
+					// 会社概要
+					section.company
+						h2 会社概要
+						dl
+							dt 社名
+							dd 株式会社アーベインスタイル
+						dl
+							dt 所在地
+							dd KOEDO BASE : 埼玉県川越市松江町1丁目5番地５<br>本社：〒160-0023<br>東京都新宿西新宿3-1-5新宿嘉泉ビル8階<br>TEL 03-5909-3097
+						dl
+							dt 設立
+							dd 昭和62年9月
+						dl
+							dt 資本金
+							dd 3,100万円
+						dl
+							dt 代表者
+							dd 代表取締役 西澤 真
+						dl
+							dt 事業内容
+							dd
+								ul
+									li 川越求人事業
+									li 人材紹介・人材派遣事業
+									li ブライダル事業
+									li Webシステム開発事業
+						dl
+							dt 事業許可番号
+							dd 一般労働者派遣事業許可番号：般13-08-0199<br>有料職業紹介事業許可番号：13-ユ-080359
+					
+					// KOEDO BASE PROJECT
+					section.project
+						h2 KOEDO BASE PROJECT
+						p 私たちができる小さなプロジェクトが<br>「川越」に少しでも貢献できるように<br>川越地域の為にできることを<br>小江戸基地より発信していきます。
+						ul
+							li 求人
+							li 観光
+							li 防災
+							li 食
+							li 文化
+						p コエドベースプロジェクトにご協力いただける<br>川越の商店や企業様募集中です。<br>お気軽にお問合せください。
+					
+					// インフォメーション
+					section.information
+						h2 information
+						ul
+							- for (var i = 0; i < 3; i++) {
+								li
+									small 2017/06/21
+									a(href="") テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+							- }
+					
+					// 特集バナー
+					section.tokushu-area
+						a(href="").tokushu1
+							h3 オフィスワーク特集
+							p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト 
+						a(href="").tokushu2
+							h3 大学生歓迎のお仕事
+							p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト 
+					
+					// バナー
+					section.banner-area
+						a(href="")
+							img(src="img/top/pc/bnr_oiwai.jpg", alt="川越オーボで仕事が決まるとお祝い金もらえます！詳しくはこちら")
+						img(src="img/top/pc/top_bnr_04.jpg", alt="川越OBOについて")
+			
+					// おすすめ情報
+					section.special-items
+						h2 おすすめ情報
+						ul
+							li: a(href=""): img(src="img/top/sp/top_bnr_05.jpg", alt="")
+							li: a(href=""): img(src="img/top/sp/top_bnr_06.jpg", alt="")
+							li: a(href=""): img(src="img/top/sp/top_bnr_07.jpg", alt="")
+							li: a(href=""): img(src="img/top/sp/top_bnr_08.jpg", alt="")
+
+					// エリア検索・職種検索
+					section.search-items
+						h2 エリアから探す
+						ul
+							each val in ["川越市中心","芳野・古谷","南古谷","高階・新河岸","福原","大東","霞ヶ関・的場","名細・山田","クレアモール・丸広","アトレ・PePe・駅ビル","蔵のまち","川越工業団地"]
+								li: a(href="")=val
+						h2 職種から探す
+						ul
+							each val in ["飲食／フード","販売","サービス","オフィスワーク","営業","医療・介護・福祉","教育","美容・理容・サロン","建築・土木","工場・製造","軽作業・物流","その他"]
+								li: a(href="")= val
+
+			// フッター
+			include _sp_footer.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		script(type="text/javascript", src="js/common.js")

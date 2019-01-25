@@ -1,0 +1,262 @@
+
+@import "common/_color"
+
+.contents-area
+	
+	// search conditions
+	.search-conditions
+		margin-top: 15px
+		h2
+			font-size: 1.3rem
+			&:before
+				margin-right: .75em
+		.type-select
+			display: block
+			position: relative
+			text-align: center
+			margin-top: 15px
+			ul
+				position: relative
+				width: 90%
+				margin: 0 auto
+			li
+				width: 33%
+			span
+				height: 41px
+				line-height: 41px
+				cursor: pointer
+			span.selected
+				height: 48px
+				line-height: 48px
+				position: relative
+				bottom: -1px
+		section
+			margin-top: 0
+			padding: 10px 10px 0
+			border-bottom: none
+			position: relative
+			color: $black2
+			$.search-all
+				padding-top: 12px
+			&.search-part
+				margin-top: 0
+				border-top: 3px solid $orange
+			&.search-full
+				margin-top: 0
+				border-top: 3px solid $blue
+			>p
+				margin: .25em
+				font-size: .87rem
+			.search-item
+				display: flex
+				flex-wrap: nowrap
+				padding: 5px 0
+				border-bottom: 1px solid $gray
+				label
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 55px
+					margin: 0 5px 0 0
+					padding: 1em
+					background: $green2
+					border-radius: 4px
+					color: $white
+					font-size: 1em
+					white-space: nowrap
+				.condition
+					padding: .5rem 2rem .5rem .5rem
+					display: flex
+					flex-direction: column
+					justify-content: center
+					flex: 1
+					align-items: center
+					text-align: right
+					position: relative
+					&:after
+						content: ""
+						display: block
+						width: 9px
+						height: 14px
+						background: url(../img/detail/sp/sp_shousai_arrow02.png) 0 0 no-repeat
+						background-size: contain
+						position: absolute
+						top: 50%
+						margin-top: -7px
+						right: 10px
+					span
+						font-size: .87rem
+						display: block
+						width: 100%
+						&:not(:last-of-type):after
+							content: ","
+				>fieldset
+					flex: 1
+					padding: .25em
+				.condition-selecter
+					display: block
+					vertical-align: top
+					position: relative
+					&:first-of-type
+						width: 70%
+						margin-bottom: .25em
+					&:after
+						content: ""
+						display: block
+						width: 11px
+						height: 7px
+						background: url("../img/top/sp/top_search_icon2.png") 0 0 no-repeat
+						background-size: contain
+						position: absolute
+						top: 50%
+						right: 12px
+						margin-top: -3px
+					select
+						width: 100%
+						height: 36px
+						padding: 0 1.75em
+						background: $white
+						border: 1px solid $gray
+						border-radius: 2px
+						font-size: .87rem
+						cursor: pointer
+
+				.micro-conditions
+					width: 100%
+					dl
+						display: flex
+						flex-wrap: nowrap
+						font-size: .87rem
+					dl:not(:first-of-type)
+						border-top: 1px dashed $gray
+					dt
+						padding: .5rem 0 .5em .5em
+						width: 90px
+						font-weight: bold
+						color: $green
+					dd
+						flex: 1
+						position: relative
+						padding: .5rem 2rem .5rem .5rem
+						text-align: right
+						span
+							display: block
+							&:not(:last-of-type):after
+								content: ","
+						&:after
+							content: ""
+							display: block
+							width: 9px
+							height: 14px
+							background: url(../img/detail/sp/sp_shousai_arrow02.png) 0 0 no-repeat
+							background-size: contain
+							position: absolute
+							top: 50%
+							margin-top: -7px
+							right: 10px
+				.unselected
+					color: $gray3
+		.btn-area
+			position: relative
+			padding: 10px 0 0
+			text-align: center
+			border-top: none
+			display: flex
+			flex-wrap: nowrap
+			justify-content: space-around
+			button
+				display: block
+				line-height: 49px
+				height: 49px
+			.btn-submit
+				width: 187px
+				background: $pink
+				border: 0px solid transparent
+				border-radius: 4px
+				text-align: center
+				color: $white
+				font-size: 1rem
+			.btn-clear
+				width: 100px
+				background: $white
+				border: 1px solid $gray
+				border-radius: 4px
+				font-size: .87rem
+
+// edit
+.wrapper
+	position: relative
+	width: 100%
+	height: 100%
+	background: $white
+	transition: all .5s ease
+	z-index: 2
+.wrapper-area,.wrapper-job,.wrapper-char1,.wrapper-char2,.wrapper-char3,.wrapper-char4,.wrapper-char5,.wrapper-char6,.wrapper-char7
+	position: fixed
+	top: 0
+	right: -100%
+	width: 100%
+	height: 100%
+	background: $white
+	transition: all .5s ease
+	z-index: 1
+	&.active
+		z-index: 3
+	h2
+		width: 100%
+		height: 64px
+		padding-top: 16px
+		border-bottom: 3px solid $green
+		text-align: center
+		color: $green
+		font-size: 1.5rem
+		position: relative
+		a
+			position: absolute
+			top: 9px
+			left: 0
+			display: block
+			padding: .5em
+			font-size: 1.3rem
+			color: $gray3
+			&:before
+				content: ""
+				display: inline-block
+				width: 9px
+				height: 14px
+				background: url(../img/detail/sp/sp_shousai_arrow01.png) center no-repeat
+				background-size: contain
+				margin-right: .5em
+	ul
+		height: calc(100% - 64px)
+		overflow: auto
+		li
+			a
+				display: block
+				padding: 1.3rem 1rem
+				border-bottom: 1px solid $gray
+				position: relative
+				&:after
+					content: ""
+					display: block
+					width: 9px
+					height: 14px
+					background: url(../img/detail/sp/sp_shousai_arrow02.png) 0 0 no-repeat
+					background-size: contain
+					position: absolute
+					top: 50%
+					margin-top: -7px
+					right: 10px
+				&.selected
+					background: $green
+					color: $white
+	
+.edit-condition
+	.wrapper, .wrapper-area,.wrapper-job,.wrapper-charactor
+		transform: translate3d(-100%, 0, 0)
+	
+				
+				
+				
+				
+				

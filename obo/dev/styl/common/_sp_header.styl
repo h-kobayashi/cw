@@ -50,6 +50,51 @@
 		background: url(../../img/top/sp/header_icon_close.png) center no-repeat
 		background-size: contain
 
+// type select
+.type-select
+	display: block
+	width: 100%
+	position: relative
+	ul
+		width: 300px
+		margin: 0 auto
+		position: relative
+		bottom: 0
+		display: flex
+		flex-wrap: nowrap
+		justify-content: space-between
+		align-items: flex-end
+	li
+		display: block
+		width: 98px
+		span,a
+			display: block
+			border-radius: 10px 10px 0 0
+			font-size: .75rem
+			font-weight: bold
+			text-align: center
+		span
+			height: 31px
+			line-height: 31px
+		a
+			height: 27px
+			line-height: 27px
+	.type-all
+		a,span
+			background: $white
+			border: 1px solid $gray
+			border-bottom: 1px solid $white
+	.type-part
+		a,span
+			background: $orange
+			border: 1px solid $orange
+			color: $white
+	.type-full
+		a,span
+			background: $blue
+			border: 1px solid $blue
+			color: $white
+			
 // global nav
 .sp_globalnav__wrapper
 	display: none

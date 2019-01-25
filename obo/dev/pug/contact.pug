@@ -1,0 +1,98 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 川越市のお仕事に特化した“お祝い金がもらえる”地元密着求人サイト「川越オーボ」
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/contact.css")
+	body.contact
+		.wrapper
+			
+			// ヘッダー
+			header.header__wrapper
+				.header
+					include _header.pug
+			
+			include _globalnav.pug
+
+			main.main
+				// パンくず
+				.breadclumbs
+					a(href="./") 川越オーボTOP
+					span お問合せ
+				
+				.contents-area
+					// 
+					section.form__block
+						h2 お問合せ
+						ul.flowlist
+							li.on 情報の入力
+							li 入力内容の確認
+							li 完了
+						p 川越ＯＢＯへのご質問等お問合せはこちらから承ります。<br>お手数をおかけいたしますが、以下の項目をご入力ください。
+						
+						ul.errorlist
+							li お問合せ内容を選択してください。
+							li 氏名フリガナを入力してください。
+					
+						form
+							dl.must
+								dt お問合せタイトル
+								dd
+									fieldset.form-list
+										ul
+											li
+												input(type="radio", name="contact__item01", id="contact__item01_01", checked)
+												label(for="contact__item01_01") 求人掲載に関する問合せ
+											li
+												input(type="radio", name="contact__item01", id="contact__item01_02")
+												label(for="contact__item01_02") 応募に関する問合せ
+											li
+												input(type="radio", name="contact__item01", id="contact__item01_03")
+												label(for="contact__item01_03") エラーやバグに関する問合せ
+											li
+												input(type="radio", name="contact__item01", id="contact__item01_04")
+												label(for="contact__item01_04") その他のお問合せ
+							dl.any
+								dt 法人・企業名
+								dd
+									fieldset.form-text
+										input(type="text", name="contact__item02", placeholder="例：株式会社アーベイン・スタッフ")
+							dl.must
+								dt 氏名
+								dd
+									fieldset.form-name
+										input(type="text", name="contact__item03", placeholder="例：山田")
+										input(type="text", name="contact__item03", placeholder="例：太郎")
+							dl.any
+								dt 氏名（カナ）
+								dd 
+									fieldset.form-name
+										input(type="text", name="contact__item04", placeholder="例：やまだ")
+										input(type="text", name="contact__item04", placeholder="例：たろう")
+							dl.must
+								dt お問合せ内容
+								dd 
+									fieldset.form-textarea
+										textarea(name="contact__item05", placeholder="お気軽にお問合せ下さい。")
+							.policy
+								p 当社が応募フォームで取得した応募者様の個人情報は、『<a href="javascript:void(0)" class="btn-policy">個人情報の取扱いについて</a>』に基づいて使用いたします。<br>必ずお読み頂き、同意の上お問合せ下さい。
+								fieldset
+									input(type="checkbox", name="contact__item06", id="contact__item06")
+									label(for="contact__item06") 個人情報の取扱いに同意する
+							.btn-area
+								a(href="contact_check.html").btn-submit 入力内容を確認する
+
+			// フッター
+			include _footer.pug
+			
+			// policy popup
+			include _policy-popup.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		script(type="text/javascript", src="js/common.js")
+		script(type="text/javascript", src="js/modal.js")
+

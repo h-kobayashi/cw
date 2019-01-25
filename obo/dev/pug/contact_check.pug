@@ -1,0 +1,76 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 川越市のお仕事に特化した“お祝い金がもらえる”地元密着求人サイト「川越オーボ」
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/contact.css")
+	body.contact
+		.wrapper
+			
+			// ヘッダー
+			header.header__wrapper
+				.header
+					include _header.pug
+			
+			include _globalnav.pug
+
+			main.main
+				// パンくず
+				.breadclumbs
+					a(href="./") 川越オーボTOP
+					span お問合せ
+				
+				.contents-area
+					// 
+					section.form__block
+						h2 お問合せ
+						ul.flowlist
+							li 情報の入力
+							li.on 入力内容の確認
+							li 完了
+						p ご入力内容をご確認下さい。
+					
+						form
+							dl.must
+								dt お問合せタイトル
+								dd
+									p 求人掲載に関する問合せ
+							dl.any
+								dt 法人・企業名
+								dd
+									p 株式会社アーベイン・スタッフ
+							dl.must
+								dt 氏名
+								dd
+									p 山田　太郎
+							dl.any
+								dt 氏名（カナ）
+								dd 
+									p やまだ　たろう
+							dl.must
+								dt お問合せ内容
+								dd 
+									p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+							.policy
+								p 当社が応募フォームで取得した応募者様の個人情報は、『<a href="javascript:void(0)" class="btn-policy">個人情報の取扱いについて</a>』に基づいて使用いたします。<br>必ずお読み頂き、同意の上お問合せ下さい。
+								fieldset
+									input(type="checkbox", name="contact__item06", id="contact__item06", checked)
+									label(for="contact__item06") 個人情報の取扱いに同意する
+							.btn-area
+								a(href="contact.html").btn-cancel 修正する
+								a(href="contact_complete.html").btn-submit 送信する
+
+			// フッター
+			include _footer.pug
+			
+			// policy popup
+			include _policy-popup.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		script(type="text/javascript", src="js/common.js")
+		script(type="text/javascript", src="js/modal.js")
+

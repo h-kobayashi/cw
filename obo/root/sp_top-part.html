@@ -619,9 +619,353 @@
         </div>
       </main>
       <!-- ポップアップ-->
-      <div class="wrapper-shadow">
-        <div class="keepmodal">
-          <p>キープしました</p>
+      <div class="wrapper-shadow-kodawari">
+        <div class="kodawarimodal">
+          <h2>こだわり検索</h2>
+          <a class="btn-close" href="javascript:void(0)">
+            <img src="img/kodawari/pc/pc_kodawari_close.png">
+          </a>
+          <nav class="type-select">
+            <ul>
+              <li class="type-all">
+                <span class="selected">すべての求人</span>
+              </li>
+              <li class="type-part">
+                <span>パート・アルバイト</span>
+              </li>
+              <li class="type-full">
+                <span>正社員</span>
+              </li>
+            </ul>
+          </nav>
+          <section class="kodawari-all">
+            <p>検索条件を指定してください</p>
+            <form>
+              <div class="kodawari-item">
+                <h3>エリア</h3>
+                <fieldset>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="kodawari-item1-0">
+                      <label for="kodawari-item1-0">川越市中心</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item1-1">
+                      <label for="kodawari-item1-1">芳野・古谷</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item1-2">
+                      <label for="kodawari-item1-2">南古谷</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item1-3">
+                      <label for="kodawari-item1-3">高階・新河岸</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item1-4">
+                      <label for="kodawari-item1-4">福原</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item1-5">
+                      <label for="kodawari-item1-5">大東</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item1-6">
+                      <label for="kodawari-item1-6">霞ヶ関・的場</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item1-7">
+                      <label for="kodawari-item1-7">名細・山田</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item1-8">
+                      <label for="kodawari-item1-8">クレアモール・丸広</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item1-9">
+                      <label for="kodawari-item1-9">アトレ・PePe・駅ビル</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item1-10">
+                      <label for="kodawari-item1-10">蔵のまち</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item1-11">
+                      <label for="kodawari-item1-11">川越工業団地</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="kodawari-item">
+                <h3>職種</h3>
+                <fieldset>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="kodawari-item2-0">
+                      <label for="kodawari-item2-0">飲食／フード</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item2-1">
+                      <label for="kodawari-item2-1">販売</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item2-2">
+                      <label for="kodawari-item2-2">サービス</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item2-3">
+                      <label for="kodawari-item2-3">オフィスワーク</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item2-4">
+                      <label for="kodawari-item2-4">営業</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item2-5">
+                      <label for="kodawari-item2-5">医療・介護・福祉</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item2-6">
+                      <label for="kodawari-item2-6">教育</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item2-7">
+                      <label for="kodawari-item2-7">美容・理容・サロン</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item2-8">
+                      <label for="kodawari-item2-8">建築・土木</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item2-9">
+                      <label for="kodawari-item2-9">工場・製造</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item2-10">
+                      <label for="kodawari-item2-10">軽作業・物流</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item2-11">
+                      <label for="kodawari-item2-11">その他</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="kodawari-item">
+                <h3>給与</h3>
+                <fieldset>
+                  <div class="search-item">
+                    <select>
+                      <option>時給</option>
+                    </select>
+                  </div>
+                  <div class="search-item">
+                    <select>
+                      <option>1,000円以上</option>
+                    </select>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="kodawari-item">
+                <h3>特長</h3>
+                <fieldset>
+                  <h4>働く時間</h4>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.1-0">
+                      <label for="kodawari-item4.1-0">単発（1日のみ）</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.1-1">
+                      <label for="kodawari-item4.1-1">短期</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.1-2">
+                      <label for="kodawari-item4.1-2">長期（3ヶ月以上）</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.1-3">
+                      <label for="kodawari-item4.1-3">季節限定</label>
+                    </li>
+                  </ul>
+                  <h4>働く時間帯</h4>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.2-0">
+                      <label for="kodawari-item4.2-0">朝</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.2-1">
+                      <label for="kodawari-item4.2-1">昼</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.2-2">
+                      <label for="kodawari-item4.2-2">夕方</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.2-3">
+                      <label for="kodawari-item4.2-3">夜</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.2-4">
+                      <label for="kodawari-item4.2-4">深夜・朝方</label>
+                    </li>
+                  </ul>
+                  <h4>週に働く日数</h4>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.3-0">
+                      <label for="kodawari-item4.3-0">週1日</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.3-1">
+                      <label for="kodawari-item4.3-1">週3日以内</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.3-2">
+                      <label for="kodawari-item4.3-2">週4日以上</label>
+                    </li>
+                  </ul>
+                  <h4>シフト</h4>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.4-0">
+                      <label for="kodawari-item4.4-0">シフト相談OK</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.4-1">
+                      <label for="kodawari-item4.4-1">平日のみOK</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.4-2">
+                      <label for="kodawari-item4.4-2">土日祝のみOK</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.4-3">
+                      <label for="kodawari-item4.4-3">ママさん配慮シフト</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.4-4">
+                      <label for="kodawari-item4.4-4">学生配慮シフト</label>
+                    </li>
+                  </ul>
+                  <h4>歓迎・OK</h4>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.5-0">
+                      <label for="kodawari-item4.5-0">扶養控除内OK</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.5-1">
+                      <label for="kodawari-item4.5-1">学校行事シフト考慮</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.5-2">
+                      <label for="kodawari-item4.5-2">Wワーク歓迎</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.5-3">
+                      <label for="kodawari-item4.5-3">主婦・ママ歓迎</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.5-4">
+                      <label for="kodawari-item4.5-4">大学生歓迎</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.5-5">
+                      <label for="kodawari-item4.5-5">高校生歓迎</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.5-6">
+                      <label for="kodawari-item4.5-6">シニア歓迎</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.5-7">
+                      <label for="kodawari-item4.5-7">フリーター歓迎</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.5-8">
+                      <label for="kodawari-item4.5-8">未経験・初心者歓迎</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.5-9">
+                      <label for="kodawari-item4.5-9">外国人歓迎</label>
+                    </li>
+                  </ul>
+                  <h4>嬉しい待遇</h4>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.6-0">
+                      <label for="kodawari-item4.6-0">交通費支給</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.6-1">
+                      <label for="kodawari-item4.6-1">資格取得支援制度</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.6-2">
+                      <label for="kodawari-item4.6-2">まかない・食事付</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.6-3">
+                      <label for="kodawari-item4.6-3">残業なし</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.6-4">
+                      <label for="kodawari-item4.6-4">賞与あり</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.6-5">
+                      <label for="kodawari-item4.6-5">社割あり</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.6-6">
+                      <label for="kodawari-item4.6-6">長期休暇あり</label>
+                    </li>
+                  </ul>
+                  <h4>職場環境</h4>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.7-0">
+                      <label for="kodawari-item4.7-0">オープニングスタッフ</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.7-1">
+                      <label for="kodawari-item4.7-1">駅チカ・駅ナカ</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.7-2">
+                      <label for="kodawari-item4.7-2">車・バス通勤OK</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.7-3">
+                      <label for="kodawari-item4.7-3">少人数職場</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.7-4">
+                      <label for="kodawari-item4.7-4">制服あり</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kodawari-item4.7-5">
+                      <label for="kodawari-item4.7-5">座り仕事</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="btn-area">
+                <button class="btn-submit">検索する</button>
+              </div>
+            </form>
+          </section>
+          <section class="kodawari-part">
+            <p>検索条件を指定してください</p>
+          </section>
+          <section class="kodawari-full">
+            <p>検索条件を指定してください</p>
+          </section>
+          <a class="btn-close" href="javascript:void(0)">
+            <img src="img/kodawari/pc/pc_kodawari_close2.png">
+          </a>
         </div>
       </div>
       <!-- フッター-->

@@ -1,0 +1,160 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 川越市のお仕事に特化した“お祝い金がもらえる”地元密着求人サイト「川越オーボ」
+		link(rel="stylesheet", media="all", href="css/common/common.css")
+		link(rel="stylesheet", media="all", href="css/entry.css")
+	body.entry
+		.wrapper
+			
+			// ヘッダー
+			header.header__wrapper
+				.header
+					include _header.pug
+			
+			include _globalnav.pug
+
+			main.main
+				// パンくず
+				.breadclumbs
+					a(href="./") 川越オーボTOP
+					span 株式会社USの川越市求人に応募する
+				
+				.contents-area
+					
+					section.list-items
+						h2
+							strong 株式会社US
+							| の川越市求人に応募する
+						ul
+							li.part
+								.celebration 祝い金<strong>3,000</strong>円
+								.item-header
+									p
+										a(href="") アトレ・PePe・駅ビルエリア
+										| 時の鐘近く。川越駅から徒歩10分圏内。お団子屋さんとなり。
+								h3 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタッフとして川越祭りに参加しませんか？
+								.item-status
+									figure
+										img(src="img/top/pc/job_img01.png")
+									table
+										tr
+											th 職種
+											td
+												a(href="") 飲食フード
+												small (販売スタッフ)
+										tr
+											th 給与
+											td 時給<strong>1200</strong>円
+										tr
+											th 出勤日数
+											td 週<strong>2</strong>日以上
+										tr
+											th 勤務期間
+											td 単発
+										tr
+											th 勤務時間帯
+											td
+												a(href="") 朝・昼
+												small (9:00～17:30内)
+								.item-characters
+									ul
+										each val in ["高校生歓迎","主婦・ママ歓迎","Wワーク歓迎","シニア歓迎","フリーター歓迎","未経験歓迎","外国人歓迎","交通費支給","残業なし","賞与あり","大学生歓迎","マイカー通勤可"]
+											li= val
+					section.form__block
+						ul.flowlist
+							li.on 情報の入力
+							li 入力内容の確認
+							li 完了
+						
+						ul.errorlist
+							li お問合せ内容を選択してください。
+							li 氏名フリガナを入力してください。
+					
+						form
+							dl.must
+								dt 氏名
+								dd
+									fieldset.form-name.error
+										input(type="text", name="entry__item01", placeholder="例：山田")
+										input(type="text", name="entry__item01", placeholder="例：太郎")
+										p.errortext 氏名フリガナを入力してください。
+							dl.any
+								dt 氏名（カナ）
+								dd 
+									fieldset.form-name
+										input(type="text", name="entry__item02", placeholder="例：やまだ")
+										input(type="text", name="entry__item02", placeholder="例：たろう")
+							dl.must
+								dt 生年月日
+								dd
+									fieldset.form-birth
+										label(for="entry__item03year")
+											select(name="entry__item03year", id="entry__item03year")
+												- for (var i = 1970; i < 2019; i++)
+													option= i
+										label(for="entry__item03month")
+											select(name="entry__item03month", id="entry__item03month")
+												- for (var i = 1; i < 13; i++)
+													option= i
+										label(for="entry__item03day")
+											select(name="entry__item03day", id="entry__item03day")
+												- for (var i = 1; i < 32; i++)
+													option= i
+							dl.any
+								dt 性別
+								dd
+									fieldset.form-sex
+										input(type="radio", name="entry__item04", id="entry__item04male", checked)
+										label(for="entry__item04male") 男性
+										input(type="radio", name="entry__item04", id="entry__item04female")
+										label(for="entry__item04female") 女性
+							dl.must
+								dt メールアドレス
+								dd
+									fieldset.form-text
+										input(type="text", name="entry__item05", placeholder="例：example@xxxx.com")
+							dl.must
+								dt 電話番号
+								dd
+									fieldset.form-tel
+										input(type="text", name="entry__item06", placeholder="例：09012345678")
+							dl.must
+								dt 現在の職業
+								dd
+									fieldset.form-select
+										label(for="entry__item07")
+											select(name="entry__item07")
+												option 会社員
+							dl.any
+								dt お問合せ内容
+								dd 
+									fieldset.form-textarea
+										textarea(name="entry__item08", placeholder="面接日程や日中の連絡時間帯に関してご要望があれば、こちらに入力してください。&#13;&#10;例：平日の18時以降に連絡をお願いします。")
+							.form-save
+								fieldset
+									input(type="checkbox", name="entry__item09", id="entry__item09")
+									label(for="entry__item09") 上記で入力した情報を他の応募でも利用する(24時間保持)
+							.policy
+								p 当社が応募フォームで取得した応募者様の個人情報は、『<a href="javascript:void(0)" class="btn-policy">個人情報の取扱いについて</a>』に基づいて使用いたします。<br>必ずお読み頂き、同意の上お問合せ下さい。
+								fieldset
+									input(type="checkbox", name="entry__item10", id="entry__item10")
+									label(for="entry__item10") 個人情報の取扱いに同意する
+							.btn-area
+								a(href="entry_check.html").btn-submit 入力内容を確認する
+
+			// フッター
+			include _footer.pug
+			
+			// policy popup
+			include _policy-popup.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		link(rel="stylesheet", href="js/jquery.minimalect.min.css")
+		script(type="text/javascript", src="js/jquery.minimalect.min.js")
+		script(type="text/javascript", src="js/common.js")
+		script(type="text/javascript", src="js/modal.js")

@@ -55,6 +55,55 @@ select::-moz-focusring
 	color: transparent
 	text-shadow: 0 0 0 #828c9a
 
+:placeholder-shown
+	color: $gray3
+::-webkit-input-placeholder
+	color: $gray3
+:-moz-placeholder
+	color: $gray3
+::-moz-placeholder
+	color: $gray3
+:-ms-input-placeholder
+	color: $gray3
+
+input[type=radio]
+	display: none
+input[type=radio] + label:before
+	content: "　"
+	display: inline-block
+	width: 1.2em
+	height: 1.14em
+	margin: 0 .5em 0 0
+	background: $white
+	border: 2px solid $gray2
+	border-radius: .7em
+	color: $black2
+	font-size: 1em
+	text-align: center
+	line-height: 1.2em
+	vertical-align: text-top
+input[type=radio]:checked + label:before
+	content: "●"
+	
+input[type=checkbox]
+	display: none
+input[type=checkbox] + label:before
+	content: "　"
+	display: inline-block
+	width: 1.14em
+	height: 1.14em
+	margin: 0 .5em 0 0
+	background: $white
+	border: 2px solid $orange
+	color: $orange
+	font-size: 1em
+	text-align: center
+	line-height: 1.2em
+	vertical-align: text-top
+input[type=checkbox]:checked + label:before
+	content: "✔"
+
+	
 .wrapper
 	width: 100%
 	margin: 0 auto
@@ -67,7 +116,6 @@ select::-moz-focusring
 	overflow: hidden
 
 .contents-area
-	float: left
 	width: 100%
 	section
 		h2
@@ -86,7 +134,7 @@ select::-moz-focusring
 				top: 0
 				margin-right: .25rem
 	section:not(:first-of-type)
-		margin-top: 40px
+		margin-top: 30px
 				
 .side-area
 	float: right
@@ -103,6 +151,155 @@ select::-moz-focusring
 .ellipsis.multiline
 	white-space: normal		
 
+.contents-area	
+	// information
+	.information
+		ul
+			margin: 20px 10px 0
+			li
+				padding: 1em
+				border-bottom: 1px solid $gray
+				display: flex
+				flex-wrap: nowrap
+				small
+					display: block
+					width: 70px
+					font-size: .75em
+				a
+					display: block
+					flex: 1
+					font-size: .87em
+					
+	// tokushu area				
+	.tokushu-area
+		margin: 0 10px
+		a
+			display: block
+			width: 300px
+			height: 82px
+			margin: 0 auto 15px
+			padding: 10px
+			&:hover
+				opacity: .5
+			h3
+				font-size: 1.1em
+				font-weight: normal
+				line-height: 1.2
+			p
+				font-size: .67em
+				line-height: 1.3
+				margin: .5em 0 0
+		.tokushu1
+			padding-left: 90px
+			padding-right: 65px
+			background: url("../../img/top/sp/bnr_tokushu.jpg") 0 0 no-repeat
+			background-size: contain
+			h3
+				color: $green
+		.tokushu2
+			padding-left: 65px
+			padding-right: 90px
+			background: url("../../img/top/sp/bnr_tokushu02.jpg") 0 0 no-repeat
+			background-size: contain
+			h3
+				color: $orange
+
+	// banner area
+	section:not(:first-of-type).banner-area
+		margin: 0 10px
+		>img
+			width: 100%
+			margin: 0
+		a
+			display: block
+			margin: 15px 0
+			img
+				width: 100%
+		.address
+			display: block
+			margin: 15px 10px
+			position: relative
+			img
+				width: 100%
+			address
+				position: absolute
+				bottom: 15px
+				width: 100%
+				height: 98px
+				display: flex
+				flex-wrap: nowrap
+				justify-content: space-around
+				a
+					display: inline-block
+					width: 139px
+					height: 88px
+					padding-top: .5em
+					font-size: 1em
+					font-weight: bold
+					line-height: 1.2
+					text-align: center
+					border-radius: 4px
+					&:before
+						content: ""
+						display: block
+						height: 30px
+						margin-bottom: .5em
+				.btn-tel
+					background: $white
+					border: 2px solid $pink2
+					border-bottom: 8px solid $pink2
+					color: $pink2
+					&:before
+						background: url("../../img/top/sp/top_bnr_02_tel.png") center no-repeat
+						background-size: contain
+				.btn-mail
+					background: $pink
+					border: 2px solid $pink
+					border-bottom: 8px solid $pink
+					color: $white
+					&:before
+						background: url("../../img/top/sp/top_bnr_02_mail.png") center no-repeat
+						background-size: 30px 23px
+
+	// special items
+	section:not(:first-of-type).special-items
+		margin: 20px 10px 0
+		padding: 12px
+		background: $lightgreen
+		li
+			width: 100%
+			margin: 10px 0 0
+			a img
+				width: 100%
+
+	// search area
+	.search-items
+		margin: 0 10px
+		padding: 20px 12px
+		background: url("../../img/top/sp/top_serch03_bg01.png") center bottom no-repeat, url("../../img/top/sp/top_serch03_bg02.png") top right no-repeat
+		border: 1px solid $gray
+		h2
+			margin: 0
+		ul
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			margin: 10px 0 30px
+			li
+				display: block
+				width: 48%
+				margin: 0 0 .75em
+				a
+					display: block
+					padding: .5em
+					border: 1px solid $gray2
+					border-radius: 4px
+					font-size: .75em
+					line-height: 1.75
+					text-align: center
+
+	
+	
 @import '_sp_header'
 @import '_sp_footer'
 

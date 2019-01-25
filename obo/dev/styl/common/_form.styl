@@ -1,0 +1,262 @@
+
+@import "_color"
+@import "_modal"
+
+
+.contents-area
+
+	.flowlist
+		margin: 48px 0
+		text-align: center
+		li
+			display: inline-block
+			height: 45px
+			margin: 0 -6px
+			text-align: center
+			line-height: 45px
+			font-weight: bold
+			color: $white
+		li:nth-of-type(1)
+			width: 331px
+			background: url(../img/parts/pc/pc_form_step01_off.png) no-repeat 0 0
+		li:nth-of-type(1).on
+			background: url(../img/parts/pc/pc_form_step01_on.png) no-repeat 0 0
+		li:nth-of-type(2)
+			width: 332px
+			background: url(../img/parts/pc/pc_form_step02_off.png) no-repeat 0 0
+		li:nth-of-type(2).on
+			background: url(../img/parts/pc/pc_form_step02_on.png) no-repeat 0 0
+		li:nth-of-type(3)
+			width: 301px
+			background: url(../img/parts/pc/pc_form_step03_off.png) no-repeat 0 0
+		li:nth-of-type(3).on
+			background: url(../img/parts/pc/pc_form_step03_on.png) no-repeat 0 0
+	.flowlist + p
+		margin: 40px 0
+		text-align: center
+		font-size: 1.14rem
+		font-weight: bold
+		strong
+			display: block
+			margin: 0 0 30px
+			font-size: 1.71rem
+			letter-spacing: .2em
+		.btn-top
+			display: block
+			width: 250px
+			height: 50px
+			margin: 40px auto
+			background: $white
+			border: 1px solid $green
+			border-radius: 4px
+			color: $green
+			text-align: center
+			font-size: 1.14rem
+			line-height: 50px
+			&:hover
+				border-color: $mosgreen
+				color: $mosgreen
+				
+	.errorlist
+		text-align: center
+		position: relative
+		margin: -20px 0 30px
+		li
+			color: $red2
+			font-size: 1.14rem
+			&:before
+				content: "*"
+	
+	// listitems
+	section.form__block
+		margin: 0
+		h2
+			font-weight: bold
+		dl
+			display: flex
+			background: $white
+			border: 1px solid $gray
+			border-left: 2px solid $gray
+			border-right: 2px solid $gray
+			position: relative
+			margin-bottom: -1px
+			box-shadow: rgba(0,0,0,.2)
+			&:first-of-type
+				border-top: 2px solid $gray
+			&:last-of-type
+				border-bottom: 2px solid $gray
+			dt
+				width: 290px
+				border-right: 1px solid $gray
+				display: flex
+				flex-wrap: nowrap
+				justify-content: center
+				align-items: center
+				font-weight: bold
+			dd
+				flex: 1
+				display: flex
+				flex-wrap: nowrap
+				&:before
+					content: ""
+					width: 74px
+					border-right: 1px solid $gray
+					display: flex
+					flex-wrap: nowrap
+					justify-content: center
+					align-items: center
+					font-weight: bold
+				fieldset,p
+					flex: 1
+					display: block
+					padding: 20px 15px
+					input[type=text], textarea
+						margin: 0 5px
+						padding: .5em .75em
+						border: 1px solid $gray2
+						border-radius: 5px
+						
+				.form-text input[type=text]
+					width: calc(100% - 10px)
+				.form-name input[type=text]
+					width: calc(50% - 13px)
+				.form-textarea textarea
+					width: calc(100% - 10px)
+					height: 10em
+					vertical-align: text-bottom
+				
+				.form-birth
+					label
+						width: 30%
+						display: inline-block
+						margin: 0 5px
+						padding: 0
+						border: 1px solid $gray2
+						border-radius: 5px
+						position: relative
+						vertical-align: text-bottom
+						.minict_wrapper
+							width: 100%
+							height: 2.65rem
+							border: none
+							span
+								height: 2.65rem
+								line-height: 2
+							&:after
+								height: 2.65rem
+								line-height: 2.65rem
+							ul
+								top: 2.55rem
+				.form-tel input[type=text]
+					width: 40%
+				.form-select label
+					display: inline-block
+					width: 40.5%
+					margin: 0 5px
+					vertical-align: text-bottom
+					.minict_wrapper
+						width: 100%
+						height: 2.65rem
+						border: 1px solid $gray2
+						span
+							height: 2.65rem
+							line-height: 2
+						&:after
+							height: 2.65rem
+							line-height: 2.65rem
+						ul
+							top: 2.55rem
+				
+				.error
+					input[type=text],textarea,select
+						background: $lightpink
+					.errortext
+						padding: .5em .5em 0
+						color: $red2
+						font-size: 1.14rem
+						&:before
+							content: "*"
+						
+			&.must dd:before
+				content: "必須"
+				background: $lightorange
+				color: $orange
+			&.any dd:before
+				content: "任意"
+				background: $lightgray2
+
+		// form save
+		.form-save
+			margin: 40px 0 0
+			fieldset
+				margin: 0
+				font-weight: bold
+				font-size: 1.29rem
+				text-align: center
+				label:before
+					border-color: $gray2
+			
+		// policy
+		.policy
+			margin: 48px 0
+			padding: 30px 160px
+			background: $lightorange
+			p
+				font-weight: bold
+				a
+					color: $blue2
+					text-decoration: underline
+			fieldset
+				margin: 1em 0 0
+				font-weight: bold
+				font-size: 1.29rem
+				text-align: center
+				label:after
+					content: "必須"
+					display: inline-block
+					margin-left: 1em
+					padding: 0 .75em
+					background: $orange
+					border-radius: 4px
+					color: $white
+					font-size: 1rem
+					line-height: 1.29
+					position: relative
+					top: -3px
+		
+		// btn area
+		.btn-area
+			position: relative
+			padding: 0 0 50px
+			text-align: center
+			.btn-submit
+				display: inline-block
+				width: 340px
+				height: 70px
+				margin: 0 25px
+				background: $green
+				border: 0px solid transparent
+				text-align: center
+				color: $white
+				font-size: 1.5em
+				font-weight: bold
+				line-height: 70px
+			.btn-submit:hover
+				background: $green1
+			.btn-cancel
+				display: inline-block
+				width: 340px
+				height: 70px
+				margin: 0 25px
+				background: $gray3
+				border: 0px solid transparent
+				text-align: center
+				color: $white
+				font-size: 1.5em
+				font-weight: bold
+				line-height: 70px
+	
+
+
+
+					

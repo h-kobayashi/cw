@@ -1,0 +1,319 @@
+
+@import "_color"
+@import "_modal"
+
+
+.main
+	width: 100%
+
+.contents-area
+	float: none
+	width: 100%
+	margin: 0 auto
+	.flowlist
+		margin: 15px 0 0
+		display: flex
+		justify-content: center
+		li
+			display: flex
+			height: 47px
+			margin: 0 -3px
+			justify-content: center
+			align-items: center
+			font-weight: bold
+			font-size: .79rem
+			line-height: 1.2
+			color: $white
+			text-align: center
+		li:nth-of-type(1)
+			width: 100px
+			background: url(../img/parts/sp/sp_form_step01_off.png) no-repeat 0 0/contain
+		li:nth-of-type(1).on
+			background: url(../img/parts/sp/sp_form_step01_on.png) no-repeat 0 0/contain
+		li:nth-of-type(2)
+			width: 106px
+			background: url(../img/parts/sp/sp_form_step02_off.png) no-repeat 0 0/contain
+		li:nth-of-type(2).on
+			background: url(../img/parts/sp/sp_form_step02_on.png) no-repeat 0 0/contain
+		li:nth-of-type(3)
+			width: 97px
+			background: url(../img/parts/sp/sp_form_step03_off.png) no-repeat 0 0/contain
+		li:nth-of-type(3).on
+			background: url(../img/parts/sp/sp_form_step03_on.png) no-repeat 0 0/contain
+	.flowlist + p
+		margin: 20px 0
+		text-align: center
+		font-size: .87rem
+		font-weight: bold
+		strong
+			display: block
+			margin: 40px 0 10px
+			font-size: 1.29rem
+			font-weight: bold
+			letter-spacing: .2em
+		.btn-top
+			display: block
+			width: 210px
+			height: 40px
+			margin: 40px auto
+			background: $white
+			border: 1px solid $green
+			border-radius: 4px
+			color: $green
+			text-align: center
+			font-size: .86rem
+			line-height: 40px
+			&:hover
+				border-color: $mosgreen
+				color: $mosgreen
+				
+	.errorlist
+		text-align: center
+		position: relative
+		margin: 15px 0
+		li
+			color: $red2
+			font-size: 1rem
+			&:before
+				content: "*"
+	
+	// listitems
+	section.form__block
+		h2
+			margin: 20px
+			font-weight: bold
+			font-size: 1.21rem
+		.form__items
+			margin: 0 10px
+			padding: 20px 15px
+			border: 1px solid $gray
+			font-size: .86rem
+			dl
+				position: relative
+				dt
+					display: block
+					padding: .25em .5em
+					background: $lightblue
+					font-weight: bold
+					&:after
+						content: ""
+						display: inline-block
+						margin-left: .5em
+						padding: 0 .25em
+						border-radius: 4px
+						color: $white
+						font-size: .75em
+						font-weight: normal
+						vertical-align: middle
+				dd
+					fieldset,p
+						display: block
+						padding: 10px 0
+						input[type=text], textarea
+							margin: 0 5px
+							padding: .5em .75em
+							border: 1px solid $gray2
+						>ul
+							margin: 0 5px
+							li
+								padding: .5em .75em
+								background: $lightblue2
+							li:not(:last-of-type)
+								margin-bottom: 1em
+					.form-text input[type=text]
+						width: calc(100% - 10px)
+					.form-name input[type=text]
+						width: calc(50% - 13px)
+					.form-textarea textarea
+						width: calc(100% - 10px)
+						height: 10em
+						vertical-align: text-bottom
+				
+					.form-birth
+						label
+							width: calc(50% - 13px)
+							display: inline-block
+							margin: 0 3px
+							padding: 0
+							border: 1px solid $gray2
+							border-radius: 0
+							position: relative
+							vertical-align: text-bottom
+							&:first-of-type
+								display: block
+								margin-bottom: 10px
+							.minict_wrapper
+								width: 100%
+								height: 2.3rem
+								border: none
+								span
+									height: 2.3rem
+									line-height: 1.75
+								&:after
+									height: 2.3rem
+									line-height: 2.3rem
+								ul
+									top: 2.3rem
+									margin: 0
+					.form-tel input[type=text]
+						width: calc(100% - 10px)
+					.form-select label
+						display: inline-block
+						width: calc(100% - 10px)
+						margin: 0 5px
+						vertical-align: text-bottom
+						.minict_wrapper
+							width: 100%
+							height: 2.3rem
+							border: none transparent
+							border-radius: 0
+							span
+								height: 2.3rem
+								line-height: 1.75
+								border: 1px solid $gray2
+							&:after
+								height: 2.3rem
+								line-height: 2.3rem
+							ul
+								top: 2.3rem
+								margin: 0
+
+					.error
+						input[type=text],textarea,select
+							background: $lightpink
+						.errortext
+							padding: .5em .5em 0
+							color: $red2
+							font-size: 1rem
+							&:before
+								content: "*"
+								
+				&.must dt:after
+					content: "必須"
+					background: $orange
+				&.any dt:after
+					content: "任意"
+					background: $gray3
+				&.must
+					input[type=text],textarea,select
+						background: $lightorange2
+					input[type=radio],input[type=checkbox]
+						& + label:before
+							background: $lightorange2
+					.minict_wrapper span
+						background: $lightorange2
+
+		// form save
+		.form-save
+			margin: 20px 20px 0
+			fieldset
+				margin: 0
+				font-weight: bold
+				font-size: 1.29rem
+				text-align: center
+				label
+					display: block
+					position: relative
+					margin: 0 0 0 2px
+					padding: 0 0 0 3.5em
+					font-weight: bold
+					font-size: .86rem
+					line-height: 1.5
+					text-align: left
+				label:before
+					width: 1.25em
+					height: 1.25em
+					border: 1px solid $gray2
+					font-size: 1.75rem
+					position: absolute
+					left: 0
+					
+		// policy
+		.policy
+			margin: 24px 0
+			h3
+				color: $orange
+				font-size: 1rem
+				font-weight: bold
+				text-align: center
+				&:before
+					content: ""
+					display: inline-block
+					width: 14px
+					height: 21px
+					margin-right: .5em
+					background: url(../img/parts/sp/sp_form_icon01.png) no-repeat 0 0/contain
+				&:after
+					content: "必須"
+					display: inline-block
+					margin-left: .5em
+					padding: 0 .5em
+					background: $orange
+					border-radius: 4px
+					color: $white
+					font-size: .79rem
+					font-weight: normal
+					line-height: 1.29
+					position: relative
+					top: -1px
+			p
+				margin: 1em 1.5em
+				font-weight: bold
+				font-size: .86rem
+				a
+					color: $blue2
+					text-decoration: underline
+			fieldset
+				margin: 1em
+				padding: 1em
+				background: $lightorange2
+				font-weight: bold
+				font-size: .93rem
+				text-align: center
+				input[type=checkbox] + label:before
+					width: 1.25em
+					height: 1.25em
+					border: 1px solid $gray2
+					font-size: 1.75rem
+					vertical-align: middle
+		
+		// btn area
+		.btn-area
+			position: relative
+			padding: 0 0 50px
+			text-align: center
+			.btn-submit
+				display: inline-block
+				height: 56px
+				margin: 0 6px
+				padding: 0 40px
+				background: $green
+				border: 0px solid transparent
+				border-bottom: 3px solid $mosgreen
+				border-radius: 5px
+				text-align: center
+				color: $white
+				font-size: 1.29em
+				font-weight: bold
+				line-height: 53px
+			.btn-submit:hover
+				background: $green1
+			.btn-cancel
+				display: inline-block
+				height: 56px
+				margin: 0 6px
+				padding: 0 40px
+				background: $black3
+				border: 0px solid transparent
+				border-bottom: 3px solid $black2
+				border-radius: 5px
+				text-align: center
+				color: $white
+				font-size: 1.29em
+				font-weight: bold
+				line-height: 53px
+	
+
+
+
+					

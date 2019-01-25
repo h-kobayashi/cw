@@ -1,0 +1,147 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 川越市のお仕事に特化した“お祝い金がもらえる”地元密着求人サイト「川越オーボ」
+		link(rel="stylesheet", media="all", href="css/common/sp_common.css")
+		link(rel="stylesheet", media="all", href="css/sp_kodawari.css")
+	body.kodawari
+		.wrapper
+			
+			// ヘッダー
+			header.header__wrapper
+				.header
+					include _sp_header.pug
+			
+			// メニュー
+			include _sp_globalnav.pug
+			
+			main.main
+				
+				.contents-area
+				
+					// 検索条件
+					section.search-conditions
+						h2 こだわり検索
+						nav.type-select
+							ul
+								li.type-all: span.selected すべての求人
+								li.type-part: span パート・アルバイト
+								li.type-full: span 正社員
+						section.search-all
+							p 検索条件を指定してください。
+							.search-item
+								label エリア
+								.condition.edit-area
+									span 川越市中心
+									span クレアモール・丸広
+							.search-item
+								label 職種
+								.condition.edit-job
+									span.unselected 指定しない
+							.search-item
+								label 給与
+								fieldset
+									.condition-selecter
+										select
+											option 時給
+									.condition-selecter
+										select
+											option 800円以上
+							.search-item
+								label 特徴
+								.micro-conditions
+									dl
+										dt 働く期間
+										dd.edit-char1
+											span.unselected 指定しない
+									dl
+										dt 働く時間帯
+										dd.edit-char2
+											span.unselected 指定しない
+									dl
+										dt 週に働く日数
+										dd.edit-char3
+											span.unselected 指定しない
+									dl
+										dt シフト
+										dd.edit-char4
+											span.unselected 指定しない
+									dl
+										dt 歓迎・OK
+										dd.edit-char5
+											span 扶養控除内OK
+											span 学校行事シフト考慮
+											span Wワーク歓迎
+									dl
+										dt 嬉しい待遇
+										dd.edit-char6
+											span.unselected 指定しない
+									dl
+										dt 職場環境
+										dd.edit-char7
+											span.unselected 指定しない
+						section.search-part
+						section.search-full
+						.btn-area
+							button.btn-submit 検索する
+
+
+			// フッター
+			include _sp_footer.pug
+		
+		.wrapper-condition.wrapper-area
+			h2 エリア
+				a(href="javascript:void(0)").btn-back 戻る
+			ul
+				each val in ["川越市中心","芳野・古谷","南古谷","高階・新河岸","福原","大東","霞ヶ関・的場","名細・山田","クレアモール・丸広","アトレ・PePe・駅ビル","蔵のまち","川越工業団地"]
+					li: a(href="javascript:void(0)")=val
+		.wrapper-condition.wrapper-job
+			h2 職種
+				a(href="javascript:void(0)").btn-back 戻る
+			ul
+				each val in ["飲食／フード","販売","サービス","オフィスワーク","営業","医療・介護・福祉","教育","美容・理容・サロン","建築・土木","工場・製造","軽作業・物流","その他"]
+					li: a(href="javascript:void(0)")= val
+		.wrapper-condition.wrapper-char1
+			h2 特徴
+				a(href="javascript:void(0)").btn-back 戻る
+			ul
+				each val in ["飲食／フード","販売","サービス","オフィスワーク","営業","医療・介護・福祉","教育","美容・理容・サロン","建築・土木","工場・製造","軽作業・物流","その他"]
+					li: a(href="javascript:void(0)")= val
+		.wrapper-condition.wrapper-char2
+			h2 特徴
+				a(href="javascript:void(0)").btn-back 戻る
+			ul
+				each val in ["飲食／フード","販売","サービス","オフィスワーク","営業","医療・介護・福祉","教育","美容・理容・サロン","建築・土木","工場・製造","軽作業・物流","その他"]
+					li: a(href="javascript:void(0)")= val
+		.wrapper-condition.wrapper-char3
+			h2 特徴
+				a(href="javascript:void(0)").btn-back 戻る
+			ul
+				each val in ["飲食／フード","販売","サービス","オフィスワーク","営業","医療・介護・福祉","教育","美容・理容・サロン","建築・土木","工場・製造","軽作業・物流","その他"]
+					li: a(href="javascript:void(0)")= val
+		.wrapper-condition.wrapper-char4
+			h2 特徴
+				a(href="javascript:void(0)").btn-back 戻る
+			ul
+				each val in ["飲食／フード","販売","サービス","オフィスワーク","営業","医療・介護・福祉","教育","美容・理容・サロン","建築・土木","工場・製造","軽作業・物流","その他"]
+					li: a(href="javascript:void(0)")= val
+		.wrapper-condition.wrapper-char5
+			h2 特徴
+				a(href="javascript:void(0)").btn-back 戻る
+			ul
+				each val in ["飲食／フード","販売","サービス","オフィスワーク","営業","医療・介護・福祉","教育","美容・理容・サロン","建築・土木","工場・製造","軽作業・物流","その他"]
+					li: a(href="javascript:void(0)")= val
+		.wrapper-condition.wrapper-char6
+			h2 特徴
+				a(href="javascript:void(0)").btn-back 戻る
+			ul
+				each val in ["飲食／フード","販売","サービス","オフィスワーク","営業","医療・介護・福祉","教育","美容・理容・サロン","建築・土木","工場・製造","軽作業・物流","その他"]
+					li: a(href="javascript:void(0)")= val
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		script(type="text/javascript", src="js/common.js")
+		script(type="text/javascript", src="js/modal.js")
+		script(type="text/javascript", src="js/searchCondition.js")

@@ -1,0 +1,199 @@
+
+@import "common/_color"
+@import "common/_modal"
+
+.main
+	width: 100%
+
+.contents-area
+	float: none
+	width: 100%
+	margin: 0 auto
+	
+	.list-items
+		margin-top: 15px
+		h2
+			font-weight: bold
+			margin-bottom: 15px
+			strong
+				font-size: 1.29em
+				font-weight: bold
+		>ul
+			margin: 10px 10px 30px
+		>ul>li
+			background: $white
+			position: relative
+			width: 100%
+			border-bottom: 1px solid $orange
+			padding-bottom: 20px
+			.celebration
+				height: 30px
+				padding: 3px 10px 0 30px
+				background: $pink url("../img/top/sp/job_icon01.png") 10px 7px no-repeat
+				background-size: 14px 17px
+				border-radius: 0 0 4px 4px
+				color: $yellow
+				font-size: .87em
+				text-align: center
+				line-height: 25px
+				position: absolute
+				top: -4px
+				right: 0
+				strong
+					font-size: 1.2em
+					font-weight: bold
+			.item-header
+				padding: 10px 0 0
+				font-size: .75em
+				a
+					display: inline-block
+					margin-right: .5em
+					padding: 0 1em
+					background: $lightgray
+					font-weight: bold
+					vertical-align: middle
+					text-decoration: underline
+				p
+					padding: 1em
+			h3
+				margin: 0 10px
+				font-size: 1em
+				font-weight: bold
+				line-height: 1.5
+				&:before
+					content: ""
+					display: block
+					float: left
+					width: 30px
+					height: 30px
+					margin: 0 6px 0 0
+					position: relative
+					top: 5px
+			.item-status
+				margin: .5rem 0 0
+				figure
+					display: block
+					padding: 0 0 0 100px
+					position: relative
+					img
+						width: 90px
+						position: absolute
+						left: 0
+					span
+						display: block
+						padding: .5rem 0
+						font-weight: bold
+						a
+							margin: 0 -.25em
+							text-decoration: underline
+					span:before
+						content: ""
+						display: inline-block
+						margin-right: .5em
+						vertical-align: middle
+				table
+					border-collapse: sepalate
+					th,td
+						padding: .5em 1em
+						border: 6px solid $white
+						font-size: .87em
+					th
+						background: $lightgray2
+						text-align: center
+					td
+						text-align: left
+						font-weight: bold
+						a
+							text-decoration: underline
+						small
+							display: inline-block
+							font-weight: normal
+							font-size: .87em
+						strong
+							display: inline-block
+							margin-right: .25em
+							font-weight: bold
+							font-size: 1.2em
+			.item-characters
+				margin: 0 6px
+				ul
+					display: flex
+					flex-wrap: wrap
+					li
+						width: 24%
+						height: 18px
+						margin: 0 3px 3px 0
+						border: 1px solid $gray2
+						border-radius: 2px
+						color: $green
+						font-size: .7em
+						text-align: center
+						line-height: 18px
+			.item-comment
+				margin: 6px
+				font-size: .87em
+			.btn-area
+				margin: 10px 6px
+				padding: 15px 0
+				background: $lightgray2
+				text-align: center
+				a
+					display: inline-block
+					height: 40px
+					border-radius: 4px
+					font-size: 1em
+					font-weight: bold
+					line-height: 40px
+					position: relative
+				.btn-keep
+					width: 100px
+					background: $white
+					border: 1px solid $green
+					border-bottom: 2px solid $green
+					color: $green
+					&:after
+						content: ""
+						background: url("../img/top/pc/job_icon03.png") 0 0 no-repeat
+						background-size: contain
+						display: block
+						width: 34px
+						height: 22px
+						position: absolute
+						right: -2px
+						bottom: -10px
+				.btn-submit
+					width: 180px
+					color: $white
+		>ul>li.part
+			border-top: 4px solid $orange
+			h3
+				color: $orange
+				&:before
+					background: url("../img/top/sp/job_icon02.png") 0 0 no-repeat
+					background-size: contain
+			.item-status table td strong
+				color: $orange
+			.btn-area
+				border-bottom: 2px solid $orange
+				.btn-submit
+					background: $pink
+					border-bottom: 2px solid $pink2
+					color: $white
+		>ul>li.full
+			border-top: 4px solid $blue
+			h3
+				color: $blue
+				&:before
+					background: url("../img/top/sp/job_icon02_02.png") 0 0 no-repeat
+					background-size: contain
+			.item-status table td strong
+				color: $blue
+			.btn-area
+				border-bottom: 2px solid $blue
+				.btn-submit
+					background: $pink
+					border-bottom: 2px solid $pink2
+					color: $white
+
+@import "common/_sp_form"
+					

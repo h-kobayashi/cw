@@ -1,0 +1,223 @@
+
+@import "common/_color"
+@import "common/_modal"
+
+.main
+	width: 100%
+	max-width: 1100px
+
+.contents-area
+	float: none
+	width: 100%
+	max-width: 1100px
+	margin: 0 auto
+	
+	// listitems
+	section.list-items
+		margin-top: 30px
+		h2
+			font-weight: bold
+			margin: 0 0 30px
+			strong
+				font-size: 1.29em
+				font-weight: bold
+		>p:first-of-type
+			font-size: 1.14rem
+			strong
+				color: $green2
+				font-size: 1.71rem
+				small
+					margin: 0 -.5em
+					font-size: 1.14rem
+		>nav
+			.item-sort
+				display: block
+				padding: 2em 0 1em
+				border-bottom: 1px solid $gray
+				text-align: right
+				font-size: 1.14em
+				a
+					display: inline-block
+					padding: 0 1em 0 .5em
+				a.selected
+					color: $green2
+					cursor: default
+			.page-nav
+				display: block
+				padding: 20px 0 45px
+				text-align: center
+				a
+					display: inline-block
+					padding: .5em 1em
+					background: $lightgray2
+					&:hover
+						background: $lightgreen
+				a.disabled
+					background: $lightgray2
+					color: $gray3
+					cursor: default
+				a.selected
+					background: $green2
+					color: $white
+					cursor: default
+				
+		>a
+			display: block
+			margin: 90px 0
+			
+		>ul
+			margin: 40px 0 0
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+		>ul:first-of-type
+			margin: 0
+		>ul>li
+			margin: 80px 0 0
+			background: $white
+			border: 1px solid $gray
+			box-shadow: rgba(0,0,0,.2) 0 1px 2px
+			position: relative
+		>ul>li:first-of-type
+			margin: 0
+		>ul>li.part
+			border-top: 5px solid $orange
+			h3
+				background: url("../img/list/pc/job_icon02.png") 0 0 no-repeat
+				color: $orange
+			.item-status table td strong
+				color: $orange
+			.btn-area
+				.btn-submit
+					background: $pink
+				.btn-submit:hover
+					background: $pink1
+		>ul>li.full
+			border-top: 5px solid $blue
+			h3
+				background: url("../img/list/pc/job_icon02_02.png") 0 0 no-repeat
+				color: $blue
+			.item-status table td strong
+				color: $blue
+			.btn-area
+				.btn-submit
+					background: $pink
+				.btn-submit:hover
+					background: $pink1
+		>ul>li.pritem
+			border-radius: 4px 4px 0 0
+			.celebration
+				top: -2px
+			.item-header
+				small
+					position: static
+					display: block
+					height: 32px
+					color: $white
+					line-height: 30px
+					&:before
+						content: url(../img/list/pc/pc_list_icon_pr.png)
+						display: inline-block
+						margin-right: 10px
+						position: relative
+						top: -11px
+						left: -2px
+						vertical-align: top
+			&.full
+				border: 2px solid $blue2
+				.item-header
+					small
+						background: $blue2
+						border-bottom: 5px solid $blue
+			&.part
+				border: 2px solid $orange3
+				.item-header
+					small
+						background: $orange3
+						border-bottom: 5px solid $orange
+		>ul>li
+			width: 100%
+			.celebration
+				height: 50px
+				padding: 5px 20px 0 45px
+				background: $pink url("../img/top/pc/job_icon01.png") 15px 12px no-repeat
+				border-radius: 0 0 4px 4px
+				color: $yellow
+				font-size: 1em
+				text-align: center
+				line-height: 45px
+				position: absolute
+				top: -5px
+				right: 14px
+				strong
+					font-size: 1.2em
+					font-weight: bold
+			.item-header
+				small
+					position: absolute
+					top: -2.5em
+					left: 0
+					font-size: .75em
+				p
+					padding: 20px 0
+					line-height: 2
+					a
+						display: inline-block
+						margin-right: .5em
+						padding: .25em 1em .25em 1.5em
+						background: $lightgray
+						vertical-align: middle
+						text-decoration: underline
+					a:hover
+						background: $gray
+			h3
+				margin: 0 30px
+				padding: 12px 0 12px 60px
+				font-size: 1.2em
+				line-height: 1.5
+			.item-status
+				margin: 10px 30px
+				display: flex
+				figure
+					width: 300px
+				table
+					flex: 1
+					height: 210px
+					border-collapse: collapse
+					th,td
+						padding: 0 1.5em
+						border: 1px solid $gray
+					th
+						text-align: center
+					td
+						text-align: left
+						font-weight: bold
+						a
+							text-decoration: underline
+						small
+							display: inline-block
+							margin-left: 1em
+							font-weight: normal
+							font-size: .87em
+						strong
+							display: inline-block
+							margin-right: .25em
+							font-size: 1.2em
+			.item-characters
+				margin: 0 20px 20px 30px
+				ul
+					display: flex
+					flex-wrap: wrap
+					li
+						width: 110px
+						height: 20px
+						margin: 0 3px 3px 0
+						border: 1px solid $gray2
+						border-radius: 2px
+						color: $green
+						font-size: .75em
+						text-align: center
+						line-height: 20px
+						
+@import "common/_form"
+					

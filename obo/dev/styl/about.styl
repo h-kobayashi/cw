@@ -1,0 +1,644 @@
+
+@import "common/_color"
+@import "common/_modal"
+
+// branding
+.branding
+	width: 100%
+	height: 589px
+	max-width: 1700px
+	margin: 0 auto
+	padding-top: 114px
+	background: url("../img/about/pc_about_mainimg_bg.jpg") center top no-repeat
+	box-shadow: rgba(0,0,0,.2) 0 1px 2px inset
+	text-align: center
+	h1
+		width: 1100px
+		height: 270px
+		margin: 0 auto
+		padding-top: 210px
+		background: url(../img/about/pc_about_mainimg_copy.png) center top no-repeat
+		position: relative
+		font-size: 1.4rem
+		strong
+			display: none
+	small
+		display: inline-block
+		width: 260px
+		height: 40px
+		margin: 0 10px
+		background: $orange
+		border-radius: 20px
+		color: $white
+		font-size: 1.6rem
+		text-align: center
+		line-height: 40px
+
+.main
+	width: 100%
+	max-width: 1700px
+
+.contents-area
+	width: 100%
+	max-width: 1700px
+	margin: 0 auto
+
+	// introduction
+	.introduction
+		width: 1100px
+		margin: 0 auto
+		padding: 100px 0 0
+		h2
+			margin: 0 auto
+			text-align: center
+			color: $green
+			font-size: 2.14rem
+			font-weight: bold
+			line-height: 1
+			&:before
+				display: none
+		>ul
+			display: flex
+			flex-wrap: nowrap
+			justify-content: center
+			margin: 60px auto 0
+			li
+				display: block
+				width: 287px
+				height: 287px
+				margin: 0 10px
+				padding: 100px 0 0
+				background: $orange
+				border-radius: 144px
+				text-align: center
+				color: $white
+				position: relative
+				strong
+					display: block
+					font-size: 2.14rem
+				p
+					margin: 1rem auto 0
+					font-size: 1.2rem
+					line-height: 2.14rem
+				&:before
+					display: block
+					position: absolute
+					left: 50%
+			li:nth-of-type(1):before
+				content: url(../img/about/pc_about_sec01_img01.png)
+				top: -36px
+				margin-left: -55px
+			li:nth-of-type(2):before
+				content: url(../img/about/pc_about_sec01_img02.png)
+				top: -10px
+				margin-left: -53px
+			li:nth-of-type(3):before
+				content: url(../img/about/pc_about_sec01_img03.png)
+				top: 6px
+				margin-left: -74px
+		p
+			margin: 2.5rem auto 0
+			font-size: 1.2rem
+			line-height: 2.14rem
+			text-align: center
+			position: relative
+		article
+			width: 1100px
+			margin: 120px auto 0
+			h3
+				height: 110px
+				padding: 0 0 0 280px
+				background: $green2
+				border-radius: 8px 8px 0 0
+				position: relative
+				img
+					position: relative
+					top: -40px
+			.points
+				padding: 25px
+				background: repeating-linear-gradient(-45deg, $lightgreen2 0, $lightgreen2 15px, $white 15px, $white 30px)
+				border-radius: 0 0 8px 8px
+				ul
+					display: flex
+					flex-wrap: wrap
+					justify-content: center
+					li
+						display: block
+						width: 480px
+						height: 120px
+						margin: 12px
+						padding: 2.14rem 0 0 120px
+						background: $white
+						background-position: 19px 19px
+						background-repeat: no-repeat
+						border-radius: 5px
+						box-shadow: rgba(0,0,0,.2) 0 1px 2px
+						color: $black2
+						font-size: 1.2rem
+						font-weight: bold
+						line-height: 2.4rem
+						strong
+							color: $orange
+							font-weight: bold
+					li:nth-of-type(1)
+						background-image: url(../img/about/pc_about_sec02_img01.png)
+					li:nth-of-type(2)
+						background-image: url(../img/about/pc_about_sec02_img02.png)
+					li:nth-of-type(3)
+						background-image: url(../img/about/pc_about_sec02_img03.png)
+					li:nth-of-type(4)
+						background-image: url(../img/about/pc_about_sec02_img04.png)
+	
+	// check
+	.check
+		width: 100%
+		max-width: 1700px
+		height: 300px
+		margin: 110px auto 0
+		padding-top: 60px
+		p
+			width: 1100px
+			margin: 0 auto
+			color: $black2
+			font-size: 1.7rem
+			line-height: 2.14rem
+		a
+			display: block
+			margin-top: 30px
+			background: $pink
+			border-bottom: 5px solid $pink2
+			border-radius: 3px
+			color: $white
+			text-align: center
+			position: relative
+			strong
+				color: $yellow
+				font-size: 1.1em
+			&:hover
+				background: $pink1
+				border-color: $pink3
+				&:before
+					margin-top: -2px
+	.check1
+		@extend .contents-area .check
+		background: url(../img/about/pc_about_check01_bg.png) center no-repeat
+		p
+			padding-left: 270px
+		a
+			width: 547px
+			height: 112px
+			padding-top: 42px
+			&:before
+				content: url(../img/about/pc_about_check01_img01.png)
+				position: absolute
+				top: -74px
+				right: -210px
+	.check2
+		@extend .contents-area .check
+		background: url(../img/about/pc_about_check02_bg.jpg) center no-repeat
+		a
+			width: 450px
+			height: 104px
+			margin-left: 130px
+			padding-top: 23px
+			&:before
+				content: url(../img/about/pc_about_check02_img01.png)
+				position: absolute
+				top: -18px
+				left: -68px
+	.check3
+		@extend .contents-area .check
+		background: url(../img/about/pc_about_check03_bg.jpg) center no-repeat
+		p
+			padding-left: 476px
+		a
+			width: 450px
+			height: 104px
+			margin-left: 112px
+			padding-top: 23px
+			&:before
+				content: url(../img/about/pc_about_check03_img02.png)
+				position: absolute
+				top: -18px
+				left: -65px
+	.check4
+		@extend .contents-area .check
+		background: url(../img/about/pc_about_check04_bg.jpg) center no-repeat
+		p
+			padding-left: 530px
+		a
+			width: 450px
+			height: 104px
+			margin-left: 60px
+			padding-top: 38px
+			&:before
+				content: url(../img/about/pc_about_check04_img01.png)
+				position: absolute
+				top: -18px
+				left: -38px
+	
+	// point
+	.point
+		width: 100%
+		max-width: 1700px
+		margin: 0 auto
+		margin-top: 0
+		padding: 75px 0 60px
+		h2
+			width: 725px
+			height: 124px
+			margin: 0 auto
+			padding: 57px 0 0 210px
+			color: $green1
+			font-size: 2.14rem
+			&:before
+				display: none
+			strong
+				color: $pink
+				position: relative
+				margin-left: -.4em
+	.point1
+		@extend .contents-area .point
+		h2
+			background: url(../img/about/pc_about_sec03_titilebg.png) 0 0 no-repeat
+		p
+			margin: 2.5rem auto 0
+			font-size: 1.25rem
+			line-height: 2.14rem
+			text-align: center
+		h3
+			width: 565px
+			height: 93px
+			margin: 80px auto 0
+			background: url(../img/about/sp_about_sec03_img01.png) 0 0 no-repeat
+			text-align: center
+			color: $white
+			font-size: 2.14rem
+			line-height: 93px
+			
+		.area8
+			position: relative
+			width: 1100px
+			margin: 90px auto 0
+			background: url(../img/about/pc_about_cec03_map09.png) no-repeat center top
+			&:before
+				content: url(../img/about/pc_about_sec03_img02.png)
+				position: absolute
+				top: -60px
+				left: 10px
+			ul
+				width: 695px
+				height: 573px
+				margin: 0 auto
+				position: relative
+			li
+				position: absolute
+				a
+					display: inline-block
+					min-width: 143px
+					padding: .15em 1.5em .1em 1em
+					border-radius: 16px
+					font-size: 1.25rem
+					color: $white
+					white-space: nowrap
+					text-align: center
+					position: relative
+					&:after
+						content: url(../img/about/pc_about_sec03_img04.png)
+						width: 4px
+						height: 6px
+						line-height: 6px
+						position: absolute
+						top: 50%
+						right: .5em
+						margin-top: -5px
+				small
+					display: block
+					font-size: 1.14rem
+					line-height: 1.5
+					text-align: left
+					position: absolute
+					top: 2.5em
+					left: 3em
+			li:nth-of-type(1)
+				top: 88px
+				left: 194px
+				a
+					background: $map1
+			li:nth-of-type(2)
+				top: 146px
+				left: 510px
+				a
+					background: $map2
+			li:nth-of-type(3)
+				top: 208px
+				left: 35px
+				a
+					background: $map3
+				small
+					color: $map3txt
+			li:nth-of-type(4)
+				top: 165px
+				left: 283px
+				a
+					background: $map4
+				small
+					left: 4.5em
+					color: $map4txt
+			li:nth-of-type(5)
+				top: 293px
+				left: 177px
+				a
+					background: $map5
+				small
+					color: $map5txt
+			li:nth-of-type(6)
+				top: 264px
+				left: 500px
+				a
+					background: $map6
+				small
+					color: $map6txt
+			li:nth-of-type(7)
+				top: 417px
+				left: 296px
+				a
+					background: $map7
+			li:nth-of-type(8)
+				top: 337px
+				left: 369px
+				a
+					background: $map8
+				small
+					color: $map8txt
+				
+		.special4
+			position: relative
+			width: 1100px
+			margin: 30px auto 0
+			&:before
+				content: url(../img/about/pc_about_sec03_img10.png)
+				position: absolute
+				top: -90px
+				left: 10px
+			ul
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-between
+				li
+					width: 540px
+					height: 240px
+					margin-bottom: 20px
+					padding: 36px 0 0 232px
+					background: $white
+					border: 1px solid $lightgray
+					box-shadow: rgba(0,0,0,.1) 0 0 4px
+					a
+						display: block
+						height: 42px
+						background: $green2
+						color: $white
+						font-size: 1.25rem
+						line-height: 3rem
+						text-align: center
+						position: relative
+						&:before
+							content: url(../img/about/pc_about_sec03_img05.png)
+							width: 7px
+							height: 9px
+							line-height: 9px
+							position: absolute
+							top: 50%
+							right: 1em
+							margin-top: -5px
+					p
+						margin: 1em 1em 0 0
+						font-size: 1.14rem
+						text-align: left
+						
+				li:nth-of-type(1)
+					background: $white url(../img/about/sp_about_sec03_img04.png) 20px 20px no-repeat
+				li:nth-of-type(2)
+					background: $white url(../img/about/sp_about_sec03_img05.png) 20px 20px no-repeat
+				li:nth-of-type(3)
+					background: $white url(../img/about/sp_about_sec03_img06.png) 20px 20px no-repeat
+				li:nth-of-type(4)
+					background: $white url(../img/about/sp_about_sec03_img07.png) 20px 20px no-repeat
+				
+			
+	.point2
+		@extend .contents-area .point
+		background: url(../img/about/about_bg_pat.png)
+		h2
+			background: url(../img/about/pc_about_sec04_titilebg.png) 0 0 no-repeat
+		figure
+			width: 1100px
+			height: 190px
+			margin: 42px auto 0
+			position: relative
+		figcaption
+			position: absolute
+			top: 45px
+			left: 610px
+			font-size: 1.5rem
+			color: $orange4
+		p
+			width: 1100px
+			margin: 0 auto
+			padding: 0 30px 0 660px
+			font-size: 1.14rem
+			line-height: 1.75
+		a
+			display: block
+			width: 380px
+			height: 85px
+			margin: 30px auto
+			background: $pink
+			border-bottom: 5px solid $pink2
+			border-radius: 5px
+			color: $white
+			font-size: 1.4rem
+			line-height: 85px
+			text-align: center
+			position: relative
+			&:hover
+				background: $pink1
+				border-color: $pink3
+				&:before
+					margin-top: -2px
+	.point3
+		@extend .contents-area .point
+		h2
+			background: url(../img/about/pc_about_sec05_titilebg.png) 0 0 no-repeat
+		p
+			width: 1100px
+			min-height: 333px
+			margin: 40px auto 0
+			padding: 30px 570px 0 0
+			background: url(../img/about/sp_about_sec05_img01.jpg) right top no-repeat
+			font-size: 1.14rem
+			line-height: 2.14rem
+	.point4
+		@extend .contents-area .point
+		background: url(../img/about/about_bg_pat.png)
+		h2
+			width: 777px
+			background: url(../img/about/pc_about_sec06_titilebg.png) 0 0 no-repeat
+		div
+			width: 1100px
+			min-height: 333px
+			margin: 40px auto 0
+			background: url(../img/about/sp_about_sec06_img01.jpg) left top no-repeat
+		p
+			padding: 30px 0 0 570px
+			font-size: 1.14rem
+			line-height: 2.14rem
+			position: relative
+		ul
+			margin: 54px auto 0
+			padding: 0 0 0 590px
+		li
+			display: inline-block
+			position: relative
+		li:nth-of-type(1)
+			margin-right: 40px
+			&:before
+				content: url(../img/about/sp_about_sec06_img02.png)
+				position: absolute
+				top: -40px
+				left: -40px
+		li:nth-of-type(2)
+			&:before
+				content: url(../img/about/sp_about_sec06_img03.png)
+				position: absolute
+				top: -40px
+				left: -40px
+		a
+			display: inline-block
+			width: 230px
+			height: 110px
+			padding-top: 16px
+			background: $pink
+			border-bottom: 5px solid $pink2
+			border-radius: 5px
+			color: $white
+			font-size: 2.14rem
+			text-align: center
+			position: relative
+			strong
+				color: $yellow
+				font-weight: bold
+			small
+				display: block
+				font-size: 1.2rem
+			&:hover
+				background: $pink1
+				border-color: $pink3
+				&:before
+					margin-top: -2px
+	
+	// cm
+	.cm
+		width: 100%
+		max-width: 1700px
+		height: 605px
+		margin: 0 auto
+		background: url(../img/about/pc_about_sec07_bg.jpg) center top no-repeat
+		text-align: center
+		figure
+			width: 1100px
+			margin: 0 auto
+			padding: 85px 0 0
+			text-align: center
+		figcaption
+			color: $white
+			font-size: 2.14rem
+		img
+			position: relative
+			top: -20px
+	
+	// flow
+	.flow
+		width: 100%
+		max-width: 1700px
+		margin: 0 auto
+		text-align: center
+		figure
+			width: 1100px
+			margin: 0 auto
+			padding: 85px 0 0
+			text-align: center
+		figcaption
+			color: $green
+			font-size: 2.14rem
+			font-weight: bold
+		img
+			position: relative
+			top: 36px
+	
+	// faq
+	.faq
+		width: 1100px
+		margin: 0 auto
+		padding: 110px 0 0
+		h2
+			color: $green
+			font-size: 2.14rem
+			text-align: center
+			&:before
+				display: none
+		dl
+			padding: 2.5rem 0
+			font-size: 1.28rem
+			&:not(:last-of-type)
+				border-bottom: 1px solid $gray
+		dt
+			display: block
+			color: $green
+			&:before
+				content: "Q."
+				font-size: 1.57rem
+				margin-right: .5em
+		dd
+			display: block
+			margin-top: .75em;
+			&:before
+				content: "A."
+				color: $orange
+				font-size: 1.57rem
+				margin-right: .5em
+			a
+				color: $orange
+				text-decoration: underline
+	
+	// kbp
+	.kbp
+		width: 1100px
+		margin: 0 auto
+		padding: 110px 0 0
+		h2
+			margin-bottom: 60px
+			color: $green
+			font-size: 2.14rem
+			text-align: center
+			&:before
+				display: none
+		p
+			margin: 1.75em 0 0
+			font-size: 1.28rem
+			text-align: center
+		figure
+			margin: 80px 0 0
+			text-align: center
+		figcaption
+			display: block
+			margin: 60px 0 0
+			color: $green
+			font-size: 1.86rem
+			
+	
+	// commons
+	.information, .tokushu-area, .banner-area, .search-items, .about-area
+		width: 850px
+		margin: 70px auto 0
+			
