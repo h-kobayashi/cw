@@ -1,0 +1,856 @@
+.wrapper-shadow,
+.wrapper-shadow-keep,
+.wrapper-shadow-kodawari,
+.wrapper-shadow-policy {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 99;
+}
+body.underwrapper {
+  overflow: hidden;
+}
+.wrapper-shadow-keep {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.keepmodal {
+  display: none;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -150px;
+  background: #58b244;
+  border-radius: 2px;
+  -webkit-box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
+  box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
+  color: #fff;
+  font-size: 1.14em;
+  font-weight: bold;
+  line-height: 100px;
+  text-align: center;
+}
+.keepmodal p {
+  display: block;
+}
+.keepmodal p:after {
+  content: url("../img/top/pc/job_icon03.png");
+  position: absolute;
+  height: 45px;
+  right: -5px;
+  bottom: 10px;
+}
+.wrapper-shadow-kodawari {
+  overflow: auto;
+}
+.kodawarimodal {
+  display: none;
+  width: 984px;
+  height: auto;
+  position: relative;
+  margin: 45px auto;
+  padding: 60px 67px 0;
+  background: #fff;
+  border-radius: 10px;
+}
+.kodawarimodal h2 {
+  margin: 0 0 30px;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+.kodawarimodal h2:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url("../img/kodawari/pc/pc_kodawari_titleicon.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: relative;
+  top: -1px;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+.kodawarimodal .btn-close:first-of-type {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.kodawarimodal .btn-close:last-of-type {
+  display: block;
+  padding: 33px;
+  text-align: center;
+}
+.kodawarimodal .type-select {
+  position: relative;
+  right: auto;
+  bottom: 0;
+  z-index: 2;
+}
+.kodawarimodal .type-select span {
+  height: 41px;
+  line-height: 41px;
+  cursor: pointer;
+}
+.kodawarimodal .type-select span.selected {
+  height: 48px;
+  line-height: 48px;
+  position: relative;
+  bottom: -1px;
+}
+.kodawarimodal section {
+  padding: 30px;
+  border: 1px solid #e3e3e3;
+  position: relative;
+  color: #535353;
+}
+.kodawarimodal section:before {
+  content: url("../img/kodawari/pc/pc_kodawari_obokun.png");
+  position: absolute;
+  top: -50px;
+  right: 10px;
+}
+.kodawarimodal section.kodawari-all {
+  padding-top: 32px;
+}
+.kodawarimodal section.kodawari-part {
+  border-top: 3px solid #fd9f3a;
+}
+.kodawarimodal section.kodawari-full {
+  border-top: 3px solid #42cbfe;
+}
+.kodawarimodal section p:first-of-type {
+  padding: 0 10px 25px;
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 1.14em;
+}
+.kodawarimodal section .kodawari-item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 30px 13px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.kodawarimodal section .kodawari-item h3 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 102px;
+  background: #7ac768;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 1.14em;
+  font-weight: bold;
+}
+.kodawarimodal section .kodawari-item fieldset {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0 0 0 17px;
+}
+.kodawarimodal section .kodawari-item fieldset h4 {
+  margin: 1em 0;
+  color: #5c9a4e;
+  font-size: 1.14em;
+  font-weight: bold;
+  line-height: 1.75;
+}
+.kodawarimodal section .kodawari-item fieldset h4:first-of-type {
+  margin: 0 0 1em;
+}
+.kodawarimodal section .kodawari-item fieldset h4:before {
+  content: "▼";
+}
+.kodawarimodal section .kodawari-item fieldset ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: -14px;
+}
+.kodawarimodal section .kodawari-item fieldset ul li {
+  display: block;
+  width: 32%;
+  margin: 0 1.33% 14px 0;
+}
+.kodawarimodal section .kodawari-item fieldset ul li input[type=checkbox] {
+  display: none;
+}
+.kodawarimodal section .kodawari-item fieldset ul li label {
+  display: block;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  font-size: 1.14em;
+  line-height: 2.4;
+  text-align: center;
+  cursor: pointer;
+}
+.kodawarimodal section .kodawari-item fieldset ul li input:checked + label {
+  background: #effeeb;
+  border-color: #58b244;
+  color: #58b244;
+}
+.kodawarimodal section .kodawari-item fieldset .search-item {
+  display: inline-block;
+  position: relative;
+  margin-right: 0.2em;
+}
+.kodawarimodal section .kodawari-item fieldset .search-item:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 6px;
+  background: url("../img/top/pc/top_search_icon02.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  margin-top: -3px;
+}
+.kodawarimodal section .kodawari-item fieldset .search-item select {
+  width: auto;
+  height: 41px;
+  padding: 0 4em;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  font-size: 1.14em;
+  cursor: pointer;
+}
+.kodawarimodal .btn-area {
+  text-align: center;
+}
+.kodawarimodal .btn-area .btn-submit {
+  display: inline-block;
+  width: 460px;
+  height: 75px;
+  margin: 30px auto;
+  background: #fe4280;
+  border: 0px solid transparent;
+  border-bottom: 9px solid #dd205e;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 2.14em;
+  line-height: 65px;
+}
+.kodawarimodal .btn-area .btn-submit:hover {
+  background: #cb3566;
+  border-color: #b11a4b;
+}
+.wrapper-shadow-policy {
+  overflow: auto;
+}
+.policymodal {
+  display: none;
+  width: 90%;
+  max-width: 1100px;
+  height: auto;
+  position: relative;
+  margin: 45px auto;
+  padding: 60px 67px 0;
+  background: #fff;
+}
+.policymodal .btn-close:first-of-type {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.policymodal .btn-close:last-of-type {
+  display: block;
+  padding: 33px;
+  text-align: center;
+}
+.policymodal h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+.policymodal >p {
+  margin: 2rem 0 0;
+}
+.policymodal .footertext {
+  margin: 2rem 0 0;
+  text-align: right;
+}
+.policymodal dl {
+  margin: 2rem 0 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.policymodal dl dt {
+  display: block;
+}
+.policymodal dl dd {
+  display: block;
+}
+.policymodal dl dd ol li {
+  list-style: decimal;
+  margin-left: 1.5em;
+}
+.policymodal dl dd ol li ol li {
+  list-style: none;
+  margin: 0;
+}
+.policymodal dl dd ol li ol li:before {
+  margin-right: 0.5em;
+}
+.policymodal dl dd ol li ol li:nth-of-type(1):before {
+  content: "①";
+}
+.policymodal dl dd ol li ol li:nth-of-type(2):before {
+  content: "②";
+}
+.policymodal dl dd ol li ol li:nth-of-type(3):before {
+  content: "③";
+}
+.policymodal dl dd ol li ol li:nth-of-type(4):before {
+  content: "④";
+}
+.policymodal dl dd ol li ol li:nth-of-type(5):before {
+  content: "⑤";
+}
+.policymodal dl dd ol li ol li:nth-of-type(6):before {
+  content: "⑥";
+}
+.policymodal dl dd ol li ol li:nth-of-type(7):before {
+  content: "⑦";
+}
+.policymodal dl dd ol li ol li:nth-of-type(8):before {
+  content: "⑧";
+}
+.policymodal dl dd ol li ol li:nth-of-type(9):before {
+  content: "⑨";
+}
+@media screen and (max-width: 900px) {
+  .policymodal {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 15px 10px;
+    padding: 60px 15px 0;
+    background: #fff;
+  }
+  .policymodal .btn-close:first-of-type {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .policymodal .btn-close:last-of-type {
+    display: block;
+    padding: 15px;
+    text-align: center;
+  }
+  .policymodal h3 {
+    font-size: 0.79rem;
+  }
+  .policymodal p {
+    font-size: 0.79rem;
+  }
+  .policymodal dl {
+    font-size: 0.79rem;
+    line-height: 1.75;
+  }
+  .policymodal dl dt {
+    display: block;
+  }
+  .policymodal dl dd {
+    display: block;
+  }
+  .policymodal dl dd ol li {
+    margin-left: 0;
+    list-style-position: inside;
+  }
+}
+.contents-area .flowlist {
+  margin: 48px 0;
+  text-align: center;
+}
+.contents-area .flowlist li {
+  display: inline-block;
+  height: 45px;
+  margin: 0 -6px;
+  text-align: center;
+  line-height: 45px;
+  font-weight: bold;
+  color: #fff;
+}
+.contents-area .flowlist li:nth-of-type(1) {
+  width: 331px;
+  background: url("../img/parts/pc/pc_form_step01_off.png") no-repeat 0 0;
+}
+.contents-area .flowlist li:nth-of-type(1).on {
+  background: url("../img/parts/pc/pc_form_step01_on.png") no-repeat 0 0;
+}
+.contents-area .flowlist li:nth-of-type(2) {
+  width: 332px;
+  background: url("../img/parts/pc/pc_form_step02_off.png") no-repeat 0 0;
+}
+.contents-area .flowlist li:nth-of-type(2).on {
+  background: url("../img/parts/pc/pc_form_step02_on.png") no-repeat 0 0;
+}
+.contents-area .flowlist li:nth-of-type(3) {
+  width: 301px;
+  background: url("../img/parts/pc/pc_form_step03_off.png") no-repeat 0 0;
+}
+.contents-area .flowlist li:nth-of-type(3).on {
+  background: url("../img/parts/pc/pc_form_step03_on.png") no-repeat 0 0;
+}
+.contents-area .flowlist + p {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 1.14rem;
+  font-weight: bold;
+}
+.contents-area .flowlist + p strong {
+  display: block;
+  margin: 0 0 30px;
+  font-size: 1.71rem;
+  letter-spacing: 0.2em;
+}
+.contents-area .flowlist + p .btn-top {
+  display: block;
+  width: 250px;
+  height: 50px;
+  margin: 40px auto;
+  background: #fff;
+  border: 1px solid #58b244;
+  border-radius: 4px;
+  color: #58b244;
+  text-align: center;
+  font-size: 1.14rem;
+  line-height: 50px;
+}
+.contents-area .flowlist + p .btn-top:hover {
+  border-color: #58844e;
+  color: #58844e;
+}
+.contents-area .errorlist {
+  text-align: center;
+  position: relative;
+  margin: -20px 0 30px;
+}
+.contents-area .errorlist li {
+  color: #e64141;
+  font-size: 1.14rem;
+}
+.contents-area .errorlist li:before {
+  content: "*";
+}
+.contents-area section.form__block {
+  margin: 0;
+}
+.contents-area section.form__block h2 {
+  font-weight: bold;
+}
+.contents-area section.form__block dl {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-left: 2px solid #e3e3e3;
+  border-right: 2px solid #e3e3e3;
+  position: relative;
+  margin-bottom: -1px;
+  -webkit-box-shadow: rgba(0,0,0,0.2);
+  box-shadow: rgba(0,0,0,0.2);
+}
+.contents-area section.form__block dl:first-of-type {
+  border-top: 2px solid #e3e3e3;
+}
+.contents-area section.form__block dl:last-of-type {
+  border-bottom: 2px solid #e3e3e3;
+}
+.contents-area section.form__block dl dt {
+  width: 290px;
+  border-right: 1px solid #e3e3e3;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-weight: bold;
+}
+.contents-area section.form__block dl dd {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+.contents-area section.form__block dl dd:before {
+  content: "";
+  width: 74px;
+  border-right: 1px solid #e3e3e3;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-weight: bold;
+}
+.contents-area section.form__block dl dd fieldset,
+.contents-area section.form__block dl dd p {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+  padding: 20px 15px;
+}
+.contents-area section.form__block dl dd fieldset input[type=text],
+.contents-area section.form__block dl dd p input[type=text],
+.contents-area section.form__block dl dd fieldset textarea,
+.contents-area section.form__block dl dd p textarea {
+  margin: 0 5px;
+  padding: 0.5em 0.75em;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+}
+.contents-area section.form__block dl dd .form-text input[type=text] {
+  width: calc(100% - 10px);
+}
+.contents-area section.form__block dl dd .form-name input[type=text] {
+  width: calc(50% - 13px);
+}
+.contents-area section.form__block dl dd .form-textarea textarea {
+  width: calc(100% - 10px);
+  height: 10em;
+  vertical-align: text-bottom;
+}
+.contents-area section.form__block dl dd .form-birth label {
+  width: 30%;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  position: relative;
+  vertical-align: text-bottom;
+}
+.contents-area section.form__block dl dd .form-birth label .minict_wrapper {
+  width: 100%;
+  height: 2.65rem;
+  border: none;
+}
+.contents-area section.form__block dl dd .form-birth label .minict_wrapper span {
+  height: 2.65rem;
+  line-height: 2;
+}
+.contents-area section.form__block dl dd .form-birth label .minict_wrapper:after {
+  height: 2.65rem;
+  line-height: 2.65rem;
+}
+.contents-area section.form__block dl dd .form-birth label .minict_wrapper ul {
+  top: 2.55rem;
+}
+.contents-area section.form__block dl dd .form-tel input[type=text] {
+  width: 40%;
+}
+.contents-area section.form__block dl dd .form-select label {
+  display: inline-block;
+  width: 40.5%;
+  margin: 0 5px;
+  vertical-align: text-bottom;
+}
+.contents-area section.form__block dl dd .form-select label .minict_wrapper {
+  width: 100%;
+  height: 2.65rem;
+  border: 1px solid #c9c9c9;
+}
+.contents-area section.form__block dl dd .form-select label .minict_wrapper span {
+  height: 2.65rem;
+  line-height: 2;
+}
+.contents-area section.form__block dl dd .form-select label .minict_wrapper:after {
+  height: 2.65rem;
+  line-height: 2.65rem;
+}
+.contents-area section.form__block dl dd .form-select label .minict_wrapper ul {
+  top: 2.55rem;
+}
+.contents-area section.form__block dl dd .error input[type=text],
+.contents-area section.form__block dl dd .error textarea,
+.contents-area section.form__block dl dd .error select {
+  background: #fdd8de;
+}
+.contents-area section.form__block dl dd .error .errortext {
+  padding: 0.5em 0.5em 0;
+  color: #e64141;
+  font-size: 1.14rem;
+}
+.contents-area section.form__block dl dd .error .errortext:before {
+  content: "*";
+}
+.contents-area section.form__block dl.must dd:before {
+  content: "必須";
+  background: #fde8cd;
+  color: #fd9f3a;
+}
+.contents-area section.form__block dl.any dd:before {
+  content: "任意";
+  background: #f4f3f3;
+}
+.contents-area section.form__block .form-save {
+  margin: 40px 0 0;
+}
+.contents-area section.form__block .form-save fieldset {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.29rem;
+  text-align: center;
+}
+.contents-area section.form__block .form-save fieldset label:before {
+  border-color: #c9c9c9;
+}
+.contents-area section.form__block .policy {
+  margin: 48px 0;
+  padding: 30px 160px;
+  background: #fde8cd;
+}
+.contents-area section.form__block .policy p {
+  font-weight: bold;
+}
+.contents-area section.form__block .policy p a {
+  color: #0497fe;
+  text-decoration: underline;
+}
+.contents-area section.form__block .policy fieldset {
+  margin: 1em 0 0;
+  font-weight: bold;
+  font-size: 1.29rem;
+  text-align: center;
+}
+.contents-area section.form__block .policy fieldset label:after {
+  content: "必須";
+  display: inline-block;
+  margin-left: 1em;
+  padding: 0 0.75em;
+  background: #fd9f3a;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.29;
+  position: relative;
+  top: -3px;
+}
+.contents-area section.form__block .btn-area {
+  position: relative;
+  padding: 0 0 50px;
+  text-align: center;
+}
+.contents-area section.form__block .btn-area .btn-submit {
+  display: inline-block;
+  width: 340px;
+  height: 70px;
+  margin: 0 25px;
+  background: #58b244;
+  border: 0px solid transparent;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 70px;
+}
+.contents-area section.form__block .btn-area .btn-submit:hover {
+  background: #5c9a4e;
+}
+.contents-area section.form__block .btn-area .btn-cancel {
+  display: inline-block;
+  width: 340px;
+  height: 70px;
+  margin: 0 25px;
+  background: #aaa9a9;
+  border: 0px solid transparent;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 70px;
+}
+.contents-area section.form__block {
+  float: none;
+  width: 1100px;
+  margin: 0 auto;
+}
+.contents-area section.form__block .login__block {
+  margin: 40px 0;
+  padding: 60px 150px;
+  background: #f4f3f3;
+}
+.contents-area section.form__block .login__block dl {
+  display: block;
+  border: none transparent;
+  background: none transparent;
+}
+.contents-area section.form__block .login__block dl dt,
+.contents-area section.form__block .login__block dl dd {
+  border: none transparent;
+}
+.contents-area section.form__block .login__block dl dt {
+  display: block;
+  width: auto;
+  text-align: left;
+  font-size: 1.14rem;
+  font-weight: normal;
+}
+.contents-area section.form__block .login__block dl dt img {
+  margin-right: 0.5em;
+  vertical-align: baseline;
+}
+.contents-area section.form__block .login__block dl dd:before {
+  display: none;
+}
+.contents-area section.form__block .login__block dl dd {
+  padding: 0;
+}
+.contents-area section.form__block .login__block dl dd fieldset {
+  padding: 15px 0 40px;
+}
+.contents-area section.form__block .login__block dl dd input[type=text] {
+  width: 100%;
+  margin: 0;
+  padding: 0.8em 1.5em;
+}
+.contents-area .btn-entry {
+  display: block;
+  width: 330px;
+  height: 42px;
+  margin: 40px auto;
+  background: #fff;
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  color: #143fde;
+  text-align: center;
+  font-size: 1.14rem;
+  line-height: 42px;
+}
+.contents-area .btn-entry:hover {
+  border-color: #aaa9a9;
+  color: #0497fe;
+}
