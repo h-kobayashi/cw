@@ -1187,7 +1187,7 @@ body.underwrapper {
   background: url("../img/parts/sp/sp_form_step03_on.png") no-repeat 0 0/contain;
 }
 .contents-area .flowlist + p {
-  margin: 20px 0;
+  margin: 20px 0 0;
   text-align: center;
   font-size: 0.87rem;
   font-weight: bold;
@@ -1234,7 +1234,7 @@ body.underwrapper {
   font-size: 1.21rem;
 }
 .contents-area section.form__block .form__items {
-  margin: 0 10px;
+  margin: 20px 10px 0;
   padding: 20px 15px;
   border: 1px solid #e3e3e3;
   font-size: 0.86rem;
@@ -1272,18 +1272,11 @@ body.underwrapper {
   padding: 0.5em 0.75em;
   border: 1px solid #c9c9c9;
 }
-.contents-area section.form__block .form__items dl dd fieldset >ul,
-.contents-area section.form__block .form__items dl dd p >ul {
+.contents-area section.form__block .form__items dl dd fieldset small,
+.contents-area section.form__block .form__items dl dd p small {
+  display: block;
   margin: 0 5px;
-}
-.contents-area section.form__block .form__items dl dd fieldset >ul li,
-.contents-area section.form__block .form__items dl dd p >ul li {
-  padding: 0.5em 0.75em;
-  background: #fafcfd;
-}
-.contents-area section.form__block .form__items dl dd fieldset >ul li:not(:last-of-type),
-.contents-area section.form__block .form__items dl dd p >ul li:not(:last-of-type) {
-  margin-bottom: 1em;
+  font-size: 0.71rem;
 }
 .contents-area section.form__block .form__items dl dd .form-text input[type=text] {
   width: calc(100% - 10px);
@@ -1295,6 +1288,16 @@ body.underwrapper {
   width: calc(100% - 10px);
   height: 10em;
   vertical-align: text-bottom;
+}
+.contents-area section.form__block .form__items dl dd .form-list {
+  margin: 0 5px;
+}
+.contents-area section.form__block .form__items dl dd .form-list li {
+  padding: 0.5em 0.75em;
+  background: #fafcfd;
+}
+.contents-area section.form__block .form__items dl dd .form-list li:not(:last-of-type) {
+  margin-bottom: 1em;
 }
 .contents-area section.form__block .form__items dl dd .form-birth label {
   width: calc(50% - 13px);
@@ -1310,25 +1313,25 @@ body.underwrapper {
   display: block;
   margin-bottom: 10px;
 }
-.contents-area section.form__block .form__items dl dd .form-birth label .minict_wrapper {
-  width: 100%;
-  height: 2.3rem;
-  border: none;
-}
-.contents-area section.form__block .form__items dl dd .form-birth label .minict_wrapper span {
-  height: 2.3rem;
-  line-height: 1.75;
-}
-.contents-area section.form__block .form__items dl dd .form-birth label .minict_wrapper:after {
-  height: 2.3rem;
-  line-height: 2.3rem;
-}
-.contents-area section.form__block .form__items dl dd .form-birth label .minict_wrapper ul {
-  top: 2.3rem;
-  margin: 0;
-}
 .contents-area section.form__block .form__items dl dd .form-tel input[type=text] {
   width: calc(100% - 10px);
+}
+.contents-area section.form__block .form__items dl dd .form-zip input[type=text] {
+  width: calc(50% - 13px);
+}
+.contents-area section.form__block .form__items dl dd .form-zip .btn-zip {
+  display: block;
+  float: right;
+  width: calc(50% - 13px);
+  margin-right: 5px;
+  padding: 0.4em 0.75em;
+  background: #fd9f3a;
+  color: #fff;
+  border: none transparent;
+  border-radius: 4px;
+  font-size: 0.71rem;
+  line-height: 1.2;
+  text-align: center;
 }
 .contents-area section.form__block .form__items dl dd .form-select label {
   display: inline-block;
@@ -1336,24 +1339,19 @@ body.underwrapper {
   margin: 0 5px;
   vertical-align: text-bottom;
 }
-.contents-area section.form__block .form__items dl dd .form-select label .minict_wrapper {
-  width: 100%;
-  height: 2.3rem;
-  border: none transparent;
-  border-radius: 0;
+.contents-area section.form__block .form__items dl dd .form-address input[type=text] {
+  width: calc(100% - 10px);
+  margin-top: 5px;
 }
-.contents-area section.form__block .form__items dl dd .form-select label .minict_wrapper span {
-  height: 2.3rem;
-  line-height: 1.75;
+.contents-area section.form__block .form__items dl dd .form-address label {
+  width: calc(50% - 13px);
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
   border: 1px solid #c9c9c9;
-}
-.contents-area section.form__block .form__items dl dd .form-select label .minict_wrapper:after {
-  height: 2.3rem;
-  line-height: 2.3rem;
-}
-.contents-area section.form__block .form__items dl dd .form-select label .minict_wrapper ul {
-  top: 2.3rem;
-  margin: 0;
+  border-radius: 0;
+  position: relative;
+  vertical-align: text-bottom;
 }
 .contents-area section.form__block .form__items dl dd .error input[type=text],
 .contents-area section.form__block .form__items dl dd .error textarea,
@@ -1387,6 +1385,9 @@ body.underwrapper {
 }
 .contents-area section.form__block .form__items dl.must .minict_wrapper span {
   background: #fff8f0;
+}
+.contents-area section.form__block .form__items dl.must input[type=text].any {
+  background: #fff;
 }
 .contents-area section.form__block .form-save {
   margin: 20px 20px 0;

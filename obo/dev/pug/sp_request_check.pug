@@ -1,0 +1,103 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 川越市のお仕事に特化した“お祝い金がもらえる”地元密着求人サイト「川越オーボ」
+		link(rel="stylesheet", media="all", href="css/common/sp_common.css")
+		link(rel="stylesheet", media="all", href="css/sp_request.css")
+	body.request
+		.wrapper
+			
+			// ヘッダー
+			header.header__wrapper
+				.header
+					include _sp_header.pug
+			
+			// メニュー
+			include _sp_globalnav.pug
+
+			main.main
+				.contents-area
+					// 
+					section.form__block
+						h2 求人掲載のお申込み
+						ul.flowlist
+							li 情報の入力
+							li.on 入力内容の確認
+							li 完了
+					
+						form
+							.form__items
+								dl.must
+									dt ご希望掲載プラン
+									dd
+										fieldset.form-list
+											p 応募課金プラン [応募があったら費用が発生するプランです。]
+								dl.must
+									dt 法人・企業名
+									dd
+										p 株式会社アーベイン・スタッフ")
+								dl.must
+									dt 法人・企業名（カナ）
+									dd 
+										p カブシキガイシャアーベイン・スタッフ")
+								dl.must
+									dt 郵便番号
+									dd
+										p 1600014
+								dl.must
+									dt 住所
+									dd
+										p 東京都新宿区xxxx111-111<br>xxxビル6F
+								dl.must
+									dt 担当者氏名
+									dd
+										p 山田　太郎
+								dl.any
+									dt 担当者氏名（カナ）
+									dd 
+										p やまだ　たろう
+								dl.must
+									dt メールアドレス
+									dd
+										p example@xxxx.com
+											small ※こちらのメールアドレス宛に掲載に関する連絡を行います。
+								dl.must
+									dt 電話番号
+									dd
+										p 09012345678
+								dl.any
+									dt FAX番号
+									dd
+										p 0123456789日
+								dl.any
+									dt サイトURL
+									dd
+										p http://xxxx.com
+
+							.policy
+								p 当社が応募フォームで取得した応募者様の個人情報は、『<a href="javascript:void(0)" class="btn-policy">個人情報の取扱いについて</a>』に基づいて使用いたします。<br>必ずお読み頂き、同意の上お問合せ下さい。
+								fieldset
+									input(type="checkbox", name="request__item06", id="request__item06", checked)
+									label(for="request__item06") 個人情報の取扱いに同意する
+							.btn-area
+								a(href="sp_request.html").btn-cancel 修正する
+								a(href="sp_request_complete.html").btn-submit 送信する
+
+
+			// フッター
+			include _sp_footer.pug
+			
+			// policy popup
+			include _policy-popup.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		link(rel="stylesheet", href="js/jquery.minimalect.min.css")
+		script(type="text/javascript", src="js/jquery.minimalect.min.js")
+		script(type="text/javascript", src="js/common.js")
+		script(type="text/javascript", src="js/modal.js")
+		script(src="https://ajaxzip3.github.io/ajaxzip3.js", charset="UTF-8")
+

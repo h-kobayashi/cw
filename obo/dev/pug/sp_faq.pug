@@ -1,0 +1,109 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 川越市のお仕事に特化した“お祝い金がもらえる”地元密着求人サイト「川越オーボ」
+		link(rel="stylesheet", media="all", href="css/common/sp_common.css")
+		link(rel="stylesheet", media="all", href="css/sp_faq.css")
+	body.faq
+		.wrapper
+			
+			// ヘッダー
+			header.header__wrapper
+				.header
+					include _sp_header.pug
+			
+			// メニュー
+			include _sp_globalnav.pug
+			
+			main.main
+				
+				.contents-area
+				
+					section.faq__block
+					
+						h2 よくある質問
+						
+						ul
+							li: a(href="#faqlist1") プランについて
+							li: a(href="#faqlist2") お祝い金について
+							li: a(href="#faqlist3") 求人掲載について
+							
+						div#faqlist1
+							h3 プランについて
+							dl
+								dt 掲載プランが決まらない。
+								dd
+									div 一度お問い合わせください。<br>ご納得がいただけるまで、疑問点やお悩みにお付き合いさせていただきます。
+									a(href="javascript:void(0)").accordion
+							dl
+								dt 掲載プランが決まらない。
+								dd
+									div 一度お問い合わせください。<br>ご納得がいただけるまで、疑問点やお悩みにお付き合いさせていただきます。
+									a(href="javascript:void(0)").accordion
+							
+						div#faqlist2
+							h3 お祝い金について
+							dl
+								dt テキストテキストテキストテキスト
+								dd
+									div テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+									a(href="javascript:void(0)").accordion
+							dl
+								dt テキストテキストテキストテキスト
+								dd
+									div テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+									a(href="javascript:void(0)").accordion
+							
+						div#faqlist3
+							h3 求人掲載について
+							dl
+								dt テキストテキストテキストテキスト
+								dd
+									div テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+									a(href="javascript:void(0)").accordion
+							dl
+								dt テキストテキストテキストテキスト
+								dd
+									div テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+									a(href="javascript:void(0)").accordion
+					
+					//
+					.banner-area
+						a(href="")
+							img(src="img/faq/sp/banner_spot.jpg", alt="")
+					
+					// 単発求人情報
+					section.singleJob-items
+						h2 単発求人情報
+						ul.siema
+							- for (var i = 0; i < 8; i++) {
+								li.singleJob: a(href="")
+									.item-header アトレ・PePe・駅ビルエリア
+									p 2日間限定のお仕事。川越文化を感じながら短期で稼げます。今年はスタ...
+									.item-data 単発<b>2</b>日間　時給<b>1200</b>円
+									dl
+										dt [職　種]
+										dd 飲食フード
+									dl
+										dt [勤務日]
+										dd 10月20日・10月21日
+									dl
+										dt [時　間]
+										dd 15:45～20:45
+							- }
+						.prev: img(src="img/detail/sp/sp_shousai_arrow01.png", width="13", alt="prev")
+						.next: img(src="img/detail/sp/sp_shousai_arrow02.png", width="13", alt="next")
+
+			// フッター
+			include _sp_footer.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		script(type="text/javascript", src="js/common.js")
+		script(type="text/javascript", src="js/modal.js")
+		script(type="text/javascript", src="js/accordion.js")
+		script(type="text/javascript", src="js/siema.min.js")
+		script(type="text/javascript", src="js/sp_siema.js")

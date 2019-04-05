@@ -41,7 +41,7 @@
 		li:nth-of-type(3).on
 			background: url(../img/parts/sp/sp_form_step03_on.png) no-repeat 0 0/contain
 	.flowlist + p
-		margin: 20px 0
+		margin: 20px 0 0
 		text-align: center
 		font-size: .87rem
 		font-weight: bold
@@ -84,7 +84,7 @@
 			font-weight: bold
 			font-size: 1.21rem
 		.form__items
-			margin: 0 10px
+			margin: 20px 10px 0
 			padding: 20px 15px
 			border: 1px solid $gray
 			font-size: .86rem
@@ -113,13 +113,10 @@
 							margin: 0 5px
 							padding: .5em .75em
 							border: 1px solid $gray2
-						>ul
+						small
+							display: block
 							margin: 0 5px
-							li
-								padding: .5em .75em
-								background: $lightblue2
-							li:not(:last-of-type)
-								margin-bottom: 1em
+							font-size: .71rem
 					.form-text input[type=text]
 						width: calc(100% - 10px)
 					.form-name input[type=text]
@@ -129,6 +126,13 @@
 						height: 10em
 						vertical-align: text-bottom
 				
+					.form-list
+						margin: 0 5px
+						li
+							padding: .5em .75em
+							background: $lightblue2
+						li:not(:last-of-type)
+							margin-bottom: 1em
 					.form-birth
 						label
 							width: calc(50% - 13px)
@@ -142,41 +146,42 @@
 							&:first-of-type
 								display: block
 								margin-bottom: 10px
-							.minict_wrapper
-								width: 100%
-								height: 2.3rem
-								border: none
-								span
-									height: 2.3rem
-									line-height: 1.75
-								&:after
-									height: 2.3rem
-									line-height: 2.3rem
-								ul
-									top: 2.3rem
-									margin: 0
 					.form-tel input[type=text]
 						width: calc(100% - 10px)
+					.form-zip
+						input[type=text]
+							width: calc(50% - 13px)
+						.btn-zip
+							display: block
+							float: right
+							width: calc(50% - 13px)
+							margin-right: 5px
+							padding: .4em .75em
+							background: $orange
+							color: $white
+							border: none transparent
+							border-radius: 4px
+							font-size: .71rem
+							line-height: 1.2
+							text-align: center
 					.form-select label
 						display: inline-block
 						width: calc(100% - 10px)
 						margin: 0 5px
 						vertical-align: text-bottom
-						.minict_wrapper
-							width: 100%
-							height: 2.3rem
-							border: none transparent
+					.form-address
+						input[type=text]
+							width: calc(100% - 10px)
+							margin-top: 5px
+						label
+							width: calc(50% - 13px)
+							display: inline-block
+							margin: 0 5px
+							padding: 0
+							border: 1px solid $gray2
 							border-radius: 0
-							span
-								height: 2.3rem
-								line-height: 1.75
-								border: 1px solid $gray2
-							&:after
-								height: 2.3rem
-								line-height: 2.3rem
-							ul
-								top: 2.3rem
-								margin: 0
+							position: relative
+							vertical-align: text-bottom
 
 					.error
 						input[type=text],textarea,select
@@ -202,7 +207,9 @@
 							background: $lightorange2
 					.minict_wrapper span
 						background: $lightorange2
-
+					input[type=text].any
+						background: $white
+				
 		// form save
 		.form-save
 			margin: 20px 20px 0

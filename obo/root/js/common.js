@@ -79,4 +79,16 @@
     placeholder: "日"
   });
 
+  $('#request__item05city1').minimalect({
+    placeholder: "都道府県"
+  });
+
+  $('#request__item05city2').minimalect({
+    placeholder: "市区町村"
+  });
+
+  $('.btn-zip').on("click", function() {
+    return AjaxZip3.zip2addr('request__item04', '', 'request__item05city1', 'request__item05city2', 'request__item05street');
+  });
+
 }).call(this);

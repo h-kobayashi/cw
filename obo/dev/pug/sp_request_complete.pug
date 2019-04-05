@@ -1,0 +1,48 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 川越市のお仕事に特化した“お祝い金がもらえる”地元密着求人サイト「川越オーボ」
+		link(rel="stylesheet", media="all", href="css/common/sp_common.css")
+		link(rel="stylesheet", media="all", href="css/sp_request.css")
+	body.request
+		.wrapper
+			
+			// ヘッダー
+			header.header__wrapper
+				.header
+					include _sp_header.pug
+			
+			// メニュー
+			include _sp_globalnav.pug
+
+			main.main
+				.contents-area
+					// 
+					section.form__block
+						ul.flowlist
+							li 情報の入力
+							li 入力内容の確認
+							li.on 完了
+						p
+							strong -送信完了-
+							| お申込みありがとうございます。<br>担当者よりご連絡させていただきますので<br>しばらくお待ちください。
+							a(href="./").btn-top 川崎オーボTOPへ
+
+
+			// フッター
+			include _sp_footer.pug
+			
+			// policy popup
+			include _policy-popup.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		link(rel="stylesheet", href="js/jquery.minimalect.min.css")
+		script(type="text/javascript", src="js/jquery.minimalect.min.js")
+		script(type="text/javascript", src="js/common.js")
+		script(type="text/javascript", src="js/modal.js")
+		script(src="https://ajaxzip3.github.io/ajaxzip3.js", charset="UTF-8")
+

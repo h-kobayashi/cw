@@ -1,0 +1,624 @@
+.wrapper-shadow,
+.wrapper-shadow-keep,
+.wrapper-shadow-kodawari,
+.wrapper-shadow-policy {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 99;
+}
+body.underwrapper {
+  overflow: hidden;
+}
+.wrapper-shadow-keep {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.keepmodal {
+  display: none;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -150px;
+  background: #58b244;
+  border-radius: 2px;
+  -webkit-box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
+  box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
+  color: #fff;
+  font-size: 1.14em;
+  font-weight: bold;
+  line-height: 100px;
+  text-align: center;
+}
+.keepmodal p {
+  display: block;
+}
+.keepmodal p:after {
+  content: url("../img/top/pc/job_icon03.png");
+  position: absolute;
+  height: 45px;
+  right: -5px;
+  bottom: 10px;
+}
+.wrapper-shadow-kodawari {
+  overflow: auto;
+}
+.kodawarimodal {
+  display: none;
+  width: 984px;
+  height: auto;
+  position: relative;
+  margin: 45px auto;
+  padding: 60px 67px 0;
+  background: #fff;
+  border-radius: 10px;
+}
+.kodawarimodal h2 {
+  margin: 0 0 30px;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+.kodawarimodal h2:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url("../img/kodawari/pc/pc_kodawari_titleicon.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: relative;
+  top: -1px;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+.kodawarimodal .btn-close:first-of-type {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.kodawarimodal .btn-close:last-of-type {
+  display: block;
+  padding: 33px;
+  text-align: center;
+}
+.kodawarimodal .type-select {
+  position: relative;
+  right: auto;
+  bottom: 0;
+  z-index: 2;
+}
+.kodawarimodal .type-select span {
+  height: 41px;
+  line-height: 41px;
+  cursor: pointer;
+}
+.kodawarimodal .type-select span.selected {
+  height: 48px;
+  line-height: 48px;
+  position: relative;
+  bottom: -1px;
+}
+.kodawarimodal section {
+  padding: 30px;
+  border: 1px solid #e3e3e3;
+  position: relative;
+  color: #535353;
+}
+.kodawarimodal section:before {
+  content: url("../img/kodawari/pc/pc_kodawari_obokun.png");
+  position: absolute;
+  top: -50px;
+  right: 10px;
+}
+.kodawarimodal section.kodawari-all {
+  padding-top: 32px;
+}
+.kodawarimodal section.kodawari-part {
+  border-top: 3px solid #fd9f3a;
+}
+.kodawarimodal section.kodawari-full {
+  border-top: 3px solid #42cbfe;
+}
+.kodawarimodal section p:first-of-type {
+  padding: 0 10px 25px;
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 1.14em;
+}
+.kodawarimodal section .kodawari-item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 30px 13px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.kodawarimodal section .kodawari-item h3 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 102px;
+  background: #7ac768;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 1.14em;
+  font-weight: bold;
+}
+.kodawarimodal section .kodawari-item fieldset {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0 0 0 17px;
+}
+.kodawarimodal section .kodawari-item fieldset h4 {
+  margin: 1em 0;
+  color: #5c9a4e;
+  font-size: 1.14em;
+  font-weight: bold;
+  line-height: 1.75;
+}
+.kodawarimodal section .kodawari-item fieldset h4:first-of-type {
+  margin: 0 0 1em;
+}
+.kodawarimodal section .kodawari-item fieldset h4:before {
+  content: "▼";
+}
+.kodawarimodal section .kodawari-item fieldset ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: -14px;
+}
+.kodawarimodal section .kodawari-item fieldset ul li {
+  display: block;
+  width: 32%;
+  margin: 0 1.33% 14px 0;
+}
+.kodawarimodal section .kodawari-item fieldset ul li input[type=checkbox] {
+  display: none;
+}
+.kodawarimodal section .kodawari-item fieldset ul li label {
+  display: block;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  font-size: 1.14em;
+  line-height: 2.4;
+  text-align: center;
+  cursor: pointer;
+}
+.kodawarimodal section .kodawari-item fieldset ul li input:checked + label {
+  background: #effeeb;
+  border-color: #58b244;
+  color: #58b244;
+}
+.kodawarimodal section .kodawari-item fieldset .search-item {
+  display: inline-block;
+  position: relative;
+  margin-right: 0.2em;
+}
+.kodawarimodal section .kodawari-item fieldset .search-item:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 6px;
+  background: url("../img/top/pc/top_search_icon02.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  margin-top: -3px;
+}
+.kodawarimodal section .kodawari-item fieldset .search-item select {
+  width: auto;
+  height: 41px;
+  padding: 0 4em;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  font-size: 1.14em;
+  cursor: pointer;
+}
+.kodawarimodal .btn-area {
+  text-align: center;
+}
+.kodawarimodal .btn-area .btn-submit {
+  display: inline-block;
+  width: 460px;
+  height: 75px;
+  margin: 30px auto;
+  background: #fe4280;
+  border: 0px solid transparent;
+  border-bottom: 9px solid #dd205e;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 2.14em;
+  line-height: 65px;
+}
+.kodawarimodal .btn-area .btn-submit:hover {
+  background: #cb3566;
+  border-color: #b11a4b;
+}
+.wrapper-shadow-policy {
+  overflow: auto;
+}
+.policymodal {
+  display: none;
+  width: 90%;
+  max-width: 1100px;
+  height: auto;
+  position: relative;
+  margin: 45px auto;
+  padding: 60px 67px 0;
+  background: #fff;
+}
+.policymodal .btn-close:first-of-type {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.policymodal .btn-close:last-of-type {
+  display: block;
+  padding: 33px;
+  text-align: center;
+}
+.policymodal h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+.policymodal >p {
+  margin: 2rem 0 0;
+}
+.policymodal .footertext {
+  margin: 2rem 0 0;
+  text-align: right;
+}
+.policymodal dl {
+  margin: 2rem 0 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.policymodal dl dt {
+  display: block;
+}
+.policymodal dl dd {
+  display: block;
+}
+.policymodal dl dd ol li {
+  list-style: decimal;
+  margin-left: 1.5em;
+}
+.policymodal dl dd ol li ol li {
+  list-style: none;
+  margin: 0;
+}
+.policymodal dl dd ol li ol li:before {
+  margin-right: 0.5em;
+}
+.policymodal dl dd ol li ol li:nth-of-type(1):before {
+  content: "①";
+}
+.policymodal dl dd ol li ol li:nth-of-type(2):before {
+  content: "②";
+}
+.policymodal dl dd ol li ol li:nth-of-type(3):before {
+  content: "③";
+}
+.policymodal dl dd ol li ol li:nth-of-type(4):before {
+  content: "④";
+}
+.policymodal dl dd ol li ol li:nth-of-type(5):before {
+  content: "⑤";
+}
+.policymodal dl dd ol li ol li:nth-of-type(6):before {
+  content: "⑥";
+}
+.policymodal dl dd ol li ol li:nth-of-type(7):before {
+  content: "⑦";
+}
+.policymodal dl dd ol li ol li:nth-of-type(8):before {
+  content: "⑧";
+}
+.policymodal dl dd ol li ol li:nth-of-type(9):before {
+  content: "⑨";
+}
+@media screen and (max-width: 900px) {
+  .policymodal {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 15px 10px;
+    padding: 60px 15px 0;
+    background: #fff;
+  }
+  .policymodal .btn-close:first-of-type {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .policymodal .btn-close:last-of-type {
+    display: block;
+    padding: 15px;
+    text-align: center;
+  }
+  .policymodal h3 {
+    font-size: 0.79rem;
+  }
+  .policymodal p {
+    font-size: 0.79rem;
+  }
+  .policymodal dl {
+    font-size: 0.79rem;
+    line-height: 1.75;
+  }
+  .policymodal dl dt {
+    display: block;
+  }
+  .policymodal dl dd {
+    display: block;
+  }
+  .policymodal dl dd ol li {
+    margin-left: 0;
+    list-style-position: inside;
+  }
+}
+.contents-area .faq__block {
+  position: relative;
+  margin-bottom: 110px;
+}
+.contents-area .faq__block h2 {
+  height: 94px;
+  padding-top: 10px;
+  background: url("../img/faq/pc/q&a_pc_pagetitle_bg.png") no-repeat center top;
+  color: #fff;
+  font-size: 2.14rem;
+  letter-spacing: 0.2em;
+  text-align: center;
+  line-height: 1.67;
+}
+.contents-area .faq__block h2:before {
+  display: none;
+}
+.contents-area .faq__block ul {
+  text-align: center;
+  margin: 60px 0 0;
+}
+.contents-area .faq__block ul li {
+  display: inline-block;
+  margin: 0 50px;
+  position: relative;
+}
+.contents-area .faq__block ul li:before {
+  content: "";
+  width: 7px;
+  height: 10px;
+  background: url("../img/faq/pc/q&a_pc_icon01.png") no-repeat 0 0/contain;
+  position: absolute;
+  top: 0.67em;
+  left: -1.25em;
+}
+.contents-area .faq__block ul li a {
+  color: #58b244;
+  font-size: 1.57rem;
+  text-decoration: underline;
+}
+.contents-area .faq__block >div h3 {
+  width: 272px;
+  height: 47px;
+  margin: 60px 0 30px;
+  background: #fd9f3a;
+  border-radius: 24px;
+  color: #fff;
+  font-size: 1.57rem;
+  line-height: 47px;
+  text-align: center;
+}
+.contents-area .faq__block >div dl {
+  padding: 30px 45px 30px 75px;
+  border-top: 1px solid #e3e3e3;
+  line-height: 2;
+}
+.contents-area .faq__block >div dl dt {
+  color: #58b244;
+  font-size: 1.28rem;
+  position: relative;
+}
+.contents-area .faq__block >div dl dt:before {
+  content: "Q.";
+  margin-right: 0.5em;
+  font-size: 1.57rem;
+  position: absolute;
+  top: -5px;
+  left: -30px;
+}
+.contents-area .faq__block >div dl dd {
+  font-size: 1.14rem;
+  position: relative;
+}
+.contents-area .faq__block >div dl dd:before {
+  content: "A.";
+  margin-right: 0.5em;
+  color: #fd9f3a;
+  font-size: 1.57rem;
+  position: absolute;
+  top: -5px;
+  left: -30px;
+}
+.contents-area .faq__block >div dl:last-of-type {
+  border-bottom: 1px solid #e3e3e3;
+}
+.contents-area .singleJob-items {
+  position: relative;
+}
+.contents-area .singleJob-items ul {
+  margin: 20px 0 0;
+}
+.contents-area .singleJob-items ul li {
+  display: inline-block;
+  margin: 0 6px;
+  padding: 0 0 1rem;
+  border: 2px solid #e3e3e3;
+  font-size: 0.87em;
+}
+.contents-area .singleJob-items ul li .item-header {
+  display: inline-block;
+  margin: 15px 0 0;
+  line-height: 1.5;
+  padding: 0.25em 1em 0.2em 1.5em;
+  background: #f6f6f6;
+  vertical-align: middle;
+}
+.contents-area .singleJob-items ul li p {
+  margin: 0.5rem 1.5rem;
+  font-size: 0.92rem;
+}
+.contents-area .singleJob-items ul li .item-data {
+  margin: 0 1.5rem 0.5rem;
+  padding: 0.25rem 1rem;
+  background: #f6f6f6;
+  text-align: right;
+}
+.contents-area .singleJob-items ul li .item-data b {
+  font-size: 2em;
+  color: #fd9f3a;
+  font-weight: bold;
+}
+.contents-area .singleJob-items ul li dl {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 1.5rem;
+}
+.contents-area .singleJob-items ul li dl dt {
+  display: inline-block;
+  color: #58b244;
+  font-weight: bold;
+}
+.contents-area .singleJob-items ul li dl dd {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.contents-area .singleJob-items .prev {
+  display: inline-block;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  margin-top: -24px;
+  cursor: pointer;
+}
+.contents-area .singleJob-items .prev:hover {
+  background: #f6f6f6;
+}
+.contents-area .singleJob-items .next {
+  display: inline-block;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  margin-top: -24px;
+  cursor: pointer;
+}
+.contents-area .singleJob-items .next:hover {
+  background: #f6f6f6;
+}
+.contents-area .banner-area a {
+  display: block;
+  margin: 0 0 20px;
+}
+.contents-area .banner-area figure {
+  position: relative;
+}
+.contents-area .banner-area figcaption {
+  display: block;
+  font-size: 2.5rem;
+  color: #f81425;
+  line-height: 170px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 310px;
+}
+.contents-area .banner-area figcaption >b {
+  font-size: 4rem;
+}

@@ -1,0 +1,656 @@
+
+@import "common/_color"
+@import "common/_modal"
+
+// branding
+.branding
+	width: 100%
+	height: 565px
+	min-width: 1100px
+	max-width: 1700px
+	margin: 0 auto
+	background: url("../img/oiwai/pc/oiwai_pc_mainimg_bg.jpg") center top no-repeat
+	box-shadow: rgba(0,0,0,.2) 0 1px 2px inset
+	text-align: center
+	h1
+		display: inline-block
+		margin: 0 auto
+		padding-top: 36px
+		border-bottom: 10px solid $yellow2
+		position: relative
+		color: $pink
+		font-size: 4.28rem
+		line-height: 1
+		text-shadow: rgba(255,255,255,1) 1px 1px 1px
+		strong
+			font-size: 1.33em
+			margin-left: -.1em
+		&:before
+			content: url(../img/oiwai/pc/oiwai_pc_mainimg_img01.png)
+			display: block
+			position: relative
+			left: -116px
+	p
+		position: relative
+		top: 70px
+		left: 43%
+		font-size: 1.43rem
+		line-height: 2.71rem
+		text-align: left
+		strong
+			color: $pink
+			font-size: 1.5em
+			&:before
+				content: url(../img/oiwai/pc/oiwai_pc_mainimg_img02.png)
+				position: relative
+				bottom: -6px
+				margin-right: .25em
+	
+
+.main
+	width: 100%
+	max-width: 1700px
+
+.contents-area
+	width: 100%
+	max-width: 1700px
+	margin: 0 auto
+
+	// introduction
+	.introduction
+		width: 1100px
+		height: 1067px
+		margin: 0 auto
+		padding: 210px 0 
+		background: url(../img/oiwai/pc/oiwai_pc_sec01_frame.png) no-repeat center 55px
+		text-align: center
+		h2
+			display: inline-block
+			margin: 0 auto
+			border-bottom: 2px dashed $green
+			text-align: center
+			color: $green
+			font-size: 3.43rem
+			font-weight: normal
+			line-height: 1.5
+			&:before
+				display: none
+		>p
+			margin: 30px auto 0
+			&:first-of-type
+				font-size: 1.71rem
+				line-height: 2
+				strong
+					color: $pink
+					font-weight: bold
+					&:before
+						content: url(../img/oiwai/pc/oiwai_pc_sec01_icon01.png)
+						position: relative
+						bottom: -.25em
+						margin-right: .25em
+			&:last-of-type
+				font-size: 1.43rem
+				line-height: 2.4
+				b
+					font-size: 1.2em
+					color: $green
+		.comment
+			width: 820px
+			margin: 10px 0 0 200px
+			padding: 20px 40px
+			background: $green
+			border-radius: 8px
+			position: relative
+			text-align: left
+			&:before
+				content: url(../img/oiwai/pc/oiwai_pc_sec01_obokun.png)
+				position: absolute
+				left: -140px
+			&:after {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				border-top: 2px solid transparent;
+				border-right: 26px solid $green;
+				border-bottom: 18px solid transparent;
+				position: absolute;
+				left: -26px;
+				bottom: 20%;
+			}
+			h3
+				color: $yellow
+				font-size: 2.3rem
+				strong
+					text-decoration: underline
+			p
+				color: $white
+				font-size: 1.4rem
+				line-height: 2
+				
+	// aboutmark
+	.aboutmark
+		width: 1100px
+		height: 944px
+		margin: 100px auto 0
+		padding: 44px 0 0
+		background: url(../img/oiwai/pc/oiwai_pc_sec02_pink_frame.png) no-repeat left top, url(../img/oiwai/pc/oiwai_pc_sec02_yellow_frame.png) no-repeat right top
+		position: relative
+		&:before
+			content: url(../img/oiwai/pc/oiwai_pc_sec01_icon02.png)
+			position: absolute
+			top: -50px
+			left: 50%
+			margin-left: -41px
+		>ul
+			&:after
+				content: ""
+				display: block
+				width: 1px
+				height: 1px
+				clear: both
+			li
+				width: 530px
+				padding: 0 30px
+				&:before
+					display: block
+					width: 168px
+					margin: 0 auto
+				h2
+					width: 360px
+					margin: 0 auto
+					border-bottom: 2px dashed $black
+					font-size: 2.1rem
+					font-weight: bold
+					line-height: 2
+					text-align: center
+					&:before
+						display: none
+				p
+					padding: 10px 20px
+					background: $lightgray2
+					border-radius: 8px
+					font-size: 1.28rem
+					line-height: 1.67
+				figure
+					margin: 12px
+					overflow: hidden
+					>img
+						float: left
+					figcaption
+						float: right
+						font-size: 1.28rem
+						line-height: 54px
+						span
+							display: block
+							width: 170px
+							height: 54px
+							border-radius: 27px
+							text-align: center
+						small
+							display: block
+							color: $black
+							text-align: right
+							font-size: 1em
+							position: relative
+							right: -1em
+							img
+								position: relative
+								margin: 0 .5em
+								bottom: -3px
+		.pinkmark
+			float: left
+			&:before
+				content: url(../img/oiwai/pc/oiwai_pc_sec02_pink_img01.png)
+				display: block
+			h2
+				color: $pink
+				border-color: $pink
+			figure
+				figcaption
+					span
+						background: $pink
+						color: $white
+		.yellowmark
+			float: right
+			&:before
+				content: url(../img/oiwai/pc/oiwai_pc_sec02_yellow_img01.png)
+				display: block
+			h2
+				color: $orange
+				border-color: $yellow
+			figure
+				figcaption
+					span
+						background: $yellow
+						color: $pink
+		.pinkflow
+			&:before
+				content: url(../img/oiwai/pc/oiwai_pc_sec02_pink_img04.png)
+				display: block
+				width: 45px
+				height: 21px
+				margin: 30px 240px 30px
+			h3
+				margin-left: 30px
+				font-size: 2rem
+				font-weight: bold
+				small
+					display: inline-block
+					padding: 0 1em
+					background: $pink
+					border-radius: 1em
+					color: $white
+					font-size: 1rem
+					font-weight: normal
+					line-height: 2
+					position: relative
+					top: -6px
+					margin-right: .5em
+			ul
+				margin: 20px 0 20px 30px
+				li
+					width: 326px
+					height: 216px
+					display: inline-block
+					position: relative
+					background: $pink
+					border-radius: 8px
+					color: $white
+					text-align: center
+					vertical-align: text-bottom
+					h4
+						font-weight: normal
+						font-size: 2.57rem
+						line-height: 1.1
+						width: 1.5em
+						margin: 20px auto 0
+						border-bottom: 2px solid $white
+						&:before
+							content: url(../img/oiwai/pc/oiwai_pc_sec02_pink_img05.png)
+							position: absolute
+							top: 5px
+							left: 5px
+						small
+							display: block
+							font-size: 1rem
+							font-weight: normal
+					p
+						font-size: 1.4rem;
+						line-height: 1.5;
+						margin: 20px 25px;
+						small
+							display: block
+							color: $black
+							font-size: 0.8em;
+							margin: 7px;
+							line-height: 1.2;
+							text-align: left;
+				li:not(:last-of-type)
+					margin-right: 24px
+					&:after
+						content: url(../img/oiwai/pc/oiwai_pc_sec02_pink_img07.png)
+						position: absolute
+						right: -21px
+						top: 50%
+						margin-top: -11px
+				li:nth-of-type(1):before
+					content: url(../img/oiwai/pc/oiwai_pc_sec02_pink_img06.png)
+					position: absolute
+					top: 20px
+					right: 40px
+				li:nth-of-type(2):before
+					content: url(../img/oiwai/pc/oiwai_pc_sec02_pink_img08.png)
+					position: absolute
+					right: 5px
+					bottom: 5px
+				li:nth-of-type(3):before
+					content: url(../img/oiwai/pc/oiwai_pc_sec02_pink_img09.png)
+					position: absolute
+					top: -5px
+					right: -1px
+			>p
+				margin: 30px 50px
+				font-size: 1.28rem
+				
+			
+	// oiwaicheck
+	.oiwaicheck
+		width: 100%
+		min-width: 1100px
+		max-width: 1700px
+		height: 659px
+		margin: 110px auto 0
+		padding: 60px 0 0 330px
+		background: url(../img/oiwai/pc/oiwai_pc_sec03_bg.jpg) no-repeat center top
+		text-align: center
+		h2
+			width: 548px
+			height: 63px
+			margin: 0 auto
+			background: url(../img/oiwai/pc/oiwai_pc_sec03_titilebg.png) no-repeat center top
+			text-align: center
+			color: $white
+			font-size: 2.14rem
+			line-height: 63px
+			position: relative
+			z-index: 2
+			&:before
+				display: none
+		ul
+			position: relative
+			top: -33px
+			width: 765px
+			height: 510px
+			margin: 0 auto
+			padding-top: 78px
+			background: rgba(255,255,255,.8)
+			border-radius: 8px
+			box-shadow: rgba(0,0,0,.2) 0 1px 2px
+			li:not(:last-of-type)
+				display: block
+				width: 694px
+				height: 64px
+				margin: 12px auto 0
+				padding: 8px 20px
+				border: 5px solid $green
+				border-radius: 32px
+				font-size: 1.5rem
+				line-height: 1.5
+				text-align: left
+				&:before
+					content: url(../img/oiwai/pc/oiwai_pc_sec03_img01.png)
+					margin-right: .5em
+					position: relative
+					top: 5px
+			li:last-of-type
+				display: inline-block
+				margin: 20px auto 0
+				color: $orange
+				font-size: 2.14rem
+				line-height: 1.5
+				border-bottom: 3px solid $orange
+				position: relative
+				&:before
+					content: url(../img/oiwai/pc/oiwai_pc_sec03_img04.png)
+					display: block
+					line-height: 20px
+				&:after
+					content: url(../img/oiwai/pc/oiwai_pc_sec03_img03.png)
+					display: block
+					position: absolute
+					right: -120px
+					top: 0
+
+	
+	// oiwaiflow
+	.oiwaiflow
+		width: 100%
+		min-width: 1100px
+		max-width: 1700px
+		margin: 130px auto 0
+		text-align: center
+		h2
+			width: 650px
+			height: 94px
+			margin: 0 auto
+			background: url(../img/oiwai/pc/oiwai_pc_sec04_titilebg.png) no-repeat center top
+			color: $white
+			font-size: 2.5rem
+			line-height: 2
+			&:before
+				display: none
+		.oiwaiflow_pink
+			width: 1085px
+			height: 247px
+			margin: 50px auto
+			background: url(../img/oiwai/pc/oiwai_pc_sec04_pink_img01.png) no-repeat 0 0
+			text-align: left
+			dt
+				display: inline-block
+				width: 247px
+				height: 247px
+				padding: 47px 0 0
+				color: $pink
+				font-size : 2rem
+				line-height: 1.2
+				text-align: center
+				vertical-align: top
+				strong
+					font-size: 1.4em
+					&:before
+						content: url(../img/oiwai/pc/oiwai_pc_sec04_pink_img02.png)
+						display: block
+			dd
+				display: inline-block
+				width: 800px
+				height: 247px
+				padding: 70px 0 0
+				color: $white
+				small
+					display: block
+					width: 640px
+					text-align: center
+					span
+						display: inline-block
+						width: 184px
+						height: 32px
+						margin: 0 10px
+						background: $white
+						border-radius: 16px
+						text-align: center
+						color: $black
+						font-size: 1.27rem
+						line-height: 34px
+						vertical-align: middle
+				p
+					font-size: 1.71rem
+					line-height: 1.5
+					margin: 20px 0 0 20px
+					strong
+						color: $yellow
+						font-weight: bold
+		ol
+			margin: 50px 0 0
+			li
+				display: block
+				width: 1000px
+				min-height: 120px
+				margin: 12px auto 0
+				padding: 20px
+				border: 5px solid $gray
+				border-radius: 70px
+				font-size: 1.4rem
+				line-height: 1.5
+				position: relative
+				strong
+					color: $pink
+				small
+					display: block
+					font-size: 1.2rem
+			li:nth-of-type(even)
+				padding: 40px 20px
+			li:not(:first-of-type):before
+				content: "▼"
+				display: block
+				width: 36px
+				height: 36px
+				background: $green2
+				border-radius: 18px
+				color: $white
+				font-size: 1.4rem
+				line-height: 38px
+				position: absolute
+				top: -29px
+				left: 50%
+				margin-left: -18px
+			for num in (1 .. 4)
+				li:nth-of-type({num}):after
+					content: "" + num
+					display: block
+					width: 46px
+					height: 46px
+					background: $orange
+					border-radius: 23px
+					color: $white
+					font-size: 2rem
+					line-height: 48px
+					position: absolute
+					top: 0
+					left: -10px
+		.oiwaiflow_yellow
+			width: 1085px
+			height: 247px
+			margin: 50px auto
+			background: url(../img/oiwai/pc/oiwai_pc_sec04_yellow_img01.png) no-repeat 0 0
+			text-align: left
+			dt
+				display: inline-block
+				width: 247px
+				height: 247px
+				padding: 47px 0 0
+				color: $orange
+				font-size : 2rem
+				line-height: 1.2
+				text-align: center
+				vertical-align: top
+				strong
+					font-size: 1.4em
+					&:before
+						content: url(../img/oiwai/pc/oiwai_pc_sec04_yellow_img02.png)
+						display: block
+			dd
+				display: inline-block
+				width: 640px
+				height: 247px
+				padding: 70px 0 0
+				small
+					display: block
+					text-align: center
+					span
+						display: inline-block
+						width: 184px
+						height: 32px
+						margin: 0 10px
+						background: $white
+						border-radius: 16px
+						text-align: center
+						color: $orange
+						font-size: 1.27rem
+						line-height: 34px
+						vertical-align: middle
+				p
+					font-size: 1.71rem
+					line-height: 1.5
+					margin: 20px 0 0 20px
+					color: $black
+					text-align: center
+					
+	
+	// oiwaiattention
+	.oiwaiattention
+		width: 1080px
+		margin: 160px auto 0
+		padding: 40px
+		text-align: center
+		background: url(../img/oiwai/pc/oiwai_pc_sec05_bg.png32.png) 0 0
+		>div
+			background: $white
+			box-shadow: rgba(0,0,0,.2) 0 1px 2px
+			position: relative
+			h2
+				position: absolute
+				top: -64px
+				left: 50%
+				margin-left: -360px
+				width: 720px
+				height: 165px
+				background: url(../img/oiwai/pc/oiwai_pc_sec05_titilebg.png) no-repeat center top
+				color: $orange
+				font-size: 2.5rem
+				padding-top: 100px
+				text-align: center
+				&:before
+					display: none
+			small
+				display: block
+				padding: 140px 0 0
+				color: $green
+				font-size: 1.4rem
+				font-weight: bold
+			ul
+				padding: 40px 100px
+				li
+					list-style: disc
+					font-size: 1.28rem
+					line-height: 1.5
+					margin-bottom: 1em
+	
+	// oiwaifaq
+	.oiwaifaq
+		width: 1100px
+		margin: 0 auto
+		padding: 110px 0 0
+		h2
+			width: 454px
+			height: 94px
+			background: url(../img/oiwai/pc/oiwai_pc_sec06_titilebg.png) no-repeat center top
+			color: $white
+			font-size: 2.5rem
+			line-height: 2
+			&:before
+				display: none
+		dl
+			padding: 2.5rem 0
+			font-size: 1.28rem
+			border-bottom: 1px solid $gray
+		dt
+			display: block
+			color: $green
+			&:before
+				content: "Q."
+				font-size: 1.57rem
+				margin-right: .5em
+		dd
+			display: block
+			margin-top: .75em;
+			&:before
+				content: "A."
+				color: $orange
+				font-size: 1.57rem
+				margin-right: .5em
+			a
+				color: $orange
+				text-decoration: underline
+	
+	// kbp
+	.kbp
+		width: 1100px
+		margin: 0 auto
+		padding: 110px 0 0
+		h2
+			margin-bottom: 60px
+			color: $green
+			font-size: 2.14rem
+			text-align: center
+			&:before
+				display: none
+		p
+			margin: 1.75em 0 0
+			font-size: 1.28rem
+			text-align: center
+		figure
+			margin: 80px 0 0
+			text-align: center
+		figcaption
+			display: block
+			margin: 60px 0 0
+			color: $green
+			font-size: 1.86rem
+			
+	
+	// commons
+	.information, .tokushu-area, .banner-area, .search-items, .about-area
+		width: 850px
+		margin: 70px auto 0
+			

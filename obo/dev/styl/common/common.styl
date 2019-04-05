@@ -106,7 +106,24 @@ input[type=checkbox] + label:before
 	vertical-align: text-top
 input[type=checkbox]:checked + label:before
 	content: "✔"
-	
+
+.form__block
+	.minict_wrapper
+		width: 100%
+		height: 2.65rem
+		border: none
+		border-radius: 4px
+		span
+			padding-left: .75rem
+			height: 2.65rem
+			line-height: 2
+			&:empty:before
+				color: $gray3
+		&:after
+			height: 2.65rem
+			line-height: 2.65rem
+		ul
+			top: 2.55rem
 	
 .wrapper
 	width: 100%

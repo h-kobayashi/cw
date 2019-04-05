@@ -115,6 +115,10 @@
 						padding: .5em .75em
 						border: 1px solid $gray2
 						border-radius: 5px
+					small
+						display: block
+						margin: 0 5px
+						font-size: .86rem
 						
 				.form-text input[type=text]
 					width: calc(100% - 10px)
@@ -125,6 +129,11 @@
 					height: 10em
 					vertical-align: text-bottom
 				
+				.form-list
+					ul
+						margin: 0 5px
+						li:not(:last-of-type)
+							margin-bottom: 1em
 				.form-birth
 					label
 						width: 30%
@@ -135,37 +144,28 @@
 						border-radius: 5px
 						position: relative
 						vertical-align: text-bottom
-						.minict_wrapper
-							width: 100%
-							height: 2.65rem
-							border: none
-							span
-								height: 2.65rem
-								line-height: 2
-							&:after
-								height: 2.65rem
-								line-height: 2.65rem
-							ul
-								top: 2.55rem
+						
 				.form-tel input[type=text]
 					width: 40%
+				.form-zip
+					input[type=text]
+						width: 27%
+					.btn-zip
+						width: 27%
+						padding: .5em .75em
+						background: $orange
+						color: $white
+						border: none transparent
+						border-radius: 4px
+						&:hover
+							background: $orange2
 				.form-select label
 					display: inline-block
 					width: 40.5%
 					margin: 0 5px
+					border: 1px solid $gray2
+					border-radius: 5px
 					vertical-align: text-bottom
-					.minict_wrapper
-						width: 100%
-						height: 2.65rem
-						border: 1px solid $gray2
-						span
-							height: 2.65rem
-							line-height: 2
-						&:after
-							height: 2.65rem
-							line-height: 2.65rem
-						ul
-							top: 2.55rem
 				
 				.error
 					input[type=text],textarea,select
@@ -184,6 +184,48 @@
 			&.any dd:before
 				content: "任意"
 				background: $lightgray2
+				
+			&.rowspan2 dd
+				flex: 1
+				display: flex
+				flex-wrap: wrap
+				&:before
+					display: none
+				.row
+					width: 100%
+					display: flex
+					flex-wrap: nowrap
+					&:not(:first-of-type)
+						border-top: 1px solid $gray
+					&:before
+						content: ""
+						width: 74px
+						border-right: 1px solid $gray
+						display: flex
+						flex-wrap: nowrap
+						justify-content: center
+						align-items: center
+						font-weight: bold
+					&.must:before
+						content: "必須"
+						background: $lightorange
+						color: $orange
+					&.any:before
+						content: "任意"
+						background: $lightgray2
+				.form-address
+					input[type=text]
+						width: calc(100% - 10px)
+						margin-top: 5px
+					label
+						width: 25%
+						display: inline-block
+						margin: 0 5px
+						padding: 0
+						border: 1px solid $gray2
+						border-radius: 5px
+						position: relative
+						vertical-align: text-bottom
 
 		// form save
 		.form-save

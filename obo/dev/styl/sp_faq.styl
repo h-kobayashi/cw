@@ -1,0 +1,153 @@
+
+@import "common/_color"
+@import "common/_modal"
+
+
+.contents-area
+	
+	
+	// faq block
+	.faq__block
+		position: relative
+		margin: 30px 0 0
+		h2
+			height: 47px
+			padding-top: 2px
+			background: url(../img/faq/sp/q&a_sp_pagetitle_bg.png) no-repeat center top/contain
+			color: $white
+			font-size: 1.28rem
+			letter-spacing: .2em
+			text-align: center
+			line-height: 1.67
+			position: relative
+			z-index: 2
+			&:before
+				display: none
+		ul
+			position: relative
+			text-align: center
+			margin: -24px 0 0
+			padding: 40px 10px 20px
+			background: $lightgreen
+			li
+				display: block
+				margin: 0 0 10px
+				position: relative
+				a
+					display: block
+					background: $white
+					border: 1px solid $green
+					color: $green
+					font-size: .93rem
+					line-height: 3
+					text-align: center
+		>div
+			h3
+				display: block
+				width: 230px
+				height: 40px
+				margin: 30px auto 15px
+				background: $orange
+				border-radius: 20px
+				color: $white
+				font-size: 1.28rem
+				line-height: 40px
+				text-align: center
+			dl
+				margin: 10px 10px 0
+				padding: 25px 20px
+				border: 1px solid $gray
+				line-height: 2
+				dt
+					color: $green
+					font-size: .93rem
+					&:before
+						content: "Q."
+						margin-right: .5em
+						font-size: 1.07rem
+				dd
+					font-size: .93rem
+					div:before
+						content: "A."
+						margin-right: .5em
+						color: $orange
+						font-size: .93rem
+					.accordion
+						display: block
+						width: 19px
+						height: 10px
+						margin: 20px auto 0
+						background: url(../img/faq/sp/sp_about_sec09_arrow02.png) no-repeat center/contain
+						transition: .4s
+						&.opened
+							transform: rotate(540deg)
+	
+	// banner
+	.banner-area
+		margin: 60px 10px 30px
+		img
+			width: 100%
+	
+	// singleJob items
+	.singleJob-items
+		position: relative
+		h2
+			font-size: 1.3rem
+			&:before
+				margin-right: .75em
+		ul
+			width: 263px
+			margin: 20px auto 0
+			li
+				display: block
+				margin: 0
+				padding: 0 0 1rem
+				border: 2px solid $gray
+				font-size: .87em
+				.item-header
+					display: block
+					margin: 0
+					line-height: 1.5
+					padding: .25em 0 .20em
+					background: $lightgray
+					text-align: center
+				p
+					margin: .5rem 1rem
+					font-size: .92rem
+				.item-data
+					margin: 0 1rem .5rem
+					padding: .25rem 1rem
+					background: $lightgray
+					text-align: center
+					b
+						font-size: 2em
+						color: $orange
+						font-weight: bold
+				dl
+					display: flex
+					flex-wrap: wrap
+					margin: 0 1rem
+					dt
+						display: inline-block
+						color: $green
+						font-weight: bold
+					dd
+						flex: 1
+		.prev
+			display: inline-block
+			padding: 10px
+			position: absolute
+			top: 120px
+			left: 50%
+			margin-left: -165px
+		.next
+			display: inline-block
+			padding: 10px
+			position: absolute
+			top: 120px
+			right: 50%
+			margin-right: -165px
+
+
+					
+					
