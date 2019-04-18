@@ -1,0 +1,1681 @@
+.wrapper-shadow,
+.wrapper-shadow-keep,
+.wrapper-shadow-kodawari,
+.wrapper-shadow-policy {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 99;
+}
+body.underwrapper {
+  overflow: hidden;
+}
+.wrapper-shadow-keep {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.keepmodal {
+  display: none;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -150px;
+  background: #58b244;
+  border-radius: 2px;
+  -webkit-box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
+  box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
+  color: #fff;
+  font-size: 1.14em;
+  font-weight: bold;
+  line-height: 100px;
+  text-align: center;
+}
+.keepmodal p {
+  display: block;
+}
+.keepmodal p:after {
+  content: url("../img/top/pc/job_icon03.png");
+  position: absolute;
+  height: 45px;
+  right: -5px;
+  bottom: 10px;
+}
+.wrapper-shadow-kodawari {
+  overflow: auto;
+}
+.kodawarimodal {
+  display: none;
+  width: 984px;
+  height: auto;
+  position: relative;
+  margin: 45px auto;
+  padding: 60px 67px 0;
+  background: #fff;
+  border-radius: 10px;
+}
+.kodawarimodal h2 {
+  margin: 0 0 30px;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+.kodawarimodal h2:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url("../img/kodawari/pc/pc_kodawari_titleicon.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: relative;
+  top: -1px;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+.kodawarimodal .btn-close:first-of-type {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.kodawarimodal .btn-close:last-of-type {
+  display: block;
+  padding: 33px;
+  text-align: center;
+}
+.kodawarimodal .type-select {
+  position: relative;
+  right: auto;
+  bottom: 0;
+  z-index: 2;
+}
+.kodawarimodal .type-select span {
+  height: 41px;
+  line-height: 41px;
+  cursor: pointer;
+}
+.kodawarimodal .type-select span.selected {
+  height: 48px;
+  line-height: 48px;
+  position: relative;
+  bottom: -1px;
+}
+.kodawarimodal section {
+  padding: 30px;
+  border: 1px solid #e3e3e3;
+  position: relative;
+  color: #535353;
+}
+.kodawarimodal section:before {
+  content: url("../img/kodawari/pc/pc_kodawari_obokun.png");
+  position: absolute;
+  top: -50px;
+  right: 10px;
+}
+.kodawarimodal section.kodawari-all {
+  padding-top: 32px;
+}
+.kodawarimodal section.kodawari-part {
+  border-top: 3px solid #fd9f3a;
+}
+.kodawarimodal section.kodawari-full {
+  border-top: 3px solid #42cbfe;
+}
+.kodawarimodal section p:first-of-type {
+  padding: 0 10px 25px;
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 1.14em;
+}
+.kodawarimodal section .kodawari-item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 30px 13px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.kodawarimodal section .kodawari-item h3 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 102px;
+  background: #7ac768;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 1.14em;
+  font-weight: bold;
+}
+.kodawarimodal section .kodawari-item fieldset {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0 0 0 17px;
+}
+.kodawarimodal section .kodawari-item fieldset h4 {
+  margin: 1em 0;
+  color: #5c9a4e;
+  font-size: 1.14em;
+  font-weight: bold;
+  line-height: 1.75;
+}
+.kodawarimodal section .kodawari-item fieldset h4:first-of-type {
+  margin: 0 0 1em;
+}
+.kodawarimodal section .kodawari-item fieldset h4:before {
+  content: "▼";
+}
+.kodawarimodal section .kodawari-item fieldset ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: -14px;
+}
+.kodawarimodal section .kodawari-item fieldset ul li {
+  display: block;
+  width: 32%;
+  margin: 0 1.33% 14px 0;
+}
+.kodawarimodal section .kodawari-item fieldset ul li input[type=checkbox] {
+  display: none;
+}
+.kodawarimodal section .kodawari-item fieldset ul li label {
+  display: block;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  font-size: 1.14em;
+  line-height: 2.4;
+  text-align: center;
+  cursor: pointer;
+}
+.kodawarimodal section .kodawari-item fieldset ul li input:checked + label {
+  background: #effeeb;
+  border-color: #58b244;
+  color: #58b244;
+}
+.kodawarimodal section .kodawari-item fieldset .search-item {
+  display: inline-block;
+  position: relative;
+  margin-right: 0.2em;
+}
+.kodawarimodal section .kodawari-item fieldset .search-item:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 6px;
+  background: url("../img/top/pc/top_search_icon02.png") 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  margin-top: -3px;
+}
+.kodawarimodal section .kodawari-item fieldset .search-item select {
+  width: auto;
+  height: 41px;
+  padding: 0 4em;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  font-size: 1.14em;
+  cursor: pointer;
+}
+.kodawarimodal .btn-area {
+  text-align: center;
+}
+.kodawarimodal .btn-area .btn-submit {
+  display: inline-block;
+  width: 460px;
+  height: 75px;
+  margin: 30px auto;
+  background: #fe4280;
+  border: 0px solid transparent;
+  border-bottom: 9px solid #dd205e;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 2.14em;
+  line-height: 65px;
+}
+.kodawarimodal .btn-area .btn-submit:hover {
+  background: #cb3566;
+  border-color: #b11a4b;
+}
+.wrapper-shadow-policy {
+  overflow: auto;
+}
+.policymodal {
+  display: none;
+  width: 90%;
+  max-width: 1100px;
+  height: auto;
+  position: relative;
+  margin: 45px auto;
+  padding: 60px 67px 0;
+  background: #fff;
+}
+.policymodal .btn-close:first-of-type {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.policymodal .btn-close:last-of-type {
+  display: block;
+  padding: 33px;
+  text-align: center;
+}
+.policymodal h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+.policymodal >p {
+  margin: 2rem 0 0;
+}
+.policymodal .footertext {
+  margin: 2rem 0 0;
+  text-align: right;
+}
+.policymodal dl {
+  margin: 2rem 0 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.policymodal dl dt {
+  display: block;
+}
+.policymodal dl dd {
+  display: block;
+}
+.policymodal dl dd ol li {
+  list-style: decimal;
+  margin-left: 1.5em;
+}
+.policymodal dl dd ol li ol li {
+  list-style: none;
+  margin: 0;
+}
+.policymodal dl dd ol li ol li:before {
+  margin-right: 0.5em;
+}
+.policymodal dl dd ol li ol li:nth-of-type(1):before {
+  content: "①";
+}
+.policymodal dl dd ol li ol li:nth-of-type(2):before {
+  content: "②";
+}
+.policymodal dl dd ol li ol li:nth-of-type(3):before {
+  content: "③";
+}
+.policymodal dl dd ol li ol li:nth-of-type(4):before {
+  content: "④";
+}
+.policymodal dl dd ol li ol li:nth-of-type(5):before {
+  content: "⑤";
+}
+.policymodal dl dd ol li ol li:nth-of-type(6):before {
+  content: "⑥";
+}
+.policymodal dl dd ol li ol li:nth-of-type(7):before {
+  content: "⑦";
+}
+.policymodal dl dd ol li ol li:nth-of-type(8):before {
+  content: "⑧";
+}
+.policymodal dl dd ol li ol li:nth-of-type(9):before {
+  content: "⑨";
+}
+@media screen and (max-width: 900px) {
+  .policymodal {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 15px 10px;
+    padding: 60px 15px 0;
+    background: #fff;
+  }
+  .policymodal .btn-close:first-of-type {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .policymodal .btn-close:last-of-type {
+    display: block;
+    padding: 15px;
+    text-align: center;
+  }
+  .policymodal h3 {
+    font-size: 0.79rem;
+  }
+  .policymodal p {
+    font-size: 0.79rem;
+  }
+  .policymodal dl {
+    font-size: 0.79rem;
+    line-height: 1.75;
+  }
+  .policymodal dl dt {
+    display: block;
+  }
+  .policymodal dl dd {
+    display: block;
+  }
+  .policymodal dl dd ol li {
+    margin-left: 0;
+    list-style-position: inside;
+  }
+}
+.branding {
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px 0;
+  background: #effeeb;
+  text-align: center;
+}
+.branding h1 {
+  display: block;
+  width: 306px;
+  height: 113px;
+  margin: 0 auto;
+  padding: 50px 0 0;
+  background: url("../img/plan/sp/plan_sp_pagetitle_img01.png") center top no-repeat/contain;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.main {
+  width: 100%;
+}
+.contents-area {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+.contents-area .plannavi,
+.contents-area .plannavi_footer {
+  margin: 40px auto;
+  text-align: center;
+}
+.contents-area .plannavi p,
+.contents-area .plannavi_footer p {
+  width: 280px;
+  margin: 0 auto;
+  font-size: 1.28rem;
+  line-height: 1.1;
+  position: relative;
+}
+.contents-area .plannavi p >b,
+.contents-area .plannavi_footer p >b {
+  color: #58b244;
+  font-weight: bold;
+  margin-left: -0.25em;
+}
+.contents-area .plannavi p strong,
+.contents-area .plannavi_footer p strong {
+  color: #fe4280;
+  font-weight: bold;
+  margin-left: -0.25em;
+}
+.contents-area .plannavi p strong >b,
+.contents-area .plannavi_footer p strong >b {
+  font-size: 1.8em;
+}
+.contents-area .plannavi p:before,
+.contents-area .plannavi_footer p:before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 48px;
+  background: url("../img/plan/sp/plan_sp_sec01_img01.png") no-repeat 0 0/contain;
+  position: absolute;
+  left: -20px;
+  top: 0;
+}
+.contents-area .plannavi p:after,
+.contents-area .plannavi_footer p:after {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 48px;
+  background: url("../img/plan/sp/plan_sp_sec01_img02.png") no-repeat 0 0/contain;
+  position: absolute;
+  right: -20px;
+  top: 0;
+}
+.contents-area .plannavi ul,
+.contents-area .plannavi_footer ul {
+  width: 300px;
+  margin: 10px auto;
+}
+.contents-area .plannavi ul li,
+.contents-area .plannavi_footer ul li {
+  margin: 10px 0 0;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+.contents-area .plannavi ul li dl,
+.contents-area .plannavi_footer ul li dl {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+.contents-area .plannavi ul li dt,
+.contents-area .plannavi_footer ul li dt {
+  width: 130px;
+  border-radius: 5px 0 0 0;
+  padding: 15px 0 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.28rem;
+  line-height: 1.2;
+  text-align: center;
+  position: relative;
+}
+.contents-area .plannavi ul li dt strong,
+.contents-area .plannavi_footer ul li dt strong {
+  display: block;
+  color: #f5fd0f;
+  font-weight: bold;
+}
+.contents-area .plannavi ul li dd,
+.contents-area .plannavi_footer ul li dd {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 15px 0 10px;
+  border-radius: 0 5px 0 0;
+  text-align: center;
+}
+.contents-area .plannavi ul li dd span,
+.contents-area .plannavi_footer ul li dd span {
+  display: block;
+  width: 100px;
+  height: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.87rem;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+}
+.contents-area .plannavi ul li dd strong,
+.contents-area .plannavi_footer ul li dd strong {
+  display: block;
+  color: #f81425;
+  font-size: 1.28rem;
+  font-weight: bold;
+}
+.contents-area .plannavi ul li dd strong small,
+.contents-area .plannavi_footer ul li dd strong small {
+  font-size: 0.7rem;
+  margin-left: -0.25em;
+  vertical-align: middle;
+}
+.contents-area .plannavi ul li a,
+.contents-area .plannavi_footer ul li a {
+  display: block;
+  height: 27px;
+  background: #2ec40c;
+  border-radius: 0 0 5px 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.87rem;
+  text-align: center;
+  line-height: 27px;
+}
+.contents-area .plannavi ul li:nth-of-type(1) dt,
+.contents-area .plannavi_footer ul li:nth-of-type(1) dt {
+  background: #42cbfe;
+}
+.contents-area .plannavi ul li:nth-of-type(1) dt:after,
+.contents-area .plannavi_footer ul li:nth-of-type(1) dt:after {
+  border-top-color: #42cbfe;
+}
+.contents-area .plannavi ul li:nth-of-type(1) dd span,
+.contents-area .plannavi_footer ul li:nth-of-type(1) dd span {
+  background: #42cbfe;
+}
+.contents-area .plannavi ul li:nth-of-type(2) dt,
+.contents-area .plannavi_footer ul li:nth-of-type(2) dt {
+  background: #fd9f3a;
+}
+.contents-area .plannavi ul li:nth-of-type(2) dt:after,
+.contents-area .plannavi_footer ul li:nth-of-type(2) dt:after {
+  border-top-color: #fd9f3a;
+}
+.contents-area .plannavi ul li:nth-of-type(2) dd span,
+.contents-area .plannavi_footer ul li:nth-of-type(2) dd span {
+  background: #fd9f3a;
+}
+.contents-area .plannavi ul li:nth-of-type(3) dt,
+.contents-area .plannavi_footer ul li:nth-of-type(3) dt {
+  background: #93c118;
+}
+.contents-area .plannavi ul li:nth-of-type(3) dt:after,
+.contents-area .plannavi_footer ul li:nth-of-type(3) dt:after {
+  border-top-color: #93c118;
+}
+.contents-area .plannavi ul li:nth-of-type(3) dd span,
+.contents-area .plannavi_footer ul li:nth-of-type(3) dd span {
+  background: #93c118;
+}
+.contents-area .plan_item {
+  width: 304px;
+  margin: 60px auto 0;
+  border-radius: 5px;
+}
+.contents-area .plan_item .plan_header {
+  height: 88px;
+  padding: 30px 0 0;
+  position: relative;
+  border-radius: 0;
+}
+.contents-area .plan_item .plan_header:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: 10px;
+}
+.contents-area .plan_item .plan_header:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  margin-left: -18px;
+}
+.contents-area .plan_item .plan_header h2 {
+  color: #f5fd0f;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+}
+.contents-area .plan_item .plan_header h2:before {
+  display: none;
+}
+.contents-area .plan_item .plan_header h2 span {
+  color: #fff;
+}
+.contents-area .plan_item .plan_intro {
+  text-align: center;
+  padding: 30px 0 0;
+}
+.contents-area .plan_item .plan_intro p {
+  font-size: 1rem;
+}
+.contents-area .plan_item .plan_intro p strong {
+  display: block;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.contents-area .plan_item .plan_intro p strong span {
+  color: #fe4280;
+}
+.contents-area .plan_item .plan_intro p strong [data-ruby] {
+  position: relative;
+}
+.contents-area .plan_item .plan_intro p strong [data-ruby]::before {
+  content: attr(data-ruby);
+  position: absolute;
+  top: -1em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 1em;
+}
+.contents-area .plan_item .plan_intro p b {
+  font-size: 1.14em;
+  color: #58b244;
+  font-weight: bold;
+}
+.contents-area .plan_item .plan_price {
+  margin: 40px 10px 0;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+}
+.contents-area .plan_item .plan_price h3 {
+  width: 294px;
+  height: 46px;
+  position: relative;
+  margin: -24px 0 0 -12px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 33px;
+}
+.contents-area .plan_item .plan_price p {
+  margin: 5px 0 0;
+  position: relative;
+  color: #f81425;
+  font-size: 1.28rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.contents-area .plan_item .plan_price p b {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.contents-area .plan_item .plan_price p strong {
+  font-weight: bold;
+  font-size: 3.57rem;
+  line-height: 1;
+}
+.contents-area .plan_item .plan_price p:before {
+  content: "";
+  display: inline-block;
+}
+.contents-area .plan_item .plan_price p small {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 0.87rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.contents-area .plan_item .plan_price p small b {
+  color: #fe4280;
+  font-size: 0.87rem;
+  font-weight: bold;
+}
+.contents-area .plan_item .plan_reward {
+  margin: 35px 10px 0;
+  padding: 35px 10px 20px;
+  background: #fdd8de;
+  border-radius: 5px;
+  position: relative;
+}
+.contents-area .plan_item .plan_reward:before {
+  content: "";
+  background: url("../img/plan/sp/plan_sp_sec02-4_img04.png") no-repeat 0 0/contain;
+  display: block;
+  width: 85px;
+  height: 40px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -43px;
+}
+.contents-area .plan_item .plan_reward h3 {
+  color: #fe4280;
+  font-weight: bold;
+  font-size: 1.28rem;
+  text-align: center;
+}
+.contents-area .plan_item .plan_reward h3:before {
+  content: "";
+  background: url("../img/plan/sp/plan_sp_sec02-4_img05.png") no-repeat 0 0/contain;
+  display: inline-block;
+  width: 75px;
+  height: 44px;
+  position: absolute;
+  top: -22px;
+  left: 20px;
+}
+.contents-area .plan_item .plan_reward h3 small {
+  display: inline-block;
+  padding: 0 1em;
+  background: #58b244;
+  border-radius: 1em;
+  color: #fff;
+  font-size: 0.87rem;
+  line-height: 1.5;
+  font-weight: normal;
+  position: relative;
+  top: -3px;
+}
+.contents-area .plan_item .plan_reward p {
+  margin: 0;
+  font-size: 0.87rem;
+  line-height: 1.5;
+  color: #535353;
+}
+.contents-area .plan_item .plan_reward p img {
+  display: block;
+  width: 129px;
+  margin: 0 auto 1em;
+}
+.contents-area .plan_item .plan_note {
+  margin: 20px 10px 0;
+  color: #535353;
+  font-size: 0.87rem;
+  line-height: 1.5;
+}
+.contents-area .plan_item .plan_note li {
+  margin-bottom: 1em;
+}
+.contents-area .plan_item .plan_example {
+  margin: 20px 10px 0;
+}
+.contents-area .plan_item .plan_example h3 {
+  width: 218px;
+  height: 73px;
+  margin: 0 auto;
+  background: url("../img/plan/sp/plan_sp_sec02-4_img07.png") no-repeat 0 0/contain;
+  position: relative;
+  text-indent: 9999px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.contents-area .plan_item .plan_example dl {
+  margin: 20px auto 0;
+}
+.contents-area .plan_item .plan_example p {
+  display: block;
+  margin: 16px 0 0;
+  padding: 40px 0 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: #f5fd0f;
+  font-weight: normal;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  position: relative;
+}
+.contents-area .plan_item .plan_example p:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  margin-left: -8px;
+}
+.contents-area .plan_item .plan_example p span {
+  color: #f5fd0f;
+  font-size: 0.87rem;
+  display: inline-block;
+}
+.contents-area .plan_item .plan_example p span b {
+  font-weight: bold;
+  font-size: 2em;
+}
+.contents-area .plan_item .plan_example p span:not(:first-of-type) {
+  margin-left: -0.5em;
+}
+.contents-area .plan_item .plan_example p [data-ruby] {
+  position: relative;
+}
+.contents-area .plan_item .plan_example p [data-ruby]::before {
+  content: attr(data-ruby);
+  position: absolute;
+  top: -1.5em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #fff;
+  font-weight: normal;
+  font-size: 0.7rem;
+  display: block;
+  min-width: 100%;
+  line-height: 1.2;
+}
+.contents-area .plan_item .plan_example p small {
+  display: block;
+  margin: 10px 0 0;
+  color: #535353;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+.contents-area .plan_item .plan_points {
+  margin: 60px 10px 30px;
+  border: 2px dotted #fe4280;
+  border-radius: 5px;
+  position: relative;
+}
+.contents-area .plan_item .plan_points h3 {
+  width: 294px;
+  height: 72px;
+  margin: -40px 0 0 -10px;
+  background: url("../img/plan/sp/plan_sp_sec02-4_img01.png") no-repeat center top/contain;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  padding-top: 10px;
+  position: relative;
+}
+.contents-area .plan_item .plan_points h3:after {
+  content: "";
+  display: block;
+  width: 63px;
+  height: 54px;
+  background: url("../img/plan/sp/plan_sp_sec02-4_img02.png") no-repeat 0 0/contain;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}
+.contents-area .plan_item .plan_points ul {
+  margin: 10px 10px 20px;
+}
+.contents-area .plan_item .plan_points ul li {
+  display: block;
+  margin: 5px 0 0;
+  padding: 7px;
+  border: 2px solid #fdd8de;
+  border-radius: 30px;
+  text-align: center;
+  color: #fe4280;
+  font-size: 1.12rem;
+  line-height: 1;
+  font-weight: bold;
+}
+.contents-area .plan_item#plan1 {
+  border: 3px solid #42cbfe;
+}
+.contents-area .plan_item#plan1 .plan_header {
+  background: #42cbfe;
+}
+.contents-area .plan_item#plan1 .plan_header:before {
+  width: 239px;
+  height: 64px;
+  background: url("../img/plan/sp/plan_sp_sec02_img01.png") no-repeat 0 0/contain;
+}
+.contents-area .plan_item#plan1 .plan_header:after {
+  border-top: 16px solid #42cbfe;
+}
+.contents-area .plan_item#plan1 .plan_price {
+  border: 2px dotted #42cbfe;
+  border-radius: 5px;
+}
+.contents-area .plan_item#plan1 .plan_price h3 {
+  background: url("../img/plan/sp/plan_sp_sec02_img02.png") no-repeat center top/contain;
+}
+.contents-area .plan_item#plan1 .plan_price p:before {
+  width: 55px;
+  height: 47px;
+  background: url("../img/plan/sp/plan_sp_sec02_img03.png") no-repeat 0 0/contain;
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+.contents-area .plan_item#plan1 .plan_price p small {
+  border: 2px solid #42cbfe;
+  color: #42cbfe;
+}
+.contents-area .plan_item#plan1 .plan_example dl {
+  overflow: hidden;
+}
+.contents-area .plan_item#plan1 .plan_example dl dt {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.28rem;
+  display: block;
+  padding: 0.5em;
+  line-height: 1.2;
+  background: #42cbfe;
+  position: relative;
+  text-align: center;
+}
+.contents-area .plan_item#plan1 .plan_example dl dt:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 7px solid #42cbfe;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  margin-left: -7px;
+}
+.contents-area .plan_item#plan1 .plan_example dl dd {
+  padding: 5px 0 0;
+  text-align: center;
+}
+.contents-area .plan_item#plan1 .plan_example dl dd:before {
+  content: "";
+  display: block;
+  width: 281px;
+  height: 176px;
+  margin: 10px auto;
+  background: url("../img/plan/sp/plan_sp_sec02_img10.png") no-repeat 0 0/contain;
+}
+.contents-area .plan_item#plan1 .plan_example dl dd span {
+  display: block;
+  height: 45px;
+  margin-left: 10px;
+  padding-left: 35px;
+  text-align: center;
+  border: 2px solid #42cbfe;
+  border-radius: 45px;
+  color: #535353;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 42px;
+  position: relative;
+}
+.contents-area .plan_item#plan1 .plan_example dl dd span:before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  position: absolute;
+  top: -2px;
+  left: -12px;
+}
+.contents-area .plan_item#plan1 .plan_example dl dd span:first-of-type:before {
+  background: #42cbfe url("../img/plan/sp/plan_sp_sec02_img08.png") no-repeat center/34px 36px;
+}
+.contents-area .plan_item#plan1 .plan_example dl dd span:last-of-type:before {
+  background: #42cbfe url("../img/plan/sp/plan_sp_sec02_img07.png") no-repeat center/25px 36px;
+}
+.contents-area .plan_item#plan1 .plan_example dl dd span strong {
+  display: inline-block;
+  position: relative;
+  margin-left: -0.25em;
+  color: #f81425;
+  font-weight: bold;
+}
+.contents-area .plan_item#plan1 .plan_example dl dd img {
+  display: inline-block;
+  margin: 10px auto;
+  width: 17px;
+  height: 11px;
+}
+.contents-area .plan_item#plan1 .plan_example p {
+  background: #42cbfe;
+  position: relative;
+}
+.contents-area .plan_item#plan1 .plan_example p:before {
+  border-bottom: 12px solid #42cbfe;
+}
+.contents-area .plan_item#plan1 .plan_example p [data-ruby]:first-of-type::before {
+  width: 4.2rem;
+  top: -2.5em;
+  left: -1em;
+}
+.contents-area .plan_item#plan1 .plan_example p span:last-of-type:after {
+  content: "（税別）";
+  display: block;
+  font-size: 0.87rem;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: -0.75rem;
+}
+.contents-area .plan_item#plan2 {
+  border: 3px solid #fd9f3a;
+}
+.contents-area .plan_item#plan2 .plan_header {
+  background: #fd9f3a;
+}
+.contents-area .plan_item#plan2 .plan_header:before {
+  width: 268px;
+  height: 68px;
+  background: url("../img/plan/sp/plan_sp_sec03_img01.png") no-repeat 0 0/contain;
+}
+.contents-area .plan_item#plan2 .plan_header:after {
+  border-top: 16px solid #fd9f3a;
+}
+.contents-area .plan_item#plan2 .plan_intro p strong {
+  margin-bottom: 1em;
+}
+.contents-area .plan_item#plan2 .plan_intro p strong [data-ruby]::before {
+  top: auto;
+  bottom: -1em;
+}
+.contents-area .plan_item#plan2 .plan_price {
+  border: 2px dotted #fd9f3a;
+  border-radius: 5px;
+}
+.contents-area .plan_item#plan2 .plan_price h3 {
+  background: url("../img/plan/sp/plan_sp_sec03_img02.png") no-repeat center top/contain;
+}
+.contents-area .plan_item#plan2 .plan_price p:before {
+  width: 55px;
+  height: 47px;
+  background: url("../img/plan/sp/plan_sp_sec03_img03.png") no-repeat 0 0/contain;
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+.contents-area .plan_item#plan2 .plan_price p small {
+  border: 2px solid #fd9f3a;
+  color: #fd9f3a;
+}
+.contents-area .plan_item#plan2 .plan_example >img {
+  width: 278px;
+  margin: 20px auto 0;
+}
+.contents-area .plan_item#plan2 .plan_example p {
+  background: #fd9f3a;
+  position: relative;
+}
+.contents-area .plan_item#plan2 .plan_example p:before {
+  border-bottom: 12px solid #fd9f3a;
+}
+.contents-area .plan_item#plan2 .plan_example p [data-ruby]:first-of-type::before {
+  width: 4.2rem;
+  top: -2.5em;
+  left: -1em;
+}
+.contents-area .plan_item#plan3 {
+  border: 3px solid #2ec40c;
+}
+.contents-area .plan_item#plan3 .plan_header {
+  background: #2ec40c;
+}
+.contents-area .plan_item#plan3 .plan_header:before {
+  width: 240px;
+  height: 68px;
+  background: url("../img/plan/sp/plan_sp_sec04_img01.png") no-repeat 0 0/contain;
+}
+.contents-area .plan_item#plan3 .plan_header:after {
+  border-top: 16px solid #2ec40c;
+}
+.contents-area .plan_item#plan3 .plan_intro p strong {
+  margin-bottom: 1em;
+}
+.contents-area .plan_item#plan3 .plan_intro p strong [data-ruby]::before {
+  top: auto;
+  bottom: -1em;
+}
+.contents-area .plan_item#plan3 .plan_price {
+  border: 2px dotted #2ec40c;
+  border-radius: 5px;
+}
+.contents-area .plan_item#plan3 .plan_price h3 {
+  background: url("../img/plan/sp/plan_sp_sec04_img02.png") no-repeat center top/contain;
+}
+.contents-area .plan_item#plan3 .plan_price dl dt {
+  display: block;
+  color: #535353;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.contents-area .plan_item#plan3 .plan_price dl dd {
+  color: #f81425;
+  font-size: 1.28rem;
+  font-weight: bold;
+}
+.contents-area .plan_item#plan3 .plan_price dl dd strong {
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+.contents-area .plan_item#plan3 .plan_price dl:before {
+  width: 55px;
+  height: 47px;
+  background: url("../img/plan/sp/plan_sp_sec03_img03.png") no-repeat 0 0/contain;
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+.contents-area .plan_item#plan3 .plan_price p {
+  margin: 10px auto 30px;
+  color: #535353;
+  font-size: 0.87rem;
+  font-weight: bold;
+}
+.contents-area .plan_item#plan3 .plan_price p strong {
+  color: #f81425;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.contents-area .plan_item#plan3 .plan_price p strong b {
+  font-size: 1.28rem;
+  line-height: 1;
+  font-weight: bold;
+}
+.contents-area .plan_item#plan3 .plan_reward {
+  background: #fffd72;
+}
+.contents-area .plan_item#plan3 .plan_reward h3 {
+  color: #58b244;
+  text-align: center;
+  line-height: 1.2;
+}
+.contents-area .plan_item#plan3 .plan_reward h3:before {
+  display: none;
+}
+.contents-area .plan_item#plan3 .plan_reward h3:after {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 44px;
+  background: url("../img/plan/sp/plan_sp_sec02-4_img05.png") no-repeat center/contain;
+  position: absolute;
+  top: -22px;
+  right: 20px;
+}
+.contents-area .plan_item#plan3 .plan_reward h3 b {
+  color: #fe4280;
+  font-weight: bold;
+}
+.contents-area .plan_item#plan3 .plan_reward p:before {
+  content: "お客様負担なし！";
+  display: inline-block;
+  padding: 0 0.5em;
+  background: #fe4280;
+  border-radius: 1em;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 2;
+  float: left;
+  position: relative;
+  top: 40px;
+}
+.contents-area .plan_item#plan3 .plan_reward p img {
+  width: 129px;
+  height: 99px;
+  vertical-align: middle;
+  float: right;
+}
+.contents-area .plan_item#plan3 .plan_reward p span {
+  clear: both;
+  display: block;
+  padding: 1em 0 0;
+  font-size: 0.87rem;
+  line-height: 1.5;
+  color: #535353;
+}
+.contents-area .plan_item#plan3 .plan_example >img {
+  width: 278px;
+  margin: 20px auto 0;
+}
+.contents-area .plan_item#plan3 .plan_example p {
+  padding: 10px 0 15px;
+  background: #93c118;
+}
+.contents-area .plan_item#plan3 .plan_example p:before {
+  border-bottom: 12px solid #93c118;
+}
+.contents-area .plan_item#plan3 .plan_example p span {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.contents-area .plan_item#plan3 .plan_example p small {
+  display: block;
+  color: #535353;
+  font-size: 1.28rem;
+}
+.contents-area .plan_address {
+  width: 100%;
+  margin: 40px auto 0;
+  padding: 30px 10px;
+  background: #a3ea92;
+}
+.contents-area .plan_address address {
+  margin: 0 auto;
+  padding: 20px 15px;
+  background: #58b244;
+  border-radius: 5px;
+  text-align: center;
+  font-style: normal;
+}
+.contents-area .plan_address address h3 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.contents-area .plan_address address p {
+  padding: 10px;
+  border: 2px solid #f4ff47;
+  border-radius: 5px;
+  color: #f4ff47;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+.contents-area .plan_address address p:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/plan/sp/plan_sp_sec05_img01.png") no-repeat 0 0/contain;
+  margin-right: 0.25em;
+}
+.contents-area .plan_address address p small {
+  display: block;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: normal;
+}
+.contents-area .plan_address address a {
+  display: block;
+  height: 70px;
+  margin: 10px auto 0;
+  background: #fe4280;
+  border-bottom: 3px solid #c7295d;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.28rem;
+  font-weight: bold;
+  line-height: 70px;
+}
+.contents-area .plan_address address a small {
+  font-size: 0.87rem;
+}
+.contents-area .plannavi_footer ul li {
+  height: auto;
+  padding: 15px 0;
+  border-radius: 5px;
+}
+.contents-area .plannavi_footer ul li dt {
+  padding: 0;
+  height: auto;
+  background: none;
+  line-height: 1.2;
+  border-radius: 10px;
+}
+.contents-area .plannavi_footer ul li dt:after {
+  display: none;
+}
+.contents-area .plannavi_footer ul li dd {
+  padding: 0;
+}
+.contents-area .plannavi_footer ul li dd span {
+  display: block;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-size: 0.87rem;
+  line-height: 1.5;
+}
+.contents-area .plannavi_footer ul li dd strong {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+}
+.contents-area .plannavi_footer ul li:nth-of-type(1) {
+  background: #42cbfe;
+}
+.contents-area .plannavi_footer ul li:nth-of-type(1) dd span {
+  background: #fff;
+  color: #42cbfe;
+}
+.contents-area .plannavi_footer ul li:nth-of-type(2) {
+  background: #fd9f3a;
+}
+.contents-area .plannavi_footer ul li:nth-of-type(2) dd span {
+  background: #fff;
+  color: #fd9f3a;
+}
+.contents-area .plannavi_footer ul li:nth-of-type(3) {
+  background: #93c118;
+}
+.contents-area .plannavi_footer ul li:nth-of-type(3) dd span {
+  background: #fff;
+  color: #93c118;
+}
+.contents-area .plan_compare {
+  width: 100%;
+  margin: 20px auto 0;
+  padding: 30px 0 20px;
+  background: url("../img/plan/sp/plan_sp_sec07_bg.jpg") no-repeat center top/cover;
+}
+.contents-area .plan_compare h3 {
+  float: right;
+  width: 167px;
+  height: 71px;
+  margin: 0 10px 10px auto;
+  padding-top: 16px;
+  background: url("../img/plan/sp/plan_sp_sec07_img01.png") no-repeat center top/contain;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.contents-area .plan_compare >ul {
+  clear: both;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -o-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  margin: 0;
+}
+.contents-area .plan_compare >ul >li {
+  width: 29%;
+  padding: 1px;
+}
+.contents-area .plan_compare >ul >li >ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.contents-area .plan_compare >ul >li >ul >li {
+  width: 100%;
+  height: 51px;
+  padding: 4px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-bottom: 2px;
+  background: rgba(255,255,255,0.8);
+  font-size: 0.7rem;
+  line-height: 1.2;
+  position: relative;
+}
+.contents-area .plan_compare >ul >li >ul >li b {
+  font-size: 2rem;
+}
+.contents-area .plan_compare >ul >li >ul >li p {
+  font-size: 0.7rem;
+  text-align: center;
+}
+.contents-area .plan_compare >ul >li >ul >li p b {
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.contents-area .plan_compare >ul >li >ul >li p b:nth-of-type(2) {
+  margin-left: -0.25em;
+}
+.contents-area .plan_compare >ul >li >ul >li small {
+  display: block;
+  font-size: 0.7rem;
+  color: #535353;
+}
+.contents-area .plan_compare >ul >li >ul [data-ruby] {
+  position: relative;
+}
+.contents-area .plan_compare >ul >li >ul [data-ruby]::before {
+  content: attr(data-ruby);
+  position: absolute;
+  left: -46%;
+  top: 5px;
+  width: 33%;
+  padding: 5px;
+  background: #58b244;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.1;
+}
+.contents-area .plan_compare >ul >li >ul [data-ruby]::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 7px solid #58b244;
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  margin-top: -5px;
+}
+.contents-area .plan_compare >ul >li >ul >li:first-of-type {
+  color: #fff;
+  font-size: 0.87rem;
+  font-weight: bold;
+}
+.contents-area .plan_compare >ul >li >ul >li:nth-of-type(6) {
+  height: 70px;
+}
+.contents-area .plan_compare >ul >li >ul [data-ruby]:nth-of-type(6)::before {
+  top: 15px;
+}
+.contents-area .plan_compare >ul >li >ul >li:last-of-type {
+  height: 56px;
+}
+.contents-area .plan_compare >ul >li >ul >li:last-of-type b {
+  font-size: 1.5rem;
+}
+.contents-area .plan_compare >ul >li >ul [data-ruby]:last-of-type::before {
+  top: 8px;
+}
+.contents-area .plan_compare >ul >li:nth-of-type(1) >ul>li:first-of-type {
+  background: #42cbfe;
+  color: #fff;
+}
+.contents-area .plan_compare >ul >li:nth-of-type(1) >ul>li {
+  color: #42cbfe;
+}
+.contents-area .plan_compare >ul >li:nth-of-type(2) >ul>li:first-of-type {
+  background: #fd9f3a;
+  color: #fff;
+}
+.contents-area .plan_compare >ul >li:nth-of-type(2) >ul>li {
+  color: #fd9f3a;
+}
+.contents-area .plan_compare >ul li:nth-of-type(3) >ul>li:first-of-type {
+  background: #93c118;
+  color: #fff;
+}
+.contents-area .plan_compare >ul li:nth-of-type(3) >ul>li {
+  color: #93c118;
+}
+.contents-area .contentsnavi {
+  padding: 20px 0;
+  background: url("../img/plan/sp/sp_obo_sec08_bg.png") repeat 0 0/6px 6px;
+}
+.contents-area .contentsnavi ul {
+  text-align: center;
+}
+.contents-area .contentsnavi ul li {
+  display: inline-block;
+  margin: 0 5px 15px;
+}
+.contents-area .contentsnavi ul li a {
+  display: block;
+  width: 133px;
+  height: 68px;
+  padding-top: 33px;
+  background: #fff;
+  border: 1px solid #fd9f3a;
+  border-radius: 5px;
+  text-align: center;
+  color: #fd9f3a;
+  font-size: 0.87rem;
+  position: relative;
+}
+.contents-area .contentsnavi ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+}
+.contents-area .contentsnavi ul li a:after {
+  content: "";
+  background: url("../img/plan/sp/sp_sales_navi_icon05.png") no-repeat center/contain;
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -8px;
+}
+.contents-area .contentsnavi ul li:nth-of-type(1) a:before {
+  background: url("../img/plan/sp/sp_sales_navi_icon01.png") no-repeat center/contain;
+  width: 15px;
+  height: 20px;
+  margin-left: -7px;
+  top: 7px;
+}
+.contents-area .contentsnavi ul li:nth-of-type(2) a:before {
+  background: url("../img/plan/sp/sp_sales_navi_icon02.png") no-repeat center/contain;
+  width: 13px;
+  height: 14px;
+  margin-left: -6px;
+  top: 11px;
+}
+.contents-area .contentsnavi ul li:nth-of-type(3) a:before {
+  background: url("../img/plan/sp/sp_sales_navi_icon03.png") no-repeat center/contain;
+  width: 19px;
+  height: 16px;
+  margin-left: -9px;
+  top: 10px;
+}
+.contents-area .contentsnavi ul li:nth-of-type(4) a:before {
+  background: url("../img/plan/sp/sp_sales_navi_icon04.png") no-repeat center/contain;
+  width: 12px;
+  height: 17px;
+  margin-left: -6px;
+  top: 9px;
+}
+.about-area {
+  padding: 0 20px;
+}
+.about-area h3 {
+  padding-bottom: 0.2em;
+  color: #535353;
+  font-size: 0.87rem;
+  font-weight: bold;
+  border-bottom: 1px solid #2ec40c;
+}
+.about-area p {
+  color: #535353;
+  font-size: 0.87rem;
+  line-height: 2;
+}
+.about-area a {
+  display: block;
+  height: 70px;
+  margin: 10px auto 0;
+  background: #58b244;
+  border-bottom: 3px solid #387d28;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.28rem;
+  font-weight: bold;
+  line-height: 70px;
+}

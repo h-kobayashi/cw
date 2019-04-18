@@ -1,0 +1,885 @@
+
+@import "common/_color"
+@import "common/_modal"
+
+// branding
+.branding
+	width: 100%
+	height: 260px
+	min-width: 1100px
+	max-width: 1700px
+	margin: 0 auto
+	padding: 25px 0 0
+	background: $lightgreen
+	text-align: center
+	h1
+		display: block
+		width: 784px
+		height: 212px
+		margin: 0 auto
+		padding: 100px 0 0
+		background: url("../img/plan/pc/plan_pc_pagetitle_img01.png") center top no-repeat
+		text-align: center
+		color: $white
+		font-weight: bold
+		font-size: 3.43rem
+
+.main
+	width: 100%
+	max-width: 1700px
+
+.contents-area
+	width: 100%
+	max-width: 1700px
+	margin: 0 auto
+	
+	//navi
+	.plannavi
+		margin: 80px auto 100px
+		text-align: center
+		p
+			font-size: 2.1rem
+			margin-bottom: 40px
+			>b
+				color: $green
+				font-weight:bold
+				margin-left: -.25em
+			strong
+				color: $pink
+				font-weight: bold
+				margin-left: -.25em
+				>b
+					font-size: 4.28rem
+			&:before,&:after
+				position: relative
+				bottom: -20px
+				margin: 0 .25em
+			&:before
+				content: url(../img/plan/pc/plan_pc_sec01_img01.png)
+			&:after
+				content: url(../img/plan/pc/plan_pc_sec01_img02.png)
+		ul
+			display: flex
+			flex-wrap: nowrap
+			justify-content: center
+			li
+				width: 334px
+				height: 280px
+				margin: 0 27px
+				border: 1px solid $gray
+				border-radius: 20px
+				dt
+					display: block
+					height: 83px
+					border-radius: 20px 20px 0 0
+					color: $white
+					font-weight: bold
+					font-size: 2.1rem
+					line-height: 83px
+					text-align: center
+					position: relative
+					strong
+						color: $yellow
+						font-weight: bold
+					&:after
+						content: ""
+						display: block
+						width: 0
+						height: 0
+						border-top: 12px solid $white
+						border-left: 17px solid transparent
+						border-right: 17px solid transparent
+						position: absolute
+						bottom: -12px
+						left: 50%
+						margin-left: -9px
+				dd
+					padding: 25px 0 0
+					text-align: center
+					span
+						display: inline-block
+						width: 70px
+						height: 70px
+						margin-right: 5px
+						padding-top: 15px
+						border-radius: 35px
+						color: $white
+						font-size: 1.28rem
+						font-weight: bold
+						line-height: 1.2
+						text-align: center
+						text-indent: .25em
+						vertical-align: top
+					strong
+						display: inline-block
+						color: $red
+						font-size: 3rem
+						font-weight: bold
+						line-height: 70px
+						small
+							font-size: 1.14rem
+							margin-left: -.75em
+							vertical-align: middle
+					a
+						display: block
+						height: 65px
+						margin: 20px 10px
+						background: $green4
+						border-bottom: 5px solid $darkgreen
+						border-radius: 10px
+						color: $white
+						font-weight: bold
+						font-size: 1.71rem
+						text-align: center
+						line-height: 60px
+						
+			li:nth-of-type(1)
+				dt
+					background: $blue
+					&:after
+						border-top-color: $blue
+				dd
+					span
+						background: $blue
+			li:nth-of-type(2)
+				dt
+					background: $orange
+					&:after
+						border-top-color: $orange
+				dd
+					span
+						background: $orange
+			li:nth-of-type(3)
+				dt
+					background: $green3
+					&:after
+						border-top-color: $green3
+				dd
+					span
+						background: $green3
+				
+	// plan_item
+	.plan_item
+		width: 1100px
+		margin: 100px auto 0
+		border-radius: 13px
+		.plan_header
+			height: 175px
+			padding: 50px 0 0
+			position: relative
+			border-radius: 10px 10px 0 0
+			&:before
+				position: absolute
+				top: -40px
+				left: 30px
+			&:after
+				content: ""
+				display: block
+				width: 0
+				height: 0
+				border-left: 35px solid transparent
+				border-right: 35px solid transparent
+				position: absolute
+				bottom: -30px
+				left: 50%
+				margin-left: -35px
+			h2
+				color: $yellow
+				font-weight: bold
+				font-size: 4.28rem
+				text-align: center
+				text-decoration: underline
+				&:before
+					display: none
+				span
+					color: $white
+		.plan_intro
+			text-align: center
+			padding: 60px 0 0
+			p
+				font-size: 1.5rem
+				strong
+					display: block
+					font-weight: bold
+					font-size: 2.5rem
+					margin-bottom: .87em
+					span
+						color: $pink
+					[data-ruby]
+						position: relative
+					[data-ruby]::before
+						content: attr(data-ruby)
+						position: absolute
+						bottom: -1em
+						left: 0
+						right: 0
+						margin: auto
+						font-size: 1em
+				b
+					font-size: 1.14em
+					color: $green
+					font-weight: bold
+		.plan_price
+			width: 970px
+			margin: 90px auto 0
+			position: relative
+			text-align: center
+			border-radius: 20px
+			h3
+				width: 865px
+				height: 91px
+				position: relative
+				margin: -48px auto 0
+				text-align: center
+				color: $white
+				font-size: 2.3rem
+				font-weight: bold
+				line-height: 66px
+			p
+				color: $red
+				font-size: 2.5rem
+				font-weight: bold
+				strong
+					font-weight: bold
+					font-size: 10.7rem
+					line-height: 1
+				&:before
+					display: inline-block
+				small
+					display: block
+					margin: 0 42px 36px
+					padding: 10px
+					border-radius: 40px
+					text-align: center
+					font-size: 1.5rem
+					font-weight: bold
+					line-height: 1.2
+					b
+						color: $pink
+						font-weight: bold
+		.plan_reward
+			width: 970px
+			margin: 90px auto 0
+			padding: 10px 20px 60px
+			background: $lightpink
+			border-radius: 20px
+			position: relative
+			&:before
+				content: url(../img/plan/pc/plan_pc_sec02-4_img04.png)
+				display: block
+				width: 169px
+				height: 80px
+				position: absolute
+				top: -40px
+				left: 50%
+				margin-left: -85px
+			h3
+				color: $pink
+				font-weight: bold
+				font-size: 2.5rem
+				text-align: center
+				&:before
+					content: url(../img/plan/pc/plan_pc_sec02-4_img05.png)
+					display: inline-block
+					vertical-align: text-bottom
+				small
+					display: inline-block
+					padding: 0 1em
+					background: $green
+					border-radius: 1em
+					color: $white
+					font-size: .67em
+					line-height: 1.5
+					font-weight: normal
+					position: relative
+					top: -6px
+			p
+				margin: 1em 0 0
+				font-size: 1.28rem
+				line-height: 2
+				color: $black2
+				img
+					float: left
+					margin-right: 1em
+					position: relative
+					top: -1em
+		.plan_note
+			width: 970px
+			margin: 40px auto 0
+			color: $black2
+			font-size: 1.28rem
+			line-height: 2
+			li
+				list-style: disc
+				margin-left: 1.5em
+		.plan_example
+			width: 970px
+			margin: 140px auto 0
+			border-top: 2px solid $pink
+			h3
+				width: 469px
+				height: 145px
+				margin: -96px auto 0
+				background: url(../img/plan/pc/plan_pc_sec02-4_img07.png) no-repeat right top
+				position: relative
+				color: $white
+				font-weight: bold
+				font-size: 4rem
+				padding-top: 60px
+				text-align: center
+			dl
+				margin: 48px auto 0
+			p
+				display: block
+				margin: 16px 0 0
+				padding: 60px 0 20px
+				border-radius: 150px
+				text-align: center
+				color: $yellow
+				font-size: 4.2rem
+				position: relative
+				&:before
+					content: ""
+					display: block
+					width: 0
+					height: 0
+					border-left: 16px solid transparent
+					border-right: 16px solid transparent
+					position: absolute
+					top: -24px
+					left: 50%
+					margin-left: -16px
+				span
+					color: $yellow
+					font-size: 2.1rem
+					display: inline-block
+					b
+						font-weight: bold
+						font-size: 2em
+					&:not(:first-of-type)
+						margin-left: -.5em
+				[data-ruby]
+					position: relative
+				[data-ruby]::before
+					content: attr(data-ruby)
+					position: absolute
+					top: -1.5em
+					left: 0
+					right: 0
+					margin: auto
+					font-weight: bold
+					font-size: 1.28rem
+					display: block
+					min-width: 100%
+					background: $white
+					border-radius: 1em
+					line-height: 1.75
+				small
+					display: block
+					color: $black2
+					font-weight: bold
+					font-size: 2.1rem
+		.plan_points
+			width: 970px
+			margin: 100px auto 60px
+			border: 3px dotted $pink
+			border-radius: 20px
+			position: relative
+			&:after
+				content: url(../img/plan/pc/plan_pc_sec02-4_img02.png)
+				position: absolute
+				right: 20px
+				bottom: 20px
+			h3
+				width: 865px
+				height: 91px
+				background: url(../img/plan/pc/plan_pc_sec02-4_img01.png) no-repeat center top
+				text-align: center
+				color: $white
+				font-size: 2.1rem
+				line-height: 1.2
+				padding-top: 16px
+				position: relative
+				margin: -48px auto 0
+			ul
+				width: 666px
+				margin: 30px auto 60px
+				li
+					display: block
+					margin: 10px 0 0
+					padding: 15px
+					border: 3px solid $lightpink
+					border-radius: 60px
+					text-align: center
+					color: $pink
+					font-size: 2.4rem
+					line-height: 1.2
+					font-weight: bold
+				
+		&#plan1
+			border: 3px solid $blue
+			.plan_header
+				background: $blue
+				&:before
+					content: url(../img/plan/pc/plan_pc_sec02_img01.png)
+				&:after
+					border-top: 30px solid $blue
+			.plan_price
+				border: 3px dotted $blue
+				border-radius: 20px
+				h3
+					background: url(../img/plan/pc/plan_pc_sec02_img02.png) no-repeat center top
+				p:before
+					content: url(../img/plan/pc/plan_pc_sec02_img03.png)
+				p small
+					border: 3px solid $blue
+					color: $blue
+			.plan_example
+				dl
+					background: url(../img/plan/pc/plan_pc_sec02_img10.png) no-repeat 0 48px
+					overflow: hidden
+					dt
+						margin-left: 150px
+						color: $white
+						font-weight: bold
+						font-size: 2.4rem
+						display: inline-block
+						padding: 0 .5em
+						line-height: 1.75
+						background: $blue
+						position: relative
+						&:after
+							content: ""
+							display: block
+							width: 0
+							height: 0
+							border-top: 14px solid $blue
+							border-left: 14px solid transparent
+							border-right: 14px solid transparent
+							position: absolute
+							bottom: -14px
+							left: 50%
+							margin-left: -14px
+					dd
+						float: right
+						width: 300px
+						margin: 50px 0 0
+						text-align: center
+						span
+							display: block
+							padding: 30px
+							text-align: center
+							border: 3px solid $blue
+							border-radius: 70px
+							color: $black2
+							font-size: 1.7rem
+							line-height: 1.2
+							position: relative
+							&:before
+								content: ""
+								display: block
+								width: 90px
+								height: 90px
+								border-radius: 45px
+								position: absolute
+								top: -32px
+								left: -24px
+							&:first-of-type:before
+								background: $blue url(../img/plan/pc/plan_pc_sec02_img08.png) no-repeat center
+							&:last-of-type:before
+								background: $blue url(../img/plan/pc/plan_pc_sec02_img07.png) no-repeat center
+							strong
+								color: $red
+								font-size: 2.1rem
+								font-weight: bold
+								line-height: 1.2
+						img
+							display: inline-block
+							margin: 15px 0
+				p
+					background: $blue
+					&:before
+						border-bottom: 24px solid $blue
+					span
+						&:first-of-type
+							width: 7em
+					[data-ruby]::before
+						color: $blue
+		&#plan2
+			border: 3px solid $orange
+			.plan_header
+				background: $orange
+				&:before
+					content: url(../img/plan/pc/plan_pc_sec03_img01.png)
+				&:after
+					border-top: 30px solid $orange
+			.plan_price
+				border: 3px dotted $orange
+				h3
+					background: url(../img/plan/pc/plan_pc_sec03_img02.png) no-repeat center top
+				p:before
+					content: url(../img/plan/pc/plan_pc_sec03_img03.png)
+				p small
+					border: 3px solid $orange
+					color: $orange
+			.plan_example
+				>img
+					margin: 40px auto 0
+				p
+					background: $orange
+					&:before
+						border-bottom: 24px solid $orange
+					[data-ruby]::before
+						color: $orange
+					span:last-of-type
+						position: absolute
+						left: 70px
+						bottom: 60px
+						margin: 0
+						font-size: 1.28rem
+					small
+						margin-top: 20px
+		&#plan3
+			border: 3px solid $green4
+			.plan_header
+				background: $green4
+				&:before
+					content: url(../img/plan/pc/plan_pc_sec04_img01.png)
+				&:after
+					border-top: 30px solid $green4
+			.plan_price
+				border: 3px dotted $green4
+				h3
+					background: url(../img/plan/pc/plan_pc_sec04_img02.png) no-repeat center top
+				dl
+					dt
+						display: block
+						color: $black2
+						font-size: 2rem
+						font-weight: bold
+						text-align: center
+					dd
+						color: $red
+						font-size: 2.5rem
+						font-weight: bold
+						strong
+							font-weight: bold
+							font-size: 10.7rem
+							line-height: 1
+							letter-spacing: -.05em
+						&:before
+							display: inline-block
+							content: url(../img/plan/pc/plan_pc_sec04_img03.png)
+				p
+					margin: 10px auto 40px
+					color: $black2
+					font-size: 2rem
+					font-weight: bold
+					strong
+						color: $red
+						font-size: 1em
+						font-weight: bold
+						b
+							font-size: 1.7em
+							line-height: 1
+							font-weight: bold
+			.plan_reward
+				background: $lightyellow
+				h3
+					color: $green
+					text-align: right
+					&:before
+						display: none
+					&:after
+						content: url(../img/plan/pc/plan_pc_sec02-4_img05.png)
+						display: inline-block
+						vertical-align: text-bottom
+						position: relative
+						bottom: -15px
+					b
+						color: $pink
+						font-weight: bold
+					small
+						background: $pink
+						position: absolute
+						top: -16px
+						left: 24px
+				p
+					margin: 1em 0 0
+					font-size: 1.28rem
+					line-height: 2
+					color: $black2
+					img
+						float: left
+						margin-right: 1em
+						position: relative
+						top: -1em
+			.plan_example
+				>img
+					margin: 40px auto 0
+				p
+					padding: 40px 0 20px
+					background: $green3
+					&:before
+						border-bottom: 24px solid $green3
+					small
+						display: block
+						color: $black2
+				
+	// address
+	.plan_address
+		width: 100%
+		min-width: 1100px
+		max-width: 1700px
+		margin: 100px auto 0
+		padding: 45px 0
+		background: $lightgreen3
+		address
+			width: 970px
+			margin: 0 auto
+			padding: 40px
+			background: $green
+			border-radius: 10px
+			text-align: center
+			font-style: normal
+			h3
+				color: $white
+				font-size: 3rem
+			p
+				color: $lightyellow2
+				font-size: 7rem
+				line-height: 1.1
+				&:before
+					content: url(../img/plan/pc/plan_pc_sec05_img01.png)
+					margin-right: .25em
+					vertical-align: middle
+				small
+					display: block
+					color: $lightgreen3
+					font-size: 1.5rem
+			a
+				display: block
+				width: 634px
+				height: 106px
+				margin: 40px auto 0
+				background: $pink
+				border-bottom: 5px solid $darkpink
+				border-radius: 10px
+				text-align: center
+				color: $white
+				font-size: 2.4rem
+				font-weight: bold
+				line-height: 106px
+				small
+					font-size: 1.5rem
+	
+	// plannavi footer
+	.plannavi_footer
+		@extend .contents-area .plannavi
+		ul li
+			height: auto
+			padding: 30px 0
+			border-radius: 10px
+			dt
+				height: auto
+				background: none
+				line-height: 1
+				border-radius: 10px
+				&:after
+					display: none
+			dd
+				padding: 0
+				span
+					display: block
+					width: 60%
+					height: auto
+					margin: 15px auto
+					padding: 0
+					text-align: center
+					font-size: 2rem
+					line-height: 1.5
+				strong
+					line-height: .75
+		ul li:nth-of-type(1)
+			background: $blue
+			dd
+				span
+					background: $white
+					color: $blue
+		ul li:nth-of-type(2)
+			background: $orange
+			dd
+				span
+					background: $white
+					color: $orange
+		ul li:nth-of-type(3)
+			background: $green3
+			dd
+				span
+					background: $white
+					color: $green3
+	
+	// compare
+	.plan_compare
+		width: 100%
+		min-width: 1100px
+		max-width: 1700px
+		margin: 100px auto 0
+		padding: 80px 0 40px
+		background: url(../img/plan/pc/plan_pc_sec07_bg.jpg) no-repeat center top
+		h3
+			width: 586px
+			height: 70px
+			margin: 0 auto
+			background: url(../img/plan/pc/plan_pc_sec07_img01.png) no-repeat center top
+			text-align: center
+			color: $white
+			font-size: 2.4rem
+			font-weight: bold
+			line-height: 70px
+		ul
+			display: flex
+			flex-wrap: nowrap
+			justify-content: flex-end
+			width: 1050px
+			margin: 30px auto
+			li
+				width: 280px
+				table
+					width: 288px
+					border-collapse: separate
+					border-spacing: 7px
+					th,td
+						height: 92px
+						text-align: center
+						vertical-align: middle
+					th
+						color: $white
+						font-size: 1.5rem
+						font-weight: bold
+					td
+						background: $white
+						font-size: 1.5rem
+						line-height: 1.2
+						position: relative
+						b
+							font-size: 2.5em
+						p
+							font-size: 1.28rem
+							b
+								font-size: 2em
+						small
+							display: block
+							font-size: 1.2rem
+					[data-ruby]
+						position: relative
+					[data-ruby]::before
+						content: attr(data-ruby)
+						position: absolute
+						left: -190px
+						top: 50%
+						margin-top: -33px
+						width: 185px
+						height: 66px
+						background: $green
+						color: $white
+						text-align: center
+						font-size: 2rem
+						line-height: 66px
+					[data-ruby]::after
+						content: ""
+						display: block
+						width: 0
+						height: 0
+						border-top: 10px solid transparent
+						border-left: 14px solid $green
+						border-bottom: 10px solid transparent
+						position: absolute
+						left: -5px
+						top: 50%
+						margin-top: -10px
+							
+			li:nth-of-type(1)
+				th
+					background: $blue
+				td
+					color: $blue
+			li:nth-of-type(2)
+				th
+					background: $orange
+				td
+					color: $orange
+			li:nth-of-type(3)
+				th
+					background: $green3
+				td
+					color: $green3
+					
+	// contentsnavi
+	.contentsnavi
+		width: 100%
+		min-width: 1100px
+		max-width: 1700px
+		margin: 0 auto
+		padding: 60px 0
+		background: url(../img/plan/pc/pc_obo_sec08_bg.png) 0 0 repeat
+		ul
+			width: 100%
+			text-align: center
+			li
+				display: inline-block
+				margin: 0 14px
+				a
+					display: block
+					width: 220px
+					height: 110px
+					padding-top: 50px
+					background: $white
+					border: 2px solid $orange
+					border-radius: 5px
+					text-align: center
+					color: $orange
+					font-size: 1.4rem
+					position: relative
+					&:before
+						display: block
+						position: absolute
+						left: 50%
+					&:after
+						content: url(../img/plan/pc/pc_sales_navi_icon05.png)
+						display: block
+						width: 26px
+						position: absolute
+						bottom: -18px
+						left: 50%
+						margin-left: -13px
+			li:nth-of-type(1)
+				a:before
+					content: url(../img/plan/pc/pc_sales_navi_icon01.png)
+					width: 24px
+					margin-left: -12px
+					top: 15px
+			li:nth-of-type(2)
+				a:before
+					content: url(../img/plan/pc/pc_sales_navi_icon02.png)
+					width: 20px
+					margin-left: -10px
+					top: 21px
+			li:nth-of-type(3)
+				a:before
+					content: url(../img/plan/pc/pc_sales_navi_icon03.png)
+					width: 31px
+					margin-left: -16px
+					top: 20px
+			li:nth-of-type(4)
+				a:before
+					content: url(../img/plan/pc/pc_sales_navi_icon04.png)
+					width: 19px
+					margin-left: -10px
+					top: 19px
+				
+	// commons
+	.information, .tokushu-area, .banner-area, .search-items, .about-area
+		width: 850px
+		margin: 70px auto 0
+			

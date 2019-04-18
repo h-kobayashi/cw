@@ -602,47 +602,54 @@ line-height
   margin: 20px auto;
   background: url("../img/oiwai/sp/oiwai_sp_sec02_pink_img04.png") no-repeat center top/contain;
 }
-.contents-area .aboutmark >ul li {
+.contents-area .aboutmark >ul >li {
   width: 304px;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 15px;
 }
-.contents-area .aboutmark >ul li h2 {
+.contents-area .aboutmark >ul >li h2 {
+  width: 210px;
   margin: 0 auto;
   border-bottom: 2px dashed #373737;
   font-size: 1.28rem;
   line-height: 2;
   text-align: center;
 }
-.contents-area .aboutmark >ul li h2:before {
+.contents-area .aboutmark >ul >li h2:before {
   display: none;
 }
-.contents-area .aboutmark >ul li p {
+.contents-area .aboutmark >ul >li >p {
   padding: 10px 20px;
   background: #f4f3f3;
   border-radius: 8px;
-  font-size: 1.28rem;
-  line-height: 1.67;
+  font-size: 0.87rem;
+  line-height: 1.5;
 }
-.contents-area .aboutmark >ul li figure {
-  margin: 12px;
+.contents-area .aboutmark >ul >li >p strong {
+  color: #fe4280;
+}
+.contents-area .aboutmark >ul >li figure {
+  margin: 10px;
   overflow: hidden;
-}
-.contents-area .aboutmark >ul li figure >img {
-  float: left;
-}
-.contents-area .aboutmark >ul li figure figcaption {
-  float: right;
-  font-size: 1.28rem;
-  line-height: 54px;
-}
-.contents-area .aboutmark >ul li figure figcaption span {
-  display: block;
-  width: 170px;
-  height: 54px;
-  border-radius: 27px;
   text-align: center;
 }
-.contents-area .aboutmark >ul li figure figcaption small {
+.contents-area .aboutmark >ul >li figure >img {
+  margin: 0 10px;
+}
+.contents-area .aboutmark >ul >li figure figcaption {
+  display: inline-block;
+  font-size: 0.87rem;
+  line-height: 30px;
+  vertical-align: top;
+}
+.contents-area .aboutmark >ul >li figure figcaption span {
+  display: block;
+  width: 97px;
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+.contents-area .aboutmark >ul >li figure figcaption small {
   display: block;
   color: #373737;
   text-align: right;
@@ -650,10 +657,14 @@ line-height
   position: relative;
   right: -1em;
 }
-.contents-area .aboutmark >ul li figure figcaption small img {
+.contents-area .aboutmark >ul >li figure figcaption small img {
   position: relative;
-  margin: 0 0.5em;
-  bottom: -3px;
+  margin: 0 0.5em 0 0;
+  width: 8px;
+}
+.contents-area .aboutmark .pinkmark {
+  height: 827px;
+  background: url("../img/oiwai/sp/oiwai_sp_sec02_pink_frame.png") no-repeat center top/contain;
 }
 .contents-area .aboutmark .pinkmark:before {
   content: "";
@@ -661,14 +672,145 @@ line-height
   height: 29px;
   background: url("../img/oiwai/sp/oiwai_sp_sec02_pink_img01.png") no-repeat center top/contain;
   display: block;
+  margin: 0 auto;
 }
 .contents-area .aboutmark .pinkmark h2 {
   color: #fe4280;
   border-color: #fe4280;
 }
+.contents-area .aboutmark .pinkmark figure >img {
+  width: 73px;
+}
 .contents-area .aboutmark .pinkmark figure figcaption span {
   background: #fe4280;
   color: #fff;
+}
+.contents-area .aboutmark .pinkmark .pinkflow:before {
+  content: "";
+  background: url("../img/oiwai/sp/oiwai_sp_sec02_pink_img04.png") no-repeat 0 0/contain;
+  display: block;
+  width: 26px;
+  height: 21px;
+  margin: 5px auto 0;
+}
+.contents-area .aboutmark .pinkmark .pinkflow h3 {
+  font-size: 1.28rem;
+  font-weight: bold;
+}
+.contents-area .aboutmark .pinkmark .pinkflow h3 small {
+  display: inline-block;
+  padding: 0 1em;
+  background: #fe4280;
+  border-radius: 1em;
+  color: #fff;
+  font-size: 0.87rem;
+  font-weight: normal;
+  line-height: 2;
+  position: relative;
+  top: -2px;
+  margin-right: 0.5em;
+}
+.contents-area .aboutmark .pinkmark .pinkflow ul li {
+  width: 273px;
+  min-height: 95px;
+  display: block;
+  margin-top: 20px;
+  padding-top: 10px;
+  position: relative;
+  background: #fe4280;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  vertical-align: text-bottom;
+}
+.contents-area .aboutmark .pinkmark .pinkflow ul li h4 {
+  font-weight: normal;
+  font-size: 1.41rem;
+  line-height: 1.1;
+  width: 1.5em;
+  margin: 0 auto 0;
+  border-bottom: 2px solid #fff;
+}
+.contents-area .aboutmark .pinkmark .pinkflow ul li h4:before {
+  content: "";
+  display: block;
+  width: 71px;
+  height: 29px;
+  background: url("../img/oiwai/sp/oiwai_sp_sec02_pink_img05.png") no-repeat center top/contain;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}
+.contents-area .aboutmark .pinkmark .pinkflow ul li h4 small {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+}
+.contents-area .aboutmark .pinkmark .pinkflow ul li p {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  padding: 15px 5px 0;
+  color: #fff;
+}
+.contents-area .aboutmark .pinkmark .pinkflow ul li p small {
+  display: block;
+  color: #373737;
+  font-size: 0.7rem;
+  margin: 7px;
+  line-height: 1.2;
+  text-align: left;
+}
+.contents-area .aboutmark .pinkmark .pinkflow ul li:first-of-type {
+  margin-top: 5px;
+  height: 136px;
+}
+.contents-area .aboutmark .pinkmark .pinkflow ul li:last-of-type {
+  height: 106px;
+}
+.contents-area .aboutmark .pinkmark .pinkflow ul li:not(:last-of-type):after {
+  content: "";
+  background: url("../img/oiwai/sp/oiwai_sp_sec02_pink_img07.png") no-repeat 0 0/contain;
+  width: 13px;
+  height: 8px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  margin-left: -6px;
+}
+.contents-area .aboutmark .pinkmark .pinkflow ul li:nth-of-type(1) h4:after {
+  content: "";
+  background: url("../img/oiwai/sp/oiwai_sp_sec02_pink_img06.png") no-repeat 0 0/contain;
+  width: 48px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 60px;
+}
+.contents-area .aboutmark .pinkmark .pinkflow ul li:nth-of-type(2) h4:after {
+  content: "";
+  background: url("../img/oiwai/sp/oiwai_sp_sec02_pink_img08.png") no-repeat 0 0/contain;
+  display: block;
+  width: 41px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  right: 60px;
+}
+.contents-area .aboutmark .pinkmark .pinkflow ul li:nth-of-type(3) h4:after {
+  content: "";
+  background: url("../img/oiwai/sp/oiwai_sp_sec02_pink_img09.png") no-repeat 0 0/contain;
+  display: block;
+  width: 57px;
+  height: 34px;
+  position: absolute;
+  top: 15px;
+  right: 60px;
+}
+.contents-area .aboutmark .pinkmark .pinkflow >p {
+  margin: 10px 15px;
+  font-size: 0.87rem;
 }
 .contents-area .aboutmark .yellowmark {
   background: url("../img/oiwai/sp/oiwai_sp_sec02_yellow_frame.png") no-repeat center top/contain;
@@ -677,6 +819,7 @@ line-height
   content: "";
   width: 96px;
   height: 29px;
+  margin: 0 auto;
   background: url("../img/oiwai/sp/oiwai_sp_sec02_yellow_img01.png") no-repeat center top/contain;
   display: block;
 }
@@ -684,130 +827,31 @@ line-height
   color: #fd9f3a;
   border-color: #f5fd0f;
 }
+.contents-area .aboutmark .yellowmark figure >img {
+  width: 83px;
+}
 .contents-area .aboutmark .yellowmark figure figcaption span {
   background: #f5fd0f;
   color: #fe4280;
 }
-.contents-area .aboutmark .pinkflow:before {
-  content: url("../img/oiwai/sp/oiwai_sp_sec02_pink_img04.png");
-  display: block;
-  width: 45px;
-  height: 21px;
-  margin: 30px 240px 30px;
-}
-.contents-area .aboutmark .pinkflow h3 {
-  margin-left: 30px;
-  font-size: 2rem;
-  font-weight: bold;
-}
-.contents-area .aboutmark .pinkflow h3 small {
-  display: inline-block;
-  padding: 0 1em;
-  background: #fe4280;
-  border-radius: 1em;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 2;
-  position: relative;
-  top: -6px;
-  margin-right: 0.5em;
-}
-.contents-area .aboutmark .pinkflow ul {
-  margin: 20px 0 20px 30px;
-}
-.contents-area .aboutmark .pinkflow ul li {
-  width: 326px;
-  height: 216px;
-  display: inline-block;
-  position: relative;
-  background: #fe4280;
-  border-radius: 8px;
-  color: #fff;
-  text-align: center;
-  vertical-align: text-bottom;
-}
-.contents-area .aboutmark .pinkflow ul li h4 {
-  font-weight: normal;
-  font-size: 2.57rem;
-  line-height: 1.1;
-  width: 1.5em;
-  margin: 20px auto 0;
-  border-bottom: 2px solid #fff;
-}
-.contents-area .aboutmark .pinkflow ul li h4:before {
-  content: url("../img/oiwai/sp/oiwai_sp_sec02_pink_img05.png");
-  position: absolute;
-  top: 5px;
-  left: 5px;
-}
-.contents-area .aboutmark .pinkflow ul li h4 small {
-  display: block;
-  font-size: 1rem;
-  font-weight: normal;
-}
-.contents-area .aboutmark .pinkflow ul li p {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  margin: 20px 25px;
-}
-.contents-area .aboutmark .pinkflow ul li p small {
-  display: block;
-  color: #373737;
-  font-size: 0.8em;
-  margin: 7px;
-  line-height: 1.2;
-  text-align: left;
-}
-.contents-area .aboutmark .pinkflow ul li:not(:last-of-type) {
-  margin-right: 24px;
-}
-.contents-area .aboutmark .pinkflow ul li:not(:last-of-type):after {
-  content: url("../img/oiwai/sp/oiwai_sp_sec02_pink_img07.png");
-  position: absolute;
-  right: -21px;
-  top: 50%;
-  margin-top: -11px;
-}
-.contents-area .aboutmark .pinkflow ul li:nth-of-type(1):before {
-  content: url("../img/oiwai/sp/oiwai_sp_sec02_pink_img06.png");
-  position: absolute;
-  top: 20px;
-  right: 40px;
-}
-.contents-area .aboutmark .pinkflow ul li:nth-of-type(2):before {
-  content: url("../img/oiwai/sp/oiwai_sp_sec02_pink_img08.png");
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-}
-.contents-area .aboutmark .pinkflow ul li:nth-of-type(3):before {
-  content: url("../img/oiwai/sp/oiwai_sp_sec02_pink_img09.png");
-  position: absolute;
-  top: -5px;
-  right: -1px;
-}
-.contents-area .aboutmark .pinkflow >p {
-  margin: 30px 50px;
-  font-size: 1.28rem;
-}
 .contents-area .oiwaicheck {
-  width: 100%;
-  height: 659px;
-  margin: 110px auto 0;
-  padding: 60px 0 0 330px;
-  background: url("../img/oiwai/sp/oiwai_sp_sec03_bg.jpg") no-repeat center top;
+  width: 320px;
+  margin: 20px auto 0;
+  padding: 40px 0 0;
+  background: url("../img/oiwai/sp/oiwai_sp_sec03_bg.jpg") no-repeat center top/contain;
   text-align: center;
 }
 .contents-area .oiwaicheck h2 {
-  width: 548px;
-  height: 63px;
-  margin: 0 auto;
-  background: url("../img/oiwai/sp/oiwai_sp_sec03_titilebg.png") no-repeat center top;
+  float: right;
+  width: 210px;
+  height: 69px;
+  margin: 0 15px 0;
+  padding: 15px 0 0;
+  background: url("../img/oiwai/sp/oiwai_sp_sec03_titlebg.png") no-repeat center top/contain;
   text-align: center;
   color: #fff;
-  font-size: 2.14rem;
-  line-height: 63px;
+  font-size: 1.28rem;
+  line-height: 1.2;
   position: relative;
   z-index: 2;
 }
@@ -815,145 +859,175 @@ line-height
   display: none;
 }
 .contents-area .oiwaicheck ul {
+  clear: both;
   position: relative;
-  top: -33px;
-  width: 765px;
-  height: 510px;
   margin: 0 auto;
-  padding-top: 78px;
+  padding: 15px 15px 0;
+}
+.contents-area .oiwaicheck ul li {
+  margin: 0 0 10px;
+}
+.contents-area .oiwaicheck ul li {
+  display: block;
+  padding: 10px 5px 10px 35px;
   background: rgba(255,255,255,0.8);
-  border-radius: 8px;
+  border-radius: 25px;
   -webkit-box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
   box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
-}
-.contents-area .oiwaicheck ul li:not(:last-of-type) {
-  display: block;
-  width: 694px;
-  height: 64px;
-  margin: 12px auto 0;
-  padding: 8px 20px;
-  border: 5px solid #58b244;
-  border-radius: 32px;
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font-size: 0.87rem;
+  line-height: 1.2;
   text-align: left;
+  position: relative;
 }
-.contents-area .oiwaicheck ul li:not(:last-of-type):before {
-  content: url("../img/oiwai/sp/oiwai_sp_sec03_img01.png");
+.contents-area .oiwaicheck ul li:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url("../img/oiwai/sp/oiwai_sp_sec03_img01.png") no-repeat 0 0/contain;
   margin-right: 0.5em;
-  position: relative;
-  top: 5px;
-}
-.contents-area .oiwaicheck ul li:last-of-type {
-  display: inline-block;
-  margin: 20px auto 0;
-  color: #fd9f3a;
-  font-size: 2.14rem;
-  line-height: 1.5;
-  border-bottom: 3px solid #fd9f3a;
-  position: relative;
-}
-.contents-area .oiwaicheck ul li:last-of-type:before {
-  content: url("../img/oiwai/sp/oiwai_sp_sec03_img04.png");
-  display: block;
-  line-height: 20px;
-}
-.contents-area .oiwaicheck ul li:last-of-type:after {
-  content: url("../img/oiwai/sp/oiwai_sp_sec03_img03.png");
-  display: block;
   position: absolute;
-  right: -120px;
-  top: 0;
+  top: 50%;
+  left: 10px;
+  margin-top: -8px;
+}
+.contents-area .oiwaicheck p {
+  display: block;
+  margin: 0;
+  padding: 15px 0;
+  background: #58b244;
+  text-align: center;
+  position: relative;
+}
+.contents-area .oiwaicheck p span {
+  display: inline-block;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 1.28rem;
+  line-height: 1.5;
+}
+.contents-area .oiwaicheck p:before {
+  content: "";
+  width: 23px;
+  height: 11px;
+  margin: 0 auto 10px;
+  background: url("../img/oiwai/sp/oiwai_sp_sec03_img04.png") no-repeat center top/contain;
+  display: block;
+}
+.contents-area .oiwaicheck p:after {
+  content: "";
+  display: block;
+  width: 68px;
+  height: 45px;
+  background: url("../img/oiwai/sp/oiwai_sp_sec03_img03.png") no-repeat 0 0/contain;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -23px;
 }
 .contents-area .oiwaiflow {
-  width: 100%;
-  margin: 130px auto 0;
+  margin: 40px auto 0;
   text-align: center;
 }
 .contents-area .oiwaiflow h2 {
-  width: 650px;
-  height: 94px;
+  width: 299px;
+  height: 77px;
   margin: 0 auto;
-  background: url("../img/oiwai/sp/oiwai_sp_sec04_titilebg.png") no-repeat center top;
+  padding: 10px 0 0;
+  background: url("../img/oiwai/sp/oiwai_sp_sec04_titilebg.png") no-repeat center top/contain;
   color: #fff;
-  font-size: 2.5rem;
-  line-height: 2;
+  font-weight: normal;
+  font-size: 1.28rem;
+  line-height: 1.2;
 }
 .contents-area .oiwaiflow h2:before {
   display: none;
 }
-.contents-area .oiwaiflow .oiwaiflow_pink {
-  width: 1085px;
-  height: 247px;
-  margin: 50px auto;
-  background: url("../img/oiwai/sp/oiwai_sp_sec04_pink_img01.png") no-repeat 0 0;
-  text-align: left;
+.contents-area .oiwaiflow .oiwaiflow_pink:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-top: 20px solid #fe4280;
+  border-right: 25px solid transparent;
+  border-left: 25px solid transparent;
 }
 .contents-area .oiwaiflow .oiwaiflow_pink dt {
-  display: inline-block;
-  width: 247px;
-  height: 247px;
+  display: block;
   padding: 47px 0 0;
   color: #fe4280;
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 1.2;
   text-align: center;
-  vertical-align: top;
 }
 .contents-area .oiwaiflow .oiwaiflow_pink dt strong {
   font-size: 1.4em;
 }
-.contents-area .oiwaiflow .oiwaiflow_pink dt strong:before {
-  content: url("../img/oiwai/sp/oiwai_sp_sec04_pink_img02.png");
-  display: block;
+.contents-area .oiwaiflow .oiwaiflow_pink dt:before {
+  content: "";
+  display: inline-block;
+  width: 84px;
+  height: 25px;
+  background: url("../img/oiwai/sp/oiwai_sp_sec04_pink_img02.png") no-repeat 0 0/contain;
+  vertical-align: middle;
+  margin-right: 0.5em;
 }
 .contents-area .oiwaiflow .oiwaiflow_pink dd {
-  display: inline-block;
-  width: 800px;
-  height: 247px;
-  padding: 70px 0 0;
+  display: block;
+  margin: 10px 0 0;
+  padding: 10px 0;
+  background: #fe4280;
   color: #fff;
+  position: relative;
 }
 .contents-area .oiwaiflow .oiwaiflow_pink dd small {
   display: block;
-  width: 640px;
   text-align: center;
+}
+.contents-area .oiwaiflow .oiwaiflow_pink dd small img {
+  width: 16px;
+  vertical-align: middle;
 }
 .contents-area .oiwaiflow .oiwaiflow_pink dd small span {
   display: inline-block;
-  width: 184px;
-  height: 32px;
+  width: 125px;
+  height: 25px;
   margin: 0 10px;
+  padding: 0;
   background: #fff;
-  border-radius: 16px;
-  text-align: center;
+  border-radius: 12px;
   color: #373737;
-  font-size: 1.27rem;
-  line-height: 34px;
+  font-size: 0.87rem;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
   vertical-align: middle;
 }
 .contents-area .oiwaiflow .oiwaiflow_pink dd p {
-  font-size: 1.71rem;
+  font-size: 0.87rem;
   line-height: 1.5;
-  margin: 20px 0 0 20px;
+  margin: 10px 0 0;
 }
 .contents-area .oiwaiflow .oiwaiflow_pink dd p strong {
   color: #f5fd0f;
   font-weight: bold;
 }
+.contents-area .oiwaiflow >p img {
+  width: 291px;
+}
 .contents-area .oiwaiflow ol {
-  margin: 50px 0 0;
+  width: 320px;
+  margin: 0 auto;
 }
 .contents-area .oiwaiflow ol li {
   display: block;
-  width: 1000px;
-  min-height: 120px;
-  margin: 12px auto 0;
-  padding: 20px;
-  border: 5px solid #e3e3e3;
+  margin: 24px 15px 0;
+  padding: 10px;
+  border: 3px solid #e3e3e3;
   border-radius: 70px;
-  font-size: 1.4rem;
-  line-height: 1.5;
+  font-size: 0.87rem;
+  line-height: 1.2;
   position: relative;
 }
 .contents-area .oiwaiflow ol li strong {
@@ -961,143 +1035,143 @@ line-height
 }
 .contents-area .oiwaiflow ol li small {
   display: block;
-  font-size: 1.2rem;
-}
-.contents-area .oiwaiflow ol li:nth-of-type(even) {
-  padding: 40px 20px;
+  font-size: 0.7rem;
 }
 .contents-area .oiwaiflow ol li:not(:first-of-type):before {
   content: "▼";
   display: block;
-  width: 36px;
-  height: 36px;
+  width: 18px;
+  height: 18px;
   background: #7ac768;
-  border-radius: 18px;
+  border-radius: 9px;
   color: #fff;
-  font-size: 1.4rem;
-  line-height: 38px;
+  font-size: 0.87rem;
+  line-height: 19px;
   position: absolute;
-  top: -29px;
+  top: -24px;
   left: 50%;
-  margin-left: -18px;
+  margin-left: -9px;
 }
 .contents-area .oiwaiflow ol li:nth-of-type(1):after {
   content: '1';
   display: block;
-  width: 46px;
-  height: 46px;
+  width: 23px;
+  height: 23px;
   background: #fd9f3a;
-  border-radius: 23px;
+  border-radius: 12px;
   color: #fff;
-  font-size: 2rem;
-  line-height: 48px;
+  font-size: 1rem;
+  line-height: 24px;
   position: absolute;
   top: 0;
-  left: -10px;
+  left: -5px;
 }
 .contents-area .oiwaiflow ol li:nth-of-type(2):after {
   content: '2';
   display: block;
-  width: 46px;
-  height: 46px;
+  width: 23px;
+  height: 23px;
   background: #fd9f3a;
-  border-radius: 23px;
+  border-radius: 12px;
   color: #fff;
-  font-size: 2rem;
-  line-height: 48px;
+  font-size: 1rem;
+  line-height: 24px;
   position: absolute;
   top: 0;
-  left: -10px;
+  left: -5px;
 }
 .contents-area .oiwaiflow ol li:nth-of-type(3):after {
   content: '3';
   display: block;
-  width: 46px;
-  height: 46px;
+  width: 23px;
+  height: 23px;
   background: #fd9f3a;
-  border-radius: 23px;
+  border-radius: 12px;
   color: #fff;
-  font-size: 2rem;
-  line-height: 48px;
+  font-size: 1rem;
+  line-height: 24px;
   position: absolute;
   top: 0;
-  left: -10px;
+  left: -5px;
 }
 .contents-area .oiwaiflow ol li:nth-of-type(4):after {
   content: '4';
   display: block;
-  width: 46px;
-  height: 46px;
+  width: 23px;
+  height: 23px;
   background: #fd9f3a;
-  border-radius: 23px;
+  border-radius: 12px;
   color: #fff;
-  font-size: 2rem;
-  line-height: 48px;
+  font-size: 1rem;
+  line-height: 24px;
   position: absolute;
   top: 0;
-  left: -10px;
+  left: -5px;
 }
 .contents-area .oiwaiflow .oiwaiflow_yellow {
-  width: 1085px;
-  height: 247px;
-  margin: 50px auto;
-  background: url("../img/oiwai/sp/oiwai_sp_sec04_yellow_img01.png") no-repeat 0 0;
-  text-align: left;
+  margin: 20px 0 0;
+  border-top: 2px solid #fbf023;
 }
 .contents-area .oiwaiflow .oiwaiflow_yellow dt {
-  display: inline-block;
-  width: 247px;
-  height: 247px;
-  padding: 47px 0 0;
+  display: block;
+  padding: 20px 0;
   color: #fd9f3a;
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 1.2;
   text-align: center;
   vertical-align: top;
 }
-.contents-area .oiwaiflow .oiwaiflow_yellow dt strong {
-  font-size: 1.4em;
+.contents-area .oiwaiflow .oiwaiflow_yellow dt:before {
+  content: "";
+  display: inline-block;
+  width: 84px;
+  height: 25px;
+  background: url("../img/oiwai/sp/oiwai_sp_sec04_yellow_img01.png") no-repeat 0 0/contain;
+  vertical-align: middle;
+  margin-right: 0.5em;
 }
-.contents-area .oiwaiflow .oiwaiflow_yellow dt strong:before {
-  content: url("../img/oiwai/sp/oiwai_sp_sec04_yellow_img02.png");
-  display: block;
+.contents-area .oiwaiflow .oiwaiflow_yellow dt strong {
+  font-size: 1.28rem;
 }
 .contents-area .oiwaiflow .oiwaiflow_yellow dd {
-  display: inline-block;
-  width: 640px;
-  height: 247px;
-  padding: 70px 0 0;
+  display: block;
+  padding: 20px 0;
+  background: #fbf023;
 }
 .contents-area .oiwaiflow .oiwaiflow_yellow dd small {
   display: block;
   text-align: center;
 }
+.contents-area .oiwaiflow .oiwaiflow_yellow dd small img {
+  width: 16px;
+  vertical-align: middle;
+}
 .contents-area .oiwaiflow .oiwaiflow_yellow dd small span {
   display: inline-block;
-  width: 184px;
-  height: 32px;
+  width: 125px;
+  height: 25px;
   margin: 0 10px;
+  padding: 0;
   background: #fff;
-  border-radius: 16px;
-  text-align: center;
+  border-radius: 12px;
   color: #fd9f3a;
-  font-size: 1.27rem;
-  line-height: 34px;
+  font-size: 0.87rem;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
   vertical-align: middle;
 }
 .contents-area .oiwaiflow .oiwaiflow_yellow dd p {
-  font-size: 1.71rem;
+  font-size: 0.87rem;
   line-height: 1.5;
-  margin: 20px 0 0 20px;
-  color: #373737;
-  text-align: center;
+  margin: 10px 0 0;
 }
 .contents-area .oiwaiattention {
-  width: 1080px;
-  margin: 160px auto 0;
-  padding: 40px;
+  width: 320px;
+  margin: 40px auto 0;
+  padding: 20px;
   text-align: center;
-  background: url("../img/oiwai/sp/oiwai_sp_sec05_bg.png32.png") 0 0;
+  background: url("../img/oiwai/pc/oiwai_pc_sec05_bg.png32.png") 0 0/12px 12px;
 }
 .contents-area .oiwaiattention >div {
   background: #fff;
@@ -1107,15 +1181,15 @@ line-height
 }
 .contents-area .oiwaiattention >div h2 {
   position: absolute;
-  top: -64px;
+  top: -32px;
   left: 50%;
-  margin-left: -360px;
-  width: 720px;
-  height: 165px;
-  background: url("../img/oiwai/sp/oiwai_sp_sec05_titilebg.png") no-repeat center top;
+  margin-left: -180px;
+  width: 360px;
+  height: 83px;
+  background: url("../img/oiwai/sp/oiwai_sp_sec05_titilebg.png") no-repeat center top/contain;
   color: #fd9f3a;
-  font-size: 2.5rem;
-  padding-top: 100px;
+  font-size: 1.28rem;
+  padding-top: 50px;
   text-align: center;
 }
 .contents-area .oiwaiattention >div h2:before {
@@ -1123,98 +1197,83 @@ line-height
 }
 .contents-area .oiwaiattention >div small {
   display: block;
-  padding: 140px 0 0;
+  padding: 60px 20px 0;
   color: #58b244;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
 }
 .contents-area .oiwaiattention >div ul {
-  padding: 40px 100px;
+  padding: 20px 10px 20px 30px;
 }
 .contents-area .oiwaiattention >div ul li {
   list-style: disc;
-  font-size: 1.28rem;
-  line-height: 1.5;
+  font-size: 0.87rem;
+  line-height: 1.2;
   margin-bottom: 1em;
+  text-align: left;
 }
 .contents-area .oiwaifaq {
-  width: 1100px;
   margin: 0 auto;
-  padding: 110px 0 0;
+  padding: 40px 0 0;
 }
 .contents-area .oiwaifaq h2 {
-  width: 454px;
-  height: 94px;
-  background: url("../img/oiwai/sp/oiwai_sp_sec06_titilebg.png") no-repeat center top;
+  width: 227px;
+  height: 47px;
+  margin: 0 auto;
+  background: url("../img/oiwai/sp/oiwai_sp_sec06_titilebg.png") no-repeat center top/contain;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 1.28rem;
   line-height: 2;
+  text-align: center;
 }
 .contents-area .oiwaifaq h2:before {
   display: none;
 }
 .contents-area .oiwaifaq dl {
-  padding: 2.5rem 0;
-  font-size: 1.28rem;
-  border-bottom: 1px solid #e3e3e3;
+  margin: 10px 10px 0;
+  padding: 25px 20px;
+  border: 1px solid #e3e3e3;
+  line-height: 2;
 }
-.contents-area .oiwaifaq dt {
-  display: block;
+.contents-area .oiwaifaq dl dt {
   color: #58b244;
+  font-size: 0.93rem;
 }
-.contents-area .oiwaifaq dt:before {
+.contents-area .oiwaifaq dl dt:before {
   content: "Q.";
-  font-size: 1.57rem;
   margin-right: 0.5em;
+  font-size: 1.07rem;
 }
-.contents-area .oiwaifaq dd {
-  display: block;
-  margin-top: 0.75em;
+.contents-area .oiwaifaq dl dd {
+  font-size: 0.93rem;
 }
-.contents-area .oiwaifaq dd:before {
-  content: "A.";
-  color: #fd9f3a;
-  font-size: 1.57rem;
-  margin-right: 0.5em;
-}
-.contents-area .oiwaifaq dd a {
-  color: #fd9f3a;
-  text-decoration: underline;
-}
-.contents-area .kbp {
-  width: 1100px;
-  margin: 0 auto;
-  padding: 110px 0 0;
-}
-.contents-area .kbp h2 {
-  margin-bottom: 60px;
-  color: #58b244;
-  font-size: 2.14rem;
-  text-align: center;
-}
-.contents-area .kbp h2:before {
+.contents-area .oiwaifaq dl dd div {
   display: none;
 }
-.contents-area .kbp p {
-  margin: 1.75em 0 0;
-  font-size: 1.28rem;
-  text-align: center;
+.contents-area .oiwaifaq dl dd div:before {
+  content: "A.";
+  margin-right: 0.5em;
+  color: #fd9f3a;
+  font-size: 0.93rem;
 }
-.contents-area .kbp figure {
-  margin: 80px 0 0;
-  text-align: center;
-}
-.contents-area .kbp figcaption {
+.contents-area .oiwaifaq dl dd .accordion {
   display: block;
-  margin: 60px 0 0;
-  color: #58b244;
-  font-size: 1.86rem;
+  width: 19px;
+  height: 10px;
+  margin: 20px auto 0;
+  background: url("../img/faq/sp/sp_about_sec09_arrow02.png") no-repeat center/contain;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  transition: 0.4s;
 }
-.contents-area .information,
-.contents-area .tokushu-area,
-.contents-area .banner-area,
-.contents-area .search-items,
-.contents-area .about-area {
-  width: 850px;
-  margin: 70px auto 0;
+.contents-area .oiwaifaq dl dd .accordion.opened {
+  -webkit-transform: rotate(540deg);
+  -moz-transform: rotate(540deg);
+  -o-transform: rotate(540deg);
+  -ms-transform: rotate(540deg);
+  transform: rotate(540deg);
 }

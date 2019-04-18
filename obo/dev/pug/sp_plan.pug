@@ -1,0 +1,285 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		title 川越市のお仕事に特化した“お祝い金がもらえる”地元密着求人サイト「川越オーボ」
+		link(rel="stylesheet", media="all", href="css/common/sp_common.css")
+		link(rel="stylesheet", media="all", href="css/sp_plan.css")
+	body.plan
+		.wrapper
+			
+			// ヘッダー
+			header.header__wrapper
+				.header
+					include _sp_header.pug
+			
+			// メニュー
+			include _sp_globalnav.pug
+			
+			.branding
+				h1 料金・プラン
+
+			main.main
+				
+				.contents-area
+				
+					// plannavi
+					nav.plannavi
+						p 川越オーボは
+							b 採用計画に合わせて<br>
+							strong <b>3</b>つのプラン
+							| から選べます！
+						ul
+							li
+								dl
+									dt <strong>ワンデー掲載</strong>プラン
+									dd
+										span 1日掲載料
+										strong 800
+											small 円（税別）
+								a(href="#plan1") 詳しくはこちら
+							li
+								dl
+									dt <strong>応募課金</strong>プラン
+									dd
+										span 1応援
+										strong 4,000
+											small 円（税別）
+								a(href="#plan2") 詳しくはこちら
+							li
+								dl
+									dt <strong>採用課金</strong>プラン
+									dd
+										span 1採用
+										strong 30,000
+											small 円（税別）
+								a(href="#plan3") 詳しくはこちら
+					
+					// ワンデー掲載プラン
+					section.plan_item#plan1
+						.plan_header
+							h2 ワンデー掲載<span>プラン</span>
+						.plan_intro
+							p
+								strong
+									span(data-ruby="・・・・・・・・・") １日から好きな期間
+									| だけ<br>掲載ができます。
+								b ご請求はご利用いただいた日数分
+								| だけ。<br>採用が決まったら、掲載ストップをして<br>無駄なしの掲載が可能なプラン。
+						.plan_price
+							h3 ワンデー掲載プラン料金
+							p <b>1</b>日掲載料<br><strong>800</strong>円(税別)
+								small <b>応募数や採用人数は関係なし！</b>掲載した日数分だけ料金を頂戴するプランです。
+						.plan_reward
+							h3 お祝い金をつけられます
+								small 任意
+							p
+								img(src="img/plan/pc/plan_pc_sec02_img06.png", alt="")
+								| 川越OBOのワンデー掲載プランをお選びの求人情報に求人情報サイトのトレンド「お祝い金」を設定することができます。<br>川越OBOは任意でお祝い金が設定できるので付けなくてもOK！<br>1,000円～30,000円までお好きな金額を千円単位で選べ、条件も自由に選べる自由設定な雇用者負担のお祝い金制度です。
+						ul.plan_note
+							li ・毎月月末締めで1ヶ月の掲載した日数分だけ請求させていただきます。
+							li ・午前0時に掲載していた時点で1日カウントが入ります。
+							li ・1日あたりの掲載料としていただくプランです。初期費用、応募や採用時の費用はかかりません。
+							li ・お祝い金は当社が支払うものではありません。採用者と御社の間でお支払い頂くものになります。
+						.plan_example
+							h3 課金例
+							dl
+								dt 年末年始のバイトが必要…<br>そんなときは
+								dd
+									span 18日～21日の<strong>4日間のみ掲載</strong>
+									img(src="img/plan/sp/plan_sp_sec02_img09.png", alt="→")
+									span <strong>採用後ストップ！</strong>
+							p
+								span(data-ruby="1か月の掲載した日数") <b>4</b>日間
+								| ×
+								span(data-ruby="1日掲載料") <b>800</b>円
+								| ＝
+								span(data-ruby="1ヵ月の掲載料") <b>3,200</b>円
+								small 3,200円（税別）を翌月に<br>ご請求させて頂きます。
+						.plan_points
+							h3 ワンデー掲載プランは<br>こんな方におすすめ！
+							ul
+								li まずは掲載を試したい。
+								li 無駄な費用をかけたくない。
+								li 何名かの採用を考えている。
+								li シンプルな料金プランがいい。
+					
+					// 応募課金プラン
+					section.plan_item#plan2
+						.plan_header
+							h2 応募課金<span>プラン</span>
+						.plan_intro
+							p
+								strong 応募がなければ<br>
+									span(data-ruby="・・・・・・・・・　") 料金は発生しません！
+								b 1か月のご請求は<br>最大4応募16,000円（税別)
+								| まで。<br>
+								b 5応募以降は無料
+								| の上限設定タイプの<br>応募課金プラン。
+						.plan_price
+							h3 応募課金プラン料金
+							p <b>1</b>応募<br><strong>4,000</strong>円(税別）
+								small <b>何件応募があっても</b>月の請求が<br><b>16,000円（税別）</b>以上になることは<br>ありません。
+						.plan_reward
+							h3 お祝い金をつけられます
+								small 任意
+							p
+								img(src="img/plan/pc/plan_pc_sec02_img06.png", alt="")
+								| 川越OBOのワンデー掲載プランをお選びの求人情報に求人情報サイトのトレンド「お祝い金」を設定することができます。<br>川越OBOは任意でお祝い金が設定できるので付けなくてもOK！<br>1,000円～30,000円までお好きな金額を千円単位で選べ、条件も自由に選べる自由設定な雇用者負担のお祝い金制度です。
+						ul.plan_note
+							li ・毎月月末締めで1ヶ月の掲載した応募数を請求させていただきます。
+							li ・応募数上限を定めています。4応募以降の料金は無料の為、請求金額から0円～16,000円（税別）内となります。
+							li ・応募者が応募完了時点で課金対象となります。
+							li ・お祝い金は当社が支払うものではありません。採用者と御社の間でお支払い頂くものになります。
+						.plan_example
+							h3 課金例
+							img(src="img/plan/sp/plan_sp_sec03_img04.png", alt="")
+							p
+								span(data-ruby="1か月の掲載した日数") <b>0～4</b>応募
+								| ×
+								span(data-ruby="1応募課金") <b>4,000</b>円<br>
+								| ＝
+								span <b>1</b>ヶ月の掲載料（税別）
+								small 最大16,000円（税別）を翌月に<br>ご請求させて頂きます。
+						.plan_points
+							h3 応募課金プランは<br>こんな方におすすめ！
+							ul
+								li 応募数に自信がある。
+								li 応募から採用率が高い。
+					
+					// 採用課金プラン
+					section.plan_item#plan3
+						.plan_header
+							h2 採用課金<span>プラン</span>
+						.plan_intro
+							p
+								strong
+									span(data-ruby="・・・・・・・・・・　") 採用するまで一切無料！
+								b 採用後、初出勤を迎えたら料金発生。<br>
+								| OBOの運営負担のお祝い金がつけられる<br>求職者の目に留まりやすいプラン。
+						.plan_price
+							h3 採用課金プラン料金
+							dl
+								dd <strong>1</strong>採用
+								dt アルバイト・パート
+								dd <strong>30,000</strong>円(税別)
+							p アルバイト・パート以外<strong><b>50,000</b>円（税別）</strong>
+						.plan_reward
+							h3 <b>お客様負担なし</b>で<br><b>お祝い金</b>がつきます！
+							p
+								img(src="img/plan/pc/plan_pc_sec02_img06.png", alt="")
+								span 川越OBOのワンデー掲載プランをお選びの求人情報に求人情報サイトのトレンド「お祝い金」を採用課金プランをご選択の求人情報には、当社負担のお祝い金がつきます。<br>お祝い金とは、応募者に採用祝いとして支払われるもので昨今の求人サイトにおいて祝い金付の求人はトレンドになっています。お祝い金付の求人情報として表示されるので求職者の目にもとまりやすくなります。他のプランとは違い御社の負担なくお祝い金求人として掲載いただくことができます。設定することができます。<br>川越OBOは任意でお祝い金が設定できるので付けなくてもOK！<br>1,000円～30,000円までお好きな金額を千円単位で選べ、条件も自由に選べる自由設定な雇用者負担のお祝い金制度です。
+						ul.plan_note
+							li 毎月月末締めで1ヶ月の採用数を請求させていただきます。
+							li 採用後初出勤を終えた時点で課金対象となります。
+							li 採用後初出勤を終えた応募者のお名前を30日以内にご申告ください。
+							li 採用課金プランのお祝い金は当社（運営会社）側負担で直接応募者へ支払われます。
+						.plan_example
+							h3 課金例
+							img(src="img/plan/sp/plan_sp_sec04_img06.png", alt="")
+							p
+								small 初出勤を終えなければ<br>費用は発生しないので
+								span <b>30,000</b>円（税別）を翌月に<br>ご請求させて頂きます。
+						.plan_points
+							h3 応募課金プランは<br>こんな方におすすめ！
+							ul
+								li 0円で掲載スタートしたい方。
+								li リスクなしに採用に繋げたい方。
+								li 計画的採用を好む方。
+					
+					// address
+					section.plan_address
+						address
+							h3 求人掲載や料金のご相談はこちらから
+							p 03-5909-3097
+								small お電話受付時間　10：00～17：30（土日祝日を除く）
+							a(href="") お問合せフォーム
+								small （24時間受付）
+				
+					// plannavi
+					nav.plannavi_footer
+						p 川越オーボは
+							b 採用計画に合わせて
+							strong <b>3</b>つのプラン
+							| から選べます！
+						ul
+							li
+								dl
+									dt <strong>ワンデー掲載</strong>プラン
+									dd
+										span 1日掲載料
+										strong 800
+											small 円（税別）
+							li
+								dl
+									dt <strong>応募課金</strong>プラン
+									dd
+										span 1応援
+										strong 4,000
+											small 円（税別）
+							li
+								dl
+									dt <strong>採用課金</strong>プラン
+									dd
+										span 1採用
+										strong 30,000
+											small 円（税別）
+					
+					// compare
+					section.plan_compare
+						h3 川越OBO料金<br>プラン比較
+						ul
+							li
+								ul
+									li ワンデー掲載<br>プラン
+									li(data-ruby="初期費用") <b>0</b>円
+									li(data-ruby="掲載費用")
+										p <b>800</b>円/<b>1</b>日
+									li(data-ruby="応募費用") <b>0</b>円
+									li(data-ruby="０名採用") <b>0</b>円
+									li(data-ruby="１名採用") <b>0</b>円
+									li(data-ruby="祝い金") <b>自由</b><small>付けたい方のみ<br>設定できます。</small>
+							li
+								ul
+									li 応募課金<br>プラン
+									li <b>0</b>円
+									li <b>0</b>円
+									li
+										p <b>4,000</b>円/<b>1</b>応募<small>4応募以降は無料</small>
+									li <b>0</b>円
+									li <b>0</b>円
+									li <b>自由</b><small>付けたい方のみ<br>設定できます。</small>
+							li
+								ul
+									li ワンデー掲載<br>プラン
+									li <b>0</b>円
+									li <b>0</b>円
+									li <b>0</b>円
+									li <b>0</b>円
+									li
+										p <b>30,000</b>円<br>/<b>1</b>採用<small>アルバイト・パート以外 50,000円</small>
+									li <b>自動</b><small>付けたい方のみ<br>設定できます。</small>
+					
+					// contentsnavi
+					nav.contentsnavi
+						ul
+							li: a(href="") 掲載までの流れ
+							li: a(href="") 料金・プラン
+							li: a(href="") サイトイメージ
+							li: a(href="") 掲載Ｑ＆Ａ
+					
+					// SEOテキスト
+					section.about-area
+						h3 求人掲載について
+						p 川越OBOは、川越地域に特化したお仕事の募集情報を掲載しています。【川越市】に限定したアルバイトやパート、正社員のお仕事情報のみを掲載しているのでこの地域で働きたい人へピンポイントでアプローチできます。より最新の川越求人情報を提供できるように、松江町に事務所をかまえています。ご掲載を希望する企業やお店への掲載サポートも敏速に対応できます。川越地域の人材確保にお困りでしたら是非お気軽にご相談ください。
+						a(href="") 掲載を申し込む
+
+			// フッター
+			include _sp_footer.pug
+
+		script(type="text/javascript", src="js/jquery-3.1.0.min.js")
+		script(type="text/javascript", src="js/jquery-ui.min.js")
+		script(type="text/javascript", src="js/jquery.ellipsis.min.js")
+		script(type="text/javascript", src="js/common.js")
+		script(type="text/javascript", src="js/accordion.js")
